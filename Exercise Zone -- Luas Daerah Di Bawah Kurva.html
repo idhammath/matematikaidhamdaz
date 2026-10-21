@@ -1,0 +1,462 @@
+<!DOCTYPE html> 
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>Exercise Zone : Luas Daerah Di Bawah Kurva</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="templatestyle.css">
+  <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+      <script src="../matematikin.js"></script>
+     </head> 
+     <body> 
+      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Luas Daerah Di Bawah Kurva</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
+
+      <h3>Tipe: </h3>
+      <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
+      <br><br>
+      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+      <br>   
+        
+        <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Luas daerah yang diarsir adalah .... satuan luas.
+          <div id="tempatsvg1" class="tengah"></div>
+          <script>
+            var a1 = 3;
+            document.getElementById("tempatsvg1").innerHTML = String.raw`${svgkoord([-1,3],[-6,1],{rasio:a1,ukuranhuruf:2})}
+            ${svgkfungkuad(koef=[-1,0,-1],intervalx=[-1,3],{rasio:a1,tebalgaris:2,warnagaris:"green"})}
+            <path d="M 1 0 L 1 2 Q ${(-2 + 8 + 2 - 5)/(4-2)} ${(-2*4 + 2*4*2 + 4*2 - 2*5)/(4-2)} ${2} ${5} L 2 0 z" stroke="red" fill="pink" stroke-width="${2/(a1*16)}"" stroke-opacity="0.4" fill-opacity="0.4"/>
+            <text x="3"  y="5.8" text-anchor="end" style="font-family:'Times New Roman', Times, serif; font-size:${1.5/(a1*16)}em">&#119910; = &minus;&#119909;&sup2; &minus; 1</text>
+            </svg>`;
+          </script>
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">\(\dfrac73\)</li>
+        <li class="pas2 pb">\(\dfrac{10}3\)</li>
+        <li class="pas2">3</li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">2</li>
+        <li class="pas2">\(\dfrac53\)</li>
+        </ol></div></div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        L&=-\displaystyle\intop_1^2\left(-x^2-1\right)\ dx\\
+        &=-\left[-\dfrac13x^3-x\right]_1^2\\
+        &=-\left[\left(-\dfrac13(2)^3-2\right)-\left(-\dfrac13(1)^3-1\right)\right]\\
+        &=-\left[\left(-\dfrac83-2\right)-\left(-\dfrac13-1\right)\right]\\
+        &=-\left[-\dfrac{14}3-\left(-\dfrac43\right)\right]\\
+        &=-\left[-\dfrac{10}3\right]\\
+        &=\boxed{\boxed{\dfrac{10}3}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, luas daerah yang diarsir adalah \(\dfrac{10}3\) satuan luas.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Luas daerah yang diarsir adalah
+          <div id="tempatsvg2" class="tengah"></div>
+          <script>
+            var a2 = 3;
+            function fx(k){
+              return -4*k*k*k+8*k*k;
+            };
+            document.getElementById("tempatsvg2").innerHTML = String.raw`${svgkoord([-1,3],[-1,5],{rasio:a2,ukuranhuruf:2})}
+            ${svgkkurvaL(fx,interval=[-1,3],iterasi=100,{rasio:a2,warnagaris:"limegreen"})}
+            ${svgkareakurvaL(function(x){return -4*x*x*x+8*x*x},interval=[0,2],iterasi=150,opsi={rasio:a2,isi:"red"})}
+            <text x="3"  y="0.9" text-anchor="end" style="font-family:'Times New Roman', Times, serif; font-size:${1.2/(a2*16)}em">&#119910; = &minus;4&#119909;&sup3; + &#119909;&sup2;</text>
+            </svg>`
+          </script>
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">\(\dfrac83\) satuan luas</li>
+        <li class="pas2 pb">\(\dfrac{16}3\) satuan luas</li>
+        <li class="pas2">\(\dfrac{24}8\) satuan luas</li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">\(\dfrac{32}3\) satuan luas</li>
+        <li class="pas2">\(\dfrac{40}3\) satuan luas</li>
+        </ol></div></div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">Titik potong kurva terhadap sumbu <em>x</em><br />
+        \(\begin{aligned}
+        -4x^3+8x^2&=0\\
+        -4x^2(x-2)&=0
+        \end{aligned}\)<br />
+        <em>x</em> = 0 dan <em>x</em> = 2<br />
+        <br />
+        \(\begin{aligned}
+        L&=\displaystyle\intop_0^2\left(-4x^3+8x^2\right)\\
+        &=\left[-x^4+\dfrac83x^3\right]_0^2\\
+        &=\left[-2^4+\dfrac83(2)^3\right]-\left[-0^4+\dfrac83(0)^3\right]\\
+        &=\left[-16+\dfrac83(8)\right]-\left[0+\dfrac83(0)\right]\\
+        &=\left[-16+\dfrac{64}3\right]-\left[0\right]\\
+        &=\boxed{\boxed{\dfrac{16}3}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, luas daerah yang diarsir adalah \(\dfrac{16}3\) satuan luas.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div id="3" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Luas daerah yang dibatasi oleh kurva <e><em>y</em> = <em>x</em><sup>2</sup> + 1</e>, <e><em>x</em> = 2</e>, sumbu <em>y</em>, dan sumbu <em>x</em> adalah .... satuan luas.<br />
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">2</li>
+        <li class="pas2 pb">\(\dfrac83\)</li>
+        <li class="pas2">4</li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">\(\dfrac{13}3\)</li>
+        <li class="pas2">\(\dfrac{14}3\)</li>
+        </ol></div></div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">
+              <div id="tempatsvg3" class="tengah"></div>
+              <script>
+                var a3 = 3;
+            document.getElementById("tempatsvg3").innerHTML = String.raw`${svgkoord([-1,3],[-1,6],{rasio:a3,ukuranhuruf:2})}
+            ${svgkfungkuad(koef=[1,0,1],intervalx=[-1,3],opsi={rasio:a3})}
+            ${svgkareakurvaL(function(x){return x*x+1},interval=[0,2],iterasi=150,opsi={rasio:a3,isi:"red"})}
+            ${svgkgaris(garis=[[2,-1],[2,6]],opsi={tebalgaris:2/a3})}
+            </svg>`
+              </script>
+              \(\begin{aligned}
+        L&=\displaystyle\intop_0^2\left(x^2+1\right)\ dx\\
+        &=\left[\dfrac13x^3+x\right]_0^2\\
+        &=\left[\dfrac13(2)^3+2\right]-\left[\dfrac13(0)^3+0\right]\\
+        &=\left[\dfrac13(8)+2\right]-\left[0+0\right]\\
+        &=\left[\dfrac83+2\right]-0\\
+        &=\boxed{\boxed{\dfrac{14}3}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah \(\dfrac{14}3\) satuan luas.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div id="4" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          <div id="tempatsvg4" class="tengah"></div>
+          Luas daerah yang diarsir pada gambar di atas adalah<br />
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">\(\dfrac54\)</li>
+        <li class="pb">\(\dfrac65\)</li>
+        <li>\(\dfrac76\)</li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">\(\dfrac87\)</li>
+        <li>1</li>
+        </ol></div></div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">kita bagi menjadi dua daerah seperti pada gambar berikut:
+              <div id="tempatsvg5" class="tengah"></div>
+        Luas daerah I<br />
+        \(\begin{aligned}
+        L_1&=\displaystyle\intop_0^1\sqrt{x}\ dx\\
+        &=\displaystyle\intop_0^1x^{\frac12}\ dx\\
+        &=\left[\dfrac23x^{\frac32}\right]_0^1\\
+        &=\dfrac23\left[x\sqrt{x}\right]_0^1\\
+        &=\dfrac23\left[1\sqrt1-0\sqrt0\right]\\
+        &=\dfrac23
+        \end{aligned}\)<br />
+        <br />
+        Luas daerah 2<br />
+        \(\begin{aligned}
+        L_2&=\dfrac12\cdot1\cdot1\\
+        &=\dfrac12
+        \end{aligned}\)<br />
+        <br />
+        Luas keseluruhan,<br />
+        \(\begin{aligned}
+        L&=L_1+L_2\\
+        &=\dfrac23+\dfrac12\\
+        &=\boxed{\boxed{\dfrac76}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah \(\dfrac76\) satuan luas.<br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        <script>
+          var a4 = [1,5];
+          document.getElementById("tempatsvg4").innerHTML = String.raw`${svgkoord([-1,3],[-2,2],{rasio:a4[1],ukuranhuruf:2,wm:true,wmsize:1.7,wmtampak:0.2})}
+          ${svgkareakurvaL(function(x){return Math.sqrt(x)},[0,1],50,{warnagaris:"none",isi:"yellow",tampakisi:0.6})}
+          ${svgkareakurvaL(function(x){return 2-x},[1,2],50,{warnagaris:"none",isi:"yellow",tampakisi:0.6})}
+          ${svgkkurvaL(function(x){return Math.sqrt(x)},[0,1],50,{warnagaris:"blue",tebalgaris:2/a4[1]})}
+          ${svgkkurvaL(function(x){return -Math.sqrt(x)},[0,1],50,{warnagaris:"blue",tebalgaris:2/a4[1]})}
+          ${svgkgaris([[1,1],[2,0]],{warna:"blue",tebalgaris:2/a4[1]})}
+          ${svgklabeltitik([1,-1],"&#119909; = &#119910;&sup2;",{rasio:a4[1],ukuran:1.2,baseline:"mathematical",xplus:5})}
+          </svg>`;
+          document.getElementById("tempatsvg5").innerHTML = String.raw`${svgkoord([-1,3],[-2,2],{rasio:a4[1],ukuranhuruf:2,wm:true,wmsize:1.7,wmtampak:0.2})}
+          ${svgkareakurvaL(function(x){return Math.sqrt(x)},[0,1],50,{warnagaris:"none",isi:"yellow",tampakisi:0.6})}
+          ${svgkareakurvaL(function(x){return 2-x},[1,2],50,{warnagaris:"none",isi:"yellow",tampakisi:0.6})}
+          ${svgkkurvaL(function(x){return Math.sqrt(x)},[0,1],50,{warnagaris:"blue",tebalgaris:2/a4[1]})}
+          ${svgkkurvaL(function(x){return -Math.sqrt(x)},[0,1],50,{warnagaris:"blue",tebalgaris:2/a4[1]})}
+          ${svgkgaris([[1,1],[2,0]],{warna:"blue",tebalgaris:2/a4[1]})}
+          ${svgklabeltitik([1,-1],"&#119909; = &#119910;&sup2;",{rasio:a4[1],ukuran:1.2,baseline:"mathematical",xplus:5})}
+          ${svgkgaris([[1,0],[1,1]],{warna:"blue",tebalgaris:2/a4[1],dash:0.1})}
+          <text x="0.7"  y="-0.3"  text-anchor="middle" dominant-baseline="central" style="font-family:'Times New Roman', Times, serif; font-size:${0.7*2/(a4[1]*16)}em">I</text>
+          <text x="1.3"  y="-0.3"  text-anchor="middle" dominant-baseline="central" style="font-family:'Times New Roman', Times, serif; font-size:${0.7*2/(a4[1]*16)}em">II</text>
+          </svg>`;
+        </script>
+</div>
+        
+        <div id="5" class="justify"><h3><span class="w3-badge w3-red nomor"></span></h3><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-UsXWv1BY6IE/XGnpT-EF2FI/AAAAAAAAAy8/Z0pg6lgopJUg5i9zZ065aHtJVuJogYB1wCLcBGAs/s1600/2019-02-18_6-05-18.jpg" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="338" data-original-width="723" height="93" src="https://1.bp.blogspot.com/-UsXWv1BY6IE/XGnpT-EF2FI/AAAAAAAAAy8/Z0pg6lgopJUg5i9zZ065aHtJVuJogYB1wCLcBGAs/s200/2019-02-18_6-05-18.jpg" width="200" /></a></div>Luas daerah yang diarsir pada gambar adalah<br />
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">\(10\dfrac13\)</li>
+        <li class="pb">\(10\dfrac23\)</li>
+        <li>11</li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">\(12\dfrac13\)</li>
+        <li>\(12\dfrac23\)</li>
+        </ol></div></div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        L&=\displaystyle\intop_0^4\left(2x-\left(x^2-2x\right)\right)\ dx\\
+        &=\displaystyle\intop_0^4\left(2x-x^2+2x\right)\ dx\\
+        &=\displaystyle\intop_0^4\left(-x^2+4x\right)\ dx\\
+        &=\left[-\dfrac13x^3+2x^2\right]_0^4\\
+        &=\left[-\dfrac13(4)^3+2(4)^2\right]-\left[-\dfrac13(0)^3+(0)^2\right]\\
+        &=\left[-\dfrac{64}3+32\right]-0\\
+        &=-21\dfrac13+32\\
+        &=11-\dfrac13\\
+        &=\boxed{\boxed{10\dfrac23}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah \(10\dfrac23\) satuan luas.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div id="6" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Luas daerah antara kurva <e><em>y</em> = &minus;<em>x</em><sup>3</sup> &minus; <em>x</em><sup>2</sup> + 2<em>x</em></e> dengan sumbu <em>x</em> adalah<br />
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">\(\dfrac{40}{12}\) satuan luas</li>
+        <li class="pb">\(\dfrac{39}{12}\) satuan luas</li>
+        <li>\(\dfrac{37}{12}\) satuan luas</li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">\(\dfrac{29}{12}\) satuan luas</li>
+        <li>\(\dfrac{15}{12}\) satuan luas</li>
+        </ol></div></div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">Titik potong kurva terhadap sumbu <em>x</em><br />
+        \(\begin{aligned}
+        -x^3-x^2+2x&=0\\
+        -x\left(x^2+x-2\right)&=0\\
+        -x(x+2)(x-1)&=0
+        \end{aligned}\)<br />
+        <e><em>x</em> = 0</e>, <e><em>x</em> = &minus;2</e>, <e><em>x</em> = 1</e><br />
+        <div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-j_08ih1iq3Q/XGom2VOsqnI/AAAAAAAAAzU/NcrkpHMioqkSLhD0bl_2a_qeQa0TCEf7ACLcBGAs/s1600/2019-02-18_10-27-13.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="307" data-original-width="295" height="200" src="https://3.bp.blogspot.com/-j_08ih1iq3Q/XGom2VOsqnI/AAAAAAAAAzU/NcrkpHMioqkSLhD0bl_2a_qeQa0TCEf7ACLcBGAs/s200/2019-02-18_10-27-13.jpg" width="192" /></a></div>Ada 2 daerah, yaitu dari <e><em>x</em> = &minus;2</e> sampai <e><em>x</em> = 0</e>, dan dari <e><em>x</em> = 0</e> sampai <e><em>x</em> = 1</e>.<br />
+        <br />
+        <h1>Luas daerah 1</h1>karena daerahnya berada di bawah sumbu <em>x</em>, maka kita gunakan tanda negatif sebelum tanda integral.<br />
+        \(\begin{aligned}
+        L_1&=-\displaystyle\intop_{-2}^0\left(-x^3-x^2+2x\right)\ dx\\
+        &=-\left[-\dfrac14x^4-\dfrac13x^3+x^2\right]_{-2}^0\\
+        &=-\left[\left(-\dfrac14(0)^4-\dfrac13(0)^3+0^2\right)-\left(-\dfrac14(-2)^4-\dfrac13(-2)^3+(-2)^2\right)\right]\\
+        &=-\left[\left(-\dfrac14(0)-\dfrac13(0)+0\right)-\left(-\dfrac14(16)-\dfrac13(-8)+4\right)\right]\\
+        &=-\left[\left(0-0+0\right)-\left(-4+\dfrac83+4\right)\right]\\
+        &=-\left[0-\dfrac83\right]\\
+        &=\dfrac83
+        \end{aligned}\)<br />
+        <br />
+        <h1>Luas daerah 2</h1>\(\begin{aligned}
+        L_1&=\displaystyle\intop_0^1\left(-x^3-x^2+2x\right)\ dx\\
+        &=\left[-\dfrac14x^4-\dfrac13x^3+x^2\right]_0^1\\
+        &=\left[-\dfrac14(1)^4-\dfrac13(1)^3+1^2\right]-\left[-\dfrac14(0)^4-\dfrac13(0)^3+0^2\right]\\
+        &=\left[-\dfrac14-\dfrac13+1\right]-\left[0\right]\\
+        &=\dfrac5{12}
+        \end{aligned}\)<br />
+        <br />
+        <h1>Luas keseluruhan</h1>\(\begin{aligned}
+        L&=L_1+L_2\\
+        &=\dfrac83+\dfrac5{12}\\
+        &=\boxed{\boxed{\dfrac{37}{12}}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah \(\dfrac{37}{12}\) satuan luas.<br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div id="7" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Luas daerah yang dibatasi oleh kurva <e><em>y</em> = <em>x</em><sup>2</sup> &minus; 4<em>x</em> + 3</e>, sumbu <em>x</em> dan sumbu <em>y</em> adalah .... satuan luas.<br />
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">\(\dfrac13\)</li>
+        <li class="pb">2</li>
+        <li>\(\dfrac43\)</li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">1</li>
+        <li>\(\dfrac53\)</li>
+        </ol></div></div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">Titik potong kurva dengan sumbu <em>x</em><br />
+        \(\begin{aligned}
+        x^2-4x+3&=0\\
+        (x-1)(x-3)&=0
+        \end{aligned}\)<br />
+        <e><em>x</em> = 1</e> dan <e><em>x</em> = 3</e><br />
+        <div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-5NMAlEgQqtQ/XG43_GY4gKI/AAAAAAAAAzs/YQThnUorBsUf-b7SsegdkfeHKGT6zebwgCLcBGAs/s1600/2019-02-21_12-15-46.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="458" data-original-width="380" height="200" src="https://4.bp.blogspot.com/-5NMAlEgQqtQ/XG43_GY4gKI/AAAAAAAAAzs/YQThnUorBsUf-b7SsegdkfeHKGT6zebwgCLcBGAs/s200/2019-02-21_12-15-46.jpg" width="166" /></a></div>\(\begin{aligned}
+        L&=\displaystyle\intop_0^1\left(x^2-4x+3\right)\ dx\\
+        &=\left[\dfrac13x^3-2x^2+3x\right]_0^1\\
+        &=\left[\dfrac13(1)^3-2(1)^2+3(1)\right]-\left[\dfrac13(0)^3-2(0)^2+3(0)\right]\\
+        &=\dfrac13-2+3\\
+        &=\boxed{\boxed{\dfrac43}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah \(\dfrac43\) satuan luas.<br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div id="8" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3><div class="w3-row"><div class="col-md-4"><a href="https://3.bp.blogspot.com/-KBeeoSeXrhU/XHAGLcA0H4I/AAAAAAAAA1k/JxtCZJJLdMUZbLiLvwQu8jFBxo7aXYsswCLcBGAs/s1600/2019-02-22_21-19-39.jpg"><img border="0" data-original-height="297" data-original-width="577" height="103" src="https://3.bp.blogspot.com/-KBeeoSeXrhU/XHAGLcA0H4I/AAAAAAAAA1k/JxtCZJJLdMUZbLiLvwQu8jFBxo7aXYsswCLcBGAs/s200/2019-02-22_21-19-39.jpg" width="200" /></a><br />
+        </div><div class="col-md-8">Luas daerah yang diarsir pada gambar di samping ini adalah .... satuan luas.<br />
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">2</li>
+        <li class="pb">\(2\dfrac12\)</li>
+        <li>\(2\dfrac23\)</li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">4</li>
+        <li>\(4\dfrac13\)</li>
+        </ol></div></div></div></div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><h1>CARA 1</h1>Fungsi kuadrat tersebut mempunyai titik puncak di <e>(3, 0)</e>.<br />
+        \(\begin{aligned}
+        y&=a\left(x-x_p\right)^2+y_p\\
+        &=a\left(x-3\right)^2+0\\
+        &=a\left(x-3\right)^2
+        \end{aligned}\)<br />
+        <br />
+        Melalui <e>(0, 2)</e>,<br />
+        \(\begin{aligned}
+        2&=a\left(0-3\right)^2\\
+        2&=a\left(-3\right)^2\\
+        2&=a\left(9\right)\\
+        a&=\dfrac29
+        \end{aligned}\)<br />
+        Substitusikan ke persamaan awal,<br />
+        \(y=\dfrac29(x-3)^2\)<br />
+        <br />
+        Luas daerahnya,<br />
+        \(\begin{aligned}
+        L&=\displaystyle\intop_0^3\left(\dfrac29(x-3)^2\right)\ dx\\
+        &=\left[\dfrac29\cdot\dfrac13(x-3)^3\right]_0^3\\[8pt]
+        &=\dfrac2{27}\left[(x-3)^3\right]_0^3\\[8pt]
+        &=\dfrac2{27}\left[(3-3)^3-(0-3)^3\right]\\[8pt]
+        &=\dfrac2{27}\left[0^3-(-3)^3\right]\\[8pt]
+        &=\dfrac2{27}\left[0-(-27)\right]\\[8pt]
+        &=\dfrac2{27}\left[0+27\right]\\[8pt]
+        &=\dfrac2{27}\left[27\right]\\
+        &=\boxed{\boxed{2}}
+        \end{aligned}\)<br />
+        <br />
+        <h1>CARA 2</h1>\(\begin{aligned}
+        L&=\dfrac{2\cdot3}3\\
+        &=\boxed{\boxed{2}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah 2 satuan luas.<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+          </div>
+        
+        <div id="9" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Luas daerah yang diarsir pada gambar di bawah ini adalah ....
+          <div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-Oh5JId-xU7U/X3eoHpHpX_I/AAAAAAAAPpw/Nd_7qZ7J4gsJyDBgENUVKwp4HBXIJU5aACLcBGAsYHQ/s691/Screenshot%2B2020-10-03%2B052125.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="514" data-original-width="691" src="https://1.bp.blogspot.com/-Oh5JId-xU7U/X3eoHpHpX_I/AAAAAAAAPpw/Nd_7qZ7J4gsJyDBgENUVKwp4HBXIJU5aACLcBGAsYHQ/s320/Screenshot%2B2020-10-03%2B052125.png"/></a></div>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">SKB CPNS MATEMATIKA 2020</div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo"><h1>CARA BIASA</h1>
+          <h2>Titik Potong Kedua Kurva</h2>
+          \(\eqalign{
+          3x-x^2&=-x+3\\
+          3x-x^2+x-3&=0\\
+          -x^2+4x-3&=0\\
+          x^2-4x+3&=0\\
+          (x-1)(x-3)&=0
+          }\)<br>
+          <e><em>x</em> = 1</e> dan <e><em>x</em> = 3</e><br>
+          <h2>Luas Daerah</h2>
+          \(\eqalign{
+          L&=\displaystyle\intop_1^3\left(3x-x^2\right)-(-x+3)\ dx\\
+          &=\displaystyle\intop_1^33x-x^2+x-3\ dx\\
+          &=\displaystyle\intop_1^3-x^2+4x-3\ dx\\
+          &=\left[-\dfrac13x^3+2x^2-3x\right]_1^3\\
+          &=\left[-\dfrac13(3)^3+2(3)^2-3(3)\right]-\left[-\dfrac13(1)^3+2(1)^2-3(1)\right]\\
+          &=\left[-9+18-9\right]-\left[-\dfrac13+2-3\right]\\
+          &=[0]-\left[-1\dfrac13\right]\\
+          &=\boxed{\boxed{1\dfrac13}}
+          }\)<br>
+          <h1>CARA CEPAT</h1>
+          \(\eqalign{
+          3x-x^2-(-x+3)&=3x-x^2+x-3\\
+          &=-x^2+4x-3
+          }\)<br>
+          <e><em>a</em> = &minus;1</e>, <e><em>b</em> = 4</e>, <e><em>c</em> = &minus;3</e><br><br>
+          \(\eqalign{
+          D&=b^2-4ac\\
+          &=4^2-4(-1)(-3)\\
+          &=16-12\\
+          &=4
+          }\)<br><br>
+          \(\eqalign{
+          L&=\dfrac{D\sqrt{D}}{6a^2}\\
+          &=\dfrac{4\sqrt4}{6(-1)^2}\\
+          &=\dfrac86\\
+          &=\dfrac43\\
+          &=\boxed{\boxed{1\dfrac13}}
+          }\)</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah \(1\dfrac13\) satuan luas.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+        
+        <div class="justify" id="10">
+          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Sketch the curve and find the total area between the curve and the given interval on the <em>x</em>-axis<br>
+          \(y=\sqrt{x+1}-1\); <e>[-1, 1]</e>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://brainly.co.id/tugas/35611838" target="_blank">brainly.co.id</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo"><div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-xn_E3GBh_Ek/X6nrXz73klI/AAAAAAAAo-Y/1RcbJNkcCCYz6WIoBCQUR711hyTYhxWMgCLcBGAsYHQ/s479/Screenshot%2B2020-11-10%2B080343.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="368" data-original-width="479" src="https://1.bp.blogspot.com/-xn_E3GBh_Ek/X6nrXz73klI/AAAAAAAAo-Y/1RcbJNkcCCYz6WIoBCQUR711hyTYhxWMgCLcBGAsYHQ/s320/Screenshot%2B2020-11-10%2B080343.png"/></a></div>
+              \(\eqalign{
+              L_1&=-\displaystyle\intop_{-1}^0\left(\sqrt{x+1}-1\right)\ dx\\
+              &=-\displaystyle\intop_{-1}^0\left((x+1)^{\frac12}-1\right)\ d(x+1)\\
+              &=-\left[\dfrac23(x+1)^{\frac32}-x\right]_{-1}^0\\
+              &=-\left[\left(\dfrac23(0+1)^{\frac32}-0\right)-\left(\dfrac23(-1+1)^{\frac32}-(-1)\right)\right]\\
+              &=-\left[\left(\dfrac23(1)^{\frac32}\right)-\left(\dfrac23(0)^{\frac32}+1\right)\right]\\
+              &=-\left[\dfrac23-1\right]\\
+              &=-\left[-\dfrac13\right]\\
+              &=\dfrac13
+              }\)<br><br>
+              \(\eqalign{
+              L_2&=\displaystyle\intop_0^1\left(\sqrt{x+1}-1\right)\ dx\\
+              &=\displaystyle\intop_0^1\left((x+1)^{\frac12}-1\right)\ d(x+1)\\
+              &=\left[\dfrac23(x+1)^{\frac32}-x\right]_0^1\\
+              &=\left(\dfrac23(1+1)^{\frac32}-1\right)-\left(\dfrac23(0+1)^{\frac32}-0\right)\\
+              &=\left(\dfrac23(2)^{\frac32}-1\right)-\left(\dfrac23(1)^{\frac32}\right)\\
+              &=\left(\dfrac23\left(2\sqrt2\right)-1\right)-\left(\dfrac23\right)\\
+              &=\dfrac43\sqrt2-1-\dfrac23\\
+              &=\dfrac43\sqrt2-\dfrac53
+              }\)<br><br>
+              \({L=L_1+L_2=\dfrac13+\dfrac43\sqrt2-\dfrac53=\boxed{\boxed{\dfrac43\sqrt2-\dfrac43}}}\)</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, the total area between the curve and the given interval on the <em>x</em>-axis is \(\dfrac43\sqrt2-\dfrac43\)<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+
+        
+        <br />
+        LIHAT JUGA:<br />
+        <a class="btn btn-success" href="https://matematika.zone.id/2017/05/integral-tentu-soal-dan-pembahasan.html">INTEGRAL TENTU</a> <a class="btn btn-success" href="https://matematika.zone.id/2019/02/integral-tak-tentu-soal-dan-pembahasan.html">INTEGRAL TAK TENTU</a><br />
+        <br>
+      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+      <br>   
+<script>soal(luda,1,1)</script>        
+   </body>
+</html> 

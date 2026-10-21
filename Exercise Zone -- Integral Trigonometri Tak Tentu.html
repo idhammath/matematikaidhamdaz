@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>Exercise Zone : Integral Trigonometri Tak Tentu</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../katex/katex.css">
+      <script src="../katex/katex.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="templatestyle.css">
+  <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+      <script src="../matematikin.js"></script>
+   </head> 
+     <body> 
+      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Integral Trigonometri Tak Tentu</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+      <h3>Tipe: </h3>
+      <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
+      <br>
+      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+      <br>
+
+        <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Hasil dari <m>\displaystyle\int\sin^3x\ dx</m> adalah ....
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb"><m>{-\dfrac13\cos^3x+C}</m></li>
+        <li class="pb"><m>{-\cos x-\dfrac13\sin^3x+C}</m><br />
+        </li>
+        <li><m>{\cos x-\dfrac13\sin^3x+C}</m><br />
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb"><m>{-\cos x+\dfrac13\cos^3x+C}</m></li>
+        <li><m>{-\dfrac13\sin^3x+C}</m><br />
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        \displaystyle\int\sin^3x\ dx&amp;=\displaystyle\int\sin x\sin^2x\ dx\\
+        &amp;=\displaystyle\int\sin x\left(1-\cos^2x\right)\ dx\\
+        &amp;=\displaystyle\int\left(\sin x-\sin x\cos^2x\right)\ dx\\
+        &amp;=\displaystyle\int \sin x\ dx-\displaystyle\int\sin x\cos^2x\ dx\\
+        \end{aligned}
+        Misal
+        \begin{aligned}
+        u&amp;=\cos x\\
+        du&amp;=-\sin x\ dx\\
+        dx&amp;=\dfrac{du}{-\sin x}
+        \end{aligned}
+        \begin{aligned}
+        \displaystyle\int \sin x\ dx-\displaystyle\int\sin x\cos^2x\ dx&amp;=-\cos x-\displaystyle\int\sin x\cdot u^2\ \dfrac{du}{-\sin x}\\[8pt]
+        &amp;=-\cos x+\displaystyle\int u^2\ du\\
+        &amp;=-\cos x+\dfrac13u^3+C\\
+        &amp;=\boxed{\boxed{-\cos x+\dfrac13\cos^3x+C}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\int\sin^3x\ dx=-\cos x+\dfrac13\cos^3x+C</m>.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3><z>\displaystyle\int\sin x\left(1-\sin^2x\right)\ dx=....</z> 
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb"><m>{\cos x-\dfrac13\cos^3x+C}</m></li>
+        <li class="pb"><m>{\cos x-\dfrac13\sin^3x+C}</m><br />
+        </li>
+        <li><m>{-\dfrac13\cos^3x+C}</m><br />
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb"><m>{-\dfrac13\sin^3x+C}</m></li>
+        <li><m>{-\cos x-\dfrac13\sin^3x+C}</m><br />
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><m>\displaystyle\int\sin x\left(1-\sin^2x\right)\ dx=\displaystyle\int\sin x\cos^2x\ dx</m><br />
+        Misal
+        \begin{aligned}
+        u&amp;=\cos x\\
+        du&amp;=-\sin x\ dx\\
+        dx&amp;=\dfrac{du}{-\sin x}
+        \end{aligned}
+        \begin{aligned}
+        \displaystyle\int\sin x\cos^2x\ dx&=\displaystyle\int\sin x\cdot u^2\ \dfrac{du}{-\sin x}\\[8pt]
+        &=-\displaystyle\int\cdot u^2\ du\\
+        &=-\dfrac13u^3+C\\
+        &=\boxed{\boxed{-\dfrac13\cos^3x+C}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\int\sin x\left(1-\sin^2x\right)\ dx=-\dfrac13\cos^3x+C</m>.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          <z>\displaystyle\int6\sec^2(2\pi-4x)\ dx=...</z> 
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">SKB CPNS MATEMATIKA 2020</div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">\begin{aligned}
+              \displaystyle\int6\sec^2(2\pi-4x)\ dx&=6\cdot\dfrac1{-4}\tan(2\pi-4x)+C\\
+          &=\boxed{\boxed{-\dfrac32\tan(2\pi-4x)+C}}
+              \end{aligned}</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\int6\sec^2(2\pi-4x)\ dx=-\dfrac32\tan(2\pi-4x)+C</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+
+        <br>
+      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+      <br>
+      <script>soal(inttritat,1,1)</script>
+   </body>
+</html> 

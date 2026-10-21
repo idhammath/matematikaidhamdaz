@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HOTS Zone : Modulo</title> 
+    <script defer src="../mathjax/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="templatestyle.css">
+<link rel="stylesheet" href="gaya.css">
+    <script src="skrip.js"></script>
+    <script src="../matematikin.js"></script>
+<!--link rel="stylesheet" href="style.css"-->
+<style>body{
+font-family: roboto,sans-serif;   
+}</style>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><br>
+
+<div class="w3-container" style="background-color: papayawhip">
+  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Modulo</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+
+  <h3>Tipe: </h3>
+  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+
+  <div id="1" class="justify">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Berapa sisa <e>5<sup>2021</sup> + 11<sup>2022</sup></e> dibagi oleh 64?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">
+          &phi;(64) = 32
+          \begin{aligned}
+            5^{2021}+11^{2022}\pmod {64}&=5^{2021\pmod{32}}+11^{2022\pmod{32}}&\pmod {64}\\
+            &=5^5+11^6&\pmod {64}\\
+            &=5^3\cdot5^2+\left(11^2\right)^3&\pmod {64}\\
+            &=125\cdot25+\left(121\right)^3&\pmod {64}\\
+            &=(-3)\cdot25+\left(-7\right)^3&\pmod {64}\\
+            &=-75-343&\pmod {64}\\
+            &=-11-23&\pmod {64}\\
+            &=-34&\pmod {64}\\
+            &=\boxed{\boxed{30}}&\pmod {64}
+            \end{aligned}</div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, sisa <e>5<sup>2021</sup> + 11<sup>2022</sup></e> dibagi oleh 64 adalah 4.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="2">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Tentukan angka satuan dari bilangan <e>(2023! + 2023)<sup>2023</sup> &times; 2023<sup>2023! + 2023</sup>.</e>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://ktom-tomi.or.id" target="_blank" rel="noopener noreferrer">KTOM September 2023</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Untuk <em>n</em> &geq; 5, <e><em>n</em>! mod 10 &equiv; 0 mod 10</e>.<br>
+          \(\varphi(10)=10\left(1-\dfrac12\right)\left(1-\dfrac15\right)=10\left(\dfrac12\right)\left(\dfrac45\right)=4\) <br>
+          2023 &equiv; 3 mod 4 <br>
+          2023! &equiv; 0 mod 4 <br><br>
+          \(\begin{aligned}
+          \left(2023!+2023\right)^{2023}\times2023^{2023!+2023}&\equiv3^3\times3^3\pmod{10}\\
+          &\equiv27\times27\pmod{10}\\
+          &\equiv7\times7\pmod{10}\\
+          &\equiv49\pmod{10}\\
+          &\equiv9\pmod{10}\\
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, angka satuan dari bilangan <e>(2023! + 2023)<sup>2023</sup> &times; 2023<sup>2023! + 2023</sup></e> adalah 9.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="3">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Jumlah lima digit terakhir dari 20! adalah .....
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://forummatematika.freeforums.net/" target="_blank" rel="noopener noreferrer">Forum Matematika</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">
+          \(\left\lfloor\dfrac{20}2\right\rfloor+\left\lfloor\dfrac{20}{2^2}\right\rfloor+\left\lfloor\dfrac{20}{2^3}\right\rfloor+\left\lfloor\dfrac{20}{2^4}\right\rfloor=18\) <br><br>
+          \(\left\lfloor\dfrac{20}3\right\rfloor+\left\lfloor\dfrac{20}{3^2}\right\rfloor=8\) <br><br>
+          \(\left\lfloor\dfrac{20}5\right\rfloor=4\) <br><br>
+          \(\left\lfloor\dfrac{20}7\right\rfloor=2\) <br><br>
+          20! = 2<sup>18</sup> &sdot; 3<sup>8</sup> &sdot; 5<sup>4</sup> &sdot; 7<sup>2</sup> &sdot; 11 &sdot; 13 &sdot; 17 &sdot; 19 = 2<sup>4</sup> &sdot; 5<sup>4</sup> (2<sup>14</sup> &sdot; 3<sup>8</sup> &sdot; 7<sup>2</sup> &sdot; 11 &sdot; 13 &sdot; 17 &sdot; 19) <br>
+          Kita lihat bahwa 4 digit terakhir adalah 0, sehingga kita cukup mencari 1 digit terakhir dari <e>(2<sup>14</sup> &sdot; 3<sup>8</sup> &sdot; 7<sup>2</sup> &sdot; 11 &sdot; 13 &sdot; 17 &sdot; 19)</e>. <br>
+          \(\begin{aligned}
+          2^{14}\cdot3^8\cdot7^2\cdot11\cdot13\cdot17\cdot19&\equiv4\cdot1\cdot9\cdot1\cdot3\cdot7\cdot9&\pmod{10}\\
+          &\equiv4\cdot1\cdot(-1)\cdot1\cdot1\cdot(-1)&\pmod{10}\\
+          &\equiv4&\pmod{10}
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, jumlah lima digit terakhir dari 20! adalah 4.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="4">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    \[5^{\displaystyle\sum_{n=2023}^{3000}n}\mod1000\equiv....\]
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Facebook</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">3000 &minus; 2023 + 1 = 978 <br><br>
+          \(\begin{aligned}
+          5^{\displaystyle\sum_{n=2023}^{3000}n}\mod1000&\equiv5^{\frac{978}2(2023+3000)}\mod1000\\
+          &\equiv5^{489\cdot5023}\mod\left(5^3\cdot8\right)\\
+          &\equiv5^3\left(5^{489\cdot5023-3}\mod8\right)\mod1000
+          \end{aligned}\) <br><br>
+          φ(8) = 4 <br><br>
+          \(\begin{aligned}
+          (489\cdot5023-3)\mod4&\equiv(1\cdot3-3)\mod4\\
+          &\equiv0\mod4
+          \end{aligned}\) <br><br>
+          \(\begin{aligned}
+          5^3\left(5^{489\cdot5023-3}\mod8\right)\mod1000&\equiv5^3\left(1\mod8\right)\mod1000\\
+          &\equiv \color{blue}\boxed{\boxed{\color{black}125\mod1000}}
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, $5^{\displaystyle\sum_{n=2023}^{3000}n}\mod1000\equiv125\mod1000$.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="5">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Tentukan sisa pembagian <e>1 + 3<sup>3</sup> + 5<sup>5</sup> + 7<sup>7</sup> + &ctdot; + 1023<sup>1023</sup></e> oleh 1024.
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">&phi;(2<sup><em>n</em></sup>) = 2<sup><em>n</em> &minus; 1</sup> &rarr; &phi;(1024) = 512 <br><br>
+          \(\begin{aligned}
+          1+3^3+5^5+\cdots+1023^{1023}&\equiv 1+3^3+5^5+\cdots+511^{511}+513+515^3+517^5+\cdots+1023^{511}\pmod{1024}\\
+          &\equiv 1+3^3+5^5+\cdots+511^{511}+(512+1)+(512+3)^3+(512+5)^5+\cdots+(512+511)^{511}\pmod{1024}\\
+          &\equiv 1+3^3+5^5+\cdots+511^{511}+512+1+3\cdot512+3^3+5\cdot512+5^5+\cdots+511\cdot512+511^{511}\pmod{1024}\\
+          &\equiv 2\left(1+3^3+5^5+\cdots+511^{511}\right)+512(1+3+5+\cdots+511)\pmod{1024}\\
+          &\equiv 2\left(1+3^3+5^5+\cdots+511^{511}\right)\pmod{1024}\\
+          &\equiv 2\left(1+3^3+5^5+\cdots+511^{511}\pmod{512}\right)\pmod{1024}\\
+          &\equiv 2\left(2\left(1+3^3+5^5+\cdots+255^{255}\pmod{256}\right)\pmod{512}\right)\pmod{1024}\\
+          &\equiv \cdots\\
+          &\equiv 2\left(2\left(\cdots\left(2\left(1+3^3\pmod{4}\right)\pmod{8}\right)\cdots\right)\pmod{512}\right)\pmod{1024}\\
+          &\equiv 2\left(2\left(\cdots\left(2\left(0\pmod{4}\right)\pmod{8}\right)\cdots\right)\pmod{512}\right)\pmod{1024}\\
+          &\equiv 0\pmod{1024}\\
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, sisa pembagian <e>1 + 3<sup>3</sup> + 5<sup>5</sup> + 7<sup>7</sup> + &ctdot; + 1023<sup>1023</sup></e> oleh 1024 adalah 0.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="6">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Berapakah sisa pembagian 43<sup>43<sup>43</sup></sup> oleh 100 ?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://forummatematika.freeforums.net/thread/38/" target="_blank" rel="noopener noreferrer">OSP SMA 2002</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">$\varphi(100)=100\left(1-\dfrac12\right)\left(1-\dfrac15\right)=40$ <br>
+          $\varphi(40)=40\left(1-\dfrac12\right)\left(1-\dfrac15\right)=16$ <br>
+          43 mod 16 &equiv; 11 mod 16 <br>
+          \(\begin{aligned}
+          3^{11}\mod40&\equiv \left(\left(3^4\right)^2\cdot3^3\right)\mod40\\
+          &\equiv \left(\left(81\right)^2\cdot27\right)\mod40\\
+          &\equiv27\mod40
+          \end{aligned}\) <br><br>
+          \(\begin{aligned}
+          43^{27}\mod100&\equiv \left(\left(43^2\right)^{13}\cdot43\right)\mod100\\
+          &\equiv \left(\left(2\cdot4\cdot3\cdot10+3^2\right)^{13}\cdot43\right)\mod100\\
+          &\equiv \left(\left(49\right)^{13}\cdot43\right)\mod100\\
+          &\equiv \left(\left(-51\right)^{13}\cdot43\right)\mod100\\
+          &\equiv \left(\left((-51)^2\right)^6\cdot49\cdot43\right)\mod100\\
+          &\equiv \left(\left(2501\right)^6\cdot2107\right)\mod100\\
+          &\equiv 7\mod100\\
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, sisa pembagian 43<sup>43<sup>43</sup></sup> oleh 100 adalah 7.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="7">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Tentukan tiga digit terakhir dari 7<sup>8<sup>9<sup>10<sup>0</sup></sup></sup></sup>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">7<sup>8<sup>9<sup>10<sup>0</sup></sup></sup></sup> = 7<sup>8<sup>9</sup></sup> <br><br>
+          &phi;(1000) = 400 <br><br>
+          \(\begin{aligned}
+          8^9\mod(400)&\equiv\left(2^{27}\right)\mod\left(2^4\cdot25\right)\\
+          &\equiv2^4\left(2^{23}\mod(25)\right)\mod\left(400\right)
+          \end{aligned}\) <br><br>
+          &phi;(25) = 20 <br><br>
+          \(\begin{aligned}
+          2^4\left(2^{23}\mod(25)\right)\mod\left(400\right)&\equiv2^4\left(2^3\mod(25)\right)\mod\left(400\right)\\
+          &\equiv128\mod\left(400\right)
+          \end{aligned}\) <br><br>
+          \(\begin{aligned}
+          7^{128}\mod(1000)&\equiv\left(7^4\right)^{32}\mod(1000)\\
+          &\equiv\left(2401\right)^{32}\mod(1000)\\
+          &\equiv\left(401\right)^{32}\mod(1000)\\
+          &\equiv\left(4\cdot10^2+1\right)^{32}\mod(1000)\\
+          &\equiv\left(32\cdot4\cdot10^2+1\right)\mod(1000)\\
+          &\equiv\left(12800+1\right)\mod(1000)\\
+          &\equiv801\mod(1000)
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, tiga digit terakhir dari 7<sup>8<sup>9<sup>10<sup>0</sup></sup></sup></sup> adalah 801.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="8">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Olimpiade Kreativitas Siswa (OKSI) tingkat SMP yang diselenggarakan oleh OSIS SMA Negeri 2 lintongnihuta tahun 2024 dilaksanakan hari Sabtu tanggal 24 Februari tahun 2024. Jika 2024 hari lagi akan dilaksanakan kegiatan OKSI berikutnya, maka OKSI berikutnya akan dilaksanakan pada hari...
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li>Sabtu</li>
+          <li>Minggu</li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="3" type="A">
+          <li>Senin</li>
+          <li>Selasa</li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">OKSI SMAN 2 Lintongnihuta 2024</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Untuk menentukan hari apakah <em>n</em> hari lagi, kita dapat menentukan hari dengan membagi <em>n</em> dengan 7, karena ada 7 hari dalam seminggu, sehingga akan ada pengulangan hari setiap 7 hari. <br>
+          2024 = 7&times;289 + 1 <br>
+          2024 hari lagi sama dengan 1 hari setelah Sabtu yaitu Minggu.
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, OKSI berikutnya akan dilaksanakan pada hari Minggu.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="9">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Sisa pembagian 2024<sup>2024</sup> oleh <e>(1 + 4 + 4 + 5)</e> adalah ....
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Bimbel ADITYA</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><h1>CARA 1</h1>
+          \(\begin{aligned}
+        2024^{2024}\mod(1+4+4+5)&\equiv2024^{2024}\mod14\\
+        &=8^{2024}\mod14\\
+        &=\left(2^{2024}\cdot4^{2024}\right)\mod(2\cdot7)\\
+        &=2\left(\left(2^{2023}\cdot4^{2024}\right)\mod7\right)\mod14\\
+        &=2\left(\left(2\cdot4^2\right)\mod7\right)\mod14\\
+        &=2\left(32\mod7\right)\mod14\\
+        &=2\left(4\mod7\right)\mod14\\
+        &=\color{blue}\boxed{\boxed{\color{black}8\mod14}}
+        \end{aligned}\)
+        <h1>CARA 2</h1>
+        Perhatikan bahwa <e>8<sup>2</sup> &equiv; 8 mod 14,</e> sehingga <e>8<sup><em>n</em></sup> &equiv; 8 mod 14</e><br>
+        \(\begin{aligned}
+        2024^{2024}\mod14&\equiv8^{2024}\mod14\\
+        &=\color{blue}\boxed{\boxed{\color{black}8\mod14}}
+        \end{aligned}\)
+      </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, sisa pembagian 2024<sup>2024</sup> oleh <e>(1 + 4 + 4 + 5)</e> adalah 8.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="10">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Bilangan asli terkecil yang digit-digitnya adalah 5 dan 7 serta merupakan kelipatan 45 adalah ....
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM Februari 2024 tingkat SMA</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">45 = 5&sdot;9. <br>
+          Ciri bilangan kelipatan 5 adalah satuannya 0 atau 5. Karena digitnya hanya 5 dan 7, maka satuannya adalah 5. <br>
+          Ciri bilangan kelipatan 9 adalah jumlah semua digitnya adalah 9. <br>
+          Misal banyaknya digit 7 ada <em>a</em> buah, dan banyaknya digit 5 selain satuan ada <em>b</em> buah. <br>
+          7<em>a</em> + 5<em>b</em> &equiv; 4 mod 9 <br>
+          Jika <em>a</em> = 1, <br>
+          \(\begin{aligned}
+          7+5b&\equiv4\mod9\\
+          5b&\equiv-3\mod9\\
+          5b&\equiv15\mod9\\
+          b&\equiv3\mod9
+          \end{aligned}\) <br>
+          Bilangan terkecil dengan 4 digit 5, dan 1 digit 7 dengan satuannya 5 adalah 55575. <br><br>
+          Jika <em>a</em> = 2, agar memperoleh bilangan yang lebih kecil dari 55575, maka <e><em>b</em> &le; 2</e><br>
+          \(\begin{aligned}
+          14+5b&\equiv4\mod9\\
+          5b&\equiv-10\mod9\\
+          b&\equiv-2\mod9\\
+          b&\equiv7\mod9
+          \end{aligned}\) <br>
+          Bilangan yang bisa dibentuk pasti lebih dari 55575. <br><br>
+          Jika <em>a</em> = 3, agar memperoleh bilangan yang lebih kecil dari 55575, maka <e><em>b</em> = 0</e><br>
+          21 &equiv; 3 mod 9 &ne; 4 mod 9.
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, bilangan asli terkecil yang digit-digitnya adalah 5 dan 7 serta merupakan kelipatan 45 adalah 55575.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+  <script>soal(modulo,3,1)</script>
+</div>
+</body>
+</html> 
+<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>

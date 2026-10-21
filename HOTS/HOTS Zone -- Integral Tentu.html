@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>HOTS Zone : Integral Tentu</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="templatestyle.css">
+  <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+      <script src="../matematikin.js"></script>
+   </head> 
+     <body> <div class="w3-container">
+      <div class="separator w3-hide" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyKwRPzhCKztyAoxRVJXbP9XFaIAuEYOr8akhNkowshV8Xpvk90aZiZIOH9gE64gPw5f5Vfw1vamL4fHQ-xpIB4NyzYy7mhG8BjAn0C7A8IM5GFOH8_DFSDdmWIfXO6VzhBfY22YZw2xBNZ8W5nl-huyDtYvwgFnMnjq6LYRKG74RnOfipraHWD-FOTQ/s1080/INTEGRAL%20TENTU%20HOTS.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="200" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyKwRPzhCKztyAoxRVJXbP9XFaIAuEYOr8akhNkowshV8Xpvk90aZiZIOH9gE64gPw5f5Vfw1vamL4fHQ-xpIB4NyzYy7mhG8BjAn0C7A8IM5GFOH8_DFSDdmWIfXO6VzhBfY22YZw2xBNZ8W5nl-huyDtYvwgFnMnjq6LYRKG74RnOfipraHWD-FOTQ/s200/INTEGRAL%20TENTU%20HOTS.png"/></a></div>
+      Berikut ini adalah kumpulan soal mengenai integral tentu tipe HOTS. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://web.facebook.com/groups/matematikazoneid/" target="_blank">Facebook </a>atau <a href="https://t.me/matematikazoneidgrup" target="_blank">Telegram</a>.
+        <!--more-->
+        <h3>Tipe: </h3>
+        <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">Standar</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
+        <br>
+        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+        <br>
+        
+        <div class="justify" id="1">
+        <h3>
+        No. <span class="w3-badge w3-red nomor"></span></h3>
+        \[\displaystyle\intop_0^{\frac{\pi}2}\sqrt{1-\sin2020x}\ dx=....\] 
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+           <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+           <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">
+                 Misal 2020<em>x</em> = 4<em>kx</em> = <em>t</em><br>
+                 <em>dt</em> = 4<em>k</em> <em>dx</em> <br><br>
+                 \(\begin{aligned}
+               \displaystyle\intop_0^{\frac{\pi}2}\sqrt{1-\sin2016x}\ dx&=\displaystyle\intop_0^{\frac{\pi}2}\sqrt{1-\sin4kx}\ dx\\
+               &=\dfrac1{4k}\intop_0^{2k\pi}\sqrt{1-\sin t}\ dt\\
+               &=\frac{k}{4k}\intop_0^{2\pi}\sqrt{1-\sin t}\ dt&{\color{red}\text{karena }\sqrt{1-\sin t}\text{ mempunyai periode }2\pi}\\
+               &=\frac14\left(\intop_0^{\pi}\sqrt{1-\sin t}\ dt+\intop_{\pi}^{2\pi}\sqrt{1-\sin t}\ dt\right)\\
+               &=\frac14\left(2\intop_0^{\frac{\pi}2}\sqrt{1-\sin t}\ dt+2\intop_{\pi}^{\frac{3\pi}2}\sqrt{1-\sin t}\ dt\right)\\
+               &=\frac12\left(\intop_0^{\frac{\pi}2}\sqrt{1-\sin\left(0+\frac{\pi}2-x\right)}\ dt+2\intop_{\pi}^{\frac{3\pi}2}\sqrt{1-\sin\left(\pi+\frac{3\pi}2-x\right)}\ dt\right)&{\color{red}\intop_a^b f(x)\ dx=\intop_a^b f(a+b-x)\ dx}\\
+               &=\frac12\left(\intop_0^{\frac{\pi}2}\sqrt{1-\cos t}\ dt+2\intop_{\pi}^{\frac{3\pi}2}\sqrt{1-\cos t}\ dt\right)&{\color{red}\sin\left(\frac{\pi}2-\theta\right)=\cos \theta}\\
+               &=\frac12\left(\intop_0^{\frac{\pi}2}\sqrt2\sin\frac{t}2\ dt+\intop_{\pi}^{\frac{3\pi}2}\sqrt2\sin\frac{t}2\ dt\right)&{\color{red}\cos2\theta=1-\sin^2\theta}\\
+               &=\sqrt2\left(\left.\cos\frac{t}2\right|^0_{\frac{\pi}2}+\left.\cos\frac{t}2\right|^{\pi}_{\frac{3\pi}2}\right)&{\color{red}\int\sin\frac{\theta}2\ d\theta=-2\cos\frac{\theta}2+C}\\
+               &=\sqrt2\left(1-\frac1{\sqrt2}+0+\frac1{\sqrt2}\right)\\
+               &=\boxed{\boxed{\sqrt2}}
+              \end{aligned}\)</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\intop_0^{\frac{\pi}2}\sqrt{1-\sin2020x}\ dx=\sqrt2</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+           </div>
+        </details>
+        <hr>
+        </div>
+
+        <div class="justify" id="2">
+        <h3>
+        No. <span class="w3-badge w3-red nomor"></span></h3>
+        Misalkan fungsi <em>f</em> memenuhi
+        <te><em>x</em> = <em>f</em>(<em>x</em>)<em>e</em><sup><em>f</em>(<em>x</em>)</sup></te>
+        Nilai dari
+        \[\displaystyle\intop_0^ef(x)\ dx=\]
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+           <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+           <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">Untuk <em>x</em> = 0, <br>
+               \(\begin{aligned}
+        0&amp;=f(0)e^{f(0)}\\
+        f(0)&amp;=0
+        \end{aligned}\) <br><br>
+        Untuk <em>x</em> = <em>e</em>, <br>
+        \(\begin{aligned}
+        e&amp;=f(e)e^{f(e)}\\
+        f(e)&amp;=1
+        \end{aligned}\) <br><br>
+        \(\begin{aligned}
+        \displaystyle\intop_0^ef(x)\ dx&amp;=\displaystyle\intop_0^ef(x)\ d\left(f(x)e^{f(x)}\right)\\
+        &amp;=\displaystyle\intop_0^ef(x)\left(e^{f(x)}\ d\left(f(x)\right)+f(x)e^{f(x)}\ d\left(f(x)\right)\right)\\
+        &amp;=\displaystyle\intop_0^e\left(f(x)e^{f(x)}+f^2(x)e^{f(x)}\right)\ d\left(f(x)\right)\\
+        &amp;=\displaystyle\intop_0^e\left(ue^u+u^2e^u\right)\ du\\
+        &amp;=\left[\displaystyle\intop_0^eue^u\ du+u^2e^u-\displaystyle\intop_0^e2ue^u\ du\right]_0^e\\
+        &amp;=\left[u^2e^u-\displaystyle\intop_0^eue^u\ du\right]_0^e\\
+        &amp;=\left[u^2e^u-ue^u+e^u\right]_0^e\\
+        &amp;=\left[f^2(x)e^{f(x)}-f(x)e^{f(x)}+e^{f(x)}\right]_0^e\\
+        &amp;=\left[f^2(e)e^{f(e)}-f(e)e^{f(e)}+e^{f(e)}\right]-\left[f^2(0)e^{f(0)}-f(0)e^{f(0)}+e^{f(0)}\right]\\
+        &amp;=\left[(1)^2e^1-(1)e^1+e^1\right]-\left[(0)^2e^0-(0)e^0+e^0\right]\\
+        &amp;=\left[e-e+e\right]-\left[0-0+1\right]\\
+        &amp;=\boxed{\boxed{e-1}}
+        \end{aligned}\)</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\intop_0^ef(x)\ dx=e-1</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+           </div>
+        </details>
+        <hr>
+        </div>
+        
+        <br>
+        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+        <br>
+        <script>soal(intten,3,1)</script>
+      </div>
+   </body>
+</html> 

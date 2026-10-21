@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HOTS Zone : Poligon (Segi Banyak)</title> 
+    <script defer src="../mathjax/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="templatestyle.css">
+<link rel="stylesheet" href="gaya.css">
+    <script src="skrip.js"></script>
+    <script src="../matematikin.js"></script>
+<!--link rel="stylesheet" href="style.css"-->
+<style>body{
+font-family: roboto,sans-serif;   
+}</style>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><br>
+
+<div class="w3-container" style="background-color: papayawhip">
+  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Poligon</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+
+  <h3>Tipe: </h3>
+  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+
+  <div id="1" class="justify">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Berikut ini adalah gambar segi-8 beraturan.
+    <div id="temsvg1" class="w3-center"></div>
+    Berapa luas daerah yang diarir?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><div id="temsvg1a" class="w3-center"></div>
+        \begin{aligned}
+        L&=\dfrac14\times2\times2\\
+        &=\boxed{\boxed{1}}
+        \end{aligned}
+      </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, luas daerah yang diarir adalah 1.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+        var a1 = [1+Math.sqrt(2),1+Math.sqrt(2),100,0.2];
+        var tiA1 = [1/Math.sqrt(2),0];
+        var tiB1 = [tiA1[0]+1,0];
+        var tiC1 = [tiB1[0]+1/Math.sqrt(2),1/Math.sqrt(2)];
+        var tiD1 = [tiC1[0],tiC1[1]+1];
+        var tiE1 = [tiB1[0],tiD1[1]+1/Math.sqrt(2)];
+        var tiF1 = [tiA1[0],tiE1[1]];
+        var tiG1 = [0,tiD1[1]];
+        var tiH1 = [0,tiC1[1]];
+        var tiI1 = titikpotong([tiA1,tiD1],[tiB1,tiF1]);
+        var tiJ1 = titikpotong([tiA1,tiD1],[tiC1,tiF1])
+        var tiK1 = titikpotong([tiH1,tiD1],[tiB1,tiF1]);
+        var tiL1 = titikpotong([tiH1,tiD1],[tiC1,tiF1]);
+        var tiM1 = titikpotong([tiA1,tiD1],[tiB1,tiG1]);
+        var tiN1 = titikpotong([tiH1,tiE1],[tiC1,tiF1]);
+        var tiO1 = titikpotong([tiH1,tiE1],[tiB1,tiG1]);
+        var tiP1 = titikpotong([tiH1,tiE1],[tiB1,tiF1]);
+        var tiQ1 = titikpotong([tiH1,tiD1],[tiB1,tiG1]);
+        document.getElementById("temsvg1").innerHTML = String.raw`${svgawal(a1[0],a1[1],a1[2],a1[3])}
+        ${svgsegi([tiA1,tiB1,tiC1,tiD1,tiE1,tiF1,tiG1,tiH1],{tebalgaris:1/a1[2],warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+        ${svggaris([tiA1,tiD1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svggaris([tiB1,tiF1],{tebalgaris:1/a1[2],warna:"black",dash:""})}
+        ${svggaris([tiC1,tiF1],{tebalgaris:1/a1[2],warna:"black",dash:""})}
+        ${svggaris([tiH1,tiD1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svgsegi([tiI1,tiJ1,tiL1,tiK1],{tebalgaris:1/a1[2],warnagaris:"black",isi:"grey",tampakisi:1,tampakgaris:1})}
+        ${svglabelgaris([tiG1,tiH1],"2",{ukuran:1.5/a1[2],warna:"black",anchor:"end",baseline:"central",xplus:-0.05,yplus:0})}
+</svg>`
+document.getElementById("temsvg1a").innerHTML = String.raw`${svgawal(a1[0],a1[1],a1[2],a1[3])}
+        ${svgsegi([tiA1,tiB1,tiC1,tiD1,tiE1,tiF1,tiG1,tiH1],{tebalgaris:1/a1[2],warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:0.4})}
+        ${svggaris([tiA1,tiD1],{tebalgaris:1/a1[2],warna:"black",dash:"",tampakgaris:0.4})} 
+        ${svggaris([tiH1,tiE1],{tebalgaris:1/a1[2],warna:"black",dash:"",tampakgaris:0.4})} 
+        ${svggaris([tiB1,tiF1],{tebalgaris:1/a1[2],warna:"black",dash:"",tampakgaris:0.4})}
+        ${svggaris([tiB1,tiG1],{tebalgaris:1/a1[2],warna:"black",dash:"",tampakgaris:0.4})}
+        ${svggaris([tiC1,tiF1],{tebalgaris:1/a1[2],warna:"black",dash:"",tampakgaris:0.4})}
+        ${svggaris([tiH1,tiD1],{tebalgaris:1/a1[2],warna:"black",dash:"",tampakgaris:0.4})} 
+        ${svgsegi([tiI1,tiJ1,tiL1,tiK1],{tebalgaris:1/a1[2],warnagaris:"blue",isi:"grey",tampakisi:1,tampakgaris:1})}
+        ${svglabelgaris([tiG1,tiH1],"2",{ukuran:1.5/a1[2],warna:"black",anchor:"end",baseline:"central",xplus:-0.05,yplus:0})}
+        ${svgsegi([tiM1,tiJ1,tiN1,tiO1],{tebalgaris:1/a1[2],warnagaris:"blue",isi:"none",tampakisi:1,tampakgaris:1})}
+        ${svggaris([tiP1,tiK1],{tebalgaris:1/a1[2],warna:"blue",dash:"",tampakgaris:1})} 
+        ${svggaris([tiQ1,tiK1],{tebalgaris:1/a1[2],warna:"blue",dash:"",tampakgaris:1})} 
+</svg>`
+    </script>
+  </div>
+
+  <div class="justify" id="2">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Diberikan segi delapan beraturan <em>ABCDEFGH</em>. Jumlah besar sudut-sudut
+    \[\angle ABH+\angle ACH+\angle ADH+\angle AEH+\angle AFH+\angle AGH\] adalah ....
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li>90&deg;</li>
+          <li>120&deg;</li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="3" type="A">
+          <li>135&deg;</li>
+          <li>150&deg;</li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">KTOM - TO OSK SMP 2023</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Kita buat lingkaran luar <em>ABCDEFGH</em>, sudut <em>ABH</em> dan sudut pusat <em>AOH</em>. 
+          <div id="temsvg2" class="w3-center"></div>
+          Kita lihat bahwa &angle;<em>ABH</em> dan &angle;<em>AOH</em> masing-masing merupakan sudut keliling dan sudut pusat yang menghadap busur yang sama, yaitu busur <em>AH</em>.
+          \[\angle AOH=\dfrac{360^\circ}8=45^\circ\]
+          \[\angle ABH=\dfrac12\angle AOH=\dfrac{45^\circ}2\]
+          Kita gambar semua sudut yang diminta,
+          <div id="temsvg2a" class="w3-center"></div>
+          Semua sudut pada gambar di atas merupakan sudut keliling yang besarnya sama sehingga,
+          \begin{aligned}
+          \angle ABH+\angle ACH+\angle ADH+\angle AEH+\angle AFH+\angle AGH&=6\cdot\dfrac{45^\circ}2\\
+          &=\boxed{\boxed{135^\circ}}
+          \end{aligned}
+          <script>
+            var a2 = [1+Math.sqrt(2),1+Math.sqrt(2),100,0.2];
+            var tiO2 = [1/2+1/Math.sqrt(2),1/2+1/Math.sqrt(2)];
+            document.getElementById("temsvg2").innerHTML = String.raw`${svgawal(a1[0],a1[1],a1[2],a1[3])}
+        ${svgsegi([tiA1,tiB1,tiC1,tiD1,tiE1,tiF1,tiG1,tiH1],{tebalgaris:1/a1[2],warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+        ${svggaris([tiB1,tiH1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svggaris([tiO2,tiH1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svggaris([tiO2,tiA1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svgsudut([tiH1,tiB1,tiA1],{r:30/a1[2],tebalgaris:1/a1[2],warnagaris:"black",isi:"red",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+        ${svgsudut([tiH1,tiO2,tiA1],{r:30/a1[2],tebalgaris:1/a1[2],warnagaris:"black",isi:"green",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+        ${svglingkaran(tiO2,1/Math.sqrt(2-Math.sqrt(2)),{tebalgaris:1/a1[2],warnagaris:"brown",isi:"none",tampakisi:1,tampakgaris:1,dash:""})}
+        ${svglabeltitik(tiA1,"A",{ukuran:1.2/a1[2],anchor:"middle",baseline:"baseline",xplus:-0.05,yplus:-0.05})}
+        ${svglabeltitik(tiB1,"B",{ukuran:1.2/a1[2],anchor:"middle",baseline:"baseline",xplus:0.05,yplus:-0.05})}
+        ${svglabeltitik(tiC1,"C",{ukuran:1.2/a1[2],anchor:"start",baseline:"middle",xplus:0.04,yplus:-0.05})}
+        ${svglabeltitik(tiD1,"D",{ukuran:1.2/a1[2],anchor:"start",baseline:"central",xplus:0.04,yplus:0.05})}
+        ${svglabeltitik(tiE1,"E",{ukuran:1.2/a1[2],anchor:"start",baseline:"hanging",xplus:0,yplus:0.03})}
+        ${svglabeltitik(tiF1,"F",{ukuran:1.2/a1[2],anchor:"end",baseline:"hanging",xplus:0,yplus:0.03})}
+        ${svglabeltitik(tiG1,"G",{ukuran:1.2/a1[2],anchor:"end",baseline:"hanging",xplus:-0.02,yplus:0.01})}
+        ${svglabeltitik(tiH1,"H",{ukuran:1.2/a1[2],anchor:"end",baseline:"baseline",xplus:-0.02,yplus:-0.01})}
+        ${svglabeltitik(tiO2,"O",{ukuran:1.2/a1[2],anchor:"start",baseline:"hanging",xplus:0,yplus:0.01})}
+</svg>`;
+document.getElementById("temsvg2a").innerHTML = String.raw`${svgawal(a1[0],a1[1],a1[2],a1[3])}
+        ${svgsegi([tiA1,tiB1,tiC1,tiD1,tiE1,tiF1,tiG1,tiH1],{tebalgaris:1/a1[2],warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+        ${svggaris([tiB1,tiH1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svggaris([tiC1,tiH1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svggaris([tiD1,tiH1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svggaris([tiE1,tiH1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svggaris([tiF1,tiH1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svggaris([tiA1,tiC1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svggaris([tiA1,tiD1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svggaris([tiA1,tiE1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svggaris([tiA1,tiF1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svggaris([tiA1,tiG1],{tebalgaris:1/a1[2],warna:"black",dash:""})} 
+        ${svgsudut([tiH1,tiB1,tiA1],{r:30/a1[2],tebalgaris:1/a1[2],warnagaris:"black",isi:"red",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+        ${svgsudut([tiH1,tiC1,tiA1],{r:30/a1[2],tebalgaris:1/a1[2],warnagaris:"black",isi:"red",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+        ${svgsudut([tiH1,tiD1,tiA1],{r:30/a1[2],tebalgaris:1/a1[2],warnagaris:"black",isi:"red",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+        ${svgsudut([tiH1,tiE1,tiA1],{r:30/a1[2],tebalgaris:1/a1[2],warnagaris:"black",isi:"red",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+        ${svgsudut([tiH1,tiF1,tiA1],{r:30/a1[2],tebalgaris:1/a1[2],warnagaris:"black",isi:"red",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+        ${svgsudut([tiH1,tiG1,tiA1],{r:30/a1[2],tebalgaris:1/a1[2],warnagaris:"black",isi:"red",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+        ${svglingkaran(tiO2,1/Math.sqrt(2-Math.sqrt(2)),{tebalgaris:1/a1[2],warnagaris:"brown",isi:"none",tampakisi:1,tampakgaris:1,dash:""})}
+        ${svglabeltitik(tiA1,"A",{ukuran:1.2/a1[2],anchor:"middle",baseline:"baseline",xplus:-0.05,yplus:-0.05})}
+        ${svglabeltitik(tiB1,"B",{ukuran:1.2/a1[2],anchor:"middle",baseline:"baseline",xplus:0.05,yplus:-0.05})}
+        ${svglabeltitik(tiC1,"C",{ukuran:1.2/a1[2],anchor:"start",baseline:"middle",xplus:0.04,yplus:-0.05})}
+        ${svglabeltitik(tiD1,"D",{ukuran:1.2/a1[2],anchor:"start",baseline:"central",xplus:0.04,yplus:0.05})}
+        ${svglabeltitik(tiE1,"E",{ukuran:1.2/a1[2],anchor:"start",baseline:"hanging",xplus:0,yplus:0.03})}
+        ${svglabeltitik(tiF1,"F",{ukuran:1.2/a1[2],anchor:"end",baseline:"hanging",xplus:0,yplus:0.03})}
+        ${svglabeltitik(tiG1,"G",{ukuran:1.2/a1[2],anchor:"end",baseline:"hanging",xplus:-0.02,yplus:0.01})}
+        ${svglabeltitik(tiH1,"H",{ukuran:1.2/a1[2],anchor:"end",baseline:"baseline",xplus:-0.02,yplus:-0.01})}
+</svg>`
+          </script>
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, \(\angle ABH+\angle ACH+\angle ADH+\angle AEH+\angle AFH+\angle AGH=135^\circ\).<br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <br><br><div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+  <script>soal(poli,3,1)</script>
+</div>
+</body>
+</html> 
+<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>

@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HOTS Zone : Faktorial</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+      <link rel="stylesheet" href="templatestyle.css">
+      <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+      <script src="../matematikin.js"></script>
+   </head> 
+     <body>
+        <div class="w3-container">
+      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Faktorial</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+      <h3>Tipe: </h3>
+      <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">Standar</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
+      <br>
+      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+      <br>
+    
+    <div class="justify" id="1">
+        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+        Tentukan hasil dari
+        \[\dfrac{(6!+5!)\times(4!+3!)\times(2!+1!)}{(6!-5!)\times(4!-3!)\times(2!-1!)}\]
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+                <div class="w3-padding w3-sand flo">\begin{aligned}
+                  \dfrac{(6!+5!)\times(4!+3!)\times(2!+1!)}{(6!-5!)\times(4!-3!)\times(2!-1!)}&amp;=\dfrac{5!(6+1)\times3!(4+1)\times1!(2+1)}{5!(6-1)\times3!(4-1)\times1!(2-1)}\\[3.5pt]
+                  &amp;=\dfrac{7\times5\times3}{5\times3\times1}\\
+                  &amp;=\boxed{\boxed{7}}
+                  \end{aligned}</div>
+                <div class="w3-brown w3-padding tebal flo">Jadi, \(\dfrac{(6!+5!)\times(4!+3!)\times(2!+1!)}{(6!-5!)\times(4!-3!)\times(2!-1!)}=7\).<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+        </details>
+        <hr>
+    </div>
+
+    <div class="justify" id="2">
+        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+        <em>a</em>! + <em>b</em>! + <em>c</em>! = <em>d</em>!\) dimana <em>a</em>, <em>b</em>, <em>c</em>, <em>d</em> adalah bilangan bulat positif. Berapa banyak solusi <e>(<em>a</em>,<em>b</em>,c,<em>d</em>)</e> yang mungkin?
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+                <div class="w3-padding w3-sand flo"><em>d</em>! &ge; 1! + 1!  + 1! = 3<br />
+                    <em>d</em> &ge; 3<br />
+                  <br />
+                  anggap <em>a</em> &le; <em>b</em> &le; <em>c</em><br><br>
+                  \(\begin{aligned}
+                  d!&=a!+b!+c!\\
+                  &\leq3c!\\
+                  \dfrac{d!}{c!}&\leq3
+                  \end{aligned}\) <br>
+                  yang memenuhi adalah <em>d</em> = 3 dan <em>c</em> = 2. Sehingga didapat <em>a</em> = 2 dan <em>b</em> = 2.</div>
+                <div class="w3-brown w3-padding tebal flo">Jadi, hanya ada 1 solusi.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+        </details>
+        <hr>
+    </div>
+
+    <div class="justify" id="3">
+        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+        Bentuk sederhana dari
+        \[\dfrac{\sqrt3\left(n^2-1\right)!}{\left(n^2-3\right)!}\]
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+        <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+                <div class="w3-padding w3-sand flo">\begin{aligned}
+                  \dfrac{\sqrt3\left(n^2-1\right)!}{\left(n^2-3\right)!}&=\dfrac{\sqrt3\left(n^2-1\right)\left(n^2-2\right)\left(n^2-3\right)!}{\left(n^2-3\right)!}\\[3.5pt]
+                  &=\sqrt3\left(n^2-1\right)\left(n^2-2\right)\\
+                  &=\boxed{\boxed{\sqrt3n^2-3\sqrt3n+2\sqrt3}}
+                  \end{aligned}</div>
+                <div class="w3-brown w3-padding tebal flo">Jadi, \(\dfrac{\sqrt3\left(n^2-1\right)!}{\left(n^2-3\right)!}=\sqrt3n^2-3\sqrt3n+2\sqrt3\).<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+        </details>
+        <hr>
+    </div>
+
+    <div class="justify" id="4">
+        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+        Diketahui \[\dfrac1{0!10!}+\dfrac1{1!9!}+\dfrac1{2!8!}+\cdots+\dfrac1{9!1!}+\dfrac1{10!0!}=\dfrac{m}n\] Jika <e>(<em>m</em>, <em>n</em>)</e> adalah bilangan bulat yang saling relatif prima. Nilai dari 10<em>m</em> adalah ....
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://www.pendidikmatematika.com/" target="_blank" rel="noopener noreferrer">Tryout OSN-K Matematika SMA 2023</a></div>
+        <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+                <div class="w3-padding w3-sand flo">\(\begin{aligned}
+                \dfrac1{0!10!}+\dfrac1{1!9!}+\dfrac1{2!8!}+\cdots+\dfrac1{9!1!}+\dfrac1{10!0!}&=\dfrac{10!}{10!}\left(\dfrac1{0!10!}+\dfrac1{1!9!}+\dfrac1{2!8!}+\cdots+\dfrac1{9!1!}+\dfrac1{10!0!}\right)\\[3.8pt]
+                &=\dfrac1{10!}\left(\dfrac{10!}{0!10!}+\dfrac{10!}{1!9!}+\dfrac{10!}{2!8!}+\cdots+\dfrac{10!}{9!1!}+\dfrac{10!}{10!0!}\right)\\[3.8pt]
+                &=\dfrac1{10!}\left({10\choose0}+{10\choose1}+{10\choose2}+\cdots+{10\choose9}+{10\choose10}\right)\\[3.8pt]
+                &=\dfrac1{10!}\left(2^{10}\right)\\[3.8pt]
+                &=\dfrac{\cancel{2}\cdot\cancel{2\cdot2\cdot2}\cdot\cancel{2}\cdot\cancel{2\cdot2}\cdot\cancel2\cdot2\cdot2}{\cancelto{5}{10}\cdot9\cdot\cancel{8}\cdot7\cdot\cancelto{3}6\cdot5\cdot\cancel4\cdot3\cdot\cancel2}\\[3.8pt]
+                &=\dfrac4{14175}
+                \end{aligned}\) <br><br>
+                10(4) = 40
+                    </div>
+                <div class="w3-brown w3-padding tebal flo">Jadi, nilai dari 10<em>m</em> adalah 40.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+        </details>
+        <hr>
+    </div>
+
+    <div class="justify" id="5">
+        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+        Bentuk sederhana dari :\[2\cdot1!+4\cdot2!+6\cdot3!+\cdots+200\cdot100!\]
+        adalah ....
+        <div class="w3-row">
+            <div class="w3-col s6">
+                <ol class="pas1" type="A">
+                    <li>100! &minus; 2</li>
+                    <li>101! &minus; 2</li>
+                    <li>2(100! &minus; 1)</li>
+                </ol>
+            </div>
+            <div class="w3-col s6">
+                <ol class="pas1" start="4" type="A">
+                    <li>2(101! &minus; 1)</li>
+                    <li>2(101! + 1)</li>
+                </ol>
+            </div>
+        </div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+        <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+                <div class="w3-padding w3-sand flo">\(\begin{aligned}
+                    2\cdot1!+4\cdot2!+6\cdot3!+\cdots+200\cdot100!&=2\left(1\cdot1!+2\cdot2!+3\cdot3!+\cdots+100\cdot100!\right)\\
+                    &=2\left((2-1)\cdot1!+(3-1)\cdot2!+(4-1)\cdot3!+\cdots+(101-1)\cdot100!\right)\\
+                    &=2\left(2\cdot1!-1!+3\cdot2!-2!+4\cdot3!-3!+\cdots+101\cdot100!-100!\right)\\
+                    &=2\left(2!-1!+3!-2!+4!-3!+\cdots+101!-100!\right)\\
+                    &=2\left(-1!+101!\right)\\
+                    &=\color{blue}\boxed{\boxed{\color{black}2\left(101!-1\right)}}
+                \end{aligned}\)</div>
+                <div class="w3-brown w3-padding tebal flo">Jadi, bentuk sederhana dari :\[2\cdot1!+4\cdot2!+6\cdot3!+\cdots+200\cdot100!\]
+                    adalah <em>2(101! &minus; 1).</em><br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+        </details>
+        <hr>
+    </div>
+
+    <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+    <br>
+    <script>soal(fakt,3,1)</script>    
+   </div>
+   </body>
+</html> 

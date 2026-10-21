@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>...</title> 
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+      <link rel="stylesheet" href="katex/dist/katex.css">
+      <script src="bootstrap/js/bootstrap.bundle.js"></script>
+      <script defer src="mathjax/tex-mml-chtml.js"></script>
+      <script src="katex/dist/katex.js"></script>
+      <script src="scripthead.js"></script>
+   </head> 
+     <body>
+        <div class="container">
+         Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Deret Teleskopik</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
+         <div id="linktipe">
+            <table>
+               <tbody>
+                  <tr>
+                     <td>
+                        <h3>Tipe: </h3>
+                     </td>
+                     <td>
+                        <ul class="pagination" style="margin-left:0em">
+                           <li id="navstandar" class="page-item d-none"><a href="#" id="standar" class="page-link">Standar</a></li>
+                           <li id="navsbmptn" class="page-item d-none"><a href="#" id="sbmptn" class="page-link">SBMPTN</a></li>
+                           <li id="navhots" class="page-item active d-none"><span id="hots" class="page-link">HOTS</span></li>
+                        </ul>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="navi d-none"><ul class="pagination pagi" style="margin-left:0em">
+         </ul></div>
+         <script>var no1 = new Date().getFullYear();</script>
+
+         <div class="text-justify" id="1">
+             <br>
+             <h3>No. <span class="badge bg-danger nomor"></span></h3>
+             <span id="soal1"></span>
+             <div class="blockquote-footer text-end pt-2"><a href="#" target="_blank">Langkah Awal Meraih Medali Emas</a></div>
+             <button class="btn btn-success tbl" type="button"><b>Alternatif Penyelesaian</b></button>
+             <div class="card">
+                 <div class="collapse hide isi" role="tabpanel">
+                     <div class="card-body flo"><span id="jaw1"></span></div>
+                     <div class="card-footer font-weight-bold">
+                         <table class="table table-borderless foot">
+                             <tbody>
+                                 <tr>
+                                     <td class="align-middle"><span id="jad1"></span></td>
+                                     <td class="align-middle"><button class="btn btn-dark float-end tutup" type="button"><b>Tutup</b></button></td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+         <div class="text-justify" id="2">
+             <br>
+             <h3>No. <span class="badge bg-danger nomor"></span></h3>
+             <span id="soal2"></span>
+             <div class="blockquote-footer text-end pt-2"><a href="#" target="_blank">Grup WhatsApp</a></div>
+             <button class="btn btn-success tbl" type="button"><b>Alternatif Penyelesaian</b></button>
+             <div class="card">
+                 <div class="collapse hide isi" role="tabpanel">
+                     <div class="card-body flo"><span id="jaw2"></span></div>
+                     <div class="card-footer font-weight-bold">
+                         <table class="table table-borderless foot">
+                             <tbody>
+                                 <tr>
+                                     <td class="align-middle"><span id="jad2"></span></td>
+                                     <td class="align-middle"><button class="btn btn-dark float-end tutup" type="button"><b>Tutup</b></button></td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+
+         <div class="navi d-none"><ul class="pagination pagi" style="margin-left:0em">
+        </ul></div>
+        <script>soal(dertel,3,1);
+        document.getElementById("soal1").innerHTML = String.raw`Tentukan nilai dari <m>\dfrac3{1!+2!+3!}+\dfrac4{2!+3!+4!}+\dfrac5{3!+4!+5!}+\cdots+\dfrac{${no1}}{${no1-2}!+${no1-1}!+${no1}!}</m>`;
+        document.getElementById("jaw1").innerHTML = String.raw`<m>\begin{aligned}
+                        \dfrac{k+2}{k!+(k+1)!+(k+2)!}&amp;=\dfrac{k+2}{k!(1+(k+1)+(k+2)(k+1))}\\[8pt]
+                        &amp;=\dfrac{k+2}{k!\left(1+k+1+k^2+3k+2\right)}\\[8pt]
+                        &amp;=\dfrac{k+2}{k!\left(k^2+4k+4\right)}\\[8pt]
+                        &amp;=\dfrac{k+2}{k!\left(k+2\right)^2}\\[8pt]
+                        &amp;=\dfrac1{k!\left(k+2\right)}\\[8pt]
+                        &amp;=\dfrac{k+1}{(k+2)!}\\[8pt]
+                        &amp;=\dfrac{k+2-1}{(k+2)!}\\[8pt]
+                        &amp;=\dfrac1{(k+1)!}-\dfrac1{(k+2)!}
+                        \end{aligned}</m><br />
+                        <br />
+                        <m>\begin{aligned}
+                        \dfrac3{1!+2!+3!}+\dfrac4{2!+3!+4!}+\dfrac5{3!+4!+5!}+\cdots+\dfrac{${no1}}{${no1-2}!+${no1-1}!+${no1}!}&amp;=\dfrac1{2!}-\dfrac1{3!}+\dfrac1{3!}-\dfrac1{4!}+\dfrac1{4!}-\dfrac1{5!}+\cdots+\dfrac1{${no1-1}!}-\dfrac1{${no1}!}\\[8pt]
+                        &amp;=\dfrac1{2!}-\dfrac1{${no1}!}
+                        \end{aligned}</m>`;
+        document.getElementById("jad1").innerHTML = String.raw`Jadi, <m>\dfrac3{1!+2!+3!}+\dfrac4{2!+3!+4!}+\dfrac5{3!+4!+5!}+\cdots+\dfrac{${no1}}{${no1-2}!+${no1-1}!+${no1}!}=\dfrac1{2!}-\dfrac1{${no1}!}</m>.`
+        document.getElementById("soal2").innerHTML = String.raw`Hitunglah nilai <m>\displaystyle\sum_{k=1}^{${no1}}\dfrac{k+2}{k(k+1)2^k}</m>`;
+        document.getElementById("jaw2").innerHTML = String.raw`<m>\begin{aligned}
+                        \displaystyle\sum_{k=1}^{${no1}}\dfrac{k+2}{k(k+1)2^k}&=\displaystyle\sum_{k=1}^{${no1}}\left(\dfrac2k-\dfrac1{k+1}\right)\dfrac1{2^k}\\[8pt]
+                        &=\displaystyle\sum_{k=1}^{${no1}}\left(\dfrac1{k\cdot2^{k-1}}-\dfrac1{(k+1)\cdot2^k}\right)\\[8pt]
+                        &=\dfrac1{1\cdot2^0}-\dfrac1{2\cdot2^1}+\dfrac1{2\cdot2^1}-\dfrac1{3\cdot2^2}+\cdots+\dfrac1{${no1}\cdot2^{${no1-1}}}-\dfrac1{${no1+1}\cdot2^{${no1}}}\\[8pt]
+                        &=\boxed{\boxed{1-\dfrac1{<span class="no2"></span>\cdot2^{${no1}}}}}
+                     \end{aligned}</m>`;
+        document.getElementById("jad2").innerHTML = String.raw`Jadi, <m>\displaystyle\sum_{k=1}^{${no1}}\dfrac{k+2}{k(k+1)2^k}=1-\dfrac1{${no1+1}\cdot2^{${no1}}}</m>.`
+        </script>
+   </div>
+   </body>
+   <script defer src="scriptfoot.js"></script>
+</html> 

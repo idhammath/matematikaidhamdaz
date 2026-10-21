@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HOTS Zone : Geometri (Bidang Datar) [2]</title> 
+    <script defer src="../mathjax/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="templatestyle.css">
+<link rel="stylesheet" href="gaya.css">
+    <script src="skrip.js"></script>
+    <script src="../matematikin.js"></script>
+<!--link rel="stylesheet" href="style.css"-->
+<style>body{
+font-family: roboto,sans-serif;   
+}</style>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><br>
+
+<div class="w3-container" style="background-color: white">
+  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Geometri (Bidang Datar)</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
+
+  <h3>Tipe: </h3>
+  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
+  <br><div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+
+  <div id="11" class="justify">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    <div id="temsvg1" class="w3-center"></div>
+    Diketahui <em>r</em> adalah jari-jari dan <em>O</em> adalah pusat setengah lingkaran. Tanpa menggunakan trigonometri, berapakah panjang garis merah dalam bentuk <em>r</em>?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Facebook</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><div id="temsvg1-2" class="w3-center"></div>
+        Segitiga <em>ADO</em> kongruen dengan segitiga <em>BCO</em>, sehingga <e>&ang;<em>AOB</em> = &ang;<em>DOC</em> = 60&deg;.</e><br>
+        <e><em>AO</em> = <em>BO</em></e> maka segitiga <em>AOB</em> sama sisi. <br>
+        &there4; <em>AB</em> = <em>AO</em> = <em>r</em>
+      </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, panjang garis merah adalah <em>r</em>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+        var k1 = 300;
+        var a1 = [2*k1,k1,0.1*k1];
+        var tiO1 = [k1,k1];
+        var tiA1 = [k1*(11-Math.sqrt(13))/8,k1*(8-Math.sqrt(3)-Math.sqrt(39))/8];
+        var tiB1 = [k1*(11+Math.sqrt(13))/8,k1*(8+Math.sqrt(3)-Math.sqrt(39))/8];
+        var tiC1 = [3*k1/2,k1];
+        var tiD1 = [5*k1/4,k1*(1-Math.sqrt(3)/4)]
+        document.getElementById("temsvg1").innerHTML = String.raw`${svgawal(a1[0],a1[1],1,a1[2])}
+        <path id="lineAB" d="M 0 ${a1[1]}
+        A ${a1[1]} ${a1[1]} 0 0 1 ${a1[0]} ${a1[1]} z" stroke="black"
+  stroke-width="1" fill="none" />
+  ${svggaris([tiA1,tiC1],{tebalgaris:1,warna:"black",dash:""})}
+  ${svggaris([tiC1,tiB1],{tebalgaris:1,warna:"black",dash:""})}
+  ${svggaris([tiA1,tiB1],{tebalgaris:1,warna:"red",dash:""})}
+  ${tandaSamaPanjang2(tiO1,tiC1,0.04*k1,{jarak:0.008*k1,tebalgaris:2})}
+  ${tandaSamaPanjang2([a1[0],a1[1]],tiC1,0.04*k1,{jarak:0.008*k1,tebalgaris:2})}
+  ${svgsudut([tiO1,tiC1,tiA1],{r:0.08*k1,tebalgaris:1,warnagaris:"black",isi:"green",tampakisi:0.4,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+  ${svgsudut([tiB1,tiC1,[a1[0],a1[1]]],{r:0.08*k1,tebalgaris:1,warnagaris:"black",isi:"green",tampakisi:0.4,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+  ${svglabeltitik(tiC1,"60°",{ukuran:1,anchor:"end",baseline:"baseline",xplus:-0.08*k1,yplus:-0.03*k1})}
+  ${svglabeltitik(tiC1,"60°",{ukuran:1,anchor:"start",baseline:"baseline",xplus:0.08*k1,yplus:-0.03*k1})}
+  ${svglingkaran(tiO1,0.01*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+  ${svglabeltitik(tiO1,"O",{ukuran:1.2,anchor:"middle",baseline:"hanging",xplus:0,yplus:0.02*k1})}
+</svg>`
+document.getElementById("temsvg1-2").innerHTML = String.raw`${svgawal(a1[0],a1[1],1,a1[2])}
+        <path id="lineAB" d="M 0 ${a1[1]}
+        A ${a1[1]} ${a1[1]} 0 0 1 ${a1[0]} ${a1[1]} z" stroke="black"
+  stroke-width="1" fill="none" />
+  ${svggaris([tiA1,tiC1],{tebalgaris:1,warna:"black",dash:""})}
+  ${svggaris([tiC1,tiB1],{tebalgaris:1,warna:"black",dash:""})}
+  ${svggaris([tiA1,tiB1],{tebalgaris:2,warna:"red",dash:""})}
+  ${svggaris([tiA1,tiO1],{tebalgaris:2,warna:"red",dash:""})}
+  ${svggaris([tiB1,tiO1],{tebalgaris:2,warna:"red",dash:""})}
+  ${svggaris([tiD1,tiO1],{tebalgaris:2,warna:"blue",dash:""})}
+  ${svggaris([tiD1,tiA1],{tebalgaris:2,warna:"brown",dash:""})}
+  ${svggaris([tiB1,tiC1],{tebalgaris:2,warna:"brown",dash:""})}
+  ${svggaris([tiC1,tiO1],{tebalgaris:2,warna:"blue",dash:""})}
+  ${tandaSamaPanjang2(tiO1,tiC1,0.04*k1,{jarak:0.008*k1,tebalgaris:2})}
+  ${tandaSamaPanjang2([a1[0],a1[1]],tiC1,0.04*k1,{jarak:0.008*k1,tebalgaris:2})}
+  ${tandaSamaPanjang2(tiO1,tiD1,0.02*k1,{jarak:0.008*k1,tebalgaris:2})}
+  ${svgsudut([tiO1,tiC1,tiA1],{r:0.08*k1,tebalgaris:1,warnagaris:"black",isi:"green",tampakisi:0.4,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+  ${svgsudut([tiD1,tiO1,tiC1],{r:0.08*k1,tebalgaris:1,warnagaris:"black",isi:"green",tampakisi:0.4,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+  ${svgsudut([tiD1,tiC1,tiB1],{r:0.06*k1,tebalgaris:1,warnagaris:"black",isi:"green",tampakisi:0.4,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+  ${svgsudut([tiC1,tiD1,tiO1],{r:0.06*k1,tebalgaris:1,warnagaris:"black",isi:"green",tampakisi:0.4,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+  ${svgsudut([tiO1,tiD1,tiA1],{r:0.06*k1,tebalgaris:1,warnagaris:"black",isi:"green",tampakisi:0.4,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+  ${svgsudut([tiB1,tiC1,[a1[0],a1[1]]],{r:0.08*k1,tebalgaris:1,warnagaris:"black",isi:"green",tampakisi:0.4,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+  ${svglabeltitik(tiC1,"60°",{ukuran:1,anchor:"end",baseline:"baseline",xplus:-0.08*k1,yplus:-0.04*k1})}
+  ${svglabeltitik(tiC1,"60°",{ukuran:1,anchor:"start",baseline:"baseline",xplus:0.08*k1,yplus:-0.04*k1})}
+  ${svglabeltitik(tiO1,"60°",{ukuran:1,anchor:"start",baseline:"baseline",xplus:0.08*k1,yplus:-0.03*k1})}
+  ${svglabeltitik(tiC1,"60°",{ukuran:1,anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.08*k1})}
+  ${svglabeltitik(tiD1,"60°",{ukuran:1,anchor:"middle",baseline:"hanging",xplus:0,yplus:0.08*k1})}
+  ${svglabeltitik(tiD1,"120°",{ukuran:1,anchor:"end",baseline:"center",xplus:-0.07*k1,yplus:0.01*k1})}
+  ${svglingkaran(tiO1,0.01*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+  ${svglingkaran(tiA1,0.01*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+  ${svglingkaran(tiB1,0.01*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+  ${svglingkaran(tiC1,0.01*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+  ${svglingkaran(tiD1,0.01*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+  ${svglabeltitik(tiO1,"O",{ukuran:1.2,anchor:"middle",baseline:"hanging",xplus:0,yplus:0.02*k1})}
+  ${svglabeltitik(tiC1,"C",{ukuran:1.2,anchor:"middle",baseline:"hanging",xplus:0,yplus:0.02*k1})}
+  ${svglabeltitik(tiA1,"A",{ukuran:1.2,anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.02*k1})}
+  ${svglabeltitik(tiB1,"B",{ukuran:1.2,anchor:"start",baseline:"center",xplus:0.02*k1,yplus:-0.008*k1})}
+  ${svglabeltitik(tiD1,"D",{ukuran:1.2,anchor:"start",baseline:"center",xplus:0.02*k1,yplus:-0.008*k1})}
+</svg>`
+    </script>
+  </div>
+
+  <div class="justify" id="12">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Sebuah segitiga samasisi, sebuah lingkaran dan sebuah persegi memiliki keliling yang sama. Di antara ketiga bangun tersebut, manakah yang memiliki luas terbesar ?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/thread/38/" target="_blank" rel="noopener noreferrer">OSP SMA 2002</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Misal <em>a</em> adalah panjang sisi segitiga, <em>r</em> adalah panjang jari-jari lingkaran, dan <em>s</em> adalah panjang sisi persegi. <br>
+          <e>3<em>a</em> = 2&pi;<em>r</em> = 4<em>s</em></e> <br>
+          <e>9<em>a</em><sup>2</sup> = 4&pi;<sup>2</sup><em>r</em><sup>2</sup> = 16<em>s</em><sup>2</sup></e> <br><br>
+          \(\begin{aligned}
+          \dfrac{L_\bigtriangleup}{L_\bigcirc}&=\dfrac{\dfrac14a^2\sqrt3}{\pi r^2}\\[4pt]
+          &=\dfrac{\sqrt3}{4\pi}\cdot\dfrac{a^2}{r^2}\\[4pt]
+          &=\dfrac{\sqrt3}{4\pi}\cdot\dfrac{4\pi^2}{9}\\[4pt]
+          &=\dfrac{\pi\sqrt3}9\lt\dfrac{4\cdot2}9\lt1\\[4pt]
+          L_\bigtriangleup&\lt L_\bigcirc
+          \end{aligned}\) <br><br>
+          \(\begin{aligned}
+          \dfrac{L_\square}{L_\bigcirc}&=\dfrac{s^2}{\pi r^2}\\[4pt]
+          &=\dfrac1{\pi}\cdot\dfrac{s^2}{r^2}\\[4pt]
+          &=\dfrac1{\pi}\cdot\dfrac{\pi^2}{4}\\[4pt]
+          &=\dfrac{\pi}4\\[4pt]
+          &\lt1\\
+          L_\square&\lt L_\bigcirc
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, yang memiliki luas terbesar adalah lingkaran.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="13">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Segitiga <em>ABC</em> memiliki panjang sisi <e><em>AB</em> = 10,</e> <e><em>BC</em> = 7,</e> dan <e><em>CA</em> = 12.</e> Jika setiap sisi diperpanjang menjadi tiga kali panjang semula, maka segitiga yang terbentuk memiliki luas berapa kali luas ∆<em>ABC</em> ?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://forummatematika.freeforums.net/thread/38/" target="_blank" rel="noopener noreferrer">OSP SMA 2002</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><em>s</em><sub>2</sub> = 3<em>s</em><sub>1</sub><br><br>
+          \(\begin{aligned}
+          \dfrac{L_2}{L_1}&=\left(\dfrac{s_2}{s_1}\right)^2\\[4pt]
+          &=\left(3\right)^2\\
+          &=9
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, segitiga yang terbentuk memiliki luas 9 kali luas ∆<em>ABC</em>.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="14">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Garis tengah sebuah setengah lingkaran berimpit dengan alas <em>AB</em> dari ∆<em>ABC</em>. Titik sudut <em>C</em> bergerak sedemikian rupa, sehingga titik tengah sisi <em>AC</em> selalu terletak pada setengah lingkaran. Berupa apakah lengkungan tempat kedudukan titik <em>C</em> ?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://forummatematika.freeforums.net/thread/38/" target="_blank" rel="noopener noreferrer">OSP SMA 2002</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><div class="w3-row">
+          <div class="w3-col m6 w3-center" id="temsvg4"></div>
+          <div class="w3-col m6 w3-center" id="temsvg42"></div>
+        </div>
+        <em>AB</em> adalah diameter dan <em>D</em> terletak pada lingkaran. Maka <e>∠<em>ADB</em> = 90&deg;</e>. <br>
+        Karena <e><em>AD</em> = <em>CD</em></e> dan <e><em>BD</em> ⊥ <em>AC</em></e> maka ∆<em>ABC</em> adalah segitiga sama kaki dengan <e><em>AB</em> = <em>BC</em>.</e><br>
+        Karena <em>BC</em> = <em>AB</em> = diameter lingkaran yang berarti bernilai tetap dan <em>B</em> adalah titik yang tetap maka lengkung yang terjadi adalah berupa setengah lingkaran dengan pusat titik <em>B</em>. 
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, berupa setengah lingkaran lengkungan tempat kedudukan titik <em>C</em>.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>var k4 = 80;
+    var a4 = [4*k4,2*k4,0.3*k4,3*k4,0.7*k4];
+    var tiA4 = [0,a4[1]];
+    var tiB4 = [a4[0]/2,a4[1]];
+    var tiC41 = [1.2*k4];
+    tiC41[1] = 2*k4-Math.sqrt(4*k4*k4-Math.pow(tiC41[0]-2*k4,2))
+    var tiC42 = [3.2*k4];
+    tiC42[1] = 2*k4-Math.sqrt(4*k4*k4-Math.pow(tiC42[0]-2*k4,2))
+    var tiD41 = titiktengah([tiA4,tiC41])
+    var tiD42 = titiktengah([tiA4,tiC42])
+    var tiE4 = [a4[0],a4[1]];
+    var tiF4 = [0,k4];
+    var tiG4 = [a4[3],k4];
+    var tiH4 = [a4[3]/2,0];
+    var tiI4 = titiktengah([tiF4,tiG4]);
+    document.getElementById("temsvg4").innerHTML = String.raw`${svgawal(a4[0],a4[1],1,a4[2])}
+    ${svgsetling(tiA4,tiE4,{tebal:2,warnagaris:"green",tutup:1})}
+    ${svgsetling(tiA4,tiB4,{tebal:2,warnagaris:"green",tutup:1})}
+    ${svggaris([tiA4,tiC41],{tebalgaris:2,warna:"red",dash:""})}
+    ${svggaris([tiB4,tiD41],{tebalgaris:2,warna:"blue",dash:""})}
+    ${svggaris([tiA4,tiC42],{tebalgaris:2,warna:"red",dash:""})}
+    ${svggaris([tiB4,tiC42],{tebalgaris:2,warna:"red",dash:""})}
+    ${svggaris([tiB4,tiD42],{tebalgaris:2,warna:"blue",dash:""})}
+    ${svgsiku([tiA4,tiD41,tiB4],{r:0.15*k4,})}
+    ${svgsiku([tiA4,tiD42,tiB4],{r:0.15*k4,})}
+    ${svglabeltitik(tiA4,"A",{ukuran:1.2,anchor:"end",baseline:"hanging",xplus:-0.008*k4,yplus:0})}
+    ${svglabeltitik(tiD41,"D",{ukuran:1.2,anchor:"end",baseline:"baseline",xplus:-0.01*k4,yplus:-0.01*k4})}
+    ${svglabeltitik(tiC41,"C",{ukuran:1.2,anchor:"middle",baseline:"baseline",xplus:-0.04*k4,yplus:-0.04*k4})}
+    ${svglabeltitik(tiD42,"D",{ukuran:1.2,anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.06*k4})}
+    ${svglabeltitik(tiC42,"C",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:0,yplus:-0.02*k4})}
+    ${svglabeltitik(tiB4,"B",{ukuran:1.2,anchor:"middle",baseline:"hanging",xplus:0,yplus:0.05*k4})}
+</svg>`
+document.getElementById("temsvg42").innerHTML = String.raw`${svgawal(a4[3],k4,1,a4[4])}
+${svgsegi([tiF4,tiG4,tiH4],{tebalgaris:3,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+${svglabeltitik(tiF4,"A",{ukuran:1.2,anchor:"end",baseline:"mathematical",xplus:-0.05*k4,yplus:0})}
+${svglabeltitik(tiG4,"C",{ukuran:1.2,anchor:"start",baseline:"mathematical",xplus:0.08*k4,yplus:0})}
+${svglabeltitik(tiH4,"B",{ukuran:1.2,anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.05*k4})}
+${svglabeltitik(tiI4,"D",{ukuran:1.2,anchor:"middle",baseline:"hanging",xplus:0,yplus:0.05*k4})}
+${svggaris([tiH4,tiI4],{tebalgaris:3,warna:"black",dash:""})}
+${svgsiku([tiF4,tiI4,tiH4],{r:0.15*k4,})}
+</svg>`
+    </script>
+  </div>
+
+  <div class="justify" id="15">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Diberikan segiempat ABCD dengan luas segitiga AED sama dengan luas segitiga BEC. Jika <e>AB = 50,</e> <e>AE = 45,</e> dan <e>AC = 108,</e> maka CD adalah ....
+    <div class="w3-center"><img src="https://raw.githubusercontent.com/idhammuqoddas/blog/5089686f60fc57e79b5427279e2a93208dccb277/gambar/segiempat.svg" style="max-width: 200px;"/></div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">OSK SMA 2024</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Karena <e>[AED] = [BEC]</e> dan <e>&ang;BEC = &ang;AED,</e> maka <br>
+          \(\begin{aligned}
+          AE\cdot ED&=BE\cdot EC\\
+          \dfrac{AE}{EC}&=\dfrac{BE}{ED}
+          \end{aligned}\) <br>
+          &there4; &bigtriangleup;ABE ~ &bigtriangleup;CED <br><br>
+          EC = AC &minus; AE = 108 &minus; 45 = 63 <br><br>
+          \(\begin{aligned}
+          \dfrac{AB}{CD}&=\dfrac{AE}{EC}\\[4pt]
+          \dfrac{50}{CD}&=\dfrac{45}{63}\\[4pt]
+          \dfrac{50}{CD}&=\dfrac57\\
+          CD&=\color{blue}\boxed{\boxed{\color{black}70}}
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, CD = 70.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="16">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Seorang peternak kambing memiliki tiga ekor kambing yang ditambatkan pada tonggak-tonggak yang dipasang sedemikian rupa di sebuah lapangan rumput berbentuk persegi panjang sehingga kambing-kambing tersebut tidak bertemu dan berebut rumput seperti pada gambar. 
+    <div class="w3-center"><img src="https://raw.githubusercontent.com/idhamdaz1/idhamdazblog/064b3224bed972906d6bc2b934bfe50c920f7016/kambing.svg" alt="kambing" style="min-width: 400px;"></div>
+    Kambing-kambing tersebut ditambatkan pada tiang P, Q, dan R dengan panjang tali masing-masing 6 meter, 8 meter, dan 12 meter. Kambing yang ditambatkan pada tiang P dapat mencapai sisi AB dan AD, kambing yang ditambatkan pada tiang Q dapat mencapai sisi CD, sedangkan kambing yang ditambatkan pada tiang R dapat mencapai sisi AB, BC, dan CD. <br>
+    ($\sqrt2=1{,}41$; $\sqrt3=1{,}73$; dan $\sqrt6=2{,}45$) <br>
+    Jika di sekeliling lapangan tersebut dibatasi oleh pagar, maka panjang pagar yang dibutuhkan adalah ....
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li>71,4 meter</li>
+          <li>114,9 meter</li>
+          <li>126,9 meter</li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="4" type="A">
+          <li>142,8 meter</li>
+          <li>217,8 meter</li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><div id="temsvg16" class="w3-center"></div>
+      </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, <br><b>JAWAB: </b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+      var lebar16 = 18+12*Math.sqrt(6);
+      var tiA16 = [0,0];
+      var tiB16 = [lebar16,0];
+      var tiC16 = [lebar16,24];
+      var tiD16 = [0,24];
+      var tiP16 = [6,6];
+      var tiQ16 = [6+4*Math.sqrt(6),16];
+      var tiR16 = [6+12*Math.sqrt(6),12]
+      var tiE16 = [6,0];
+      var tiF16 = [6+4*Math.sqrt(6),0];
+      var tiG16 = [6+12*Math.sqrt(6),0];
+      var tiH16 = [lebar16,12];
+      var tiI16 = [6+12*Math.sqrt(6),24];
+      var tiJ16 = [6+4*Math.sqrt(6),24]
+      var tiK16 = [0,6];
+      var tiL16 = [6+4*Math.sqrt(6),6];
+      var tiM16 = [6+12*Math.sqrt(6),16]
+      var geom16 = geomBuat("temsvg16",lebar=18+12*Math.sqrt(6),tinggi=24,{rasio:10,margin:3});
+      geomSegi(geom16,[tiA16,tiB16,tiC16,tiD16])
+      geomLing(geom16,tiP16,6)
+      geomLing(geom16,tiQ16,8)
+      geomLing(geom16,tiR16,12)
+      geomSegmen(geom16,[tiE16,tiP16],{warna:"blue"})
+      geomSegmen(geom16,[tiG16,tiI16],{warna:"blue"})
+      geomSegmen(geom16,[tiF16,tiJ16],{warna:"blue"})
+      geomSegmen(geom16,[tiP16,tiQ16],{warna:"blue"})
+      geomSegmen(geom16,[tiR16,tiQ16],{warna:"blue"})
+      geomSegmen(geom16,[tiR16,tiH16],{warna:"blue"})
+      geomSegmen(geom16,[tiK16,tiL16],{warna:"blue"})
+      geomSegmen(geom16,[tiQ16,tiM16],{warna:"blue"})
+      geomLabelTitik(geom16,tiA16,"A",{anchor:"end",xplus:-0.5,yplus:-0.5})
+      geomLabelTitik(geom16,tiB16,"B",{anchor:"start",xplus:0.5,yplus:-0.5})
+      geomLabelTitik(geom16,tiC16,"C",{anchor:"start",baseline:"hanging",xplus:0.4,yplus:0.4}) 
+      geomLabelTitik(geom16,tiD16,"D",{anchor:"end",baseline:"hanging",xplus:-0.4,yplus:0.4}) 
+      geomLabelTitik(geom16,tiE16,"E",{anchor:"middle",baseline:"auto",yplus:-0.4})      
+      geomLabelTitik(geom16,tiF16,"F",{anchor:"middle",baseline:"auto",yplus:-0.4})
+      geomLabelTitik(geom16,tiG16,"G",{anchor:"middle",baseline:"auto",yplus:-0.4})
+      geomLabelTitik(geom16,tiH16,"H",{anchor:"start",baseline:"central",xplus:0.4})
+    </script>
+  </div>
+
+  <div class="justify" id="17">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Persegi <em>ABCD</em> dengan panjang sisinya adalah 8, seperti ditunjukkan pada gambar berikut 
+    <div id="temsvg7" class="w3-center"></div>
+    Jika garid <em>DE</em> menyinggung setengah lingkaran berdiameter <em>AB</em>, panjang <em>DE</em> adalah ....
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM September 2024</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Misal <em>DE</em> menyinggung setengah lingkaran tersebut di <em>F</em>. <br>
+          <em>DA</em> = <em>DF</em> = 8 <br>
+          Misal <e><em>FE</em> = <em>BE</em> = <em>x</em>.</e><br>
+          <em>DE</em> = <em>DF</em> + <em>FE</em> = 8 + <em>x</em>
+          <em>CE</em> = 8 &minus; <em>x</em> <br>
+          Dari segitiga <em>CDE</em>, <br>
+          \(\begin{aligned}
+          DC^2+CE^2&=DE^2\\
+          8^2+(8-x)&=(8+x)^2\\
+          64+64-16x+x^2&=64+16x+x^2\\
+          64&=32x\\
+          x&=2
+          \end{aligned}\) <br><br>
+          <em>DE</em> = 8 + 2 = 10
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, <em>DE</em> = 10.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+      var svg7 = geomBuat("temsvg7",8,8,{rasio:15,margin:1});
+      var tiA7 = [0,8];
+      var tiB7 = [8,8];
+      var tiC7 = [8,0];
+      var tiD7 = [0,0];
+      var tiE7 = [8,6];
+      geomSegi(svg7,[tiA7,tiB7,tiC7,tiD7]);
+      geomSegmen(svg7,[tiD7,tiE7]);
+      geomSetengahLing(svg7,[4,8],tiA7,opsi={})
+      geomLabelTitik(svg7,tiA7,"A",{anchor:"end",baseline:"mathematical",xplus:-0.05})
+      geomLabelTitik(svg7,tiB7,"B",{anchor:"start",baseline:"mathematical",xplus:0.15})
+      geomLabelTitik(svg7,tiC7,"C",{anchor:"start",baseline:"auto",xplus:0.15})
+      geomLabelTitik(svg7,tiD7,"D",{anchor:"end",baseline:"auto",xplus:-0.1})
+      geomLabelTitik(svg7,tiE7,"E",{anchor:"start",baseline:"central",xplus:0.15})
+    </script>
+  </div>
+
+  <div class="justify" id="18">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Perhatikan gambar berikut 
+    <div id="temsvg8" class="w3-center"></div>
+    Diketahui <e><em>AB</em> = <em>BC</em></e> dan panjang jari-jari seperempat lingkaran adalah 1. Misalkan panjang jari-jari setengah lingkaran kecil dapat dinyatakan sebagai $a-b\sqrt{c}$ dengan <em>a</em>, <em>b</em>, dan <em>c</em> merupakan bilangan bulat positif dan <em>c</em> bilangan prima, maka nilai dari <e><em>a</em> + <em>b</em> + <em>c</em></e> adalah ....
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="4" type="A">
+          <li>7</li>
+          <li>3</li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">LMNAS Ke-28 SMA</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><div id="temsvg8_1" class="w3-center"></div>
+        $AB=\sqrt2$ <br>
+        $AD=CE=\sqrt2-1$ <br><br>
+        Misal <e><em>EI</em> = <em>IF</em> = <em>IH</em> = <em>HC</em> = <em>r</em></e><br><br>
+        \(\begin{aligned}
+        CI&=\sqrt2-1-r\\
+        r\sqrt2&=\sqrt2-1-r\\
+        r&=\dfrac{\sqrt2-1}{\sqrt2+1}\\[4pt]
+        &=3-2\sqrt2
+        \end{aligned}\) <br>
+        3 + 2 + 2 = 7
+      </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>a</em> + <em>b</em> + <em>c</em> = 7.</e><br><b>JAWAB: D</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+      var spg8 = geomBuat("temsvg8",Math.sqrt(2),Math.sqrt(2),{rasio:200,margin:0.1});
+      var spg8_1 = geomBuat("temsvg8_1",Math.sqrt(2),Math.sqrt(2),{rasio:200,margin:0.1});
+      var tiA8 = [0,0];
+      var tiB8 = [0,Math.sqrt(2)];
+      var tiC8 = [Math.sqrt(2),Math.sqrt(2)];
+      var tiD8 = [0,Math.sqrt(2)-1];
+      var tiE8 = [1,Math.sqrt(2)];
+      var tiF8 = [7-4*Math.sqrt(2),Math.sqrt(2)];
+      var tiG8 = titiktengah([tiA8,tiC8])
+      var tiH8 = titikpadagaris([tiC8,tiA8],(3-2*Math.sqrt(2))/(2*Math.sqrt(2)-1))
+      var tiI8 = titiktengah([tiE8,tiF8])
+      geomSiku(spg8_1,[tiA8,tiG8,tiB8],{r:0.07,isi:"green",tampakisi:0.5})
+      geomSiku(spg8_1,[tiI8,tiH8,tiC8],{r:0.05,isi:"green",tampakisi:0.5})
+      geomSiku(spg8_1,[tiC8,tiB8,tiA8],{r:0.07,isi:"green",tampakisi:0.5})
+      geomSegi(spg8,[tiA8,tiB8,tiC8],{tebalgaris:2})
+      geomBusur(spg8,tiB8,tiD8,tiE8,{tebalgaris:2,sweep:1})
+      geomBusur(spg8,tiI8,tiE8,tiF8,{tebalgaris:2,sweep:1});
+      geomLabelTitik(spg8,tiA8,"A",{ukuran:1.2,anchor:"middle",yplus:-0.02})
+      geomLabelTitik(spg8,tiB8,"B",{ukuran:1.2,anchor:"end",baseline:"mathematical",xplus:-0.01})
+      geomLabelTitik(spg8,tiC8,"C",{ukuran:1.2,baseline:"mathematical",xplus:0.02})
+      geomSegi(spg8_1,[tiA8,tiB8,tiC8],{tebalgaris:2})
+      geomBusur(spg8_1,tiB8,tiD8,tiE8,{tebalgaris:2,sweep:1})
+      geomBusur(spg8_1,tiI8,tiE8,tiF8,{tebalgaris:2,sweep:1});
+      geomSegmen(spg8_1,[tiB8,tiG8],{tebal:2})
+      geomSegmen(spg8_1,[tiI8,tiH8],{tebal:2})
+      geomLabelTitik(spg8_1,tiA8,"A",{ukuran:1.2,anchor:"middle",yplus:-0.02})
+      geomLabelTitik(spg8_1,tiB8,"B",{ukuran:1.2,anchor:"end",baseline:"mathematical",xplus:-0.01})
+      geomLabelTitik(spg8_1,tiC8,"C",{ukuran:1.2,baseline:"mathematical",xplus:0.02})
+      geomLabelTitik(spg8_1,tiD8,"D",{ukuran:1.2,anchor:"end",baseline:"central",xplus:-0.02})
+      geomLabelTitik(spg8_1,tiE8,"E",{ukuran:1.2,anchor:"middle",baseline:"hanging",yplus:0.02})
+      geomLabelTitik(spg8_1,tiF8,"F",{ukuran:1.2,anchor:"middle",baseline:"hanging",yplus:0.02})
+      geomLabelTitik(spg8_1,tiI8,"I",{ukuran:1.2,anchor:"middle",baseline:"hanging",yplus:0.02})
+      geomLabelTitik(spg8_1,tiG8,"G",{ukuran:1.2,anchor:"middle",baseline:"auto",xplus:0.03,yplus:-0.01})
+      geomLabelTitik(spg8_1,tiH8,"H",{ukuran:1.2,anchor:"middle",baseline:"auto",xplus:0.03,yplus:-0.01})
+      geomLabelGaris(spg8_1,[tiB8,tiD8],1,{ukuran:1.1,anchor:"start",baseline:"central",xplus:0.02})
+      geomLabelGaris(spg8_1,[tiB8,tiG8],1,{ukuran:1.1,anchor:"end",baseline:"auto",yplus:-0.02})
+      geomLabelGaris(spg8_1,[tiB8,tiE8],1,{ukuran:1.1,anchor:"middle",baseline:"hanging",yplus:0.02})
+      geomLabelGaris(spg8_1,[tiA8,tiG8],1,{ukuran:1.1,anchor:"start",baseline:"auto",yplus:-0.02})
+    </script>
+  </div>
+
+  <div class="justify" id="19">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    <div id="temsvg9" class="w3-center"></div>
+    Luas &bigtriangleup;Biru?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><div class="w3-row">
+          <div class="w3-col l6"><div id="temsvg9_1"></div>
+        </div>
+          <div class="w3-col l6"><em>DF</em><sup>2</sup> = 5<sup>2</sup> + 10<sup>2</sup> = 125<br><br>
+            <em>DE</em> &sdot; <em>DF</em> = <em>DG</em><sup>2</sup> = 5<sup>2</sup> = 25<br><br>
+            \(\begin{aligned}
+        \dfrac{DE\cdot DF}{DF^2}&=\dfrac{25}{125}\\[4pt]
+        \dfrac{DE}{DF}&=\dfrac15\to \dfrac{EF}{DF}=\dfrac45
+        \end{aligned}\) <br><br>
+        \(\begin{aligned}
+        \left[EFG\right]&=\dfrac45[DFG]\\[4pt]
+        &=\dfrac45\cdot\dfrac12\cdot5\cdot5\\
+        &=\color{blue}\boxed{\boxed{\color{black}10}}
+        \end{aligned}\)</div>
+        </div>
+          
+        
+      </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, luas &bigtriangleup;Biru = 10.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+      var spg9 = geomBuat("temsvg9",10,10,{rasio:20,margin:1})
+      var spg9_1 = geomBuat("temsvg9_1",10,10,{rasio:30,margin:1})
+      var tiA9 = [0,10]
+      var tiB9 = [10,10]
+      var tiC9 = [10,0]
+      var tiD9 = [0,0]
+      var tiF9 = [5,10]
+      var tiE9 = titikpadagaris([tiD9,tiF9],1/4)
+      var tiG9 = [0,5]
+      geomSegi(spg9,[tiA9,tiB9,tiC9,tiD9],{tebalgaris:2})
+      geomSegi(spg9,[tiE9,tiF9,tiG9],{tebalgaris:2,isi:"blue"})
+      geomLing(spg9,[5,5],5,{tebalgaris:2})
+      geomLabelGaris(spg9,[tiA9,tiB9],10,{ukuran:1.1,anchor:"middle",baseline:"hanging",yplus:0.3})
+      geomSegmen(spg9,[tiD9,tiF9],{tebal:2})
+      geomSegi(spg9_1,[tiA9,tiB9,tiC9,tiD9],{tebalgaris:2})
+      geomSegi(spg9_1,[tiE9,tiF9,tiG9],{tebalgaris:2,isi:"blue"})
+      geomLing(spg9_1,[5,5],5,{tebalgaris:2})
+      geomLabelGaris(spg9_1,[tiA9,tiF9],5,{ukuran:1.1,anchor:"middle",baseline:"hanging",yplus:0.3})
+      geomLabelGaris(spg9_1,[tiB9,tiF9],5,{ukuran:1.1,anchor:"middle",baseline:"hanging",yplus:0.3})
+      geomSegmen(spg9_1,[tiD9,tiF9],{tebal:2})
+      geomLabelTitik(spg9_1,tiA9,"A",{ukuran:1.2,anchor:"end",baseline:"mathematical",xplus:-0.2})
+      geomLabelTitik(spg9_1,tiB9,"B",{ukuran:1.2,anchor:"start",baseline:"mathematical",xplus:0.2})
+      geomLabelTitik(spg9_1,tiC9,"C",{ukuran:1.2,anchor:"start",baseline:"central",xplus:0.2,yplus:-0.2})
+      geomLabelTitik(spg9_1,tiD9,"D",{ukuran:1.2,anchor:"end",baseline:"central",xplus:-0.2,yplus:-0.2})
+      geomLabelTitik(spg9_1,tiE9,"E",{ukuran:1.2,anchor:"start",baseline:"central",xplus:0.3})
+      geomLabelTitik(spg9_1,tiF9,"F",{ukuran:1.2,anchor:"middle",baseline:"hanging",yplus:0.2})
+      geomLabelTitik(spg9_1,tiG9,"G",{ukuran:1.2,anchor:"end",baseline:"central",xplus:-0.2})
+      geomLabelGaris(spg9_1,[tiD9,tiG9],5,{ukuran:1.1,anchor:"end",baseline:"central",xplus:-0.2})
+    </script>
+  </div>
+
+  <div class="justify" id="20">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    <div class="w3-row">
+      <div class="w3-col s7">Pada gambar berikut, <em>ABCD</em>, <em>BEFGC</em>, dan <em>CGHIJK</em> berturut-turut adalah persegi, segi lima beraturan, dan segi enam beraturan. Besar &ang; <em>CDK</em> = ....&deg;. 
+        <div class="w3-row">
+          <div class="w3-col s6">
+            <ol class="pas1" type="A">
+              <li>60</li>
+              <li>69</li>
+              <li>71</li>
+            </ol>
+          </div>
+          <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+              <li>73</li>
+              <li>75</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col s5 w3-center" id="spg20"></div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://kpm.read1institute.org/" target="_blank" rel="noopener noreferrer">Penyisihan OGM 10 Tingkat SMA</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">
+          &ang;<em>BCD</em> = 90&deg; <br><br>
+          \(\begin{aligned}
+          \angle BCG&=180&deg;-\dfrac{360&deg;}5\\[4pt] 
+          &=108&deg;
+          \end{aligned}\) <br><br>
+          \(\begin{aligned}
+          \angle GCK&=180&deg;-\dfrac{360&deg;}6\\[4pt]
+          &=120&deg;
+          \end{aligned}\) <br><br>
+          \(\begin{aligned}
+          \angle DCK&=360&deg;-(90&deg;+108&deg;+120&deg;)\\
+          &=360&deg;-318&deg;\\
+          &=42&deg;
+          \end{aligned}\) <br><br>
+          \(\begin{aligned}
+          \angle CDK&=\dfrac{180&deg;-42&deg;}2\\
+          &=\color{blue}\boxed{\boxed{\color{black}69&deg;}}
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, besar &ang; <em>CDK</em> = 69 &deg;.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+      var a20 = 100;
+      var spg20 = geomBuat("spg20",a20*(1+sin(72)+sin(36)),a20*(1+2*sin(18)+sin(42)+sin(78)),{rasio:1,margin:17})
+      var tiA20 = [0,a20*(1+sin(18)+sin(42)+sin(78))];
+      var tiB20 = [a20,a20*(1+sin(18)+sin(42)+sin(78))];
+      var tiC20 = [a20,a20*(sin(18)+sin(42)+sin(78))];
+      var tiD20 = [0,a20*(sin(18)+sin(42)+sin(78))];
+      var tiE20 = [a20*(1+sin(72)),a20*(1+2*sin(18)+sin(42)+sin(78))];
+      var tiF20 = [a20*(1+sin(72)+sin(36)),a20*(1+2*sin(18)+sin(42)+sin(78)-sin(54))];
+      var tiG20 = [a20*(1+sin(72)),a20*(1+2*sin(18)+sin(42)+sin(78)-2*sin(54))];
+      var tiH20 = [a20*(1+sin(72)+sin(12)),a20*sin(42)];
+      var tiI20 = [a20*(1-sin(48)+sin(12)+sin(72)),0];
+      var tiJ20 = [a20*(1-sin(48)+sin(12)),a20*sin(18)];
+      var tiK20 = [a20*(1-sin(48)),a20*(sin(18)+sin(78))];
+      geomSegi(spg20,[tiA20,tiB20,tiC20,tiD20],{})
+      geomSegi(spg20,[tiB20,tiE20,tiF20,tiG20,tiC20],{});
+      geomSegi(spg20,[tiG20,tiH20,tiI20,tiJ20,tiK20,tiC20],{});
+      geomSegmen(spg20,[tiD20,tiK20])
+      geomLabelTitik(spg20,tiA20,"A",{ukuran:1.2,anchor:"end",baseline:"mathematical",xplus:-0.05})
+      geomLabelTitik(spg20,tiB20,"B",{ukuran:1.2,anchor:"middle",baseline:"hanging",yplus:3})
+      geomLabelTitik(spg20,tiC20,"C",{ukuran:1.2,anchor:"middle",baseline:"baseline",xplus:2,yplus:-5})
+      geomLabelTitik(spg20,tiD20,"D",{ukuran:1.2,anchor:"end",baseline:"middle",xplus:-2})
+      geomLabelTitik(spg20,tiE20,"E",{ukuran:1.2,anchor:"middle",baseline:"hanging",yplus:3})
+      geomLabelTitik(spg20,tiF20,"F",{ukuran:1.2,anchor:"start",baseline:"middle",xplus:2})
+      geomLabelTitik(spg20,tiG20,"G",{ukuran:1.2,anchor:"start",baseline:"middle",xplus:3,yplus:-1})
+      geomLabelTitik(spg20,tiH20,"H",{ukuran:1.2,anchor:"start",baseline:"middle",xplus:3})
+      geomLabelTitik(spg20,tiI20,"I",{ukuran:1.2,anchor:"middle",baseline:"baseline",yplus:-3})
+      geomLabelTitik(spg20,tiJ20,"J",{ukuran:1.2,anchor:"end",baseline:"middle",xplus:-3})
+      geomLabelTitik(spg20,tiK20,"K",{ukuran:1.2,anchor:"end",baseline:"middle",xplus:-3})
+    </script>
+  </div>
+
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+  <script>soal(geombida,3,2)</script>
+</div>
+</body>
+</html> 
+<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HOTS Zone : Permutasi dan Kombinasi [2]</title> 
+    <script defer src="../mathjax/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="templatestyle.css">
+<link rel="stylesheet" href="gaya.css">
+    <script src="skrip.js"></script>
+    <script src="../matematikin.js"></script>
+<!--link rel="stylesheet" href="style.css"-->
+<style>body{
+font-family: roboto,sans-serif;   
+}</style>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><br>
+
+<div class="w3-container" style="background-color: papayawhip">
+  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Permutasi dan Kombinasi</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+
+  <h3>Tipe: </h3>
+  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
+  <br><div class="navi w3-bar w3-border w3-round w3-hide"><br>
+  </div>
+
+  <div id="11" class="justify">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Tentukan banyaknya cara memilih 3 huruf berbeda (tanpa memperhatikan urutan) dari kata <i>BERSATU</i>, dengan syarat tidak semuanya huruf vokal dan tidak semuanya huruf konsonan.
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://ktom.or.id" target="_blank" rel="noopener noreferrer">KTOM Agustus 2023</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><ul>
+            <li><h3>1 Vokal 2 Konsonan</h3>
+              <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mtable displaystyle="true" columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="0.68em 0.68em 0.3em">
+                  <mtr>
+                    <mtd>
+                      <msubsup>
+                        <mi>C</mi>
+                        <mn>1</mn>
+                        <mn>3</mn>
+                      </msubsup>
+                      <mo>&#x22C5;</mo>
+                      <msubsup>
+                        <mi>C</mi>
+                        <mn>2</mn>
+                        <mn>4</mn>
+                      </msubsup>
+                    </mtd>
+                    <mtd>
+                      <mi></mi>
+                      <mo>=</mo>
+                      <mstyle displaystyle="true" scriptlevel="0">
+                        <mfrac>
+                          <mrow>
+                            <mn>3</mn>
+                            <mo>!</mo>
+                          </mrow>
+                          <mrow>
+                            <mo stretchy="false">(</mo>
+                            <mn>3</mn>
+                            <mo>&#x2212;</mo>
+                            <mn>1</mn>
+                            <mo stretchy="false">)</mo>
+                            <mo>!</mo>
+                            <mtext>&#xA0;</mtext>
+                            <mn>1</mn>
+                            <mo>!</mo>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                      <mo>&#x22C5;</mo>
+                      <mstyle displaystyle="true" scriptlevel="0">
+                        <mfrac>
+                          <mrow>
+                            <mn>4</mn>
+                            <mo>!</mo>
+                          </mrow>
+                          <mrow>
+                            <mo stretchy="false">(</mo>
+                            <mn>4</mn>
+                            <mo>&#x2212;</mo>
+                            <mn>2</mn>
+                            <mo stretchy="false">)</mo>
+                            <mo>!</mo>
+                            <mtext>&#xA0;</mtext>
+                            <mn>2</mn>
+                            <mo>!</mo>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                    </mtd>
+                  </mtr>
+                  <mtr>
+                    <mtd></mtd>
+                    <mtd>
+                      <mi></mi>
+                      <mo>=</mo>
+                      <mstyle displaystyle="true" scriptlevel="0">
+                        <mfrac>
+                          <mrow>
+                            <mn>3</mn>
+                            <mo>&#x22C5;</mo>
+                            <menclose notation="updiagonalstrike">
+                              <mn>2</mn>
+                              <mo>!</mo>
+                            </menclose>
+                          </mrow>
+                          <mrow>
+                            <menclose notation="updiagonalstrike">
+                              <mn>2</mn>
+                              <mo>!</mo>
+                            </menclose>
+                            <mtext>&#xA0;</mtext>
+                            <mn>1</mn>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                      <mo>&#x22C5;</mo>
+                      <mstyle displaystyle="true" scriptlevel="0">
+                        <mfrac>
+                          <mrow>
+                            <msup>
+                              <menclose notation="updiagonalstrike updiagonalarrow northeastarrow">
+                                <mn>4</mn>
+                              </menclose>
+                              <mpadded depth="-.1em" height="+.1em" voffset=".1em">
+                                <mstyle mathcolor="red">
+                                  <mn>2</mn>
+                                </mstyle>
+                              </mpadded>
+                            </msup>
+                            <mo>&#x22C5;</mo>
+                            <mn>3</mn>
+                            <mo>&#x22C5;</mo>
+                            <menclose notation="updiagonalstrike">
+                              <mn>2</mn>
+                              <mo>!</mo>
+                            </menclose>
+                          </mrow>
+                          <mrow>
+                            <menclose notation="updiagonalstrike">
+                              <mn>2</mn>
+                              <mo>!</mo>
+                            </menclose>
+                            <mtext>&#xA0;</mtext>
+                            <menclose notation="updiagonalstrike">
+                              <mn>2</mn>
+                            </menclose>
+                            <mo>&#x22C5;</mo>
+                            <mn>1</mn>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                    </mtd>
+                  </mtr>
+                  <mtr>
+                    <mtd></mtd>
+                    <mtd>
+                      <mi></mi>
+                      <mo>=</mo>
+                      <mn>18</mn>
+                    </mtd>
+                  </mtr>
+                </mtable>
+              </math>
+            </li>
+            <li><h3>2 Vokal 1 Konsonan</h3>
+              <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mtable displaystyle="true" columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" rowspacing="0.68em 0.68em 0.3em">
+                  <mtr>
+                    <mtd>
+                      <msubsup>
+                        <mi>C</mi>
+                        <mn>2</mn>
+                        <mn>3</mn>
+                      </msubsup>
+                      <mo>&#x22C5;</mo>
+                      <msubsup>
+                        <mi>C</mi>
+                        <mn>1</mn>
+                        <mn>4</mn>
+                      </msubsup>
+                    </mtd>
+                    <mtd>
+                      <mi></mi>
+                      <mo>=</mo>
+                      <mstyle displaystyle="true" scriptlevel="0">
+                        <mfrac>
+                          <mrow>
+                            <mn>3</mn>
+                            <mo>!</mo>
+                          </mrow>
+                          <mrow>
+                            <mo stretchy="false">(</mo>
+                            <mn>3</mn>
+                            <mo>&#x2212;</mo>
+                            <mn>2</mn>
+                            <mo stretchy="false">)</mo>
+                            <mo>!</mo>
+                            <mtext>&#xA0;</mtext>
+                            <mn>2</mn>
+                            <mo>!</mo>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                      <mo>&#x22C5;</mo>
+                      <mstyle displaystyle="true" scriptlevel="0">
+                        <mfrac>
+                          <mrow>
+                            <mn>4</mn>
+                            <mo>!</mo>
+                          </mrow>
+                          <mrow>
+                            <mo stretchy="false">(</mo>
+                            <mn>4</mn>
+                            <mo>&#x2212;</mo>
+                            <mn>1</mn>
+                            <mo stretchy="false">)</mo>
+                            <mo>!</mo>
+                            <mtext>&#xA0;</mtext>
+                            <mn>1</mn>
+                            <mo>!</mo>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                    </mtd>
+                  </mtr>
+                  <mtr>
+                    <mtd></mtd>
+                    <mtd>
+                      <mi></mi>
+                      <mo>=</mo>
+                      <mstyle displaystyle="true" scriptlevel="0">
+                        <mfrac>
+                          <mrow>
+                            <mn>3</mn>
+                            <mo>&#x22C5;</mo>
+                            <menclose notation="updiagonalstrike">
+                              <mn>2</mn>
+                              <mo>!</mo>
+                            </menclose>
+                          </mrow>
+                          <mrow>
+                            <mn>1</mn>
+                            <mtext>&#xA0;</mtext>
+                            <menclose notation="updiagonalstrike">
+                              <mn>2</mn>
+                              <mo>!</mo>
+                            </menclose>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                      <mo>&#x22C5;</mo>
+                      <mstyle displaystyle="true" scriptlevel="0">
+                        <mfrac>
+                          <mrow>
+                            <mn>4</mn>
+                            <mo>&#x22C5;</mo>
+                            <menclose notation="updiagonalstrike">
+                              <mn>3</mn>
+                              <mo>!</mo>
+                            </menclose>
+                          </mrow>
+                          <mrow>
+                            <menclose notation="updiagonalstrike">
+                              <mn>3</mn>
+                              <mo>!</mo>
+                            </menclose>
+                            <mtext>&#xA0;</mtext>
+                            <mn>1</mn>
+                          </mrow>
+                        </mfrac>
+                      </mstyle>
+                    </mtd>
+                  </mtr>
+                  <mtr>
+                    <mtd></mtd>
+                    <mtd>
+                      <mi></mi>
+                      <mo>=</mo>
+                      <mn>12</mn>
+                    </mtd>
+                  </mtr>
+                </mtable>
+              </math>
+            </li>
+        </ul>
+        18 + 12 = 30
+    </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya cara memilih 3 huruf berbeda (tanpa memperhatikan urutan) dari kata <i>BERSATU</i>, dengan syarat tidak semuanya huruf vokal dan tidak semuanya huruf konsonan ada 30 cara.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="12">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Terdapat sebuah rapat yang terdiri dari 40 kursi yang dihadiri oleh 16 tamu undangan. Untuk menghindari penularan COVID-19, maka setiap tamu undangan harus dibatasi minimal dengan 1 kursi. Tentukan banyaknya susunan mereka duduk.
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">KSNK 2021 SMP</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><h1>CARA BIASA</h1>
+          Beri nomor kursi-kursi tersebut dengan nomor 1, 2, 3, 4, ..., 39, dan 40 (misalkan) dari ujung kiri ke ujung kanan dalam urutan tersebut. Misalkan <em>a</em><sub>1</sub>, <em>a</em><sub>2</sub>, <em>a</em><sub>3</sub>, ..., <em>a</em><sub>16</sub> adalah nomor-nomor kursi yang diduduki oleh 16 orang tersebut dimana <e><em>a<sub>i</sub></em> &in; {1, 2, 3, ..., 40}</e> untuk setiap bilangan asli <e>1 &le; <em>i</em> &le; 16,</e> lalu pandang himpunan <e>{<em>a</em><sub>1</sub>, <em>a</em><sub>2</sub>, <em>a</em><sub>3</sub>, ..., <em>a</em><sub>16</sub>}.</e> Definisikan pula <e><em>w<sub>j</sub></em> = <em>a<sub>j</sub></em> &minus; <em>a</em><sub><em>j</em> &minus; 1</sub></e> dimana <e><em>w<sub>j</sub></em> &ge; 2</e> untuk setiap bilangan asli <e>2 &le; <em>j</em> &le; 16.</e> Perhatikan bahwa
+          <div class="w3-center"><e><em>a</em><sub>1</sub> + <em>w</em><sub>2</sub> + <em>w</em><sub>3</sub> + &ctdot; + <em>w</em><sub>16</sub> = <em>a</em><sub>16</sub> &le; 40</e></div>
+          Maka terdapat bilangan asli <em>k</em> sehingga
+          \begin{aligned}
+          a_1+w_2+w_3+\cdots+w_{16}&=41-k\\
+          a_1+w_2+w_3+\cdots+w_{16}+k&=41\\
+          \end{aligned}
+          Misalkan <e><em>w<sub>j</sub></em> = <em>x<sub>j</sub></em> + 1</e> dimana <em>x<sub>j</sub></em> bilangan asli. Maka kita punya
+          \begin{aligned} 
+          a_1+w_2+w_3+\cdots+w_{16}+k&=41\\
+          a_1+\left(x_2+1\right)+\left(x_3+1\right)+\cdots+\left(x_{16}+1\right)+k&=41\\
+          a_1+x_2+x_3+\cdots+x_{16}+k&=26&\qquad{\color{red}(*)}
+          \end{aligned}
+          Kita tahu bahwa <e><em>a<sub>j</sub></em></e> bijektif dengan <e><em>x<sub>j</sub></em></e>, sehingga banyak himpunan <e>{<em>a</em><sub>1</sub>, <em>a</em><sub>2</sub>, &ctdot;, <em>a</em><sub>16</sub>}</e> sama dengan menentukan banyak solusi dari (*). Dengan star and bar theorem, maka ada
+          \[C(26-1,17-1)=C(25,16)\]
+          Karena posisi 16 orang tersebut dapat ditukar-tukar (dipermutasi), maka banyaknya posisi duduk yang dapat disusun adalah <e>16! &times; <em>C</em>(25, 16).</e>
+          <h1>CARA CEPAT</h1>
+          <em>n</em> = 40, <em>m</em> = 16 
+          \begin{aligned}
+          m!\times C(n-m+1,m)&=16!\times C(40-16+1,16)\\
+          &=\boxed{\boxed{16!\times C(25,16)}}
+          \end{aligned}
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, <br><b>JAWAB: </b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="13">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Dalam sebuah acara reuni dapat dihitung bahwa telah terjadi 120 kali jabat tangan (bersalam-salaman) antara para partisipan. Jika untuk setiap 2 orang berjabat tepat satu kali saja. maka banyaknya orang yang hadir pada acara reuni tersebut adalah ... orang.
+    <div class="w3-row">
+      <div class="w3-col s2"><ol type="A">
+        <li>12</li>
+      </ol></div>
+      <div class="w3-col s2"><ol type="A" start="2">
+        <li>16</li>
+      </ol></div>
+      <div class="w3-col s2"><ol type="A" start="3">
+        <li>6</li>
+      </ol></div>
+      <div class="w3-col s2"><ol type="A" start="4">
+        <li>8</li>
+      </ol></div>
+      <div class="w3-col s2"><ol type="A" start="5">
+        <li>10</li>
+      </ol></div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://forummatematika.freeforums.net/thread/33/" target="_blank" rel="noopener noreferrer">OMITS 16th - SMP</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        C_2^n&=120\\
+        \dfrac{n(n-1)}2&=120\\[4pt]
+        n^2-n-240&=0\\
+        (n+15)(n-16)&=0\\
+        n&=\boxed{\boxed{16}}
+        \end{aligned}\)</div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya orang yang hadir pada acara reuni tersebut adalah 16 orang.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="14">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Sebuah acara rapat dihadiri oleh empat siswa perwakilan kelas 7, tiga siswa kelas 8, dua siswa kelas 9. seorang guru dan ketua OS1S. Acara tersebut berlangsung di salah satu ruangan yang menggunakan meja bundar. Jika perwakilan siswa harus duduk bersamaan sesuai kelasnya dan ketua OSIS harus duduk berdekatan di sebelah guru, maka banyak susunan duduk berbeda yang dapat diatur oleh panitia acara adalah .. . susunan.
+    <div class="w3-row">
+      <div class="w3-col s2"><ol type="A">
+        <li>3456</li>
+      </ol></div>
+      <div class="w3-col s2"><ol type="A" start="2">
+        <li>2023</li>
+      </ol></div>
+      <div class="w3-col s2"><ol type="A" start="3">
+        <li>4045</li>
+      </ol></div>
+      <div class="w3-col s2"><ol type="A" start="4">
+        <li>2348</li>
+      </ol></div>
+      <div class="w3-col s2"><ol type="A" start="5">
+        <li>2876</li>
+      </ol></div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://forummatematika.freeforums.net/thread/33/" target="_blank" rel="noopener noreferrer">OMITS 16th - SMP</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Kita anggap ada 4 kelompok. Kelompok 1 ada 4 orang (kelas 7), kelompok 2 ada 3 orang (kelas 8), kelompok 3 ada 2 orang (kelas 9), dan kelompok 4 ada 2 orang (seorang guru dan ketua OSIS). Banyak susunan adalah <br>
+          \(\begin{aligned}
+          (4-1)!\cdot4!\cdot3!\cdot2!\cdot2!&=6\cdot24\cdot6\cdot2\cdot2\\
+          &=\boxed{\boxed{3456}}
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, banyak susunan duduk berbeda yang dapat diatur oleh panitia acara adalah 3456 susunan.<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="15">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Sebanyak <em>n</em> orang pengurus sebuah organisasi akan dibagi ke dalam empat komisi mengikuti ketentuan berikut : (i) setiap anggota tergabung ke dalam tepat dua komisi, dan (ii) setiap dua komisi memiliki tepat satu anggota bersama. Berapakah <em>n</em> ?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://forummatematika.freeforums.net/thread/38/" target="_blank" rel="noopener noreferrer">OSP SMA 2002</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">soal ini sama halnya mencari berapa garis yang bisa dibuat dari 4 titik, dimana tidak ada 3 titik yang segaris. Garis-garis tersebut menggambarkan orang, dan 4 titik menggambarkan komisi. <br>
+          $C_2^4=6$
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, <em>n</em> = 6.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="16">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Terdapat 5 kotak yang disusun seperti berikut.
+    <div id="temsvg6" class="w3-center"></div>
+    Pada setiap kotak akan diberi nomor diantara <e>1, 2, 3, 4, 5</e> sehingga setiap kotak memiliki nomor berbeda. Banyak cara penomoran sehingga kotak dengan bilangan genap tidak bersebelahan (tidak ada sisi yang berimpit) adalah ....
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM Februari 2024 tingkat SMA</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Misal P adalah tempat bilangan genap, dan J adalah tempat bilangan ganjil. Agar kedua bilangan genap tidak bersebelahan, maka kemungkinan posisinya adalah sebagai berikut. 
+          <div class="w3-row">
+            <div class="w3-col m4 w3-center" id="temsvg6_1"></div>
+            <div class="w3-col m4 w3-center" id="temsvg6_2"></div>
+            <div class="w3-col m4 w3-center" id="temsvg6_3"></div>
+          </div>
+          3 &sdot; 2! &sdot; 3! = 36
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, banyak cara penomoran sehingga kotak dengan bilangan genap tidak bersebelahan (tidak ada sisi yang berimpit) adalah 36.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>var spg6 = geomBuat("temsvg6",6,4,{rasio:25,margin:0.1});
+    geomSegi(spg6,[[1,0],[3,0],[3,2],[1,2]])
+    geomSegi(spg6,[[3,0],[5,0],[5,2],[3,2]])
+    geomSegi(spg6,[[0,2],[2,2],[2,4],[0,4]])
+    geomSegi(spg6,[[2,2],[4,2],[4,4],[2,4]])
+    geomSegi(spg6,[[4,2],[6,2],[6,4],[4,4]])
+    var spg6_1 = geomBuat("temsvg6_1",6,4,{rasio:25,margin:0.1});
+    geomSegi(spg6_1,[[1,0],[3,0],[3,2],[1,2]])
+    geomSegi(spg6_1,[[3,0],[5,0],[5,2],[3,2]])
+    geomSegi(spg6_1,[[0,2],[2,2],[2,4],[0,4]])
+    geomSegi(spg6_1,[[2,2],[4,2],[4,4],[2,4]])
+    geomSegi(spg6_1,[[4,2],[6,2],[6,4],[4,4]])
+    geomLabelTitik(spg6_1,[2,1],"P",{anchor:"middle",baseline:"central",warna:"maroon"})
+    geomLabelTitik(spg6_1,[5,3],"P",{anchor:"middle",baseline:"central",warna:"maroon"})
+    geomLabelTitik(spg6_1,[4,1],"J",{anchor:"middle",baseline:"central",warna:"darkgreen"})
+    geomLabelTitik(spg6_1,[1,3],"J",{anchor:"middle",baseline:"central",warna:"darkgreen"})
+    geomLabelTitik(spg6_1,[3,3],"J",{anchor:"middle",baseline:"central",warna:"darkgreen"})
+    var spg6_2 = geomBuat("temsvg6_2",6,4,{rasio:25,margin:0.1});
+    geomSegi(spg6_2,[[1,0],[3,0],[3,2],[1,2]])
+    geomSegi(spg6_2,[[3,0],[5,0],[5,2],[3,2]])
+    geomSegi(spg6_2,[[0,2],[2,2],[2,4],[0,4]])
+    geomSegi(spg6_2,[[2,2],[4,2],[4,4],[2,4]])
+    geomSegi(spg6_2,[[4,2],[6,2],[6,4],[4,4]])
+    geomLabelTitik(spg6_2,[4,1],"P",{anchor:"middle",baseline:"central",warna:"maroon"})
+    geomLabelTitik(spg6_2,[1,3],"P",{anchor:"middle",baseline:"central",warna:"maroon"})
+    geomLabelTitik(spg6_2,[2,1],"J",{anchor:"middle",baseline:"central",warna:"darkgreen"})
+    geomLabelTitik(spg6_2,[5,3],"J",{anchor:"middle",baseline:"central",warna:"darkgreen"})
+    geomLabelTitik(spg6_2,[3,3],"J",{anchor:"middle",baseline:"central",warna:"darkgreen"})
+    var spg6_3 = geomBuat("temsvg6_3",6,4,{rasio:25,margin:0.1});
+    geomSegi(spg6_3,[[1,0],[3,0],[3,2],[1,2]])
+    geomSegi(spg6_3,[[3,0],[5,0],[5,2],[3,2]])
+    geomSegi(spg6_3,[[0,2],[2,2],[2,4],[0,4]])
+    geomSegi(spg6_3,[[2,2],[4,2],[4,4],[2,4]])
+    geomSegi(spg6_3,[[4,2],[6,2],[6,4],[4,4]])
+    geomLabelTitik(spg6_3,[5,3],"P",{anchor:"middle",baseline:"central",warna:"maroon"})
+    geomLabelTitik(spg6_3,[1,3],"P",{anchor:"middle",baseline:"central",warna:"maroon"})
+    geomLabelTitik(spg6_3,[2,1],"J",{anchor:"middle",baseline:"central",warna:"darkgreen"})
+    geomLabelTitik(spg6_3,[4,1],"J",{anchor:"middle",baseline:"central",warna:"darkgreen"})
+    geomLabelTitik(spg6_3,[3,3],"J",{anchor:"middle",baseline:"central",warna:"darkgreen"})
+    </script>
+  </div>
+
+  <div class="justify" id="17">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Banyaknya bilangan asli 3 digit <em>abc</em> sehingga <e><em>a</em> &ge; <em>b</em> &ge; <em>c</em></e> adalah ....
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM Februari 2024 tingkat SMA</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><h3>Jika <e><em>a</em> &gt; <em>b</em> &gt; <em>c</em></e></h3>
+          Dari 10 digit <e>(0, 1, ..., 9)</e> kita pilih 3 digit. Perhatikan bahwa terpilih digit <e>(1, 2, 3)</e> sama dengan terpilih digit <e>(2, 3, 1)</e> karena akan menjadi bilangan yang sama yaitu 321. Karena tidak memperhatikan urutan maka menggunakan kombinasi. <br>
+          \(\begin{aligned}
+          C_3^{10}&=\dfrac{10!}{(10-3)!\cdot3!}\\[4pt]
+        &=\dfrac{10\cdot\cancelto{3}{9}\cdot\cancelto{4}{8}\cdot\cancel{7!}}{\cancel{7!}\cdot\cancel{3}\cdot\cancel{2}}\\[4pt]
+        &=120
+          \end{aligned}\)
+          <h3>Jika <em>a</em> = <em>b</em> &gt; <em>c</em></h3>
+          Dari 10 digit kita pilih 2 tanpa memperhatikan urutan. <br>
+          \(\begin{aligned}
+          C_2^{10}&=\dfrac{10!}{(10-2)!\cdot2!}\\[4pt]
+          &=\dfrac{\cancelto{5}{10}\cdot9\cdot\cancel{8!}}{\cancel{8!}\cdot\cancel{2}}\\[4pt]
+          &=45
+          \end{aligned}\)
+          <h3>Jika <em>a</em> &gt; <em>b</em> = <em>c</em></h3>
+          Banyaknya bilangan akan sama pada kasus <e><em>a</em> = <em>b</em> &gt; <em>c</em></e> yaitu 45.
+          <h3>Jika <e><em>a</em> = <em>b</em> = <em>c</em></e></h3>
+          Ada 9 bilangan. <br><br>
+          120 + 45 + 45 + 9 = 219.
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya bilangan asli 3 digit <em>abc</em> sehingga <e><em>a</em> &ge; <em>b</em> &ge; <em>c</em></e> adalah 219.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="18">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Budi akan membuat bilangan 3 digit yang digit-digitnya berbeda dan tidak memuat digit 0. Jika bilangan tersebut harus memuat angka 7, 8, atau 9, maka banyak bilangan yang bisa dibuat Budi ada sebanyak ....
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM Februari 2024 tingkat SMA</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Banyak bilangan 3 digit yang digit-digitnya berbeda dan tidak memuat digit 0 adalah <br>
+          9&times;8&times;7 = 504 <br><br>
+          Banyak bilangan 3 digit yang digit-digitnya berbeda, tidak memuat digit 0, 7, 8, atau 9, atau dengan kata lain memuat digit 1, 2, ..., 6 adalah <br>
+          6&times;5&times;4 = 120 <br><br>
+          Sehingga, banyak bilangan 3 digit yang digit-digitnya berbeda, tidak memuat digit 0, memuat angka 7, 8, atau 9, adalah <br>
+          504 &minus; 120 = <kotak>384</kotak>
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, banyak bilangan yang bisa dibuat Budi ada sebanyak 384.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="19">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Banyaknya penyusunan kata 4 huruf yang hurufnya diambil dari K, E, L, I, N, C, I adalah ....
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM Februari 2024 tingkat SMA</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><h3>Memuat paling banyak 1 huruf I</h3>
+          Banyak kata 4 huruf dari K, E, L, I, N, C <br>
+          \(\begin{aligned}
+          P_4^6&=\dfrac{6!}{(6-4)!}\\[4pt]
+          &=\dfrac{6\cdot5\cdot4\cdot3\cdot\cancel{2!}}{\cancel{2!}}\\[4pt]
+          &=360
+          \end{aligned}\)
+          <h3>Memuat 2 huruf I</h3>
+          Kita pilih 2 huruf lagi dari K, E, L, N, C tanpa memperhatikan urutan, kemudian permutasikan. <br>
+          \(\begin{aligned}
+          C_2^5\cdot\dfrac{4!}{2!}&=\dfrac{5!}{(5-2)!\cdot2!}\cdot\dfrac{4\cdot3\cdot\cancel{2!}}{\cancel{2!}}\\[4pt]
+          &=\dfrac{5\cdot\cancelto{2}{4}\cdot\cancel{3!}}{\cancel{3!}\cdot\cancel{2}}\cdot12\\[4pt]
+          &=120
+          \end{aligned}\) <br><br>
+          360 + 120 = <kotak>480</kotak>
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya penyusunan kata 4 huruf yang hurufnya diambil dari K, E, L, I, N, C, I adalah 480.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="20">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Sekelompok orang akan berjabat tangan. Setiap orang hanya dapat melakukan jabat tangan sekali. Tidak boleh melakukan jabat tangan dengan dirinya sendiri. Jika dalam sekelompok orang tersebut terdapat 190 jabat tangan, maka banyaknya orang dalam kelompok ada berapa?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">OSK SMA 2011</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        C_2^{n}&=190\\
+        \dfrac{n!}{(n-2)!\ 2!}&=190\\[4pt] 
+        \dfrac{n\cdot(n-1)\cdot\cancel{(n-2)!}}{\cancel{(n-2)!}\cdot2}&=10\cdot19\\[4pt] 
+        \dfrac{n(n-1)}2&=10\cdot19\\[4pt]
+        n(n-1)&=2\cdot10\cdot19\\
+        n(n-1)&=20\cdot19\\
+        n&=\color{blue}\boxed{\boxed{\color{black}20}}
+        \end{aligned}\)</div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya orang dalam kelompok ada 20 orang.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+  <script>soal(permukom,3,2)</script>
+</div>
+</body>
+</html> 
+<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>

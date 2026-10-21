@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HOTS Zone : Aturan Pencacahan</title> 
+    <script defer src="../mathjax/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="templatestyle.css">
+<link rel="stylesheet" href="gaya.css">
+    <script src="skrip.js"></script>
+    <script src="../matematikin.js"></script>
+<!--link rel="stylesheet" href="style.css"-->
+<style>body{
+font-family: roboto,sans-serif;   
+}</style>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><br>
+
+<div class="w3-container" style="background-color: white">
+  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Aturan Pencacahan</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+
+  <h2>Tipe</h2>
+  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+
+  <div id="1" class="justify">
+    <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
+    Semua susunan huruf-huruf yang terdiri dari 3 huruf disusun. Jika AAA berada pada urutan pertama sedangkan AAB pada urutan kedua maka berada pada urutan berapakah susunan huruf OSN?
+    <div class="w3-row">
+        <div class="w3-col s6">
+            <ol class="pas1" type="A">
+                <li>9940</li>
+                <li>9942</li>
+                <li>9944</li>
+            </ol>
+        </div>
+        <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+                <li>9946</li>
+                <li>9948</li>
+            </ol>
+        </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><h3>KASUS 1</h3>
+            <table class="tengah">
+                <tbody>
+                    <tr>
+                        <th>Kemungkinan Huruf</th>
+                        <td>A - N</td>
+                        <td class="tengah">A - Z</td>
+                        <td class="tengah">A - Z</td>
+                    </tr>
+                    <tr>
+                        <th>Banyak Kemungkinan</th>
+                        <td class="tengah">14</td>
+                        <td class="tengah">26</td>
+                        <td class="tengah">26</td>
+                    </tr>
+                </tbody>
+            </table>
+            14&times;26&times;26 = 9464
+            <h3>KASUS 2</h3>
+            <table class="tengah">
+                <tbody>
+                    <tr>
+                        <th>Kemungkinan Huruf</th>
+                        <td class="tengah">O</td>
+                        <td class="tengah">A - R</td>
+                        <td class="tengah">A - Z</td>
+                    </tr>
+                    <tr>
+                        <th>Banyak Kemungkinan</th>
+                        <td class="tengah">1</td>
+                        <td class="tengah">18</td>
+                        <td class="tengah">26</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            1&times;18&times;26 = 468
+            <h3>KASUS 3</h3>
+            <table class="tengah">
+                <tbody>
+                    <tr>
+                        <th>Kemungkinan Huruf</th>
+                        <td class="tengah">O</td>
+                        <td class="tengah">S</td>
+                        <td class="tengah">A - O</td>
+                    </tr>
+                    <tr>
+                        <th>Banyak Kemungkinan</th>
+                        <td class="tengah">1</td>
+                        <td class="tengah">1</td>
+                        <td class="tengah">13</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            13 <br><br>
+            9464 + 468 + 13 = 9945
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, OSN berapa pada urutan ke-9946.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="2">
+    <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
+    Diketahui ada 6 pilihan jalan yang dapat digunakan untuk berpergian dari kota A ke kota B dan ada 8 pilihan jalan yang dapat digunakan untuk berpergian dari kota B ke kota C. Jika seseorang akan berpergian dari kota A ke kota C melalui kota B dan pulang kembali lagi ke kota A melalui jalan-jalan yang berbeda dari ketika saat pergi, banyaknya cara memilih jalan yang dapat dilalui adalah ....
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">OSK SMA 2024</a></div>
+    <details>
+        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+        <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><div id="temsvg2" class="w3-center"></div>
+            Dari A ke B ada 6 pilihan jalan. Dari B ke C ada 8 pilihan jalan. Dari C kembali ke B ada 7 pilihan jalan karena 1 jalan sudah pernah dilalui. Dari B ke A ada 5 pilihan jalan karena 1 jalan sudah pernah dilalui. Banyak cara memilih jalan adalah <br>
+            6 &times; 8 &times; 7 &times; 5 = <kotak>1680</kotak>
+        </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya cara memilih jalan yang dapat dilalui adalah 1680 cara.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.closest('details').removeAttribute('open')">TUTUP</button></div>
+        </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="3">
+    <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
+    Ada berapa banyak bilangan 4-angka (digit) yang semua angkanya genap dan bukan merupakan kelipatan 2003?
+    <div class="w3-row"> 
+     <div class="w3-col s4"> 
+     <ol class="pas1" type="A"> 
+     <li>499</li> 
+     <li>500</li> 
+     </ol> 
+     </div> 
+     <div class="w3-col s4"> 
+     <ol class="pas1" start="3" type="A"> 
+     <li>624</li> 
+     <li>625</li> 
+     </ol> 
+     </div> 
+     <div class="w3-col s4"> 
+     <ol class="pas1" start="5" type="A"> 
+     <li>Tidak satupun diantaranya</li> 
+     </ol> 
+     </div> 
+     </div>    
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">OSK SMA 2003</a></div>
+    <details>
+        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+        <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">Angka pert ama ada 4 kemungkinan : 2, 4, 6, 8. Angka ke-2, ke-3 dan ke-4 masing-masing ada 5 kemungkinan. Banyaknya bilangan empat angka yang semua digitnya genap ada : <e>4 &times; 5 &times; 5 &times; 5 = 500 bilangan.</e><br>
+                Bilangan kelipat an 2003 yang terdiri dari 4 angka adalah : 2003, 4006, 6009, 8012. Yang semua digitnya bilangan genap hanya 4006.</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, ada 499 bilangan 4-angka (digit) yang semua angkanya genap dan bukan merupakan kelipatan 2003.<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+        </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="4">
+    <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
+    Misalkan kita menuliskan semua bilangan bulat 1, 2, 3, ..., sampai dengan 2011. Berapa kali kita menuliskan angka 1?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">OSK SMA 2011</a></div>
+    <details>
+        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+        <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><h2>Banyaknya angka 1 dari 001 hingga 999</h2>
+                <h3>Bilangan berbentuk _ _ 1</h3>
+                10 &times; 10 &times; 1 = 100
+                <h3>Bilangan berbentuk _ 1 _</h3>
+                10 &times; 1 &times; 10 = 100
+                <h3>Bilangan berbentuk 1 _ _</h3>
+                1 &times; 10 &times; 10 = 100 <br><br>
+                ada 300.
+                <h2>Banyaknya angka 1 dari 1000 hingga 1999</h2>
+                <h3>Berbentuk _ _ _ 1</h3>
+                1 &times; 10 &times; 10 &times; 1 = 100
+                <h3>Berbentuk _ _ 1 _</h3>
+                1 &times; 10 &times; 1 &times; 10 = 100
+                <h3>Berbentuk _ 1 _ _</h3>
+                1 &times; 1 &times; 10 &times; 10 = 100
+                <h3>Berbentuk 1 _ _ _</h3>
+                1 &times; 10 &times; 10 &times; 10 = 1000 <br><br>
+                ada 1300.
+                <h2>Banyaknya angka 1 dari 2000 hingga 2011</h2>
+                <h3>Berbentuk 2 0 _ 1</h3>
+                1 &times; 1 &times; 2 &times; 1 = 2
+                <h3>Berbentuk 2 0 1 _</h3>
+                1 &times; 1 &times; 1 &times; 2 = 2 <br><br>
+                ada 4. <br><br>
+                300 + 1300 + 4 = <kotak>1604</kotak>.
+            </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, angka 1 ditulis 1604 kali.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+        </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="5">
+    <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
+    Dalam sebuah pertandingan sepak bola yang terdiri dari 22 pemain (11 pemain start up dan 11 pemain cadangan) mempunyai aturan sebagai berikut :
+    <ol type="a">
+        <li>Tidak bisa melakukan substitusi lebih dari 1&times; dalam waktu bersamaan.</li>
+        <li>Jika pemain yang di lapangan sudah diganti, maka tidak bisa bermain lagi.</li>
+        <li>Pemain yang menggantikan pemain lain, dapat diganti lagi selama pelatih belum melakukan pergantian pemain sebanyak 3&times;.</li>
+    </ol>
+Diberikan bilangan <em>n</em> yang menyatakan banyak kemungkinan pelatih mengganti pemain selama permainan (termasuk kemungkinan tidak melakukan pergantian pemain). Berapa sisa <em>n</em> jika dibagi 10?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM September 2024</a></div>
+    <details>
+        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+        <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><ul>
+                <li><h3>tidak melakukan pergantian</h3>
+                    1 cara
+                </li>
+                <li><h3>1&times; pergantian</h3>
+                    kita pilih 1 dari 11 pemain cadangan, kemudian pilih 1 dari 11 pemain start up untuk diganti. <br>
+                    11<sup>2</sup> &equiv; 1<sup>2</sup> mod 10 &equiv; 1 mod 10
+                </li>
+                <li><h3>2&times; pergantian</h3>
+                    Kita pilih 1 dari 11 pemain cadangan, kemudian pilih 1 dari 11 pemain start up, kemudian pilih 1 dari 10 pemain cadangan tersisa, kemudian pilih 1 dari 11 pemain di lapangan. <br>
+                    11&sdot;11&sdot;10&sdot;11 &equiv; 0 mod 10
+                </li>
+                <li><h3>3&times; pergantian</h3>
+                    Dengan konsep yang sama dengan 2&times; pergantian, didapat: <br>
+                    11&sdot;11&sdot;10&sdot;11&sdot;9&sdot;11 &equiv; 0 mod 10
+                </li>
+            </ul>
+            (1 + 1 + 0 + 0) mod 10 &equiv; 2 mod 10
+        </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, sisa <em>n</em> jika dibagi 10 adalah 2.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+        </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="6">
+    <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
+    Nala akan mengisi setiap kotak berikut dengan bilangan berbeda 1 sampai 7. Jumlah bilangan pada 3 kotak yang berdekatan merupakan kelipatan 3. Salah satu kotak sudah berisi 5. Ada berapa cara Nala dapat mengisi kotak-kotak tersebut? 
+    <div id="spg6" class="w3-center"></div>
+    <div class="w3-row">
+        <div class="w3-col s6">
+            <ol class="pas1" type="A">
+                <li>6</li>
+                <li>9</li>
+                <li>15</li>
+            </ol>
+        </div>
+        <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+                <li>18</li>
+                <li>24</li>
+            </ol>
+        </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Penyisihan OGM 10 Tingkat SMA</a></div>
+    <details>
+        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+        <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">
+                Misal angka di kotak pertama adalah <em>a</em>, angka di kotak ketiga adalah <em>b</em>, dan angka di kotak keempat adalah <em>c</em>. 
+                <ul>
+                    <li><h4>Jika <em>b</em> 0 &equiv; mod 3</h4>
+                        <em>b</em> &in; {3, 6} <br>
+                        maka <em>a</em>,<em>c</em> &equiv; 1 mod 3, didapat <e><em>a</em>,<em>c</em> &in; {1, 4, 7}</e><br>
+                        banyak kemungkinan = $2\times P_2^3 = 12$
+                    </li>
+                    <li><h4>Jika <em>b</em> &equiv; 1 mod 3</h4>
+                        <em>b</em> &in; {1, 4, 7} <br>
+                        maka <em>a</em>,<em>c</em> &equiv; 0 mod 3, didapat <e><em>a</em>,<em>c</em> &in; {3, 6}</e><br>
+                        banyak kemungkinan = $3\times P_2^2 = 6$
+                    </li>
+                    <li><h4>JIka <em>b</em> &equiv; 2 mod 3</h4>
+                        <em>b</em> &in; {2, 5} <br>
+                        maka <em>a</em>,<em>c</em> &equiv; 2 mod 3, didapat <e><em>a</em>,<em>c</em> &in; {2, 5}</e>. Hanya ada 2 pilihan untuk 3 kotak, sehingga tidak ada kemungkinan.
+                    </li>
+                </ul>
+                Jumlah kemungkinan = 12 + 6 = 18.
+            </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, ada 18 cara Nala dapat mengisi kotak-kotak tersebut.<br><b>JAWAB: D</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+        </div>
+    </details>
+    <hr>
+    <script>
+        var a6 = 40;
+        var spg6 = geomBuat("spg6",4*a6,a6,{margin:1});
+        geomSegi(spg6,[[0,0],[4*a6,0],[4*a6,a6],[0,a6]]);
+        geomSegmen(spg6,[[a6,0],[a6,a6]]);
+        geomSegmen(spg6,[[2*a6,0],[2*a6,a6]]);
+        geomSegmen(spg6,[[3*a6,0],[3*a6,a6]]);
+        geomSegmen(spg6,[[0,a6],[a6,a6]]);
+        geomLabelTitik(spg6,[3*a6/2,a6/2],"5",{anchor:"middle",baseline:"central",ukuran:2});
+    </script>
+  </div>
+
+  <div class="justify" id="7">
+    <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
+    Banyaknya bilangan asli yang kurang dari 350 dan semua angka penyusunnya berbeda adalah ....
+    <div class="w3-row">
+        <div class="w3-col s6">
+            <ol class="pas1" type="A">
+                <li>81</li>
+                <li>144</li>
+                <li>176</li>
+            </ol>
+        </div>
+        <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+                <li>266</li>
+                <li>274</li>
+            </ol>
+        </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Penyisihan OGM 10 Tingkat SMA</a></div>
+    <details>
+        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+        <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">
+                <h3>1 digit</h3>
+                9 bilangan.
+                <h3>2 digit</h3>
+                9 &times; 9 = 81
+                <h3>3 digit; digit pertama 1 atau 2</h3>
+                2 &times; 9 &times; 8 = 144
+                <h3>3 digit; digit pertama 3; digit kedua 0, 1, 2, atau 4</h3>
+                1 &times; 4 &times; 8 = 32
+                <h3>Total</h3>
+                9 + 81 + 144 + 32 = 266
+            </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya bilangan asli yang kurang dari 350 dan semua angka penyusunnya berbeda adalah 266.<br><b>JAWAB: D</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+        </div>
+    </details>
+    <hr>
+  </div>
+
+  <br><br><div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+  <script>soal(atupen,3,1)</script>
+</div>
+</body>
+</html> 
+<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>

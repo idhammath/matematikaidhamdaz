@@ -1,0 +1,227 @@
+<!DOCTYPE html> 
+<html>  
+   <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>HOTS Zone : Persamaan Aljabar</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="templatestyle.css">
+  <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+      <script src="../matematikin.js"></script>
+  <!--link rel="stylesheet" href="style.css"-->
+  <style>body{
+  font-family: roboto,sans-serif;   
+  }</style>
+     </head> 
+     <body>
+      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Persamaan</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
+      <h3>Tipe: </h3>
+      <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
+      <br>
+      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+      <br>
+
+      <div id="1" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+        Misalkan <em>x</em> dan <em>y</em> adalah dua bilangan riil yang memenuhi
+        $\dfrac{x^{2}+y^{2}}{x^{2}-y^{2}}+\dfrac{x^{2}-y^{2}}{x^{2}+y^{2}}=3$.
+      Apabila nilai dari
+        $\dfrac{x^{8}+y^{8}}{x^{8}-y^{8}}+\dfrac{x^{8}-y^{8}}{x^{8}+y^{8}}$
+        dapat dinyatakan sebagai pecahan sederhana $\dfrac{a}{b}$, dengan <em>a</em> dan <em>b</em> adalah dua bilangan asli, tentukan nilai dari <e><em>a</em> + <em>b</em></e>.
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="/" target="_blank">KTOM September 2020</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+              \dfrac{x^2+y^2}{x^2-y^2}+\dfrac{x^2-y^2}{x^2+y^2}&=3\\
+              \dfrac{\left(x^2+y^2\right)^2+\left(x^2-y^2\right)^2}{\left(x^2+y^2\right)\left(x^2-y^2\right)}&=3\\
+              \dfrac{x^4+2x^2y^2+y^4+x^4-2x^2y^2+y^4}{x^4-y^4}&=3\\
+              \dfrac{2x^4+2y^4}{x^4-y^4}&=3\\
+              2x^4+2y^4&=3x^4-3y^4\\
+              5y^4&=x^4\\
+              x^8&=25y^8
+              \end{aligned}
+              \begin{aligned}
+              \dfrac{x^{8}+y^{8}}{x^{8}-y^{8}}+\dfrac{x^{8}-y^{8}}{x^{8}+y^{8}}&=\dfrac{25y^8+y^{8}}{25y^8-y^{8}}+\dfrac{25y^8-y^{8}}{25y^8+y^{8}}\\
+              &=\dfrac{26y^8}{24y^8}+\dfrac{24y^8}{26y^{8}}\\
+              &=\dfrac{13}{12}+\dfrac{12}{13}\\
+              &=\dfrac{169+144}{156}\\
+              &=\dfrac{313}{156}
+              \end{aligned}
+              <e><em>a</em> = 313</e>, <e><em>b</em> = 156</e><br><br>
+        <e><em>a</em> + <em>b</em> = 313 + 156 = <kotak>469</kotak>469</e>
+            </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>a</em> + <em>b</em> = 469.</e><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+      </div>
+      
+      <div id="2" class="justify"><br><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+        Selesaikan persamaan $x^2+\dfrac{x^2}{(x+1)^2}=3$
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2">Canadian MO 1992</div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+              x^2+\dfrac{x^2}{(x+1)^2}&=3\\
+              x^2-2\cdot x\cdot\dfrac{x}{x+1}+\left(\dfrac{x}{x+1}\right)^2+2\cdot x\cdot\dfrac{x}{x+1}&=3\\
+              \left(x-\dfrac{x}{x+1}\right)+2\cdot\dfrac{x^2}{x+1}&=3\\
+              \left(\dfrac{x(x+1)-x}{x+1}\right)+2\cdot\dfrac{x^2}{x+1}-3&=0\\
+              \left(\dfrac{x^2+x-x}{x+1}\right)+2\cdot\dfrac{x^2}{x+1}-3&=0\\
+              \left(\dfrac{x^2}{x+1}\right)+2\cdot\dfrac{x^2}{x+1}-3&=0\\
+              \end{aligned}
+              Misal $\dfrac{x^2}{x+1}=p$<br>
+        \begin{aligned}
+        p^2+2p-3&=0\\
+        (p+3)(p-1)&=0
+        \end{aligned}
+        <ul>
+          <li><em>p</em> + 3 = 0 <br>
+            \(\begin{aligned}
+            p&=-3\\
+              \dfrac{x^2}{x+1}&=-3\\[4pt]
+              x^2&=-3x-3\\
+              x^2+3x+3&=0
+            \end{aligned}\) <br><br>
+            \(\begin{aligned}
+            D&=3^2-4(1)(3)\\
+              &=9-12\\
+              &=-3
+            \end{aligned}\) <br>
+            Karena <em>D</em> &lt; 0 sehingga persamaan di atas tidak ada solusi real.
+          </li>
+          <li><em>p</em> &minus; 1 = 0 <br>
+            \(\begin{aligned}
+            p&=1\\
+              \dfrac{x^2}{x+1}&=1\\[4pt]
+              x^2&=x+1\\
+              x^2-x-1&=0\\
+              x&=\dfrac{-(-1)\pm\sqrt{(-1)^2-4(1)(-1)}}{2(1)}\\[4pt]
+              &=\dfrac{1\pm\sqrt{1+4}}2\\
+              &=\boxed{\boxed{\dfrac{1\pm\sqrt5}2}}
+            \end{aligned}\)
+          </li>
+        </ul>
+            </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, $x=\dfrac{1\pm\sqrt5}2$.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+      </div>    
+      
+      <div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+  Hasil perkalian dari nilai-nilai <em>x</em> yang memenuhi<br>
+  $\dfrac{x^2}{10000}=\dfrac{10000}{x^{2\left({^{10}\negmedspace\log x}\right)-8}}$<br>
+  adalah
+  <div class="w3-row">
+	<div class="w3-col s6">
+		<ol class="pas1" type="A">
+			<li>10<sup>2</sup></li>
+			<li>10<sup>3</sup></li>
+			<li>10<sup>4</sup></li>
+		</ol>
+	</div>
+	<div class="w3-col s6">
+		<ol class="pas1" start="4" type="A">
+			<li>10<sup>5</sup></li>
+			<li>10<sup>7</sup></li>
+		</ol>
+	</div>
+</div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/9701" target="_blank">Grup Telegram</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><em>x</em> &gt; 0 <br><br>
+              \(\begin{aligned}
+              \dfrac{x^2}{10000}&=\dfrac{10^5}{x^{2\left({^{10}\negmedspace\log x}\right)-8}}\\[4pt]
+        \dfrac{x^2}{10000}&=\dfrac{10^5}{x^{2\log x-8}}\\[4pt]
+        x^2\cdot x^{2\log x-8}&=10^5\cdot10^5\\
+        x^{2+2\log x-8}&=10^{5+5}\\
+        x^{2\log x-6}&=10^{10}\\
+        x^{\frac{2\log x-6}2}&=10^{\frac{10}2}\\
+        x^{\log x-3}&=10^5\\
+        \log\left(x^{\log x-3}\right)&=\log10^5\\
+        \left(\log x-3\right)\log x&=5
+              \end{aligned}\) <br>
+              Misal log <em>x</em> = <em>p</em> <br>
+              \(\begin{aligned}
+              (p-3)p&=5\\
+          p^2-3p-5&=0
+              \end{aligned}\) <br><br>
+              \(\begin{aligned}
+              p_1+p_2&=\dfrac{-(-3)}1\\[4pt]
+          \log x_1+\log x_2&=3\\
+          \log\left(x_1\cdot x_2\right)&=3\\
+          x_1\cdot x_2&=\boxed{\boxed{10^3}}
+              \end{aligned}\)
+            </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, hasil perkalian dari nilai-nilai <em>x</em> yang memenuhi<br>
+              $\dfrac{x^2}{10000}=\dfrac{10000}{x^{2\left({^{10}\negmedspace\log x}\right)-8}}$<br>
+              adalah 10<sup>3</sup>.<br><b>JAWAB: B</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+      </div>
+      
+      <div class="justify" id="4">
+        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+        Bilangan-bilangan real <em>a</em>, <em>b</em>, dan <em>c</em> memenuhi sistem persamaan <e><em>a</em> + <em>b</em> = 8</e> dan <e><em>ab</em> = <em>c</em><sup>2</sup> + 16</e>. Hasil dari <e><em>a</em> + <em>b</em> + <em>c</em> =</e> ....
+        <div class="w3-row">
+            <div class="w3-col s6">
+                <ol class="pas1" type="A">
+                    <li>
+                        4
+                    </li>
+                    <li>
+                        5
+                    </li>
+                    <li>
+                        6
+                    </li>
+                </ol>
+            </div>
+            <div class="w3-col s6">
+                <ol class="pas1" start="4" type="A">
+                    <li>
+                        7
+                    </li>
+                    <li>
+                        8
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="#" target="_blank">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\(\begin{aligned}
+              ab&\leq\dfrac{(a+b)^2}4\\[4pt]
+              &\leq\dfrac{8^2}4\\[4pt]
+              &\leq16
+            \end{aligned}\) <br><br>
+            \(\begin{aligned}
+            c^2+16&\geq16\\
+                            ab&\geq16\\
+            \end{aligned}\) <br>
+            Didapat <e><em>ab</em> = 16</e> dan <e><em>c</em> = 0</e><br><br>
+            <e><em>a</em> + <em>b</em> + <em>c</em> = 8 + 0 = <kotak>8</kotak></e>
+          </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>a</em> + <em>b</em> + <em>c</em> = 8.</e><br><b>JAWAB: E</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+    </div>
+    <br><br>
+    <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+    <br>
+      <script>soal(persamaan,3,1)</script>
+   </body>
+</html> 

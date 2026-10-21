@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>HOTS Zone : Limit</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../katex/katex.css">
+      <script src="../katex/katex.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="templatestyle.css">
+  <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+      <script src="../matematikin.js"></script>
+   </head> 
+     <body> <div class="w3-container">
+      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Limit</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
+      <h3>Tipe: </h3>
+      <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">Standar</a><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
+      <br>
+      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+      <br>
+        
+        <div id="1" class="justify">
+        <h3>
+        No. <span class="w3-badge w3-red nomor"></span></h3>
+        <z>f_n(x)=\underbrace{x^{x^{x^{x^{.^{.^{.^x}}}}}}}_{\text{ada }n\text{ buah }x}</z>
+        Tentukan nilai dari <m>\displaystyle\lim_{x\to0^+}\left(f_{2016}(x)+f_{2017}(x)+f_{2018}(x)\right)</m>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneId/268" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+        <details>
+           <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+           <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">Untuk <e><em>n</em> = 2</e>,
+        \begin{aligned}
+        \displaystyle\lim_{x\to0^+}\left(f_2(x)\right)&amp;=\displaystyle\lim_{x\to0^+}x^x\\
+        &amp;=1
+        \end{aligned}
+        Untuk <e><em>n</em> = 3</e>,
+        \begin{aligned}
+        \displaystyle\lim_{x\to0^+}\left(f_3(x)\right)&amp;=\displaystyle\lim_{x\to0^+}x^{x^x}\\
+        &amp;=\left(\displaystyle\lim_{x\to0^+}x\right)^{\left(\displaystyle\lim_{x\to0^+}x^x\right)}\\
+        &amp;=\left(\displaystyle\lim_{x\to0^+}x\right)^1\\
+        &amp;=\displaystyle\lim_{x\to0^+}x\\
+        &amp;=0
+        \end{aligned}
+        Jadi, jika <em>n</em> genap maka <e><em>f</em><sub><em>n</em></sub>(<em>x</em>) = 1</e>, dan jika <em>n</em> ganjil maka <e><em>f</em><sub><em>n</em></sub>(<em>x</em>) = 0</e>.<br />
+        Sehingga,
+        \begin{aligned}
+        \displaystyle\lim_{x\to0^+}\left(f_{2016}(x)+f_{2017}(x)+f_{2018}(x)\right)&amp;=1+0+1\\
+        &amp;=2
+        \end{aligned}</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to0^+}\left(f_{2016}(x)+f_{2017}(x)+f_{2018}(x)\right)=2</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+           </div>
+        </details>
+        <hr>
+        </div>
+        
+        <br>
+        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+        <br>
+        <script>soal(limit,3,1)</script>
+      </div> </body>
+</html> 

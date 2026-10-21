@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HOTS Zone : Segitiga [2]</title> 
+    <script defer src="../mathjax/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="templatestyle.css">
+<link rel="stylesheet" href="gaya.css">
+    <script src="skrip.js"></script>
+    <script src="../matematikin.js"></script>
+<!--link rel="stylesheet" href="style.css"-->
+<style>body{
+font-family: roboto,sans-serif;   
+}</style>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><br>
+
+<div class="w3-container" style="background-color: papayawhip">
+  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Segitiga</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+
+  <h3>Tipe: </h3>
+  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+
+  <div id="11" class="justify">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Banyak segitiga pada gambar berikut adalah .... 
+    <div id="tempatsvg"></div>
+    <script>
+      var a = 12;
+      var margin = 1;
+      var r = 8;
+      var r2 = 4;
+      function sin(x=0){
+        return Math.sin(x*Math.PI/180)
+      };
+      function cos(x=0){
+        return Math.cos(x*Math.PI/180)
+      }
+      var b = 2*a+2*a*cos(72);
+      var lebar = 2*margin+b;
+      var tinggi = 2*margin+b*sin(72);
+      document.getElementById("tempatsvg").innerHTML = String.raw`<svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: 100px; width: ${r*lebar}px; max-width: 1000px; min-height: ${r*tinggi}px; max-height: 1000px;' viewbox="${-margin} ${-margin} ${lebar} ${tinggi}">
+        <polygon points="0,${a*sin(72)} ${b},${a*sin(72)} ${b-b*sin(54)},${b*sin(72)} ${a+a*cos(72)},0 ${a+a*cos(72)+b*cos(72)},${b*sin(72)}" style="stroke: black; stroke-width: ${4/r}; fill: none;"/>
+
+  </svg>`
+    </script>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">    <div id="tempatsvg2"></div>
+        <script>
+          document.getElementById("tempatsvg2").innerHTML = String.raw`<svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: ${r2*lebar}px; width: 10%; max-width: 1000px; min-height: ${r2*tinggi}px; max-height: 1000px;' viewbox="${-margin} ${-margin} ${lebar} ${tinggi}">
+        <polygon points="0,${a*sin(72)} ${b},${a*sin(72)} ${b-b*sin(54)},${b*sin(72)} ${a+a*cos(72)},0 ${a+a*cos(72)+b*cos(72)},${b*sin(72)}" style="stroke: black; stroke-width: ${4/r}; fill: none; stroke-opacity: .3;"/>
+        <polygon points="${a},${a*sin(72)} ${a+a*cos(72)},0 ${a+2*a*cos(72)},${a*sin(72)}" style="stroke: red; stroke-width: ${4/r}; fill: none;"/>
+  </svg>
+  <svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: ${r2*lebar}px; width: 10%; max-width: 1000px; min-height: ${r2*tinggi}px; max-height: 1000px;' viewbox="${-margin} ${-margin} ${lebar} ${tinggi}">
+        <polygon points="0,${a*sin(72)} ${b},${a*sin(72)} ${b-b*sin(54)},${b*sin(72)} ${a+a*cos(72)},0 ${a+a*cos(72)+b*cos(72)},${b*sin(72)}" style="stroke: black; stroke-width: ${4/r}; fill: none; stroke-opacity: .3;"/>
+        <polygon points="${a+2*a*cos(72)},${a*sin(72)} ${b},${a*sin(72)} ${b-a*sin(54)},${a*sin(72)+a*cos(54)}" style="stroke: red; stroke-width: ${4/r}; fill: none;"/>
+  </svg>
+  <svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: ${r2*lebar}px; width: 10%; max-width: 1000px; min-height: ${r2*tinggi}px; max-height: 1000px;' viewbox="${-margin} ${-margin} ${lebar} ${tinggi}">
+        <polygon points="0,${a*sin(72)} ${b},${a*sin(72)} ${b-b*sin(54)},${b*sin(72)} ${a+a*cos(72)},0 ${a+a*cos(72)+b*cos(72)},${b*sin(72)}" style="stroke: black; stroke-width: ${4/r}; fill: none; stroke-opacity: .3;"/>
+        <polygon points="${b-a*sin(54)},${a*sin(72)+a*cos(54)} ${a+a*cos(72)+b*cos(72)},${b*sin(72)} ${a+a*cos(72)},${a*sin(72)+(a+2*a*cos(72))*cos(54)}" style="stroke: red; stroke-width: ${4/r}; fill: none;"/>
+  </svg>
+  <svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: ${r2*lebar}px; width: 10%; max-width: 1000px; min-height: ${r2*tinggi}px; max-height: 1000px;' viewbox="${-margin} ${-margin} ${lebar} ${tinggi}">
+        <polygon points="0,${a*sin(72)} ${b},${a*sin(72)} ${b-b*sin(54)},${b*sin(72)} ${a+a*cos(72)},0 ${a+a*cos(72)+b*cos(72)},${b*sin(72)}" style="stroke: black; stroke-width: ${4/r}; fill: none; stroke-opacity: .3;"/>
+        <polygon points="${a+a*cos(72)},${a*sin(72)+(a+2*a*cos(72))*cos(54)} ${b-b*sin(54)},${b*sin(72)} ${a*cos(36)},${a*sin(72)+a*cos(54)}" style="stroke: red; stroke-width: ${4/r}; fill: none;"/>
+  </svg>
+  <svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: ${r2*lebar}px; width: 10%; max-width: 1000px; min-height: ${r2*tinggi}px; max-height: 1000px;' viewbox="${-margin} ${-margin} ${lebar} ${tinggi}">
+        <polygon points="0,${a*sin(72)} ${b},${a*sin(72)} ${b-b*sin(54)},${b*sin(72)} ${a+a*cos(72)},0 ${a+a*cos(72)+b*cos(72)},${b*sin(72)}" style="stroke: black; stroke-width: ${4/r}; fill: none; stroke-opacity: .3;"/>
+        <polygon points="${a*cos(36)},${a*sin(72)+a*cos(54)} 0,${a*sin(72)} ${a},${a*sin(72)}" style="stroke: red; stroke-width: ${4/r}; fill: none;"/>
+  </svg><br>
+  <svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: ${r2*lebar}px; width: 10%; max-width: 1000px; min-height: ${r2*tinggi}px; max-height: 1000px;' viewbox="${-margin} ${-margin} ${lebar} ${tinggi}">
+        <polygon points="0,${a*sin(72)} ${b},${a*sin(72)} ${b-b*sin(54)},${b*sin(72)} ${a+a*cos(72)},0 ${a+a*cos(72)+b*cos(72)},${b*sin(72)}" style="stroke: black; stroke-width: ${4/r}; fill: none; stroke-opacity: .3;"/>
+        <polygon points="0,${a*sin(72)} ${b},${a*sin(72)} ${a+a*cos(72)},${a*sin(72)+(a+2*a*cos(72))*cos(54)}" style="stroke: red; stroke-width: ${4/r}; fill: none;"/>
+  </svg>
+  <svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: ${r2*lebar}px; width: 10%; max-width: 1000px; min-height: ${r2*tinggi}px; max-height: 1000px;' viewbox="${-margin} ${-margin} ${lebar} ${tinggi}">
+        <polygon points="0,${a*sin(72)} ${b},${a*sin(72)} ${b-b*sin(54)},${b*sin(72)} ${a+a*cos(72)},0 ${a+a*cos(72)+b*cos(72)},${b*sin(72)}" style="stroke: black; stroke-width: ${4/r}; fill: none; stroke-opacity: .3;"/>
+        <polygon points="${a+a*cos(72)},0 ${a+a*cos(72)+b*cos(72)},${b*sin(72)} ${a*cos(36)},${a*sin(72)+a*cos(54)}" style="stroke: red; stroke-width: ${4/r}; fill: none;"/>
+  </svg>
+  <svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: ${r2*lebar}px; width: 10%; max-width: 1000px; min-height: ${r2*tinggi}px; max-height: 1000px;' viewbox="${-margin} ${-margin} ${lebar} ${tinggi}">
+        <polygon points="0,${a*sin(72)} ${b},${a*sin(72)} ${b-b*sin(54)},${b*sin(72)} ${a+a*cos(72)},0 ${a+a*cos(72)+b*cos(72)},${b*sin(72)}" style="stroke: black; stroke-width: ${4/r}; fill: none; stroke-opacity: .3;"/>
+        <polygon points="${b},${a*sin(72)} ${b-b*sin(54)},${b*sin(72)} ${a},${a*sin(72)}" style="stroke: red; stroke-width: ${4/r}; fill: none;"/>
+  </svg>`
+        </script>
+      </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, banyak segitiga pada gambar tersebut adalah 10.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="12">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Seluruh bagian luar dari sebuah taman berbentuk segitiga siku-siku dengan alas 9 m dan tinggi 12 m akan diberi pagar. Pagar sepanjang 1 m berwarna kuning saja, hijau saja, atau merah saja dipasang sesuai urutan penyebutan warna tersebut. Panjang pagar warna merah dan kuning yang diberikan adalah ....
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li>36 m</li>
+          <li>24 m</li>
+          <li>15 m</li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="4" type="A">
+          <li>12 m</li>
+          <li>10 m</li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://kossmi.com/" target="_blank" rel="noopener noreferrer">PENYISIHAN KOSSMI 2021 LEVEL 3</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Pagar merah dan kuning ada sebanyak \(\dfrac23\) dari panjang keseluruhan.<br>
+          \(\dfrac23(9+12+15)=24\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, panjang pagar warna merah dan kuning yang diberikan adalah 24 m.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="13">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Diberikan segitiga lancip <em>ABC</em> dengan panjang <e><em>AB</em> = 12</e> dan <e><em>AC</em> = 10.</e> <em>D</em> adalah suatu titik di <em>BC</em>. <em>E</em> dan <em>F</em> adalah titik berat segitiga <em>ABD</em> dan <em>ACD</em> berturut-turut. Jika luas dari segitiga <e><em>DEF</em> = 4,</e> dan panjang \(BC =\sqrt{n}\), tentukan nilai dari <em>n</em>.
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">
+          <div class="w3-row">
+            <div id="tempatsvg13" class="w3-col s6 w3-center"></div>
+            <div id="tempatsvg13-2" class="w3-col s6 w3-center"></div>
+          </div>
+        \begin{aligned}
+        \dfrac{[DEF]}{[DPQ]}&=\left(\dfrac23\right)^2\\[3.8pt]
+        \dfrac{4}{\dfrac14[ABC]}&=\dfrac49\\[3.8pt]
+        [ABC]&=36\\
+        \dfrac12\cdot AB\cdot CG&=36\\
+        \dfrac12\cdot 12\cdot CG&=36\\
+        CG&=6
+        \end{aligned}
+        <div id="tempatsvg13-3" class="w3-center"></div>
+        \begin{aligned}
+        BC&=\sqrt{4^2+6^2}\\
+        &=\sqrt{52}
+        \end{aligned}
+        <script>
+          var cosA14 = 2/Math.sqrt(13);
+          var sinA14 = 3/Math.sqrt(13);
+          var a14 = [Math.sqrt(52),12*sinA14,20,1];
+          var tiA14 = [12*cosA14,0];
+          var tiB14 = [0,12*sinA14];
+          var tiC14 = [Math.sqrt(52),12*sinA14];
+          var tiP14 = [6*cosA14,6*sinA14];
+          var tiQ14 = [tiA14[0]+(1/2)*(tiC14[0]-tiA14[0]),6*sinA14];
+          var tiD14 = [4,12*sinA14];
+          var tiE14 = titikpadagaris([tiP14,tiD14],1/2);
+          var tiF14 = titikpadagaris([tiQ14,tiD14],1/2);
+          var tiG14 = [4*cosA14,8*sinA14];
+          document.getElementById("tempatsvg13").innerHTML = String.raw`${svgawal(a14[0],a14[1],a14[2],a14[3])}
+          ${svgsegi([tiA14,tiB14,tiC14],{tebalgaris:1/a14[2]})}
+          ${svggaris([tiA14,tiD14],{tebalgaris:1/a14[2]})}
+          ${svggaris([tiE14,tiD14],{tebalgaris:1/a14[2]})}
+          ${svggaris([tiF14,tiD14],{tebalgaris:1/a14[2]})}
+          ${svggaris([tiF14,tiE14],{tebalgaris:1/a14[2]})}
+          ${svggaris([tiP14,tiE14],{tebalgaris:1/a14[2],dash:"0.2"})}
+          ${svggaris([tiP14,tiQ14],{tebalgaris:1/a14[2],dash:"0.2"})}
+          ${svggaris([tiQ14,tiD14],{tebalgaris:1/a14[2],dash:"0.2"})}
+          ${svglabeltitik(tiA14,"A",{anchor:"middle",ukuran:1.2/a14[2],yplus:-0.2})}
+          ${svglabeltitik(tiB14,"B",{anchor:"end",baseline:"mathematical",ukuran:1.2/a14[2],xplus:-0.2})}
+          ${svglabeltitik(tiC14,"C",{baseline:"mathematical",ukuran:1.2/a14[2],xplus:0.2})}
+          ${svglabeltitik(tiP14,"P",{anchor:"end",ukuran:1.2/a14[2]})}
+          ${svglabeltitik(tiQ14,"Q",{anchor:"start",baseline:"central",ukuran:1.2/a14[2],xplus:0.2})}
+          ${svglabeltitik(tiD14,"D",{anchor:"middle",baseline:"hanging",ukuran:1.2/a14[2],yplus:0.2})}
+          ${svglabeltitik(tiE14,"E",{anchor:"end",baseline:"central",ukuran:1.2/a14[2],xplus:-0.2})}
+          ${svglabeltitik(tiF14,"F",{anchor:"start",baseline:"central",ukuran:1.2/a14[2],xplus:0.2})}
+          </svg>`;
+          document.getElementById("tempatsvg13-2").innerHTML = String.raw`${svgawal(a14[0],a14[1],a14[2],a14[3])}
+          ${svgsegi([tiA14,tiB14,tiC14],{tebalgaris:1/a14[2]})}
+          ${svggaris([tiC14,tiG14],{tebalgaris:1/a14[2]})}
+          ${svgsiku([tiC14,tiG14,tiA14],{tebalgaris:1/a14[2],r:0.5})}
+          ${svglabeltitik(tiA14,"A",{anchor:"middle",ukuran:1.2/a14[2],yplus:-0.2})}
+          ${svglabeltitik(tiB14,"B",{anchor:"end",baseline:"mathematical",ukuran:1.2/a14[2],xplus:-0.2})}
+          ${svglabeltitik(tiC14,"C",{baseline:"mathematical",ukuran:1.2/a14[2],xplus:0.2})}
+          ${svglabeltitik(tiG14,"G",{anchor:"end",ukuran:1.2/a14[2],xplus:-0.1})}
+          </svg>`;
+          document.getElementById("tempatsvg13-3").innerHTML = String.raw`${svgawal(a14[0],a14[1],a14[2],a14[3])}
+          ${svgsegi([tiA14,tiB14,tiC14],{tebalgaris:1/a14[2]})}
+          ${svggaris([tiC14,tiG14],{tebalgaris:1/a14[2]})}
+          ${svgsiku([tiC14,tiG14,tiA14],{tebalgaris:1/a14[2],r:0.5})}
+          ${svglabeltitik(tiA14,"A",{anchor:"middle",ukuran:1.2/a14[2],yplus:-0.2})}
+          ${svglabeltitik(tiB14,"B",{anchor:"end",baseline:"mathematical",ukuran:1.2/a14[2],xplus:-0.2})}
+          ${svglabeltitik(tiC14,"C",{baseline:"mathematical",ukuran:1.2/a14[2],xplus:0.2})}
+          ${svglabeltitik(tiG14,"G",{anchor:"end",ukuran:1.2/a14[2],xplus:-0.1})}
+          ${svglabelgaris([tiB14,tiG14],"4",{anchor:"end",ukuran:1.2/a14[2],xplus:-0.2})}
+          ${svglabelgaris([tiA14,tiG14],"8",{anchor:"end",ukuran:1.2/a14[2],xplus:-0.2})}
+          ${svglabelgaris([tiC14,tiG14],"6",{anchor:"middle",ukuran:1.2/a14[2],yplus:-0.3})}
+          ${svglabelgaris([tiC14,tiA14],"10",{anchor:"start",baseline:"central",ukuran:1.2/a14[2],xplus:0.2})}
+          </svg>`;
+        </script>
+      </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, <em>n</em> = 52.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="14">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Diberikan sebuah segitiga <em>ABC</em> dengan <e>&angle;<em>BAC</em> = 90&deg;,</e> <e><em>AB</em> = 8,</e> dan <e><em>AC</em> = 15.</e> Lingkaran dalam &#8710;<em>ABC</em> menyentuh <em>BC</em>, <em>CA</em>, <em>AB</em> berturut-turut di titik <em>D</em>, <em>E</em>, <em>F</em>. Jika <em>DE</em> memotong <em>AB</em> di <em>P</em>, maka tentukan nilai dari <em>PC</em><sup>2</sup>.
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://ktom-tomi.or.id" target="_blank" rel="noopener noreferrer">KTOM April 2023</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><em>BC</em> = 17<br><br>
+          \(\begin{aligned}
+          L&=\dfrac12\cdot8\cdot15\\
+          &=60
+          \end{aligned}\)<br><br>
+          \(\begin{aligned}
+          S&=\dfrac12(8+15+17)\\
+          &=20
+          \end{aligned}\)
+          <br><br>
+          \(\begin{aligned}
+          r&=\dfrac{L}s\\[3.8pt] 
+          &=\dfrac{60}{20}\\
+          &=3
+          \end{aligned}\)
+          <div id="tempatsvg14" class="w3-center"></div>
+          &#8710;<em>EOC</em> equivalen dengan &#8710;<em>EAP</em><br>
+          <em>AP</em> = <em>EC</em> = 12<br><br>
+          \begin{aligned}
+          PC^2&=AP^2+AC^2\\
+          &=12^2+15^2\\
+          &=144+225\\
+          &=\boxed{\boxed{369}}
+          \end{aligned}
+          <script>
+            var a15a = 30;
+            var a15 = [15*a15a,20*a15a,1,30];
+            var tiA15 = [0,8*a15a];
+            var tiB15 = [0,0];
+            var tiC15 = [15*a15a,8*a15a];
+            var tiD15 = [5*15*a15a/17,5*8*a15a/17]
+            var tiE15 = [3*a15a,8*a15a]
+            var tiF15 = [0,5*a15a]
+            var tiO15 = [3*a15a,5*a15a]
+            var tiP15 = [0,20*a15a]
+            var tiG15 = []
+            var opsi1 = {warna:"green"};
+            document.getElementById("tempatsvg14").innerHTML = String.raw`${svgawal(a15[0],a15[1],a15[2],a15[3])}
+            ${svgsegi([tiA15,tiB15,tiC15],{tebalgaris:2})}
+            ${svglingkaran(tiO15,3*a15a,options={})}
+            ${svggaris([tiO15,tiD15])}
+            ${svggaris([tiO15,tiE15])}
+            ${svggaris([tiO15,tiF15])}
+            ${svggaris([tiO15,tiC15])}
+            ${svggaris([tiD15,tiP15])}
+            ${svgsegi([tiA15,tiC15,tiP15])}
+            ${svglabeltitik(tiA15,"A",{anchor:"end",baseline:"middle",ukuran:1.2,xplus:-5})}
+            ${svglabeltitik(tiB15,"B",{anchor:"middle",baseline:"auto",ukuran:1.2,xplus:-1,yplus:-5})}
+            ${svglabeltitik(tiC15,"C",{anchor:"start",baseline:"central",ukuran:1.2,xplus:5,yplus:0})}
+            ${svglabeltitik(tiD15,"D",{anchor:"middle",baseline:"auto",ukuran:1.2,xplus:4,yplus:-5})}
+            ${svglabeltitik(tiE15,"E",{anchor:"start",baseline:"hanging",ukuran:1.2,xplus:1,yplus:3})}
+            ${svglabeltitik(tiF15,"F",{anchor:"end",baseline:"central",ukuran:1.2,xplus:-5,yplus:0})}
+            ${svglabeltitik(tiO15,"O",{anchor:"end",baseline:"auto",ukuran:1.2,xplus:-1,yplus:-3})}
+            ${svglabeltitik(tiP15,"P",{anchor:"middle",baseline:"hanging",ukuran:1.2,xplus:0,yplus:3})}
+            </svg>`
+          </script>
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, <br><b>JAWAB: </b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="15">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Diberikan segitiga <em>ABC</em> siku-siku di <em>B</em>, dengan <e><em>AB</em> = 8</e> dan <e><em>BC</em> = 15.</e> Titik <em>D</em> dan <em>M</em> terletak di <em>AC</em> sehingga <em>BD</em> adalah garis tinggi dan <em>BM</em> adalah garis berat. Panjang dari segmen <em>DM</em> adalah ....
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li class="pb">\(\dfrac{189}{34}\)</li>
+          <li>\(\dfrac{161}{34}\)</li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="3" type="A">
+          <li class="pb">\(\dfrac{128}{34}\)</li>
+          <li>\(\dfrac{99}{34}\)</li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">KTOM - TO OSK SMP 2023</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><div id="temsvg15" class="w3-center"></div>
+        <script>
+          var a15 = [15,8,15,1];
+          var tiA15 = [0,0];
+          var tiB15 = [0,8];
+          var tiC15 = [15,8];
+          var tiD15 = [8*8*15/(17*17),8-8*15*15/(17*17)]
+          var tiM15 = [15/2,4]
+          document.getElementById("temsvg15").innerHTML = String.raw`${svgawal(a15[0],a15[1],a15[2],a15[3])}
+          ${svgsegi([tiA15,tiB15,tiC15],{tebalgaris:1/a15[2],warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+          ${svggaris([tiB15,tiD15],{tebalgaris:1/a15[2],warna:"black",dash:""})}
+          ${svggaris([tiB15,tiM15],{tebalgaris:1/a15[2],warna:"black",dash:""})}
+          ${svglabeltitik(tiA15,"A",{ukuran:1/a15[2],anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.2})}
+          ${svglabeltitik(tiB15,"B",{ukuran:1/a15[2],anchor:"end",baseline:"mathematical",xplus:-0.2,yplus:0})}
+          ${svglabeltitik(tiC15,"C",{ukuran:1/a15[2],anchor:"start",baseline:"mathematical",xplus:0.2,yplus:0})}
+          ${svglabeltitik(tiD15,"D",{ukuran:1/a15[2],anchor:"middle",baseline:"baseline",xplus:0.3,yplus:-0.3})}
+          ${svglabeltitik(tiM15,"M",{ukuran:1/a15[2],anchor:"middle",baseline:"baseline",xplus:0.3,yplus:-0.3})}
+          ${svglabelgaris([tiA15,tiB15],"8",{ukuran:1/a15[2],warna:"black",anchor:"end",baseline:"central",xplus:-0.3,yplus:0})}
+          ${svglabelgaris([tiC15,tiB15],"15",{ukuran:1/a15[2],warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.3})}
+
+</svg>`
+        </script>
+        Dengan menggunakan teorema Pythagoras didapat <e><em>AC</em> = 17.</e><br><br>
+        \[AM=\dfrac{17}2\]
+        \begin{aligned}
+        BA^2&=AD\cdot AC\\
+        8^2&=AD\cdot17\\
+        64&=17AD\\
+        AD&=\dfrac{64}{17}
+        \end{aligned}
+        \begin{aligned}
+        DM&=AM-AD\\
+        &=\dfrac{17}2-\dfrac{64}{17}\\[3.7pt]
+        &=\dfrac{289-128}{34}\\
+        &=\boxed{\boxed{\dfrac{161}{34}}}
+        \end{aligned}
+      </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, panjang dari segmen <em>DM</em> adalah \(\dfrac{161}{34}\).<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="16">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    <div id="tempatsvg16" class="w3-center"></div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Forum Matematika</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Beri nama pada setiap titik beserta sudut yang ditanyakan seperti berikut ini
+          <div id="tempatsvg16-3"  class="w3-center"></div>
+          Buat segitiga <em>CDE</em> yang kongruen dengan <em>ABC</em>, dengan <em>DE</em> memotong segmen <em>AC</em>. Hubungkan <em>A</em> dan <em>E</em>.
+          <div id="tempatsvg16-2"  class="w3-center"></div>
+          &ang;<em>DCE</em> = 80&deg; <br><br>
+          \(\begin{aligned}
+          \angle ACE&=\angle DCE-\angle DCA\\
+          &=80&deg;-20&deg;\\
+          &=60&deg;
+          \end{aligned}\) <br><br>
+          <em>AC</em> = <em>CE</em><br>
+          &there4; <em>ACE</em> sama sisi <br>
+          &there4; &ang;<em>AEC</em> = 60&deg; <br><br>
+          &ang;<em>DEC</em> = 20&deg; <br><br>
+          \(\begin{aligned}
+          \angle AED&=\angle AEC-\angle DEC\\
+          &=60&deg;-20&deg;\\
+          &=40&deg;
+          \end{aligned}\) <br><br>
+          <em>AE</em> = <em>CE</em> = <em>DE</em> <br>
+          &there4; segitiga <em>ADE</em> sama kaki <br><br>
+          \(\angle EDA=\dfrac{180&deg;-40&deg;}2=70&deg;\) <br><br>
+          \(\begin{aligned}
+          \theta&=180&deg;=\left(\angle ADE+\angle EDC\right)\\
+          &=\left(70&deg;+80&deg;\right)\\
+          &=\boxed{\boxed{30&deg;}}
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, ? = 30&deg;.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+      var a16 = [150];
+      a16[1] = a16[0]*tan(80)/2;
+      a16[2] = 1;
+      a16[3] = 10;
+      var tiA16 = [0,a16[1]];
+      var tiB16 = [a16[0],a16[1]];
+      var tiC16 = [a16[0]/2,0];
+      var tiD16 = [a16[0]/2+a16[0]*cos(80),a16[0]*sin(80)]
+      document.getElementById("tempatsvg16").innerHTML = String.raw`${svgawal(a16[0],a16[1],a16[2],a16[3])};
+      ${svgsegi([tiA16,tiB16,tiC16],{tebalgaris:1,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+      ${svggaris([tiA16,tiD16],{tebalgaris:1,warna:"black",dash:""})}
+      ${svgsudut([tiA16,tiB16,tiC16],{r:40,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+      ${svgsudut([tiB16,tiD16,tiA16],{r:40,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+      ${svgsudut([tiB16,tiC16,tiA16],{r:110,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+      ${svglabeltitik(tiB16,"80°",{ukuran:1,anchor:"end",baseline:"baseline",xplus:-10,yplus:-10})}
+      ${svglabeltitik(tiC16,"20°",{ukuran:1,anchor:"middle",baseline:"hanging",xplus:0,yplus:90})}
+      ${tandaSamaPanjang(tiA16,tiB16,10,{tebalgaris:1,warna:"black",dash:""})}
+      ${tandaSamaPanjang(tiC16,tiD16,5,{tebalgaris:1,warna:"black",dash:""})}
+      ${svglabeltitik(tiD16,"?",{ukuran:1,anchor:"middle",baseline:"hanging",xplus:-2,yplus:20})}
+</svg>`;
+document.getElementById("tempatsvg16-3").innerHTML = String.raw`${svgawal(a16[0],a16[1],a16[2],a16[3]+20)};
+      ${svgsegi([tiA16,tiB16,tiC16],{tebalgaris:1,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+      ${svggaris([tiA16,tiD16],{tebalgaris:1,warna:"black",dash:""})}
+      ${svgsudut([tiA16,tiB16,tiC16],{r:40,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+      ${svgsudut([tiB16,tiD16,tiA16],{r:40,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+      ${svgsudut([tiB16,tiC16,tiA16],{r:110,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+      ${svglabeltitik(tiB16,"80°",{ukuran:1,anchor:"end",baseline:"baseline",xplus:-10,yplus:-10})}
+      ${svglabeltitik(tiC16,"20°",{ukuran:1,anchor:"middle",baseline:"hanging",xplus:0,yplus:90})}
+      ${tandaSamaPanjang(tiA16,tiB16,10,{tebalgaris:1,warna:"black",dash:""})}
+      ${tandaSamaPanjang(tiC16,tiD16,5,{tebalgaris:1,warna:"black",dash:""})}
+      ${svglabeltitik(tiD16,"&theta;",{ukuran:1,anchor:"middle",baseline:"hanging",xplus:-2,yplus:20})}
+      ${svglabeltitik(tiA16,"A",{ukuran:1.2,anchor:"end",baseline:"hanging",xplus:-1,yplus:1})}
+      ${svglabeltitik(tiB16,"B",{ukuran:1.2,anchor:"start",baseline:"hanging",xplus:1,yplus:1})}
+      ${svglabeltitik(tiC16,"C",{ukuran:1.2,anchor:"middle",baseline:"baseline",xplus:0,yplus:-3})}
+      ${svglabeltitik(tiD16,"D",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:3,yplus:-1})}
+
+</svg>`;
+      a16[4] = cos(40)*a16[0]/(2*cos(80))
+var tiA16_2 = [a16[4],a16[1]];
+      var tiB16_2 = [a16[4]+a16[0],a16[1]];
+      var tiC16_2 = [a16[4]+a16[0]/2,0];
+      var tiD16_2 = [a16[4]+a16[0]/2+a16[0]*cos(80),a16[0]*sin(80)];
+      var tiE16 = [0,a16[1]-sin(40)*a16[0]/(2*cos(80))]
+document.getElementById("tempatsvg16-2").innerHTML = String.raw`${svgawal(a16[4]+a16[0],a16[1],a16[2],a16[3]+20)};
+${svgsegi([tiA16_2,tiE16,tiC16_2],{tebalgaris:1,warnagaris:"blue",isi:"none",tampakisi:1,tampakgaris:1})}
+${svgsegi([tiD16_2,tiE16,tiC16_2],{tebalgaris:1,warnagaris:"blue",isi:"none",tampakisi:1,tampakgaris:1})}
+      ${svgsegi([tiA16_2,tiB16_2,tiC16_2],{tebalgaris:1,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+      ${svggaris([tiA16_2,tiD16_2],{tebalgaris:1,warna:"black",dash:""})}
+      ${svgsudut([tiA16_2,tiB16_2,tiC16_2],{r:40,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+      ${svgsudut([tiB16_2,tiD16_2,tiA16_2],{r:40,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+      ${svgsudut([tiB16_2,tiC16_2,tiA16_2],{r:110,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+      ${svglabeltitik(tiB16_2,"80°",{ukuran:1,anchor:"end",baseline:"baseline",xplus:-10,yplus:-10})}
+      ${svglabeltitik(tiC16_2,"20°",{ukuran:1,anchor:"middle",baseline:"hanging",xplus:0,yplus:90})}
+      ${tandaSamaPanjang(tiA16_2,tiB16_2,10,{tebalgaris:1,warna:"black",dash:""})}
+      ${tandaSamaPanjang(tiC16_2,tiD16_2,5,{tebalgaris:1,warna:"black",dash:""})}
+      ${svglabeltitik(tiD16_2,"&theta;",{ukuran:1,anchor:"middle",baseline:"hanging",xplus:-2,yplus:20})}
+      ${svglabeltitik(tiA16_2,"A",{ukuran:1.2,anchor:"end",baseline:"hanging",xplus:-1,yplus:1})}
+      ${svglabeltitik(tiB16_2,"B",{ukuran:1.2,anchor:"start",baseline:"hanging",xplus:1,yplus:1})}
+      ${svglabeltitik(tiC16_2,"C",{ukuran:1.2,anchor:"middle",baseline:"baseline",xplus:0,yplus:-3})}
+      ${svglabeltitik(tiD16_2,"D",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:3,yplus:-1})}
+      ${svglabeltitik(tiE16,"E",{ukuran:1.2,anchor:"end",baseline:"middle",xplus:-1,yplus:0})}
+
+</svg>`
+    </script>
+  </div>
+
+  <div class="justify" id="17">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Pada gambar berikut, <em>D</em> adalah kaki tinggi dari <em>A</em>, dan <em>E</em> titik tengah <em>CA</em>.
+    <div id="temsvg17" class="w3-center"></div>
+    Jika luas segitiga <em>ABC</em> adalah \(\dfrac12\) satuan, maka panjang <em>AK</em> dapat dinyatakan sebagai ....
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li class="pb">\(\dfrac1{BC+AB\cos B}\)</li>
+          <li><em>BC</em> + <em>AB</em> cos <em>B</em></li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="3" type="A">
+          <li class="pb">\(\dfrac1{AB+BC\cos B}\)</li>
+          <li><em>AB</em> + <em>BC</em> cos <em>B</em></li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/InkIX04eRt24DcjBEPtxXE" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><em>AE</em> = <em>EC</em> <br><br>
+          <em>BD</em> = <em>AB</em> cos <em>B</em><br><br>
+          \(\begin{aligned}
+          \dfrac12\cdot BC\cdot AD&=\dfrac12\\
+          BC\cdot AD&=1
+          \end{aligned}\) <br><br>
+        Dengan menggunakan Teorema Menelaus, <br>
+        \(\begin{aligned}
+        \dfrac{BC}{BD}\cdot\dfrac{DK}{AK}\cdot\dfrac{AE}{EC}&=1&{\color{red}\times BD}\\[4pt]
+        BC\cdot\left(\dfrac{AD-AK}{AK}\right)\cdot1&=BD\\[4pt]
+        BC\cdot\left(\dfrac{AD}{AK}-1\right)&=AB\cos B\\[4pt]
+        \dfrac{BC\cdot AD}{AK}-BC&=AB\cos B\\[4pt]
+        \dfrac1{AK}&=BC+AB\cos B\\
+        AK&=\boxed{\boxed{\dfrac1{BC+AB\cos B}}}
+        \end{aligned}\)
+      </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, \(AK=\dfrac1{BC+AB\cos B}\).<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+      var k17 = 60
+      var a17 = [4*k17,7*k17,50,0.5*k17];
+      var tiA17 = [a17[0]*cos(a17[2]),0];
+      var tiB17 = [0,a17[0]*sin(a17[2])];
+      var tiC17 = [a17[1],a17[0]*sin(a17[2])];
+      var tiD17 = [a17[0]*cos(a17[2]),a17[0]*sin(a17[2])];
+      var tiE17 = [(tiA17[0]+tiC17[0])/2,(tiA17[1]+tiC17[1])/2];
+      var tiK17 = titikpotong([tiB17,tiE17],[tiA17,tiD17])
+      document.getElementById("temsvg17").innerHTML = String.raw`${svgawal(a17[1],a17[0]*sin(a17[2]),1,a17[3])}
+      ${svgsegi([tiA17,tiB17,tiC17],{tebalgaris:2,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+      ${svggaris([tiA17,tiD17],{tebalgaris:2,warna:"black",dash:""})}
+      ${svggaris([tiB17,tiE17],{tebalgaris:2,warna:"black",dash:""})}
+      ${svglingkaran(tiA17,0.07*k17,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+      ${svglingkaran(tiB17,0.07*k17,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+      ${svglingkaran(tiC17,0.07*k17,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+      ${svglingkaran(tiD17,0.07*k17,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+      ${svglingkaran(tiE17,0.07*k17,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+      ${svglingkaran(tiK17,0.07*k17,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+      ${svglabeltitik(tiA17,"A",{ukuran:1.2,anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.15*k17})}
+      ${svglabeltitik(tiB17,"B",{ukuran:1.2,anchor:"end",baseline:"central",xplus:-0.15*k17,yplus:0})}
+      ${svglabeltitik(tiC17,"C",{ukuran:1.2,anchor:"start",baseline:"central",xplus:0.15*k17,yplus:0})}
+      ${svglabeltitik(tiD17,"D",{ukuran:1.2,anchor:"middle",baseline:"hanging",xplus:0,yplus:0.15*k17})}
+      ${svglabeltitik(tiE17,"E",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:0.1*k17,yplus:0})}
+      ${svglabeltitik(tiK17,"K",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:0.05*k17,yplus:-0.15*k17})}
+</svg>`
+    </script>
+  </div>
+
+  <div class="justify" id="18">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Pada suatu segitiga ABC, sudut C tiga kali besar sudut A dan sudut B dua kali besar sudut A. Berapakah perbandingan (rasio) antara panjang AB dengan BC ?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://forummatematika.freeforums.net/thread/16/soal" target="_blank" rel="noopener noreferrer">OSK SMA 2002</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        \angle A+\angle B+\angle C&=180&deg;\\
+        \angle A+2\angle A+3\angle A&=180&deg;\\
+        6\angle A&=180&deg;\\
+        \angle A&=30&deg;
+        \end{aligned}\) <br><br>
+        \(\begin{aligned}
+        \angle C&=3\angle A\\
+        &=90&deg;
+        \end{aligned}\) <br><br>
+        \(\begin{aligned}
+        \dfrac{AB}{\sin \angle C}&=\dfrac{BC}{\sin\angle A}\\[4pt]
+        \dfrac{AB}{\sin 90&deg;}&=\dfrac{BC}{\sin30&deg;}\\[4pt]
+        \dfrac{AB}1&=\dfrac{BC}{\dfrac12}\\[4pt]
+        \dfrac{AB}{BC}&=\dfrac21
+        \end{aligned}\)
+      </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, perbandingan (rasio) antara panjang AB dengan BC adalah 2:1.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="19">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Diketahui luas segitiga <em>ABC</em> pada gambar adalah <e>50 cm<sup>2</sup>.</e> <e><em>AD</em> : <em>DB</em> = <em>BE</em> : <em>EC</em> = <em>CF</em> : <em>FA</em> = 2 : 3.</e> Luas segitiga <em>DEF</em> adalah ....
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://www.catatanmatematika.com/2017/08/diskudi-3.html" target="_blank" rel="noopener noreferrer">Catatan Matematika</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><div class="w3-row">
+          <div class="w3-col l6"><div id="temsvg19" class="w3-center"></div>
+            </div>
+          <div class="w3-col l6">\(\begin{aligned}
+          \left[ADF\right]=[BDE]=[CEF]&=\dfrac25\cdot\dfrac35\cdot[ABC]\\[4pt]
+          &=\dfrac6{25}\cdot50\\[4pt]
+          &=12
+          \end{aligned}\) <br><br>
+          \(\begin{aligned}
+          \left[DEF\right]&=[ABC]-3[ADF]\\
+          &=50-3\cdot12\\
+          &=\boxed{\boxed{14}}
+          \end{aligned}\)</div>
+        </div>
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, luas segitiga <em>DEF</em> adalah <e>14 cm<sup>2</sup>.</e><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+      var k19 = 45;
+      var a19 = [7*k19,4*k19,0.5*k19];
+      var tiA19 = [0,4*k19];
+      var tiB19 = [3*k19,0];
+      var tiC19 = [7*k19,4*k19]
+      var tiD19 = titikpadagaris([tiA19,tiB19],2/3);
+      var tiE19 = titikpadagaris([tiB19,tiC19],2/3);
+      var tiF19 = titikpadagaris([tiA19,tiC19],3/2);
+      document.getElementById("temsvg19").innerHTML = String.raw`${svgawal(a19[0],a19[1],1,a19[2])}
+      ${svgsegi([tiA19,tiB19,tiC19],{tebalgaris:1,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+      ${svgsegi([tiD19,tiE19,tiF19],{tebalgaris:1,warnagaris:"black",isi:"darkcyan",tampakisi:1,tampakgaris:1})}
+      ${svglabeltitik(tiA19,"A",{ukuran:1.2,anchor:"end",baseline:"central",xplus:-0.05*k19,yplus:0})}
+      ${svglabeltitik(tiC19,"C",{ukuran:1.2,anchor:"start",baseline:"central",xplus:0.05*k19,yplus:0})}
+      ${svglabeltitik(tiB19,"B",{ukuran:1.2,anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.07*k19})}
+      ${svglabeltitik(tiD19,"D",{ukuran:1.2,anchor:"end",baseline:"mathemtical",xplus:-0.05*k19,yplus:0})}
+      ${svglabeltitik(tiE19,"E",{ukuran:1.2,anchor:"start",baseline:"mathemtical",xplus:0.05*k19,yplus:-0.05*k19})}
+      ${svglabeltitik(tiF19,"F",{ukuran:1.2,anchor:"middle",baseline:"hanging",xplus:0,yplus:0.07*k19})}
+      ${svglabelgaris([tiA19,tiD19],"2c",{ukuran:1,warna:"black",anchor:"end",baseline:"middle",xplus:-0.1*k19,yplus:-0.1*k19})}
+      ${svglabelgaris([tiB19,tiD19],"3c",{ukuran:1,warna:"black",anchor:"end",baseline:"middle",xplus:-0.1*k19,yplus:-0.1*k19})}
+      ${svglabelgaris([tiB19,tiE19],"2a",{ukuran:1,warna:"black",anchor:"start",baseline:"middle",xplus:0.1*k19,yplus:-0.1*k19})}
+      ${svglabelgaris([tiC19,tiE19],"3a",{ukuran:1,warna:"black",anchor:"start",baseline:"middle",xplus:0.1*k19,yplus:-0.1*k19})}
+      ${svglabelgaris([tiA19,tiF19],"3b",{ukuran:1,warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.1*k19})}
+      ${svglabelgaris([tiC19,tiF19],"2b",{ukuran:1,warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.1*k19})}
+</svg>`
+
+    </script>
+  </div>
+
+  <div class="justify" id="20">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Segitiga <em>ABC</em> memiliki panjang sisi <e><em>AB</em> = 10,</e> <e><em>BC</em> = 7,</e> dan <e><em>CA</em> = 12.</e> Jika setiap sisi diperpanjang menjadi tiga kali panjang semula, maka segitiga yang terbentuk memiliki luas berapa kali luas ∆<em>ABC</em> ?
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://forummatematika.freeforums.net/thread/38/" target="_blank" rel="noopener noreferrer">OSP SMA 2002</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><em>s</em><sub>2</sub> = 3<em>s</em><sub>1</sub><br><br>
+          \(\begin{aligned}
+          \dfrac{L_2}{L_1}&=\left(\dfrac{s_2}{s_1}\right)^2\\[4pt]
+          &=\left(3\right)^2\\
+          &=9
+          \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, segitiga yang terbentuk memiliki luas 9 kali luas ∆<em>ABC</em>.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+  <script>soal(segitiga,3,2)</script>
+</div>
+</body>
+</html> 

@@ -1,0 +1,227 @@
+<!DOCTYPE html> 
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HOTS Zone : Deret Teleskopik</title> 
+        <script defer src="../mathjax/tex-mml-chtml.js"></script>
+        <link rel="stylesheet" href="../w3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="templatestyle.css">
+    <link rel="stylesheet" href="gaya.css">
+        <script src="skrip.js"></script>
+        <script src="../matematikin.js"></script>
+       </head> 
+     <body>
+        <div class="w3-container">
+         Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Deret Teleskopik</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
+         <h3>Tipe: </h3>
+         <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
+         <br>
+         <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+         <br>
+
+         <div class="justify" id="1">
+            <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+            Hasil dari \(\dfrac12+\dfrac16+\dfrac1{12}+\cdots+\dfrac1{110}\) adalah ....
+            <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM Oktober 2023</a></div>
+            <details>
+                <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+                <div class="w3-card-4">0
+                    <div class="w3-padding w3-sand flo">\(\dfrac1{n(n+1)}=\dfrac1n-\dfrac1{n+1}\) <br><br>
+                        \(\begin{aligned}
+                        \dfrac12+\dfrac16+\dfrac1{12}+\cdots+\dfrac1{110}&=\dfrac1{1\times2}+\dfrac1{2\times3}+\dfrac1{3\times4}+\cdots+\dfrac1{10\times11}\\[3.8pt]
+                        &=\dfrac11-\dfrac12+\dfrac12-\dfrac13+\dfrac13-\dfrac14+\cdots+\dfrac1{10}-\dfrac1{11}\\[3.8pt]
+                        &=\dfrac11-\dfrac1{11}\\
+                        &=\boxed{\boxed{\dfrac{10}{11}}}
+                        \end{aligned}\)
+                    </div>
+                    <div class="w3-brown w3-padding tebal flo">Jadi, \(\dfrac12+\dfrac16+\dfrac1{12}+\cdots+\dfrac1{110}=\dfrac{10}{11}\).<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+                </div>
+            </details>
+            <hr>
+         </div>
+
+         <div class="justify" id="2">
+          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Misal $$T=\frac1{2+\sqrt5}+\frac1{\sqrt5+\sqrt6}+\cdots+\frac1{\sqrt{2022}+\sqrt{2023}}$$ maka nilai &lfloor;<em>T</em>&rfloor; adalah ....
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">KOSCO 2023</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">\(\begin{aligned}
+              \dfrac1{\sqrt{n}+\sqrt{n+1}}&=\dfrac1{\sqrt{n+1}+\sqrt{n}}{\color{red}\cdot\dfrac{\sqrt{n+1}-\sqrt{n}}{\sqrt{n+1}-\sqrt{n}}}\\[4pt]
+              &=\dfrac{\sqrt{n+1}-\sqrt{n}}{n+1-n}\\[4pt]
+              &=\dfrac{\sqrt{n+1}-\sqrt{n}}1\\[4pt]
+              &=\sqrt{n+1}-\sqrt{n}
+              \end{aligned}\) <br><br>
+              \(\begin{aligned}
+              T&=\dfrac1{2+\sqrt5}+\dfrac1{\sqrt5+\sqrt6}+\cdots+\dfrac1{\sqrt{2022}+\sqrt{2023}}\\[4pt]
+              &=\sqrt5-2+\sqrt6-\sqrt5+\cdots+\sqrt{2023}-\sqrt{2022}\\
+              &=\sqrt{2023}-2\\
+              &=44,...-2\\
+              &=42,...\\
+              \left\lfloor T\right\rfloor&=\color{blue}\boxed{\boxed{\color{black}42}}
+              \end{aligned}\)
+            </div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, &lfloor;<em>T</em>&rfloor; = 42.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+         </div>
+
+         <div class="justify" id="3">
+          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Sederhanakan $\dfrac{2\times3}{1\times4}+\dfrac{5\times6}{4\times7}+\dfrac{8\times9}{7\times10}+\cdots+\dfrac{98\times99}{97\times100}$
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://www.facebook.com/photo?fbid=7214970121882172" target="_blank" rel="noopener noreferrer">Om T</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">\(\begin{aligned}
+              \dfrac{(n+1)(n+2)}{n(n+3)}&=\dfrac{n^2+3n+2}{n^2+3n}\\[4pt]
+              &=1+\dfrac2{n(n+3)}\\[4pt]
+              &=1+\dfrac23\left(\dfrac1n-\dfrac1{n+3}\right)
+              \end{aligned}\) <br><br>
+              \(\begin{aligned}
+              \dfrac{2\times3}{1\times4}+\dfrac{5\times6}{4\times7}+\dfrac{8\times9}{7\times10}+\cdots+\dfrac{98\times99}{97\times100}&=\left(\dfrac{97-1}{4-1}+1\right)+\dfrac23\left(\dfrac11-\dfrac14+\dfrac14-\dfrac17+\cdots+\dfrac1{99}-\dfrac1{100}\right)\\[4pt]
+              &=33+\dfrac23\left(\dfrac11-\dfrac1{100}\right)\\[4pt]
+              &=33+\dfrac23\left(\dfrac{99}{100}\right)\\[4pt]
+              &=33+\dfrac{33}{50}\\
+              &=\color{blue}\boxed{\boxed{\color{black}\dfrac{1683}{50}}}
+              \end{aligned}\)
+            </div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, $\dfrac{2\times3}{1\times4}+\dfrac{5\times6}{4\times7}+\dfrac{8\times9}{7\times10}+\cdots+\dfrac{98\times99}{97\times100}=\dfrac{1683}{50}$.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+         </div>
+
+         <div class="justify" id="4">
+          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Diberikan $x=101!\left(\dfrac1{2!}+\dfrac2{3!}+\dfrac3{4!}+\cdots+\dfrac{99}{100!}\right)$. Tentukan nilai dari <e>101! &minus; <em>x</em></e>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">\(\begin{aligned}
+              \dfrac{n}{(n+1)!}&=\dfrac{n+1-1}{(n+1)!}\\[4pt]
+              &=\dfrac{n+1}{(n+1)!}-\dfrac1{(n+1)!}\\[4pt] 
+              &=\dfrac{n+1}{(n+1)\cdot n!}-\dfrac1{(n+1)!}\\[4pt] 
+              &=\dfrac1{n!}-\dfrac1{(n+1)!}
+              \end{aligned}\) <br><br>
+              \(\begin{aligned}
+              \dfrac1{2!}+\dfrac2{3!}+\dfrac3{4!}+\cdots+\dfrac{99}{100!}&=\dfrac1{1!}-\dfrac1{2!}+\dfrac1{2!}-\dfrac1{3!}+\dfrac1{3!}-\dfrac1{4!}+\cdots+\dfrac1{99!}-\dfrac1{100!}\\[4pt]
+              &=\dfrac1{1!}-\dfrac1{100!}\\[4pt]
+              &=1-\dfrac1{100!}
+              \end{aligned}\) <br><br>
+              \(\begin{aligned}
+              x&=101!\left(1-\dfrac1{100!}\right)\\[4pt]
+              &=101!-101
+              \end{aligned}\) <br><br>
+              \(\begin{aligned}
+              101!-x&=101!-(101!-101)\\
+              &=\color{blue}\boxed{\boxed{\color{black}101}}
+              \end{aligned}\)
+            </div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <e>101! &minus; <em>x</em> = 101</e>. <br>&copy;matematikaidhamdaz.blogspot.com<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+         </div>
+
+         <div class="justify" id="5">
+          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+Nilai dari
+
+$$
+\frac{1}{2!} + \frac{2}{3!} + \frac{3}{4!} + \cdots + \frac{2024}{2025!}
+$$
+
+dapat dinyatakan sebagai \(a - \frac{1}{b!}\) di mana <em>a</em> dan <em>b</em> merupakan bilangan bulat positif. Berapa nilai dari <e><em>a</em> + <em>b</em>?</e>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">\(\begin{aligned}
+              \dfrac{n}{(n+1)!}&=\dfrac{n+1-1}{(n+1)!}\\[4pt]
+              &=\dfrac{n+1}{(n+1)!}-\dfrac1{(n+1)!}\\[4pt]
+              &=\dfrac{n+1}{(n+1)\cdot n!}-\dfrac1{(n+1)!}\\[4pt]
+              &=\dfrac1{n!}-\dfrac1{(n+1)!}
+              \end{aligned}\) <br><br>
+              \(\begin{aligned}
+              \dfrac1{2!}+\dfrac2{3!}+\dfrac3{4!}+\cdots+\dfrac{2024}{2025!}&=\dfrac1{1!}-\dfrac1{2!}+\dfrac1{2!}-\dfrac1{3!}+\dfrac1{3!}-\dfrac1{4!}+\cdots+\dfrac1{2024!}-\dfrac1{2025!}\\[4pt]
+              &=\dfrac1{1!}-\dfrac1{2025!}\\[4pt]
+              &=1-\dfrac1{2025!}
+              \end{aligned}\) <br><br>
+              1 + 2025 = 2026
+            </div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <em>a</em> + <em>b</em> = 2026.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+         </div>
+
+          <div class="justify" id="6">
+            <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+            Diketahui \(S=1+\dfrac12+\dfrac1{2^2}+\dfrac1{2^3}+\cdots+\dfrac1{2^{10}}\). Tentukan nilai dari \(\dfrac{S}{2-S}\).
+            <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <details>
+              <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+              <div class="w3-card-4">
+                <div class="w3-padding w3-sand flo">\(\begin{aligned}
+                S&=1+\dfrac12+\dfrac1{2^2}+\dfrac1{2^3}+\cdots+\dfrac1{2^{10}}\\[4pt]
+                &=1+\dfrac12+\dfrac14+\dfrac18+\cdots+\dfrac1{1024}\\[4pt]
+                &=\dfrac{1023}{1024}
+                \end{aligned}\) <br><br>
+                \(\begin{aligned}
+                \dfrac{S}{2-S}&=\dfrac{\dfrac{1023}{1024}}{2-\dfrac{1023}{1024}}\\[4pt]
+                &=\dfrac{\dfrac{1023}{1024}}{\dfrac{2048-1023}{1024}}\\[4pt]
+                &=\dfrac{1023}{1025}\\[4pt]
+                &=\dfrac{99}{100}
+                \end{aligned}\)
+              </div>
+                <div class="w3-brown w3-padding tebal flo">Jadi, \(\dfrac{S}{2-S}=\dfrac{99}{100}\).<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+              </div>
+            </details>
+            <hr>
+          </div>
+
+          <div class="justify" id="7">
+            <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+            Hitunglah nilai dari $$\frac1{1\sqrt2+2\sqrt1}+\frac1{2\sqrt3+3\sqrt2}+\cdots+\frac1{\left(2014^2-1\right)\sqrt{2014^2}+2014^2\sqrt{2014^2-1}}$$
+            <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <details>
+              <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+              <div class="w3-card-4">
+                <div class="w3-padding w3-sand flo">
+                  \(\begin{aligned}
+                  \dfrac1{n\sqrt{n+1}+(n+1)\sqrt{n}}&=\dfrac1{\left(\sqrt{n}\right)^2\sqrt{n+1}+\left(\sqrt{n+1}\right)^2\sqrt{n}}\\[4pt]
+                  &=\dfrac1{\sqrt{n}\sqrt{n+1}\left(\sqrt{n}+\sqrt{n+1}\right)}{\color{red}\cdot\dfrac{\sqrt{n+1}-\sqrt{n}}{\sqrt{n+1}-\sqrt{n}}}\\[4pt]
+                  &=\dfrac{\sqrt{n+1}-\sqrt{n}}{\sqrt{n}\sqrt{n+1}(n+1-n)}\\[4pt]
+                  &=\dfrac{\sqrt{n+1}-\sqrt{n}}{\sqrt{n}\sqrt{n+1}}\\[4pt]
+                  &=\dfrac1{\sqrt{n}}-\dfrac1{\sqrt{n+1}}
+                  \end{aligned}\) <br><br>
+                  \(\begin{aligned}
+                  \dfrac1{1\sqrt2+2\sqrt1}+\dfrac1{2\sqrt3+3\sqrt2}+\cdots+\dfrac1{\left(2014^2-1\right)\sqrt{2014^2}+2014^2\sqrt{2014^2-1}}&=\left(\dfrac1{\sqrt1}-\dfrac1{\sqrt2}\right)+\left(\dfrac1{\sqrt2}-\dfrac1{\sqrt3}\right)+\cdots+\left(\dfrac1{\sqrt{2014^2-1}}-\dfrac1{\sqrt{2014^2}}\right)\\[4pt]
+                  &=1-\dfrac1{\sqrt{2014^2}}\\[4pt]
+                  &=1-\dfrac1{2014}\\[4pt]
+                  &=\dfrac{2013}{2014}
+                  \end{aligned}\)                  
+                </div>
+                <div class="w3-brown w3-padding tebal flo">Jadi, $\frac1{1\sqrt2+2\sqrt1}+\frac1{2\sqrt3+3\sqrt2}+\cdots+\frac1{\left(2014^2-1\right)\sqrt{2014^2}+2014^2\sqrt{2014^2-1}}=\dfrac{2013}{2014}$.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+              </div>
+            </details>
+            <hr>
+          </div>
+
+         <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+         <br>
+        <script>soal(dertel,3,1);
+        </script>
+   </div>
+   </body>
+</html> 

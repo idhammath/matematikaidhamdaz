@@ -1,0 +1,354 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HOTS Zone : Bilangan Asli (Bilangan Bulat Positif)</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="templatestyle.css">
+  <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+<!--link rel="stylesheet" href="style.css"-->
+<style>body{
+ font-family: roboto,sans-serif;   
+}</style>
+   </head> 
+     <body>
+        <div class="w3-container">
+      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Bilangan Asli</span> (Bilangan Bulat Positif). Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+      <h3>Tipe: </h3>
+      <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">Standar</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-hide w3-deep-purple">HOTS</span></div>
+      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+
+      <div class="justify" id="1">
+        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+        Bilangan asli <em>n</em> dikatakan <i>menarik</i> jika terdapat suku banyak (polinom) dengan koefisien bulat <em>P</em>(<em>x</em>) sehingga <e><em>P</em>(7) = 2021</e> dan <e><em>P(<em>n</em>)</em> = 2045.</e> Banyaknya bilangan prima <i>menarik</i> adalah . . .
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Latihan OSK 2024 SMA</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><i>Lemma.</i> Jika <em>P</em>(<em>x</em>) adalah polinom dengan koefisien bulat, maka <e><em>a</em> &minus; <em>b</em> | <em>P</em>(<em>a</em>) &minus; <em>P</em>(<em>b</em>)</e> untuk setiap bilangan bulat <e><em>a</em>, <em>b</em>.</e>
+              <details>
+                <summary class="peny">BUKTI</summary>
+                <div class="w3-card-4">
+                  <div class="w3-padding w3-sand flo">Misalkan <em>P</em>(<em>x</em>) = <em>a<sub>n</sub>x<sup>n</sup></em> + <em>a</em><sub><em>n</em> &minus; 1</sub><em>x</em><sup><em>n</em> &minus; 1</sup> + &ctdot; + <em>a</em><sub>0</sub>. Maka <br>
+                    <e><em>P</em>(<em>a</em>) &minus; <em>P</em>(<em>b</em>) = <em>a<sub>n</sub></em>(<em>a<sup>n</sup></em> &minus; <em>b<sup>n</sup></em>) + <em>a</em><sub><em>n</em> &minus; 1</sub>(<em>a</em><sup><em>n</em> &minus; 1</sup> &minus; <em>b</em><sup><em>n</em> &minus; 1</sup>) + &ctdot; + <em>a</em><sub>1</sub>(<em>a</em> &minus; <em>b</em>).</e><br>
+                    Karena <e><em>a</em> &minus; <em>b</em> | <em>a<sup>n</sup></em> &minus; <em>b<sup>n</sup></em></e> untuk setiap <em>n</em>, maka jelas <e><em>a</em> &minus; <em>b</em> | <em>P</em>(<em>a</em>) &minus; <em>P</em>(<em>b</em>)</e>
+                  </div>
+                  <div class="w3-brown w3-padding tebal flo"><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+                </div>
+              </details>
+              <hr>
+              Dengan menggunakan lemma tersebut, maka <e><em>n</em> &minus; 7 | <em>P</em>(<em>n</em>) &minus; <em>P</em>(7) = 2045 &minus; 2021 = 24.</e><br>
+              Sehingga, semua bilangan <i>menarik</i> yang memenuhi adalah 1, 3, 4, 5, 6, 8, 9, 10, 11, 13, 15, 19, 31. <br>
+              Maka, bilangan prima <i>menarik</i> adalah 3, 5, 11, 13, 19, 31.
+            </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya bilangan prima <i>menarik</i> adalah 6.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+      </div>
+            
+        <div class="text-justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Jika bilangan 2014 dinyatakan sebagai jumlah dari bilangan-bilangan asli berurutan, maka bilangan asli terbesar yang mungkin adalah .... <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneId/250" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">\begin{aligned}
+        a+(a+1)+(a+2)+\cdots+(a+n-1)&amp;=2014\\
+        \dfrac{n}2(2a+n-1)&amp;=2014
+        \end{aligned}
+        Jika <em>n</em> bilangan genap, misal <em>n</em> = 2<em>k</em>
+        \begin{aligned}
+        k(2a+2k-1)&amp;=2014\\
+        k(2(a+k)-1)&amp;=2014
+        \end{aligned}
+        2014 = 1·2014 = 2·1007 = 19·106 = 38·53<br />
+        Pilih nilai <em>k</em> yang bukan ganjil.<br />
+        Jika <em>k</em> = 106, maka 2(<em>a</em> + <em>k</em>) - 1 = 19 atau <em>a</em> = -96 (tidak mungkin).<br />
+        Jika <em>k</em> = 38, maka 2(<em>a</em> + <em>k</em>) - 1 = 53 atau <em>a</em> = -11 (tidak mungkin).<br />
+        Jika <em>k</em>&NonBreakingSpace;= 2, maka 2(<em>a</em>&NonBreakingSpace;+&NonBreakingSpace;<em>k</em>)&NonBreakingSpace;-&NonBreakingSpace;1&NonBreakingSpace;=&NonBreakingSpace;1007 atau <em>a</em>&NonBreakingSpace;= 502. <em>n</em>&NonBreakingSpace;=&NonBreakingSpace;4. Bilangan terbesarnya 502 + 4 - 1 = 505.<br />
+        <br />
+        Jika <em>n</em> bilangan ganjil, misal <em>n</em> = 2<em>k</em> - 1
+        \begin{aligned}
+        \dfrac{2k-1}2(2a+2k-1-1)&amp;=2014\\
+        (2k-1)(a+k-1)&amp;=2014
+        \end{aligned}
+        <br />
+        Jika 2<em>k</em>&NonBreakingSpace;-&NonBreakingSpace;1&NonBreakingSpace;=&NonBreakingSpace;1007 atau <em>k</em>&NonBreakingSpace;=&NonBreakingSpace;504, maka <em>a</em>&NonBreakingSpace;+&NonBreakingSpace;<em>k</em>&NonBreakingSpace;-&NonBreakingSpace;1&NonBreakingSpace;=&NonBreakingSpace;2 atau <em>a</em>&NonBreakingSpace;=&NonBreakingSpace;-501 (tidak mungkin).<br />
+        Jika 2<em>k</em>&NonBreakingSpace;-&NonBreakingSpace;1&NonBreakingSpace;=&NonBreakingSpace;19 atau <em>k</em>&NonBreakingSpace;=&NonBreakingSpace;10, maka <em>a</em>&NonBreakingSpace;+&NonBreakingSpace;<em>k</em>&NonBreakingSpace;-&NonBreakingSpace;1&NonBreakingSpace;=&NonBreakingSpace;106 atau <em>a</em>&NonBreakingSpace;=&NonBreakingSpace;97. <em>n</em>&NonBreakingSpace;=&NonBreakingSpace;20. Bilangan terbesarnya 97 + 20 - 1 = 116.<br />
+        Jika 2<em>k</em>&NonBreakingSpace;-&NonBreakingSpace;1&NonBreakingSpace;=&NonBreakingSpace;53 atau <em>k</em>&NonBreakingSpace;=&NonBreakingSpace;27, maka <em>a</em> +&NonBreakingSpace;<em>k</em>&NonBreakingSpace;-&NonBreakingSpace;1&NonBreakingSpace;=&NonBreakingSpace;38 atau <em>a</em>&NonBreakingSpace;=&NonBreakingSpace;12. <em>n</em>&NonBreakingSpace;=&NonBreakingSpace;54. Bilangan terbesarnya 12 + 54 - 1 = 65.</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, bilangan asli terbesar yang mungkin adalah 505.<button class="w3-button w3-black w3-right w3-padding-small w3-round-large" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+        
+        <div class="text-justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Diberikan bilangan bulat positif dua digit. Jika bilangan tersebut dibalik urutannya, maka diperoleh bilangan lain yang nilainya 7 kali dari jumlah digit penyusun bilangan awal. Diketahui bahwa selisih antar bilangan awal dan bilangan setelah dibalik adalah 18. Bilangan yang dimaksud adalah ....
+          <div class="w3-row"><div class="w3-col s6 m6 l6"><ol class="pas1" type="A"><li>12</li>
+        <li>24
+        </li>
+        <li>36
+        </li>
+        </ol></div><div class="w3-col s6 m6 l6"><ol class="pas1" start="4" type="A"><li>48</li>
+        <li>50
+        </li>
+        </ol></div></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">Misal bilangan bulatnya adalah <em>ab</em> yang artinya 10<em>a</em>&NonBreakingSpace;+&NonBreakingSpace;<em>b</em>. Jika dibalik menjadi 10<em>b</em>&NonBreakingSpace;+&NonBreakingSpace;<em>a</em>.
+              \begin{aligned}
+        10b+a&amp;=7(a+b)\\
+        10b+a&amp;=7a+7b\\
+        3b&amp;=6a\\
+        b&amp;=2a
+        \end{aligned}
+        \begin{aligned}
+        10b+a-(10a+b)&amp;=18\\
+        10b+a-10a-b&amp;=18\\
+        9b-9a&amp;=18\\
+        b-a&amp;=2\\
+        2a-a&amp;=2\\
+        a&amp;=2\rightarrow b=4
+        \end{aligned}
+        \begin{aligned}
+        10a+b&amp;=10(2)+4\\
+        &amp;=20+4\\
+        &amp;=24
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, bilangan yang dimaksud adalah 24.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-right w3-padding-small w3-round-large" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="text-justify" id="4"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Jika bilangan 2019 dapat dinyatakan sebagai jumlah dari <em>n</em> bilangan asli berurutan, maka nilai <em>n</em> terbesar yang mungkin adalah
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>3</li>
+        <li>6
+        </li>
+        <li>9
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>12</li>
+        <li>15
+        </li>
+        </ol></div></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">Misal bilangan terkecilnya adalah <em>a</em>
+          \begin{aligned}
+        a+a+1+a+2+\cdots+a+n-1&amp;=2019\\
+        \dfrac{n}2(a+a+n-1)&amp;=2019\\[3.5pt]
+        \dfrac{n}2(2a+n-1)&amp;=2019\\[3.5pt]
+        n(2a+n-1)&=4038=2\cdot3\cdot673
+        \end{aligned}
+        Kita tahu bahwa 2<em>a</em>&NonBreakingSpace;+ <em>n</em>&NonBreakingSpace;-&NonBreakingSpace;1&NonBreakingSpace;&gt;&NonBreakingSpace;<em>n</em>. Jika <em>n</em> genap maka 2<em>a</em>&NonBreakingSpace;+&NonBreakingSpace;<em>n</em>&NonBreakingSpace;-&NonBreakingSpace;1 ganjil. <em>n</em> genap terbesar adalah 2·3&NonBreakingSpace;=&NonBreakingSpace;6.<br>
+        Jika <em>n</em> ganjil maka 2<em>a</em>&NonBreakingSpace;+&NonBreakingSpace;<em>n</em>&NonBreakingSpace;-&NonBreakingSpace;1 genap. <em>n</em> ganjil terbesar adalah 3.</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, nilai <em>n</em> terbesar yang mungkin adalah 6.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-right w3-padding-small w3-round-large" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="text-justify" id="5"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          3 orang <em>A</em>, <em>B</em>, dan <em>C</em> pinjam-meminjam kelereng. Pada awalnya ketiga orang tersebut memiliki sejumlah kelereng tertentu dan selama pinjam meminjam mereka tidak melakukan penambahan kelereng selain melalui pinjam meminjam di antara ketiga orang tersebut. Pada suatu hari, <em>A</em> meminjami sejumlah kelereng kepada <em>B</em> dan <em>C</em> sehingga jumlah kelereng <em>B</em> dan <em>C</em> masing-masing menjadi 2 kali lipat jumlah kelereng sebelumnya. Hari berikutnya <em>B</em> meminjami sejumlah kelereng <em>A</em> dan <em>C</em> sehingga jumlah kelereng <em>A</em> dan <em>C</em> masing-masing menjadi 2 kali lipat jumlah kelereng sebelumnya. Hari terakhir <em>C</em> meminjami sejumlah kelereng kepada <em>A</em> dan <em>B</em> sehingga jumlah kelereng <em>A</em> dan <em>B</em> masing-masing menjadi 2 kali lipat jumlah kelereng sebelumnya. Setelah dihitung akhirnya masing-masing memiliki 16 kelereng. Banyak kelereng <em>A</em> mula-mula adalah
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneId/251" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">Pada hari terakhir, <em>C</em> meminjami sejumlah kelereng kepada <em>A</em> dan <em>B</em> sehingga jumlah kelereng <em>A</em> dan <em>B</em> masing-masing menjadi 2 kali lipat jumlah kelereng sebelumnya. Jadi, sebelum <em>C</em> memberi pinjaman, <em>A</em> dan <em>B</em> mempunyai kelereng sebanyak:<br />
+        <m>\dfrac{16}2=8</m><br />
+        dan <em>C</em> mempunyai kelereng sebanyak:<br />
+        16 + 8 + 8 = 32<br />
+        <br />
+        Pada hari kedua, <em>B</em> meminjami sejumlah kelereng <em>A</em> dan <em>C</em> sehingga jumlah kelereng <em>A</em> dan <em>C</em> masing-masing menjadi 2 kali lipat jumlah kelereng sebelumnya. Sebelum <em>B</em> memberi pinjaman, <em>A</em> mempunyai kelereng sebanyak:<br />
+        <m>\dfrac82=4</m><br />
+        <em>C</em> mempunyai kelereng sebanyak:<br />
+        <m>\dfrac{32}2=16</m><br />
+        dan <em>B</em> mempunyai kelereng sebanyak:<br />
+        8 + 4 + 16 = 28<br />
+        <br />
+        Pada hari pertama, <em>A</em> meminjami sejumlah kelereng kepada <em>B</em> dan <em>C</em> sehingga jumlah kelereng <em>B</em> dan <em>C</em> masing-masing menjadi 2 kali lipat jumlah kelereng sebelumnya. Sebelum <em>A</em> memberi pinjaman, <em>B</em> mempunyai kelereng sebanyak:<br />
+        <m>\dfrac{28}2=14</m><br />
+        <em>C</em> mempunyai kelereng sebanyak:<br />
+        <m>\dfrac{16}2=8</m><br />
+        dan <em>A</em> mempunyai kelereng sebanyak:<br />
+        4 + 14 + 8 = 26</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, banyak kelereng <em>A</em> mula-mula adalah 26 buah.<button class="w3-button w3-black w3-right w3-padding-small w3-round-large" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+        
+        <div class="text-justify" id="6"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Diberikan dua bilangan asli <em>m</em> dan <em>n</em> sehingga <em>mn</em>&NonBreakingSpace;+&NonBreakingSpace;2<em>m</em> habis membagi <em>mn</em>&NonBreakingSpace;+&NonBreakingSpace;<em>m</em>&NonBreakingSpace;+&NonBreakingSpace;<em>n</em>&NonBreakingSpace;+&NonBreakingSpace;1. Tentukan jumlah semua kemungkinan nilai dari |<em>m</em>&NonBreakingSpace;&minus;&NonBreakingSpace;<em>n</em>|.
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="/" target="_blank" rel="noopener noreferrer">KTOM Agustus 2020</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">\begin{aligned}
+              (mn+2m)&|(mn +m+n + 1)\\
+          m(n+2)&|(m+1)(n+1)
+              \end{aligned}
+              <em>m</em>&nmid; (<em>m</em> + 1) sehingga <em>m</em>&mid;(<em>n</em> + 1), atau <em>n</em> + 1 = <em>mk</em><br /><br />
+          (<em>n</em> + 2)&nmid; (<em>n</em> + 1) sehingga (<em>n</em> + 2)&mid;(<em>m</em> + 1)
+          \begin{aligned}
+          (n+2)\ &amp;\mid\ (m+1)\\
+          (mk+1)\ &amp;\mid\ (m+1)
+          \end{aligned}
+            Nilai <em>k</em> yang memenuhi hanya <em>k</em> = 1.
+            \begin{aligned}
+            n+1&amp;=m\\
+          m-n&amp;=\boxed{\boxed{1}}
+            \end{aligned}</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, jumlah semua kemungkinan nilai dari |<em>m</em> - <em>n</em>| adalah 1.<button class="w3-button w3-black w3-right w3-padding-small w3-round-large" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+        
+        <div class="text-justify" id="7"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Tentukan bilangan asli terkecil <em>n</em>&NonBreakingSpace;&gt;&NonBreakingSpace;1 sehingga berlaku sifat berikut: Pada papan persegi berukuran <em>n</em>&times;<em>n</em>, kita dapat menaruh <em>n</em> buah ratu yang tidak saling menyerang satu sama lain. 
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><em>n</em> = 5</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <em>n</em> = 5.<button class="w3-button w3-black w3-right w3-padding-small w3-round-large" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="text-justify" id="8"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Sebuah bilangan asli <em>n</em> terdiri dari 7 digit berbeda dan habis dibagi oleh masing-masing digitnya. Tentukan ketiga digit yang tidak termasuk ke dalam digit dari <em>n</em>.
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/8135" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">Kita ambil 6 digit pertama: 1, 2, 3, 4, 5, 6<br><br>
+          Semua bilangan habis dibagi 1.<br><br>
+                Agar bisa dibagi 2, maka digit ke-7 adalah genap, kita pilih 2.<br><br>
+                Jika <em>n</em> habis dibagi 5, maka digit terakhinya adalah 5 dan bukan bilangan genap. Jadi tidak ada digit 5 di <em>n</em><br><br>
+          Agar bisa dibagi 4, maka digit ke-6 adalah 1.<br><br>
+          Agar bisa dibagi 3, maka jumlah digitnya bisa dibagi 3.<br>
+          1 + 2 + 3 + 4 + 6 + 8 = 24<br><br>
+          Agar bisa dibagi 8, maka 3 digit terakhir harus bisa dibagi 8, misalnya 312. <br><br>
+          Maka satu digit lagi harus habis dibagi 3, yaitu 9.<br><br>
+          Tiga digit yang tidak termasuk adalah 0, 5, dan 7.</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, ketiga digit yang tidak termasih ke dalam digit dari <em>n</em> adalah 0, 5, dan 7.<button class="w3-button w3-black w3-right w3-padding-small w3-round-large" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+
+        <div class="text-justify" id="9">
+          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Diberikan tiga bilangan bulat positif sedemikian sehingga selisih dari setiap bilangan tidak lebih dari 6. Jika perkalian ketiga bilangan tersebut adalah 2808 maka bilangan terkecil dari ketiga bilangan tersebut adalah ....
+          <div class="w3-row">
+            <div class="w3-col s6">
+              <ol class="pas1" type="A">
+                <li>
+                  9
+                </li>
+                <li>
+                  10
+                </li>
+                <li>
+                  11
+                </li>
+              </ol>
+            </div>
+            <div class="w3-col s6">
+              <ol class="pas1" start="4" type="A">
+                <li>
+                  12
+                </li>
+                <li>
+                  13
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2021/04/c-s-c-posi-2021-matematika-sma.html" target="_blank" rel="noopener noreferrer">C S C POSI 2021</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">2808&NonBreakingSpace;=&NonBreakingSpace;2<sup>3</sup>&CenterDot;3<sup>3</sup>&CenterDot;13<br><br>
+                Kita cari 3 faktor dari 2808 yang selisihnya tidak lebih dari 6. <br>
+                <em>k</em>(<em>k</em>&NonBreakingSpace;+&NonBreakingSpace;<em>a</em>)(<em>k</em>&NonBreakingSpace;+&NonBreakingSpace;<em>b</em>)&NonBreakingSpace;=&NonBreakingSpace;2808<br>
+                dimana <em>a</em>&NonBreakingSpace;&le;&NonBreakingSpace;6 dan <em>a</em>&NonBreakingSpace;&le;&NonBreakingSpace;6
+                \begin{aligned}
+                k(k+a)(k+b)&\leq k(k+6)(k+6)\\
+                2808&\leq k(k+6)^2\\
+                k(k+6)^2&\geq2808
+                \end{aligned}
+                Jika <em>k</em>&NonBreakingSpace;=&NonBreakingSpace;10, 10(10&NonBreakingSpace;+&NonBreakingSpace;6)<sup>2</sup>&NonBreakingSpace;=&NonBreakingSpace;2560<br>
+                Jika <em>k</em> = 11, 11(11&NonBreakingSpace;+&NonBreakingSpace;6)<sup>2</sup>&NonBreakingSpace;=&NonBreakingSpace;3179<br>
+                Kita ambil <em>k</em> yang lebih dari 11 dan faktor dari 2808, yaitu 12. Sehingga didapat 3 bilangan tersebut adalah 12, 13, dan 18.</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, bilangan terkecil dori ketiga bilangan tersebut adalah 12.<br><b>JAWAB: D</b><button class="w3-button w3-black w3-right w3-padding-small w3-round-large" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+
+        <div class="text-justify" id="10">
+          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Diberikan bilangan bulat positif empat angka <em>A</em> dan <em>B</em> sedemikian sehingga <em>A</em>&times;<em>B</em>&NonBreakingSpace;=&NonBreakingSpace;16<sup>5</sup>&NonBreakingSpace;+&NonBreakingSpace;2<sup>10</sup>. Hasil dari <em>A</em>&NonBreakingSpace;+&NonBreakingSpace;<em>B</em>&NonBreakingSpace;= ....
+          <div class="w3-row">
+            <div class="w3-col s6 m6 l6">
+              <ol class="pas1" type="A">
+                <li>
+                  2045
+                </li>
+                <li>
+                  2046
+                </li>
+                <li>
+                 2047
+                </li>
+              </ol>
+            </div>
+            <div class="w3-col s6 m6 l6">
+              <ol class="pas1" start="4" type="A">
+                <li>
+                  2048
+                </li>
+                <li>
+                  2049
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2021/04/c-s-c-posi-2021-matematika-sma.html" target="_blank" rel="noopener noreferrer">C S C POSI 2021</a></div>
+          <details>
+              <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+              <div class="w3-card-4">
+                  <div class="w3-padding w3-sand flo">\begin{aligned}
+                  A \times B&=16^5+2^{10}\\
+                  &=\left(2^4\right)^5+2^{10}\\
+                  &=2^{20}+2^{10}\\
+                  &=2^{10}\left(2^{10}+1\right)\\
+                  &=1024(1025)
+                  \end{aligned}
+                  \begin{aligned}
+                    A+B&=1024+1025\\
+                    &=\boxed{\boxed{2049}}
+                    \end{aligned}</div>
+                  <div class="w3-brown w3-padding tebal flo">Jadi, <em>A</em>&NonBreakingSpace;+&NonBreakingSpace;<em>B</em>&NonBreakingSpace;=&NonBreakingSpace;2049.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-right w3-padding-small w3-round-large" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+              </div>
+          </details>
+          <hr>
+        </div>
+
+    <br><br><div class="navi w3-hide w3-bar w3-border w3-round"></div>
+<script>soal(bilas,3,1)</script>    
+   </div>
+   </body>
+</html> 

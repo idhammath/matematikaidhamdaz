@@ -1,0 +1,294 @@
+<!DOCTYPE html> 
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>SBMPTN Zone : Turunan (<i>Derivative</i>)</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../katex/katex.css">
+      <script src="../katex/katex.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="templatestyle.css">
+  <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+      <script src="../matematikin.js"></script>
+     </head> 
+     <body> 
+      <img alt="" class="w3-hide" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiX4LMKKKPVbMFYBf8zV555hnUzU_YFStJCYD8OmAjvpwcI8U1CCXgdZ8X314JGF6exq4sQz6N5e392tJPTNATbGPhsd7N4nJTiV1OCuxb9UjUfp6hW42lM14DHXJclrcjjJDHKQIL_uQMUPpPDBoulODQ1ymVqpZpIqkyUiezY4rdIIMSdmVlkPxXL/s320/TURUNAN%20SBMPTN.png"/>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Turunan</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+      <h3>Tipe: </h3>
+      <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">Standar</a><span id="sbmptn" class="w3-bar-item w3-deep-purple w3-hide">SBMPTN</span><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
+      <br>
+      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+      <br>
+
+        <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Diberikan <e><em>f</em>(<em>x</em>) = sin<sup>2</sup> <em>x</em></e>. Jika <e><em>f</em>'(<em>x</em>)</e> menyatakan turunan pertama dari <e><em>f</em>(<em>x</em>)</e>, maka <m>{\displaystyle\lim_{h\to\infty}h\left\{f'\left(x+\dfrac1h\right)-f'(x)\right\}=}</m> ....
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li><e>sin 2<em>x</em></e></li>
+        <li><e>&minus;cos 2<em>x</em></e>
+        </li>
+        <li><e>2 cos 2<em>x</em></e>
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li><e>2 sin <em>x</em></e></li>
+        <li><e>&minus;2 cos <em>x</em></e>
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://www.learncy.net/problem/173/" target="_blank">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        f'(x)&amp;=2\sin x\cos x\\
+        &amp;=\sin2x
+        \end{aligned}
+        Misal <m>\dfrac1h=k</m>
+        \begin{aligned}
+        \displaystyle\lim_{h\to\infty}h\left\{f'\left(x+\dfrac1h\right)-f'(x)\right\}&amp;=\displaystyle\lim_{k\to0}\dfrac{\sin2\left(x+k\right)-\sin2x}k\\[3.7pt]
+        &amp;=\displaystyle\lim_{k\to0}\dfrac{\sin(2x+2k)-\sin2x}k\\[3.7pt]
+        &amp;=\displaystyle\lim_{k\to0}\dfrac{\sin2x\cos2k+\cos2x\sin2k-\sin2x}k\\[3.7pt]
+        &amp;=\displaystyle\lim_{k\to0}\dfrac{\sin2x(\cos2k-1)+\cos2x\sin2k}k\\[3.7pt]
+        &amp;=\sin2x\displaystyle\lim_{k\to0}\dfrac{\cos2k-1}k+\cos2x\displaystyle\lim_{k\to0}\dfrac{\sin2k}k\\[3.7pt]
+        &amp;=\sin2x(0)+\cos2x(2)\\
+        &amp;=2\cos2x
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{h\to\infty}h\left\{f'\left(x+\dfrac1h\right)-f'(x)\right\}=2\cos2x</m>.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Fungsi <e><em>g</em>(<em>x</em>) = <em>x</em><sup>3</sup> + 3<em>x</em> &minus; 2</e> mempunyai invers <e><em>g</em><sup>&minus;1</sup>(<em>x</em>) = <em>h</em>(<em>x</em>)</e>, dan <e><em>g</em>(1) = 2</e>. Nilai <e><em>h</em>'(2) =</e>
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb"><m>\dfrac13</m></li>
+        <li class="pb"><m>\dfrac14</m>
+        </li>
+        <li><m>\dfrac15</m>
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb"><m>\dfrac16</m></li>
+        <li><m>\dfrac17</m>
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        g(x)&amp;=x^3+3x-2\\
+        g^{-1}\left(x^3+3x-2\right)&amp;=x\\
+        h\left(x^3+3x-2\right)&amp;=x\\
+        \left(3x^2+3\right)\ h'\left(x^3+3x-2\right)&amp;=1
+        \end{aligned}
+        Untuk <e><em>x</em> = 1</e>,
+        \begin{aligned}
+        \left(3(1)^2+3\right)\ h'\left((1)^3+3(1)-2\right)&amp;=1\\
+        \left(3+3\right)\ h'\left(1+3-2\right)&amp;=1\\
+        6\ h'(2)&amp;=1\\
+        h'(2)&amp;=\boxed{\boxed{\dfrac16}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <m>h'(2)=\dfrac16</m>.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Diketahui <e><em>F</em>(<em>x</em>) = (1 + <em>a</em>)<em>x</em><sup>3</sup> &minus; 3<em>bx</em><sup>2</sup> &minus; 9<em>x</em></e>. Jika <e><em>F</em>"(<em>x</em>)</e> habis dibagi <e><em>x</em> &minus; 1</e>, maka kurva <e><em>y</em> = <em>F</em>(<em>x</em>)</e> tidak mempunyai titik ekstrem lokal jika ....
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li><e>&minus;3 &lt; <em>b</em> &lt; 0</e></li>
+        <li><e>0 &lt; <em>b</em> &lt; 3</e>
+        </li>
+        <li><e>&minus;4 &lt; <em>b</em> &lt; &minus;1</e>
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li><e>&minus;4 &lt; <em>b</em> &lt; 0</e></li>
+        <li><e>1 &lt; <em>b</em> &lt; 4</e>
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        F'(x)&amp;=3(1+a)x^2-6bx-9\\
+        F"(x)&amp;=6(1+a)x-6b
+        \end{aligned}
+        <e><em>F</em>"(<em>x</em>)</e> habis dibagi <e><em>x</em> &minus; 1</e> artinya <e><em>F</em>"(1) = 0</e>
+        \begin{aligned}
+        6(1+a)(1)-6b&amp;=0\\
+        1+a&amp;=b
+        \end{aligned}
+        <e><em>F</em>'(<em>x</em>) = 3<em>bx</em><sup>2</sup> &minus; 6<em>bx</em> &minus; 9</e>.<br>
+        <e><em>F</em>(<em>x</em>)</e> tidak mempunyai titik ekstrem lokal artinya tidak ada nilai <em>x</em> sehingga <e><em>F</em>'(<em>x</em>) &ne; 0</e>, atau dengan kata lain diskriminan dari <e><em>F</em>'(<em>x</em>)</e> adalah kurang dari 0.
+        \begin{aligned}
+        D&amp;\lt0\\
+        (-6b)^2-4(3b)(-9)&amp;\lt0\\
+        36b^2+108b&amp;\lt0\\
+        b^2+3b&amp;\lt0\\
+        b(b+3)&amp;\lt0
+        \end{aligned}
+        <e>&minus;3 &lt; <em>b</em> &lt; 0</e></div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>F</em>(<em>x</em>)</e> tidak mempunyai titik ekstrem lokal jika <e>&minus;3 &lt; <em>b</em> &lt; 0</e>.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="4"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Misalkan <e><em>f</em>(<em>x</em>) = |<em>x</em>|</e> menghasilkan <m>{f'(x)=\dfrac{|x|}x}</m> untuk <e><em>x</em> &ne; 0</e>. Jika <e><em>g</em>(<em>x</em>) = |<em>x</em>|<sup>2</sup> + <em>x</em>|<em>x</em>|</e>, dengan <e><em>x</em> &ne; 0</e>, maka <e><em>g</em>'(<em>x</em>) =</e>
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li><e>2<em>x</em> + 2|<em>x</em>|</e></li>
+        <li>4<em>x</em>
+        </li>
+        <li>4|<em>x</em>|
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>0</li>
+        <li>&minus;4<em>x</em>
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        g(x)&amp;=|x|^2+x|x|\\
+        g'(x)&amp;=2|x|\dfrac{|x|}x+1|x|+x\dfrac{|x|}x\\[3.7pt]
+        &amp;=2\dfrac{|x|^2}x+|x|+|x|\\[3.7pt]
+        &amp;=2\dfrac{x^2}x+2|x|\\
+        &amp;=\boxed{\boxed{2x+2|x|}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>g</em>'(<em>x</em>) = 2<em>x</em> + 2|<em>x</em>|</e>.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div class="justify" id="5"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Jika <e><em>f</em>(<em>x</em>) = 2<em>x</em><sup>3</sup> &sdot; <em>g</em>(<em>x</em>)</e>, <e><em>g</em>(1) = &minus;2</e>, <e><em>g</em>'(1) = 3</e>. Maka <e><em>f</em>'(1) =</e>
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>&minus;6</li>
+        <li>6
+        </li>
+        <li>0
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>12</li>
+        <li>&minus;12
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        f(x)&amp;=2x^3\cdot g(x)\\
+        f'(x)&amp;=6x^2\cdot g(x)+2x^3\cdot g'(x)\\
+        f'(1)&amp;=6(1)^2\cdot g(1)+2(1)^3\cdot g'(1)\\
+        &amp;=6\cdot(-2)+2\cdot 3\\
+        &amp;=-12+6\\
+        &amp;=\boxed{\boxed{-6}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi,  <e><em>f</em>'(1) = &minus;6</e>.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div class="justify" id="6">
+          <h3>No. <span class="w3-badge w3-red nomor"></span>
+          </h3>
+          Jika <m>{f(x)=\sqrt{3x}\cdot g(x)}</m>, <e><em>g</em>(3) = 4</e>, <e><em>g</em>'(3) = 2</e>, maka <e><em>f</em>'(3) =</e>
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>4</li>
+        <li>6
+        </li>
+        <li>8
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>2</li>
+        <li>1
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        f(x)&amp;=\sqrt{3x}\cdot g(x)\\
+        f'(x)&amp;=\dfrac3{2\sqrt{3x}}\cdot g(x)+\sqrt{3x}\cdot g'(x)\\
+        f'(3)&amp;=\dfrac3{2\sqrt{3(3)}}\cdot g(3)+\sqrt{3(3)}\cdot g'(3)\\
+        &amp;=\dfrac3{2(3)}\cdot (4)+3\cdot (2)\\
+        &amp;=2+6\\
+        &amp;=\boxed{\boxed{8}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>f</em>'(3) = 8</e>.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div class="justify" id="7"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Jika <e><em>f</em>(<em>x</em>) = cos <em>x</em></e> dan <e><em>g</em>(<em>x</em>) = csc <em>x</em></e>, maka <m>{\dfrac{d\left(g\circ f\right)(x)}{dx}=}</m>
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li><e>&minus;sin <em>x</em> sec(cos <em>x</em>)</e></li>
+        <li><e>sin <em>x</em> sec(sin <em>x</em>)</e>
+        </li>
+        <li><e>sin <em>x</em> csc(cos <em>x</em>) cot(cos <em>x</em>)</e>
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li><e>sin <em>x</em> csc(sin <em>x</em>)</e></li>
+        <li><e>&minus;sin <em>x</em> sec(sin <em>x</em>)</e>
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        f(x)&amp;=\cos x\\
+        f'(x)&amp;=-\sin x
+        \end{aligned}
+        \begin{aligned}
+        g(x)&amp;=\csc x\\
+        g'(x)&amp;=-\csc x\cot x
+        \end{aligned}
+        \begin{aligned}
+        \dfrac{d\left(g\circ f\right)(x)}{dx}&amp;=g'\left(f(x)\right)\cdot f'(x)\\
+        &amp;=-\csc\left(f(x)\right)\cot\left(f(x)\right)(-\sin x)\\
+        &amp;=\boxed{\boxed{\sin x\csc\left(\cos x\right)\cot\left(\cos x\right)}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\dfrac{d\left(g\circ f\right)(x)}{dx}=\sin x\csc\left(\cos x\right)\cot\left(\cos x\right)</m>.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div class="justify" id="8"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Diketahui <em>f</em> dan <em>g</em> memenuhi <e><em>f</em>(<em>x</em>) &sdot; <em>g</em>(<em>x</em>) = <em>x</em><sup>2</sup> &minus; 3<em>x</em></e>
+          untuk setiap bilangan real <em>x</em>. Jika <e><em>g</em>(1) = &minus;2</e>, <e><em>f</em>'(1) = f(1)</e> dan <e><em>g</em>'(1) = <em>f</em>(1)</e>, maka <e><em>g</em>'(1) =</e>
+          <div class="w3-row">
+          <div class="w3-col s6">
+            <ol class="pas1" type="A">
+              <li>&minus;2</li>
+              <li>&minus;1</li>
+              <li>0</li>
+            </ol>
+          </div>
+          <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+              <li>1</li>
+              <li>2</li>
+            </ol>
+          </div>
+        </div>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2020/08/skmp-matematika-agustus-2020-kunci.html" target="_blank">SKMP Agustus 2020</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">\begin{aligned}
+              f(x)\cdot g(x)&amp;= x^2- 3x\\
+          f(1)\cdot g(1)&amp;=1^2-3(1)\\
+          f(1)\cdot(-2)&amp;=1-3\\
+          -2f(1)&amp;=-2\\
+          f(1)&amp;=1
+              \end{aligned}
+          <e><em>f</em>'(1) = <em>g</em>'(1) = <em>f</em>(1) = 1</e>
+          \begin{aligned}
+          f(x)\cdot g(x)&amp;= x^2- 3x\\
+          \dfrac{d}{dx}(f(x)\cdot g(x))&amp;=\dfrac{d}{dx}(x^2- 3x)\\
+          f'(x)\cdot g(x)+f(x)\cdot g'(x)&amp;=2x-3\\
+          f'(1)\cdot g(1)+f(1)\cdot g'(1)&amp;=2(1)-3\\
+          1\cdot(-2)+1\cdot g'(1)&amp;=2-3\\
+          -2+g'(1)&amp;=-1\\
+          g'(1)&amp;=\boxed{\boxed{1}}
+          \end{aligned}</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>g</em>'(1) = 1</e>.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+          </div>
+
+          <br>
+          <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+          <br>
+          <script>soal(turu,2,1)</script>
+   </body>
+</html> 

@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="id">  
+   <head> 
+      <meta charset = "utf-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SBMPTN Zone : Barisan dan Deret</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../katex/katex.css">
+      <script src="../katex/katex.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="templatestyle.css">
+  <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+     </head> 
+     <body> <div class="w3-container">
+      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Barisan dan Deret</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+        <!--more-->
+        <h3>Tipe: </h3>
+        <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">Standar</a><span id="sbmptn" class="w3-bar-item w3-deep-purple w3-hide">SBMPTN</span><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
+        <br>
+        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+        <br>
+
+        <div class="justify" id="1">
+           <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+           Diketahui tiga bilangan berurutan yang berjumlah 12 merupakan suku-suku barisan aritmetika. Jika bilangan ketiga ditambah 2, maka diperoleh suku-suku barisan geometri. Tentukan hasil kali ketiga bilangan tersebut.
+           <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+           <details>
+              <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+              <div class="w3-card-4">
+                 <div class="w3-padding w3-sand flo"><div class="w3-row">
+                    <div class="w3-half">\begin{aligned}
+                     U_1+U_2+U_3&amp;=12\\
+                     U_2-b+U_2+U_2+b&amp;=12\\
+                     3U_2&amp;=12\\
+                     U_2&amp;=4
+                     \end{aligned}
+                     <em>U</em><sub>1</sub> = <em>U</em><sub>2</sub> &minus; <em>b</em> = 4 &minus; <em>b</em>,<br />
+                     <em>U</em><sub>3</sub> = <em>U</em>2 + <em>b</em> = 4 + <em>b</em>
+                     \begin{aligned}
+                     {U_2}^2&amp;=U_1\cdot \left(U_3+2\right)\\
+                     4^2&amp;=(4-b)(4+b+2)\\
+                     16&amp;=(4-b)(6+b)\\
+                     16&amp;=24-2b-b^2\\
+                     b^2+2b-8&amp;=0\\
+                     (b+4)(b-2)&amp;=0
+                     \end{aligned}
+                     <em>b</em> = &minus; 4 dan <em>b</em> = 2</div>
+                    <div class="w3-half"><ul><li>Untuk <em>b</em> = &minus;4,<br />
+                     <em>U</em><sub>1</sub> = 4 &minus; (&minus;4)= 8,<br />
+                     <em>U</em><sub>3</sub> = 4 + (&minus;4) = 0<br />
+                     <br />
+                     Hasil kali ketiga bilangan,<br />
+                     <em>U</em><sub>1</sub>&sdot;<em>U</em><sub>2</sub>&sdot;<em>U</em><sub>3</sub> = 8&sdot;4&sdot;0 = 0<br />
+                     <br />
+                     </li>
+                     <li>Untuk <em>b</em> = 2,<br />
+                        <em>U</em><sub>1</sub>= 4 &minus; 2 = 2,<br />
+                        <em>U</em><sub>3</sub> = 4 + 2 = 6<br />
+                     <br />
+                     Hasil kali ketiga bilangan,<br />
+                     <em>U</em><sub>1</sub>&sdot;<em>U</em><sub>2</sub>&sdot;<em>U</em><sub>3</sub> = 2&sdot;4&sdot;6 = 48</li>
+                     </ul></div>
+                 </div>
+                  </div>
+                 <div class="w3-brown w3-padding tebal flo">Jadi, hasil kali ketiga bilangan tersebut adalah 0 atau 48.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+              </div>
+           </details>
+           <hr>
+        </div>
+
+        <br>
+        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+        <br>
+    <script>soal(barder,2,1)</script>
+   </div>
+   </body>
+</html> 

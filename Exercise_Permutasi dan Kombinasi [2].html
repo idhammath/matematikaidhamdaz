@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise Zone : Permutasi dan Kombinasi [2]</title> 
+    <script defer src="../mathjax/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../katex/katex.css">
+    <script src="../katex/katex.js"></script>
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="templatestyle.css">
+<link rel="stylesheet" href="gaya.css">
+    <script src="skrip.js"></script>
+    <script src="../matematikin.js"></script>
+    <script defer src="../katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<!--link rel="stylesheet" href="style.css"-->
+<style>body{
+font-family: roboto,sans-serif;   
+}</style>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><br>
+
+<div class="w3-container" style="background-color: papayawhip">
+  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Permutasi dan Kombinasi</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+
+  <h3>Tipe: </h3>
+  <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+
+  <div class="justify" id="11"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Suatu keluarga terdiri dari suami istri, 2 anak laki laki, 3 anak perempuan. Tentukan banyak cara mereka duduk dalam satu baris, tapi suami istri harus berdekatan,dan anak-anak yang berjenis kelamin sama harus berdekatan.
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneId" target="_blank"  rel="noopener noreferrer">Telegram</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div cclass="w3-card-4">
+        <div class="w3-padding w3-sand flo">Ada 3 kelompok, yang pertama suami dan istri, yang kedua 2 anak laki-laki, dan yang ketiga 3 anak perempuan. banyak cara mereka duduk adalah<br>
+          \(\begin{aligned}
+          3!\cdot2!\cdot2!\cdot3!&=6\cdot2\cdot2\cdot6\\
+          &=\boxed{\boxed{144}}
+          \end{aligned}\)</div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, banyak cara mereka duduk ada 144 cara.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+  
+  <div class="justify" id="12"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Dari angka 1, 2, 3, 4, 7, 6, 8 akan disusun bilangan ganjil yang terdiri dari 7 angka berbeda. Banyak bilangan tersebut adalah
+    <div class="w3-row">
+    <div class="w3-col s6">
+      <ol class="pas1" type="A">
+        <li>980</li>
+        <li>1260</li>
+        <li>2160</li>
+      </ol>
+    </div>
+    <div class="w3-col s6">
+      <ol class="pas1" start="4" type="A">
+        <li>2420</li>
+        <li>2620</li>
+      </ol>
+    </div>
+  </div>
+  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2020/09/skmp-sma-juli-2020.html" target="_blank" rel="noopener noreferrer">SKMP Juli 2020</a></div>
+  <details>
+    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+    <div cclass="w3-card-4">
+      <div class="w3-padding w3-sand flo">Angka ganjil yang tersedia adalah 1, 3 dan 7. Ada 3 angka.<br><br>
+        3&sdot;6! = 3&sdot;720 = 2160</div>
+      <div class="w3-brown w3-padding tebal flo">Jadi, banyak bilangan tersebut adalah 2160.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+    </div>
+  </details>
+  <hr>
+  </div>
+  
+  <div class="justify" id="13"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Di sebuah ruang tunggu rumah sakit terdapat 9 kursi berderet yang akan ditempati 5 pria dan 4 wanita. Jika pria dan wanita masing-masing berkelompok sehingga hanya 1 pria dan 1 wanita yang duduk berdampingan di kursi tersebut, banyaknya cara susunan duduk tersebut adalah
+    <div class="w3-row">
+    <div class="w3-col s6">
+      <ol class="pas1" type="A">
+        <li>120</li>
+        <li>2.880</li>
+        <li>5.760</li>
+      </ol>
+    </div>
+    <div class="w3-col s6">
+      <ol class="pas1" start="4" type="A">
+        <li>181.440</li>
+        <li>362.880</li>
+      </ol>
+    </div>
+  </div>
+  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/6586" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+  <details>
+    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+    <div cclass="w3-card-4">
+      <div class="w3-padding w3-sand flo">kemungkinannya adalah <e>P P P P P W W W W</e> atau <e>W W W W P P P P P</e><br>
+        2&sdot;5!&sdot;4! = 2&sdot;120&sdot;24 = 57600</div>
+      <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya cara susunan duduk tersebut adalah 5.760.<br>JAWAB: C<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+    </div>
+  </details>
+  <hr>
+  </div>
+  
+  <div class="justify" id="14"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Dalam sebuah seleksi tim sepak bola terdapat 15 pemain yang akan memperebutkan $11$ posisi yang berbeda. Jika 3 pemain memperebutkan 1 posisi kiper, 6 pemain memperebutkan 4 posisi pemain belakang, 4 pemain memperebutkan 4 posisi pemain tengah, dan 2 pemain memperebutkan 2 posisi depan, banyak susunan yang dapat terjadi adalah
+    <div class="w3-row">
+    <div class="w3-col s6">
+      <ol class="pas1" type="A">
+        <li>389</li>
+        <li>1.365</li>
+        <li>32.760</li>
+      </ol>
+    </div>
+    <div class="w3-col s6">
+      <ol class="pas1" start="4" type="A">
+        <li>51.840</li>
+        <li>76.840</li>
+      </ol>
+    </div>
+  </div>
+  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/6586" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+  <details>
+    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+    <div cclass="w3-card-4">
+      <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        P_1^3\cdot P_4^6\cdot P_4^4\cdot P_2^2&=\dfrac{3!}{(3-1)!}\cdot\dfrac{6!}{(6-4)!}\cdot\dfrac{4!}{(4-4)!}\cdot\dfrac{2!}{(2-2)!}\\
+        &=\dfrac{3\cdot2!}{2!}\cdot\dfrac{6\cdot5\cdot4\cdot3\cdot2!}{2!}\cdot\dfrac{4\cdot3\cdot2\cdot1}{1}\cdot\dfrac{2\cdot1}{1}\\
+        &=3\cdot360\cdot24\cdot2\\
+        &=\boxed{\boxed{51.840}}
+        \end{aligned}\)</div>
+      <div class="w3-brown w3-padding tebal flo">Jadi, banyak susunan yang dapat terjadi adalah 51.840.<br>JAWAB: D<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+    </div>
+  </details>
+  <hr>
+  </div>
+  
+  <div class="justify" id="15"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Dari angka 2, 4, 6, 8, dan 9 dibuat bilangan yang terdiri dari 3 angka berbeda. Banyaknya bilangan yang kurang dari 500 adalah ...
+    <div class="w3-row">
+    <div class="w3-col s6">
+      <ol class="pas1" type="A">
+        <li>32</li>
+        <li>24</li>
+        <li>16</li>
+      </ol>
+    </div>
+    <div class="w3-col s6">
+      <ol class="pas1" start="4" type="A">
+        <li>12</li>
+        <li>8</li>
+      </ol>
+    </div>
+  </div>
+  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/" target="_blank" rel="noopener noreferrer">SIMAK UI 2009</a></div>
+  <details>
+    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+    <div cclass="w3-card-4">
+      <div class="w3-padding w3-sand flo"><h1>CARA 1 : ATURAN PERKALIAN</h1>
+        <table class="w3-table-all tengah borsemua">
+        <tr><td>2</td><td>4</td><td>3</td><tr>
+        </table>
+        2&times;4&times;3 = 24
+        <h1>CARA 2 : PERMUTASI</h1>
+        Banyak pilihan untuk angka pertama &xrarr; 2. <br>
+        Banyak pilihan untuk 2 angka berikutnya &xrarr; \(P_2^4=\dfrac{4!}{(4-2)!}=12\)<br>
+        2 &times; 12 = 24
+      </div>
+      <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya bilangan yang kurang dari 500 adalah 24.<br>JAWAB: B<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+    </div>
+  </details>
+  <hr>
+  </div>
+  
+  <div class="justify" id="16"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Pada suatu toko buah apel, jeruk, dan pepaya, Nina ingin membeli 9 buah pada toko tersebut. Jika Nina ingin membeli paling sedikit 2 buah untuk setiap jenis buah yang tersedia, maka komposisi banyak buah yang mungkin dapat dibeli adalah ....
+    <div class="w3-row">
+    <div class="w3-col s6">
+      <ol class="pas1" type="A">
+        <li>2</li>
+        <li>3</li>
+        <li>6</li>
+      </ol>
+    </div>
+    <div class="w3-col s6">
+      <ol class="pas1" start="4" type="A">
+        <li>9</li>
+        <li>10</li>
+      </ol>
+    </div>
+  </div>
+  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">UN 2014</div>
+  <details>
+    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+    <div cclass="w3-card-4">
+      <div class="w3-padding w3-sand flo">Masing-masing buah sudah diambil 2 buah, total buah yang sudah diambil adalah 6 buah. Tinggal 3 buah lagi yang belum diambil untuk 3 jenis buah.<br>
+        <em>n</em> = 3<br>
+        <em>k</em> = 3<br><br>
+        \(\begin{aligned}
+        C_3^{3+3-1}&=C_3^5\\
+        &=\dfrac{5!}{(5-3)!3!}\\
+        &=\dfrac{5\cdot4\cdot3!}{2\cdot1\cdot3!}\\
+        &=\boxed{\boxed{10}}
+        \end{aligned}\)</div>
+      <div class="w3-brown w3-padding tebal flo">Jadi, komposisi banyak buah yang mungkin dapat dibeli adalah 10.<br>JAWAB: E<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+    </div>
+  </details>
+  <hr>
+  </div>
+
+  <div class="justify" id="17"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+Di suatu tim bulu tangkis terdapat 16 pemain putra dan 18 pemain putri. Perhatikan pernyataan berikut!
+<ol type="i">
+<li>Banyak cara memilih tim ganda putra ada 120 cara.</li>
+<li>Banyak cara memilih tim ganda putri ada 153 cara.</li>
+<li>Banyak cara memilih tim tunggal putra ada 18 cara.</li>
+<li>Banyak cara memilih tim tunggal putri ada 16 cara.</li>
+</ol>
+Pernyataan yang benar ditunjukkan oleh .... 
+<div class="w3-row">
+<div class="w3-col s6">
+<ol class="pas1" type="A">
+  <li>(i) dan (ii)</li>
+  <li>(i) dan (iii)</li>
+  <li>(ii) dan (iii)</li>
+</ol>
+</div>
+<div class="w3-col s6">
+<ol class="pas1" start="4" type="A">
+  <li>(ii) dan (iv)</li>
+  <li>(iii) dan (iv)</li>
+</ol>
+</div>
+</div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/9719" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div cclass="w3-card-4">
+        <div class="w3-padding w3-sand flo">Banyak cara memilih tim ganda putra <br>
+          \(\begin{aligned} 
+            C_2^{16}&=\dfrac{16!}{(16-2)!\cdot 2!}\\
+          &=\dfrac{16\cdot15\cdot14!}{14!\cdot2\cdot1}\\
+        &=120
+      \end{aligned}\)<br><br>
+      Banyak cara memilih tim ganda putri <br>
+      \(\begin{aligned} 
+        C_2^{18}&=\dfrac{18!}{(18-2)!\cdot 2!}\\
+        &=\dfrac{18\cdot17\cdot16!}{16!\cdot2\cdot1}\\
+        &=153
+        \end{aligned}\)<br><br>
+        Banyak cara memilih tim tunggal putra <br>
+        \(C_1^{16}=16\)<br><br>
+        Banyak cara memilih tim tunggal putri <br>
+        \(C_1^{18}=18\)</div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, pernyataan yang benar ditunjukkan oleh (i) dan (ii). <br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+
+  <div id="18">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Dari 100 orang karyawan akan dipilih 2 orang menjadi Quality Control. Ada berapa banyak cara pemilihan tersebut?
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li>100 &times; 99</li>
+          <li>100 &times; 98</li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="3" type="A">
+          <li>100 &times; 50</li>
+          <li>99 &times; 50</li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneIdGrup/13968" target="_blank" rel="noopener noreferrer">Grup Matematika Zone Id</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div cclass="w3-card-4">
+        <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        _{100}C_2&=\dfrac{100!}{(100-2)!\ 2!}\\[3.5pt] 
+        &=\dfrac{100\cdot99\cdot\cancel{98!}}{\cancel{98!}\ 2\cdot1}\\
+        &=\boxed{\boxed{50\times99}}
+        \end{aligned}\)</div>
+        <div class="w3-brown w3-padding tebal flo flo">Jadi, ada 99 &times; 50 cara pemilihan tersebut.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div id="19">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Di dalam acara halal bi halal karyawan dihadiri 40 karyawan. Di sesi terakhir setiap orang saling bersalaman. Ada berapa kali setiap orang berjabat tangan?
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li>1600 kali</li>
+          <li>780 kali</li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="3" type="A">
+          <li>520 kali</li>
+          <li>1560 kali</li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/13968" target="_blank" rel="noopener noreferrer">Grup Matematika Zone Id</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div cclass="w3-card-4">
+        <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        _{40}C_2&=\dfrac{40!}{(40-2)!\ 2!}\\[3.5pt] 
+        &=\dfrac{40\cdot39\cdot\cancel{38!}}{\cancel{38!}\ 2\cdot1}\\
+        &=\boxed{\boxed{780}}
+        \end{aligned}\)</div>
+        <div class="w3-brown w3-padding tebal flo flo">Jadi, ada 780 kali setiap orang berjabat tangan.<br><b>JAWAB: B</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <div class="justify" id="20">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Dalam sebuah kelas yang terdiri dari 4 laki-laki dan 5 perempuan akan diadakan pemilihan ketua, sekretaris, dan bendahara. Banyak cara pemilihan yang mungkin sehingga dalam pemilihan tersebut setidaknya ada seorang laki-laki dan seorang perempuan adalah ....
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM - Jenjang SMA</a></div>
+    <details>
+        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+        <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">Memilih 1 dari 4 laki-laki &xrarr; \(P_1^4=4\) <br><br>
+                Memilih 1 dari 5 perempuan &xrarr; \(P_1^5=5\) <br><br>
+                Memilih 2 dari 3 posisi &xrarr; \(P_2^3=6\) <br><br>
+                Memilih 1 dari 7 orang tersisa untuk mengisi 1 jabatan tersisa &xrarr; \(P_1^7=7\) <br><br>
+                4&times;5&times;6&times;7 = 840
+            </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, banyak cara pemilihan yang mungkin sehingga dalam pemilihan tersebut setidaknya ada seorang laki-laki dan seorang perempuan adalah 840 cara.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+        </div>
+    </details>
+    <hr>
+  </div>
+
+  <br><br><div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+  <script>soal(permukom,1,2)</script>
+</div>
+</body>
+</html> 

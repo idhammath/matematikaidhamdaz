@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise Zone : Pertidaksamaan Linear Dua Variabel</title> 
+    <script defer src="../mathjax/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="templatestyle.css">
+<link rel="stylesheet" href="gaya.css">
+    <script src="skrip.js"></script>
+    <script src="../matematikin.js"></script>
+<!--link rel="stylesheet" href="style.css"-->
+<style>body{
+font-family: roboto,sans-serif;   
+}</style>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><br>
+
+<div class="w3-container" style="background-color: papayawhip">
+  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Pertidaksamaan Linear Dua Variabel</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+
+  <h3>Tipe: </h3>
+  <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+
+  <div id="1" class="justify">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Perhatikan grafik berikut!
+    <div id="temsvg1" class="w3-center"></div>
+    Pertaksamaan yang memenuhi grafik di atas adalah ....
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li>8<em>x</em> + 10<em>y</em> &ge; 80</li>
+          <li>8<em>x</em> + 10<em>y</em> &le; 90</li>
+          <li>10<em>x</em> + 8<em>y</em> &le; 80</li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="4" type="A">
+          <li>10<em>x</em> + 8<em>y</em> &ge; 80</li>
+          <li>8<em>x</em> &minus; 10<em>y</em> &le; 80</li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">USP SMK Kab. Tangerang 2023</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Persamaan garis: <br>
+          10<em>x</em> + 8<em>y</em> = 80 <br><br>
+          Kemudian kita tentukan tanda pertidaksamaannya.
+          <h2>CARA 1: MENGGUNAKAN TITIK (0, 0)</h2>
+          (0, 0) tidak masuk daerah penyelesaian, sehingga jika disubstitusikan ke persamaan harus bernilai salah. <br>
+          \(\begin{aligned}
+          10(0)+8(0)&\cdots80\\
+          0&\cdots80
+          \end{aligned}\) <br>
+          Agar bernilai salah, maka tandanya harus &ge;.
+          <h2>CARA 2: MELIHAT ARAH DP</h2>
+          Syarat: koefisien <em>y</em> positif. <br>
+          Jika DP nya ke kiri, maka tandanya &le;. Jika DP nya ke kanan, maka tandanya &ge;. Karena pada soal DP nya ke kanan, maka tandanya &ge;.
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, pertaksamaan yang memenuhi grafik di atas adalah 10<em>x</em> + 8<em>y</em> &ge; 80.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+      var spg1 = kocabuat("temsvg1",[-1,8],[0,10],{jarakTik:20})
+      kocaGrafung(spg1,function(x){return 10-5*x/4},{tebalgaris:3})
+      kocaSegi(spg1,[[-1,10+5/4],[9,11],[9,10-5*9/4]],{isi:"grey",tampakisi:0.5})
+    </script>
+  </div>
+
+  <br><br><div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+  <script>soal(ptldv,1,1)</script>
+</div>
+</body>
+</html> 
+<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>

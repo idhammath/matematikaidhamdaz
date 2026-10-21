@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise Zone : Permutasi dan Kombinasi [3]</title> 
+    <script defer src="../mathjax/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="templatestyle.css">
+<link rel="stylesheet" href="gaya.css">
+    <script src="skrip.js"></script>
+    <script src="../matematikin.js"></script>
+<!--link rel="stylesheet" href="style.css"-->
+<style>body{
+font-family: roboto,sans-serif;   
+}</style>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><br>
+
+<div class="w3-container" style="background-color: papayawhip">
+  <div class="separator w3-hide" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiM86CG5OjHg5FYWLvTpXYMbSmkEWlFW5QOOiKtB5XVIi855uQNs1_7DrmDHn1K2MuMVFZiq1zMbhomDRLleDC7_xuHkUyalbgO41BzjcRujfoAGi2d5bqi2l-hHBoSj4f8k6Bdzau9phaij4q8Kl3IbJ67oSMYCa617zba40Lwp_fWlMWyVchbJgmYt7Go/s1080/permutasi%20dan%20kombinasi%20dasar.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiM86CG5OjHg5FYWLvTpXYMbSmkEWlFW5QOOiKtB5XVIi855uQNs1_7DrmDHn1K2MuMVFZiq1zMbhomDRLleDC7_xuHkUyalbgO41BzjcRujfoAGi2d5bqi2l-hHBoSj4f8k6Bdzau9phaij4q8Kl3IbJ67oSMYCa617zba40Lwp_fWlMWyVchbJgmYt7Go/s320/permutasi%20dan%20kombinasi%20dasar.png"/></a></div>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Permutasi dan Kombinasi</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
+
+  <h2>Tipe: </h2>
+  <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+
+  <div class="justify" id="21"><h2>No. <span class="w3-badge w3-red nomor"></span></h2>
+    Sebuah bilangan ganjil 5 angka memuat tepat 4 angka ganjil dan tidak memiliki angka berulang, serta tidak memuat angka 0. Banyak bilangan berbeda dengan ciri tersebut adalah .... 
+    <div class="w3-row">
+        <div class="w3-col s6">
+            <ol class="pas1" type="A">
+                <li>1.920</li>
+                <li>1.940</li>
+                <li>1.960</li>
+            </ol>
+        </div>
+        <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+                <li>2.100</li>
+                <li>2.400</li>
+            </ol>
+        </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneId" target="_blank"  rel="noopener noreferrer">Telegram</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div cclass="w3-card-4">
+        <div class="w3-padding w3-sand flo">Angka ganjil ada 5 buah &xrarr; <e>{1, 3, 5, 7, 9}</e><br>
+            Angka genap tanpa 0 ada 4 buah &xrarr; <e>{2, 4, 6, 8}</e><br>
+            <ul>
+                <li><h3>Memilih 1 dari 5 angka ganjil untuk satuan</h3>
+                    <sub>5</sub><em>C</em><sub>1</sub> = 5</li>
+                <li><h3>Memilih 3 dari 4 angka ganjil tersisa</h3>
+                    <sub>4</sub><em>C</em><sub>3</sub> = 4</li>
+                <li><h3>Memilih 1 dari 4 angka genap</h3>
+                    <sub>4</sub><em>C</em><sub>1</sub> = 4</li>
+                <li><h3>Susunan 4 angka untuk 4 posisi selain satuan</h3>
+                    4! = 24</li>
+            </ul>
+            Banyaknya bilangan yang memenuhi,<br>
+            <e>5 &times; 4 &times; 4 &times; 24 = 1.920</e>
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, banyak bilangan berbeda dengan ciri tersebut adalah 1.920.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+  
+  <div class="justify" id="22">
+    <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
+    Sebuah klub bulu tangkis beranggotakan 4 putra dan 4 putri. Akan dibentuk 4 tim yang terdiri dari sepasang ganda putra, sepasang ganda putri dan dua pasang ganda campuran. Banyaknya pasangan tim yang dapat dibentuk adalah ....
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li>3</li>
+          <li>32</li>
+          <li>36</li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="4" type="A">
+          <li>72</li>
+          <li>144</li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Penyisihan OGM 10 Tingkat SMA</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">
+          <ul>
+            <li><h3>Memilih 2 dari 4 putra</h3>
+              <sub>4</sub><em>C</em><sub>2</sub> = 6</li>
+            <li><h3>Memilih 2 dari 4 putri</h3>
+              <sub>4</sub><em>C</em><sub>2</sub> = 6</li>
+            <li><h3>Memilih 1 dari 2 putra tersisa</h3>
+              <sub>2</sub><em>C</em><sub>1</sub> = 2</li>
+              <li><h3>Memilih 1 dari 2 putr1 tersisa</h3>
+                <sub>2</sub><em>C</em><sub>1</sub> = 2</li>
+          </ul>
+          Banyaknya pasangan tim yang dapat dibentuk,<br>
+          <e>6 &times; 6 &times; 2 &times; 2 = 144</e>
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya pasangan tim yang dapat dibentuk adalah 144.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+  </div>
+
+  <br><br><div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+  <script>soal(permukom,1,3)</script>
+</div>
+</body>
+</html> 

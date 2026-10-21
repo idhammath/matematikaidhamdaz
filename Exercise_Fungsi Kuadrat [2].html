@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise Zone : Fungsi Kuadrat [2]</title> 
+    <script defer src="../mathjax/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="templatestyle.css">
+<link rel="stylesheet" href="gaya.css">
+    <script src="skrip.js"></script>
+    <script src="../matematikin.js"></script>
+<!--link rel="stylesheet" href="style.css"-->
+<style>body{
+font-family: roboto,sans-serif;   
+}</style>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><br>
+
+<div class="w3-container" style="background-color: papayawhip">
+  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Fungsi Kuadrat</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
+
+  <h3>Tipe: </h3>
+  <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
+  <br><div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+
+  <div id="11" class="justify">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Perhatikan grafik berikut! <div id="temsvg11" class="w3-center"></div> Persamaan fungsi kuadrat yang memenuhi grafik tersebut adalah ....
+    <div class="w3-row">
+        <div class="w3-col s6">
+            <ol class="pas1" type="A">
+                <li><em>y</em> = &minus;2<em>x</em><sup>2</sup> + 4<em>x</em> + 6</li>
+                <li><em>y</em> = &minus;<em>x</em><sup>2</sup> &minus; 4<em>x</em> + 6</li>
+                <li><em>y</em> = <em>x</em><sup>2</sup> + 4<em>x</em> + 6</li>
+            </ol>
+        </div>
+        <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+                <li><em>y</em> = 2<em>x</em><sup>2</sup> &minus; 4<em>x</em> + 6</li>
+                <li><em>y</em> = 4<em>x</em><sup>2</sup> &minus; 4<em>x</em> + 6</li>
+            </ol>
+        </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo">Titik potong sumbu X adalah <e>(&minus;1, 0)</e> dan <e>(3, 0)</e><br>
+            \(\begin{aligned}
+            y&=a(x-x_1)(x-x_2)\\
+            &=a(x-(-1))(x-3)\\
+            &=a(x+1)(x-3)&{\color{red}(1)}\\
+            \end{aligned}\) <br><br>
+            Melalui (0, 6). Substitusikan <e><em>x</em> = 0</e> dan <e><em>y</em> = 6</e> ke persamaan <span class="w3-text-red">(1)</span>.<br>
+            \(\begin{aligned}
+            6&=a(0+1)(0-3)\\
+            6&=a(1)(-3)\\
+            6&=-3a\\
+            a&=-2
+            \end{aligned}\) <br><br>
+            Substitusikan nilai <em>a</em> ke persamaan <span class="w3-text-red">(1)</span>.<br>
+            \(\begin{aligned}
+            y&=-2(x+1)(x-3)\\
+            y&=-2\left(x^2-2x-3\right)\\
+            y&=-2x^2+4x+6
+            \end{aligned}\)
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, persamaan fungsi kuadrat yang memenuhi grafik tersebut adalah <e><em>y</em> = &minus;2<em>x</em><sup>2</sup> + 4<em>x</em> + 6.</e><br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+        var spg11 = kocabuat("temsvg11",[-1,3],[0,8]);
+        kocaGrafung(spg11,function(x){return -2*x*x+4*x+6})
+    </script>
+  </div>
+
+  <div class="justify" id="12">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Sebuah parabola mempunyai persamaan <e><em>ax</em><sup>2</sup> + <em>bx</em> + <em>c</em> = 0</e> dengan <e><em>a</em>, <em>b</em> &gt; 0</e> dan <e><em>c</em> &lt; 0</e>. Gambar yang mungkin dari parabola tersebut adalah ....
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li id="opsi1" class="pb"></li>
+          <li id="opsi2" class="pb">B</li>
+          <li id="opsi3">C</li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="4" type="A">
+          <li id="opsi4" class="pb">D</li>
+          <li id="opsi5">E</li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><em>a</em> &gt; 0 berarti parabola menghadap ke atas. <br>
+          <em>ab</em> &gt; 0 berarti titik puncak parabola berada di kanan sumbu <em>y</em>.<br>
+          <em>c</em> &lt; 0 berarti parabola berada di bawah sumbu <em>x</em>.<br>
+        </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, gambar yang mungkin dari parabola tersebut adalah <span id="opsibenar"></span><br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+      var opsi1 = kocabuat("opsi1",[-1.5,0],[-2,0],{ukuranAngkaSumbu:1/1000000,panjangTik:0.1});
+      kocaGrafung(opsi1,function(x){
+        return Math.pow(x+0.5,2)*2-2
+      },{tebalgaris:2})
+      var opsi2 = kocabuat("opsi2",[0,1],[-2,0],{ukuranAngkaSumbu:1/1000000,panjangTik:0.1});
+      kocaGrafung(opsi2,function(x){
+        return Math.pow(x-0.5,2)*(-2)-0.5
+      },{tebalgaris:2})
+      var opsi3 = kocabuat("opsi3",[0,1],[-2,0],{ukuranAngkaSumbu:1/1000000,panjangTik:0.1});
+      kocaGrafung(opsi3,function(x){
+        return Math.pow(x-0.5,2)*2-2
+      },{tebalgaris:2})
+      var opsi4 = kocabuat("opsi4",[-1.5,0],[0,2],{ukuranAngkaSumbu:1/1000000,panjangTik:0.1});
+      kocaGrafung(opsi4,function(x){
+        return Math.pow(x+0.5,2)*2+0.5
+      },{tebalgaris:2})
+      var opsi5 = kocabuat("opsi5",[0,1],[-1,1],{ukuranAngkaSumbu:1/1000000,panjangTik:0.1});
+      kocaGrafung(opsi5,function(x){
+        return Math.pow(x-0.5,2)*(-2)+1
+      },{tebalgaris:2})
+      var opsibenar = kocabuat("opsibenar",[-1.5,0],[-2,0],{ukuranAngkaSumbu:1/1000000,panjangTik:0.1,warnaSemua:"white"});
+      kocaGrafung(opsibenar,function(x){
+        return Math.pow(x+0.5,2)*2-2
+      },{tebalgaris:2})
+    </script>
+  </div>
+  
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+  <script>soal(fungkuad,1,2)</script>
+</div>
+</body>
+</html> 
+<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>

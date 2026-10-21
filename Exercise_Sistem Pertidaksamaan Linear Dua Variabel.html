@@ -1,0 +1,666 @@
+<!DOCTYPE html> 
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>Exercise Zone : Sistem Pertidaksamaan Linear Dua Variabel</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="templatestyle.css">
+  <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+      <script src="../matematikin.js"></script>
+  <!--link rel="stylesheet" href="style.css"-->
+  <style>body{
+  font-family: roboto,sans-serif;   
+  }</style>
+       </head> 
+     <body> 
+      <div class="container">
+        Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Sistem Pertidaksamaan Linear Dua Variabel</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
+        <h3>Tipe: </h3>
+        <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
+        <br>
+        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+        <br>
+
+          <div class="justify" id="1"><h3>No. <span class="w3-badge w3-yellow nomor"></span></h3>
+        Lukis daerah himpunan penyelesaian dari sistem pertidaksamaan berikut
+          <ol type="a">
+            <li><e><em>x</em> &ge; 0</e>, <e><em>y</em> &ge; 0</e>, <e>3<em>x</em> + <em>y</em> &le; 12</e>, <e><em>x</em> + 4<em>y</em> &le; 8</e></li>
+            <li><e>1 &le; <em>x</em> &le; 5</e>, <e>2 &le; <em>y</em> &le; 6</e>, <e>4<em>x</em> + 5<em>y</em> &le; 40</e></li>
+          </ol>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/5091" target="_blank">Grup Telegram</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo"><ol type="a">
+                <li><e><e>3<em>x</em> + <em>y</em> &le; 12</e>
+                  <table class="w3-table-all tengah">
+                    <tr>
+                      <td><em>x</em></td>
+                      <td>0</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td><em>y</em></td>
+                      <td>12</td>
+                      <td>0</td>
+                    </tr>
+                  </table>
+                  <e><e><em>x</em> + 4<em>y</em> &le; 8</e>
+                  <table class="w3-table-all tengah">
+                    <tr>
+                      <td><em>x</em></td>
+                      <td>0</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td><em>y</em></td>
+                      <td>2</td>
+                      <td>0</td>
+                    </tr>
+                  </table><br>
+                  <div id="temsvg1_1" class="w3-center"></div>
+                </li>
+                <li><e>4<em>x</em> + 5<em>y</em> &le; 40</e><table class="w3-table-all tengah">
+                  <tr>
+                    <td><em>x</em></td>
+                    <td>0</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td><em>y</em></td>
+                    <td>8</td>
+                    <td>0</td>
+                  </tr>
+                </table><br>
+                <div id="temsvg1_2" class="w3-center"></div></li>
+              </ol></div>
+              <div class="w3-brown w3-padding tebal flo"><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+          <script>
+            var spg1_1 = kocabuat("temsvg1_1",[-2,9],[-2,13],{rTik:0.3,intervalX:2,intervalY:2})
+            kocaSegi(spg1_1,[[0,0],[4,0],[40/11,12/11],[0,2]],{warnagaris:"none",isi:"red"})
+            kocaGrafung(spg1_1,function(x){return 12-3*x},{warna:"blue"})
+            kocaGrafung(spg1_1,function(x){return 2-x/4},{warna:"blue"})
+            var spg1_2 = kocabuat("temsvg1_2",[-1,11],[-1,9],{rTik:0.5,intervalY:2})
+            kocaSegi(spg1_2,[[1,2],[5,2],[5,4],[5/2,6],[1,6]],{warnagaris:"none",isi:"red"})
+            kocaGrafung(spg1_2,function(x){return 8-4*x/5},{warna:"blue"})
+            kocaSegmen(spg1_2,[[1,-2],[1,14]],{warna:"blue"})
+            kocaSegmen(spg1_2,[[5,-2],[5,14]],{warna:"blue"})
+            kocaSegmen(spg1_2,[[-2,2],[12,2]],{warna:"blue"})
+            kocaSegmen(spg1_2,[[-2,6],[12,6]],{warna:"blue"})
+          </script>
+        </div>
+        
+        <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Perhatikan grafik berikut
+        <div class="separator" style="clear: both; text-align: center;">
+        <a href="https://1.bp.blogspot.com/-BppFaZeD0A0/Wrx0x4oF8UI/AAAAAAAAAjI/5iLTdt23W8Et4LBjwP3iefAD9-Fq7wl6ACLcBGAs/s1600/graf.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="264" data-original-width="445" height="189" src="https://1.bp.blogspot.com/-BppFaZeD0A0/Wrx0x4oF8UI/AAAAAAAAAjI/5iLTdt23W8Et4LBjwP3iefAD9-Fq7wl6ACLcBGAs/s320/graf.png" width="320" /></a></div>
+        Daerah yang diarsir adalah daerah penyelesaian dari sistem pertidaksamaan linear. Nilai maksimum dari fungsi objektif <e><em>f</em>(<em>x</em>,<em>y</em>) = 5<em>x</em> + 3<em>y</em></e> adalah ....
+          <div class="w3-row">
+          <div class="w3-col s6">
+            <ol class="pas1" type="A">
+              <li>3</li>
+              <li>16</li>
+              <li>18</li>
+            </ol>
+          </div>
+          <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+              <li>20</li>
+              <li>30</li>
+            </ol>
+          </div>
+        </div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+<details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><div class="separator" style="clear: both; text-align: center;">
+        <a href="https://2.bp.blogspot.com/-6Qi1X37DWm8/Wrx3okSmrUI/AAAAAAAAAjg/A_D-bPTJnxU_h6JwVBHHRrhaPz5TkexxACLcBGAs/s1600/Screenshot_25.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="342" data-original-width="525" height="208" src="https://2.bp.blogspot.com/-6Qi1X37DWm8/Wrx3okSmrUI/AAAAAAAAAjg/A_D-bPTJnxU_h6JwVBHHRrhaPz5TkexxACLcBGAs/s320/Screenshot_25.png" width="320" /></a></div>
+        kita ambil 3 titik terluar yaitu A, B, dan C.
+        <table class="tengah"><tbody>
+        <tr><th class="bg-dark"></th><th>A(0, 1)</th><th>B(2, 2)</th><th>C(6, 0)</th></tr>
+        <tr><th>5<em>x</em></th><td>0</td><td>10</td><td>30</td></tr>
+        <tr><th>3<em>y</em></th><td>3</td><td>6</td><td>0</td></tr>
+        <tr><th><e>5<em>x</em> + 3<em>y</em></e></th><th>3</th><th>6</th><th>30</th></tr>
+        </tbody></table></div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, nilai maksimum dari fungsi objektif <e><em>f</em>(<em>x</em>,<em>y</em>) = 5<em>x</em> + 3<em>y</em></e> adalah 30.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Diketahui sistem pertidaksamaan <e>2<em>x</em> + <em>y</em> &le; 12</e>, <e><em>x</em> + <em>y</em> &le;8</e>, <e><em>x</em> &ge; 0</e>, <e><em>y</em> &ge; 0</e>. Nilai maksimum fungsi objektif <e><em>f</em>(<em>x</em>, <em>y</em>) = 9<em>x</em> + 6<em>y</em></e> yang memenuhi pertidaksamaan tersebut adalah
+          <div class="w3-row">
+          <div class="w3-col s6">
+            <ol class="pas1" type="A">
+              <li>59</li>
+              <li>60</li>
+              <li>61</li>
+            </ol>
+          </div>
+          <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+              <li>62</li>
+              <li>63</li>
+            </ol>
+          </div>
+        </div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+<details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">$\begin{aligned}
+        2x + y&amp;\leq12\\
+        x + y&amp;\leq8\qquad\color{red}{+}\\\hline
+        3x+2y&amp;\leq20\qquad \color{red}{\times3}\\
+        9x+6y&amp;\leq60
+        \end{aligned}$</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, nilai maksimum fungsi objektif <e><em>f</em>(<em>x</em>, <em>y</em>) = 9<em>x</em> + 6<em>y</em></e> yang memenuhi pertidaksamaan tersebut adalah 60.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="4"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Tentukan nilai <em>x</em> dan <em>y</em> sehingga <e>(6<em>x</em> + 8<em>y</em>)</e> maksimum dengan syarat:<br>
+          <e>2<em>x</em> + <em>y</em> &le; 30</e>, <e><em>x</em> + 2<em>y</em> &le; 24</e>, <e><em>x</em> &ge; 0</e>, <e><em>y</em> &ge; 0</e>, <e><em>x</em>,<em>y</em> &in; &Copf;</e>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/5514" target="_blank">Grup Telegram</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo"><div class="w3-row">
+            <div class="w3-col s6">
+              <e>2<em>x</em> + <em>y</em> &le; 30</e>
+              <table class="w3-table-all tengah">
+                <tbody>
+                  <tr><td><em>x</em></td><td>0</td><td>15</td></tr>
+                  <tr><td><em>y</em></td><td>30</td><td>0</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="w3-col s6">
+              <m><em>x</em> + 2<em>y</em> &le; 24</m>
+              <table class="w3-table-all tengah">
+                <tbody>
+                  <tr><td><em>x</em></td><td>0</td><td>24</td></tr>
+                  <tr><td><em>y</em></td><td>12</td><td>0</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        <div class="separator" style="clear: both;"><a href="https://github.com/idhammuqoddas/blog/blob/main/gambar/sptldv%202.png?raw=true" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="932" data-original-width="785" src="https://github.com/idhammuqoddas/blog/blob/main/gambar/sptldv%202.png?raw=true"/></a></div>
+          <e>A(0, 12)</e><br>
+          <e>C(15, 0)</e><br><br>
+          <h2>Koordinat Titik B</h2>
+          $\begin{aligned}
+          2x+y&=30\qquad&{\color{red}\times2}\\
+          x+2y&=24
+          \end{aligned}$<br><br>
+          $\begin{aligned}
+          4x+2y&=60\\
+          x+2y&=24\qquad&{\color{red}-}\\\hline
+          3x&=36\\
+          x&=12
+          \end{aligned}$<br><br>
+          $\begin{aligned}
+          2x+y&=30
+          2(12)+y&=30\\
+          24+y&=30\\
+          y&=6
+          \end{aligned}$<br><br>
+          <e>B(12, 6)</e><br><br>
+          <table class="w3-table-all tengah">
+            <tbody>
+              <tr><td></td><td class="font-weight-bold text-white bg-danger"><e>A(0, 12)</e></td><td class="font-weight-bold text-white bg-danger"><m>B(12,6)</m></td><td class="font-weight-bold text-white bg-danger"><m>C(15,0)</m></td></tr>
+              <tr><td class="font-weight-bold text-white bg-info">6<em>x</em></td><td>0</td><td>72</td><td>90</td></tr>
+              <tr><td class="font-weight-bold text-white bg-info">8<em>y</em></td><td>96</td><td>48</td><td>0</td></tr>
+              <tr><td class="font-weight-bold text-white bg-dark">JUMLAH</td><td class="font-weight-bold text-white bg-dark">96</td><td class="font-weight-bold text-white bg-dark">120</td><td class="font-weight-bold text-white bg-dark"><m>90</m></td></tr>
+            </tbody>
+          </table></div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>x</em> = 12</e>, dan <e><em>y</em> = 6</e>.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+        
+        <div class="justify" id="5"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Nilai maksimum dari <e><em>f</em>(<em>x</em>, <em>y</em>) = 9<em>x</em> + 10<em>y</em> + 4</e> jika <em>x</em> dan <em>y</em> dibatasi oleh sistem pertidaksamaan <e><em>x</em> + 2<em>y</em> &le; 20</e>, <e>2<em>x</em> &minus; <em>y</em> &ge; 0</e>, dan <e><em>x</em> &minus; 2<em>y</em> &le; 0</em> adalah
+          <div class="w3-row">
+          <div class="w3-col s6">
+            <ol class="pas1" type="A">
+              <li>164</li>
+              <li>144</li>
+              <li>124</li>
+            </ol>
+          </div>
+          <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+              <li>120</li>
+              <li>4</li>
+            </ol>
+          </div>
+        </div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="/2020/09/skmp-sma-juli-2020.html" target="_blank">SKMP Juli 2020</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">                <div class="w3-row">
+            <div class="w3-col s6">
+             <e><em>x</em> + 2<em>y</em> &le; 20</e><br>
+              <table class="table table-sm table-bordered tengah">
+                <tbody>
+                  <tr><th><em>x</em></th><td>0</td><td>20</td></tr>
+                  <tr><th><em>y</em></th><td>10</td><td>0</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="w3-col s6">
+              <e>2<em>x</em> &minus; <em>y</em> &ge; 0</e><br>
+              <table class="table table-sm table-bordered tengah">
+                <tbody>
+                  <tr><th><em>x</em></th><td>0</td><td>1</td></tr>
+                  <tr><th><em>y</em></th><td>0</td><td>2</td></tr>
+                </tbody>
+              </table>
+            </div>
+                <div class="w3-col s6">
+             <e><em>x</em> &minus; 2<em>y</em> &le; 0</e><br>
+              <table class="table table-sm table-bordered tengah">
+                <tbody>
+                  <tr><th><em>x</em></th><td>0</td><td>2</td></tr>
+                  <tr><th><em>y</em></th><td>0</td><td>1</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        <div class="separator" style="clear: both;"><a href="https://github.com/idhammuqoddas/blog/blob/main/gambar/sptldv%203.png?raw=true" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="579" data-original-width="815" src="https://github.com/idhammuqoddas/blog/blob/main/gambar/sptldv%203.png?raw=true"/></a></div>
+            <div class="w3-row">
+            <div class="w3-col s6">
+               <h1>Titik A</h1>
+          $\begin{aligned}
+          2x- y&=0\qquad&{\color{red}\times2}\\
+          x- 2y&=0
+          \end{aligned}$<br><br>
+          $\begin{aligned}
+          4x-2y&=0\\
+          x-2y&=0\qquad&{\color{red}-}\\\hline
+          3x&=0\\
+          x&=0
+          \end{aligned}$<br><br>
+          $\begin{aligned}
+          x-2y&=0\\
+          0-2y&=0\\
+          y&=0
+          \end{aligned}$<br>
+          <em>A</em>(0, 0)<br>
+          <h1>Titik B</h1>
+          $\begin{aligned}
+          x+2y&=20\\
+          x-2y&=0\qquad&{\color{red}+}\\\hline
+          2x&=20\\
+          x&=10
+          \end{aligned}$<br><br>
+          $\begin{aligned}
+          x-2y&=0\\
+          10-2y&=0\\
+          -2y&=-10\\
+          y&=5
+          \end{aligned}$<br>
+          <em>B</em>(10,5)<br>
+            </div>
+            <div class="w3-col s6">
+            <h1>Titik C</h1>
+          $\begin{aligned}
+          2x-y&=0\qquad&{\color{red}\times2}\\
+          x+2y&=20
+            \end{aligned}$<br><br>
+          $\begin{aligned}
+          4x-2y&=0\\
+          x+2y&=20\qquad&{\color{red}+}\\\hline
+          5x&=20\\
+          x&=4
+          \end{aligned}$<br><br>
+          $\begin{aligned}
+          2x-y&=0\\
+          2(4)-y&=0\\
+          8-y&=0\\
+          y&=8
+          \end{aligned}$<br>
+          <em>C</em>(4,8)<br><br>
+          <table class="table table-sm table-bordered tengah">
+            <thead class="thead-dark">
+              <th></th><th><em>A</em>(0, 0)</th><th><em>B</em>(10, 5)</th><th><em>C</em>(4, 8)</th>
+            </thead>
+            <tbody>
+              <tr><td class="bg-warning">9<em>x</em></td><td>0</td><td>90</td><td>36</td></tr>
+              <tr><td class="bg-warning">10<em>y</em></td><td>0</td><td>50</td><td>80</td></tr>
+              <tr><td class="bg-warning">4</td><td>4</td><td>4</td><td>4</td></tr>
+              <tr><td class="bg-warning"><e><em>f</em>(<em>x</em>, <em>y</em>)</e></td><td class="bg-info text-white">4</td><td class="bg-info text-white">144</td><td class="bg-info text-white">120</td></tr>
+            </tbody>
+          </table>
+            </div>
+          </div></div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, nilai maksimum dari <e><em>f</em>(<em>x</em>, <em>y</em>) = 9<em>x</em> + 10<em>y</em> + 4</e> adalah 144.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="6"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+        Gambarlah daerah penyelesaian dari <br>
+          <e>2<em>x</em> + 3<em>y</em> &le; 12</e><br>
+          <e><em>x</em> + 4<em>y</em> &ge; 8</e><br>
+          <e><em>x</em> &ge; 0</e><br>
+          <e><em>y</em> &ge; 0</e>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/6712" target="_blank">Grup Telegram</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo"><div class="w3-row">
+            <div class="w3-col s6">
+            <e>2<em>x</em> + 3<em>y</em> &le; 12</e>
+              <table class="table table-sm table-bordered tengah">
+                <tbody>
+                  <tr><td><em>x</em></td><td>0</td><td>6</td></tr>
+                  <tr><td><em>y</em></td><td>4</td><td>0</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="w3-col s6">
+             <e><em>x</em> + 4<em>y</em> &ge; 8</e>
+              <table class="table table-sm table-bordered tengah">
+                <tbody>
+                  <tr><td><em>x</em></td><td>0</td><td>8</td></tr>
+                  <tr><td><em>y</em></td><td>2</td><td>0</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div id="temsvg6" class="w3-center"></div></div>
+              <div class="w3-brown w3-padding tebal flo"><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+          <script>
+            var spg6 = kocabuat("temsvg6",[0,8],[0,4],{intervalX:2,intervalY:2,rTik:0.5})
+            kocaSegi(spg6,[[0,2],[24/5,4/5],[0,4]],{warnagaris:"none",isi:"red"})
+            kocaGrafung(spg6,function(x){return 4-2*x/3},{warna:"blue"})
+            kocaGrafung(spg6,function(x){return 2-x/4},{warna:"blue"})
+          </script>
+        </div>
+        
+        <div class="justify" id="7"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Gambarlah persamaan garis lurus dan tentukan daerah yang memenuhi dari sistem pertidaksamaan linear<br>
+          <e><em>x</em> + <em>y</em> &lt; 5</e><br>
+          <e>2<em>x</em> &minus; <em>y</em> &lt; 7</e><br>
+          <e><em>x</em> + 3<em>y</em> &ge; 11</e>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/6910" target="_blank">Grup Telegram</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo"><em>x</em> + <em>y</em> &lt; 5
+              <table class="tengah">
+                <tr>
+                  <td><em>x</em></td>
+                  <td>0</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td><em>y</em></td>
+                  <td>5</td>
+                  <td>0</td>
+                </tr>
+              </table>
+              <e>2<em>x</em> &minus; <em>y</em> &lt; 7</e>
+              <table class="tengah">
+                <tr>
+                  <td><em>x</em></td>
+                  <td>0</td>
+                  <td>$\dfrac72$</td>
+                </tr>
+                <tr>
+                  <td><em>y</em></td>
+                  <td>&minus;7</td>
+                  <td>0</td>
+                </tr>
+              </table>
+              <e><em>x</em> + 3<em>y</em> &ge; 11</e>
+              <table class="tengah">
+                <tr>
+                  <td><em>x</em></td>
+                  <td>0</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td><em>y</em></td>
+                  <td>$\dfrac{11}3$</td>
+                  <td>0</td>
+                </tr>
+              </table>
+              <div id="temsvg7" class="w3-center"></div>
+            </div>
+              <div class="w3-brown w3-padding tebal flo"><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+          <script>
+            var spg7 = kocabuat("temsvg7",[0,11],[-7,5],{rTik:0.7})
+            kocaSegi(spg7,[[-1,4],[2,3],[-1,6]],{warnagaris:"none",isi:"red",tampakisi:0.5})
+            kocaGrafung(spg7,function(x){return 5-x},{warna:"blue"})
+            kocaGrafung(spg7,function(x){return 2*x-7},{warna:"blue"})
+            kocaGrafung(spg7,function(x){return (11-x)/3},{warna:"blue"})
+          </script>
+        </div>
+        
+        <div class="justify" id="8"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Diketahui sistem pertidaksamaan linear <e><em>x</em> &ge; 0</e>, <e><em>y</em> &ge; 0</e>, <e><em>x</em> + <em>y</em> &le; 20</e>, <e><em>x</em> + 3<em>y</em> &ge; 30</e>, dan <e>3<em>x</em> + <em>y</em> &ge; 30</e>. Titik yang terdapat dalam daerah himpunan penyelesaian sistem pertidaksamaan tersebut adalah ....
+          <div class="w3-row">
+          <div class="w3-col s6">
+            <ol class="pas1" type="A">
+              <li>(7,5; 7,5)</li>
+              <li>(10, 10)</li>
+              <li>(0, 30)</li>
+            </ol>
+          </div>
+          <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+              <li>(5, 15)</li>
+              <li>(8, 8)</li>
+            </ol>
+          </div>
+        </div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/7035" target="_blank">Grup Telegram</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><table class="table table-bordered">
+            <tbody>
+              <tr><td><e><em>x</em> + <em>y</em> &le; 20</e>
+                <table class="table table-bordered tengah">
+            <tbody>
+              <tr><td><em>x</em></td><td>0</td><td>20</td></tr>
+              <tr><td><em>y</em></td><td>20</td><td>0</td></tr>
+                  </tbody>
+                </table>
+                </td><td><e><em>x</em> + 3<em>y</em> &ge; 30</e>
+                <table class="table table-bordered tengah">
+            <tbody>
+              <tr><td><em>x</em></td><td>0</td><td>30</td></tr>
+              <tr><td><em>y</em></td><td>10</td><td>0</td></tr>
+                  </tbody>
+                </table>
+                </td><td><e>3<em>x</em> + <em>y</em> &ge; 30</e>
+                <table class="table table-bordered tengah">
+            <tbody>
+              <tr><td><em>x</em></td><td>0</td><td>10</td></tr>
+              <tr><td><em>y</em></td><td>30</td><td>0</td></tr>
+                  </tbody>
+                </table>
+                </td>
+            </tbody>
+          </table>
+          <div id="temsvg8" class="w3-center"></div>
+          Ada 2 titik yang terdapat pada Daerah Penyelesaian, yaitu B dan D
+        </div>
+            <div class="w3-brown w3-padding tebal flo"><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        <script>
+          var k8 = [5,-1]
+          var spg8 = kocabuat("temsvg8",[0,30],[0,30],{intervalX:10,intervalY:10,rTik:0.2})
+          kocaSegi(spg8,[[15/2,15/2],[15,5],[5,15]],{warnagaris:"none",isi:"red",tampakisi:0.3})
+          kocaGrafung(spg8,function(x){return 20-x},{warna:"blue"})
+          kocaGrafung(spg8,function(x){return 10-x/3},{warna:"blue"})
+          kocaGrafung(spg8,function(x){return 30-3*x},{warna:"blue"})
+        </script>
+        </div>
+
+        <div class="justify" id="9">
+          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Grafik yang memenuhi pertaksamaan linear : <e><em>x</em> + <em>y</em> &le; 6;</e> <e>2<em>x</em> &minus; <em>y</em> &le; &minus;4;</e> <e><em>x</em> &le; 0;</e> <e><em>y</em> &ge; 0</e> adalah ....
+          <div class="w3-row">
+            <div class="w3-col s6">
+              <ol class="pas1" type="A">
+                <li class="pb"><br><div id="spg10_1"></div></li>
+                <li class="pb"><br><div id="spg10_2"></div></li>
+                <li><br><div id="spg10_3"></div></li>
+              </ol>
+            </div>
+            <div class="w3-col s6">
+              <ol class="pas1" start="4" type="A">
+                <li class="pb"><br><div id="spg10_4"></div></li>
+                <li><br><div id="spg10_5"></div></li>
+              </ol>
+            </div>
+          </div>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">USP SMK Kab. Tangerang 2023</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo"><e><em>x</em> + <em>y</em> &le; 6</e>
+                <table class="tengah">
+                  <tr>
+                    <td><em>x</em></td>
+                    <td>0</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td><em>y</em></td>
+                    <td>6</td>
+                    <td>0</td>
+                  </tr>
+                </table>
+                <e>2<em>x</em> &minus; <em>y</em> &le; &minus;4;</e>
+                <table class="tengah">
+                  <tr>
+                    <td><em>x</em></td>
+                    <td>0</td>
+                    <td>&minus;2</td>
+                  </tr>
+                  <tr>
+                    <td><em>y</em></td>
+                    <td>4</td>
+                    <td>0</td>
+                  </tr>
+                </table>
+                <div id="spg10_6" class="w3-center"></div>
+              </div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, grafik yang memenuhi pertaksamaan linear : <e><em>x</em> + <em>y</em> &le; 6;</e> <e>2<em>x</em> &minus; <em>y</em> &le; &minus;4;</e> <e><em>x</em> &le; 0;</e> <e><em>y</em> &ge; 0</e> adalah <br><br><div id="spg10_7"></div><br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+          <script>
+            var spg10_6 = kocabuat("spg10_6",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
+            kocaSegi(spg10_6,[[-4,10],[-4,-2],[8,-2]],{isi:"red",tampakisi:0.3,warnagaris:"none"})
+            kocaSegi(spg10_6,[[-4,-4],[8,-2],[8,20]],{isi:"red",tampakisi:0.3,warnagaris:"none"})
+            kocaSegi(spg10_6,[[-4,-2],[0,-2],[0,8],[-4,8]],{isi:"red",tampakisi:0.3,warnagaris:"none"})
+            kocaSegi(spg10_6,[[-4,0],[0,0],[0,8],[-4,8]],{isi:"red",tampakisi:0.3,warnagaris:"none"})
+            kocaGrafung(spg10_6,function(x){return 6-x},{warna:"blue"})
+            kocaGrafung(spg10_6,function(x){return 2*x+4},{warna:"blue"})
+            var spg10_1 = kocabuat("spg10_1",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
+            kocaSegi(spg10_1,[[-2,0],[0,0],[0,4]],{isi:"red",tampakisi:0.5,warnagaris:"blue"})
+            kocaGrafung(spg10_1,function(x){return 6-x},{warna:"blue"})
+            kocaGrafung(spg10_1,function(x){return 2*x+4},{warna:"blue"})
+            var spg10_7 = kocabuat("spg10_7",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
+            kocaSegi(spg10_7,[[-2,0],[0,0],[0,4]],{isi:"red",tampakisi:0.5,warnagaris:"blue"})
+            kocaGrafung(spg10_7,function(x){return 6-x},{warna:"blue"})
+            kocaGrafung(spg10_7,function(x){return 2*x+4},{warna:"blue"})
+            var spg10_2 = kocabuat("spg10_2",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
+            kocaSegi(spg10_2,[[0,0],[0,4],[2/3,16/3],[6,0]],{isi:"red",tampakisi:0.5,warnagaris:"blue"})
+            kocaGrafung(spg10_2,function(x){return 6-x},{warna:"blue"})
+            kocaGrafung(spg10_2,function(x){return 2*x+4},{warna:"blue"})
+            var spg10_3 = kocabuat("spg10_3",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
+            kocaSegi(spg10_3,[[-4,0],[-2,0],[0,4],[0,6],[-4,10]],{isi:"red",tampakisi:0.5,warnagaris:"none"})
+            kocaGrafung(spg10_3,function(x){return 6-x},{warna:"blue"})
+            kocaGrafung(spg10_3,function(x){return 2*x+4},{warna:"blue"})
+            var spg10_4 = kocabuat("spg10_4",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
+            kocaSegi(spg10_4,[[-4,-4],[0,4],[0,6],[-4,10]],{isi:"red",tampakisi:0.5,warnagaris:"none"})
+            kocaGrafung(spg10_4,function(x){return 6-x},{warna:"blue"})
+            kocaGrafung(spg10_4,function(x){return 2*x+4},{warna:"blue"})
+            var spg10_5 = kocabuat("spg10_5",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
+            kocaSegi(spg10_5,[[-2,0],[2/3,16/3],[6,0]],{isi:"red",tampakisi:0.5,warnagaris:"none"})
+            kocaGrafung(spg10_5,function(x){return 6-x},{warna:"blue"})
+            kocaGrafung(spg10_5,function(x){return 2*x+4},{warna:"blue"})
+          </script>
+        </div>
+
+        <div class="justify" id="10">
+          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Perhatikan grafik di bawah ini!
+          <div id="spg11" class="w3-center"></div>
+          Sistem pertidaksamaan linier yang memenuhi daerah penyelesaian pada sketsa grafik di atas adalah ....
+          <ol class="pas1" type="A"> 
+           <li><e>6<em>x</em> + 5<em>y</em> &ge; 30;</e> <e><em>x</em> + <em>y</em> &le; 1;</e> <e><em>x</em> &ge; 3;</e> <e><em>y</em> &le; 0</e></li> 
+           <li><e>6<em>x</em> + 5<em>y</em> &le; 30;</e> <e><em>x</em> &minus; <em>y</em> &ge; 1;</e> <e><em>x</em> &le; 3;</e> <e><em>y</em> &le; 0</e></li> 
+           <li><e>6<em>x</em> + 5<em>y</em> &le; 30;</e> <e><em>x</em> &minus; <em>y</em> &le; &minus;1;</e> <e><em>x</em> &le; 3;</e> <e><em>y</em> &ge; 0</e></li> 
+           <li><e>5<em>x</em> + 6<em>y</em> &ge; 30;</e> <e><em>x</em> + <em>y</em> &ge; &minus;1;</e> <e><em>x</em> &le; 3;</e> <e><em>y</em> &ge; 0</e></li> 
+           <li><e>5<em>x</em> + 6<em>y</em> &ge; 30;</e> <e>&minus;<em>x</em> + <em>y</em> &ge; &minus;1;</e> <e><em>x</em> &le; 3;</e> <e><em>y</em> &ge; 0</e></li> 
+           </ol>          
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">USP SMK Kab. Tangerang 2023</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo"><h3>Persamaan Garis I : melalui (0,5) dan (6,0)</h3>
+                5<em>x</em> + 6<em>y</em> &ctdot; 30 <br>
+                Koefisien <em>y</em> positif. Dari garis, DP berada di atas, sehingga tandanya adalah &ge;. <br>
+                5<em>x</em> + 6<em>y</em> &ge; 30
+                <h3>Persamaan Garis II: melalui (0,&minus;1) dan (1,0)</h3>
+                &minus;<em>x</em> + <em>y</em> &ctdot; &minus;1 <br>
+                Koefisien <em>y</em> positif. Dari garis, DP berada di atas, sehingga tandanya adalah &ge;. <br>
+                <e>&minus;<em>x</em> + <em>y</em> &ge; &minus;1</e>
+                <h3>Persamaan Garis III: Garis vertikal memotong sumbu <em>x</em> di (3,0)</h3>
+                <em>x</em> &ctdot; 3 <br>
+                Dari garis, DP berada di kiri, sehingga tandanya adalah &le;. <br>
+                <em>x</em> &le; 3
+                <h3>Berada di atas sumbu <em>x</em></h3>
+                DP seluruhnya berada di atas sumbu <em>x</em>, sehingga <e><em>y</em> &ge; 0</e>
+              </div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, sistem pertidaksamaan linier yang memenuhi daerah penyelesaian pada sketsa grafik di atas adalah <e>5<em>x</em> + 6<em>y</em> &ge; 30;</e> <e>&minus;<em>x</em> + <em>y</em> &ge; &minus;1;</e> <e><em>x</em> &le; 3;</e> <e><em>y</em> &ge; 0</e>.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+          <script>
+            var spg11 = kocabuat("spg11",[0,6],[-1,5])
+            kocaGrafung(spg11,function(x){return 5-5*x/6},{warna:"blue"})
+            kocaGrafung(spg11,function(x){return x-1},{warna:"blue"})
+            kocaSegmen(spg11,[[3,-2],[3,6]],{warna:"blue"})
+            kocaSegi(spg11,[[3,7],[3,5/2],[-2,20/3]],{warnagaris:"none",isi:"red",tampakisi:0.4})
+          </script>
+        </div>
+
+        <div class="navi d-none"><ul class="pagination pagi" style="margin-left:0em">
+        </ul></div>
+<script>soal(SPtLDV,1,1)</script>        
+      </div>
+   </body>
+</html> 

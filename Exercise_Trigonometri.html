@@ -1,0 +1,471 @@
+<!DOCTYPE html> 
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>Exercise Zone : Trigonometri</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../katex/katex.css">
+      <script src="../katex/katex.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="templatestyle.css">
+  <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+      <script src="../matematikin.js"></script>
+     </head> 
+     <body> <div class="w3-container">
+      <img alt="" class="w3-hide" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1rQF3s4V3w5aFfGPf3D0yksDd872U94MjNF2Buxh12eCKj78yjpOKW3wpUfL_8wTxMAtDNr8l_1936uOj9LNpsIc8rc6GDJN_eIL_jkTh42Mee_mVUs342ACX4frhYh28i6Mra17g8AdY6z2vQo9rVUGW0uHrPQxDFSzU9N_olqnSLmqg4v0MEkJ2/s320/TRIGONOMETRI%20STANDAR.png"/>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Trigonometri</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
+      <h3>Tipe: </h3>
+      <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
+      <br>
+      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+      <br>
+
+        <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Sebuah tangga disandarkan pada tembol rumah dengan membentuk sudut 60&deg; terhadap tanah. Jarak antara ujung tangga dan permukaan tanah adalah $2\sqrt3$ m. Panjang tangga tersebut adalah .....
+          <div class="w3-row"> 
+           <div class="w3-col s4"> 
+           <ol class="pas1" type="A"> 
+           <li>4 m</li> 
+           <li>4,5 m</li> 
+           </ol> 
+           </div> 
+           <div class="w3-col s4"> 
+           <ol class="pas1" start="3" type="A"> 
+           <li>5 m</li> 
+           <li>5,5 m</li> 
+           </ol> 
+           </div> 
+           <div class="w3-col s4"> 
+           <ol class="pas1" start="5" type="A"> 
+           <li>6 m</li> 
+           </ol> 
+           </div> 
+           </div>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/3473" target="_blank">Grup Telegram</a></div><details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><div class="w3-row">
+              <div class="w3-col m6 w3-center" id="temsvg1"></div>
+              <div class="w3-col m6">\begin{aligned}
+        \sin60\degree&amp;=\dfrac{2\sqrt3}x\\[3.7pt]
+        \dfrac12\sqrt3&amp;=\dfrac{2\sqrt3}x\\[3.7pt]
+        x&amp;=\dfrac{2\sqrt3}{\dfrac12\sqrt3}\\
+        &amp;=\boxed{\boxed{4}}
+        \end{aligned}</div>
+        </div></div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, panjang tangga tersebut adalah 4 m.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        <script>
+          var k1 = 30;
+          var a1 = [2*Math.sqrt(3)*k1,6*k1,1*k1];
+          var tiA1 = [0,0];
+          var tiB1 = [0,a1[1]];
+          var tiC1 = [a1[0],a1[1]]
+          document.getElementById("temsvg1").innerHTML = String.raw`${svgawal(a1[0],a1[1],1,a1[2])}
+          ${svgsegi([tiA1,tiB1,tiC1],{tebalgaris:2,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+          ${svglabeltitik(tiC1,"60°",{ukuran:1,anchor:"end",baseline:"baseline",xplus:-0.3*k1,yplus:-0.1*k1})}
+          ${svgsudut([tiB1,tiC1,tiA1],{r:1.2*k1,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+
+</svg>`
+
+        </script>
+        </div>
+        
+        <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Jika $x-y=\dfrac12\pi$ maka <e>tan <em>x</em></e> adalah....
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">$\dfrac{1+\tan y^2}{y}$</li>
+        <li class="pb">$-\dfrac{1-y^2}{\tan y}$
+        </li>
+        <li>$\dfrac{\tan(1-y)}{(1+y)^2}$
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">$\dfrac{\tan y}{(1+y)^2}$</li>
+        <li>$-\dfrac1{\tan y}$
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">$x=\dfrac12\pi+y$
+          \begin{aligned}
+        \tan x&amp;=\tan\left(\dfrac12\pi+y\right)\\
+        &amp;=-\cot y\\
+        &amp;=-\dfrac1{\tan y}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, $\tan x=-\dfrac1{\tan y}$.<br><b>JAWAB: E</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Jika <e>sin 13&deg; = <em>a</em></e>, maka nilai <e>cot 257&deg; + csc 257 &deg; =</e>
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">$\dfrac{a-1}{\sqrt{a^2-1}}$</li>
+        <li class="pb">$\dfrac{1-a}{\sqrt{a^2-1}}$
+        </li>
+        <li>$\dfrac{a-1}{\sqrt{1-a^2}}$
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">$\dfrac{1-a}{\sqrt{1-a^2}}$</li>
+        <li>$\dfrac{-a-1}{\sqrt{1-a^2}}$
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        \cot257\degree+\csc257\degree&amp;=\cot\left(270\degree-13\degree\right)+\csc\left(270\degree-13\degree\right)\\
+        &amp;=\tan13\degree-\sec13\degree\\
+        &amp;=\dfrac{a}{\sqrt{1-a^2}}-\dfrac1{\sqrt{1-a^2}}\\
+        &amp;=\boxed{\boxed{\dfrac{a-1}{\sqrt{1-a^2}}}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, $\cot257\degree+\csc257\degree=\dfrac{a-1}{\sqrt{1-a^2}}$.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+</div>
+        
+        <div id="4" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Diketahui $\cos\alpha = \dfrac{a}{2b}$, dengan &alpha; sudut lancip dan <e><em>b</em> &ne; 0</e>. Nilai dari <e>tan &alpha; =</e>
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">$\dfrac{2b}a$</li>
+        <li class="pb">$\dfrac{\sqrt{a^2-4b^2}}{2a}$
+        </li>
+        <li>$\dfrac{\sqrt{4b^2-a^2}}{2a}$
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">$\dfrac{\sqrt{a^2-4b^2}}a$</li>
+        <li>$\dfrac{\sqrt{4b^2-a^2}}a$
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><div class="w3-row"><div class="w3-col s6">$\cos\alpha = \dfrac{a}{2b}=\dfrac{sa}{mi}$<br />
+              <e>sa = <em>a</em></e>, <e>mi = 2<em>b</em></e>
+              <div id="temsvg4" class="w3-center"></div>
+              </div><div class="w3-col s6">\begin{aligned}
+              de&amp;=\sqrt{(2b)^2-a^2}\\
+              &amp;=\sqrt{4b^2-a^2}
+              \end{aligned}
+              \begin{aligned}
+              \tan\alpha&amp;=\dfrac{de}{sa}\\
+              &amp;=\boxed{\boxed{\dfrac{\sqrt{4b^2-a^2}}a}}
+              \end{aligned}</div></div></div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, $\tan\alpha=\dfrac{\sqrt{4b^2-a^2}}a$.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        <script>
+          var k4 = 100;
+          var a4 = [1*k4,1*k4,0.2*k4];
+          var tiA4 = [0,a4[1]];
+          var tiB4 = [a4[0],a4[1]];
+          var tiC4 = [a4[0],0]
+          document.getElementById("temsvg4").innerHTML = String.raw`${svgawal(a4[0],a4[1],1,a4[2])}
+          ${svgsegi([tiA4,tiB4,tiC4],{tebalgaris:2,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+          ${svglabelgaris([tiA4,tiB4],"𝑎",{ukuran:1,warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0})}
+          ${svglabelgaris([tiC4,tiA4],"2𝑏",{ukuran:1,warna:"black",anchor:"end",baseline:"baseline",xplus:-0.01*k4,yplus:-0.01*k4})}
+          ${svglabeltitik(tiA4,"α",{ukuran:1,anchor:"start",baseline:"baseline",xplus:0.4*k1,yplus:-0.1*k1})}
+          ${svgsudut([tiC4,tiA4,tiB4],{r:0.25*k4,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+
+</svg>`
+
+        </script>
+</div>
+        
+        <div id="5" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Jika &theta; sudut lancip dan $\cos\theta=\dfrac35$, maka nilai dari $\dfrac{\sin\theta\tan\theta-1}{2\tan^2\theta}$ adalah
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">Grup WhatsApp</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo"><div id="temsvg5" class="w3-center"></div>$\sin\theta=\dfrac45$<br /><br />
+              $\tan\theta=\dfrac43$
+              \begin{aligned}
+              \dfrac{\sin\theta\tan\theta-1}{2\tan^2\theta}&amp;=\dfrac{\left(\dfrac45\right)\left(\dfrac43\right)-1}{2\left(\dfrac43\right)^2}\\
+              &amp;=\dfrac{\dfrac{16}{15}-1}{2\left(\dfrac{16}9\right)}\\
+              &amp;=\dfrac{\dfrac1{15}}{\dfrac{32}9}\\
+              &amp;=\dfrac1{15}\cdot\dfrac9{32}\\
+              &amp;=\boxed{\boxed{\dfrac3{160}}}
+              \end{aligned}</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, nilai dari $\dfrac{\sin\theta\tan\theta-1}{2\tan^2\theta}$ adalah $\dfrac3{160}$.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+          <script>
+            var k5 = 30;
+            var a5 = [3*k5,4*k5,1*k5];
+            var tiA5 = [0,a5[1]];
+            var tiB5 = [a5[0],a5[1]];
+            var tiC5 = [a5[0],0];
+            document.getElementById("temsvg5").innerHTML = String.raw`${svgawal(a5[0],a5[1],1,a5[2])}
+            ${svgsegi([tiA5,tiB5,tiC5],{tebalgaris:2,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+            ${svglabelgaris([tiC5,tiA5],"5",{ukuran:1.2,warna:"black",anchor:"end",baseline:"baseline",xplus:-0.1*k5,yplus:-0.1*k5})}
+            ${svglabelgaris([tiB5,tiA5],"3",{ukuran:1.2,warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.2*k5})}
+            ${svglabelgaris([tiB5,tiC5],"4",{ukuran:1.2,warna:"black",anchor:"start",baseline:"central",xplus:0.2*k5,yplus:0})}
+            ${svglabeltitik(tiA5,"θ",{ukuran:1,anchor:"start",baseline:"baseline",xplus:0.5*k1,yplus:-0.2*k1})}
+            ${svgsudut([tiC5,tiA5,tiB5],{r:0.3*k4,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+
+</svg>`
+
+          </script>
+        </div>
+        
+        <div id="6" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Nilai dari sin 135&deg; adalah ....
+          <div class="w3-row"> 
+           <div class="w3-col s4"> 
+           <ol class="pas1" type="A"> 
+           <li class="pb">$\dfrac13\sqrt2$</li> 
+           <li>$\dfrac12\sqrt2$</li> 
+           </ol> 
+           </div> 
+           <div class="w3-col s4"> 
+           <ol class="pas1" start="3" type="A"> 
+           <li class="pb">$\dfrac14\sqrt2$</li> 
+           <li>$\sqrt2$</li> 
+           </ol> 
+           </div> 
+           <div class="w3-col s4"> 
+           <ol class="pas1" start="5" type="A"> 
+           <li>$-\dfrac12\sqrt2$</li> 
+           </ol> 
+           </div> 
+           </div>          
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://n9.cl/uspmatematikasmkkabtang2023" target="_blank">USP SMK Kab. Tangerang 2023</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">\begin{aligned}
+              \sin135&deg;&=\sin\left(180&deg;-45&deg;\right)\\
+              &=\sin45&deg;\\
+              &=\color{blue}\boxed{\boxed{\color{black}\dfrac12\sqrt2}}
+              \end{aligned}</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, nilai dari sin 135&deg; adalah $\dfrac12\sqrt2$.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+        
+        <div id="7" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Diketahui $\sin \alpha=\dfrac45$, $0 \lt \alpha \lt \dfrac{\pi}2$ dan $\cos\beta =\dfrac{12}{13}$, $-\dfrac{\pi}2\lt\beta\lt0$.
+          Tentukan nilai <e>sin (&alpha; + &beta;)</e> dan <e>sin (&alpha; &minus; &beta;)</e>.
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/7418" target="_blank">Grup Telegram</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo"><div id="temsvg7" class="w3-center"></div>
+          &alpha; kuadran I dan &beta; kuadran IV<br><br>
+          $\cos\alpha=\dfrac35$, $\sin\beta=-\dfrac5{13}$
+          \begin{aligned}
+          \sin (\alpha+\beta)&=\sin\alpha\cos\beta+\cos\alpha\sin\beta\\
+          &=\dfrac45\cdot\dfrac{12}{13}+\dfrac35\cdot\left(-\dfrac5{13}\right)\\
+          &=\dfrac{48}{65}-\dfrac{15}{65}\\
+          &=\boxed{\boxed{\dfrac{33}{65}}}
+          \end{aligned}
+          \begin{aligned}
+          \sin (\alpha-\beta)&=\sin\alpha\cos\beta-\cos\alpha\sin\beta\\
+          &=\dfrac45\cdot\dfrac{12}{13}-\dfrac35\cdot\left(-\dfrac5{13}\right)\\
+          &=\dfrac{48}{65}+\dfrac{15}{65}\\
+          &=\boxed{\boxed{\dfrac{63}{65}}}
+          \end{aligned}</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, $\sin (\alpha+\beta)=\dfrac{33}{65}$ dan $\sin (\alpha-\beta)=\dfrac{63}{65}$.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+          <script>
+            var k7 = 30;
+            var a7 = [(7+2)*k7,4*k7,1*k7];
+            var tiA7 = [0,a7[1]];
+            var tiB7 = [3*k7,a7[1]];
+            var tiC7 = [3*k7,0];
+            var tiD7 = [a7[0]-4*k7,a7[1]];
+            var tiE7 = [a7[0],a7[1]];
+            var tiF7 = [a7[0],k7];
+            document.getElementById("temsvg7").innerHTML = String.raw`${svgawal(a7[0],a7[1],1,a7[2])}
+            ${svgsegi([tiA7,tiB7,tiC7],{tebalgaris:2,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+            ${svgsegi([tiD7,tiE7,tiF7],{tebalgaris:2,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+            ${svglabelgaris([tiA7,tiB7],"3",{ukuran:1.2,warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.2*k7})}
+            ${svglabelgaris([tiC7,tiB7],"4",{ukuran:1.2,warna:"black",anchor:"start",baseline:"central",xplus:0.2*k7,yplus:0})}
+            ${svglabelgaris([tiC7,tiA7],"5",{ukuran:1.2,warna:"black",anchor:"end",baseline:"baseline",xplus:-0.1*k7,yplus:-0.1*k7})}
+            ${svglabelgaris([tiD7,tiE7],"12",{ukuran:1.2,warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.2*k7})}
+            ${svglabelgaris([tiE7,tiF7],"5",{ukuran:1.2,warna:"black",anchor:"start",baseline:"central",xplus:0.2*k7,yplus:0})}
+            ${svglabelgaris([tiD7,tiF7],"13",{ukuran:1.2,warna:"black",anchor:"end",baseline:"baseline",xplus:-0.1*k7,yplus:-0.1*k7})}
+            ${svglabeltitik(tiA7,"α",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:0.4*k7,yplus:-0.15*k7})}
+            ${svglabeltitik(tiD7,"&beta;",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:1*k7,yplus:-0.25*k7})}
+            ${svgsudut([tiC7,tiA7,tiB7],{r:1*k7,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+            ${svgsudut([tiF7,tiD7,tiE7],{r:1.6*k7,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+</svg>`
+
+          </script>
+        </div>
+
+        <div class="justify" id="8">
+          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Segitiga <em>ABC</em> siku siku di <em>C</em> jika panjang <e><em>AC</em> = 20</em> cm dan besar sudut <e><em>A</em> = 60&deg;</e> tentukan panjang <em>BC</em>!
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://brainly.co.id/tugas/38505345" target="_blank">brainly.co.id</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo"><div id="temsvg8" class="w3-center"></div>\begin{aligned}\tan60\degree&=\dfrac{BC}{AC}\\\sqrt3&=\dfrac{BC}{20}\\BC&=\boxed{\boxed{20\sqrt3}}\end{aligned}</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <em>BC</em> = $20\sqrt3$ cm.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+          <script>
+            var k8 = 80;
+            var a8 = [k8,Math.sqrt(3)*k8,0.3*k8];
+            var tiA8 = [0,a8[1]];
+            var tiB8 = [a8[0],0];
+            var tiC8 = [a8[0],a8[1]];
+            document.getElementById("temsvg8").innerHTML = String.raw`${svgawal(a8[0],a8[1],1,a8[2])}
+            ${svgsegi([tiA8,tiB8,tiC8],{tebalgaris:2,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+            ${svglabeltitik(tiA8,"A",{ukuran:1.2,anchor:"end",baseline:"mathematical",xplus:-0.03*k8,yplus:0})}
+            ${svglabeltitik(tiB8,"B",{ukuran:1.2,anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.1*k8})}
+            ${svglabeltitik(tiC8,"C",{ukuran:1.2,anchor:"start",baseline:"mathematical",xplus:0.03*k8,yplus:0.05*k8})}
+            ${svglabeltitik(tiA8,"60°",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:0.12*k8,yplus:-0.05*k8})}
+            ${svgsudut([tiB8,tiA8,tiC8],{r:0.5*k8,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+            ${svglabelgaris([tiA8,tiC8],"20 cm",{ukuran:1.2,warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.05*k8})}
+</svg>`
+          </script>
+      </div>
+
+      <div class="justify" id="9">
+        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+        Jika sudut &theta; di kuadran IV dan $\cos\theta=\dfrac1a$, maka <e>sin &theta; = ....</e>
+        <div class="w3-row">
+          <div class="w3-col s6">
+            <ol class="pas1" type="A">
+              <li>
+                $-\sqrt{a^2-1}$
+              </li>
+              <li class="pb">
+                $-\sqrt{1-a^2}$
+              </li>
+              <li>
+                $\dfrac{-1}{\sqrt{a^2-1}}$
+              </li>
+            </ol>
+          </div>
+          <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+              <li class="pb">
+                $\dfrac{-\sqrt{a^2-1}}a$
+              </li>
+              <li>
+                $\dfrac{\sqrt{a^2-1}}a$
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://telegra.ph/BIG-BOOK-MATEMATIKA-SMA-02-02" target="_blank" rel="noopener noreferrer">Big Book Matematika SMA</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">&theta; di kuadran IV &longrightarrow; <e><em>a</em> &gt; 0</e>
+              <div id="temsvg9" class="w3-center"></div>
+              $\sin\theta=-\dfrac{\sqrt{a^2-1}}a$ &longrightarrow; sinus bernilai negatif di kuadran IV.
+            </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, $\cot257\degree+\csc257\degree=\dfrac{a-1}{\sqrt{1-a^2}}$.<br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        <script>
+          var k9 = 30;
+          var a9 = [4*k9,3*k9,2.5*k9];
+          var tiA9 = [0,0];
+          var tiB9 = [0,a9[1]];
+          var tiC9 = [a9[0],a9[1]];
+          document.getElementById("temsvg9").innerHTML = String.raw`${svgawal(a9[0],a9[1],1,a9[2])}
+          ${svgsudut([tiB9,tiC9,tiA9],{r:1.3*k9,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+          ${svgsiku([tiA9,tiB9,tiC9],{r:0.5*k9,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1})}
+${svgsegi([tiA9,tiB9,tiC9],{tebalgaris:2,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+          ${svglabelgaris([tiB9,tiC9],"1",{ukuran:1.2,warna:"black",anchor:"middle",baseline:"hanging",xplus:-0.1*k9,yplus:0.1*k9})}
+          ${svglabelgaris([tiA9,tiC9],"𝑎",{ukuran:1.2,warna:"black",anchor:"start",baseline:"baseline",xplus:0,yplus:-0.2*k9})}
+          ${svglabeltitik(tiC9,"θ",{ukuran:1.1,anchor:"end",baseline:"baseline",xplus:-0.8*k9,yplus:-0.15*k9})}
+
+          <foreignObject x="-70" y="${a9[1]/2-10}" width="65" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      $\sqrt{a^2-1}$
+    </div>
+  </foreignObject>
+</svg>`
+
+        </script>
+      </div>
+
+      <div class="justify" id="10">
+        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+        Bila <e>0&deg; &lt; <em>a</em> &lt; 90&deg;</e> dan $\tan a=\dfrac5{\sqrt{11}}$, maka <e>sin <em>a</em> = ....</e>
+        <div class="w3-row"> 
+         <div class="w3-col s4"> 
+         <ol class="pas1" type="A"> 
+         <li class="pb">$\dfrac56$</li> 
+         <li>$\dfrac{25}{36}$</li> 
+         </ol> 
+         </div> 
+         <div class="w3-col s4"> 
+         <ol class="pas1" start="3" type="A"> 
+         <li class="pb">$\dfrac16\sqrt{11}$</li> 
+         <li>$\dfrac5{36}$</li> 
+         </ol> 
+         </div> 
+         <div class="w3-col s4"> 
+         <ol class="pas1" start="5" type="A"> 
+         <li>$\dfrac1{36}\sqrt{11}$</li> 
+         </ol> 
+         </div> 
+         </div>        
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://telegra.ph/BIG-BOOK-MATEMATIKA-SMA-02-02" target="_blank" rel="noopener noreferrer">Big Book Matematika SMA</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><div id="temsvg10" class="w3-center"></div>
+            \begin{aligned}
+            x&=\sqrt{\left(\sqrt{11}\right)^2+5^2}\\
+            &=\sqrt{11+25}\\
+            &=\sqrt{36}\\
+            &=\boxed{6}
+            \end{aligned}
+            \begin{aligned}
+            \sin a&=\dfrac5x\\
+            &=\color{blue}\boxed{\boxed{\color{black}\dfrac56}}
+            \end{aligned}
+          </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, $\sin a=\dfrac56$.<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        <script>
+          var k10 = 20;
+          var a10 = [Math.sqrt(11)*k10,5*k10,1.2*k10];
+          var tiA10 = [0,a10[1]];
+          var tiB10 = [a10[0],a10[1]];
+          var tiC10 = [a10[0],0];
+          document.getElementById("temsvg10").innerHTML = String.raw`${svgawal(a10[0],a10[1],1,a10[2])}
+          ${svgsegi([tiA10,tiB10,tiC10],{tebalgaris:2,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+          ${svglabelgaris([tiB10,tiC10],"5",{ukuran:1.2,warna:"black",anchor:"start",baseline:"central",xplus:0.2*k10,yplus:0})}
+          ${svglabelgaris([tiA10,tiC10],"𝑥",{ukuran:1.2,warna:"black",anchor:"end",baseline:"middle",xplus:-0.2*k10,yplus:-0.1*k10})}
+          ${svglabeltitik(tiA10,"𝑎",{ukuran:1.1,anchor:"start",baseline:"baseline",xplus:0.4*k10,yplus:-0.15*k10})}
+          ${svgsudut([tiC10,tiA10,tiB10],{r:1.3*k10,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1,rotasi:0,busurbesar:0,arah:1})}
+          ${svgsiku([tiA10,tiB10,tiC10],{r:0.5*k10,tebalgaris:1,warnagaris:"green",isi:"none",tampakisi:1,tampakgaris:1})}
+
+          <foreignObject x="${(tiA10[0]+tiB10[0])/2-20}" y="${a10[1]+3}" width="40" height="50">
+    <!--
+      In the context of SVG embedded in an HTML document, the XHTML
+      namespace could be omitted, but it is mandatory in the
+      context of an SVG document
+    -->
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      $\sqrt{11}$
+    </div>
+  </foreignObject>
+</svg>`
+
+        </script>
+      </div>
+
+      <br><br>
+      <div class="navi d-none"><ul class="pagination pagi" style="margin-left:0em">
+      </ul></div>      
+<script>soal(trig,1,1)</script></div>
+   </body>
+</html> 

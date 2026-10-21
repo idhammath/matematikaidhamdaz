@@ -1,0 +1,284 @@
+<!DOCTYPE html> 
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>Exercise Zone : Turunan (<i>Derivative</i>)</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../katex/katex.css">
+      <script src="../katex/katex.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="templatestyle.css">
+  <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+      <script src="../matematikin.js"></script>
+   </head> 
+     <body> 
+      <img alt="" class="w3-hide" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1WZhdLBrVr15-mIKG9D60p6zEpIU9_iu9O-2bcnycFryZTB5YrZyZaDG38Ls8YnrcgdZuzizHgPw23iIxpMFwDiwXbw43LEIC8BB4S9-_J7FpgfJ2Iv1LvK3Sq5IWSGeYevVVdJezTNc4peoVAdXUjzQMZYEJFoh07YcIJUmKpuRw3kM94pJEO80Y/s320/TURUNAN%20standar.png"/>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Turunan</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+      <h3>Tipe: </h3>
+      <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
+      <br>
+      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+      <br>
+
+        <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Dengan menggunakan definisi turunan suatu fungsi, tentukan turunan pertama dari fungsi berikut.
+        <z>f(x)=\dfrac{-3}{x^2+1}</z>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        f'(x)&amp;=\displaystyle\lim_{h\to0}\dfrac{f(x+h)-f(x)}h\\[3.7pt]
+        &amp;=\displaystyle\lim_{h\to0}\dfrac{\dfrac{-3}{(x+h)^2+1}-\dfrac{-3}{x^2+1}}h\\[3.7pt]
+        &amp;=\displaystyle\lim_{h\to0}\dfrac{\dfrac{-3}{x^2+2xh+h^2+1}+\dfrac3{x^2+1}}h\\[3.7pt]
+        &amp;=\displaystyle\lim_{h\to0}\dfrac{\dfrac{-3\left(x^2+1\right)+3\left(x^2+2xh+h^2+1\right)}{\left(x^2+2xh+h^2+1\right)\left(x^2+1\right)}}h\\[3.7pt]
+        &amp;=\displaystyle\lim_{h\to0}\dfrac{-3x^2-3+3x^2+6xh+3h^2+3}{h\left(x^2+2xh+h^2+1\right)\left(x^2+1\right)}\\[3.7pt]
+        &amp;=\displaystyle\lim_{h\to0}\dfrac{6xh+3h^2}{h\left(x^2+2xh+h^2+1\right)\left(x^2+1\right)}\\[3.7pt]
+        &amp;=\displaystyle\lim_{h\to0}\dfrac{6x+3h}{\left(x^2+2xh+h^2+1\right)\left(x^2+1\right)}\\[3.7pt]
+        &amp;=\dfrac{6x+3(0)}{\left(x^2+2x(0)+(0)^2+1\right)\left(x^2+1\right)}\\[3.7pt]
+        &amp;=\dfrac{6x}{\left(x^2+1\right)\left(x^2+1\right)}\\
+        &amp;=\boxed{\boxed{\dfrac{6x}{\left(x^2+1\right)^2}}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, turunan pertama dari <m>f(x)=\dfrac{-3}{x^2+1}</m> adalah <m>\dfrac{6x}{\left(x^2+1\right)^2}</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Diketahui fungsi <em>f</em> dan <em>g</em> dengan <e><em>f</em>(<em>x</em>) = <em>x</em><sup>2</sup> &minus; 2<em>x</em> + 1</e> dan <m>{g'(x)=\sqrt{10-x^2}}</m> dengan <e><em>g</em>'</e> menyatakan turunan pertama fungsi <e><em>g</em>(<em>x</em>)</e>. Nilai turunan pertama fungsi <e>(<em>g</em> &compfn; <em>f</em>)(<em>x</em>)</e> untuk <e><em>x</em> = 0</e> adalah ....
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">GANESHA OPERATION</div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><e><em>f</em>'(<em>x</em>) = 2<em>x</em> &minus; 2</e> <br><br>
+            \(\begin{aligned}
+        \left(g\circ f\right)'(x)&amp;=f'(x)\cdot g'\left(f(x)\right)\\
+        \left(g\circ f\right)'(0)&amp;=f'(0)\cdot g'\left(f(0)\right)\\
+        &amp;=\left[2(0)-2\right]\cdot g'\left(0^2-2(0)+1\right)\\
+        &amp;=(-2)\cdot g'(1)\\
+        &amp;=(-2)\sqrt{10-1^2}\\
+        &amp;=-2\sqrt9\\
+        &amp;=-2\cdot3\\
+        &amp;=\boxed{\boxed{-6}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, nilai turunan pertama fungsi <e>(<em>g</em> &compfn; <em>f</em>)(<em>x</em>)</e> untuk <e><em>x</em> = 0</e> adalah &minus;6.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Jika diketahui <m>{f(x)=\dfrac{\left(x^6-1\right)\left(x^8+1\right)}{x^{10}}}</m> dan <e><em>f</em> '(<em>x</em>)</e> menyatakan turunan pertama <e><em>f</em>(<em>x</em>)</e> maka nilai <e><em>f</em> '(1)</e> adalah
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>8</li>
+        <li>9
+        </li>
+        <li>10
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>11</li>
+        <li>12
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://brainly.co.id/tugas/25831554" target="_blank">Brainly.co.id</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        f(x)&amp;=\dfrac{\left(x^6-1\right)\left(x^8+1\right)}{x^{10}}\\[3.7pt]
+        &amp;=\dfrac{x^{14}+x^6-x^8-1}{x^{10}}\\[3.7pt]
+        &amp;=x^4+x^{-4}-x^{-2}-x^{-10}\\
+        f'(x)&amp;=4x^3-4x^{-5}+2x^{-3}+10x^{-11}\\
+        f'(1)&amp;=4(1)^3-4(1)^{-5}+2(1)^{-3}+10(1)^{-11}\\
+        &amp;=4-4+2+10\\
+        &amp;=\boxed{\boxed{12}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>f</em>'(1) = 12</e>.<br><b>JAWAB: E</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="4"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Dengan memanfaatkan sifat-sifat turunan fungsi, tentukan turunan dari fungsi berikut.<br />
+        <e><em>f</em>(<em>x</em>) = (<em>x</em><sup>2</sup> + 2<em>x</em>) + (<em>x</em><sup>2</sup> &minus; 5<em>x</em>)</e>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/matematikazoneidgrup" target="_blank">Grup Telegram</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        f'(x)&amp;=\left(2x+2\right)+(2x-5)\\
+        &amp;=2x+2+2x-5\\
+        &amp;=\boxed{\boxed{4x-3}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, turunan dari <e><em>f</em>(<em>x</em>) = (<em>x</em><sup>2</sup> + 2<em>x</em>) + (<em>x</em><sup>2</sup> &minus; 5<em>x</em>)</e> adalah <e>4<em>x</em> &minus; 3</e>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="5"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Dengan memanfaatkan sifat-sifat turunan fungsi, tentukan turunan dari fungsi berikut.             
+        \[{f(x)=x^4+\dfrac56x^2+2x+6}\]
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/matematikazoneidgrup" target="_blank">Grup Telegram</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        f'(x)&amp;=4x^3+\dfrac56\cdot2x+2\\
+        &amp;=\boxed{\boxed{x^3+\dfrac53x+2}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, turunan dari <m>{f(x)=x^4+\dfrac56x^2+2x+6}</m> adalah <m>{x^3+\dfrac53x+2}</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="6"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Dengan memanfaatkan sifat-sifat turunan fungsi, tentukan turunan dari fungsi berikut.
+        \[{f(x)=\sqrt{x}+\sqrt{\sqrt{x}}-\dfrac45x^4}\]
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/matematikazoneidgrup" target="_blank">Grup Telegram</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        f(x)&amp;=\sqrt{x}+\sqrt{\sqrt{x}}-\dfrac45x^4\\[3.7pt]
+        &amp;=x^{\frac12}+\sqrt{x^{\frac12}}-\dfrac45x^4\\[3.7pt]
+        &amp;=x^{\frac12}+x^{\frac{\frac12}2}-\dfrac45x^4\\[3.7pt]
+        &amp;=x^{\frac12}+x^{\frac14}-\dfrac45x^4\\[3.7pt]
+        f'(x)&amp;=\dfrac12x^{-\frac12}+\dfrac14x^{-\frac34}-\dfrac45\cdot4x^3\\[3.7pt]
+        &amp;=\dfrac1{2x^{\frac12}}+\dfrac1{4x^{\frac34}}-\dfrac{16}5x^3\\
+        &amp;=\boxed{\boxed{\dfrac1{2\sqrt{x}}+\dfrac1{4\sqrt[4]{x^3}}-\dfrac{16}5x^3}}
+        \end{aligned}\)</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, turunan dari <m>{f(x)=\sqrt{x}+\sqrt{\sqrt{x}}-\dfrac45x^4}</m> adalah <m>{\dfrac1{2\sqrt{x}}+\dfrac1{4\sqrt[4]{x^3}}-\dfrac{16}5x^3}</m>. <button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="7"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Dengan memanfaatkan sifat-sifat turunan fungsi, tentukan turunan dari fungsi berikut.<br />
+        <e><em>f</em>(<em>x</em>) = (3<em>x</em> + 2)(<em>x</em> &minus; 1)</e>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/matematikazoneidgrup" target="_blank">Grup Telegram</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><div class="w3-row">
+              <div class="w3-col s6">\(\begin{aligned}
+        u&amp;=3x+2\\
+        u'&amp;=3
+        \end{aligned}\) <br><br></div>
+              <div class="w3-col s6">\(\begin{aligned}
+        v&amp;=x-1\\
+        v'&amp;=1
+        \end{aligned}\)</div>
+            </div>
+            \(\begin{aligned}
+        f'(x)&amp;=u'v+v'u\\
+        &amp;=3(x-1)+1(3x+2)\\
+        &amp;=3x-3+3x+2\\
+        &amp;=\boxed{\boxed{6x-1}}
+        \end{aligned}\)
+            </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, turunan dari <e><em>f</em>(<em>x</em>) = (3<em>x</em> + 2)(<em>x</em> &minus; 1)</e> adalah <e>6<em>x</em> &minus; 1</e>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="8"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Dengan memanfaatkan sifat-sifat turunan fungsi, tentukan turunan dari fungsi berikut.<br />
+        <e><em>f</em>(<em>x</em>) = (<em>x</em><sup>4</sup> &minus; 2<em>x</em><sup>2</sup> + 4<em>x</em>)(3<em>x</em><sup>2</sup> &minus; 9<em>x</em> &minus; 5)</e>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/matematikazoneidgrup" target="_blank">Grup Telegram</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><div class="w3-row">
+              <div class="w3-col s6">\(\begin{aligned}
+        u&amp;=x^4-2x^2+4x\\
+        u'&amp;=4x^3-4x+4
+        \end{aligned}\) <br><br></div>
+              <div class="w3-col s6">\(\begin{aligned}
+        v&amp;=3x^2-9x-5\\
+        v'&amp;=6x-9
+        \end{aligned}\)</div>
+            </div>
+            \(\begin{aligned}
+        f'(x)&amp;=u'v+v'u\\
+        &amp;=\left(4x^3-4x+4\right)\left(3x^2-9x-5\right)+(6x-9)\left(x^4-2x^2+4x\right)\\
+        &amp;=12x^5-36x^4-20x^3-12x^3+36x^2+20x+12x^2-36x-20+6x^5-12x^3+24x^2\\
+        &amp;=\boxed{\boxed{18x^5-36x^4-44x^3+72x^2-36x-20}}
+        \end{aligned}\)
+            </div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, turunan dari <e><em>f</em>(<em>x</em>) = (<em>x</em><sup>4</sup> &minus; 2<em>x</em><sup>2</sup> + 4<em>x</em>)(3<em>x</em><sup>2</sup> &minus; 9<em>x</em> &minus; 5)</e> adalah <e>18<em>x</em><sup>5</sup> &minus; 36<em>x</em><sup>4</sup> &minus; 44<em>x</em><sup>3</sup> + 72<em>x</em><sup>2</sup> &minus; 36<em>x</em> &minus; 20</e>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="9"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Tentukan turunan fungsi berikut:<br />
+          <e>4<em>x</em><sup>3</sup> + 7<em>xy</em><sup>2</sup> = 2<em>y</em><sup>3</sup></e>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/5484" target="_blank">Grup Telegram</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">\(\begin{aligned}
+              4x^3+7xy^2&amp;=2y^3\\
+          d\left(4x^3\right)+d\left(7xy^2\right)&amp;=d\left(2y^3\right)\\
+          12x^2+7y^2+14xy\ y'&amp;=6y^2\ y'\\
+          12x^2+7y^2&amp;=6y^2\ y'-14xy\ y'\\
+          12x^2+7y^2&amp;=\left(6y^2-14xy\right)y'\\
+          y'&amp;=\boxed{\boxed{\dfrac{12x^2+7y^2}{6y^2-14xy}}}
+              \end{aligned}\)</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, turunannya adalah <m>y'=\dfrac{12x^2+7y^2}{6y^2-14xy}</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+        
+        <div class="justify" id="10"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Jika <e><em>f</em>'(0) = 2</e>, <e><em>f</em>'(1) = 4</e>, tentukan nilai <em>a</em> dan <em>b</em> dengan fungsi berikut<br>
+          <e><em>f</em>(<em>x</em>) = <em>ax</em><sup>2</sup> + <em>bx</em> + <em>c</em></e>
+          <div class="w3-row">
+          <div class="w3-col s6">
+            <ol class="pas1" type="A">
+              <li>1 dan 2</li>
+              <li>2 dan 1</li>
+              <li>&minus;2 dan 1</li>
+            </ol>
+          </div>
+          <div class="w3-col s6">
+            <ol class="pas1" start="4" type="A">
+              <li>&minus;2 dan 2</li>
+              <li>2 dan 2</li>
+            </ol>
+          </div>
+        </div>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">SUMBER</div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><div class="w3-row">
+            <div class="w3-col s6">
+               <e><em>f</em>'(<em>x</em>) = 2<em>ax</em> + <em>b</em></e><br><br>
+               \(\begin{aligned}
+               f'(0)&=2\\
+          2a(0)+b&=2\\
+          b&=\boxed{\boxed{2}}
+               \end{aligned}\) <br><br>
+            </div>
+            <div class="w3-col s6">
+              \(\begin{aligned}
+              f'(1)&=4\\
+          2a(1)+2&=4\\
+          2a&=2\\
+          a&=\boxed{\boxed{1}}
+              \end{aligned}\)
+            </div>
+          </div></div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, 1 dan 2.<br><b>JAWAB: a</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+
+        <br>
+        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+        <br>
+        <SCript>soal(turu,1,1)</SCript>
+   </body>
+</html> 

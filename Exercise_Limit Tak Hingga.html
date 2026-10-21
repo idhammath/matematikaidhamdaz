@@ -1,0 +1,293 @@
+<!DOCTYPE html> 
+<html>  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>Exercise Zone : Limit Tak Hingga</title> 
+      <script defer src="../mathjax/tex-mml-chtml.js"></script>
+      <link rel="stylesheet" href="../katex/katex.css">
+      <script src="../katex/katex.js"></script>
+      <link rel="stylesheet" href="../w3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="templatestyle.css">
+  <link rel="stylesheet" href="gaya.css">
+      <script src="skrip.js"></script>
+      <script src="../matematikin.js"></script>
+   </head> 
+     <body> 
+      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Limit Tak Hingga</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+      <h3>Tipe: </h3>
+      <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
+      <br>
+      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+      <br>
+        
+        <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          <z>\displaystyle\lim_{x\to\infty}\left(\sqrt{2013x+\sqrt{2013x}}-\sqrt{2013x-\sqrt{2013x}}\right)=</z>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/4937" target="_blank">Grup Telegram</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">Misal <m>x=p^2\to \sqrt{x}=p</m>.
+          <h1>CARA BIASA</h1>
+        \begin{aligned}
+        \displaystyle\lim_{x\to\infty}\left(\sqrt{2013x+\sqrt{2013x}}-\sqrt{2013x-\sqrt{2013x}}\right)&amp;=\displaystyle\lim_{p\to\infty}\left(\sqrt{2013p^2+\sqrt{2013}p}-\sqrt{2013p^2-\sqrt{2013}p}\right)\cdot\dfrac{\sqrt{2013p^2+\sqrt{2013}p}+\sqrt{2013p^2-\sqrt{2013}p}}{\sqrt{2013p^2+\sqrt{2013}p}+\sqrt{2013p^2-\sqrt{2013}p}}\\[3.7pt]
+          &amp;=\displaystyle\lim_{p\to\infty}\dfrac{\left(2013p^2+\sqrt{2013}p\right)-\left(2013p^2-\sqrt{2013}p\right)}{\sqrt{2013p^2+\sqrt{2013}p}+\sqrt{2013p^2-\sqrt{2013}p}}\\[3.7pt]
+           &amp;=\displaystyle\lim_{p\to\infty}\dfrac{2013p^2+\sqrt{2013}p-2013p^2+\sqrt{2013}p}{\sqrt{2013p^2+\sqrt{2013}p}+\sqrt{2013p^2-\sqrt{2013}p}}\\[3.7pt]
+          &amp;=\displaystyle\lim_{p\to\infty}\dfrac{2\sqrt{2013}p}{\sqrt{2013p^2+\sqrt{2013}p}+\sqrt{2013p^2-\sqrt{2013}p}}\\[3.7pt]
+          &amp;=\displaystyle\lim_{p\to\infty}\dfrac{\dfrac{2\sqrt{2013}p}p}{\sqrt{\dfrac{2013p^2}{p^2}+\dfrac{\sqrt{2013}p}{p^2}}+\sqrt{\dfrac{2013p^2}{p^2}-\dfrac{\sqrt{2013}p}{p^2}}}\\[3.7pt]
+          &amp;=\displaystyle\lim_{p\to\infty}\dfrac{2\sqrt{2013}}{\sqrt{2013+\dfrac{\sqrt{2013}}p}+\sqrt{2013-\dfrac{\sqrt{2013}}p}}\\[3.7pt]
+          &amp;=\dfrac{2\sqrt{2013}}{\sqrt{2013+0}+\sqrt{2013-0}}\\[3.7pt]
+          &amp;=\dfrac{2\sqrt{2013}}{\sqrt{2013}+\sqrt{2013}}\\[3.7pt]
+          &amp;=\dfrac{2\sqrt{2013}}{2\sqrt{2013}}\\
+          &amp;=\boxed{\boxed{1}}
+        \end{aligned}
+          <h1>CARA CEPAT</h1>
+          \begin{aligned}
+          \displaystyle\lim_{x\to\infty}\left(\sqrt{2013x+\sqrt{2013x}}-\sqrt{2013x-\sqrt{2013x}}\right)&amp;=\displaystyle\lim_{p\to\infty}\left(\sqrt{2013p^2+\sqrt{2013}p}-\sqrt{2013p^2-\sqrt{2013}p}\right)\\
+          &amp;=\dfrac{\sqrt{2013}-\left(-\sqrt{2013}\right)}{2\sqrt{2013}}\\[3.7pt]
+          &amp;=\dfrac{\sqrt{2013}+\sqrt{2013}}{2\sqrt{2013}}\\[3.7pt]
+          &amp;=\dfrac{2\sqrt{2013}}{2\sqrt{2013}}\\
+          &amp;=\boxed{\boxed{1}}
+          \end{aligned}</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to\infty}\left(\sqrt{2013x+\sqrt{2013x}}-\sqrt{2013x-\sqrt{2013x}}\right)=1</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+        
+        <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          <z>\displaystyle\lim_{x\to\infty}\dfrac{\sqrt{12x^2-4x+2013}+2\sqrt{x^2}}{x-2013}=</z>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/4937" target="_blank">Grup Telegram</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo"><h1>CARA BIASA</h1>
+          \begin{aligned}
+          \displaystyle\lim_{x\to\infty}\dfrac{\sqrt{12x^2-4x+2013}+2\sqrt{x^2}}{x-2013}&=\displaystyle\lim_{x\to\infty}\dfrac{\sqrt{\dfrac{12x^2}{x^2}-\dfrac{4x}{x^2}+\dfrac{2013}{x^2}}+2\sqrt{\dfrac{x^2}{x^2}}}{\dfrac{x}x-\dfrac{2013}x}\\[3.7pt]
+          &=\displaystyle\lim_{x\to\infty}\dfrac{\sqrt{12-\dfrac4x+\dfrac{2013}{x^2}}+2}{1-\dfrac{2013}x}\\[3.7pt]
+          &=\dfrac{\sqrt{12-0+0}+2}{1-0}\\[3.7pt]
+          &=\dfrac{\sqrt{12}+2}1\\
+          &=\boxed{\boxed{2\sqrt3+2}}
+          \end{aligned}
+          <h1>CARA CEPAT</h1>
+          \begin{aligned}
+          \displaystyle\lim_{x\to\infty}\dfrac{\sqrt{12x^2-4x+2013}+2\sqrt{x^2}}{x-2013}&=\displaystyle\lim_{x\to\infty}\dfrac{\sqrt{12x^2}+2\sqrt{x^2}}x\\[3.7pt]
+          &=\displaystyle\lim_{x\to\infty}\dfrac{2\sqrt3x+2x}x\\[3.7pt]
+          &=\displaystyle\lim_{x\to\infty}2\sqrt3+2\\
+          &=\boxed{\boxed{2\sqrt3+2}}
+          \end{aligned}</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to\infty}\dfrac{\sqrt{12x^2-4x+2013}+2\sqrt{x^2}}{x-2013}=2\sqrt3+2</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+        
+        <div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          <z>\displaystyle\lim_{x\to\infty}\left(\sqrt{x^2+2x-3}+\sqrt{4x^2+6x+3}-3x\right)=</z>
+          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneId/269" target="_blank">Matematika Zone Id</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">\begin{aligned}
+              \displaystyle\lim_{x\to\infty}\left(\sqrt{x^2+2x-3}+\sqrt{4x^2+6x+3}-3x\right)&=\displaystyle\lim_{x\to\infty}\left(\sqrt{x^2+2x-3}+\sqrt{4x^2+6x+3}-x-2x\right)\\
+          &=\displaystyle\lim_{x\to\infty}\left(\sqrt{x^2+2x-3}-x+\sqrt{4x^2+6x+3}-2x\right)\\
+          &=\displaystyle\lim_{x\to\infty}\left(\sqrt{x^2+2x-3}-\sqrt{x^2}+\sqrt{4x^2+6x+3}-\sqrt{4x^2}\right)\\
+          &=\dfrac{2-0}{2\sqrt1}+\dfrac{6-0}{2\sqrt4}\\
+          &=\dfrac22+\dfrac64\\
+          &=1+\dfrac32\\
+          &=\boxed{\boxed{\dfrac52}}
+              \end{aligned}</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to\infty}\left(\sqrt{x^2+2x-3}+\sqrt{4x^2+6x+3}-3x\right)=\dfrac52</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+        
+        <div class="justify" id="4"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          <z>\displaystyle\lim_{x\to\infty}\dfrac{50+x+8x^2}{x(2x-5)}=....</z> 
+          <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>0</li>
+        <li class="pas2">2
+        </li>
+        <li class="pas2">4
+        </li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>8</li>
+        <li class="pas2">&infin;
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://www.matematiklopedia.wiki/2018/08/soal-online-limit-tak-hingga-fungsi.html" target="_blank">SUMBER</a></div>
+          <details>
+            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+            <div class="w3-card-4">
+              <div class="w3-padding w3-sand flo">\begin{aligned}
+        \displaystyle\lim_{x\to\infty}\dfrac{50+x+8x^2}{x(2x-5)}&amp;=\displaystyle\lim_{x\to\infty}\dfrac{8x^2}{x(2x)}\\[3.7pt]
+        &amp;=\displaystyle\lim_{x\to\infty}\dfrac{8x^2}{2x^2}\\
+        &amp;=\boxed{\boxed{4}}
+        \end{aligned}</div>
+              <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to\infty}\dfrac{50+x+8x^2}{x(2x-5)}=4</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            </div>
+          </details>
+          <hr>
+        </div>
+        
+        <div class="justify" id="5"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Nilai <m>\displaystyle\lim_{x\to\infty}\sqrt{9x^2-3x}-3x=</m>
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>&minus;1</li>
+        <li class="pb">0</li>
+        <li><m>-\dfrac12</m></li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>2</li>
+        <li>&infin;</li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><h1>CARA 1</h1>\begin{aligned}
+        \displaystyle\lim_{x\to\infty}\sqrt{9x^2-3x}-3x&amp;=\displaystyle\lim_{x\to\infty}\sqrt{9x^2-3x}-3x\cdot\dfrac{\sqrt{9x^2-3x}+3x}{\sqrt{9x^2-3x}+3x}\\
+        &amp;=\displaystyle\lim_{x\to\infty}\dfrac{9x^2-3x-(3x)^2}{\sqrt{9x^2-3x}+3x}\\[3.7pt]
+        &amp;=\displaystyle\lim_{x\to\infty}\dfrac{9x^2-3x-9x^2}{\sqrt{9x^2-3x}+3x}\\[3.7pt]
+        &amp;=\displaystyle\lim_{x\to\infty}\dfrac{-3x}{\sqrt{9x^2-3x}+3x}\\[3.7pt]
+        &amp;=\displaystyle\lim_{x\to\infty}\dfrac{-\dfrac{3x}x}{\sqrt{\dfrac{9x^2}{x^2}-\dfrac{3x}{x^2}}+\dfrac{3x}x}\\[15pt]
+        &amp;=\displaystyle\lim_{x\to\infty}\dfrac{-3}{\sqrt{9-\dfrac3x}+3}\\[3.7pt]
+        &amp;=\dfrac{-3}{\sqrt{9-0}+3}\\[3.7pt]
+        &amp;=\dfrac{-3}{\sqrt{9}+3}\\[3.7pt]
+        &amp;=\dfrac{-3}{3+3}\\[3.7pt]
+        &amp;=\dfrac{-3}6\\
+        &amp;=\boxed{\boxed{-\dfrac12}}
+        \end{aligned}
+        <h1>CARA 2</h1>\begin{aligned}
+        \displaystyle\lim_{x\to\infty}\sqrt{9x^2-3x}-3x&amp;=\displaystyle\lim_{x\to\infty}\sqrt{9x^2-3x}-\sqrt{(3x)^2}\\
+        &amp;=\displaystyle\lim_{x\to\infty}\sqrt{9x^2-3x}-\sqrt{9x^2}\\
+        &amp;=\dfrac{-3-0}{2\sqrt{9}}\\[3.7pt]
+        &amp;=\dfrac{-3}{2(3)}\\[3.7pt]
+        &amp;=\dfrac{-3}6\\
+        &amp;=\boxed{\boxed{-\dfrac12}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to\infty}\sqrt{9x^2-3x}-3x=-\dfrac12</m>.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        ></div>
+        
+        <div class="justify" id="6"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Nilai dari <m>\displaystyle\lim_{x\to\infty}\sqrt{25x^2-7x+16}-\sqrt{25x^2+18x+9}=</m> ....
+        <div class="w3-row"><div class="w3-col s6"><ol  type="A"><li>&minus;2,4</li>
+        <li>&minus;2,5
+        </li>
+        <li>&minus;2,6
+        </li>
+        </ol></div><div class="w3-col s6"><ol start="4"  type="A"><li>&minus;2,7</li>
+        <li>&minus;2,8
+        </li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        \displaystyle\lim_{x\to\infty}\sqrt{25x^2-7x+16}-\sqrt{25x^2+18x+9}&amp;=\dfrac{-7-18}{2\sqrt{25}}\\[3.7pt]
+        &amp;=\dfrac{-25}{2(5)}\\[3.7pt]
+        &amp;=-\dfrac52\\
+        &amp;=\boxed{\boxed{-2,5}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to\infty}\sqrt{25x^2-7x+16}-\sqrt{25x^2+18x+9}=-2,5</m>.<br><b>JAWAB: B</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="7"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          Nilai <m>\displaystyle\lim_{x\to\infty}\dfrac{2x^2+3x}{\sqrt{x^2-x}}=</m>
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>10</li>
+        <li class="pb">3</li>
+        <li><m>\dfrac54</m></li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>8</li>
+        <li>&infin;</li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        \displaystyle\lim_{x\to\infty}\dfrac{2x^2+3x}{\sqrt{x^2-x}}&amp;=\displaystyle\lim_{x\to\infty}\dfrac{2x^2}{\sqrt{x^2}}\\[3.7pt]
+        &amp;=\displaystyle\lim_{x\to\infty}\dfrac{2x^2}{x}\\[3.7pt]
+        &amp;=\displaystyle\lim_{x\to\infty}2x\\
+        &amp;=2(\infty)\\
+        &amp;=\boxed{\boxed{\infty}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to\infty}\dfrac{2x^2+3x}{\sqrt{x^2-x}}=\infty</m>.<br><b>JAWAB: E</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div class="justify" id="8"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+          <z>\displaystyle\lim_{x\to\infty}\left(\dfrac{5-x^2}{4x^2+x}\right)\left(\dfrac{1-8x^3}{3x-2x^3}\right)^\frac32=</z>
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb"><m>-\dfrac14</m></li>
+        <li class="pb"><m>-\dfrac12</m></li>
+        <li>&minus;2</li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>8</li>
+        <li>16</li>
+        </ol></div></div><div  class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://web.facebook.com/groups/1691443554424346/permalink/2446068072295220/" target="_blank">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        \displaystyle\lim_{x\to\infty}\left(\dfrac{5-x^2}{4x^2+x}\right)\left(\dfrac{1-8x^3}{3x-2x^3}\right)^\frac32&amp;=\displaystyle\lim_{x\to\infty}\left(\dfrac{-x^2}{4x^2}\right)\left(\dfrac{-8x^3}{-2x^3}\right)^\frac32\\[3.7pt]
+        &amp;=\displaystyle\lim_{x\to\infty}\left(\dfrac{-1}4\right)\left(\dfrac{-8}{-2}\right)^\frac32\\[3.7pt]
+        &amp;=\left(\dfrac{-1}4\right)(4)^\frac32\\[3.7pt]
+        &amp;=\left(\dfrac{-1}4\right)(8)\\[3.7pt]
+        &amp;=\boxed{\boxed{-2}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to\infty}\left(\dfrac{5-x^2}{4x^2+x}\right)\left(\dfrac{1-8x^3}{3x-2x^3}\right)^\frac32=-2</m>.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div id="9" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3><z>\displaystyle\lim_{x\to\infty}\sqrt{x^2+2x}-x=....</z>
+        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneId/270" target="_blank">Matematika Zone Id</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo">\begin{aligned}
+        \displaystyle\lim_{x\to\infty}\sqrt{x^2+2x}-x&amp;=\displaystyle\lim_{x\to\infty}\sqrt{x^2+2x}-\sqrt{x^2}\\
+        &amp;=\dfrac{2-0}{2\sqrt1}\\[3.7pt]
+        &amp;=\dfrac22\\
+        &amp;=\boxed{\boxed{1}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to\infty}\sqrt{x^2+2x}-x=1</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <div id="10" class="justify"><br><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Dengan menerapkan sifat limit tak hingga, <m>{\displaystyle\lim_{x\to\infty}\dfrac{12x^5-6x^3+7x-1}{4x^5-8x+10}=}</m><br />
+        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">0</li>
+        <li class="pb"><m>-\dfrac1{10}</m></li>
+        <li>3</li>
+        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>12</li>
+        <li>&infin;</li>
+        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+        <details>
+          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+          <div class="w3-card-4">
+            <div class="w3-padding w3-sand flo"><h1>CARA 1</h1>\begin{aligned}
+        \displaystyle\lim_{x\to\infty}\dfrac{12x^5-6x^3+7x-1}{4x^5-8x+10}&=\displaystyle\lim_{x\to\infty}\dfrac{\dfrac{12x^5}{\color{red}{x^5}}-\dfrac{6x^3}{\color{red}{x^5}}+\dfrac{7x}{\color{red}{x^5}}-\dfrac1{\color{red}{x^5}}}{\dfrac{4x^5}{\color{red}{x^5}}-\dfrac{8x}{\color{red}{x^5}}+\dfrac{10}{\color{red}{x^5}}}\\[20pt]
+        &=\displaystyle\lim_{x\to\infty}\dfrac{12-\dfrac6{x^2}+\dfrac7{x^4}-\dfrac1{x^5}}{4-\dfrac8{x^4}+\dfrac{10}{x^5}}\\[20pt]
+        &=\dfrac{12-0+0-0}{4-0+0}\\
+        &=\boxed{\boxed{3}}
+        \end{aligned}
+        <h1>CARA 2</h1>\begin{aligned}
+        \displaystyle\lim_{x\to\infty}\dfrac{12x^5-6x^3+7x-1}{4x^5-8x+10}&=\displaystyle\lim_{x\to\infty}\dfrac{12{\color{red}{\cancel{\color{black}{x^5}}}}}{4{\color{red}{\cancel{\color{black}{x^5}}}}}\\
+        &=\boxed{\boxed{3}}
+        \end{aligned}</div>
+            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to\infty}\dfrac{12x^5-6x^3+7x-1}{4x^5-8x+10}=3</m>.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+          </div>
+        </details>
+        <hr>
+        </div>
+        
+        <br>
+        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+        <br>
+          <script>soal(limtahi,1,1)</script>
+   </body>
+</html> 

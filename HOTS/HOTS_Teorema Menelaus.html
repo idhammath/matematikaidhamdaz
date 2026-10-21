@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HOTS Zone : Teorema Menelaus</title> 
+    <script defer src="../mathjax/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="templatestyle.css">
+<link rel="stylesheet" href="gaya.css">
+    <script src="skrip.js"></script>
+    <script src="../matematikin.js"></script>
+<!--link rel="stylesheet" href="style.css"-->
+<style>body{
+font-family: roboto,sans-serif;   
+}</style>
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><br>
+
+<div class="w3-container" style="background-color: papayawhip">
+  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Teorema Menelaus</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+
+  <h3>Tipe: </h3>
+  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div><br><br>
+  <div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+
+  <div class="justify" id="17">
+    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+    Pada gambar berikut, <em>D</em> adalah kaki tinggi dari <em>A</em>, dan <em>E</em> titik tengah <em>CA</em>.
+    <div id="temsvg1" class="w3-center"></div>
+    Jika luas segitiga <em>ABC</em> adalah \(\dfrac12\) satuan, maka panjang <em>AK</em> dapat dinyatakan sebagai ....
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <ol class="pas1" type="A">
+          <li class="pb">\(\dfrac1{BC+AB\cos B}\)</li>
+          <li><em>BC</em> + <em>AB</em> cos <em>B</em></li>
+        </ol>
+      </div>
+      <div class="w3-col s6">
+        <ol class="pas1" start="3" type="A">
+          <li class="pb">\(\dfrac1{AB+BC\cos B}\)</li>
+          <li><em>AB</em> + <em>BC</em> cos <em>B</em></li>
+        </ol>
+      </div>
+    </div>
+    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/InkIX04eRt24DcjBEPtxXE" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+    <details>
+      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
+      <div class="w3-card-4">
+        <div class="w3-padding w3-sand flo"><em>AE</em> = <em>EC</em> <br><br>
+          <em>BD</em> = <em>AB</em> cos <em>B</em><br><br>
+          \(\begin{aligned}
+          \dfrac12\cdot BC\cdot AD&=\dfrac12\\
+          BC\cdot AD&=1
+          \end{aligned}\) <br><br>
+        Dengan menggunakan Teorema Menelaus, <br>
+        \(\begin{aligned}
+        \dfrac{BC}{BD}\cdot\dfrac{DK}{AK}\cdot\dfrac{AE}{EC}&=1&{\color{red}\times BD}\\[4pt]
+        BC\cdot\left(\dfrac{AD-AK}{AK}\right)\cdot1&=BD\\[4pt]
+        BC\cdot\left(\dfrac{AD}{AK}-1\right)&=AB\cos B\\[4pt]
+        \dfrac{BC\cdot AD}{AK}-BC&=AB\cos B\\[4pt]
+        \dfrac1{AK}&=BC+AB\cos B\\
+        AK&=\boxed{\boxed{\dfrac1{BC+AB\cos B}}}
+        \end{aligned}\)
+      </div>
+        <div class="w3-brown w3-padding tebal flo">Jadi, \(AK=\dfrac1{BC+AB\cos B}\).<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+      </div>
+    </details>
+    <hr>
+    <script>
+      var k1 = 60
+      var a1 = [4*k1,7*k1,50,0.5*k1];
+      var tiA1 = [a1[0]*cos(a1[2]),0];
+      var tiB1 = [0,a1[0]*sin(a1[2])];
+      var tiC1 = [a1[1],a1[0]*sin(a1[2])];
+      var tiD1 = [a1[0]*cos(a1[2]),a1[0]*sin(a1[2])];
+      var tiE1 = [(tiA1[0]+tiC1[0])/2,(tiA1[1]+tiC1[1])/2];
+      var tiK1 = titikpotong([tiB1,tiE1],[tiA1,tiD1])
+      document.getElementById("temsvg1").innerHTML = String.raw`${svgawal(a1[1],a1[0]*sin(a1[2]),1,a1[3])}
+      ${svgsegi([tiA1,tiB1,tiC1],{tebalgaris:2,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
+      ${svggaris([tiA1,tiD1],{tebalgaris:2,warna:"black",dash:""})}
+      ${svggaris([tiB1,tiE1],{tebalgaris:2,warna:"black",dash:""})}
+      ${svglingkaran(tiA1,0.07*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+      ${svglingkaran(tiB1,0.07*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+      ${svglingkaran(tiC1,0.07*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+      ${svglingkaran(tiD1,0.07*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+      ${svglingkaran(tiE1,0.07*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+      ${svglingkaran(tiK1,0.07*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
+      ${svglabeltitik(tiA1,"A",{ukuran:1.2,anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.15*k1})}
+      ${svglabeltitik(tiB1,"B",{ukuran:1.2,anchor:"end",baseline:"central",xplus:-0.15*k1,yplus:0})}
+      ${svglabeltitik(tiC1,"C",{ukuran:1.2,anchor:"start",baseline:"central",xplus:0.15*k1,yplus:0})}
+      ${svglabeltitik(tiD1,"D",{ukuran:1.2,anchor:"middle",baseline:"hanging",xplus:0,yplus:0.15*k1})}
+      ${svglabeltitik(tiE1,"E",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:0.1*k1,yplus:0})}
+      ${svglabeltitik(tiK1,"K",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:0.05*k1,yplus:-0.15*k1})}
+</svg>`
+    </script>
+  </div>
+
+  <br><br><div class="navi w3-bar w3-border w3-round w3-hide">
+  </div>
+  <script>soal(teomen,3,1)</script>
+</div>
+</body>
+</html> 
+<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>

@@ -633,3 +633,12 @@ ol.pilgan.pilgan-5kolom {
     justify-content: center;
     align-items: center;
 }
+
+e {
+    white-space: nowrap;
+}
+
+em {
+    font-family: Cambria, Times, Cochin, Georgia, 'Times New Roman', serif;
+    font-size: 1.1em;
+}

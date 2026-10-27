@@ -1,320 +1,337 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Exercise Zone : Determinan Matriks [2]</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-     </head> 
-     <body>
-        <div class="w3-container">
-         Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Determinan Matriks</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-         <h3>Tipe: </h3>
-         <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-         <br>
-         <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-         <br>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Determinan Matriks</title>
 
-         <div class="justify" id="11"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-            Diketahui matriks \(A=\begin{pmatrix}1&0\\2&3\end{pmatrix}\), \(B=\begin{pmatrix}-1&-3\\2&0\end{pmatrix}\), dan memenuhi persamaan <e><em>AX</em> + 2<em>B</em> = <em>I</em>,</e> dengan <em>I</em> adalah matriks identitas. Maka nilai determinan matriks <em>X</em> adalah
-            <div class="w3-row">
-            <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-              </ol>
-            </div>
-            <div class="w3-col s6">
-              <ol class="pas1" start="4" type="A">
-                <li>9</li>
-                <li>10</li>
-              </ol>
-            </div>
-          </div>
-            <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2020/08/skmp-matematika-agustus-2020-kunci.html" target="_blank">SKMP Agustus 2020</a></div>
-            <details>
-              <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-              <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo"><div class="w3-row">
-              <div class="w3-col l6">
-               \(\begin{aligned}
-            |A|&=(1)(3)-(0)(2)\\
-            &=3-0\\
-            &=3
-            \end{aligned}\)
-              </div>
-              <div class="w3-col l6">
-               \(\begin{aligned}
-            AX+2B&=I\\
-            AX&=I-2B\\
-            &=\begin{pmatrix}1&0\\0&1\end{pmatrix}-2\begin{pmatrix}-1&-3\\2&0\end{pmatrix}\\
-            &=\begin{pmatrix}1&0\\0&1\end{pmatrix}-\begin{pmatrix}-2&-6\\4&0\end{pmatrix}\\
-            &=\begin{pmatrix}3&6\\-4&1\end{pmatrix}\\
-            |AX|&=\begin{vmatrix}3&6\\-4&1\end{vmatrix}\\
-            |A||X|&=(3)(1)-(6)(-4)\\
-            3|X|&=3+24\\
-            &=27\\
-            |X|&=\boxed{\boxed{9}}
-            \end{aligned}\)
-              </div>
-            </div></div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, nilai determinan matriks <em>X</em> adalah 9.<br><b>JAWAB: D</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-              </div>
-            </details>
-            <hr>
-          </div>
-  
-          <div class="justify" id="12"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-            Jika diketahui matriks <em>A</em> memenuhi persamaan \({\begin{pmatrix}5&amp;1\\7&amp;2\end{pmatrix}A=\begin{pmatrix}3&amp;-2\\-3&amp;1\end{pmatrix}\begin{pmatrix}3&amp;4\\1&amp;2\end{pmatrix}}\), maka determinan dari <e><em>A</em><sup>&minus;1</sup></e> adalah
-            <div class="w3-row">
-              <div class="w3-col s6">
-                  <ol class="pas1" type="A">
-                      <li class="pb">&minus;2</li>
-                      <li class="pb">\(-\dfrac12\)</li>
-                      <li>0</li>
-                  </ol>
-              </div>
-              <div class="w3-col s6">
-                  <ol class="pas1" start="4" type="A">
-                      <li class="pb">\(\dfrac12\)</li>
-                      <li>2</li>
-                  </ol>
-              </div>
-          </div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Matematika Zone Indonesia</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned}
-          \begin{pmatrix}5&amp;1\\7&amp;2\end{pmatrix}A&amp;=\begin{pmatrix}3&amp;-2\\-3&amp;1\end{pmatrix}\begin{pmatrix}3&amp;4\\1&amp;2\end{pmatrix}\\
-          \begin{vmatrix}5&amp;1\\7&amp;2\end{vmatrix}|A|&amp;=\begin{vmatrix}3&amp;-2\\-3&amp;1\end{vmatrix}\begin{vmatrix}3&amp;4\\1&amp;2\end{vmatrix}\\
-          (5\cdot2-1\cdot7)|A|&amp;=(3\cdot1-(-2)\cdot(-3))(3\cdot2-4\cdot1)\\
-          (10-7)|A|&amp;=(3-6)(6-4)\\
-          3|A|&amp;=(-3)(2)\\
-          3|A|&amp;=-6\\
-          |A|&amp;=-2
-          \end{aligned}\)<br />
-          <br />
-          \(\begin{aligned}
-          \left|A^{-1}\right|&amp;=\dfrac1{|A|}\\
-          &amp;=\boxed{\boxed{-\dfrac12}}
-          \end{aligned}\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, determinan dari <e><em>A</em><sup>&minus;1</sup></e> adalah \(-\dfrac12\).<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-          </div>
-  
-          <div class="justify" id="13"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-            Jika diketahui matriks <em>A</em> memenuhi
-          persamaan \({\begin{pmatrix}2&1\\4&5\end{pmatrix}A=\begin{pmatrix}3&1\\3&2\end{pmatrix}\begin{pmatrix}2&5\\1&3\end{pmatrix}}\),
-          maka
-            determinan dari <e><em>A</em><sup>&minus;1</sup></e> adalah
-            <div class="w3-row">
-              <div class="w3-col s6">
-                  <ol class="pas1" type="A">
-                      <li class="pb">&minus;2</li>
-                      <li class="pb">\(-\dfrac12\)</li>
-                      <li>0</li>
-                  </ol>
-              </div>
-              <div class="w3-col s6">
-                  <ol class="pas1" start="4" type="A">
-                      <li class="pb">1</li>
-                      <li>2</li>
-                  </ol>
-              </div>
-          </div>
-            <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2020/09/skmp-sma-juli-2020.html" target="_blank">SKMP Juli 2020</a></div>
-            <details>
-              <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-              <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo"><div class="w3-row">
-              <div class="w3-col l6">
-                \(\begin{aligned}
-            \begin{pmatrix}2&1\\4&5\end{pmatrix}A&=\begin{pmatrix}3&1\\3&2\end{pmatrix}\begin{pmatrix}2&5\\1&3\end{pmatrix}\\
-            \begin{vmatrix}2&1\\4&5\end{vmatrix}|A|&=\begin{vmatrix}3&1\\3&2\end{vmatrix}\begin{vmatrix}2&5\\1&3\end{vmatrix}\\
-            6|A|&=(3)(1)\\
-            6|A|&=3\\
-            |A|&=\dfrac36\\
-            &=\dfrac12
-            \end{aligned}\)<br>
-              </div>
-              <div class="w3-col l6">
-                \(\begin{aligned}
-                \left|A^{-1}\right|&=\dfrac1{|A|}\\
-                &=\dfrac1{\dfrac12}\\
-                &=\boxed{\boxed{2}}
-                \end{aligned}\)
-              </div>
-            </div></div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, determinan dari <e><em>A</em><sup>&minus;1</sup></e> adalah 2.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-              </div>
-            </details>
-            <hr>
-          </div>
-  
-          <div class="justify" id="14">
-            <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-            Jika matriks \(A\cdot B=\begin{pmatrix}4&6\\-7&-14\end{pmatrix}\) dan <e>det <em>A</em> = 7</e>, maka <e>det(7<em>BA</em><sup>&minus;1</sup>)</e> adalah....
-              <div class="w3-row">
-              <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                  <li>&minus;16</li>
-                  <li>&minus;15</li>
-                  <li>&minus;14</li>
-                </ol>
-              </div>
-              <div class="w3-col s6">
-                <ol class="pas1" start="4" type="A">
-                  <li>&minus;13</li>
-                  <li>&minus;12</li>
-                </ol>
-              </div>
-              </div>
-            <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Matematika Zone Indonesia</a></div>
-            <details>
-              <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-              <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo"><div class="w3-row">
-                  <div class="w3-col l6">\(\begin{aligned}
-                  A\cdot B&=\begin{pmatrix}4&6\\-7&-14\end{pmatrix}\\[4pt]
-                  |AB|&=(4)(-14)-(6)(-7)\\
-                  |A||B|&=-56+42\\
-                  7|B|&=-14\\
-                  |B|&=-2
-                  \end{aligned}\)<br />
-                  <br /></div>
-                  <div class="w3-col l6">\(\begin{aligned}
-                  \left|7BA^{-1}\right|&=7^2|B|\left|A^{-1}\right|\\
-                  &=49(-2)\left(\dfrac1{|A|}\right)\\
-                  &=-98\left(\dfrac17\right)\\
-                  &=\boxed{\boxed{-14}}
-                  \end{aligned}\)</div>
-                </div>
-                  </div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, det(7<em>BA</em><sup>&minus;1</sup>) = &minus;14.<br /><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-              </div>
-            </details>
-            <hr>
-          </div>
-  
-          <div class="justify" id="15">
-            <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-            Diketahui matriks <em>A</em> berordo <e>2&times;2</e> dan \(B=\begin{pmatrix}-3&5\\-1&2\end{pmatrix}\) dan \(C=\begin{pmatrix}4&5\\2&3\end{pmatrix}\). Jika <em>A</em> memenuhi <e><em>B</em> &sdot; <em>A</em> = <em>C</em></em>, maka <e>det (2<em>A</em><sup>&minus;1</sup>)</e> adalah
-            <div class="w3-row">
-              <div class="w3-col s6">
-                  <ol class="pas1" type="A">
-                      <li>&minus;2</li>
-                      <li class="pb-3">&minus;1</li>
-                      <li>\(-\dfrac12\)</li>
-                  </ol>
-              </div>
-              <div class="w3-col s6">
-                  <ol class="pas1" start="4" type="A">
-                      <li class="pb-3">$\dfrac12$</li>
-                      <li>2</li>
-                  </ol>
-              </div>
-          </div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="w3-row"><div class="w3-col l6">\(\begin{aligned}
-                  \det B&=(-3)(2)-(5)(-1)\\
-                  &=-6-(-5)\\
-                  &=-1
-                  \end{aligned}\) <br><br>
-                  \(\begin{aligned}
-                  \det C&=(4)(3)-(2)(5)\\
-                  &=12-10\\
-                  &=2
-                  \end{aligned}\) <br><br>
-                  \(\begin{aligned}
-                  B\cdot A&=C\\
-                  A&=B^{-1}\cdot C\\
-                  \det A&=\det\left(B^{-1}\cdot C\right)\\
-                  &=\dfrac1{\det B}\cdot\det C\\
-                  &=\dfrac1{-1}\cdot2\\
-                  &=-2
-                  \end{aligned}\)</div><div class="w3-col l6">\(\begin{aligned}
-                  \det\left(2A^{-1}\right)&=2^2\det A^{-1}\\
-                  &=4\cdot\dfrac1{\det A}\\
-                  &=4\cdot\dfrac1{-2}\\
-                  &=\boxed{\boxed{-2}}
-                  \end{aligned}\)</div></div></div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, det (2<em>A</em><sup>&minus;1</sup>) = &minus;2.<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-          </div>
-  
-          <div class="justify" id="16">
-            <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-            <em>A</em> dan <em>B</em> adalah matriks non singular ordo 2&times;2 dan \(C=\begin{pmatrix}x-2&2\\2x-5&4\end{pmatrix}\). Jika \(\det\left((AB)^{-1}\right)=\dfrac14\det(C)\) dan \(\det(A)+\det\left(B^{-1}\right)=\dfrac8{\begin{vmatrix}6&-5\\-4&4\end{vmatrix}}\), maka <e>det(<em>B</em>) = </e>....
-            <div class="w3-row">
-              <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                  <li>1</li>
-                  <li>1,5</li>
-                  <li>3</li>
-                </ol>
-              </div>
-              <div class="w3-col s6">
-                <ol class="pas1" start="4" type="A">
-                  <li>4,5</li>
-                  <li>5</li>
-                </ol>
-              </div>
-            </div>
-            <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/InkIX04eRt24DcjBEPtxXE" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
-            <details>
-              <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-              <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo"><div class="w3-row">
-                  <div class="w3-col s6">\(\begin{aligned}
-                \det(C)&=\begin{vmatrix}x-2&2\\2x-5&4\end{vmatrix}\\
-                &=4(x-2)-2(2x-5)\\
-                &=4x-8-4x+10\\
-                &=2
-                \end{aligned}\) <br><br>
-                \(\begin{aligned}
-                \det\left((AB)^{-1}\right)&=\dfrac14\det(C)\\[4pt]
-                \dfrac1{\det\left(AB\right)}&=\dfrac14(2)\\[4pt]
-                \dfrac1{\det(A)\cdot\det(B)}&=\dfrac12\\[4pt]
-                \det(A)\cdot\det(B)&=2\\
-                \det(A)&=\dfrac2{\det(B)}
-                \end{aligned}\) <br><br></div>
-                  <div class="w3-col s6">\(\begin{aligned}
-                \det(A)+\det\left(B^{-1}\right)&=\dfrac8{\begin{vmatrix}6&-5\\-4&4\end{vmatrix}}\\[4pt]
-                \dfrac2{\det(B)}+\dfrac1{\det(B)}&=\dfrac8{(6)(4)-(-5)(-4)}\\[4pt]
-                \dfrac3{\det(B)}&=\dfrac8{24-20}\\[4pt]
-                \dfrac3{\det(B)}&=\dfrac84\\[4pt]
-                \dfrac3{\det(B)}&=2\\[4pt]
-                \det(B)&=\dfrac32\\
-                &=\boxed{\boxed{1{,}5}}
-                \end{aligned}\)</div>
-                </div>
-              </div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, <e>det(<em>B</em>) = 1,5</e>.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-              </div>
-            </details>
-            <hr>
-          </div>
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
 
-       <br>
-       <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-       <br>
-    <script>soal(deter,1,2)</script>
-   </div>
-   </body>
-</html> 
+    <!-- GeoSVG.js -->
+    <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Determinan Matriks</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 (Nomor 11) -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui matriks \(A = \begin{pmatrix}1 & 0 \\ 2 & 3\end{pmatrix}\), \(B = \begin{pmatrix}-1 & -3 \\ 2 & 0\end{pmatrix}\), dan memenuhi persamaan \(AX + 2B = I\), dengan \(I\) adalah matriks identitas. Maka nilai determinan matriks \(X\) adalah ....
+                <ol class="pilgan pilgan-5kolom">
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="/2020/08/skmp-matematika-agustus-2020-kunci.html" target="_blank" rel="noopener noreferrer">SKMP Agustus 2020</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Hitung terlebih dahulu determinan matriks \(A\):
+                    \[
+                    |A| = (1)(3) - (0)(2) = 3
+                    \]
+                    Dari persamaan matriks yang diberikan:
+                    \[
+                    \begin{aligned}
+                    AX + 2B &= I \\
+                    AX &= I - 2B \\
+                    &= \begin{pmatrix}1 & 0 \\ 0 & 1\end{pmatrix} - 2\begin{pmatrix}-1 & -3 \\ 2 & 0\end{pmatrix} \\
+                    &= \begin{pmatrix}1 & 0 \\ 0 & 1\end{pmatrix} - \begin{pmatrix}-2 & -6 \\ 4 & 0\end{pmatrix} \\
+                    &= \begin{pmatrix}3 & 6 \\ -4 & 1\end{pmatrix}
+                    \end{aligned}
+                    \]
+                    Hitung determinan kedua ruas:
+                    \[
+                    \begin{aligned}
+                    |AX| &= \begin{vmatrix}3 & 6 \\ -4 & 1\end{vmatrix} \\
+                    |A| \cdot |X| &= (3)(1) - (6)(-4) \\
+                    3|X| &= 3 + 24 = 27 \\
+                    |X| &= 9
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, nilai determinan matriks \(X\) adalah <b>9</b>.<br>
+                        <b>Jawaban: D</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 (Nomor 12) -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika diketahui matriks \(A\) memenuhi persamaan:
+                \[\begin{pmatrix}5 & 1 \\ 7 & 2\end{pmatrix} A = \begin{pmatrix}3 & -2 \\ -3 & 1\end{pmatrix}\begin{pmatrix}3 & 4 \\ 1 & 2\end{pmatrix}\]
+                maka determinan dari \(A^{-1}\) adalah ....
+                <ol class="pilgan pilgan-5kolom">
+                    <li>\(-2\)</li>
+                    <li>\(-\dfrac{1}{2}\)</li>
+                    <li>0</li>
+                    <li>\(\dfrac{1}{2}\)</li>
+                    <li>2</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">Matematika Zone Indonesia</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Gunakan sifat determinan perkalian matriks:
+                    \[
+                    \begin{aligned}
+                    \begin{vmatrix}5 & 1 \\ 7 & 2\end{vmatrix} |A| &= \begin{vmatrix}3 & -2 \\ -3 & 1\end{vmatrix} \begin{vmatrix}3 & 4 \\ 1 & 2\end{vmatrix} \\[6pt]
+                    (5 \cdot 2 - 1 \cdot 7)|A| &= \left[3 \cdot 1 - (-2)(-3)\right] [3 \cdot 2 - 4 \cdot 1] \\[6pt]
+                    (10 - 7)|A| &= (3 - 6)(6 - 4) \\[6pt]
+                    3|A| &= (-3)(2) = -6 \\[6pt]
+                    |A| &= -2
+                    \end{aligned}
+                    \]
+                    Determinan dari invers matriks \(A\):
+                    \[
+                    |A^{-1}| = \dfrac{1}{|A|} = -\dfrac{1}{2}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, determinan dari \(A^{-1}\) adalah <b>\(-\dfrac{1}{2}\)</b>.<br>
+                        <b>Jawaban: B</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 (Nomor 13) -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika diketahui matriks \(A\) memenuhi persamaan:
+                \[\begin{pmatrix}2 & 1 \\ 4 & 5\end{pmatrix} A = \begin{pmatrix}3 & 1 \\ 3 & 2\end{pmatrix}\begin{pmatrix}2 & 5 \\ 1 & 3\end{pmatrix}\]
+                maka determinan dari \(A^{-1}\) adalah ....
+                <ol class="pilgan pilgan-5kolom">
+                    <li>\(-2\)</li>
+                    <li>\(-\dfrac{1}{2}\)</li>
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="/2020/09/skmp-sma-juli-2020.html" target="_blank" rel="noopener noreferrer">SKMP Juli 2020</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Hitung determinan kedua ruas:
+                    \[
+                    \begin{aligned}
+                    \begin{vmatrix}2 & 1 \\ 4 & 5\end{vmatrix} |A| &= \begin{vmatrix}3 & 1 \\ 3 & 2\end{vmatrix} \begin{vmatrix}2 & 5 \\ 1 & 3\end{vmatrix} \\[6pt]
+                    (10 - 4)|A| &= (6 - 3)(6 - 5) \\[6pt]
+                    6|A| &= (3)(1) = 3 \\[6pt]
+                    |A| &= \dfrac{3}{6} = \dfrac{1}{2}
+                    \end{aligned}
+                    \]
+                    Determinan dari \(A^{-1}\):
+                    \[
+                    |A^{-1}| = \dfrac{1}{|A|} = \dfrac{1}{\dfrac{1}{2}} = 2
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, determinan dari \(A^{-1}\) adalah <b>2</b>.<br>
+                        <b>Jawaban: E</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 (Nomor 14) -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika matriks \(A \cdot B = \begin{pmatrix}4 & 6 \\ -7 & -14\end{pmatrix}\) dan \(\det A = 7\), maka \(\det(7BA^{-1})\) adalah ....
+                <ol class="pilgan pilgan-5kolom">
+                    <li>\(-16\)</li>
+                    <li>\(-15\)</li>
+                    <li>\(-14\)</li>
+                    <li>\(-13\)</li>
+                    <li>\(-12\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">Matematika Zone Indonesia</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Hitung nilai \(|B|\) melalui determinan hasil kali \(AB\):
+                    \[
+                    \begin{aligned}
+                    |AB| &= (4)(-14) - (6)(-7) = -56 + 42 = -14 \\[4pt]
+                    |A| \cdot |B| &= -14 \\
+                    7|B| &= -14 \implies |B| = -2
+                    \end{aligned}
+                    \]
+                    Untuk matriks berordo \(2 \times 2\), pengali skalar \(k\) mengikuti sifat \(\det(kM) = k^2 \det(M)\):
+                    \[
+                    \begin{aligned}
+                    \det(7BA^{-1}) &= 7^2 \cdot |B| \cdot |A^{-1}| \\[4pt]
+                    &= 49 \cdot (-2) \cdot \dfrac{1}{|A|} \\[4pt]
+                    &= -98 \cdot \dfrac{1}{7} \\[4pt]
+                    &= -14
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, nilai \(\det(7BA^{-1}) = \mathbf{-14}\).<br>
+                        <b>Jawaban: C</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 (Nomor 15) -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui matriks \(A\) berordo \(2 \times 2\), \(B = \begin{pmatrix}-3 & 5 \\ -1 & 2\end{pmatrix}\), dan \(C = \begin{pmatrix}4 & 5 \\ 2 & 3\end{pmatrix}\). Jika \(A\) memenuhi persamaan \(B \cdot A = C\), maka nilai \(\det(2A^{-1})\) adalah ....
+                <ol class="pilgan pilgan-5kolom">
+                    <li>\(-2\)</li>
+                    <li>\(-1\)</li>
+                    <li>\(-\dfrac{1}{2}\)</li>
+                    <li>\(\dfrac{1}{2}\)</li>
+                    <li>2</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Hitung determinan matriks \(B\) dan \(C\):
+                    \[
+                    \begin{aligned}
+                    \det B &= (-3)(2) - (5)(-1) = -6 + 5 = -1 \\[4pt]
+                    \det C &= (4)(3) - (5)(2) = 12 - 10 = 2
+                    \end{aligned}
+                    \]
+                    Dari persamaan matriks \(B \cdot A = C\):
+                    \[
+                    \begin{aligned}
+                    \det B \cdot \det A &= \det C \\
+                    (-1) \cdot \det A &= 2 \implies \det A = -2
+                    \end{aligned}
+                    \]
+                    Karena matriks berordo \(2 \times 2\):
+                    \[
+                    \begin{aligned}
+                    \det(2A^{-1}) &= 2^2 \cdot \det(A^{-1}) \\[4pt]
+                    &= 4 \cdot \dfrac{1}{\det A} \\[4pt]
+                    &= 4 \cdot \left(\dfrac{1}{-2}\right) \\[4pt]
+                    &= -2
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, nilai \(\det(2A^{-1}) = \mathbf{-2}\).<br>
+                        <b>Jawaban: A</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 6 (Nomor 16) -->
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                \(A\) dan \(B\) adalah matriks non-singular ordo \(2 \times 2\) dan \(C = \begin{pmatrix}x - 2 & 2 \\ 2x - 5 & 4\end{pmatrix}\). Jika \(\det\left((AB)^{-1}\right) = \dfrac{1}{4}\det(C)\) dan \(\det(A) + \det(B^{-1}) = \dfrac{8}{\begin{vmatrix}6 & -5 \\ -4 & 4\end{vmatrix}}\), maka \(\det(B) = \dots\)
+                <ol class="pilgan pilgan-5kolom">
+                    <li>1</li>
+                    <li>1,5</li>
+                    <li>3</li>
+                    <li>4,5</li>
+                    <li>5</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://chat.whatsapp.com/InkIX04eRt24DcjBEPtxXE" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Hitung terlebih dahulu determinan matriks \(C\):
+                    \[
+                    \begin{aligned}
+                    \det(C) &= 4(x - 2) - 2(2x - 5) \\
+                    &= 4x - 8 - 4x + 10 = 2
+                    \end{aligned}
+                    \]
+                    Dari hubungan \(\det\left((AB)^{-1}\right) = \dfrac{1}{4}\det(C)\):
+                    \[
+                    \begin{aligned}
+                    \dfrac{1}{\det(A) \cdot \det(B)} &= \dfrac{1}{4}(2) = \dfrac{1}{2} \\[6pt]
+                    \det(A) \cdot \det(B) &= 2 \implies \det(A) = \dfrac{2}{\det(B)}
+                    \end{aligned}
+                    \]
+                    Hitung nilai penyebut ruas kanan persamaan kedua:
+                    \[
+                    \begin{vmatrix}6 & -5 \\ -4 & 4\end{vmatrix} = (6)(4) - (-5)(-4) = 24 - 20 = 4
+                    \]
+                    Substitusi ke persamaan kedua:
+                    \[
+                    \begin{aligned}
+                    \det(A) + \det(B^{-1}) &= \dfrac{8}{4} = 2 \\[6pt]
+                    \dfrac{2}{\det(B)} + \dfrac{1}{\det(B)} &= 2 \\[6pt]
+                    \dfrac{3}{\det(B)} &= 2 \\[6pt]
+                    \det(B) &= \dfrac{3}{2} = 1{,}5
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, nilai \(\det(B) = \mathbf{1{,}5}\).<br>
+                        <b>Jawaban: B</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>

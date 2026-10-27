@@ -1,147 +1,160 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>SBMPTN Zone : Determinan Matriks</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-   </head> 
-     <body> <div class="w3-container">
-        Berikut ini adalah kumpulan soal mengenai <span id="namamateri">determinan matriks</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
-        <h3>Tipe: </h3>
-        <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><span id="sbmptn" class="w3-bar-item w3-deep-purple w3-hide">SBMPTN</span><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-        <br>
-        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-        <br>      
-        
-        <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Jika matriks \(A=\begin{pmatrix}a&-3\\1&1\end{pmatrix}\) merupakan matriks yang mempunyai invers, maka hasil kali semua nilai <em>a</em> yang mungkin sehingga <e>3det (<em>A</em>) = det (<em>A</em><sup>&minus;1</sup>) &minus; 2</e> adalah
-          <div class="w3-row">
-            <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                    <li class="pb">\(-\dfrac{29}3\)</li>
-                    <li class="pb">\(-\dfrac{20}3\)</li>
-                    <li>\(\dfrac{20}3\)</li>
-                </ol>
-            </div>
-            <div class="w3-col s6">
-                <ol class="pas1" start="4" type="A">
-                    <li class="pb">\(\dfrac{29}3\)</li>
-                    <li>\(\dfrac{32}3\)</li>
-                </ol>
-            </div>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNBT - Determinan Matriks</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-          <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">\(\begin{aligned}
-          \det(A)&=a\cdot1-(-3)\cdot1\\
-          &=a+3
-          \end{aligned}\)<br />
-          <h1>CARA 1</h1>\(\begin{aligned}
-          A^{-1}&=\dfrac1{\det(A)}\begin{pmatrix}1&3\\-1&a\end{pmatrix}\\
-          &=\dfrac1{a+3}\begin{pmatrix}1&3\\-1&a\end{pmatrix}\\
-          &=\begin{pmatrix}\dfrac1{a+3}&\dfrac3{a+3}\\-\dfrac1{a+3}&\dfrac{a}{a+3}\end{pmatrix}\\
-          \det\left(A^{-1}\right)&=\dfrac1{a+3}\cdot\dfrac{a}{a+3}-\dfrac3{a+3}\cdot\left(-\dfrac1{a+3}\right)\\
-          &=\dfrac{a}{(a+3)^2}+\dfrac3{(a+3)^2}\\
-          &=\dfrac{a+3}{(a+3)^2}\\
-          &=\dfrac1{a+3}
-          \end{aligned}\)<br />
-          <br />
-          \(\begin{aligned}
-          3\det(A)&=\det\left(A^{-1}\right)-2\\
-          3(a+3)&=\dfrac1{a+3}-2\qquad\color{red}{\times (a+3)}\\
-          3(a+3)^2&=1-2(a+3)\\
-          3\left(a^2+6a+9\right)&=1-2a-6\\
-          3a^2+18a+27&=-2a-5\\
-          3a^2+18a+27+2a+5&=0\\
-          3a^2+20a+32&=0
-          \end{aligned}\)<br />
-          <br />
-          \(a_1a_2=\dfrac{32}3\)<br />
-          <h1>CARA 2</h1>\(\begin{aligned}
-          3\det(A)&=\det\left(A^{-1}\right)-2\\
-          3\det(A)&=\dfrac1{\det(A)}-2&\color{red}{\times\det(A)}\\
-          3\left(\det(A)\right)^2&=1-2\det(A)\\
-          3\left(\det(A)\right)^2+2\det(A)-1&=0\\
-          \left(3\det(A)-1\right)\left(\det(A)+1\right)&=0\\
-          (3(a+3)-1)(a+3+1)&=0\\
-          (3a+8)(a+4)&=0
-          \end{aligned}\)<br />
-          <br />
-          \(\begin{aligned}
-          a_1a_2&=\left(-\dfrac83\right)(-4)\\
-          &=\dfrac{32}3
-          \end{aligned}\)</div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, hasil kali semua nilai <em>a</em> yang mungkin adalah \(\dfrac{32}3\).<br><b>JAWAB: E</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-        </div>
-        
-        <div class="justify" id="2">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Diketahui matriks <em>A</em> berordo 2&times;2 dan \({A=\begin{pmatrix}-2&-5\\1&3\end{pmatrix},}\) \({C=\begin{pmatrix}4&6\\3&5\end{pmatrix}.}\) Jika <em>B</em> memenuhi <e><em>A</em>&sdot;<em>B</em> = <em>C</em>,</e> maka <e>det (2<em>B</em><sup>&minus;1</sup>)</e> adalah
-          <div class="w3-row">
-            <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                <li>
-                  1
-                </li>
-                <li>
-                  2
-                </li>
-                <li>
-                  &minus;2
-                </li>
-              </ol>
-            </div>
-            <div class="w3-col s6">
-              <ol class="pas1" start="4" type="A">
-                <li>
-                  &minus;1
-                </li>
-                <li>
-                  &minus;4
-                </li>
-              </ol>
-            </div>
-          </div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="#" target="_blank">SKMP Februari 2021</a></div>
-          <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><e>det <em>A</em> = (&minus;2)(3) &minus; (&minus;5)(1) = &minus;1</e><br>
-          <e>det <em>C</em> = (4)(5) &minus; (6)(3) = 2</e><br><br>
-          \(\begin{aligned}
-            A\cdot B&=C\\
-            B&=A^{-1}\cdot C
-            \end{aligned}\)<br><br>
-            \(\begin{aligned}
-              \det\left(2B^{-1}\right)&=2^2\det\left(B^{-1}\right)\\
-              &=\dfrac4{\det B}\\
-              &=\dfrac4{\det \left(A^{-1}\cdot C\right)}\\
-              &=\dfrac4{\det A^{-1}\cdot\det C}\\
-              &=\dfrac{4\det A}{\det C}\\
-              &=\dfrac{4(-1)}2\\
-              &=\boxed{\boxed{-2}}
-              \end{aligned}\)</div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, det (2<em>B</em><sup>&minus;1</sup>) = &minus;2.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Determinan Matriks</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
         </div>
 
-        <br>
-        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-        <br>
-<script>soal(deter,2,1)</script>        
-      </div></body>
-</html> 
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika matriks \(A = \begin{pmatrix}a & -3 \\ 1 & 1\end{pmatrix}\) merupakan matriks yang mempunyai invers, maka hasil kali semua nilai \(a\) yang mungkin sehingga \(3\det(A) = \det(A^{-1}) - 2\) adalah ....
+                <ol class="pilgan pilgan-5kolom">
+                    <li>\(-\dfrac{29}{3}\)</li>
+                    <li>\(-\dfrac{20}{3}\)</li>
+                    <li>\(\dfrac{20}{3}\)</li>
+                    <li>\(\dfrac{29}{3}\)</li>
+                    <li>\(\dfrac{32}{3}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Hitung terlebih dahulu determinan matriks \(A\):
+                    \[
+                    \det(A) = a(1) - (-3)(1) = a + 3
+                    \]
+                    Gunakan sifat \(\det(A^{-1}) = \dfrac{1}{\det(A)}\) pada persamaan:
+                    \[
+                    \begin{aligned}
+                    3\det(A) &= \det(A^{-1}) - 2 \\[4pt]
+                    3\det(A) &= \dfrac{1}{\det(A)} - 2 \quad (\times \det(A)) \\[4pt]
+                    3(\det(A))^2 &= 1 - 2\det(A) \\[4pt]
+                    3(\det(A))^2 + 2\det(A) - 1 &= 0 \\[4pt]
+                    (3\det(A) - 1)(\det(A) + 1) &= 0
+                    \end{aligned}
+                    \]
+                    Substitusi kembali nilai \(\det(A) = a + 3\):
+                    \[
+                    \begin{aligned}
+                    \left[3(a + 3) - 1\right]\left[(a + 3) + 1\right] &= 0 \\[4pt]
+                    (3a + 9 - 1)(a + 4) &= 0 \\[4pt]
+                    (3a + 8)(a + 4) &= 0
+                    \end{aligned}
+                    \]
+                    Diperoleh dua nilai \(a\):
+                    \[a_1 = -\dfrac{8}{3} \quad \text{dan} \quad a_2 = -4\]
+                    Hasil kali semua nilai \(a\) yang mungkin adalah:
+                    \[
+                    a_1 \cdot a_2 = \left(-\dfrac{8}{3}\right) \times (-4) = \dfrac{32}{3}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, hasil kali semua nilai \(a\) yang mungkin adalah <b>\(\dfrac{32}{3}\)</b>.<br>
+                        <b>Jawaban: E</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui matriks \(A\) berordo \(2 \times 2\) dengan \(A = \begin{pmatrix}-2 & -5 \\ 1 & 3\end{pmatrix}\) dan \(C = \begin{pmatrix}4 & 6 \\ 3 & 5\end{pmatrix}\). Jika \(B\) memenuhi \(A \cdot B = C\), maka nilai \(\det(2B^{-1})\) adalah ....
+                <ol class="pilgan pilgan-5kolom">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>\(-2\)</li>
+                    <li>\(-1\)</li>
+                    <li>\(-4\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="#" target="_blank" rel="noopener noreferrer">SKMP Februari 2021</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Hitung determinan matriks \(A\) dan matriks \(C\):
+                    \[
+                    \begin{aligned}
+                    \det A &= (-2)(3) - (-5)(1) = -6 + 5 = -1 \\[4pt]
+                    \det C &= (4)(5) - (6)(3) = 20 - 18 = 2
+                    \end{aligned}
+                    \]
+                    Dari hubungan perkalian matriks \(A \cdot B = C\):
+                    \[
+                    \begin{aligned}
+                    \det(A \cdot B) &= \det C \\
+                    \det A \cdot \det B &= \det C \\
+                    (-1) \cdot \det B &= 2 \implies \det B = -2
+                    \end{aligned}
+                    \]
+                    Karena matriks \(B\) berordo \(2 \times 2\), pengali skalar 2 dipangkatkan 2:
+                    \[
+                    \begin{aligned}
+                    \det(2B^{-1}) &= 2^2 \cdot \det(B^{-1}) \\[4pt]
+                    &= 4 \cdot \dfrac{1}{\det B} \\[4pt]
+                    &= 4 \cdot \left(\dfrac{1}{-2}\right) \\[4pt]
+                    &= -2
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, nilai dari \(\det(2B^{-1}) = \mathbf{-2}\).<br>
+                        <b>Jawaban: C</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>

@@ -1,211 +1,250 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SNBT Zone : Bilangan Pecahan</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNBT - Bilangan Pecahan</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">materi</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
-
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><span id="snbt" class="w3-bar-item w3-deep-purple w3-hide">SNBT</span><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-  <br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-
-  <div class="justify" id="1">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Untuk mendapatkan nilai A pada mata kuliah Kalkulus, mahasiswa harus hadir minimal 75% dari total 16 pertemuan. Mahasiswa juga harus menjawab benar setidaknya 7 soal dari 10 soal di setiap ujian pada tiga kali ujian selama mata kuliah ini berlangsung. Mahasiswa juga harus menjawab seluruh soal tugas dan kuis yang diberikan. <br>
-    Fia adalah salah satu peserta kuliah Kalkulus. Ia tidak pernah absen pada seluruh pertemuan kelas Kalkulus. Ia juga selalu menjawab semua soal tugas dan kuis dengan lengkap serta mengumpulkannya tepat waktu. Pada ujian 1 dan 2, Ia menjawab 8 soal benar pada masingmasing ujian. Sedangkan pada ujian 3, Ia salah menjawab pada soal nomor 2, 7, 8, dan 10. <br>
-    Kesimpulan yang dapat diambil adalah Fia mendapat nilai A pada mata kuliah Kalkulus. <br><br>
-    Manakah berikut ini yang menyatakan kualitas simpulan tersebut?
-    <ol class="pas1" type="A"> 
-     <li>Simpulan pasti benar</li> 
-     <li>Simpulan mungkin benar</li> 
-     <li>Simpulan pasti salah</li> 
-     <li>Simpulan tidak relevan dengan informasi yang diberikan</li> 
-     <li>Simpulan tidak dapat dinilai karena informasi tidak cukup</li> 
-     </ol>    
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://app.cerebrum.id/" target="_blank" rel="noopener noreferrer">Cerebrum</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">Syarat mendapat nilai A kuliah Kalkulus:
-          <ol type="1">
-            <li>Hadir minimal 75% dari total 16 pertemuan,</li>
-            <li>Menjawab benar setidaknya 7 soal dari 10 soal di setiap ujian pada tiga kali ujian,</li>
-            <li>Menjawab seluruh soal tugas dan kuis yang diberikan.</li>
-          </ol>
-          Fia telah memenuhi syarat 1 dan 3. <br>
-          Untuk syarat 2, pada ujian 1 dan 2 Fia menjawab benar 8 soal. Namun pada ujian 3 Ia menjawab salah 4 soal artinya Fia hanya menjawab benar 7 soal. Jadi, Fia tidak memenuhi syarat 2. <br>
-          Karena Fia tidak memenuhi syarat 2, maka Fia tidak mendapat nilai A.
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, simpulan di atas adalah salah.<br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+    </header>
 
-  <div class="justify" id="2">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Untuk mendapatkan nilai A pada mata kuliah Kalkulus, mahasiswa harus hadir minimal 75% dari total 16 pertemuan. Mahasiswa juga harus menjawab benar setidaknya 7 soal dari 10 soal di setiap ujian pada tiga kali ujian selama mata kuliah ini berlangsung. Mahasiswa juga harus menjawab seluruh soal tugas dan kuis yang diberikan. <br>
-    Rana adalah salah satu peserta kuliah Kalkulus. Pada ujian 1, 2, dan 3, Ia menjawab 8 soal benar pada masing-masing ujian. Ia juga selalu menjawab semua soal tugas dan kuis dengan lengkap serta mengumpulkannya tepat waktu. Rana pernah absen dari kelas Kalkulus sebanyak 2 kali karena mengikuti lomba di luar kota. <br>
-    Kesimpulan yang dapat diambil adalah Fia mendapat nilai A pada mata kuliah Kalkulus. <br><br>
-    Manakah berikut ini yang menyatakan kualitas simpulan tersebut?
-    <ol class="pas1" type="A"> 
-     <li>Simpulan pasti benar</li> 
-     <li>Simpulan mungkin benar</li> 
-     <li>Simpulan pasti salah</li> 
-     <li>Simpulan tidak relevan dengan informasi yang diberikan</li> 
-     <li>Simpulan tidak dapat dinilai karena informasi tidak cukup</li> 
-     </ol>    
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://app.cerebrum.id/" target="_blank" rel="noopener noreferrer">Cerebrum</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">Syarat mendapat nilai A kuliah Kalkulus:
-                <ol type="1">
-                  <li>Hadir minimal 75% dari total 16 pertemuan,</li>
-                  <li>Menjawab benar setidaknya 7 soal dari 10 soal di setiap ujian pada tiga kali ujian,</li>
-                  <li>Menjawab seluruh soal tugas dan kuis yang diberikan.</li>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Bilangan Pecahan</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Untuk mendapatkan nilai A pada mata kuliah Kalkulus, mahasiswa harus hadir minimal 75% dari total 16 pertemuan. Mahasiswa juga harus menjawab benar setidaknya 7 soal dari 10 soal di setiap ujian pada tiga kali ujian selama mata kuliah ini berlangsung. Mahasiswa juga harus menjawab seluruh soal tugas dan kuis yang diberikan.<br><br>
+                Fia adalah salah satu peserta kuliah Kalkulus. Ia tidak pernah absen pada seluruh pertemuan kelas Kalkulus. Ia juga selalu menjawab semua soal tugas dan kuis dengan lengkap serta mengumpulkannya tepat waktu. Pada ujian 1 dan 2, Ia menjawab 8 soal benar pada masing-masing ujian. Sedangkan pada ujian 3, Ia salah menjawab pada soal nomor 2, 7, 8, dan 10.<br><br>
+                Kesimpulan yang dapat diambil adalah <b>Fia mendapat nilai A pada mata kuliah Kalkulus</b>.<br><br>
+                Manakah berikut ini yang menyatakan kualitas simpulan tersebut?
+                <ol class="pilgan">
+                    <li>Simpulan pasti benar</li>
+                    <li>Simpulan mungkin benar</li>
+                    <li>Simpulan pasti salah</li>
+                    <li>Simpulan tidak relevan dengan informasi yang diberikan</li>
+                    <li>Simpulan tidak dapat dinilai karena informasi tidak cukup</li>
                 </ol>
-                Rana telah memenuhi syarat 2 dan 3. <br>
-                Untuk syarat 1, karena Rana absen 2 kali pertemuan artinya Ia hadir sebanyak 14 kali pertemuan <br>
-                \(\begin{aligned}
-                \text{persentase kehadiran}&=\dfrac{\text{jumlah hadir}}{\text{total pertemuan}}\times100\%\\[4pt] 
-                &=\dfrac{14}{16}\times100\%\\[4pt]
-                &=87{,}5\%
-                \end{aligned}\) <br>
-                Jadi, Rana memenuhi syarat 1. <br>
-Karena Rana memenuhi ketiga syarat, maka Rana mendapat nilai A.
             </div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, simpulan di atas adalah benar.<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-  </div>
-
-  <div class="justify" id="3">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Untuk mendapatkan nilai A pada mata kuliah Kalkulus, mahasiswa harus hadir minimal 75% dari total 16 pertemuan. Mahasiswa juga harus menjawab benar setidaknya 7 soal dari 10 soal di setiap ujian pada tiga kali ujian selama mata kuliah ini berlangsung. Mahasiswa juga harus menjawab seluruh soal tugas dan kuis yang diberikan. <br><br>
-    Batas toleransi absen yang diperbolehkan agar memenuhi syarat minimal kehadiran 75% adalah ....
-    <div class="w3-row"> 
-     <div class="w3-col s4"> 
-     <ol class="pas1" type="A"> 
-     <li>1 kali pertemuan</li> 
-     <li>2 kali pertemuan</li> 
-     </ol> 
-     </div> 
-     <div class="w3-col s4"> 
-     <ol class="pas1" start="3" type="A"> 
-     <li>3 kali pertemuan</li> 
-     <li>4 kali pertemuan</li> 
-     </ol> 
-     </div> 
-     <div class="w3-col s4"> 
-     <ol class="pas1" start="5" type="A"> 
-     <li>5 kali pertemuan</li> 
-     </ol> 
-     </div> 
-     </div>    
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://app.cerebrum.id/" target="_blank" rel="noopener noreferrer">Cerebrum</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">Diketahui: <br>
-                Total pertemuan = 16 pertemuan <br>
-Persentase minimal kehadiran = 75% <br>
-                \(\begin{aligned}
-                \text{jumlah minimal kehadiran}&=\text{persentase minimal kehadiran}\times\text{total pertemuan}\\
-                &=\dfrac{75}{100}\times16\\[4pt]
-                &=12
-                \end{aligned}\) <br>
-                Sehingga, <br>
-                \(\begin{aligned}
-                \text{Batas toleransi absen}&=\text{total pertemuan}-\text{jumlah minimal kehadiran}\\
-                &=16-12\\
-                &=\color{blue}\boxed{\boxed{\color{black}4}}
-                \end{aligned}\)
+            <div class="soal-sumber"><a href="https://app.cerebrum.id/" target="_blank" rel="noopener noreferrer">Cerebrum</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Syarat mahasiswa mendapatkan nilai A pada mata kuliah Kalkulus:
+                    <ol>
+                        <li>Hadir minimal 75% dari total 16 pertemuan.</li>
+                        <li>Menjawab benar setidaknya 7 soal dari 10 soal di setiap ujian pada tiga kali ujian.</li>
+                        <li>Menjawab seluruh soal tugas dan kuis yang diberikan.</li>
+                    </ol>
+                    Pemeriksaan kondisi Fia:
+                    <ul>
+                        <li><b>Syarat 1:</b> Fia hadir 100% (tidak pernah absen) \(\implies\) <b>Memenuhi</b>.</li>
+                        <li><b>Syarat 3:</b> Menjawab seluruh tugas dan kuis lengkap dan tepat waktu \(\implies\) <b>Memenuhi</b>.</li>
+                        <li><b>Syarat 2:</b>
+                            <ul>
+                                <li>Ujian 1: 8 soal benar (\(\ge 7\)) \(\implies\) Memenuhi.</li>
+                                <li>Ujian 2: 8 soal benar (\(\ge 7\)) \(\implies\) Memenuhi.</li>
+                                <li>Ujian 3: Salah 4 soal dari 10 soal, artinya hanya menjawab benar \(10 - 4 = 6\) soal (\(6 < 7\)) \(\implies\) <b>Tidak Memenuhi</b>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    Karena salah satu syarat kelulusan nilai A tidak terpenuhi, maka Fia dipastikan tidak mendapatkan nilai A.
+                    <div class="kesimpulan">
+                        Jadi, simpulan bahwa Fia mendapat nilai A adalah <b>pasti salah</b>.<br>
+                        <b>Jawaban: C</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
             </div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, batas toleransi absen yang diperbolehkan agar memenuhi syarat minimal kehadiran 75% adalah 4 kali pertemuan.<br><b>JAWAB: D</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-  </div>
+        </article>
 
-  <div class="justify" id="4">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Jika $\dfrac{a}b+\dfrac{c}d=16$ dan $\dfrac{a}c+\dfrac{b}d=36$ dengan <em>b</em>, <em>c</em>, dan <em>d</em> &ne; 0, maka $\dfrac{c}b=$ ....
-    <div class="w3-row">
-      <div class="w3-col s6">
-        <ol class="pas1" type="A">
-          <li class="pb">$\dfrac34$</li>
-          <li class="pb">$\dfrac23$</li>
-          <li>$\dfrac29$</li>
-        </ol>
-      </div>
-      <div class="w3-col s6">
-        <ol class="pas1" start="4" type="A">
-          <li class="pb">$\dfrac43$</li>
-          <li>$\dfrac49$</li>
-        </ol>
-      </div>
-    </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SKOLLA</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">
-          \(\begin{aligned}
-          \dfrac{a}b+\dfrac{c}d&=16\\
-          \dfrac{ad+bc}{bd}&=16\\
-          ad+bc&=16bd
-          \end{aligned}\) <br><br>
-          \(\begin{aligned}
-          \dfrac{a}c+\dfrac{b}d&=36\\
-          \dfrac{ad+bc}{cd}&=36\\
-          ad+bc&=36cd
-          \end{aligned}\) <br><br>
-          \(\begin{aligned}
-          16bd&=36cd\\
-          4bd&=9cd\\
-          \dfrac{c}b& \color{blue}\boxed{\boxed{\color{black}=\dfrac49}}
-          \end{aligned}\)
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, $\dfrac{c}b=\dfrac49$.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Untuk mendapatkan nilai A pada mata kuliah Kalkulus, mahasiswa harus hadir minimal 75% dari total 16 pertemuan. Mahasiswa juga harus menjawab benar setidaknya 7 soal dari 10 soal di setiap ujian pada tiga kali ujian selama mata kuliah ini berlangsung. Mahasiswa juga harus menjawab seluruh soal tugas dan kuis yang diberikan.<br><br>
+                Rana adalah salah satu peserta kuliah Kalkulus. Pada ujian 1, 2, dan 3, Ia menjawab 8 soal benar pada masing-masing ujian. Ia juga selalu menjawab semua soal tugas dan kuis dengan lengkap serta mengumpulkannya tepat waktu. Rana pernah absen dari kelas Kalkulus sebanyak 2 kali karena mengikuti lomba di luar kota.<br><br>
+                Kesimpulan yang dapat diambil adalah <b>Rana mendapat nilai A pada mata kuliah Kalkulus</b>.<br><br>
+                Manakah berikut ini yang menyatakan kualitas simpulan tersebut?
+                <ol class="pilgan">
+                    <li>Simpulan pasti benar</li>
+                    <li>Simpulan mungkin benar</li>
+                    <li>Simpulan pasti salah</li>
+                    <li>Simpulan tidak relevan dengan informasi yang diberikan</li>
+                    <li>Simpulan tidak dapat dinilai karena informasi tidak cukup</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://app.cerebrum.id/" target="_blank" rel="noopener noreferrer">Cerebrum</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Syarat mendapatkan nilai A:
+                    <ol>
+                        <li>Hadir minimal 75% dari total 16 pertemuan.</li>
+                        <li>Menjawab benar setidaknya 7 soal dari 10 soal di setiap ujian (tiga kali ujian).</li>
+                        <li>Menjawab seluruh soal tugas dan kuis yang diberikan.</li>
+                    </ol>
+                    Pemeriksaan kondisi Rana:
+                    <ul>
+                        <li><b>Syarat 1 (Kehadiran):</b> Rana absen 2 kali pertemuan, sehingga ia hadir sebanyak \(16 - 2 = 14\) pertemuan.
+                            \[\text{Persentase Kehadiran} = \dfrac{14}{16} \times 100\% = 87{,}5\%\]
+                            Karena \(87{,}5\% \ge 75\%\), maka syarat kehadiran <b>terpenuhi</b>.
+                        </li>
+                        <li><b>Syarat 2 (Ujian):</b> Menjawab benar 8 dari 10 soal pada ujian 1, 2, dan 3 (\(8 \ge 7\)) \(\implies\) <b>terpenuhi</b>.</li>
+                        <li><b>Syarat 3 (Tugas & Kuis):</b> Menjawab lengkap dan tepat waktu \(\implies\) <b>terpenuhi</b>.</li>
+                    </ul>
+                    Karena ketiga syarat wajib terpenuhi seluruhnya, maka simpulan bahwa Rana mendapat nilai A pasti benar.
+                    <div class="kesimpulan">
+                        Jadi, simpulan tersebut adalah <b>pasti benar</b>.<br>
+                        <b>Jawaban: A</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(bilpec,2,1)</script>
-</div>
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Untuk mendapatkan nilai A pada mata kuliah Kalkulus, mahasiswa harus hadir minimal 75% dari total 16 pertemuan. Mahasiswa juga harus menjawab benar setidaknya 7 soal dari 10 soal di setiap ujian pada tiga kali ujian selama mata kuliah ini berlangsung. Mahasiswa juga harus menjawab seluruh soal tugas dan kuis yang diberikan.<br><br>
+                Batas toleransi absen yang diperbolehkan agar memenuhi syarat minimal kehadiran 75% adalah ....
+                <ol class="pilgan pilgan-5kolom">
+                    <li>1 kali pertemuan</li>
+                    <li>2 kali pertemuan</li>
+                    <li>3 kali pertemuan</li>
+                    <li>4 kali pertemuan</li>
+                    <li>5 kali pertemuan</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://app.cerebrum.id/" target="_blank" rel="noopener noreferrer">Cerebrum</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Diketahui:
+                    <ul>
+                        <li>Total pertemuan = 16 pertemuan</li>
+                        <li>Persentase minimal kehadiran = 75%</li>
+                    </ul>
+                    Jumlah minimal kehadiran yang diperlukan:
+                    \[
+                    \begin{aligned}
+                    \text{Jumlah minimal kehadiran} &= 75\% \times 16 \\
+                    &= \dfrac{3}{4} \times 16 \\
+                    &= 12 \text{ pertemuan}
+                    \end{aligned}
+                    \]
+                    Maka batas toleransi absen maksimal adalah:
+                    \[
+                    \begin{aligned}
+                    \text{Toleransi absen} &= \text{Total pertemuan} - \text{Jumlah minimal kehadiran} \\
+                    &= 16 - 12 \\
+                    &= 4 \text{ pertemuan}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, batas toleransi absen yang diperbolehkan adalah <b>4 kali pertemuan</b>.<br>
+                        <b>Jawaban: D</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika \(\dfrac{a}{b}+\dfrac{c}{d}=16\) dan \(\dfrac{a}{c}+\dfrac{b}{d}=36\) dengan \(b, c,\) dan \(d \ne 0\), maka \(\dfrac{c}{b} = \dots\)
+                <ol class="pilgan pilgan-5kolom">
+                    <li>\(\dfrac{3}{4}\)</li>
+                    <li>\(\dfrac{2}{3}\)</li>
+                    <li>\(\dfrac{2}{9}\)</li>
+                    <li>\(\dfrac{4}{3}\)</li>
+                    <li>\(\dfrac{4}{9}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">SKOLLA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Samakan penyebut untuk kedua persamaan:
+                    <p><b>Persamaan 1:</b></p>
+                    \[
+                    \begin{aligned}
+                    \dfrac{a}{b}+\dfrac{c}{d} &= 16 \\
+                    \dfrac{ad+bc}{bd} &= 16 \\
+                    ad+bc &= 16bd
+                    \end{aligned}
+                    \]
+                    <p><b>Persamaan 2:</b></p>
+                    \[
+                    \begin{aligned}
+                    \dfrac{a}{c}+\dfrac{b}{d} &= 36 \\
+                    \dfrac{ad+bc}{cd} &= 36 \\
+                    ad+bc &= 36cd
+                    \end{aligned}
+                    \]
+                    Karena kedua persamaan memiliki nilai \(ad+bc\) yang sama:
+                    \[
+                    \begin{aligned}
+                    16bd &= 36cd \\
+                    16b &= 36c \quad (\text{karena } d \ne 0) \\[4pt]
+                    \dfrac{c}{b} &= \dfrac{16}{36} = \dfrac{4}{9}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, nilai dari \(\dfrac{c}{b} = \dfrac{4}{9}\).<br>
+                        <b>Jawaban: E</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

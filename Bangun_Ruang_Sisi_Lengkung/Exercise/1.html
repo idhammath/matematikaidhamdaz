@@ -1,118 +1,145 @@
-<!DOCTYPE html> 
-<html lang="id">  
-   <head> 
-      <meta charset = "utf-8"> 
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Exercise Zone : Bangun Ruang Sisi Lengkung</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../katex/katex.css">
-      <script src="../katex/katex.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-     </head> 
-     <body>
-        <div class="container">
-      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Bangun Ruang Sisi Lengkung</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-      <h3>Tipe: </h3>
-      <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
+<!DOCTYPE html>
+<html lang="id">
 
-      <div id="1" class="justify">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Sebuah bola dimasukkan ke dalam tabung, diameter bola sama dengan diameter tabung = 3,5 cm, tinggi tabung di luar bola adalah 10 cm, maka volume tabung di luar bola adalah....
-          <div class="w3-row">
-              <div class="w3-col s6">
-                  <ol class="pas1" type="A">
-                      <li class="pb"><m>205\dfrac13</m> cm<sup>3</sup></li>
-                      <li class="pb"><m>250\dfrac23</m> cm<sup>3</sup></li>
-                      <li><m>225\dfrac25</m> cm<sup>3</sup></li>
-                  </ol>
-              </div>
-              <div class="w3-col s6">
-                  <ol class="pas1" start="4" type="A">
-                      <li class="pb"><m>225\dfrac35</m> cm<sup>3</sup></li>
-                      <li><m>204\dfrac13</m> cm<sup>3</sup></li>
-                  </ol>
-              </div>
-          </div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneId/212" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-          <details>
-              <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-              <div class="w3-card-4">
-                  <div class="w3-padding w3-sand flo"><em>r</em> = 3,5 = <m>\dfrac72</m><br />
-                    <br />
-                    Volume tabung:
-                    \begin{aligned}
-                    V_t&amp;=\pi r^2t\\
-                    &amp;=\dfrac{\cancelto{\color{blue}11}{22}}{\cancel{7}}\cdot\dfrac{\cancel{7}}{\cancel{2}}\cdot\dfrac7{\cancel{2}}\cdot\cancelto{\color{blue}5}{10}\\
-                    &amp;=385
-                    \end{aligned}
-                    Volume bola:
-                    \begin{aligned}
-                    V_b&amp;=\dfrac43\pi r^3\\
-                    &amp;=\dfrac{\cancel{4}}3\cdot\dfrac{\cancelto{\color{blue}11}{22}}{\cancel{7}}\cdot\dfrac{\cancel{7}}{\cancel{2}}\cdot\dfrac{7}{\cancel{2}}\cdot\dfrac{7}{\cancel{2}}\\
-                    &amp;=\dfrac{539}3\\
-                    &amp;=179\dfrac23
-                    \end{aligned}
-                    Volume tabung di luar bola:
-                    \begin{aligned}
-                    V&amp;=V_t-V_b\\
-                    &amp;=385-179\dfrac23\\
-                    &amp;=206-\dfrac23\\
-                    &amp;=\boxed{\boxed{205\dfrac13}}
-                    \end{aligned}
-                    </div>
-                  <div class="w3-brown w3-padding tebal flo">Jadi, volume tabung di luar bola adalah <m>205\dfrac13</m> cm<sup>3</sup>.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-              </div>
-          </details>
-          <hr>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Soal Dasar - Bangun Ruang Sisi Lengkung [1]</title>
 
-      <div id="2" class="justify">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Tinggi dan jari-jari suatu kerucut sama dengan
-jari-jari sebuah bola. Jika panjang garis pelukis
-kerucut 26 cm, panjang diameter bola adalah .... cm
-<div class="w3-row">
-    <div class="w3-col s6">
-        <ol class="pas1" type="A">
-            <li>13</li>
-            <li><m>13\sqrt2</m></li>
-        </ol>
+  <!-- KaTeX CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+  <!-- GeoSVG.js -->
+  <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
+
+  <!-- Style Blog -->
+  <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="../../index.html" class="home-btn">🏠 HOME</a>
+      <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
     </div>
-    <div class="w3-col s6">
-        <ol class="pas1" start="3" type="A">
-            <li>26</li>
-            <li><m>26\sqrt2</m></li>
-        </ol>
+  </header>
+
+  <main class="container">
+    <!-- Header Soal -->
+    <div class="page-header">
+      <p class="intro-text">
+        Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+        materi <span class="topic-highlight">Bangun Ruang Sisi Lengkung</span>
+      </p>
+      <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+      <div id="level-nav" class="level-nav"></div>
     </div>
-</div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneId/214" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-          <details>
-              <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-              <div class="w3-card-4">
-                  <div class="w3-padding w3-sand flo"><div class="w3-row">
-                      <div class="w3-col s6"><em>t</em> = <em>r</em><br><br>
-                        <em>s</em> = 26
-                        \begin{aligned}r^2+t^2&=s^2\\r^2+r^2&=26^2\\2r^2&=676\\r^2&=\dfrac{676}2\\&=338\\r&=\sqrt{338}\\&=13\sqrt2\end{aligned}</div>
-                      <div class="w3-col s6">\begin{aligned}d&=2r\\&=2\cdot13\sqrt2\\&=\boxed{\boxed{26\sqrt2}}\end{aligned}</div>
-                  </div>
-                </div>
-                  <div class="w3-brown w3-padding tebal flo">Jadi, panjang diameter bola adalah <m>26\sqrt2</m> cm.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-              </div>
-          </details>
-          <hr>
+
+    <!-- Pagination Atas (Otomatis) -->
+    <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+    <!-- ================= DAFTAR 10 SOAL ================= -->
+
+    <!-- SOAL 1 -->
+    <article class="soal-item" id="1">
+      <div class="soal-no"></div>
+      <div class="soal-teks">
+        Sebuah bola dimasukkan ke dalam tabung, diameter bola sama dengan diameter tabung = <e>3,5 cm,</e> tinggi tabung
+        di luar bola adalah <e>10 cm,</e> maka volume tabung di luar bola adalah ....
+        <ol class="pilgan">
+          <li>\(205\dfrac13\text{ cm}^3\)</li>
+          <li>\(250\dfrac23\text{ cm}^3\)</li>
+          <li>\(225\dfrac25\text{ cm}^3\)</li>
+          <li>\(225\dfrac35\text{ cm}^3\)</li>
+          <li>\(204\dfrac13\text{ cm}^3\)</li>
+        </ol>
       </div>
+      <div class="soal-sumber"><a href="https://t.me/MatematikaZoneId/212" target="_blank"
+          rel="noopener noreferrer">Matematika Zone Id</a></div>
+      <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+      <div class="pembahasan-box">
+        <div class="pembahasan-title">Pembahasan:</div>
+        <div class="pembahasan-isi">
+          Jari-jari: <e>\(r = 3{,}5 = \dfrac72\text{ cm}\)</e><br><br>
 
+          <strong>Volume tabung:</strong><br>
+          \(\begin{aligned}
+          V_t&=\pi r^2t\\[4pt]
+          &=\dfrac{22}{7}\cdot\dfrac{7}{2}\cdot\dfrac{7}{2}\cdot10\\[4pt]
+          &=11\cdot\dfrac72\cdot10\\[4pt]
+          &=385\text{ cm}^3
+          \end{aligned}\)<br><br>
 
-    <br><br><div class="navi w3-hide w3-bar w3-border w3-round"></div>
-<script>soal(barusile,1,1)</script>    
-   </div>
-   </body>
-   <script defer src="scriptfoot.js"></script>
-</html> 
+          <strong>Volume bola:</strong><br>
+          \(\begin{aligned}
+          V_b&=\dfrac43\pi r^3\\[4pt]
+          &=\dfrac43\cdot\dfrac{22}{7}\cdot\dfrac{7}{2}\cdot\dfrac{7}{2}\cdot\dfrac{7}{2}\\[4pt]
+          &=\dfrac{539}{3}\\[4pt]
+          &=179\dfrac23\text{ cm}^3
+          \end{aligned}\)<br><br>
+
+          <strong>Volume tabung di luar bola:</strong><br>
+          \(\begin{aligned}
+          V&=V_t-V_b\\[4pt]
+          &=385-179\dfrac23\\[4pt]
+          &=206-\dfrac23\\[4pt]
+          &=\color{blue}\boxed{\boxed{\color{black}205\dfrac13\text{ cm}^3}}
+          \end{aligned}\)
+          <div class="kesimpulan">Jadi, volume tabung di luar bola adalah \(205\dfrac13\text{ cm}^3\).<br><b>JAWAB: A</b></div>
+        </div>
+        <button class="btn-tutup">TUTUP</button>
+      </div>
+    </article>
+
+    <!-- SOAL 2 -->
+    <article class="soal-item" id="2">
+      <div class="soal-no"></div>
+      <div class="soal-teks">
+        Tinggi dan jari-jari suatu kerucut sama dengan jari-jari sebuah bola. Jika panjang garis pelukis kerucut
+        <e>26 cm,</e> panjang diameter bola adalah ....
+        <ol class="pilgan pilgan-5kolom">
+          <li>13 cm</li>
+          <li>\(13\sqrt2\text{ cm}\)</li>
+          <li>26 cm</li>
+          <li>\(26\sqrt2\text{ cm}\)</li>
+        </ol>
+      </div>
+      <div class="soal-sumber"><a href="https://t.me/MatematikaZoneId/214" target="_blank"
+          rel="noopener noreferrer">Matematika Zone Id</a></div>
+      <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+      <div class="pembahasan-box">
+        <div class="pembahasan-title">Pembahasan:</div>
+        <div class="pembahasan-isi">
+          Diketahui: <e><em>t</em> = <em>r</em></e> dan garis pelukis <e><em>s</em> = 26 cm.</e><br><br>
+          Pada kerucut:
+          \(\begin{aligned}
+          r^2+t^2&=s^2\\
+          r^2+r^2&=26^2\\
+          2r^2&=676\\
+          r^2&=\dfrac{676}2 = 338\\
+          r&=\sqrt{338} = 13\sqrt2\text{ cm}
+          \end{aligned}\)<br><br>
+          Karena jari-jari bola sama dengan jari-jari kerucut, maka diameter bola adalah:
+          \(\begin{aligned}
+          d&=2r\\
+          &=2\cdot13\sqrt2\\
+          &=\color{blue}\boxed{\boxed{\color{black}26\sqrt2\text{ cm}}}
+          \end{aligned}\)
+          <div class="kesimpulan">Jadi, panjang diameter bola adalah \(26\sqrt2\text{ cm}\).<br><b>JAWAB: D</b></div>
+        </div>
+        <button class="btn-tutup">TUTUP</button>
+      </div>
+    </article>
+
+    <!-- Pagination Bawah (Otomatis) -->
+    <div class="pagination-wrapper"></div>
+  </main>
+
+  <script src="../../scr/script.js"></script>
+</body>
+
+</html>

@@ -1,71 +1,191 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exercise Zone : Grafik Fungsi Trigonometri</title>
-<script defer src="../mathjax/tex-mml-chtml.js"></script>
-<link rel="stylesheet" href="../w3.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-<script src="skrip.js"></script>
-<script src="../matematikin.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Grafik Fungsi Trigonometri</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
+
 <body>
-	<br>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
 
-<div class="w3-container" style="background-color: papayawhip">
-  <div class="separator w3-hide" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir5eaoOh-hNyWezkQGAsvuSjYUrWeW6WatH3RX-ACUu0L8ussfq5bOJXh_neZzn3oQG28OTLQz-Zr6WFTYlA8ptpVEgBPUDKg0GqOWzertCkzpPx259dWHwxSSJIg7v7xninvm3kI-NuNHpLyPWm8wQ-UVeLwXlXfKg6lMieSvg8K-AOyG5prhYZjVow/s1080/grafik%20fungsi%20trigonometri%20dasar.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir5eaoOh-hNyWezkQGAsvuSjYUrWeW6WatH3RX-ACUu0L8ussfq5bOJXh_neZzn3oQG28OTLQz-Zr6WFTYlA8ptpVEgBPUDKg0GqOWzertCkzpPx259dWHwxSSJIg7v7xninvm3kI-NuNHpLyPWm8wQ-UVeLwXlXfKg6lMieSvg8K-AOyG5prhYZjVow/s320/grafik%20fungsi%20trigonometri%20dasar.png"/></a></div>
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Grafik Fungsi Trigonometri</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-  <br>
-  <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-  <br>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Grafik Fungsi Trigonometri</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-  <div id="1" class="justify">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      <script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-post="MatematikaZoneIdGrup/5360" data-width="100%"></script>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/5360" target="_blank" rel="noopener noreferrer">Matematika Zone id</a></div>
-      <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><e><em>x</em><sub>1</sub> = 0</e>, <e><em>x</em><sub>2</sub> = 2&pi;</e>, <e>y<sub>1</sub> = &minus;1</e>, <e>y<sub>2</sub> = 3</e><br /><br />
-                \(\eqalign{
-                a&amp;=\dfrac{y_2-y_1}2\\
-                &amp;=\dfrac{3-(-1)}2\\
-                &amp;=\dfrac42\\
-                &amp;=2
-                }\)<br /><br />
-                \(\eqalign{
-                b&amp;=\dfrac{2\pi}{x_2-x_1}\\
-                &amp;=\dfrac{2\pi}{2\pi-0}\\
-                &amp;=1
-                }\)<br /><br />
-                \(\eqalign{
-                c&amp;=\dfrac{y_2+y_1}2\\
-                &amp;=\dfrac{3+(-1)}2\\
-                &amp;=\dfrac22\\
-                &amp;=1
-                }\)<br /><br />
-                Persamaanya,<br />
-                \(\eqalign{
-                y&amp;=a\cos b(x-x_1)+c\\
-                &amp;=2\cos 1(x-0)+1\\
-                &amp;=\boxed{\boxed{2\cos x+1}}
-                }\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, persamaannya adalah <e>2 cos <em>x</em> + 1</e>.<br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-      </details>
-      <hr>
-  </div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
+        <!-- ================= DAFTAR 10 SOAL ================= -->
 
-  <br><br>  <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-  <script>soal(grafutri,1,1)</script>
-</div>
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Persamaan grafik fungsi pada gambar berikut adalah ....</p>
+                <div id="grafik-trigono" class="grafik-container" style="display:flex; justify-content:center; margin:15px 0;"></div>
+                <ol class="pilgan">
+                    <li>\(y = 2\sin x + 1\)</li>
+                    <li>\(y = 2\sin x - 1\)</li>
+                    <li>\(y = 2\cos x + 1\)</li>
+                    <li>\(y = 2\cos x - 1\)</li>
+                    <li>\(y = \cos 2x + 1\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/5360" target="_blank" rel="noopener noreferrer">Matematika Zone Indonesia</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Berdasarkan grafik fungsi trigonometri pada gambar:</p>
+                    <ul>
+                        <li>Nilai maksimum grafik adalah \(y_{\text{maks}} = 3\) yang dicapai pada absis \(x = 0\) dan \(x = 2\pi\).</li>
+                        <li>Nilai minimum grafik adalah \(y_{\text{min}} = -1\) yang dicapai pada absis \(x = \pi\).</li>
+                    </ul>
+
+                    <p><strong>1. Menentukan Amplitudo (\(a\)):</strong></p>
+                    \[
+                    a = \dfrac{y_{\text{maks}} - y_{\text{min}}}{2} = \dfrac{3 - (-1)}{2} = \dfrac{4}{2} = 2
+                    \]
+
+                    <p><strong>2. Menentukan Pergeseran Vertikal (\(c\)):</strong></p>
+                    \[
+                    c = \dfrac{y_{\text{maks}} + y_{\text{min}}}{2} = \dfrac{3 + (-1)}{2} = \dfrac{2}{2} = 1
+                    \]
+
+                    <p><strong>3. Menentukan Periode (\(T\)) dan Frekuensi Gelombang (\(b\)):</strong></p>
+                    <p>
+                        Satu siklus gelombang penuh terbentuk dari interval \(x = 0\) sampai \(x = 2\pi\), sehingga periodenya adalah:
+                        \[
+                        T = 2\pi - 0 = 2\pi
+                        \]
+                        Nilai \(b\) dirumuskan sebagai:
+                        \[
+                        b = \dfrac{2\pi}{T} = \dfrac{2\pi}{2\pi} = 1
+                        \]
+                    </p>
+
+                    <p><strong>4. Menentukan Persamaan Fungsi:</strong></p>
+                    <p>
+                        Karena saat \(x = 0\) nilai kurva berada di titik puncaknya (maksimum), kurva ini mengikuti pola dasar fungsi kosinus \(y = a\cos(b(x - x_1)) + c\) tanpa pergeseran fase horizontal (\(x_1 = 0\)):
+                    </p>
+                    \[\begin{aligned}
+                    y &= a\cos(b(x - x_1)) + c \\
+                    &= 2\cos(1(x - 0)) + 1 \\
+                    &= 2\cos x + 1
+                    \end{aligned}\]
+
+                    <div class="kesimpulan">Jadi, persamaan grafik fungsi pada gambar di atas adalah \(y = 2\cos x + 1\).<br><b>JAWAB: C</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+            <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const W = 460;
+                const H = 260;
+                const geo = new GeoSVG("grafik-trigono", W, H, { margin: 15 });
+
+                const ox = 55;
+                const oy = 185;
+                const scaleX = 52;
+                const scaleY = 38;
+
+                const toSvg = (x, y) => [ox + x * scaleX, oy - y * scaleY];
+
+                // Garis Sumbu X & Y
+                geo.buatSegmen([ox - 20, oy], [ox + 2 * Math.PI * scaleX + 30, oy], { strokeWidth: 1.5, stroke: "#333" });
+                geo.buatSegmen([ox, oy + 1.5 * scaleY], [ox, oy - 3.5 * scaleY], { strokeWidth: 1.5, stroke: "#333" });
+
+                // Label Sumbu
+                geo.buatTeks(ox + 2 * Math.PI * scaleX + 35, oy + 4, "x", { fontSize: "14px", fill: "#333", fontWeight: "bold" });
+                geo.buatTeks(ox - 5, oy - 3.5 * scaleY - 8, "y", { fontSize: "14px", fill: "#333", fontWeight: "bold" });
+                geo.buatTeks(ox - 12, oy + 15, "0", { fontSize: "12px", fill: "#666" });
+
+                // Ticks sumbu Y
+                [-1, 1, 2, 3].forEach(val => {
+                    const [px, py] = toSvg(0, val);
+                    geo.buatSegmen([px - 4, py], [px + 4, py], { strokeWidth: 1, stroke: "#666" });
+                    geo.buatTeks(px - 10, py, val.toString(), { position: "middle-right", fontSize: "12px", fill: "#444" });
+                });
+
+                // Ticks sumbu X
+                const xTicks = [
+                    { val: Math.PI / 2, label: "π/2" },
+                    { val: Math.PI, label: "π" },
+                    { val: 3 * Math.PI / 2, label: "3π/2" },
+                    { val: 2 * Math.PI, label: "2π" }
+                ];
+
+                xTicks.forEach(t => {
+                    const [px, py] = toSvg(t.val, 0);
+                    geo.buatSegmen([px, py - 4], [px, py + 4], { strokeWidth: 1, stroke: "#666" });
+                    geo.buatTeks(px, py + 16, t.label, { position: "top-center", fontSize: "12px", fill: "#444" });
+                });
+
+                // Garis putus-putus ke titik ekstrem
+                const [pPi, pMin1] = toSvg(Math.PI, -1);
+                geo.buatSegmen([pPi, oy], [pPi, pMin1], { strokeWidth: 1, dashed: true, stroke: "#0284c7" });
+                geo.buatSegmen([ox, pMin1], [pPi, pMin1], { strokeWidth: 1, dashed: true, stroke: "#0284c7" });
+
+                const [p2Pi, pTop] = toSvg(2 * Math.PI, 3);
+                geo.buatSegmen([p2Pi, oy], [p2Pi, pTop], { strokeWidth: 1, dashed: true, stroke: "#0284c7" });
+                geo.buatSegmen([ox, pTop], [p2Pi, pTop], { strokeWidth: 1, dashed: true, stroke: "#0284c7" });
+
+                // Garis horizontal garis tengah (y = 1) putus-putus
+                const [xStart, yMid] = toSvg(0, 1);
+                const [xEnd, yMidEnd] = toSvg(2 * Math.PI, 1);
+                geo.buatSegmen([xStart, yMid], [xEnd, yMidEnd], { strokeWidth: 1, dashed: "4 4", stroke: "#cbd5e1" });
+
+                // Plot Kurva Kosinus y = 2 cos(x) + 1
+                const curvePoints = [];
+                const steps = 120;
+                for (let i = 0; i <= steps; i++) {
+                    const x = (i / steps) * 2 * Math.PI;
+                    const y = 2 * Math.cos(x) + 1;
+                    curvePoints.push(toSvg(x, y));
+                }
+                geo.buatPolyline(curvePoints, { stroke: "#2563eb", strokeWidth: 2.5 });
+
+                // Titik-titik penting
+                geo.buatTitik(toSvg(0, 3), { size: 3.5, color: "#1e40af" });
+                geo.buatTitik(toSvg(Math.PI / 2, 1), { size: 3, color: "#1e40af" });
+                geo.buatTitik(toSvg(Math.PI, -1), { size: 3.5, color: "#1e40af" });
+                geo.buatTitik(toSvg(3 * Math.PI / 2, 1), { size: 3, color: "#1e40af" });
+                geo.buatTitik(toSvg(2 * Math.PI, 3), { size: 3.5, color: "#1e40af" });
+            });
+            </script>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
+
+</html>

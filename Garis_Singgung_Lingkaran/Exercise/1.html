@@ -1,73 +1,116 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>Exercise Zone : Garis Singgung Lingkaran</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../katex/katex.css">
-      <script src="../katex/katex.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-   </head> 
-     <body>
-        <div class="w3-container">
-            <img alt="" class="w3-hide" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE6b6v7pfT1ShBEskdydrZJC29cuyaIWqd5gvcYbmWfeg_IGVvVG8jUi25KdysA7NFKuShIR6tQd9eWo7y414XkPIuN_LPX9rGJkhmD-JPCcrFAvydOHr1U8hVsGom5pebvWN2eYiq1b3hNiHziqBY0rbUQQKEhbNyt6RDYkqO-mahXVg8om52_qoC/s320/garis%20singgung%20lingkaran%20standar.png"/>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Garis Singgung Lingkaran</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-      <h3>Tipe: </h3>
-        <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-        <br>
-        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-        <br>
-    
-    <div class="justify" id="1">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Tentukan persamaan garis singgung lingkaran <e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> &minus; 4<em>x</em> &minus; 6<em>y</em> &minus; 27 = 0</e> pada titik (8, 5)
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://brainly.co.id/tugas/38505337" target="_blank" rel="noopener noreferrer">brainly.co.id</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo">\begin{aligned}x_1x+y_1y-\dfrac42(x+x_1)-\dfrac62(y+y_1)-27&=0\\8x+5y-2(x+8)-3(y+5)-27&=0\\8x+5y-2x-16-3y-15-27&=0\\6x+2y-58&=0\\3x+y-29&=0\end{aligned}</div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, persamaan garis singgung lingkaran <em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> &minus; 4<em>x</em> &minus; 6<em>y</em> &minus; 27 = 0 pada titik (8, 5) adalah 3<em>x</em> + <em>y</em> &minus; 29 = 0.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Garis Singgung Lingkaran</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Garis Singgung Lingkaran</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR 10 SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Tentukan persamaan garis singgung lingkaran \(x^2 + y^2 - 4x - 6y - 27 = 0\) pada titik \((8, 5)\).</p>
             </div>
-        </details>
-        <hr>
-    </div>
-
-    <div class="justify" id="2">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        <div id="so2"></div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="#" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo" id="jaw2"></div>
-                <div class="w3-brown w3-padding tebal flo" id="jd2"></div>
+            <div class="soal-sumber"><a href="https://brainly.co.id/tugas/38505337" target="_blank" rel="noopener noreferrer">brainly.co.id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Persamaan garis singgung lingkaran \(x^2 + y^2 + Ax + By + C = 0\) pada titik \((x_1, y_1)\) yang terletak pada lingkaran dirumuskan oleh persamaan bagi adil:
+                    \[
+                    x_1 x + y_1 y + \dfrac{A}{2}(x + x_1) + \dfrac{B}{2}(y + y_1) + C = 0
+                    \]
+                    Dari persamaan lingkaran \(x^2 + y^2 - 4x - 6y - 27 = 0\), diketahui:
+                    \[
+                    A = -4, \quad B = -6, \quad C = -27
+                    \]
+                    Substitusikan titik \((x_1, y_1) = (8, 5)\):
+                    \[\begin{aligned}
+                    x_1 x + y_1 y - \dfrac{4}{2}(x + x_1) - \dfrac{6}{2}(y + y_1) - 27 &= 0 \\
+                    8x + 5y - 2(x + 8) - 3(y + 5) - 27 &= 0 \\
+                    8x + 5y - 2x - 16 - 3y - 15 - 27 &= 0 \\
+                    6x + 2y - 58 &= 0 \quad (\text{kedua ruas dibagi } 2) \\
+                    3x + y - 29 &= 0
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, persamaan garis singgung lingkaran \(x^2 + y^2 - 4x - 6y - 27 = 0\) pada titik \((8, 5)\) adalah \(3x + y - 29 = 0\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
             </div>
-        </details>
-        <hr>
-    </div>
+        </article>
 
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Tentukan persamaan garis singgung lingkaran \(x^2 + y^2 + 6x - 8y - 4 = 0\) pada titik \((2, 2)\).</p>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Periksa kedudukan titik \((2, 2)\) terhadap lingkaran:
+                    \[
+                    2^2 + 2^2 + 6(2) - 8(2) - 4 = 4 + 4 + 12 - 16 - 4 = 0
+                    \]
+                    Karena bernilai \(0\), maka titik \((2, 2)\) terletak pada lingkaran.
+                    <br><br>
+                    Persamaan garis singgung pada titik \((x_1, y_1) = (2, 2)\):
+                    \[\begin{aligned}
+                    x_1 x + y_1 y + \dfrac{6}{2}(x + x_1) - \dfrac{8}{2}(y + y_1) - 4 &= 0 \\
+                    2x + 2y + 3(x + 2) - 4(y + 2) - 4 &= 0 \\
+                    2x + 2y + 3x + 6 - 4y - 8 - 4 &= 0 \\
+                    5x - 2y - 6 &= 0
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, persamaan garis singgung lingkaran \(x^2 + y^2 + 6x - 8y - 4 = 0\) pada titik \((2, 2)\) adalah \(5x - 2y - 6 = 0\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-    <br>
-        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-        <br>
-<script>soal(gasingling,1,1);
-var no2 = [2*acan(2,10),2*acan(2,10),plmi(acan(2,9)),plmi(acan(2,9))];
-no2[4] = -1*(no2[2]*no2[2]+no2[3]*no2[3]+no2[0]*no2[2]+no2[1]*no2[3])
-document.getElementById("so2").innerHTML = String.raw`Tentukan persamaan garis singgung lingkaran <e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + ${no2[0]}<em>x</em> + ${no2[1]}</span><em>y</em> ${tanda2(no2[4])} = 0</e> pada titik (${tanda3(no2[2])}, ${tanda3(no2[3])})<br><i>Note: angka pada soal ini akan berubah jika kamu muat ulang halaman.</i>`;
-document.getElementById("jaw2").innerHTML = String.raw`\begin{aligned}
-x_1x+y_1y+\dfrac{${no2[0]}}2\left(x+x_1\right)+\dfrac{${no2[1]}}2\left(y+y_1\right)${tanda1(no2[4])}&=0\\
-${no2[2]}x${tanda1(no2[3])}y+${no2[0]/2}\left(x${tanda1(no2[2])}\right)+${no2[1]/2}\left(y${tanda1(no2[3])}\right)${tanda1(no2[4])}&=0\\
-${no2[2]}x${tanda1(no2[3])}y+${no2[0]/2}x${tanda1(no2[2]*no2[0]/2)}+${no2[1]/2}y${tanda1(no2[3]*no2[1]/2)}${tanda1(no2[4])}&=0\\
-${no2[2]+no2[0]/2}x${tanda1(no2[3]+no2[1]/2)}y${tanda1(no2[2]*no2[0]/2+no2[3]*no2[1]/2+no2[4])}&=0
-\end{aligned}`;
-document.getElementById("jd2").innerHTML = String.raw`Jadi, persamaan garis singgung lingkaran <e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + ${no2[0]}<em>x</em> + ${no2[1]}</span><em>y</em> ${tanda2(no2[4])} = 0</e> pada titik (${tanda3(no2[2])}, ${tanda3(no2[3])}) adalah <e>${tanda3(no2[2]+no2[0]/2)}<em>x</em> ${tanda2(no2[3]+no2[1]/2)}<em>y</em> ${tanda2(no2[2]*no2[0]/2+no2[3]*no2[1]/2+no2[4])} = 0</e>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button>`;
-</script>    
-   </div>
-   </body>
-</html> 
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>

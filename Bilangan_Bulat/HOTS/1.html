@@ -1,307 +1,395 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HOTS Zone : Bilangan Bulat</title>
-<script defer src="../mathjax/tex-mml-chtml.js"></script>
-<link rel="stylesheet" href="../katex/katex.css">
-<script src="../katex/katex.js"></script>
-<link rel="stylesheet" href="../w3.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-<script src="skrip.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTS - Bilangan Bulat</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<br>
 
-<div class="container" style="background-color: papayawhip">
-    <img class="w3-hide" data-original-height="1111" data-original-width="1111" height="320" src="https://3.bp.blogspot.com/-JaXW45lGWi0/WV9UWh-QhMI/AAAAAAAAAOQ/mS-GISVptkUrid8mayLRSL9i1TxPYvGyQCLcBGAs/s320/bilangan%2Bbulat%2Bblog.jpg" width="320" alt="tes"/>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Bilangan Bulat</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
 
-    <h3>Tipe: </h3>
-    <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">Standar</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SBMPTN</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
-    <br>
-    <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-    <br>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Bilangan Bulat</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-  <div id="1" class="justify">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Berapakah bilangan bulat positif terbesar yang membagi semua bilangan 1<sup>5</sup> &minus; 1, 2<sup>5</sup> &minus; 2, &ctdot;, <em>n</em><sup>5</sup> &minus; <em>n</em>?
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://forummatematika.freeforums.net/thread/38/" target="_blank" rel="noopener noreferrer">OSP SMA 2002</a></div>
-      <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">1<sup>5</sup> &minus; 1 = 0<br />
-                2<sup>5</sup> &minus; 2 = 30<br />
-                Untuk <em>n</em> &gt; 2 maka <em>n</em><sup>5</sup> &minus; <em>n</em> &gt; 30<br />
-                <br />
-                <em>n</em><sup>5</sup> &minus; <em>n</em> = (<em>n</em> &minus; 1)n(<em>n</em> + 1)(<em>n</em><sup>2</sup> + 1)<br />
-                <br />
-                (<em>n</em> &minus; 1)<em>n</em>(<em>n</em> + 1) habis dibagi 6.<br />
-                <br />
-                Kita periksa apakah <em>n</em><sup>5</sup> &minus; <em>n</em> habis dibagi 5.<br />
-                <ul><li>Untuk <em>n</em> = 2 (mod 5)<br>
-                \(\begin{aligned}
-                n^5-n&amp;=(n-1)n(n+1)\left(n^2+1\right)\\
-                &amp;=(1)(2)(3)(5)\pmod5\\
-                &amp;=0\pmod5
-                \end{aligned}\)
-                </li>
-                <li>Untuk <em>n</em> = 3 (mod 5)<br>
-                \(\begin{aligned}
-                n^5-n&amp;=(n-1)n(n+1)\left(n^2+1\right)\\
-                &amp;=(2)(3)(4)(10)\pmod5\\
-                &amp;=0\pmod5
-                \end{aligned}\)
-                </li>
-                </ul>Terbukti bahwa <em>n</em><sup>5</sup> &minus; <em>n</em> habis dibagi 5.</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, bilangan bulat positif terbesar yang membagi semua bilangan 1<sup>5</sup> &minus; 1, 2<sup>5</sup> &minus; 2, &ctdot;, <em>n</em><sup>5</sup> &minus; <em>n</em> adalah 30.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-      </details>
-      <hr>
-  </div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-  <div id="2" class="justify">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Boruto menulis bilangan dari 998 sampai 1001. lalu ia menjumlahkan seluruh angka pada bilangan tersebut, sehingga didapat <e>9 + 9 + 8 + 9 + 9 + 9 + 1 + 0 + 0 + 0 + 1 + 0 + 0 + 1 = 56.</e> Jika Boruto menuliskan bilangan dari 1 sampai 2017, maka tentukan jumlah dari seluruh angka pada bilangan yang Boruto tulis. 
-      <div class="w3-row">
-          <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                  <li>25732</li>
-                  <li>28117</li>
-              </ol>
-          </div>
-          <div class="w3-col s6">
-              <ol class="pas1" start="3" type="A">
-                  <li>30125</li>
-                  <li>41739</li>
-              </ol>
-          </div>
-      </div>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/IrfBo2FOZ4YGf5ku3BmXqG" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
-      <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><table class="tengah"><tbody>
-                <tr style="background-color: gold;"><td style="white-space: nowrap;">Angka</td><td style="white-space: nowrap;">Semua (0-9)</td><td style="white-space: nowrap;">2 (posisi ribuan)</td><td style="white-space: nowrap;">Semua (0-9) (posisi satuan)</td><td style="white-space: nowrap;">1 (posisi puluhan)</td><td style="white-space: nowrap;">0-7 (posisi satuan)</td></tr>
-                <tr><td style="background-color: gold; white-space: nowrap;">Pada Bilangan</td><td>1-1999</td><td>2000-2017</td><td>2000-2009</td><td>2010-2017</td><td>2010-2017</td></tr>
-                <tr><td style="background-color: gold; white-space: nowrap;">Jumlah Angka</td><td><div style="overflow-x: auto; white-space: nowrap;">2&sdot;45&sdot;3&sdot;10<sup>3 &minus; 1</sup> + 1000 = 28000</div></td><td><div style="overflow-x: auto;">2&sdot;18 = 36</div></td><td>45</td><td>8</td><td>28</td></tr>
-                </tbody></table>28000 + 36 + 45 + 8 + 28 = 28117</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, jumlah dari seluruh angka pada bilangan yang Boruto tulis adalah 28117.<br><b>JAWAB: B</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-      </details>
-      <hr>
-  </div>
+        <!-- ================= DAFTAR 10 SOAL ================= -->
 
-  <div id="3" class="justify">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Hitunglah (723 + 5)<sup>2</sup> &minus; (723<sup>2</sup> + 5<sup>2</sup>)
-      <div class="w3-row">
-          <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                  <li>723</li>
-                  <li>1446</li>
-              </ol>
-          </div>
-          <div class="w3-col s6">
-              <ol class="pas1" start="3" type="A">
-                  <li>3615</li>
-                  <li>7230</li>
-              </ol>
-          </div>
-      </div>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/IrfBo2FOZ4YGf5ku3BmXqG" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-      <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\begin{aligned}
-                (723+5)^2-\left(723^2+5^2\right)&amp;=\cancel{723^2}+2\cdot723\cdot5+\cancel{5^2}-\cancel{723^2}-\cancel{5^2}\\
-                &amp;=\boxed{\boxed{7230}}
-                \end{aligned}</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, (723 + 5)<sup>2</sup> &minus; (723<sup>2</sup> + 5<sup>2</sup>) = 7230.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-      </details>
-      <hr>
-  </div>
-
-  <div id="4" class="justify">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Jika <em>m</em> bilangan bulat positif, tentukan nilai <em>m</em> yang menyebabkan 2002 : (<em>m</em><sup>2</sup> &minus; 2) juga merupakan bilangan bulat positif!
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href=https://chat.whatsapp.com/IrfBo2FOZ4YGf5ku3BmXqG" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-      <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">Karena 2002 = 2&sdot;7&sdot;11&sdot;13, maka <em>m</em><sup>2</sup> &minus; 2 harus sama dengan nilai salah satu faktor atau hasil kali sebagian atau seluruh faktor tersebut.<br />
-                Dan yang memenuhi <em>m</em> sebagai bilangan bulat positif adalah :<br />
-                <em>m</em><sup>2</sup> &minus; 2 = 2, dengan <em>m</em> = 2<br />
-                <em>m</em><sup>2</sup> &minus; 2 = 7, dengan <em>m</em> = 3<br />
-                <em>m</em><sup>2</sup> &minus; 2 = 14, dengan <em>m</em> = 4</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <em>m</em> = 2, 3, atau 4.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-      </details>
-      <hr>
-  </div>
-
-  <div id="5" class="justify">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Nomor polisi mobil di sebuah negara selalu berupa bilangan 4 angka. Selain itu, jumlah keempat angka pada setiap nomor juga harus habis dibagi 5. Nomor polisi terbesar yang diperbolehkan negara itu adalah .... 
-      <div class="w3-row">
-          <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                  <li>9999</li>
-                  <li>9998</li>
-              </ol>
-          </div>
-          <div class="w3-col s6">
-              <ol class="pas1" start="3" type="A">
-                  <li>9995</li>
-                  <li>9990</li>
-              </ol>
-          </div>
-      </div>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/IrfBo2FOZ4YGf5ku3BmXqG" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-      <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">Misal bilangannya adalah 999<em>A</em>, sehingga jumlah keempat angkanya adalah 27 + <em>A</em>. nilai <em>A</em> terbesar agar 27 + <em>A</em> habis dibagi 5 adalah 8.</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, nomor polisi terbesar yang diperbolehkan negara itu adalah 9998.<br><b>JAWAB: B</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-      </details>
-      <hr>
-  </div>
-
-  <div id="6" class="justify">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Enam bilangan berurutan ditulis pada papan tulis. Ketika satu dari enam bilangan tersebut dihapus, maka jumlah dari lima bilangan tersisa adalah 2019. Berapakah jumlah dari digit-digit yang dihapus?
-      <div class="w3-row">
-          <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                  <li>4</li>
-                  <li>5</li>
-                  <li>6</li>
-              </ol>
-          </div>
-          <div class="w3-col s6">
-              <ol class="pas1" start="4" type="A">
-                  <li>7</li>
-                  <li>8</li>
-              </ol>
-          </div>
-      </div>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/IrfBo2FOZ4YGf5ku3BmXqG" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-      <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">Bilangan-bilangannya adalah <em>a</em>,  <em>a</em> + 1, <em>a</em> + 2, <em>a</em> + 3, <em>a</em> + 4, dan <em>a</em> + 5.<br />
-                Misal bilangan yang dihapus adalah <em>a</em> + <em>k</em>, dengan <em>k</em> &in; {0, 1, 2, 3, 4, 5}.
-                \begin{aligned}
-                a+a+1+a+2+a+3+a+4+a+5-(a+k)&=2019\\
-                5a+15-k&=2019\\
-                a&=\dfrac{2004+k}5
-                \end{aligned}
-                Cari nilai <em>k</em> sehingga 2004 + <em>k</em> habis dibagi 5. Didapat <e><em>k</em> = 1 &longrightarrow; <em>a</em> = 401</e>. <br>
-                Bilangan yang dihapus adalah<br />
-                <em>a</em> + <em>k</em> = 401 + 1 = 402<br />
-                4 + 0 + 2 = 6</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, jumlah dari digit-digit yang dihapus adalah 6.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-      </details>
-      <hr>
-  </div>
-
-  <div id="7" class="justify">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Jumlah semua bilangan yang selisih antara bilangan tersebut dan jumlah digit-digit penyusunnya sama dengan 2016 adalah ....
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://www.academia.edu/41448724/SOAL_1_PERSIAPAN_OLIMPIADE_MATEMATIKA_SMA" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-      <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">Misal bilangan <em>x</em> ditulis dalam bentuk <m>\overline{\cdots X_4X_3X_2X_1}</m>, dimana <em>X</em><sub>1</sub> menyatakan satuan, <em>X</em><sub>2</sub> menyatakan puluhan dan seterusnya.<br>
-                <m>\overline{\cdots X_4X_3X_2X_1}=\cdots+1000X_4+100X_3+10X_2+X_1</m>
-                \begin{aligned}
-                \left(\cdots+1000X_4+100X_3+10X_2+X_1\right)-\left(\cdots+X_4+X_3+X_2+X_1\right)&=2016\\
-                \cdots+999X_4+99X_3+9X_2&=2016\\
-                \cdots+111X_4+11X_3+X_2&=224
-                \end{aligned}
-                Kita lihat bahwa bilangannya tidak mungkin 5 digit atau lebih. Kita tahu bahwa nilai terbesar dari 11<em>X</em><sub>3</sub> + <em>X</em><sub>2</sub> adalah 108 sehingga didapat bilangannya mempunyai 4 digit.<br>
-                Jika <em>X</em><sub>4</sub> = 1, nilai terbesar 111<em>X</em><sub>4</sub> + 11<em>X</em><sub>3</sub> + <em>X</em><sub>2</sub> adalah 219. Didapat <em>X</em><sub>4</sub> = 2, <em>X</em><sub>3</sub> = 0, <em>X</em><sub>2</sub> = 2, dan <em>X</em><sub>1</sub> &in; {0, 1, 2, &ctdot;, 9}.<br>
-                Jumlah semua bilangan dari 2020 hingga 2029 adalah 
-                \begin{aligned}
-                \frac{10}2(2020+2029)=20245
-                \end{aligned} 
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Berapakah bilangan bulat positif terbesar yang membagi semua bilangan \(1^5 - 1, 2^5 - 2, \dots, n^5 - n\)?
             </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, jumlah semua bilangan yang selisih antara bilangan tersebut dan jumlah digit-digit penyusunnya sama dengan 2016 adalah 20245.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-      </details>
-      <hr>
-  </div>
+            <div class="soal-sumber"><a href="https://forummatematika.freeforums.net/thread/38/" target="_blank" rel="noopener noreferrer">OSP SMA 2002</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Uji untuk nilai \(n = 2\):</p>
+                    \[
+                    2^5 - 2 = 32 - 2 = 30
+                    \]
+                    <p>Maka faktor persekutuan terbesar yang mungkin tidak lebih dari 30. Sekarang faktorkan bentuk umum \(n^5 - n\):</p>
+                    \[
+                    \begin{aligned}
+                    n^5 - n &= n(n^4 - 1) \\
+                    &= n(n^2 - 1)(n^2 + 1) \\
+                    &= (n - 1)n(n + 1)(n^2 + 1)
+                    \end{aligned}
+                    \]
+                    <ul>
+                        <li>Perkalian tiga bilangan bulat berurutan \((n - 1)n(n + 1)\) selalu habis dibagi oleh \(3! = 6\).</li>
+                        <li>Menurut Teorema Kecil Fermat, \(n^5 \equiv n \pmod 5\), sehingga \(n^5 - n\) selalu habis dibagi 5 untuk setiap bilangan bulat \(n\).</li>
+                    </ul>
+                    <p>Karena habis dibagi 6 dan habis dibagi 5, serta \(\gcd(6, 5) = 1\), maka \(n^5 - n\) selalu habis dibagi oleh \(6 \times 5 = 30\).</p>
+                    <div class="kesimpulan">Jadi, bilangan bulat positif terbesar yang membagi semua bilangan tersebut adalah 30.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <div class="justify" id="8">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Banyak pasangan bilangan bulat <em>a</em>, <em>b</em> yang memenuhi
-    <div class="tengah">(<em>a</em> &minus; 2)(<em>b</em> &minus; 2) = 60</div>
-    adalah ....
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Modul Siswa Olimpiade Matematika Tingkat Sekolah</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">Faktor prima dari 60 adalah <e>60 = 2<sup>2</sup> &times; 3 &times; 5</e><br>
-                Banyak faktor positif dari 60 adalah <e>3 &times; 2 &times; 2 = 12</e><br>
-            Banyak faktor dari 60 adalah <e>2 &times; 12 = 24</e><br>
-            Banyak pasangan bulat <em>a</em>, <em>b</em> yang memenuhi sama dengan banyak faktor dari 60,
-            akibatnya banyak pasangan bulat <em>a</em>, <em>b</em> adalah 24</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, banyak pasangan bilangan bulat <em>a</em>, <em>b</em> yang memenuhi
-                <div class="tengah">(<em>a</em> &minus; 2)(<em>b</em> &minus; 2) = 60</div>
-                adalah 24.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-  </div>
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Boruto menulis bilangan dari 998 sampai 1001, lalu ia menjumlahkan seluruh angka pada bilangan tersebut sehingga didapat \(9 + 9 + 8 + 9 + 9 + 9 + 1 + 0 + 0 + 0 + 1 + 0 + 0 + 1 = 56\). Jika Boruto menuliskan bilangan dari 1 sampai 2017, maka tentukan jumlah dari seluruh angka pada bilangan yang Boruto tulis!
+                <ol class="pilgan pilgan-5kolom">
+                    <li>25732</li>
+                    <li>28117</li>
+                    <li>30125</li>
+                    <li>41739</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Bagi rentang bilangan menjadi beberapa bagian:</p>
+                    <p><b>1. Bilangan 000 sampai 1999:</b></p>
+                    <p>Angka ribuan bernilai 1 sebanyak 1000 kali \(\implies 1000 \times 1 = 1000\).</p>
+                    <p>Untuk tiga digit lainnya (ratusan, puluhan, satuan), setiap angka dari 0 sampai 9 muncul sebanyak \(2 \times 3 \times 10^2 = 600\) kali. Jumlah digitnya:</p>
+                    \[
+                    600 \times (0 + 1 + 2 + \dots + 9) = 600 \times 45 = 27000
+                    \]
+                    <p>Total digit dari 1 sampai 1999 = \(1000 + 27000 = 28000\).</p>
+                    <p><b>2. Bilangan 2000 sampai 2017:</b></p>
+                    <ul>
+                        <li>Digit ribuan: angka 2 muncul sebanyak 18 kali \(\implies 18 \times 2 = 36\).</li>
+                        <li>Digit ratusan: angka 0 (jumlah = 0).</li>
+                        <li>Digit puluhan: angka 0 untuk 2000–2009, angka 1 untuk 2010–2017 (8 kali) \(\implies 8 \times 1 = 8\).</li>
+                        <li>Digit satuan:
+                            <ul>
+                                <li>2000–2009: \(0 + 1 + \dots + 9 = 45\)</li>
+                                <li>2010–2017: \(0 + 1 + \dots + 7 = 28\)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Total seluruh digit:</p>
+                    \[
+                    28000 + 36 + 8 + 45 + 28 = \boxed{\boxed{28117}}
+                    \]
+                    <div class="kesimpulan">Jadi, jumlah dari seluruh angka tersebut adalah 28117.<br><b>JAWAB: B</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <div class="justify" id="9">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Banyak faktor positif dari 720 yang habis dibagi 36 adalah ....
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Modul Siswa Olimpiade Matematika Tingkat Sekolah</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">Misalkan <em>k</em> adalah faktor positif dari 720, maka <m>\dfrac{720}k</m> adalah bilangan asli. Karena <em>k</em> habis dibagi maka <e><em>k</em> = 36<em>m</em></e> untuk suatu bilangan asli <em>m</em>, akibatnya<br>
-               &xrarr; <m>\dfrac{720}m</m> adalah bilangan asli
-               &xrarr; <m>\dfrac{20}m</m> adalah bilangan asli
-                Karena faktoriasi prima dari 20 adalah <e>20 = 2<sup>2</sup> &times; 5</e> maka banyak nilai <em>m</em> yang memenuhi adalah <e>3 &times; 2 = 6</e> akibatnya banyak nilai <em>k</em> yang memenuhi adalah 6.</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, banyak faktor positif dari 720 yang habis dibagi 36 adalah 6.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-  </div>
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Hitunglah nilai dari \((723 + 5)^2 - (723^2 + 5^2)\).
+                <ol class="pilgan pilgan-5kolom">
+                    <li>723</li>
+                    <li>1446</li>
+                    <li>3615</li>
+                    <li>7230</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Gunakan bentuk aljabar \((a + b)^2 = a^2 + 2ab + b^2\):</p>
+                    \[
+                    \begin{aligned}
+                    (723 + 5)^2 - (723^2 + 5^2) &= (723^2 + 2 \times 723 \times 5 + 5^2) - (723^2 + 5^2) \\
+                    &= 2 \times 723 \times 5 \\
+                    &= 10 \times 723 = \boxed{\boxed{7230}}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \((723 + 5)^2 - (723^2 + 5^2) = 7230\).<br><b>JAWAB: D</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <div class="justify" id="10">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Banyak pasangan bilangan asli <e>(<em>a</em>, <em>b</em>)</e> yang memenuhi <e>(<em>a</em> + 2)(<em>b</em> &minus; 1) = 60</e> adalah ....
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Strategi Pendidikan Olimpiade Matematika</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">Faktor prima dari 60 adalah <e>60 = 2<sup>2</sup> &times; 3 &times; 5</e><br>
-                Banyak faktor positif dari 60 adalah <e>3 &times; 2 &times; 2 = 12</e><br><br>
-            Perhatikan,<br>
-            <e><em>a</em> + 2 &ge; 1 + 2 = 3</e><br>
-            Faktor-faktor dari 60 yang kurang dari 3 adalah 1 dan 2. Sehingga banyak pasangan yang memenuhi ada <e>12 &minus; 2 = 10.</e>
-        </div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, anyak pasangan bilangan asli <e>(<em>a</em>, <em>b</em>)</e> yang memenuhi <e>(<em>a</em> + 2)(<em>b</em> &minus; 1) = 60</e> adalah 10.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-  </div>
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika \(m\) bilangan bulat positif, tentukan nilai \(m\) yang menyebabkan \(\dfrac{2002}{m^2 - 2}\) juga merupakan bilangan bulat positif!
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Faktorisasi prima dari 2002:</p>
+                    \[
+                    2002 = 2 \times 7 \times 11 \times 13
+                    \]
+                    <p>Agar bernilai bulat positif, \(m^2 - 2\) harus merupakan pembagi (faktor) positif dari 2002. Kita periksa nilai \(m \in \mathbb{Z}^+\) yang membuat \(m^2 - 2\) sama dengan faktor dari 2002:</p>
+                    <ul>
+                        <li>\(m^2 - 2 = 2 \implies m^2 = 4 \implies m = 2\)</li>
+                        <li>\(m^2 - 2 = 7 \implies m^2 = 9 \implies m = 3\)</li>
+                        <li>\(m^2 - 2 = 14 \implies m^2 = 16 \implies m = 4\)</li>
+                    </ul>
+                    <p>Untuk faktor-faktor lainnya (seperti 1, 11, 13, 22, dst.), \(m^2 - 2 = d \implies m^2 = d + 2\) tidak menghasilkan bilangan kuadrat sempurna.</p>
+                    <div class="kesimpulan">Jadi, nilai \(m\) yang memenuhi adalah \(m = 2, 3,\) atau \(4\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <br>
-  <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-  <br>
-  <script>soal(bilbul,3,1)</script>
-</div>
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Nomor polisi mobil di sebuah negara selalu berupa bilangan 4 angka. Selain itu, jumlah keempat angka pada setiap nomor juga harus habis dibagi 5. Nomor polisi terbesar yang diperbolehkan negara itu adalah ...
+                <ol class="pilgan pilgan-5kolom">
+                    <li>9999</li>
+                    <li>9998</li>
+                    <li>9995</li>
+                    <li>9990</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Agar nomor polisi terbesar, pilih tiga angka pertama sebesar mungkin, yaitu 9, 9, dan 9. Misalkan bilangan tersebut adalah \(\overline{999A}\):</p>
+                    \[
+                    \text{Jumlah angka} = 9 + 9 + 9 + A = 27 + A
+                    \]
+                    <p>Agar \(27 + A\) habis dibagi 5 dengan \(A \in \{0, 1, \dots, 9\}\) terbesar:</p>
+                    \[
+                    27 + A = 35 \implies A = 8
+                    \]
+                    <p>Sehingga nomor polisi terbesar adalah 9998.</p>
+                    <div class="kesimpulan">Jadi, nomor polisi terbesar yang diperbolehkan adalah 9998.<br><b>JAWAB: B</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 6 -->
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Enam bilangan berurutan ditulis pada papan tulis. Ketika satu dari enam bilangan tersebut dihapus, jumlah dari lima bilangan yang tersisa adalah 2019. Berapakah jumlah dari digit-digit bilangan yang dihapus?
+                <ol class="pilgan pilgan-5kolom">
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Misalkan keenam bilangan berurutan tersebut adalah \(a, a+1, a+2, a+3, a+4, a+5\). Misalkan bilangan yang dihapus adalah \(a + k\) dengan \(k \in \{0, 1, 2, 3, 4, 5\}\):</p>
+                    \[
+                    \begin{aligned}
+                    \sum_{i=0}^5 (a + i) - (a + k) &= 2019 \\
+                    (6a + 15) - (a + k) &= 2019 \\
+                    5a + 15 - k &= 2019 \\
+                    5a &= 2004 + k
+                    \end{aligned}
+                    \]
+                    <p>Karena \(a\) bilangan bulat, maka \(2004 + k\) harus habis dibagi 5. Karena \(k \in \{0, 1, 2, 3, 4, 5\}\), nilai yang memenuhi adalah \(k = 1\):</p>
+                    \[
+                    5a = 2005 \implies a = 401
+                    \]
+                    <p>Maka bilangan yang dihapus adalah \(a + k = 401 + 1 = 402\).</p>
+                    <p>Jumlah digit-digit dari bilangan yang dihapus:</p>
+                    \[
+                    4 + 0 + 2 = \boxed{\boxed{6}}
+                    \]
+                    <div class="kesimpulan">Jadi, jumlah digit-digit bilangan yang dihapus adalah 6.<br><b>JAWAB: C</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 7 -->
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jumlah semua bilangan yang selisih antara bilangan tersebut dan jumlah digit-digit penyusunnya sama dengan 2016 adalah ...
+            </div>
+            <div class="soal-sumber"><a href="https://www.academia.edu/41448724/SOAL_1_PERSIAPAN_OLIMPIADE_MATEMATIKA_SMA" target="_blank" rel="noopener noreferrer">Olimpiade Matematika SMA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Misalkan bilangan tersebut adalah \(N = \overline{X_4X_3X_2X_1} = 1000X_4 + 100X_3 + 10X_2 + X_1\):</p>
+                    \[
+                    \begin{aligned}
+                    N - (X_4 + X_3 + X_2 + X_1) &= 2016 \\
+                    999X_4 + 99X_3 + 9X_2 &= 2016 \\
+                    111X_4 + 11X_3 + X_2 &= 224
+                    \end{aligned}
+                    \]
+                    <p>Karena \(X_2 \le 9\) dan \(X_3 \le 9\), maka nilai \(X_4\) yang memenuhi adalah \(X_4 = 2\):</p>
+                    \[
+                    111(2) + 11X_3 + X_2 = 224 \implies 11X_3 + X_2 = 2
+                    \]
+                    <p>Karena \(X_3, X_2\) adalah digit bulat tak negatif, maka \(X_3 = 0\) dan \(X_2 = 2\).</p>
+                    <p>Digit satuan \(X_1\) saling menghilangkan pada persamaan selisih tersebut, sehingga \(X_1\) bebas bernilai dari \(0\) sampai \(9\). Bilangan-bilangan tersebut adalah 2020, 2021, 2022, ..., 2029 (ada 10 bilangan).</p>
+                    <p>Jumlah semua bilangan tersebut:</p>
+                    \[
+                    \sum_{X_1=0}^9 (2020 + X_1) = 10 \times 2020 + \dfrac{9 \times 10}{2} = 20200 + 45 = \boxed{\boxed{20245}}
+                    \]
+                    <div class="kesimpulan">Jadi, jumlah semua bilangan tersebut adalah 20245.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 8 -->
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Banyak pasangan bilangan bulat \((a, b)\) yang memenuhi persamaan:
+                \[(a - 2)(b - 2) = 60\]
+                adalah ...
+            </div>
+            <div class="soal-sumber">Modul Siswa Olimpiade Matematika Tingkat Sekolah</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Faktorisasi prima dari 60:</p>
+                    \[
+                    60 = 2^2 \times 3^1 \times 5^1
+                    \]
+                    <p>Banyaknya faktor positif dari 60 adalah:</p>
+                    \[
+                    (2 + 1)(1 + 1)(1 + 1) = 3 \times 2 \times 2 = 12
+                    \]
+                    <p>Karena \(a\) dan \(b\) adalah bilangan bulat (bisa positif atau negatif), faktor bulat dari 60 ada:</p>
+                    \[
+                    2 \times 12 = 24
+                    \]
+                    <p>Untuk setiap faktor bulat \(d\) dari 60, terdapat tepat satu pasangan bilangan bulat \((a, b) = (d + 2, \frac{60}{d} + 2)\). Sehingga banyak pasangan bilangan bulat yang memenuhi adalah 24 pasangan.</p>
+                    <div class="kesimpulan">Jadi, banyaknya pasangan bilangan bulat \((a, b)\) yang memenuhi adalah 24.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 9 -->
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Banyak faktor positif dari 720 yang habis dibagi 36 adalah ...
+            </div>
+            <div class="soal-sumber">Modul Siswa Olimpiade Matematika Tingkat Sekolah</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Misalkan faktor positif dari 720 yang habis dibagi 36 adalah \(k = 36m\), dengan \(m \in \mathbb{N}\):</p>
+                    \[
+                    \dfrac{720}{k} = \dfrac{720}{36m} = \dfrac{20}{m}
+                    \]
+                    <p>Agar \(k\) merupakan faktor dari 720, maka \(m\) harus merupakan faktor positif dari 20.</p>
+                    <p>Faktorisasi prima dari 20:</p>
+                    \[
+                    20 = 2^2 \times 5^1
+                    \]
+                    <p>Banyaknya faktor positif dari 20 adalah:</p>
+                    \[
+                    (2 + 1)(1 + 1) = 3 \times 2 = \boxed{\boxed{6}}
+                    \]
+                    <div class="kesimpulan">Jadi, banyaknya faktor positif dari 720 yang habis dibagi 36 adalah 6.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 10 -->
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Banyak pasangan bilangan asli \((a, b)\) yang memenuhi persamaan:
+                \[(a + 2)(b - 1) = 60\]
+                adalah ...
+            </div>
+            <div class="soal-sumber">Strategi Pendidikan Olimpiade Matematika</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Karena \(a, b \in \mathbb{N}\) (\(a \ge 1, b \ge 1\)):</p>
+                    <ul>
+                        <li>\(a + 2 \ge 1 + 2 = 3\)</li>
+                        <li>\(b - 1 \ge 1 - 1 = 0 \implies b - 1 \ge 1\) (karena hasil kalinya 60)</li>
+                    </ul>
+                    <p>Faktor positif dari 60 adalah \(1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60\) (total 12 faktor).</p>
+                    <p>Faktor positif yang kurang dari 3 hanyalah 1 dan 2 (tidak dapat menjadi nilai \(a + 2\)).</p>
+                    <p>Maka banyaknya pasangan bilangan asli \((a, b)\) yang memenuhi adalah:</p>
+                    \[
+                    12 - 2 = \boxed{\boxed{10}}
+                    \]
+                    <div class="kesimpulan">Jadi, banyaknya pasangan bilangan asli yang memenuhi adalah 10.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
+
+</html>

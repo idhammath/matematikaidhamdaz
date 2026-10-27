@@ -1,141 +1,160 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exercise Zone : Bilangan Bulat</title>
-<script defer src="../mathjax/tex-mml-chtml.js"></script>
-<link rel="stylesheet" href="../katex/katex.css">
-<script src="../katex/katex.js"></script>
-<link rel="stylesheet" href="../w3.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-<script src="skrip.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Bilangan Bulat</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<br>
 
-<div class="w3-container" style="background-color: papayawhip">
-   <img alt="Bilangan Bulat" data-original-height="1111" data-original-width="1111" height="320" src="https://3.bp.blogspot.com/-JaXW45lGWi0/WV9UWh-QhMI/AAAAAAAAAOQ/mS-GISVptkUrid8mayLRSL9i1TxPYvGyQCLcBGAs/s320/bilangan%2Bbulat%2Bblog.jpg" width="320" class="w3-hide"/>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Bilangan Bulat</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-
-   <h3>Tipe: </h3>
-   <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-   <br>
-   <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-   <br>
-
-  <div id="1" class="justify">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Hasil dari 6&times;(&minus;3 + 2):(4 &minus; 7) adalah....
-      <div class="w3-row">
-        <div class="w3-col s6">
-            <ol class="pas1" type="A">
-                <li>&minus;7</li>
-                <li>&minus;2</li>
-            </ol>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        <div class="w3-col s6">
-            <ol class="pas1" start="3" type="A">
-                <li>2</li>
-                <li>7</li>
-            </ol>
-        </div>
-    </div>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/ppgmatematika/240" target="_blank" rel="noopener noreferrer">PPG Matematika</a></div>
-      <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\begin{aligned}
-                6\times(-3+2):(4-7)&amp;=6\times(-1):(-3)\\
-                &amp;=(-6):(-3)\\
-                &amp;=2
-                \end{aligned}</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, 6&times;(&minus;3 + 2):(4 &minus; 7) = 2.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-      </details>
-      <hr>
-  </div>
+    </header>
 
-  <div id="2" class="justify">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Dalam kompetisi matematika, setiap jawaban benar diberi skor 2, salah skor -1 dan tidak dijawab skor 0. Dari 40 soal yang diberikan, Aulia dapat menjawab 36 soal. Jika skor yang diperoleh Aulia adalah 51, maka banyaknya soal yang dijawab benar adalah ....
-      <div class="w3-row">
-          <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                  <li>31</li>
-                  <li>30</li>
-              </ol>
-          </div>
-          <div class="w3-col s6">
-              <ol class="pas1" start="3" type="A">
-                  <li>29</li>
-                  <li>28</li>
-              </ol>
-          </div>
-      </div>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneId/217" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-      <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">Misal<br />
-                Banyak soal yang dijawab benar = B<br />
-                Banyak soal yang dijawab salah = S<br />
-                \begin{aligned}
-                B+S&amp;=36\\
-                2B-S&amp;=51\qquad+\\\hline
-                3B&amp;=87\\
-                B&amp;=\dfrac{87}3\\
-                B&amp;=\boxed{\boxed{29}}
-                \end{aligned}</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya soal yang dijawab benar adalah 29.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-      </details>
-      <hr>
-  </div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Bilangan Bulat</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-  <div class="justify" id="3">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Faktorisasi prima dari 5220 adalah .... 
-    <div class="w3-row">
-        <div class="w3-col s6">
-            <ol class="pas1" type="A">
-                <li>2<sup>2</sup> &sdot; 3<sup>2</sup> &sdot; 145</li>
-                <li>2<sup>2</sup> &sdot; 3<sup>3</sup> &sdot; 5 &sdot; 9</li>
-                <li>2<sup>2</sup> &sdot; 3<sup>2</sup> &sdot; 5 &sdot; 29</li>
-            </ol>
-        </div>
-        <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-                <li>2<sup>4</sup> &sdot; 3 &sdot; 5 &sdot; 7</li>
-                <li>2<sup>2</sup> &sdot; 3<sup>5</sup> &sdot; 5</li>
-            </ol>
-        </div>
-    </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2023/01/download-soal-osk-matematika-smp-2003.html" target="_blank" rel="noopener noreferrer">OSK SMP 2003</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\(\begin{aligned}
-            5220&=5200+20\\
-            &=20(260+1)\\
-            &=2^2\cdot5\cdot261\\
-            &=2^2\cdot5\cdot9\cdot29\\
-            &=\boxed{\boxed{2^2\cdot3^2\cdot5\cdot29}}
-            \end{aligned}\)</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, faktorisasi prima dari 5220 adalah <e>2<sup>2</sup> &sdot; 3<sup>2</sup> &sdot; 5 &sdot; 29.</e><br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-  </div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-  <br>
-  <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-  <br>
-  <script>soal(bilbul,1,1)</script>
-</div>
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Hasil dari \(6 \times (-3 + 2) : (4 - 7)\) adalah ...
+                <ol class="pilgan pilgan-5kolom">
+                    <li>\(-7\)</li>
+                    <li>\(-2\)</li>
+                    <li>2</li>
+                    <li>7</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/ppgmatematika/240" target="_blank" rel="noopener noreferrer">PPG Matematika</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \[
+                    \begin{aligned}
+                    6 \times (-3 + 2) : (4 - 7) &= 6 \times (-1) : (-3) \\
+                    &= (-6) : (-3) \\
+                    &= \boxed{\boxed{2}}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(6 \times (-3 + 2) : (4 - 7) = 2\).<br><b>JAWAB: C</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Dalam kompetisi matematika, setiap jawaban benar diberi skor 2, salah diberi skor \(-1\), dan tidak dijawab diberi skor 0. Dari 40 soal yang diberikan, Aulia menjawab 36 soal. Jika skor total yang diperoleh Aulia adalah 51, maka banyaknya soal yang dijawab benar adalah ...
+                <ol class="pilgan pilgan-5kolom">
+                    <li>31</li>
+                    <li>30</li>
+                    <li>29</li>
+                    <li>28</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneId/217" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Misalkan:</p>
+                    <ul>
+                        <li>Banyak soal benar = \(B\)</li>
+                        <li>Banyak soal salah = \(S\)</li>
+                    </ul>
+                    <p>Dari keterangan soal didapat sistem persamaan:</p>
+                    \[
+                    \begin{aligned}
+                    B + S &= 36 \\
+                    2B - S &= 51
+                    \end{aligned}
+                    \]
+                    <p>Jumlahkan kedua persamaan untuk mengeliminasi \(S\):</p>
+                    \[
+                    \begin{aligned}
+                    3B &= 87 \\
+                    B &= \dfrac{87}{3} = \boxed{\boxed{29}}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, banyaknya soal yang dijawab benar adalah 29.<br><b>JAWAB: C</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Faktorisasi prima dari 5220 adalah ...
+                <ol class="pilgan">
+                    <li>\(2^2 \cdot 3^2 \cdot 145\)</li>
+                    <li>\(2^2 \cdot 3^3 \cdot 5 \cdot 9\)</li>
+                    <li>\(2^2 \cdot 3^2 \cdot 5 \cdot 29\)</li>
+                    <li>\(2^4 \cdot 3 \cdot 5 \cdot 7\)</li>
+                    <li>\(2^2 \cdot 3^5 \cdot 5\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="/2023/01/download-soal-osk-matematika-smp-2003.html" target="_blank" rel="noopener noreferrer">OSK SMP 2003</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Lakukan pemfaktoran secara bertahap:</p>
+                    \[
+                    \begin{aligned}
+                    5220 &= 10 \times 522 \\
+                    &= (2 \times 5) \times (2 \times 261) \\
+                    &= 2^2 \times 5 \times (9 \times 29) \\
+                    &= 2^2 \times 5 \times 3^2 \times 29 \\
+                    &= \boxed{\boxed{2^2 \cdot 3^2 \cdot 5 \cdot 29}}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, faktorisasi prima dari 5220 adalah \(2^2 \cdot 3^2 \cdot 5 \cdot 29\).<br><b>JAWAB: C</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
+
+</html>

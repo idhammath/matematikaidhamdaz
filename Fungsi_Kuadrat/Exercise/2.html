@@ -1,156 +1,214 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Exercise Zone : Fungsi Kuadrat [2]</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi Kuadrat - Exercise Bagian 2 | Matematika Idhamdaz</title>
+
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../scr/style.css">
+
+    <!-- KaTeX JS (defer) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '\\[', right: '\\]', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false}
+            ],
+            throwOnError: false
+        });"></script>
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="theme-toggle" title="Ganti Tema">🌓</button>
 
-<div class="w3-container" style="background-color: papayawhip">
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Fungsi Kuadrat</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
+    <header class="header-materi">
+        <a href="../../index.html" class="nav-kembali">&larr; Kembali ke Daftar Materi</a>
+        <h1>Fungsi Kuadrat - Exercise Bagian 2</h1>
+        <p class="deskripsi-materi">Kumpulan soal latihan dan pembahasan Fungsi Kuadrat - Exercise Bagian 2 dengan langkah penyelesaian terstruktur dan visualisasi grafik yang interaktif.</p>
+        <div class="kategori-menu">
+            <a href="../Exercise/1.html" class="kategori-btn active">STANDAR</a>
+            <a href="../HOTS/1.html" class="kategori-btn ">HOTS</a>
+        </div>
+    </header>
 
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-  <br><div class="navi w3-bar w3-border w3-round w3-hide">
+    <main class="soal-container">
+        <!-- SOAL 11 -->
+        <article class="soal-item" id="11">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Perhatikan grafik berikut!  Persamaan fungsi kuadrat yang memenuhi grafik tersebut adalah ....</p>
+<div class="grafik-container" style="display:flex; justify-content:center; margin:15px 0;">
+    <svg width="320" height="250" viewBox="0 0 320 250" style="max-width:100%; height:auto; background:#fbfbfb; border:1px solid #e0e0e0; border-radius:8px; font-family:sans-serif; font-size:12px;">
+      <!-- Sumbu X -->
+      <line x1="15" y1="190.22" x2="305" y2="190.22" stroke="#444" stroke-width="1.5" marker-end="url(#arrowX11)" />
+      <text x="305" y="205.22" fill="#333" font-weight="bold">x</text>
+      <!-- Sumbu Y -->
+      <line x1="115" y1="235" x2="115" y2="15" stroke="#444" stroke-width="1.5" marker-end="url(#arrowY11)" />
+      <text x="125" y="20" fill="#333" font-weight="bold">y</text>
+      <!-- O (0,0) -->
+      <text x="103" y="204.22" fill="#666">0</text>
+
+      <!-- Label angka pada sumbu X -->
+      <line x1="70" y1="187.22" x2="70" y2="193.22" stroke="#666" />
+      <text x="62" y="205.22" fill="#666">-1</text>
+
+      <line x1="250" y1="187.22" x2="250" y2="193.22" stroke="#666" />
+      <text x="247" y="205.22" fill="#666">3</text>
+
+      <!-- Label angka pada sumbu Y: 6 -->
+      <line x1="112" y1="85.88" x2="118" y2="85.88" stroke="#666" />
+      <text x="101" y="89.88" fill="#666">6</text>
+
+      <!-- Kurva Parabola -->
+      <path d="M 54.2,243.2 L 58.8,227.2 L 63.3,211.9 L 67.8,197.3 L 72.3,183.4 L 76.8,170.1 L 81.3,157.6 L 85.8,145.8 L 90.3,134.7 L 94.8,124.2 L 99.3,114.5 L 103.8,105.4 L 108.3,97.1 L 112.8,89.4 L 117.3,82.5 L 121.8,76.2 L 126.3,70.7 L 130.8,65.8 L 135.3,61.6 L 139.8,58.1 L 144.3,55.4 L 148.8,53.3 L 153.3,51.9 L 157.8,51.2 L 162.3,51.2 L 166.8,51.9 L 171.3,53.3 L 175.8,55.4 L 180.3,58.1 L 184.8,61.6 L 189.3,65.8 L 193.8,70.7 L 198.3,76.2 L 202.8,82.5 L 207.3,89.4 L 211.8,97.1 L 216.3,105.4 L 220.8,114.5 L 225.3,124.2 L 229.8,134.7 L 234.3,145.8 L 238.8,157.6 L 243.3,170.1 L 247.8,183.4 L 252.3,197.3 L 256.8,211.9 L 261.3,227.2" fill="none" stroke="#2563eb" stroke-width="2.5" />
+
+      <!-- Titik potong & titik penting -->
+      <circle cx="70" cy="190.22" r="4" fill="#ef4444" stroke="#fff" stroke-width="1.5" />
+      <circle cx="250" cy="190.22" r="4" fill="#ef4444" stroke="#fff" stroke-width="1.5" />
+      <circle cx="115" cy="85.88" r="4" fill="#ef4444" stroke="#fff" stroke-width="1.5" />
+
+      <defs>
+        <marker id="arrowX11" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#444" />
+        </marker>
+        <marker id="arrowY11" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#444" />
+        </marker>
+      </defs>
+    </svg>
   </div>
-
-  <div id="11" class="justify">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Perhatikan grafik berikut! <div id="temsvg11" class="w3-center"></div> Persamaan fungsi kuadrat yang memenuhi grafik tersebut adalah ....
-    <div class="w3-row">
-        <div class="w3-col s6">
-            <ol class="pas1" type="A">
-                <li><em>y</em> = &minus;2<em>x</em><sup>2</sup> + 4<em>x</em> + 6</li>
-                <li><em>y</em> = &minus;<em>x</em><sup>2</sup> &minus; 4<em>x</em> + 6</li>
-                <li><em>y</em> = <em>x</em><sup>2</sup> + 4<em>x</em> + 6</li>
-            </ol>
-        </div>
-        <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-                <li><em>y</em> = 2<em>x</em><sup>2</sup> &minus; 4<em>x</em> + 6</li>
-                <li><em>y</em> = 4<em>x</em><sup>2</sup> &minus; 4<em>x</em> + 6</li>
-            </ol>
-        </div>
-    </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">Titik potong sumbu X adalah <e>(&minus;1, 0)</e> dan <e>(3, 0)</e><br>
+                <ol type="A" class="pilihan-ganda">
+                    <li>y = -2x<sup>2</sup> + 4x + 6</li>
+                    <li>y = -x<sup>2</sup> - 4x + 6</li>
+                    <li>y = x<sup>2</sup> + 4x + 6</li>
+                    <li>y = 2x<sup>2</sup> - 4x + 6</li>
+                    <li>y = 4x<sup>2</sup> - 4x + 6</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Titik potong sumbu X adalah (-1, 0) dan (3, 0)<br>
             \(\begin{aligned}
             y&=a(x-x_1)(x-x_2)\\
             &=a(x-(-1))(x-3)\\
             &=a(x+1)(x-3)&{\color{red}(1)}\\
             \end{aligned}\) <br><br>
-            Melalui (0, 6). Substitusikan <e><em>x</em> = 0</e> dan <e><em>y</em> = 6</e> ke persamaan <span class="w3-text-red">(1)</span>.<br>
+            Melalui (0, 6). Substitusikan x = 0 dan y = 6 ke persamaan <span >(1)</span>.<br>
             \(\begin{aligned}
             6&=a(0+1)(0-3)\\
             6&=a(1)(-3)\\
             6&=-3a\\
             a&=-2
             \end{aligned}\) <br><br>
-            Substitusikan nilai <em>a</em> ke persamaan <span class="w3-text-red">(1)</span>.<br>
+            Substitusikan nilai a ke persamaan <span >(1)</span>.<br>
             \(\begin{aligned}
             y&=-2(x+1)(x-3)\\
             y&=-2\left(x^2-2x-3\right)\\
             y&=-2x^2+4x+6
             \end{aligned}\)
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, persamaan fungsi kuadrat yang memenuhi grafik tersebut adalah <e><em>y</em> = &minus;2<em>x</em><sup>2</sup> + 4<em>x</em> + 6.</e><br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-    <script>
-        var spg11 = kocabuat("temsvg11",[-1,3],[0,8]);
-        kocaGrafung(spg11,function(x){return -2*x*x+4*x+6})
-    </script>
-  </div>
+                    <div class="kesimpulan">Jadi, persamaan fungsi kuadrat yang memenuhi grafik tersebut adalah y = -2x<sup>2</sup> + 4x + 6.<br><b>JAWAB: A</b></div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <div class="justify" id="12">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Sebuah parabola mempunyai persamaan <e><em>ax</em><sup>2</sup> + <em>bx</em> + <em>c</em> = 0</e> dengan <e><em>a</em>, <em>b</em> &gt; 0</e> dan <e><em>c</em> &lt; 0</e>. Gambar yang mungkin dari parabola tersebut adalah ....
-    <div class="w3-row">
-      <div class="w3-col s6">
-        <ol class="pas1" type="A">
-          <li id="opsi1" class="pb"></li>
-          <li id="opsi2" class="pb">B</li>
-          <li id="opsi3">C</li>
-        </ol>
-      </div>
-      <div class="w3-col s6">
-        <ol class="pas1" start="4" type="A">
-          <li id="opsi4" class="pb">D</li>
-          <li id="opsi5">E</li>
-        </ol>
-      </div>
-    </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><em>a</em> &gt; 0 berarti parabola menghadap ke atas. <br>
-          <em>ab</em> &gt; 0 berarti titik puncak parabola berada di kanan sumbu <em>y</em>.<br>
-          <em>c</em> &lt; 0 berarti parabola berada di bawah sumbu <em>x</em>.<br>
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, gambar yang mungkin dari parabola tersebut adalah <span id="opsibenar"></span><br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-    <script>
-      var opsi1 = kocabuat("opsi1",[-1.5,0],[-2,0],{ukuranAngkaSumbu:1/1000000,panjangTik:0.1});
-      kocaGrafung(opsi1,function(x){
-        return Math.pow(x+0.5,2)*2-2
-      },{tebalgaris:2})
-      var opsi2 = kocabuat("opsi2",[0,1],[-2,0],{ukuranAngkaSumbu:1/1000000,panjangTik:0.1});
-      kocaGrafung(opsi2,function(x){
-        return Math.pow(x-0.5,2)*(-2)-0.5
-      },{tebalgaris:2})
-      var opsi3 = kocabuat("opsi3",[0,1],[-2,0],{ukuranAngkaSumbu:1/1000000,panjangTik:0.1});
-      kocaGrafung(opsi3,function(x){
-        return Math.pow(x-0.5,2)*2-2
-      },{tebalgaris:2})
-      var opsi4 = kocabuat("opsi4",[-1.5,0],[0,2],{ukuranAngkaSumbu:1/1000000,panjangTik:0.1});
-      kocaGrafung(opsi4,function(x){
-        return Math.pow(x+0.5,2)*2+0.5
-      },{tebalgaris:2})
-      var opsi5 = kocabuat("opsi5",[0,1],[-1,1],{ukuranAngkaSumbu:1/1000000,panjangTik:0.1});
-      kocaGrafung(opsi5,function(x){
-        return Math.pow(x-0.5,2)*(-2)+1
-      },{tebalgaris:2})
-      var opsibenar = kocabuat("opsibenar",[-1.5,0],[-2,0],{ukuranAngkaSumbu:1/1000000,panjangTik:0.1,warnaSemua:"white"});
-      kocaGrafung(opsibenar,function(x){
-        return Math.pow(x+0.5,2)*2-2
-      },{tebalgaris:2})
-    </script>
-  </div>
-  
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(fungkuad,1,2)</script>
-</div>
+        <!-- SOAL 12 -->
+        <article class="soal-item" id="12">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Sebuah parabola mempunyai persamaan ax<sup>2</sup> + bx + c = 0 dengan a, b &gt; 0 dan c &lt; 0. Gambar yang mungkin dari parabola tersebut adalah ....</p>
+                <ol type="A" class="pilihan-ganda">
+                    <li><svg width="110" height="85" viewBox="0 0 110 85" style="display:inline-block; vertical-align:middle; background:#fafafa; border:1px solid #ddd; border-radius:4px;">
+    <!-- Sumbu X & Y -->
+    <line x1="8" y1="42" x2="102" y2="42" stroke="#666" stroke-width="1.2" marker-end="url(#arrMini)" />
+    <line x1="55" y1="78" x2="55" y2="8" stroke="#666" stroke-width="1.2" marker-end="url(#arrMini)" />
+    <!-- Parabola -->
+    <path d="M 18,15 Q 35,78 68,15" fill="none" stroke="#2563eb" stroke-width="2" />
+    <defs>
+      <marker id="arrMini" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+        <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#666" />
+      </marker>
+    </defs>
+  </svg></li>
+                    <li><svg width="110" height="85" viewBox="0 0 110 85" style="display:inline-block; vertical-align:middle; background:#fafafa; border:1px solid #ddd; border-radius:4px;">
+    <!-- Sumbu X & Y -->
+    <line x1="8" y1="42" x2="102" y2="42" stroke="#666" stroke-width="1.2" marker-end="url(#arrMini)" />
+    <line x1="55" y1="78" x2="55" y2="8" stroke="#666" stroke-width="1.2" marker-end="url(#arrMini)" />
+    <!-- Parabola -->
+    <path d="M 40,70 Q 75,22 100,70" fill="none" stroke="#2563eb" stroke-width="2" />
+    <defs>
+      <marker id="arrMini" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+        <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#666" />
+      </marker>
+    </defs>
+  </svg></li>
+                    <li><svg width="110" height="85" viewBox="0 0 110 85" style="display:inline-block; vertical-align:middle; background:#fafafa; border:1px solid #ddd; border-radius:4px;">
+    <!-- Sumbu X & Y -->
+    <line x1="8" y1="42" x2="102" y2="42" stroke="#666" stroke-width="1.2" marker-end="url(#arrMini)" />
+    <line x1="55" y1="78" x2="55" y2="8" stroke="#666" stroke-width="1.2" marker-end="url(#arrMini)" />
+    <!-- Parabola -->
+    <path d="M 45,15 Q 75,78 102,15" fill="none" stroke="#2563eb" stroke-width="2" />
+    <defs>
+      <marker id="arrMini" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+        <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#666" />
+      </marker>
+    </defs>
+  </svg></li>
+                    <li><svg width="110" height="85" viewBox="0 0 110 85" style="display:inline-block; vertical-align:middle; background:#fafafa; border:1px solid #ddd; border-radius:4px;">
+    <!-- Sumbu X & Y -->
+    <line x1="8" y1="42" x2="102" y2="42" stroke="#666" stroke-width="1.2" marker-end="url(#arrMini)" />
+    <line x1="55" y1="78" x2="55" y2="8" stroke="#666" stroke-width="1.2" marker-end="url(#arrMini)" />
+    <!-- Parabola -->
+    <path d="M 20,20 Q 38,48 68,20" fill="none" stroke="#2563eb" stroke-width="2" />
+    <defs>
+      <marker id="arrMini" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+        <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#666" />
+      </marker>
+    </defs>
+  </svg></li>
+                    <li><svg width="110" height="85" viewBox="0 0 110 85" style="display:inline-block; vertical-align:middle; background:#fafafa; border:1px solid #ddd; border-radius:4px;">
+    <!-- Sumbu X & Y -->
+    <line x1="8" y1="42" x2="102" y2="42" stroke="#666" stroke-width="1.2" marker-end="url(#arrMini)" />
+    <line x1="55" y1="78" x2="55" y2="8" stroke="#666" stroke-width="1.2" marker-end="url(#arrMini)" />
+    <!-- Parabola -->
+    <path d="M 45,70 Q 75,18 102,70" fill="none" stroke="#2563eb" stroke-width="2" />
+    <defs>
+      <marker id="arrMini" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+        <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#666" />
+      </marker>
+    </defs>
+  </svg></li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    a > 0 berarti parabola menghadap ke atas. <br>
+          ab > 0 berarti titik puncak parabola berada di kanan sumbu y.<br>
+          c < 0 berarti parabola berada di bawah sumbu x.<br>
+                    <div class="kesimpulan">Jadi, gambar yang mungkin dari parabola tersebut adalah opsi A.<br><b>JAWAB: A</b></div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

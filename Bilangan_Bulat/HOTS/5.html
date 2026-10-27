@@ -1,241 +1,311 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HOTS Zone : Bilangan Bulat [5]</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTS - Bilangan Bulat</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Bilangan Bulat</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
-
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
-  <br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-
-  <div class="justify" id="41">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Apabila <em>a</em>, <em>b</em> adalah bilangan asli yang relatif prima dan <e><em>a</em> &times; <em>b</em> = 25!,</e> tentukan banyaknya bilangan rasional yang dapat dinyatakan dalam bentuk $\dfrac{a}b$.
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Latihan OSK 2024 SMA</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">Misalkan <e>25! = 2<sup><em>x</em><sub>1</sub></sup> &times; 3<sup><em>x</em><sub>2</sub></sup> &times; 5<sup><em>x</em><sub>3</sub></sup> &times; 7<sup><em>x</em><sub>4</sub></sup> &times; 11<sup><em>x</em><sub>5</sub></sup> &times; 13<sup><em>x</em><sub>6</sub></sup> &times; 17<sup><em>x</em><sub>7</sub></sup> &times; 19<sup><em>x</em><sub>8</sub></sup> &times; 23<sup><em>x</em><sub>9</sub></sup>.</e><br>
-          Maka, agar gcd(<em>a</em>, <em>b</em>) = 1, <em>a</em> dan <em>b</em> tidak boleh ada faktor prima yang sama. Maka, soal ini ekivalen dengan: <br>
-          "Ada berapa cara untuk membentuk pecahan dengan 9 suku, di mana suku hanya bisa di atas atau di bawah?". <br>
-          2<sup>9</sup> = <kotak>512</kotak>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya bilangan rasional yang dapat dinyatakan dalam bentuk $\dfrac{a}b$ ada 512.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+    </header>
 
-  <div class="justify" id="42">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Tentukan banyaknya bilangan empat digit $\overline{abcd}$ sehingga $\overline{abcd}$ dan $\overline{dbca}$ habis dibagi 7.
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Latihan OSK 2024 SMA</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">Perhatikan bahwa $\overline{abcd}-\overline{dbca}=999(a-d)\equiv0\mod7\Rightarrow a\equiv d\mod7$. <br>
-          Maka ada 13 pasangan (<em>a</em>, <em>d</em>) yang mungkin memenuhi syarat tersebut, yakni: <br>
-          (<em>a</em>, <em>d</em>) = <e>(1, 1),</e> <e>(1, 8),</e> <e>(2, 2),</e> <e>(2, 9),</e> <e>(3, 3),</e> <e>(4, 4),</e> <e>(5, 5),</e> <e>(6, 6),</e> <e>(7, 7),</e> <e>(8, 1),</e> <e>(8, 8),</e> <e>(9, 2),</e> <e>(9, 9).</e><br>
-          Lalu, perhatikan bahwa <br>
-          \(\begin{aligned}
-          \overline{abcd}&\equiv0\mod7\\
-          1000a+d+10\times\overline{bc}&\equiv0\mod7\\
-          1001a+3\times\overline{bc}&\equiv0\mod7\\
-          \overline{bc}&\equiv0\mod7
-          \end{aligned}\) <br>
-          Maka, ada 15 bilangan 2 digit $\overline{bc}$ yang memenuhi syarat tersebut, yakni: <e>$\overline{bc}$ = 00, 07, ..., 98.</e> <br><br>
-          13 &times; 15 = <kotak>195</kotak>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Bilangan Bulat</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
         </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya bilangan empat digit $\overline{abcd}$ sehingga $\overline{abcd}$ dan $\overline{dbca}$ habis dibagi 7 ada 195.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
 
-  <div class="justify" id="43">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Diketahui bahwa <em>a</em>, <em>b</em>, <em>c</em> adalah bilangan bulat dan <e><em>abc</em> &ne; 0.</e> Banyaknya solusi persamaan
-    <div class="w3-center"><em>a</em><sup>2</sup> + <em>b</em><sup>2</sup> + <em>c</em><sup>2</sup> = 2022<em>abc</em></div>
-    adalah ....
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Latihan OSK 2024 SMA</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">Karena jelas bahwa 2022<em>abc</em> adalah bilangan genap, maka <e><em>a</em><sup>2</sup> + <em>b</em><sup>2</sup> + <em>c</em><sup>2</sup></e> juga haruslah bilangan genap. Agar <e><em>a</em><sup>2</sup> + <em>b</em><sup>2</sup> + <em>c</em><sup>2</sup></e> bilangan genap, maka terdapat dua kasus yang mungkin, yaitu: <br>
-          <h3><i>Kasus 1.</i> Tepat 1 diantara <em>a</em>, <em>b</em>, dan <em>c</em> adalah bilangan genap.</h3>
-          WLOG <em>a</em> bilangan genap. Maka, <em>b</em> dan <em>c</em> adalah bilangan ganjil. <br>
-          Sehingga, <e><em>a</em><sup>2</sup> + <em>b</em><sup>2</sup> + <em>c</em><sup>2</sup> &equiv; 0 + 1 + 1 (mod 4) &equiv; 2 (mod 4).</e> Sedangkan <e>2022<em>abc</em> &equiv; 0 (mod 4),</e> kontradiksi. <br>
-          Maka, untuk kasus ini, tidak ada solusi <em>a</em>, <em>b</em>, <em>c</em> yang memenuhi.
-          <h3><i>Kasus 2.</i> <em>a</em>, <em>b</em>, dan <em>c</em> bilangan genap.</h3>
-          Definisikan <e><em>v</em><sub>2</sub>(<em>k</em>) = <em>x</em></e> sebagai pangkat terbesar dari 2 yang habis membagi <em>k</em> <e></e>(2<sup><em>x</em></sup> | <em>k</em>, 2<sup><em>x</em> + 1</sup> ∤ <em>k</em>) <br>
-          WLOG <e>min(<em>v</em><sub>2</sub>(<em>a</em>), <em>v</em><sub>2</sub>(<em>b</em>), <em>v</em><sub>2</sub>(<em>c</em>)) = <em>v</em><sub>2</sub>(<em>a</em>) = <em>n</em> &ge; 1</e><br>
-          Misalkan <e><em>a</em> = 2<sup><em>n</em></sup><em>a</em><sub>1</sub>,</e> <e><em>b</em> = 2<sup><em>n</em></sup><em>b</em><sub>1</sub>, <em>c</em> = 2<sup><em>n</em></sup><em>c</em><sub>1</sub></e><br>
-          Maka, <br>
-          \(\begin{aligned}
-          \left(2^na_1\right)^2+\left(2^nb_1\right)^2+\left(2^nc_1\right)^2&=2022\left(2^na_1\right)\left(2^nb_1\right)\left(2^nc_1\right)\\
-          2^{2n}\left(a_1^2+b_1^2+c_1^2\right)&=2^{3n}\cdot2022a_1b_1c_1\\
-          a_1^2+b_1^2+c_1^2&=2^n\cdot2022a_1b_1c_1
-          \end{aligned}\) <br>
-          Karena <em>v</em><sub>2</sub>(<em>a</em>) = <em>n</em> dan <e><em>a</em> = 2<sup><em>n</em></sup><em>a</em><sub>1</sub>,</e> maka <em>a</em><sub>1</sub> ganjil. <br>
-          Perhatikan bahwa karena <e>2<sup><em>n</em></sup> &sdot; 2022<em>a</em><sub>1</sub><em>b</em><sub>1</sub><em>c</em><sub>1</sub></e> genap maka <e><em>a</em><sub>1</sub><sup>2</sup> + <em>b</em><sub>1</sub><sup>2</sup> + <em>c</em><sub>1</sub><sup>2</sup></e> juga haruslah genap. <br> 
-          Lihat pula bahwa karena <em>a</em><sub>1</sub> ganjil, maka tepat satu dari <em>b</em><sub>1</sub> dan <em>c</em><sub>1</sub> genap, dan yang lainnya ganjil. <br>
-          Sehingga <e><em>a</em><sub>1</sub><sup>2</sup> + <em>b</em><sub>1</sub><sup>2</sup> + <em>c</em><sub>1</sub><sup>2</sup> &equiv; 1 + 0 + 1 (mod 4) &equiv; 2 (mod 4).</e> Sedangkan, <e>2<sup><em>n</em></sup> &sdot; 2022<em>a</em><sub>1</sub><em>b</em><sub>1</sub><em>c</em><sub>1</sub> &equiv; 0 (mod 4),</e> kontradiksi. <br>
-          Kasus 2 juga tidak memiliki solusi.
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya solusi persamaan
-          <div class="w3-center"><em>a</em><sup>2</sup> + <em>b</em><sup>2</sup> + <em>c</em><sup>2</sup> = 2022<em>abc</em></div>
-          adalah tidak ada atau 0.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-  <div class="justify" id="44">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Banyaknya bilangan bulat dari 1001 sampai dengan 2022 yang habis dibagi 12 atau 18 adalah ....
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">Banyaknya bilangan bulat dari 1001 sampai dengan 2022 yang habis dibagi 12: <br>
-          \(\left\lfloor\dfrac{2022}{12}\right\rfloor-\left\lfloor\dfrac{1000}{12}\right\rfloor=168-83=85\)<br><br>
-          Banyaknya bilangan bulat dari 1001 sampai dengan 2022 yang habis dibagi 18: <br>
-          \(\left\lfloor\dfrac{2022}{18}\right\rfloor-\left\lfloor\dfrac{1000}{18}\right\rfloor=112-55=57\)<br><br>
-          KPK(12,18) = 36 <br><br>
-          Banyaknya bilangan bulat dari 1001 sampai dengan 2022 yang habis dibagi 36: <br>
-          \(\left\lfloor\dfrac{2022}{36}\right\rfloor-\left\lfloor\dfrac{1000}{36}\right\rfloor=56-27=29\)<br><br>
-          85 + 57 &minus; 29 = <kotak>113</kotak>
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, banyaknya bilangan bulat dari 1001 sampai dengan 2022 yang habis dibagi 12 atau 18 adalah 113.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+        <!-- ================= DAFTAR 7 SOAL ================= -->
 
-  <div class="justify" id="45">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Ada berapa banyak diantara bilangan-bilangan 20000002, 20011002, 20022002, 20033002 yang habis dibagi 9 ?
-    <div class="w3-row"> 
-     <div class="w3-col s4"> 
-     <ol class="pas1" type="A"> 
-     <li>0</li> 
-     <li>1</li> 
-     </ol> 
-     </div> 
-     <div class="w3-col s4"> 
-     <ol class="pas1" start="3" type="A"> 
-     <li>2</li> 
-     <li>3</li> 
-     </ol> 
-     </div> 
-     <div class="w3-col s4"> 
-     <ol class="pas1" start="5" type="A"> 
-     <li>4</li> 
-     </ol> 
-     </div> 
-     </div>    
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">OSK SMA 2003</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">Bilangan yang habis dibagi 9 adalah bilangan yang jumlah digit-digitnya habis dibagi 9. <br><br>
-          2 + 0 + 0 + 0 + 0 + 0 + 0 + 2 = 4 (tidak habis dibagi 9) <br>
-          2 + 0 + 0 + 1 + 1 + 0 + 0 + 2 = 6 (tidak habis dibagi 9) <br>
-          2 + 0 + 0 + 2 + 2 + 0 + 0 + 2 = 8 (tidak habis dibagi 9) <br>
-          2 + 0 + 0 + 3 + 3 + 0 + 0 + 2 = 10 (tidak habis dibagi 9)
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, tidak ada bilangan yang habis dibagi 9.<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+        <!-- SOAL 41 -->
+        <article class="soal-item" id="41">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Apabila \(a, b\) adalah bilangan asli yang relatif prima dan \(a \times b = 25!\), tentukan banyaknya bilangan rasional yang dapat dinyatakan dalam bentuk \(\dfrac{a}{b}\).
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Latihan OSK 2024 SMA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Banyaknya bilangan prima yang \(\le 25\) adalah 9 buah, yaitu:</p>
+                    \[
+                    \{2, 3, 5, 7, 11, 13, 17, 19, 23\}
+                    \]
+                    <p>Faktorisasi prima dari \(25!\) berbentuk:</p>
+                    \[
+                    25! = 2^{e_1} \times 3^{e_2} \times 5^{e_3} \times \dots \times 23^{e_9}
+                    \]
+                    <p>Agar \(\gcd(a, b) = 1\), setiap blok faktor prima \(p_i^{e_i}\) harus sepenuhnya ditempatkan pada \(a\) atau sepenuhnya ditempatkan pada \(b\). Karena terdapat 9 bilangan prima berbeda dan masing-masing memiliki 2 pilihan alokasi (pada pembilang \(a\) atau penyebut \(b\)):</p>
+                    \[
+                    \text{Banyaknya bilangan rasional} = 2^9 = \boxed{\boxed{512}}
+                    \]
+                    <div class="kesimpulan">Jadi, banyaknya bilangan rasional yang dapat dibentuk adalah 512.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <div class="justify" id="46">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Jika <em>a</em> adalah bilangan asli yang memenuhi <e>FPB(<em>a</em>, 30) = 6</e> dan <e>KPK(<em>a</em>, 45) = 360,</e> maka jumlah semua nilai <em>a</em> yang mungkin adalah ...
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM September 2024</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">30 = 2 &sdot; 3 &sdot; 5 <br>
-          6 = 2 &sdot; 3 <br>
-          Perhatikan bahwa <e>5 &NotVerticalBar; <em>a</em></e><br><br>
-          45 = 3<sup>2</sup> &sdot; 5 <br>
-          360 = 2<sup>3</sup> &sdot; 3<sup>2</sup> &sdot; 5 <br>
-          Karena <e>2 &NotVerticalBar; 45,</e> maka <e>2<sup>3</sup> &VerticalBar; <em>a</em></e><br>
-          Karena faktor prima dari 360 hanya 2, 3, dan 5, maka <br>
-          <e><em>a</em> = 2<sup>3</sup> &sdot; 3<sup><em>n</em></sup>,</e> untuk <e>1 &le; <em>n</em> &le; 2</e>. Jumlah semua nilai <em>a</em> yang mungkin adalah <br>
-          2<sup>3</sup> &sdot; 3 + 2<sup>3</sup> &sdot; 3<sup>2</sup> = 24 + 72 = 96.
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, jumlah semua nilai <em>a</em> yang mungkin adalah 96.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+        <!-- SOAL 42 -->
+        <article class="soal-item" id="42">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tentukan banyaknya bilangan empat digit \(\overline{abcd}\) sehingga \(\overline{abcd}\) dan \(\overline{dbca}\) keduanya habis dibagi 7.
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Latihan OSK 2024 SMA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Tinjau selisih kedua bilangan:</p>
+                    \[
+                    \overline{abcd} - \overline{dbca} = 999(a - d) \equiv 0 \pmod 7
+                    \]
+                    <p>Karena \(999 \equiv 5 \pmod 7\), maka haruslah \(a \equiv d \pmod 7\). Pasangan \((a, d)\) dari digit tak nol \(\{1, \dots, 9\}\):</p>
+                    <ul>
+                        <li>\(a, d \in \{1, 8\}\) \(\implies 4\) pasang</li>
+                        <li>\(a, d \in \{2, 9\}\) \(\implies 4\) pasang</li>
+                        <li>\(a = d \in \{3, 4, 5, 6, 7\}\) \(\implies 5\) pasang</li>
+                    </ul>
+                    <p>Total pasangan \((a, d)\) adalah \(4 + 4 + 5 = 13\) pasang.</p>
+                    <p>Selanjutnya pada bilangan \(\overline{abcd}\):</p>
+                    \[
+                    \begin{aligned}
+                    1000a + 10\overline{bc} + d &\equiv 0 \pmod 7 \\
+                    -a + 10\overline{bc} + d &\equiv 0 \pmod 7
+                    \end{aligned}
+                    \]
+                    <p>Karena \(a \equiv d \pmod 7\), maka \(10\overline{bc} \equiv 0 \pmod 7 \implies \overline{bc} \equiv 0 \pmod 7\).</p>
+                    <p>Nilai \(\overline{bc}\) dari \(00\) sampai \(98\) yang habis dibagi 7 ada 15 nilai (\(00, 07, 14, \dots, 98\)).</p>
+                    <p>Banyaknya bilangan empat digit:</p>
+                    \[
+                    13 \times 15 = \boxed{\boxed{195}}
+                    \]
+                    <div class="kesimpulan">Jadi, banyaknya bilangan empat digit yang memenuhi adalah 195.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <div class="justify" id="47">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Tentukan banyak pasangan bilangan asli <em>a</em>,<em>b</em> yang memenuhi persamaan
-<div class="w3-center">2<em>ab</em> &minus; 5<em>a</em> &minus; 3<em>b</em> = 3</div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM September 2024</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">\(\begin{aligned}
-        2ab-5a-3b&=3\\
-        4ab-10a-6b&=6\\
-        (2a-3)(2b-5)-15&=6\\
-        (2a-3)(2b-5)&=21=1\cdot21=3\cdot7
-        \end{aligned}\) <br>
-        Perhatikan bahwa
-        <ul>
-          <li>2<em>a</em> &minus; 3 &ge; 2 &minus; 3 = &minus;1</li>
-          <li>2<em>b</em> &minus; 5 &ge; 2 &minus; 5 = &minus;3</li>
-        </ul>
-        Sehingga <e>(2<em>a</em> &minus; 3)</e> dan <e>(2<em>b</em> &minus; 5)</e> pasti positif. <br>
-        <e>(2<em>a</em> &minus; 3, 2<em>b</em> &minus; 5) &in; {(1, 21), (21, 1), (3, 7), (7, 3)}</e><br>
-        Ada 4 pasangan
-      </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, banyak pasangan bilangan asli <em>a</em>,<em>b</em> yang memenuhi persamaan
-          <div class="w3-center">2<em>ab</em> &minus; 5<em>a</em> &minus; 3<em>b</em> = 3</div> ada 4.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+        <!-- SOAL 43 -->
+        <article class="soal-item" id="43">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui bahwa \(a, b, c\) adalah bilangan bulat dan \(abc \ne 0\). Banyaknya solusi persamaan:
+                \[a^2 + b^2 + c^2 = 2022abc\]
+                adalah ...
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Latihan OSK 2024 SMA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Karena ruas kanan \(2022abc\) genap, maka \(a^2 + b^2 + c^2\) harus genap.</p>
+                    <ul>
+                        <li><b>Kasus 1: Tepat satu di antara \(a, b, c\) genap dan dua lainnya ganjil.</b><br>
+                        Misalkan \(a\) genap, \(b, c\) ganjil:
+                        \[
+                        a^2 + b^2 + c^2 \equiv 0 + 1 + 1 \equiv 2 \pmod 4
+                        \]
+                        Namun pada ruas kanan, karena \(a\) genap dan 2022 memuat faktor 2:
+                        \[
+                        2022abc = 2 \times 1011 \times a \times bc \equiv 0 \pmod 4
+                        \]
+                        Kontradiksi modulo 4 (\(2 \not\equiv 0 \pmod 4\)).
+                        </li>
+                        <li><b>Kasus 2: \(a, b, c\) ketiganya genap.</b><br>
+                        Gunakan metode penurunan tak hingga (<i>infinite descent</i>). Misalkan \(v_2(\cdot)\) adalah valuasi 2 terbesar. Misalkan \(n = \min(v_2(a), v_2(b), v_2(c)) \ge 1\).
+                        Tuliskan \(a = 2^n a_1, b = 2^n b_1, c = 2^n c_1\) dengan setidaknya salah satu dari \(a_1, b_1, c_1\) adalah ganjil.
+                        Substitusikan:
+                        \[
+                        2^{2n}(a_1^2 + b_1^2 + c_1^2) = 2^{3n} \cdot 2022 a_1 b_1 c_1 \implies a_1^2 + b_1^2 + c_1^2 = 2^n \cdot 2022 a_1 b_1 c_1
+                        \]
+                        Karena \(n \ge 1\), ruas kanan habis dibagi 4, sedangkan ruas kiri memiliki setidaknya satu komponen ganjil sehingga modulo 4 menghasilkan kongruensi 1, 2, atau 3, yang tidak mungkin habis dibagi 4.
+                        </li>
+                    </ul>
+                    <p>Oleh karena itu, tidak ada solusi bilangan bulat tak nol yang memenuhi persamaan tersebut.</p>
+                    <div class="kesimpulan">Jadi, banyaknya solusi persamaan adalah 0 (tidak ada solusi).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(bilbul,3,5)</script>
-</div>
+        <!-- SOAL 44 -->
+        <article class="soal-item" id="44">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Banyaknya bilangan bulat dari 1001 sampai dengan 2022 yang habis dibagi 12 atau 18 adalah ...
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Gunakan Prinsip Inklusi-Eksklusi (PIE):</p>
+                    <ul>
+                        <li><b>Kelipatan 12:</b>
+                        \[\left\lfloor\dfrac{2022}{12}\right\rfloor - \left\lfloor\dfrac{1000}{12}\right\rfloor = 168 - 83 = 85\]
+                        </li>
+                        <li><b>Kelipatan 18:</b>
+                        \[\left\lfloor\dfrac{2022}{18}\right\rfloor - \left\lfloor\dfrac{1000}{18}\right\rfloor = 112 - 55 = 57\]
+                        </li>
+                        <li><b>Kelipatan bersama \(\text{KPK}(12, 18) = 36\):</b>
+                        \[\left\lfloor\dfrac{2022}{36}\right\rfloor - \left\lfloor\dfrac{1000}{36}\right\rfloor = 56 - 27 = 29\]
+                        </li>
+                    </ul>
+                    <p>Banyaknya bilangan yang habis dibagi 12 atau 18 adalah:</p>
+                    \[
+                    85 + 57 - 29 = \boxed{\boxed{113}}
+                    \]
+                    <div class="kesimpulan">Jadi, banyaknya bilangan yang memenuhi adalah 113.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 45 -->
+        <article class="soal-item" id="45">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Ada berapa banyak di antara bilangan-bilangan 20000002, 20011002, 20022002, 20033002 yang habis dibagi 9?
+                <ol class="pilgan pilgan-5kolom">
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">OSK SMA 2003</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Suatu bilangan habis dibagi 9 jika dan hanya jika jumlah seluruh digit penyusunnya habis dibagi 9:</p>
+                    <ul>
+                        <li>Untuk \(20000002\): jumlah digit \(= 2 + 0 + \dots + 2 = 4\) (tidak habis dibagi 9)</li>
+                        <li>Untuk \(20011002\): jumlah digit \(= 2 + 1 + 1 + 2 = 6\) (tidak habis dibagi 9)</li>
+                        <li>Untuk \(20022002\): jumlah digit \(= 2 + 2 + 2 + 2 = 8\) (tidak habis dibagi 9)</li>
+                        <li>Untuk \(20033002\): jumlah digit \(= 2 + 3 + 3 + 2 = 10\) (tidak habis dibagi 9)</li>
+                    </ul>
+                    <p>Tidak ada satu pun bilangan yang habis dibagi 9.</p>
+                    <div class="kesimpulan">Jadi, banyaknya bilangan yang habis dibagi 9 adalah 0.<br><b>JAWAB: A</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 46 -->
+        <article class="soal-item" id="46">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika \(a\) adalah bilangan asli yang memenuhi \(\text{FPB}(a, 30) = 6\) dan \(\text{KPK}(a, 45) = 360\), maka jumlah semua nilai \(a\) yang mungkin adalah ...
+            </div>
+            <div class="soal-sumber">Evaluasi GMOM September 2024</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Faktorkan bilangan-bilangan yang diketahui:</p>
+                    \[
+                    \begin{aligned}
+                    30 &= 2 \times 3 \times 5 \\
+                    6 &= 2 \times 3 \\
+                    45 &= 3^2 \times 5 \\
+                    360 &= 2^3 \times 3^2 \times 5
+                    \end{aligned}
+                    \]
+                    <p>Analisis keterbagian untuk \(a\):</p>
+                    <ul>
+                        <li>Dari \(\text{FPB}(a, 30) = 6\): \(a\) memuat faktor \(2^1\), memuat faktor \(3^{\ge 1}\), dan <b>tidak memuat</b> faktor 5 (\(5 \nmid a\)).</li>
+                        <li>Dari \(\text{KPK}(a, 45) = 360 = 2^3 \times 3^2 \times 5\): karena 45 tidak memuat faktor 2, maka seluruh faktor \(2^3\) harus berasal dari \(a\), sehingga pangkat dari 2 pada \(a\) haruslah tepat \(2^3\).</li>
+                        <li>Pangkat dari faktor 3 pada \(a\) dapat bernilai \(3^1\) atau \(3^2\) (karena pada 45 sudah terdapat \(3^2\), dan \(\text{FPB}(a, 30) = 6\) mensyaratkan \(3 \mid a\)).</li>
+                    </ul>
+                    <p>Nilai \(a\) yang mungkin adalah:</p>
+                    \[
+                    a_1 = 2^3 \times 3^1 = 24 \quad \text{dan} \quad a_2 = 2^3 \times 3^2 = 72
+                    \]
+                    <p>Jumlah seluruh nilai \(a\) yang mungkin adalah:</p>
+                    \[
+                    24 + 72 = \boxed{\boxed{96}}
+                    \]
+                    <div class="kesimpulan">Jadi, jumlah semua nilai \(a\) yang mungkin adalah 96.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 47 -->
+        <article class="soal-item" id="47">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tentukan banyak pasangan bilangan asli \((a, b)\) yang memenuhi persamaan:
+                \[2ab - 5a - 3b = 3\]
+            </div>
+            <div class="soal-sumber">Evaluasi GMOM September 2024</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Kalikan kedua ruas dengan 2 agar koefisien \(ab\) berbentuk kuadrat sempurna untuk difaktorkan:</p>
+                    \[
+                    \begin{aligned}
+                    4ab - 10a - 6b &= 6 \\
+                    2a(2b - 5) - 3(2b - 5) - 15 &= 6 \\
+                    (2a - 3)(2b - 5) &= 21
+                    \end{aligned}
+                    \]
+                    <p>Karena \(a, b \in \mathbb{N}\) (\(a \ge 1, b \ge 1\)):</p>
+                    <ul>
+                        <li>\(2a - 3 \ge 2(1) - 3 = -1\)</li>
+                        <li>\(2b - 5 \ge 2(1) - 5 = -3\)</li>
+                    </ul>
+                    <p>Karena hasil kalinya \(21 > 0\), kedua faktor harus positif. Faktor positif dari 21 adalah \(\{1, 3, 7, 21\}\):</p>
+                    <ul>
+                        <li>\(2a - 3 = 1 \implies a = 2\) dan \(2b - 5 = 21 \implies b = 13\) \(\implies (2, 13)\)</li>
+                        <li>\(2a - 3 = 3 \implies a = 3\) dan \(2b - 5 = 7 \implies b = 6\) \(\implies (3, 6)\)</li>
+                        <li>\(2a - 3 = 7 \implies a = 5\) dan \(2b - 5 = 3 \implies b = 4\) \(\implies (5, 4)\)</li>
+                        <li>\(2a - 3 = 21 \implies a = 12\) dan \(2b - 5 = 1 \implies b = 3\) \(\implies (12, 3)\)</li>
+                    </ul>
+                    <p>Semua pasangan menghasilkan bilangan asli, sehingga terdapat 4 pasangan.</p>
+                    <div class="kesimpulan">Jadi, banyaknya pasangan bilangan asli \((a, b)\) yang memenuhi adalah 4.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

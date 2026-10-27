@@ -1,171 +1,219 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Exercise Zone : Deret Geometri Tak Hingga</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../katex/katex.css">
-      <script src="../katex/katex.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-      <link rel="stylesheet" href="templatestyle.css">
-      <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-         </head> 
-     <body><div class="w3-container">
-      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Deret Geometri Tak Hingga</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-      <h3>Tipe: </h3>
-      <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-      <br>
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Deret Geometri Tak Hingga</title>
 
-    <div class="justify" id="1">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Sebuah bola tenis dijatuhkan dari ketinggian 4 m dan memantul kembali dengan ketinggian <m>\dfrac34</m> kali tinggi sebelumnya. Pemantulan ini berlangsung terus menerus hingga bola berhenti. Jumlah seluruh lintasan bola adalah
-        <div class="w3-row">
-            <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                    <li>
-                        30 m
-                    </li>
-                    <li>
-                        28 m
-                    </li>
-                    <li>
-                        26 m
-                    </li>
-                </ol>
-            </div>
-            <div class="w3-col s6">
-                <ol class="pas1" start="4" type="A">
-                    <li>
-                        24 m
-                    </li>
-                    <li>
-                        22 m
-                    </li>
-                </ol>
-            </div>
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="#" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo">Pertama bola jatuh ke tanah sejauh 4 m. Kemudian memantul ke atas sejauh <m>4\cdot\dfrac34</m> m, dan jatuh kembali ke tanah sejauh <m>4\cdot\dfrac34</m> m, memantul lagi ke atas sejauh <m>4\cdot\left(\dfrac34\right)^2</m> m, jatuh kembali ke tanah sejauh <m>4\cdot\left(\dfrac34\right)^2</m> m, begitu seterusnya sehingga total lintasan bola adalah
-                    \begin{aligned}
-                    S&=4+2\cdot4\cdot\dfrac34+2\cdot4\cdot\left(\dfrac34\right)^2+2\cdot4\cdot\left(\dfrac34\right)^3+\cdots\\[8pt]
-                    &=4+2\cdot4\left(\dfrac34+\left(\dfrac34\right)^2+\left(\dfrac34\right)^3+\cdots\right)\\[8pt]
-                    &=4+8\left(\dfrac{\dfrac34}{1-\dfrac34}\right)\\[8pt]
-                    &=4+8\left(\dfrac{\dfrac34}{\dfrac14}\right)\\[8pt]
-                    &=4+8(3)\\
-                    &=4+24\\
-                    &=\boxed{\boxed{28}}
-                    \end{aligned}
-                    <h1>CARA CEPAT</h1>\begin{aligned}
-                    S&=4\cdot\dfrac{4+3}{4-3}\\[8pt]
-                    &=4\cdot\dfrac71\\[8pt]
-                    &=\boxed{\boxed{28}}
-                    \end{aligned}</div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, jumlah seluruh lintasan bola adalah 28 m.<br><b>JAWAB: B</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-        </details>
-        <hr>
-    </div>
+    </header>
 
-    <div class="justify" id="2">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Suku pertama dari suatu deret geometri tak hingga adalah 20 dan jumlah tak hingganya adalah 70. Rasio deret tersebut adalah 
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/14249" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo"><em>a</em> = 60
-                    \begin{aligned}S&=100\\
-                        \dfrac{a}{1-r}&=100\\
-                        \dfrac{20}{1-r}&=70\\
-                        20&=70(1-r)\\
-                        20&=70-70r\\
-                        70r&=70-20\\
-                        &=50\\
-                        r&=\dfrac{50}{70}\\
-                        &=\boxed{\boxed{\dfrac57}}\end{aligned}</div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, rasio deret tersebut adalah <m>\dfrac57</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-        </details>
-        <hr>
-    </div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Deret Geometri Tak Hingga</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-    <div class="justify" id="3">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Jumlah tak hingga dari deret 18 + 12 + 8 + &ctdot; adalah ....
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="hhttps://t.me/MatematikaZoneId/259" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo"><em>a</em> = 18<br>
-                    <m>r=\dfrac{12}{18}=\dfrac23</m>
-                    \begin{aligned}
-                        S&=\dfrac{a}{1-r}\\[8pt]
-                        &=\dfrac{18}{1-\dfrac23}\\[8pt]
-                        &=\dfrac{18}{\dfrac13}\\[8pt]
-                        &=18\cdot\dfrac31\\
-                        &=\boxed{\boxed{54}}
-                        \end{aligned}</div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, jumlah tak hingga dari deret 18 + 12 + 8 + &ctdot; adalah 54.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Sebuah bola tenis dijatuhkan dari ketinggian 4 m dan memantul kembali dengan ketinggian \(\dfrac{3}{4}\) kali tinggi sebelumnya. Pemantulan ini berlangsung terus menerus hingga bola berhenti. Jumlah seluruh lintasan bola adalah ....
+                <ol class="pilgan pilgan-5kolom">
+                    <li>30 m</li>
+                    <li>28 m</li>
+                    <li>26 m</li>
+                    <li>24 m</li>
+                    <li>22 m</li>
+                </ol>
             </div>
-        </details>
-        <hr>
-    </div>
-    <div id="4" class="justify">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Na Jaemin menjatuhkan sebuah bola tenis dari ketinggian 7 m. Jika tinggi pantulannya adalah
-<m>\dfrac23</m> dari pantulan sebelumnya. Berapakah panjang seluruh lintasan yang dilalui bola dari awal
-sampai akhir?
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Latihan Pra UKK Semester Genap Kelas XI</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo"><em>a</em> = 7.<br>
-                    <em>p</em> = 2<br>
-                    <em>q</em> = 3
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Bola dijatuhkan dari ketinggian 4 m (lintasan turun pertama). Kemudian untuk setiap pantulan berikutnya bola bergerak naik dan turun dengan ketinggian yang sama:
+                    \[
                     \begin{aligned}
-                    S&=a\cdot\dfrac{q+p}{q-p}\\[3.7pt]
-                    S&=7\cdot\dfrac{3+2}{3-2}\\[3.7pt]
-                    &=7\cdot\dfrac51\\
-                    \boxed{\boxed{35}}
+                    S &= 4 + 2 \times 4 \times \dfrac{3}{4} + 2 \times 4 \times \left(\dfrac{3}{4}\right)^2 + 2 \times 4 \times \left(\dfrac{3}{4}\right)^3 + \cdots \\[6pt]
+                    &= 4 + 8\left(\dfrac{3}{4} + \left(\dfrac{3}{4}\right)^2 + \left(\dfrac{3}{4}\right)^3 + \cdots\right) \\[6pt]
+                    &= 4 + 8\left(\dfrac{\dfrac{3}{4}}{1 - \dfrac{3}{4}}\right) \\[6pt]
+                    &= 4 + 8\left(\dfrac{\dfrac{3}{4}}{\dfrac{1}{4}}\right) \\[6pt]
+                    &= 4 + 8(3) = 4 + 24 = 28\text{ m}
                     \end{aligned}
+                    \]
+                    <p><b>Cara Cepat Lintasan Bola Jatuh:</b></p>
+                    Jika bola dijatuhkan dari ketinggian \(h\) dan memantul sebesar \(\dfrac{a}{b}\) kali tinggi sebelumnya, maka total panjang lintasan adalah:
+                    \[
+                    S = h \times \dfrac{b + a}{b - a} = 4 \times \dfrac{4 + 3}{4 - 3} = 4 \times 7 = 28\text{ m}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, jumlah seluruh lintasan bola adalah <b>28 m</b>.<br>
+                        <b>Jawaban: B</b>
+                    </div>
                 </div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, panjang seluruh lintasan yang dilalui bola dari awal
-                    sampai akhir adalah 35 m.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+                <button class="btn-tutup">TUTUP</button>
             </div>
-        </details>
-        <hr>
-    </div>
+        </article>
 
-    <div class="justify" id="5">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        <script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-post="matematikatutorial/1683983" data-width="100%"></script>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo"><script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-post="matematikatutorial/1684093" data-width="100%"></script></div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, rasio deret tersebut adalah \(\dfrac{105}{147}\).<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Suku pertama dari suatu deret geometri tak hingga adalah 20 dan jumlah tak hingganya adalah 70. Rasio deret tersebut adalah ....
             </div>
-        </details>
-        <hr>
-    </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/14249" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Diketahui:
+                    <ul>
+                        <li>Suku pertama \(a = 20\)</li>
+                        <li>Jumlah tak hingga \(S_\infty = 70\)</li>
+                    </ul>
+                    Rumus deret geometri tak hingga:
+                    \[
+                    \begin{aligned}
+                    S_\infty &= \dfrac{a}{1 - r} \\
+                    70 &= \dfrac{20}{1 - r} \\
+                    70(1 - r) &= 20 \\
+                    70 - 70r &= 20 \\
+                    70r &= 70 - 20 \\
+                    70r &= 50 \\
+                    r &= \dfrac{50}{70} = \dfrac{5}{7}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, rasio deret tersebut adalah <b>\(\dfrac{5}{7}\)</b>.
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-    <br>
-    <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-    <br>
-LIHAT JUGA:<br />
-<a class="btn btn-success" href="/2018/09/barisan-dan-deret-geometri-soal-dan.html">Barisan dan Deret Geometri</a><br />
-    <script>soal(dergeotahi,1,1)</script>
-</div>
-   </body>
-</html> 
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jumlah tak hingga dari deret \(18 + 12 + 8 + \cdots\) adalah ....
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneId/259" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Dari deret \(18 + 12 + 8 + \cdots\), diperoleh:
+                    <ul>
+                        <li>Suku pertama: \(a = 18\)</li>
+                        <li>Rasio: \(r = \dfrac{U_2}{U_1} = \dfrac{12}{18} = \dfrac{2}{3}\)</li>
+                    </ul>
+                    Karena \(|r| < 1\), deret tersebut konvergen dan jumlah tak hingganya adalah:
+                    \[
+                    \begin{aligned}
+                    S_\infty &= \dfrac{a}{1 - r} \\[6pt]
+                    &= \dfrac{18}{1 - \dfrac{2}{3}} \\[6pt]
+                    &= \dfrac{18}{\dfrac{1}{3}} \\[6pt]
+                    &= 18 \times 3 = 54
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, jumlah tak hingga dari deret tersebut adalah <b>54</b>.
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Na Jaemin menjatuhkan sebuah bola tenis dari ketinggian 7 m. Jika tinggi pantulannya adalah \(\dfrac{2}{3}\) dari pantulan sebelumnya, berapakah panjang seluruh lintasan yang dilalui bola dari awal sampai akhir?
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">Latihan Pra UKK Semester Genap Kelas XI</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Diketahui:
+                    <ul>
+                        <li>Ketinggian awal: \(h = 7\text{ m}\)</li>
+                        <li>Rasio pantulan: \(\dfrac{a}{b} = \dfrac{2}{3}\)</li>
+                    </ul>
+                    Menggunakan rumus cepat panjang lintasan bola memantul:
+                    \[
+                    \begin{aligned}
+                    S &= h \times \dfrac{b + a}{b - a} \\[6pt]
+                    &= 7 \times \dfrac{3 + 2}{3 - 2} \\[6pt]
+                    &= 7 \times \dfrac{5}{1} = 35\text{ m}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, panjang seluruh lintasan yang dilalui bola dari awal sampai akhir adalah <b>35 m</b>.
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-post="matematikatutorial/1683983" data-width="100%"></script>
+                <noscript><a href="https://t.me/matematikatutorial/1683983" target="_blank" rel="noopener noreferrer">Lihat Soal di Telegram</a></noscript>
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <script async src="https://telegram.org/js/telegram-widget.js?21" data-telegram-post="matematikatutorial/1684093" data-width="100%"></script>
+                    <noscript><a href="https://t.me/matematikatutorial/1684093" target="_blank" rel="noopener noreferrer">Lihat Pembahasan di Telegram</a></noscript>
+                    <div class="kesimpulan">
+                        Jadi, rasio deret tersebut adalah <b>\(\dfrac{105}{147}\)</b>.
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>

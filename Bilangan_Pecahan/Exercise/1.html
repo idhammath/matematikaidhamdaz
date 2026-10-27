@@ -1,105 +1,146 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Exercise Zone : Bilangan Pecahan</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-   </head> 
-     <body>
-        <div class="w3-container">
-            <img alt="Bilangan Pecahan" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvW9WOQFzHTFpVDwUepHCOqO5jrmJX0LcCL_-ol-qRp8DGeGdsY6L27NFrY69h06lirj0TWjGbWQ2fqZzrRIDHMFBWEBqL7SalLdROM9-EAHwsIDMIBt4q_9xfK-ymAEj9SiR2nWMn_VmURX_iS17BB9SCmZj5P1jR_k44LjmiOS1CX-CCAwp33gVK/s320/bilangan%20pecahan%20hots.png" class="w3-hide"/>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Bilangan Pecahan</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-            <h3>Tipe: </h3>
-            <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-            <br>
-            <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-            <br>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Bilangan Pecahan</title>
 
-    <div id="1" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Perhatikan pecahan berikut: 20%; \(\dfrac25\); 0,25; \(1\dfrac14\). Urutan yang benar dari nilai terkecil ke terbesar adalah ....
-        <div class="w3-row">
-            <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                    <li class="pb">20%; \(\dfrac25\); 0,25; \(1\dfrac14\)</li>
-                    <li>\(1\dfrac14\); 0,25; 20%; \(\dfrac25\)</li>
-                </ol>
-            </div>
-            <div class="w3-col s6">
-                <ol class="pas1" start="3" type="A">
-                    <li class="pb">0,25; \(\dfrac25\); 20%; \(1\dfrac14\)</li>
-                    <li>20%; 0,25; \(\dfrac25\); \(1\dfrac14\)</li>
-                </ol>
-            </div>
-        </div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo"><div class="w3-row">
-                    <div class="w3-half">\({20\%=\dfrac{20}{100}=0{,}2}\)<br /><br />
-        \({\dfrac25=\dfrac{4}{10}=0{,}4}\)<br /><br />
-        \({1\dfrac14=1\dfrac{25}{100}=1{,}25}\)</div>
-                    <div class="w3-half">jadi urutan dari yang terkecil ke terbesar adalah\begin{array}{cccc}
-        0{,}2\ &amp;0{,}25\ &amp;0{,}4\ &amp;1{,}25\\
-        20\%\ &amp;0{,}25\ &amp;\dfrac25\ &amp;1\dfrac14
-        \end{array}</div>
-                </div>
-                    <br />
-        <br />
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, urutan yang benar dari nilai terkecil ke terbesar adalah 20%; 0,25; \(\dfrac25\); \(1\dfrac14\).<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Bilangan Pecahan</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Perhatikan pecahan berikut: \(20\%\); \(\dfrac{2}{5}\); \(0{,}25\); \(1\dfrac{1}{4}\). Urutan yang benar dari nilai terkecil ke terbesar adalah ....
+                <ol class="pilgan">
+                    <li>\(20\%\); \(\dfrac{2}{5}\); \(0{,}25\); \(1\dfrac{1}{4}\)</li>
+                    <li>\(1\dfrac{1}{4}\); \(0{,}25\); \(20\%\); \(\dfrac{2}{5}\)</li>
+                    <li>\(0{,}25\); \(\dfrac{2}{5}\); \(20\%\); \(1\dfrac{1}{4}\)</li>
+                    <li>\(20\%\); \(0{,}25\); \(\dfrac{2}{5}\); \(1\dfrac{1}{4}\)</li>
+                </ol>
             </div>
-        </details>
-        <hr>
-</div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Kita ubah setiap bilangan pecahan tersebut ke dalam bentuk desimal:
+                    \[
+                    \begin{aligned}
+                    20\% &= \dfrac{20}{100} = 0{,}20 \\
+                    \dfrac{2}{5} &= \dfrac{4}{10} = 0{,}40 \\
+                    0{,}25 &= 0{,}25 \\
+                    1\dfrac{1}{4} &= 1 + 0{,}25 = 1{,}25
+                    \end{aligned}
+                    \]
+                    Urutan nilai dari yang terkecil ke terbesar adalah:
+                    \[
+                    0{,}20 < 0{,}25 < 0{,}40 < 1{,}25
+                    \]
+                    Sehingga urutan pecahan aslinya adalah:
+                    \[
+                    20\%;\ 0{,}25;\ \dfrac{2}{5};\ 1\dfrac{1}{4}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, urutan yang benar dari nilai terkecil ke terbesar adalah <b>20%; 0,25; \(\dfrac{2}{5}\); \(1\dfrac{1}{4}\)</b>.<br>
+                        <b>Jawaban: D</b>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-          <div class="justify" id="2">
-              <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-              Ubahlah bilangan di bawah ini ke dalam bentuk \(\dfrac{a}b\)
-              <ol type="a">
-                  <li>0,232323...</li>
-                  <li>1,123123123...</li>
-              </ol><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneId/257" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-              <details>
-                  <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-                  <div class="w3-card-4">
-                      <div class="w3-padding w3-sand flo"><div class="w3-row">
-                            <div class="w3-half"><ol type="a">
-                                <li>Misal <em>x</em> = 0,232323...
-                                    \begin{aligned} 
-                                        100x&=23{,}232323\dots\\
-                                        x&=0{,}232323\dots&-\\\hline
-                                        99x&=23\\
-                                        x&=\boxed{\boxed{\dfrac{23}{99}}}
-                                        \end{aligned}
-                                </li></ol></div>
-                            <div class="w3-half"><ol type="a" start="2"><li>Misal <em>p</em> = 1,123123123...\begin{aligned} 
-                                    1000p&=1123{,}123123123\dots\\
-                                    p&=1{,}123123123\dots&-\\\hline
-                                    999x&=1122\\
-                                    p&=\dfrac{1122}{999}\\
-                                    x&=\boxed{\boxed{\dfrac{374}{333}}}
-                                    \end{aligned}
-                                </li></ol></div>
-                        </div></div>
-                      <div class="w3-brown w3-padding tebal flo">Jadi, <ol type="a">
-                        <li>\(0{,}232323...=\dfrac{23}{99}\)</li>
-                        <li>\(1{,}123123123...=\dfrac{374}{333}\)</li>
-                    </ol><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-                  </div>
-              </details>
-              <hr>
-          </div>
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Ubahlah bilangan di bawah ini ke dalam bentuk \(\dfrac{a}{b}\):
+                <ol type="a">
+                    <li>\(0{,}232323\dots\)</li>
+                    <li>\(1{,}123123123\dots\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneId/257" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p><b>Bagian a:</b></p>
+                    Misalkan \(x = 0{,}232323\dots\) Karena perulangan terdiri dari 2 angka (23), kalikan dengan 100:
+                    \[
+                    \begin{aligned} 
+                    100x &= 23{,}232323\dots \\
+                    x &= 0{,}232323\dots \\
+                    \hline
+                    99x &= 23 \\
+                    x &= \dfrac{23}{99}
+                    \end{aligned}
+                    \]
+                    <p><b>Bagian b:</b></p>
+                    Misalkan \(p = 1{,}123123123\dots\) Karena perulangan terdiri dari 3 angka (123), kalikan dengan 1000:
+                    \[
+                    \begin{aligned} 
+                    1000p &= 1123{,}123123123\dots \\
+                    p &= 1{,}123123123\dots \\
+                    \hline
+                    999p &= 1122 \\
+                    p &= \dfrac{1122}{999} = \dfrac{374}{333}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">
+                        Jadi, bentuk pecahan \(\dfrac{a}{b}\) dari bilangan tersebut adalah:
+                        <ol type="a">
+                            <li>\(0{,}232323\dots = \dfrac{23}{99}\)</li>
+                            <li>\(1{,}123123123\dots = \dfrac{374}{333}\)</li>
+                        </ol>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-          <br>
-          <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-          <br>
-<script>soal(bilpec,1,1)</script>    
-   </div>
-   </body>
-</html> 
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>

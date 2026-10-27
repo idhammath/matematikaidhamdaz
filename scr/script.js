@@ -12,7 +12,8 @@ const DAFTAR_TOPIK = [
             { judul: "Barisan dan Deret", folder: "Barisan_dan_Deret" },
             { judul: "Barisan dan Deret Aritmetika", folder: "Barisan_dan_Deret_Aritmetika" },
             { judul: "Barisan dan Deret Geometri", folder: "Barisan_dan_Deret_Geometri" },
-            { judul: "Bentuk Akar", folder: "Bentuk_Akar" }
+            { judul: "Bentuk Akar", folder: "Bentuk_Akar" },
+            { judul: "Induksi Matematika", folder: "Induksi_Matematika" }
         ]
     },
     {
@@ -31,14 +32,18 @@ const DAFTAR_TOPIK = [
             { judul: "Aturan Cosinus", folder: "Aturan_Cosinus" },
             { judul: "Aturan Sinus", folder: "Aturan_Sinus" },
             { judul: "Balok", folder: "Balok" },
-            { judul: "Bangun Ruang Sisi Lengkung", folder: "Bangun_Ruang_Sisi_Lengkung" }
+            { judul: "Bangun Ruang Sisi Lengkung", folder: "Bangun_Ruang_Sisi_Lengkung" },
+            { judul: "Hubungan Garis dan Lingkaran", folder: "Hubungan_Garis_dan_Lingkaran" }
         ]
     },
     {
         bidang: "Kalkulus & Kombinatorika",
         topik: [
             { judul: "Asimtot Kurva", folder: "Asimtot_Kurva" },
-            { judul: "Aturan Pencacahan", folder: "Aturan_Pencacahan" }
+            { judul: "Aturan Pencacahan", folder: "Aturan_Pencacahan" },
+            { judul: "Integral Lipat", folder: "Integral_Lipat" },
+            { judul: "Integral Tak Tentu", folder: "Integral_Tak_Tentu" },
+            { judul: "Integral Tentu", folder: "Integral_Tentu" }
         ]
     }
 ];

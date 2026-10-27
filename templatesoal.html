@@ -12,7 +12,10 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
 
     <!-- GeoSVG.js -->
-    <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+        </script>
 
     <!-- Style Blog -->
     <link rel="stylesheet" href="../../scr/style.css">

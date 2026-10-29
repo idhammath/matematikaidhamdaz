@@ -1,297 +1,396 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exercise Zone : Logaritma [3]</title>
-<script defer src="../mathjax/tex-mml-chtml.js"></script>
-<link rel="stylesheet" href="../katex/katex.css">
-<script src="../katex/katex.js"></script>
-<link rel="stylesheet" href="../w3.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.fontawesomelib.com/releases/6.1.1/css/all.css">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-<script src="skrip.js"></script>
-<script src="../matematikin.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal Dasar - Logaritma [3]</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="../../scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  <img alt="" class="w3-hide" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwoCewzNzsbUYbsytHV1so_Dt43M9dVguvK5kV5VivbbJPn8Egb-EJTD4UZ53Lqq70dbNJiUZm_z2m7vzEOWx2BUnqTUDaMETwLZCanWs9oCSE5U3KTgGf2erAu20xb_WrMOXTJoHYBBdKqQayb--k9mAow5fff0A1skeBPjy7EL5mswpEe1sZVorS/s320/LOGARITMA%20standar.png"/>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Logaritma</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-  <br>
-  <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-  <br>
-
-  <div id="21"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Tentukan <e>log 25 &times; <sup>2</sup>log 10 &times; <sup>5</sup>log 4</e>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/4538" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\begin{aligned}
-            \log25\times{^2\negthinspace\log10}\times{^5\negthinspace\log4}&amp;=\log25\times{^5\negthinspace\log4}\times{^2\negthinspace\log10}\\
-    &amp;=\log25\times{^5\negthinspace\log2^2}\times{^2\negthinspace\log10}\\
-    &amp;=\log25\times2\times{^5\negthinspace\log2}\times{^2\negthinspace\log10}\\
-    &amp;=2\times\log25\times{^5\negthinspace\log10}\\
-    &amp;=2\times\dfrac{\log25}{\log5}\\
-    &amp;=2\times{^5\negthinspace\log25}\\
-    &amp;=2\times2\\
-    &amp;=\boxed{\boxed{4}}
-            \end{aligned}
-    </div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <e>log 25 &times; <sup>2</sup>log 10 &times; <sup>5</sup>log 4 = 4</e>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-    </details>
-    <hr>
-  </div>
-  
-  <div id="22"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Jika <e><sup>2</sup>log 3 = <em>a</em></e>, dan <e><sup>2</sup>log 5 = <em>b</em></e>, nyatakan <e><sup>6</sup>log 50</e> dalam <em>a</em> dan <em>b</em>.
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/4538" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\begin{aligned}
-            ^6\negthinspace\log50&=\dfrac{^2\negthinspace\log50}{^2\negthinspace\log6}\\
-    &=\dfrac{^2\negthinspace\log\left(5^2\cdot2\right)}{^2\negthinspace\log(3\cdot2)}\\
-    &=\dfrac{{^2\negthinspace\log5^2}+{^2\negthinspace\log2}}{{^2\negthinspace\log3}+{^2\negthinspace\log2}}\\
-    &=\dfrac{2\ {^2\negthinspace\log5}+{^2\negthinspace\log2}}{{^2\negthinspace\log3}+{^2\negthinspace\log2}}\\
-    &=\boxed{\boxed{\dfrac{2b+1}{a+1}}}
-            \end{aligned}
-          </div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <m>^6\negthinspace\log50=\dfrac{2b+1}{a+1}</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Logaritma</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
         </div>
-    </details>
-    <hr>
-  </div>
-  
-  <div id="23"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    <e><sup>2</sup>log 1 + <sup>3</sup>log 3 &minus; <sup>5</sup>log 2 + <sup>5</sup>log 50 &minus; <sup>8</sup>log 32 =</e>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/4748" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">\begin{aligned}
-        {^2\negthinspace\log1}+{^3\negthinspace\log3}-{^5\negthinspace\log2}+{^5\negthinspace\log50}-{^8\negthinspace\log32}&={^2\negthinspace\log1}+{^3\negthinspace\log3}+{^5\negthinspace\log50}-{^5\negthinspace\log2}-{^{2^3}\negthinspace\log{2^5}}\\
-    &=0+1+{^5\negthinspace\log\dfrac{50}2}-\dfrac53\\
-    &=1+{^5\negthinspace\log25}-\dfrac53\\
-    &=1+2-\dfrac53\\
-    &=\boxed{\boxed{\dfrac43}}
-        \end{aligned}
-    </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <m>{^2\negthinspace\log1}+{^3\negthinspace\log3}-{^5\negthinspace\log2}+{^5\negthinspace\log50}-{^8\negthinspace\log32}=\dfrac43</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
-  
-  <div id="24"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    <e><sup>5</sup>log 35 + <sup>5</sup>log 55 &minus; <sup>5</sup>log 77 =</e>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/4753" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">\begin{aligned}
-        {^5\negthinspace\log35}+{^5\negthinspace\log55}-{^5\negthinspace\log77}&={^5\negthinspace\log\dfrac{35\cdot55}{77}}\\
-    &={^5\negthinspace\log25}\\
-    &=\boxed{\boxed{2}}
-        \end{aligned}
-    </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <e><sup>5</sup>log 35 + <sup>5</sup>log 55 &minus; <sup>5</sup>log 77 = 2</e>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
-  
-  <div id="25"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    <m>\dfrac{a^2}{b^2}=4</m>, maka <m>\log\dfrac{a^3}{b^3}=</m>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/4753" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><div class="w3-row">
-      <div class="w3-col s6">
-        \begin{aligned}
-        \dfrac{a^2}{b^2}&=4\\
-    \left(\dfrac{a}b\right)^2&=4\\
-    \dfrac{a}b&=2
-        \end{aligned}
-      </div>
-      <div class="w3-col s6">
-          \begin{aligned}
-          \log\dfrac{a^3}{b^3}&=\log\left(\dfrac{a}b\right)^3\\
-    &=\log2^3\\
-    &=\boxed{\boxed{\log8}}
-          \end{aligned}
-      </div>
-    </div></div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <m>\log\dfrac{a^3}{b^3}=\log8</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
-  
-  <div id="26"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Sederhanakan <m>{^3\negthinspace\log\dfrac13}</m>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/4805" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"> \begin{aligned}
-        {^3\negthinspace\log\dfrac13}&={^3\negthinspace\log3^{-1}}\\
-    &=\boxed{\boxed{-1}}
-        \end{aligned}
-    </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <m>{^3\negthinspace\log\dfrac13}=-1</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
-  
-  <div id="27"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Jika <e><sup>2</sup>log 5 = <em>m</em></e> dan <e><sup>2</sup>log 3 = <em>n</em></e> nyatakan <e><sup>50</sup>log 90</e> dalam <em>m</em> dan <em>n</em>.
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/5195" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">\begin{aligned}
-        {^{50}\negthinspace\log90}&=\dfrac{^2\negthinspace\log90}{^2\negthinspace\log50}\\
-    &=\dfrac{^2\negthinspace\log\left(5\cdot3^2\cdot2\right)}{^2\negthinspace\log\left(5^2\cdot2\right)}\\
-    &=\dfrac{{^2\negthinspace\log5}+2\ {^2\negthinspace\log3}+{^2\negthinspace\log2}}{2\ {^2\negthinspace\log5}+{^2\negthinspace\log2}}\\
-    &=\boxed{\boxed{\dfrac{m+2n+1}{2m+1}}}
-        \end{aligned}
-    </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <m>{^{50}\negthinspace\log90}=\dfrac{m+2n+1}{2m+1}</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
-  
-  <div id="28"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Nilai dari <m>\dfrac{{^3\negthinspace\log36}\cdot{^6\negthinspace\log81}-{^4\negthinspace\log32}}{^{\frac19}\negthinspace\log27}=</m>
-    <div class="w3-row">
-      <div class="w3-col s6">
-          <ol class="pas1" type="A">
-              <li>3</li>
-              <li class="pb">&minus;9</li>
-              <li><m>\dfrac{11}2</m></li>
-          </ol>
-      </div>
-      <div class="w3-col s6">
-          <ol class="pas1" start="4" type="A">
-              <li class="pb"><m>-\dfrac{11}3</m></li>
-              <li>&minus;11</li>
-          </ol>
-      </div>
-  </div>
-  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneId/235" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-  <details>
-    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-    <div class="w3-card-4">
-      <div class="w3-padding w3-sand flo">\begin{aligned}
-      \dfrac{{^3\negthinspace\log36}\cdot{^6\negthinspace\log81}-{^4\negthinspace\log32}}{^{\frac19}\negthinspace\log27}&=\dfrac{{^3\negthinspace\log6^2}\cdot{^6\negthinspace\log81}-{^{2^2}\negthinspace\log2^5}}{^{\frac1{3^2}}\negthinspace\log3^3}\\
-    &=\dfrac{2\ {^3\negthinspace\log6}\cdot{^6\negthinspace\log81}-\dfrac52}{^{3^{-2}}\negthinspace\log3^3}\\
-    &=\dfrac{2\ {^3\negthinspace\log81}-\dfrac52}{-\dfrac32}\\
-    &=\dfrac{2(4)-\dfrac52}{-\dfrac32}\\
-    &=\dfrac{8-\dfrac52}{-\dfrac32}\\
-    &=\dfrac{\dfrac{11}2}{-\dfrac32}\\
-    &=\boxed{\boxed{-\dfrac{11}3}}
-      \end{aligned}
-    </div>
-      <div class="w3-brown w3-padding tebal flo">Jadi, <m>\dfrac{{^3\negthinspace\log36}\cdot{^6\negthinspace\log81}-{^4\negthinspace\log32}}{^{\frac19}\negthinspace\log27}=-\dfrac{11}3</m>.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-    </div>
-  </details>
-  <hr>
-  </div>
-  
-  <div id="29"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Hasil dari <m>{\left(^{c^{\frac72}}\negthinspace\log b^{14}\right)\cdot\left(^{a^{\frac53}}\negthinspace\log c^{10}\right)\cdot\left(^{b^{\frac32}}\negthinspace\log a^9\right)}</m> adalah
-    <div class="w3-row">
-    <div class="w3-col s6">
-      <ol class="pas1" type="A">
-        <li>144</li>
-        <li>155</li>
-        <li>166</li>
-      </ol>
-    </div>
-    <div class="w3-col s6">
-      <ol class="pas1" start="4" type="A">
-        <li>177</li>
-        <li>188</li>
-      </ol>
-    </div>
-  </div>
-  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2020/09/skmp-sma-juli-2020.html" target="_blank" rel="noopener noreferrer">SKMP Juli 2020</a></div>
-  <details>
-    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-    <div class="w3-card-4">
-      <div class="w3-padding w3-sand flo">\begin{aligned}
-      \left(^{c^{\frac72}}\negthinspace\log b^{14}\right)\cdot\left(^{a^{\frac53}}\negthinspace\log c^{10}\right)\cdot\left(^{b^{\frac32}}\negthinspace\log a^9\right)&=\left(\dfrac27\cdot14\cdot{^c\negthinspace\log b}\right)\cdot\left(\dfrac35\cdot10\cdot{^a\negthinspace\log c}\right)\cdot\left(\dfrac23\cdot9\cdot{^b\negthinspace\log a}\right)\\
-    &=\left(4\cdot{^c\negthinspace\log b}\right)\cdot\left(6\cdot{^a\negthinspace\log c}\right)\cdot\left(6\cdot{^b\negthinspace\log a}\right)\\
-    &=144\cdot{^c\negthinspace\log b}\cdot{^a\negthinspace\log c}\cdot{^b\negthinspace\log a}\\
-    &=144\cdot{^a\negthinspace\log c}\cdot{^c\negthinspace\log b}\cdot{^b\negthinspace\log a}\\
-    &=\boxed{\boxed{144}}
-      \end{aligned}
-    </div>
-      <div class="w3-brown w3-padding tebal flo">Jadi, <m>{\left(^{c^{\frac72}}\negthinspace\log b^{14}\right)\cdot\left(^{a^{\frac53}}\negthinspace\log c^{10}\right)\cdot\left(^{b^{\frac32}}\negthinspace\log a^9\right)}=144	</m>.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-    </div>
-  </details>
-  <hr>
-  </div>
 
-  <div id="30" class="justify">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Hitunglah nilai dari:
-    <ol type="a">
-      <li><sup>2</sup>log 16</li>
-      <li><sup>2</sup>log 64 &minus; <sup>3</sup>log 9 &minus; <sup>5</sup>log 25</li>
-      <li><sup>2</sup>log 5 &sdot; <sup>5</sup>log 6 &sdot; <sup>6</sup>log 8</li>
-    </ol>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2022/05/latihan-soal-pra-ukk-semester-genap.html" target="_blank" rel="noopener noreferrer">Latihan Pra UKK Semester Genap Kelas X</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><ol type="a">
-          <li><br>
-            \begin{aligned}
-            {^2\negthinspace\log16} &={^2\negthinspace\log2^4} \\
-            &=\boxed{\boxed{4}}
-            \end{aligned}
-          </li>
-          <li><br>\begin{aligned}
-          {^2\negthinspace\log64}-{^3\negthinspace\log9}-{^5\negthinspace\log25}&={^2\negthinspace\log2^6}-{^3\negthinspace\log3^2}-{^5\negthinspace\log5^2}\\
-            &=6-2-2\\
-            &=\boxed{\boxed{2}}
-          \end{aligned}
-          </li>
-          <li><br>\begin{aligned}
-          {^2\negthinspace\log5}\cdot{^5\negthinspace\log6}\cdot{^6\negthinspace\log8}&={^2\negthinspace\log8}\\
-            &={^2\negthinspace\log}2^3\\
-            &=\boxed{\boxed{3}}
-          \end{aligned}
-          </li>
-        </ol></div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <ol type="a">
-          <li><sup>2</sup>log 16 = 4</li>
-          <li><sup>2</sup>log 64 &minus; <sup>3</sup>log 9 &minus; <sup>5</sup>log 25 = 2</li>
-          <li><sup>2</sup>log 5 &sdot; <sup>5</sup>log 6 &sdot; <sup>6</sup>log 8 = 3</li>
-        </ol><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-  <br>
-  <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-  <br>
-  <script>soal(loga,1,3)</script>
-</div>
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 21 -->
+        <article class="soal-item" id="21">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tentukan nilai dari:
+                \[
+                \log 25 \times {}^2\log 10 \times {}^5\log 4
+                \]
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/4538" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Susun urutan perkalian dan gunakan sifat rantai perkalian logaritma:</p>
+                    \[
+                    \begin{aligned}
+                    \log 25 \times {}^2\log 10 \times {}^5\log 4
+                    &= \log 25 \times {}^5\log 4 \times {}^2\log 10 \\[6pt]
+                    &= \log 25 \times {}^5\log 2^2 \times {}^2\log 10 \\[6pt]
+                    &= 2 \times \log 25 \times ({}^5\log 2 \times {}^2\log 10) \\[6pt]
+                    &= 2 \times \log 25 \times {}^5\log 10 \\[6pt]
+                    &= 2 \times \frac{\log 25}{\log 5} \\[6pt]
+                    &= 2 \times {}^5\log 25 \\[6pt]
+                    &= 2 \times 2 = 4
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, $\log 25 \times {}^2\log 10 \times {}^5\log 4 = 4$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 22 -->
+        <article class="soal-item" id="22">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika ${}^2\log 3 = a$ dan ${}^2\log 5 = b$, nyatakan ${}^6\log 50$ dalam bentuk $a$ dan $b$.
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/4538" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Ubah basis ${}^6\log 50$ ke basis $2$:</p>
+                    \[
+                    \begin{aligned}
+                    {}^6\log 50 &= \frac{{}^2\log 50}{{}^2\log 6} \\[6pt]
+                    &= \frac{{}^2\log(5^2 \cdot 2)}{{}^2\log(3 \cdot 2)} \\[6pt]
+                    &= \frac{{}^2\log 5^2 + {}^2\log 2}{{}^2\log 3 + {}^2\log 2} \\[6pt]
+                    &= \frac{2 \cdot {}^2\log 5 + 1}{{}^2\log 3 + 1} \\[6pt]
+                    &= \frac{2b + 1}{a + 1}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, ${}^6\log 50 = \dfrac{2b + 1}{a + 1}$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 23 -->
+        <article class="soal-item" id="23">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Hitunglah nilai dari:
+                \[
+                {}^2\log 1 + {}^3\log 3 - {}^5\log 2 + {}^5\log 50 - {}^8\log 32 = \dots
+                \]
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/4748" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Hitung nilai masing-masing suku:</p>
+                    \[
+                    \begin{aligned}
+                    {}^2\log 1 &= 0 \\
+                    {}^3\log 3 &= 1 \\
+                    {}^5\log 50 - {}^5\log 2 &= {}^5\log\left(\frac{50}{2}\right) = {}^5\log 25 = 2 \\
+                    {}^8\log 32 &= {}^{2^3}\log 2^5 = \frac{5}{3}
+                    \end{aligned}
+                    \]
+                    <p>Gabungkan seluruh suku:</p>
+                    \[
+                    0 + 1 + 2 - \frac{5}{3} = 3 - \frac{5}{3} = \frac{9 - 5}{3} = \frac{4}{3}
+                    \]
+                    <div class="kesimpulan">Jadi, hasil perhitungannya adalah $\dfrac{4}{3}$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 24 -->
+        <article class="soal-item" id="24">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Hitunglah nilai dari:
+                \[
+                {}^5\log 35 + {}^5\log 55 - {}^5\log 77 = \dots
+                \]
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/4753" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Gunakan sifat operasi penjumlahan dan pengurangan logaritma sebasis:</p>
+                    \[
+                    \begin{aligned}
+                    {}^5\log 35 + {}^5\log 55 - {}^5\log 77
+                    &= {}^5\log\left(\frac{35 \cdot 55}{77}\right) \\[6pt]
+                    &= {}^5\log\left(\frac{(5 \cdot 7) \cdot (5 \cdot 11)}{7 \cdot 11}\right) \\[6pt]
+                    &= {}^5\log(5 \cdot 5) \\[6pt]
+                    &= {}^5\log 25 = 2
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, ${}^5\log 35 + {}^5\log 55 - {}^5\log 77 = 2$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 25 -->
+        <article class="soal-item" id="25">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika $\dfrac{a^2}{b^2} = 4$ untuk bilangan positif $a$ dan $b$, maka tentukan nilai dari:
+                \[
+                \log \frac{a^3}{b^3} = \dots
+                \]
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/4753" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Dari persamaan $\frac{a^2}{b^2} = 4$:</p>
+                    \[
+                    \left(\frac{a}{b}\right)^2 = 4 \implies \frac{a}{b} = 2
+                    \]
+                    <p>Substitusikan ke bentuk yang ditanyakan:</p>
+                    \[
+                    \begin{aligned}
+                    \log \frac{a^3}{b^3} &= \log \left(\frac{a}{b}\right)^3 \\
+                    &= \log 2^3 \\
+                    &= \log 8
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, $\log \dfrac{a^3}{b^3} = \log 8$ (atau $3\log 2$).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 26 -->
+        <article class="soal-item" id="26">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Sederhanakan bentuk berikut:
+                \[
+                {}^3\log \frac{1}{3}
+                \]
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/4805" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Nyatakan $\frac{1}{3}$ dalam pangkat negatif basis $3$:</p>
+                    \[
+                    {}^3\log \frac{1}{3} = {}^3\log 3^{-1} = -1 \cdot {}^3\log 3 = -1
+                    \]
+                    <div class="kesimpulan">Jadi, ${}^3\log \dfrac{1}{3} = -1$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 27 -->
+        <article class="soal-item" id="27">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika ${}^2\log 5 = m$ dan ${}^2\log 3 = n$, nyatakan ${}^{50}\log 90$ dalam bentuk $m$ dan $n$.
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/5195" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Ubah basis ${}^{50}\log 90$ ke basis $2$:</p>
+                    \[
+                    \begin{aligned}
+                    {}^{50}\log 90 &= \frac{{}^2\log 90}{{}^2\log 50} \\[6pt]
+                    &= \frac{{}^2\log(5 \cdot 3^2 \cdot 2)}{{}^2\log(5^2 \cdot 2)} \\[6pt]
+                    &= \frac{{}^2\log 5 + 2 \cdot {}^2\log 3 + {}^2\log 2}{2 \cdot {}^2\log 5 + {}^2\log 2} \\[6pt]
+                    &= \frac{m + 2n + 1}{2m + 1}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, ${}^{50}\log 90 = \dfrac{m + 2n + 1}{2m + 1}$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 28 -->
+        <article class="soal-item" id="28">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Nilai dari:
+                \[
+                \frac{{}^3\log 36 \cdot {}^6\log 81 - {}^4\log 32}{{}^{1/9}\log 27} = \dots
+                \]
+                <ol class="pilgan" type="A">
+                    <li>$3$</li>
+                    <li>$-9$</li>
+                    <li>$\dfrac{11}{2}$</li>
+                    <li>$-\dfrac{11}{3}$</li>
+                    <li>$-11$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneId/235" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Sederhanakan bagian-bagian pembilang:</p>
+                    \[
+                    \begin{aligned}
+                    {}^3\log 36 \cdot {}^6\log 81 &= {}^3\log 6^2 \cdot {}^6\log 81 = 2 \cdot ({}^3\log 6 \cdot {}^6\log 81) \\
+                    &= 2 \cdot {}^3\log 81 = 2 \cdot 4 = 8 \\[6pt]
+                    {}^4\log 32 &= {}^{2^2}\log 2^5 = \frac{5}{2}
+                    \end{aligned}
+                    \]
+                    <p>Pembilang:</p>
+                    \[
+                    8 - \frac{5}{2} = \frac{16 - 5}{2} = \frac{11}{2}
+                    \]
+                    <p>Penyebut:</p>
+                    \[
+                    {}^{1/9}\log 27 = {}^{3^{-2}}\log 3^3 = \frac{3}{-2} = -\frac{3}{2}
+                    \]
+                    <p>Maka hasil pecahan:</p>
+                    \[
+                    \frac{\frac{11}{2}}{-\frac{3}{2}} = -\frac{11}{3}
+                    \]
+                    <div class="kesimpulan">Jadi, hasil perhitungannya adalah $-\dfrac{11}{3}$.<br><strong>Jawaban: D</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 29 -->
+        <article class="soal-item" id="29">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Hasil dari:
+                \[
+                \left({}^{c^{7/2}}\log b^{14}\right) \cdot \left({}^{a^{5/3}}\log c^{10}\right) \cdot \left({}^{b^{3/2}}\log a^9\right)
+                \]
+                adalah ...
+                <ol class="pilgan" type="A">
+                    <li>$144$</li>
+                    <li>$155$</li>
+                    <li>$166$</li>
+                    <li>$177$</li>
+                    <li>$188$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="/2020/09/skmp-sma-juli-2020.html" target="_blank" rel="noopener noreferrer">SKMP Juli 2020</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Gunakan sifat ${}^{x^m}\log y^n = \frac{n}{m} \cdot {}^x\log y$ untuk masing-masing faktor:</p>
+                    \[
+                    \begin{aligned}
+                    {}^{c^{7/2}}\log b^{14} &= \frac{14}{\frac{7}{2}} \cdot {}^c\log b = 14 \cdot \frac{2}{7} \cdot {}^c\log b = 4 \cdot {}^c\log b \\[6pt]
+                    {}^{a^{5/3}}\log c^{10} &= \frac{10}{\frac{5}{3}} \cdot {}^a\log c = 10 \cdot \frac{3}{5} \cdot {}^a\log c = 6 \cdot {}^a\log c \\[6pt]
+                    {}^{b^{3/2}}\log a^9 &= \frac{9}{\frac{3}{2}} \cdot {}^b\log a = 9 \cdot \frac{2}{3} \cdot {}^b\log a = 6 \cdot {}^b\log a
+                    \end{aligned}
+                    \]
+                    <p>Kalikan ketiga hasil tersebut:</p>
+                    \[
+                    \begin{aligned}
+                    (4 \cdot {}^c\log b) \cdot (6 \cdot {}^a\log c) \cdot (6 \cdot {}^b\log a)
+                    &= (4 \cdot 6 \cdot 6) \cdot ({}^a\log c \cdot {}^c\log b \cdot {}^b\log a) \\[6pt]
+                    &= 144 \cdot {}^a\log a \\[6pt]
+                    &= 144 \cdot 1 = 144
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, hasil perkalian tersebut adalah $144$.<br><strong>Jawaban: A</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 30 -->
+        <article class="soal-item" id="30">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Hitunglah nilai dari:
+                <ol type="a">
+                    <li>${}^2\log 16$</li>
+                    <li>${}^2\log 64 - {}^3\log 9 - {}^5\log 25$</li>
+                    <li>${}^2\log 5 \cdot {}^5\log 6 \cdot {}^6\log 8$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="/2022/05/latihan-soal-pra-ukk-semester-genap.html" target="_blank" rel="noopener noreferrer">Latihan Pra UKK Semester Genap Kelas X</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <ol type="a">
+                        <li>
+                            \[
+                            {}^2\log 16 = {}^2\log 2^4 = 4
+                            \]
+                        </li>
+                        <li>
+                            \[
+                            \begin{aligned}
+                            {}^2\log 64 - {}^3\log 9 - {}^5\log 25
+                            &= {}^2\log 2^6 - {}^3\log 3^2 - {}^5\log 5^2 \\
+                            &= 6 - 2 - 2 = 2
+                            \end{aligned}
+                            \]
+                        </li>
+                        <li>
+                            \[
+                            {}^2\log 5 \cdot {}^5\log 6 \cdot {}^6\log 8 = {}^2\log 8 = {}^2\log 2^3 = 3
+                            \]
+                        </li>
+                    </ol>
+                    <div class="kesimpulan">Jadi, nilai-nilai yang diperoleh adalah: (a) $4$, (b) $2$, dan (c) $3$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
+
+</html>

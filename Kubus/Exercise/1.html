@@ -1,438 +1,851 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>Exercise Zone : Kubus</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.2.4/svg.min.js" integrity="sha512-ovlWyhrYXr3HEkGJI5YPXIFYIbHEKs2yfemKVVIIQe9U74tXyTuVdzMlvZlw/0X5lnIDRgtVlckrkeuCrDpq4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="svg.draggable.js"></script>
-      <style>
-        #kubusKu {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-   </head> 
-     <body> 
-      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Kubus</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-      <h2>Tipe</h2>
-      <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-      <br>
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>
+<!DOCTYPE html>
+<html lang="id">
 
-        <div class="justify" id="1"><h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-          Tentukan besar sudut antara diagonal <em>BG</em> dan <em>FH</em> pada kubus <em>ABCD.EFGH</em> yang mempunyai rusuk 8 cm!
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">Grup WhatsApp</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-8VGUUrVxcQo/XyuLzfdF4VI/AAAAAAAAAAM/w4f-YnwiXxcYLnS7Riw8I0pWGrO2R8E9wCLcBGAsYHQ/s353/Annotation%2B2020-08-06%2B112746.png" style="display: block; padding: 1em 0px;"><img border="0" data-original-height="353" data-original-width="331" height="200" src="https://1.bp.blogspot.com/-8VGUUrVxcQo/XyuLzfdF4VI/AAAAAAAAAAM/w4f-YnwiXxcYLnS7Riw8I0pWGrO2R8E9wCLcBGAsYHQ/w188-h200/Annotation%2B2020-08-06%2B112746.png" width="188" /></a></div>Karena <em>BG</em> dan <em>FH</em> tidak berpotongan, kita buat garis yang sejajar dengan <em>BG</em> atau <em>FH</em>. Di sini kita buat garis yang sejajar dengan <em>BG</em> dan berpotongan dengan <em>FH</em>, didapat garis <em>AH</em>. Kemudian hubungkan titik <em>A</em> dan titik <em>F</em>, didapat segitiga <em>AFH</em>. Sudut antara <em>BG</em> dan <em>FH</em> sama dengan sudut antara <em>AH</em> dan <em>FH</em>. Karena segitiga <em>AFH</em> adalah segitiga sama sisi, sehingga masing-masing sudutnya sama dengan 60&deg;.</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, besar sudut antara diagonal <em>BG</em> dan <em>FH</em> adalah 60&deg;.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Kubus</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="../../scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Kubus</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR 10 SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Tentukan besar sudut antara diagonal \(BG\) dan \(FH\) pada kubus \(ABCD.EFGH\) yang mempunyai panjang rusuk 8 cm!
+                </p>
             </div>
-          </details>
-          <hr>
-        </div>
-        
-        <div class="justify" id="2"><h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-          Kubus <em>ABCD.EFGH</em> dengan panjang rusuk <m>2\sqrt3</m> cm. Tentukan jarak dari titik <em>C</em> ke garis <em>AG</em>.
-          <div class="w3-row">
-          <div class="w3-col s6">
-            <ol class="pas1" type="A">
-              <li><m>\sqrt2</m> cm</li>
-              <li><m>2\sqrt2</m> cm</li>
-              <li><m>3\sqrt2</m> cm</li>
-            </ol>
-          </div>
-          <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-              <li><m>3\sqrt3</m> cm</li>
-              <li><m>4\sqrt3</m> cm</li>
-            </ol>
-          </div>
-        </div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://web.facebook.com/groups/1691443554424346/permalink/2086288394939858/" target="_blank">Grup Facebook</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="separator" style="clear: both; text-align: center;">
-        <a href="https://3.bp.blogspot.com/-LY2cKJmtcxE/Wq5WZ8PDZ6I/AAAAAAAAAg0/MAQlXF00m64C0TjrfLxB-KHcfAI23DBbgCLcBGAs/s1600/2018-03-18_18-51-50.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="288" data-original-width="268" src="https://3.bp.blogspot.com/-LY2cKJmtcxE/Wq5WZ8PDZ6I/AAAAAAAAAg0/MAQlXF00m64C0TjrfLxB-KHcfAI23DBbgCLcBGAs/s1600/2018-03-18_18-51-50.jpg" /></a></div>
-        <m>AC=2\sqrt3\times\sqrt2=2\sqrt6</m><br />
-        <m>AG=2\sqrt3\times\sqrt3=6</m><br />
-        <br />
-        Jarak titik <em>C</em> ke <em>AG</em> adalah <em>CP</em>.
-        \begin{aligned}
-        CP&amp;=\dfrac{AC\cdot CG}{AG}\\[4pt]
-        &amp;=\dfrac{2\sqrt6\cdot2\sqrt3}6\\[4pt]
-        &amp;=\dfrac{2\sqrt2\color{red}\cancel{\sqrt3}\cdot\cancel{2}\cancel{\sqrt3}}{\color{red}\cancel{6}}\\[4pt]
-        &amp;=2\sqrt2
-        \end{aligned}</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, jarak titik <em>C</em> ke garis <em>AG</em> adalah <m>2\sqrt2</m> cm.<br><b>JAWAB: B</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            <div class="soal-sumber">
+                <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a>
             </div>
-          </details>
-          <hr>
-        </div>
-        
-        <div class="justify" id="3"><h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-          Pada kubus <em>ABCD.EFGH</em>, jika <em>&theta;</em> adalah sudut antara diagonal <em>AG</em> dan diagonal <em>EG</em>, maka sin <em>&theta;</em> = ....
-          <div class="w3-row">
-            <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                    <li class="pb"><m>\dfrac12</m></li>
-                    <li class="pb"><m>\dfrac12\sqrt3</m></li>
-                    <li><m>\dfrac13\sqrt3</m></li>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Diagonal \(BG\) dan diagonal \(FH\) merupakan dua garis yang saling bersilangan (tidak berpotongan dan tidak sejajar).
+                    </p>
+                    <p>
+                        Untuk menentukan sudut antara kedua garis tersebut, kita geser salah satu garis ke garis lain yang sejajar dan berpotongan.
+                        Perhatikan bahwa garis \(BG\) sejajar dengan garis \(AH\) (\(BG \parallel AH\)). Karena \(AH\) berpotongan dengan \(FH\) di titik \(H\), maka:
+                        \[
+                        \angle(BG, FH) = \angle(AH, FH) = \angle AHF
+                        \]
+                    </p>
+                    <p>
+                        Hubungkan titik \(A\), \(F\), dan \(H\) sehingga membentuk segitiga \(\triangle AFH\). Perhatikan panjang sisi-sisi \(\triangle AFH\):
+                        \[
+                        AH = FH = AF = 8\sqrt{2}\text{ cm}
+                        \]
+                        Ketiga sisi tersebut merupakan diagonal bidang pada kubus, sehingga \(\triangle AFH\) adalah <strong>segitiga sama sisi</strong>.
+                        Oleh karena itu, setiap sudut pada segitiga sama sisi besarnya adalah \(60^\circ\):
+                        \[
+                        \angle AHF = 60^\circ
+                        \]
+                    </p>
+
+                    <!-- Visualisasi GeoSVG Soal 1 -->
+                    <div id="geosvg-kubus-1" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, besar sudut antara diagonal \(BG\) dan \(FH\) adalah \(60^\circ\).
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Kubus \(ABCD.EFGH\) mempunyai panjang rusuk \(2\sqrt{3}\text{ cm}\). Tentukan jarak dari titik \(C\) ke garis \(AG\)!
+                </p>
+                <ol class="pilgan">
+                    <li>\(\sqrt{2}\text{ cm}\)</li>
+                    <li>\(2\sqrt{2}\text{ cm}\)</li>
+                    <li>\(3\sqrt{2}\text{ cm}\)</li>
+                    <li>\(3\sqrt{3}\text{ cm}\)</li>
+                    <li>\(4\sqrt{3}\text{ cm}\)</li>
                 </ol>
             </div>
-            <div class="w3-col s6">
-                <ol class="pas1" start="4" type="A">
-                    <li class="pb"><m>\sqrt3</m></li>
-                    <li><m>\dfrac12\sqrt2</m></li>
+            <div class="soal-sumber">
+                <a href="https://web.facebook.com/groups/1691443554424346/permalink/2086288394939858/" target="_blank" rel="noopener noreferrer">Grup Facebook</a>
+            </div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Perhatikan segitiga \(\triangle ACG\). Karena rusuk tegak \(CG\) tegak lurus dengan bidang alas \(ABCD\), maka \(CG \perp AC\), sehingga \(\triangle ACG\) siku-siku di \(C\).
+                    </p>
+                    <ul>
+                        <li>Diagonal bidang: \(AC = s\sqrt{2} = 2\sqrt{3} \times \sqrt{2} = 2\sqrt{6}\text{ cm}\)</li>
+                        <li>Rusuk kubus: \(CG = 2\sqrt{3}\text{ cm}\)</li>
+                        <li>Diagonal ruang: \(AG = s\sqrt{3} = 2\sqrt{3} \times \sqrt{3} = 6\text{ cm}\)</li>
+                    </ul>
+                    <p>
+                        Jarak titik \(C\) ke garis \(AG\) adalah panjang garis tinggi \(CP\) dengan \(CP \perp AG\). Menggunakan rumus kesamaan luas segitiga \(\triangle ACG\):
+                        \[
+                        \begin{aligned}
+                        L &= \frac{1}{2} \times AC \times CG = \frac{1}{2} \times AG \times CP \\[6pt]
+                        CP &= \frac{AC \times CG}{AG} \\[6pt]
+                           &= \frac{2\sqrt{6} \times 2\sqrt{3}}{6} \\[6pt]
+                           &= \frac{4\sqrt{18}}{6} = \frac{4 \times 3\sqrt{2}}{6} = \frac{12\sqrt{2}}{6} \\[6pt]
+                           &= 2\sqrt{2}\text{ cm}
+                        \end{aligned}
+                        \]
+                    </p>
+
+                    <!-- Visualisasi GeoSVG Soal 2 -->
+                    <div id="geosvg-kubus-2" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, jarak dari titik \(C\) ke garis \(AG\) adalah \(2\sqrt{2}\text{ cm}\).<br>
+                        <strong>Jawaban: B</strong>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Pada kubus \(ABCD.EFGH\), jika \(\theta\) adalah sudut antara diagonal ruang \(AG\) dan diagonal bidang \(EG\), maka \(\sin\theta = \dots\)
+                </p>
+                <ol class="pilgan">
+                    <li>\(\dfrac{1}{2}\)</li>
+                    <li>\(\dfrac{1}{2}\sqrt{3}\)</li>
+                    <li>\(\dfrac{1}{3}\sqrt{3}\)</li>
+                    <li>\(\sqrt{3}\)</li>
+                    <li>\(\dfrac{1}{2}\sqrt{2}\)</li>
                 </ol>
             </div>
-        </div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">GANESHA OPERATION</div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">Misal panjang rusuknya adalah <em>a</em>.
-        \begin{aligned}
-        \sin\theta&amp;=\dfrac{AE}{AG}\\
-        &amp;=\dfrac{a}{a\sqrt3}\\
-        &amp;=\dfrac13\sqrt3
-        \end{aligned}</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <m>\sin\theta=\dfrac13\sqrt3</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            <div class="soal-sumber">
+                Ganesha Operation
             </div>
-          </details>
-          <hr>
-        </div>
-        
-        <div class="justify" id="4"><h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-          Diketahui kubus <em>ABCD.EFGH</em> dengan panjang rusuk 12 cm. Titik <em>P</em>, <em>Q</em>, dan <em>R</em> berturut-turut merupakan titik tengah rusuk <em>EH</em>, <em>BF</em>, dan <em>CG</em>. Jarak titik <em>P</em> ke garis <em>QR</em> adalah ... cm.
-          <div class="w3-row">
-          <div class="w3-col s6">
-            <ol class="pas1" type="A">
-              <li><m>6\sqrt5</m></li>
-              <li><m>6\sqrt6</m></li>
-              <li><m>6\sqrt7</m></li>
-            </ol>
-          </div>
-          <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-              <li><m>12\sqrt5</m></li>
-              <li><m>12\sqrt6</m></li>
-            </ol>
-          </div>
-        </div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><div class="w3-row">
-        <div class="w3-col s4">
-        <a href="https://2.bp.blogspot.com/-k3tnUQNrEFg/XYYgHDxPPBI/AAAAAAAAKTs/u72RQvR9a0YEeGTtrSwGfxJhFUJ82xBQACLcBGAsYHQ/s1600/2019-09-21_19-58-50.jpg" imageanchor="1"><img border="0" data-original-height="404" data-original-width="388" height="200" src="https://2.bp.blogspot.com/-k3tnUQNrEFg/XYYgHDxPPBI/AAAAAAAAKTs/u72RQvR9a0YEeGTtrSwGfxJhFUJ82xBQACLcBGAsYHQ/s200/2019-09-21_19-58-50.jpg" width="192" /></a></div>
-        <div class="w3-col s8">
-        <em>PJ</em> = 12 = 6&sdot;2<br />
-        <em>JI</em> = 6 = 6&sdot;1
-        \begin{aligned}
-        PI&amp;=\sqrt{PJ^2+JI^2}\\
-        &amp;=6\sqrt{2^2+1^2}\\
-        &amp;=6\sqrt{4+1}\\
-        &amp;=\boxed{\boxed{6\sqrt5}}
-        \end{aligned}</div>
-        </div></div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, jarak titik <em>P</em> ke garis <em>QR</em> adalah <m>6\sqrt5</m> cm.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-          </div>
-        
-        <div class="justify" id="5"><h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-          Diketahui kubus <em>ABCD.EFGH</em> dengan rusuk 8 cm. <em>P</em> terletak di tengah garis <em>EH</em> dan <em>Q</em> pada garis <em>CG</em> dengan <em>CQ</em>:<em>QG</em> = 1:3. Jarak titik <em>P</em> ke titik <em>Q</em> adalah
-          <div class="w3-row">
-        <div class="w3-col s6">
-        <ol class="pas1" type="A">
-        <li><m>2\sqrt{29}</m> cm</li>
-        <li><m>5\sqrt{29}</m> cm
-        </li>
-        <li><m>8\sqrt{29}</m> cm
-        </li>
-        </ol>
-        </div>
-        <div class="w3-col s6">
-        <ol class="pas1" start="4" type="A">
-        <li><m>4\sqrt{30}</m> cm</li>
-        <li><m>8\sqrt{30}</m> cm
-        </li>
-        </ol>
-        </div>
-        </div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/3069" target="_blank">Grup Telegram</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><a href="https://4.bp.blogspot.com/-OrCXhhu4DyQ/Xc__08GiTvI/AAAAAAAAKxM/GbMIu8czx7oJLaEMg3N9GloiXc8SJXrrgCLcBGAsYHQ/s1600/Anotasi%2B2019-11-16%2B205025.png" imageanchor="1"><img border="0" data-original-height="408" data-original-width="409" height="319" src="https://4.bp.blogspot.com/-OrCXhhu4DyQ/Xc__08GiTvI/AAAAAAAAKxM/GbMIu8czx7oJLaEMg3N9GloiXc8SJXrrgCLcBGAsYHQ/s320/Anotasi%2B2019-11-16%2B205025.png" width="320" /></a><br />
-        <m>PH=\dfrac12EH=\dfrac12(8)=4</m><br />
-        <br />
-        <m>GQ=\dfrac34GC=\dfrac34(8)=6</m>
-        \begin{aligned}
-        PQ&amp;=\sqrt{PH^2+HG^2+GQ^2}\\
-        &amp;=\sqrt{4^2+8^2+6^2}\\
-        &amp;=\sqrt{16+64+36}\\
-        &amp;=\sqrt{116}\\
-        &amp;=\boxed{\boxed{2\sqrt{29}}}
-        \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, jarak titik <em>P</em> ke titik <em>Q</em> adalah <m>2\sqrt{29}</m> cm.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        </div>
-        
-        <div class="justify" id="6"><h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-          Diketahui kubus <em>ABCD.EFGH</em> dengan rusuk 8 cm. Tentukan jarak titik <em>E</em> ke bidang <em>BDG</em>.
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/5371" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-xQB_DG9NtK8/X1h8nwWN8_I/AAAAAAAAPbw/QbllyAIioTkSzLL4SyaRfwh8suCmXOuTwCLcBGAsYHQ/s750/Annotation%2B2020-09-09%2B135558.png" style="display: block; padding: 1em 0; text-align: center;"><img alt="" border="0" width="320" data-original-height="737" data-original-width="750" src="https://1.bp.blogspot.com/-xQB_DG9NtK8/X1h8nwWN8_I/AAAAAAAAPbw/QbllyAIioTkSzLL4SyaRfwh8suCmXOuTwCLcBGAsYHQ/s320/Annotation%2B2020-09-09%2B135558.png"/></a></div>
-            <div class="w3-row">
-            <div class="w3-col s6">
-                <h1>CARA BIASA</h1>
-          <m>AC=8\sqrt2</m><br>
-          <m>EC=8\sqrt3</m>
-          \begin{aligned}
-          JC&=\dfrac12AC\\
-          &=\dfrac12\left(8\sqrt2\right)\\
-          &=4\sqrt2
-          \end{aligned}
-          \begin{aligned}
-          JG&=\sqrt{JC^2+CG^2}\\
-          &=\sqrt{\left(4\sqrt2\right)^2+8^2}\\
-          &=\sqrt{32+64}\\
-          &=\sqrt{96}\\
-          &=4\sqrt6
-          \end{aligned}
-          \begin{aligned}
-          CI&=\dfrac{JC\cdot CG}{JG}\\
-          &=\dfrac{\cancel{4}\sqrt{\cancel{2}}\cdot 8}{\cancel{4}\sqrt{\cancelto{\color{red}3}{6}}}\\
-          &=\dfrac8{\sqrt3}\\
-          &=\dfrac83\sqrt3
-          \end{aligned}
-          \begin{aligned}
-          EI&=EC-CI\\
-          &=8\sqrt3-\dfrac83\sqrt3\\
-          &=\boxed{\boxed{\dfrac{16}3\sqrt3}}
-          \end{aligned}
-            </div>
-            <div class="w3-col s6">
-              <h1>CARA CEPAT</h1>
-              \begin{aligned}
-              EI&=\dfrac23a\sqrt3\\
-              &=\dfrac23(8)\sqrt3\\
-              &=\boxed{\boxed{\dfrac{16}3\sqrt3}}
-              \end{aligned}
-            </div>
-          </div></div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, jarak titik <em>E</em> ke bidang <em>BDG</em> adalah <m>\dfrac{16}3\sqrt3</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
-        
-        <div class="justify" id="7"><h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-          Kubus <em>ABCD.EFGH</em> mempunyai panjang rusuk 6 cm. tentukan jarak dari <em>E</em> ke <em>BDHF</em>.
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/5592" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-6UyHTLnhhlw/X2BWIz6bWoI/AAAAAAAAPfE/qTXw5e8iAh01cpue86xOaRNoAgubCY1swCLcBGAsYHQ/s448/Screenshot%2B2020-09-15%2B124717.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="448" data-original-width="435" src="https://1.bp.blogspot.com/-6UyHTLnhhlw/X2BWIz6bWoI/AAAAAAAAPfE/qTXw5e8iAh01cpue86xOaRNoAgubCY1swCLcBGAsYHQ/s320/Screenshot%2B2020-09-15%2B124717.png"/></a></div>
-          Jarak <em>E</em> ke <em>BDHF</em> adalah <em>EO</em>.
-          \begin{aligned}
-          EO&=\dfrac12EG\\
-          &=\dfrac12\left(6\sqrt2\right)\\
-          &=\boxed{\boxed{3\sqrt2}}
-          \end{aligned}</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, jarak dari <em>E</em> ke <em>BDHF</em> adalah <m>3\sqrt2</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
-        
-        <div class="justify" id="8"><h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-          Sebuah kubus <em>ABCD.EFGH</em> dengan panjang rusuk <m>2\sqrt2</m> cm. Titik <em>P</em> dan <em>Q</em> berturut-turut merupakan titik tengah <em>EF</em> dan <em>EH</em>. Jarak titik <em>E</em> ke bidang <em>APQ</em> adalah ....
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">SKB CPNS MATEMATIKA 2020</div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"> Misal <em>R</em> adalah titik tengah <em>PQ</em>.
-          <div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-zdFnSj5S6V8/X3fxD59cWvI/AAAAAAAAPp8/8lDOG2cv1dcu3COl7h5hwm04mqCD__xTgCLcBGAsYHQ/s613/Screenshot%2B2020-10-03%2B103206.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="613" data-original-width="560" src="https://1.bp.blogspot.com/-zdFnSj5S6V8/X3fxD59cWvI/AAAAAAAAPp8/8lDOG2cv1dcu3COl7h5hwm04mqCD__xTgCLcBGAsYHQ/s320/Screenshot%2B2020-10-03%2B103206.png"/></a></div>
-            <div class="w3-row">
-            <div class="w3-col s6">
-               <m>EG=2\sqrt2\cdot\sqrt2=4</m><br><br>
-          <m>ER=\dfrac14EG=\dfrac14(4)=1</m>
-          \begin{aligned}
-          AR&=\sqrt{AE^2+ER^2}\\
-          &=\sqrt{\left(2\sqrt2\right)^2+1^2}\\
-          &=\sqrt{8+1}\\
-          &=\sqrt9\\
-          &=3
-          \end{aligned}
-            </div>
-            <div class="w3-col s6">
-              \begin{aligned}
-              ES&=\dfrac{AE\cdot ER}{AR}\\
-          &=\dfrac{2\sqrt2\cdot1}3\\
-          &=\boxed{\boxed{\dfrac23\sqrt2}}
-              \end{aligned}
-            </div>
-          </div></div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, jarak titik <em>E</em> ke bidang <em>APQ</em> adalah <m>\dfrac23\sqrt2</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Perhatikan segitiga \(\triangle AEG\). Karena rusuk \(AE\) tegak lurus dengan bidang atas \(EFGH\), maka \(AE \perp EG\), sehingga \(\triangle AEG\) siku-siku di \(E\).
+                    </p>
+                    <p>
+                        Misalkan panjang rusuk kubus adalah \(a\):
+                    </p>
+                    <ul>
+                        <li>Panjang rusuk tegak: \(AE = a\)</li>
+                        <li>Panjang diagonal bidang: \(EG = a\sqrt{2}\)</li>
+                        <li>Panjang diagonal ruang: \(AG = a\sqrt{3}\)</li>
+                    </ul>
+                    <p>
+                        Sudut antara garis \(AG\) dan \(EG\) adalah sudut \(\angle AGE = \theta\). Nilai sinusnya adalah perbandingan sisi depan terhadap sisi miring:
+                        \[
+                        \begin{aligned}
+                        \sin\theta &= \frac{AE}{AG} \\[6pt]
+                                   &= \frac{a}{a\sqrt{3}} \\[6pt]
+                                   &= \frac{1}{\sqrt{3}} = \frac{1}{3}\sqrt{3}
+                        \end{aligned}
+                        \]
+                    </p>
 
-        <div class="justify" id="9">
-          <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-          Diketahui kubus <em>ABCD.EFGH</em> dengan panjang rusuk 6 cm. Jarak antara titik <em>C</em> ke bidang <em>ABGH</em> adalah ..... 
-          <div class="w3-row">
-            <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                <li>\(3\sqrt2\) cm</li>
-                <li>\(3\sqrt3\) cm</li>
-                <li>6 cm</li>
-              </ol>
-            </div>
-            <div class="w3-col s6">
-              <ol class="pas1" start="4" type="A">
-                <li>\(6\sqrt2\) cm</li>
-                <li>\(6\sqrt3\) cm</li>
-              </ol>
-            </div>
-          </div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/matematikazoneidbot" target="_blank" rel="noopener noreferrer">Matematika Zone Indonesia</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">Buat garis tegak lurus dari titik <em>C</em> ke <em>ABGH</em>. Jarak titik <em>C</em> ke bidang <em>ABGH</em> sama dengan jarak dari titik <em>C</em> ke ruas garis <em>BG</em>. Misal jarak dari titik <em>C</em> ke ruas garis <em>BG</em> adalah <em>CP</em><br>
-                \(\begin{aligned}
-                CP&=\dfrac{BC\cdot CG}{BG}\\[3.8pt] 
-                &=\dfrac{6\cdot 6}{6\sqrt2}\\[3.8pt] 
-                &=\dfrac{6}{\sqrt2}\\[3.8pt] 
-                &=\dfrac{6}2\sqrt2\\
-                &=\boxed{\boxed{3\sqrt2}}
-                \end{aligned}\)
-              </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, jarak antara titik <em>C</em> ke bidang <em>ABGH</em> adalah \(3\sqrt2\) cm.<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
+                    <!-- Visualisasi GeoSVG Soal 3 -->
+                    <div id="geosvg-kubus-3" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
 
-        <div class="justify" id="10">
-          <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-          Sebuah kubus <em>ABCD.EFGH</em> memiliki panjang rusuk 12. Titik <em>P</em> terletak pada sisi <em>CG</em> sehingga <e><em>CP</em>:<em>CG</em> = 2:3</e>. Jarak titik <em>B</em> terhadap garis <em>AP</em> adalah ....
-          <div class="w3-row">
-            <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                <li class="pb">$\dfrac3{11}\sqrt{286}$</li>
-                <li class="pb">$\dfrac6{11}\sqrt{286}$</li>
-                <li>$\dfrac7{11}\sqrt{286}$</li>
-              </ol>
+                    <div class="kesimpulan">
+                        Jadi, nilai \(\sin\theta = \dfrac{1}{3}\sqrt{3}\).<br>
+                        <strong>Jawaban: C</strong>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
             </div>
-            <div class="w3-col s6">
-              <ol class="pas1" start="4" type="A">
-                <li class="pb">$\dfrac{15}2\sqrt{286}$</li>
-                <li>$\dfrac{17}{12}\sqrt{286}$</li>
-              </ol>
-            </div>
-          </div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Penyisihan OGM 10 Tingkat SMA</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">
-                <div id="kub10"></div>
-                \(\begin{aligned}
-                CP&=\dfrac23CG\\[4pt]
-                &=\dfrac23\cdot12\\[4pt]
-                &=8
-                \end{aligned}\) <br><br>
-                \(\begin{aligned}
-                BP&=\sqrt{BC^2+CP^2}\\
-                &=\sqrt{12^2+8^2}\\
-                &=\sqrt{144+64}\\
-                &=\sqrt{208}\\
-                &=4\sqrt{13}
-                \end{aligned}\) <br><br>
-                 \(\begin{aligned}
-                 AP&=\sqrt{AB^2+BC^2+CP^2}\\
-                  &=\sqrt{12^2+12^2+8^2}\\
-                  &=\sqrt{144+144+64}\\
-                  &=\sqrt{352}\\
-                  &=4\sqrt{22}
-                 \end{aligned}\) <br><br>
-                 \(\begin{aligned}
-                 BQ&=\dfrac{AB\cdot BP}{AP}\\[4pt]
-                 &=\dfrac{12\cdot4\sqrt{13}}{4\sqrt{22}}{\color{red}\cdot\dfrac{\sqrt{22}}{\sqrt{22}}}\\[4pt]
-                  &=\dfrac{12\sqrt{286}}{22}\\
-                  &=\color{blue}\boxed{\boxed{\color{black}\dfrac{6\sqrt{286}}{11}}}
-                 \end{aligned}\)
-              </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, jarak titik <em>B</em> terhadap garis <em>AP</em> adalah $\dfrac6{11}\sqrt{286}$.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-          <script>
-            var a10 = [12,45,0.5];
-            a10.push(a10[0]*a10[2]*cos(a10[1]),a10[0]+a10[0]*a10[2]*cos(a10[1]),a10[0]*a10[2]*sin(a10[1]),a10[0]+a10[0]*a10[2]*sin(a10[1]))
-            var tiA10 = [0,a10[6]];
-            var tiB10 = [a10[0],a10[6]];
-            var tiC10 = [a10[4],a10[0]];
-            var tiD10 = [a10[3],a10[0]];
-            var tiE10 = [0,a10[5]];
-            var tiF10 = [a10[0],a10[5]];
-            var tiG10 = [a10[4],0];
-            var tiH10 = [a10[3],0];
-            var tiP10 = [a10[4],a10[0]/3];
-            var AP10 = panjanggaris([tiA10,tiP10]);
-            var BP10 = panjanggaris([tiB10,tiP10]);
-            var AB10 = panjanggaris([tiA10,tiB10]);
-            var tiQ10 = titikpadagaris([tiA10,tiP10],(AB10*AB10)/(BP10*BP10))
-            var kub10 = geomBuat('kub10',a10[0]+a10[0]*a10[2]*cos(a10[1]),a10[0]+a10[0]*a10[2]*sin(a10[1]),{rasio:10,margin:2});
-            geomSiku(kub10,[tiB10,tiQ10,tiP10],{r:1})
-            geomSegmen(kub10,[tiA10,tiD10],{tebal:2,dash:'4 2'})
-            geomSegmen(kub10,[tiC10,tiD10],{tebal:2,dash:'4 2'})
-            geomSegmen(kub10,[tiH10,tiD10],{tebal:2,dash:'4 2'})
-            geomSegmen(kub10,[tiA10,tiP10],{tebal:2,dash:'4 2',warna:'blue'})
-            geomSegmen(kub10,[tiB10,tiP10],{tebal:2,warna:'green'})
-            geomSegmen(kub10,[tiB10,tiQ10],{tebal:2,warna:'red'})
-            geomSegi(kub10,[tiA10,tiB10,tiF10,tiE10],{tebal:2});
-            geomSegi(kub10,[tiB10,tiC10,tiG10,tiF10],{tebal:2});
-            geomSegi(kub10,[tiE10,tiF10,tiG10,tiH10],{tebal:2});
-            geomLabelTitik(kub10,tiA10,'A',{ukuran:1.2,anchor:'end',baseline:'mathematical',xplus:-0.1})
-            geomLabelTitik(kub10,tiB10,'B',{ukuran:1.2,anchor:'start',baseline:'hanging',xplus:0.1})
-            geomLabelTitik(kub10,tiC10,'C',{ukuran:1.2,anchor:'start',baseline:'central',xplus:0.2})
-            geomLabelTitik(kub10,tiD10,'D',{ukuran:1.2,anchor:'end',baseline:'baseline',xplus:-0.3})
-            geomLabelTitik(kub10,tiE10,'E',{ukuran:1.2,anchor:'end',baseline:'mathematical',xplus:-0.3})
-            geomLabelTitik(kub10,tiF10,'F',{ukuran:1.2,anchor:'middle',baseline:'baseline',xplus:-0.2,yplus:-0.4})
-            geomLabelTitik(kub10,tiG10,'G',{ukuran:1.2,anchor:'start',baseline:'baseline',xplus:0.2})
-            geomLabelTitik(kub10,tiH10,'H',{ukuran:1.2,anchor:'middle',baseline:'baseline',xplus:-0.2,yplus:-0.2})
-            geomLabelTitik(kub10,tiP10,'P',{ukuran:1.2,anchor:'start',baseline:'central',xplus:0.3})
-            geomLabelTitik(kub10,tiQ10,'Q',{ukuran:1.2,anchor:'middle',baseline:'baseline',xplus:-0.6,yplus:-0.6})
-        </script>
-        </div>
+        </article>
 
-        <br>
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>
-      <script>soal(kubus,1,1)</script>
-   </body>
-</html> 
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Diketahui kubus \(ABCD.EFGH\) dengan panjang rusuk 12 cm. Titik \(P\), \(Q\), dan \(R\) berturut-turut merupakan titik tengah rusuk \(EH\), \(BF\), dan \(CG\). Jarak titik \(P\) ke garis \(QR\) adalah ....
+                </p>
+                <ol class="pilgan">
+                    <li>\(6\sqrt{5}\text{ cm}\)</li>
+                    <li>\(6\sqrt{6}\text{ cm}\)</li>
+                    <li>\(6\sqrt{7}\text{ cm}\)</li>
+                    <li>\(12\sqrt{5}\text{ cm}\)</li>
+                    <li>\(12\sqrt{6}\text{ cm}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">
+                Latihan Dimensi Tiga
+            </div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Perhatikan posisi titik-titik tersebut:
+                    </p>
+                    <ul>
+                        <li>Titik \(P\) di tengah \(EH\)</li>
+                        <li>Titik \(Q\) di tengah \(BF\), titik \(R\) di tengah \(CG\) \(\implies\) garis \(QR\) sejajar dengan \(FG\) dan \(BC\) pada bidang \(BCGF\)</li>
+                    </ul>
+                    <p>
+                        Misalkan \(J\) adalah titik tengah rusuk \(FG\) dan \(I\) adalah titik tengah garis \(QR\).
+                    </p>
+                    <ul>
+                        <li>Garis \(PJ\) sejajar rusuk \(EF\), sehingga \(PJ \perp FG\) dan \(PJ = 12\text{ cm}\).</li>
+                        <li>Garis \(JI\) vertikal ke bawah dari \(FG\) ke \(QR\), sehingga \(JI = \frac{1}{2}(12) = 6\text{ cm}\).</li>
+                        <li>Karena \(PJ\) tegak lurus bidang belakang/kanan, maka \(PJ \perp JI\).</li>
+                    </ul>
+                    <p>
+                        Jarak titik \(P\) ke garis \(QR\) adalah panjang ruas \(PI\):
+                        \[
+                        \begin{aligned}
+                        PI &= \sqrt{PJ^2 + JI^2} \\[6pt]
+                           &= \sqrt{12^2 + 6^2} \\[6pt]
+                           &= \sqrt{144 + 36} = \sqrt{180} \\[6pt]
+                           &= \sqrt{36 \times 5} = 6\sqrt{5}\text{ cm}
+                        \end{aligned}
+                        \]
+                    </p>
+
+                    <!-- Visualisasi GeoSVG Soal 4 -->
+                    <div id="geosvg-kubus-4" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, jarak titik \(P\) ke garis \(QR\) adalah \(6\sqrt{5}\text{ cm}\).<br>
+                        <strong>Jawaban: A</strong>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Diketahui kubus \(ABCD.EFGH\) dengan rusuk 8 cm. Titik \(P\) terletak di tengah garis \(EH\) dan \(Q\) pada garis \(CG\) dengan \(CQ : QG = 1 : 3\). Jarak titik \(P\) ke titik \(Q\) adalah ....
+                </p>
+                <ol class="pilgan">
+                    <li>\(2\sqrt{29}\text{ cm}\)</li>
+                    <li>\(5\sqrt{29}\text{ cm}\)</li>
+                    <li>\(8\sqrt{29}\text{ cm}\)</li>
+                    <li>\(4\sqrt{30}\text{ cm}\)</li>
+                    <li>\(8\sqrt{30}\text{ cm}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">
+                <a href="https://t.me/MatematikaZoneIdGrup/3069" target="_blank" rel="noopener noreferrer">Grup Telegram</a>
+            </div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Tentukan jarak pergeseran dari titik \(P\) ke titik \(Q\) pada ketiga sumbu ruang:
+                    </p>
+                    <ul>
+                        <li>Dari \(P\) ke \(H\) sepanjang rusuk \(EH\): \(PH = \frac{1}{2} EH = \frac{1}{2}(8) = 4\text{ cm}\)</li>
+                        <li>Dari \(H\) ke \(G\) sepanjang rusuk \(HG\): \(HG = 8\text{ cm}\)</li>
+                        <li>Dari \(G\) ke \(Q\) sepanjang rusuk \(GC\): karena \(CQ : QG = 1 : 3\), maka \(GQ = \frac{3}{1+3} GC = \frac{3}{4}(8) = 6\text{ cm}\)</li>
+                    </ul>
+                    <p>
+                        Ketiga segmen tersebut saling tegak lurus, sehingga jarak \(P\) ke \(Q\) dihitung dengan teorema Pythagoras 3D:
+                        \[
+                        \begin{aligned}
+                        PQ &= \sqrt{PH^2 + HG^2 + GQ^2} \\[6pt]
+                           &= \sqrt{4^2 + 8^2 + 6^2} \\[6pt]
+                           &= \sqrt{16 + 64 + 36} \\[6pt]
+                           &= \sqrt{116} = \sqrt{4 \times 29} = 2\sqrt{29}\text{ cm}
+                        \end{aligned}
+                        \]
+                    </p>
+
+                    <!-- Visualisasi GeoSVG Soal 5 -->
+                    <div id="geosvg-kubus-5" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, jarak titik \(P\) ke titik \(Q\) adalah \(2\sqrt{29}\text{ cm}\).<br>
+                        <strong>Jawaban: A</strong>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 6 -->
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Diketahui kubus \(ABCD.EFGH\) dengan panjang rusuk 8 cm. Tentukan jarak titik \(E\) ke bidang \(BDG\)!
+                </p>
+            </div>
+            <div class="soal-sumber">
+                <a href="https://t.me/MatematikaZoneIdGrup/5371" target="_blank" rel="noopener noreferrer">Grup Telegram</a>
+            </div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Garis diagonal ruang \(EC\) menembus bidang \(BDG\) secara tegak lurus di titik \(I\).
+                    </p>
+                    <p>
+                        <strong>Cara Analisis Segitiga:</strong><br>
+                        Misalkan \(J\) adalah titik potong diagonal alas \(AC\) dan \(BD\) (titik tengah \(AC\)).
+                    </p>
+                    <ul>
+                        <li>\(AC = 8\sqrt{2}\text{ cm} \implies JC = 4\sqrt{2}\text{ cm}\)</li>
+                        <li>Garis tinggi bidang \(BDG\):
+                            \[
+                            JG = \sqrt{JC^2 + CG^2} = \sqrt{(4\sqrt{2})^2 + 8^2} = \sqrt{32 + 64} = \sqrt{96} = 4\sqrt{6}\text{ cm}
+                            \]
+                        </li>
+                        <li>Jarak titik \(C\) ke bidang \(BDG\) adalah garis tinggi \(CI \perp JG\) pada \(\triangle JCG\):
+                            \[
+                            CI = \frac{JC \times CG}{JG} = \frac{4\sqrt{2} \times 8}{4\sqrt{6}} = \frac{8}{\sqrt{3}} = \frac{8}{3}\sqrt{3}\text{ cm}
+                            \]
+                        </li>
+                        <li>Panjang diagonal ruang \(EC = 8\sqrt{3}\text{ cm}\). Jarak titik \(E\) ke bidang \(BDG\) adalah:
+                            \[
+                            EI = EC - CI = 8\sqrt{3} - \frac{8}{3}\sqrt{3} = \frac{16}{3}\sqrt{3}\text{ cm}
+                            \]
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Cara Cepat:</strong><br>
+                        Bidang \(BDG\) membagi diagonal ruang \(EC\) menjadi perbandingan \(2 : 1\):
+                        \[
+                        EI = \frac{2}{3} EC = \frac{2}{3} \times 8\sqrt{3} = \frac{16}{3}\sqrt{3}\text{ cm}
+                        \]
+                    </p>
+
+                    <!-- Visualisasi GeoSVG Soal 6 -->
+                    <div id="geosvg-kubus-6" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, jarak titik \(E\) ke bidang \(BDG\) adalah \(\dfrac{16}{3}\sqrt{3}\text{ cm}\).
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 7 -->
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Kubus \(ABCD.EFGH\) mempunyai panjang rusuk 6 cm. Tentukan jarak dari titik \(E\) ke bidang diagonal \(BDHF\)!
+                </p>
+            </div>
+            <div class="soal-sumber">
+                <a href="https://t.me/MatematikaZoneIdGrup/5592" target="_blank" rel="noopener noreferrer">Grup Telegram</a>
+            </div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Bidang \(BDHF\) adalah bidang diagonal kubus yang memuat garis diagonal atas \(FH\).
+                    </p>
+                    <p>
+                        Pada bidang atas \(EFGH\) (persegi), diagonal \(EG\) dan diagonal \(FH\) saling berpotongan tegak lurus di titik tengahnya, sebut titik \(O\).
+                        Karena garis \(EG \perp FH\) dan \(EG\) tegak lurus dengan rusuk tegak \(BF\) serta \(DH\), maka garis \(EG\) tegak lurus terhadap seluruh bidang \(BDHF\).
+                    </p>
+                    <p>
+                        Oleh karena itu, jarak titik \(E\) ke bidang \(BDHF\) adalah panjang ruas garis \(EO\):
+                        \[
+                        \begin{aligned}
+                        EG &= s\sqrt{2} = 6\sqrt{2}\text{ cm} \\[6pt]
+                        EO &= \frac{1}{2} EG = \frac{1}{2}(6\sqrt{2}) = 3\sqrt{2}\text{ cm}
+                        \end{aligned}
+                        \]
+                    </p>
+
+                    <!-- Visualisasi GeoSVG Soal 7 -->
+                    <div id="geosvg-kubus-7" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, jarak dari titik \(E\) ke bidang \(BDHF\) adalah \(3\sqrt{2}\text{ cm}\).
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 8 -->
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Sebuah kubus \(ABCD.EFGH\) dengan panjang rusuk \(2\sqrt{2}\text{ cm}\). Titik \(P\) dan \(Q\) berturut-turut merupakan titik tengah \(EF\) dan \(EH\). Jarak titik \(E\) ke bidang \(APQ\) adalah ....
+                </p>
+            </div>
+            <div class="soal-sumber">
+                SKB CPNS Matematika 2020
+            </div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Perhatikan bidang atas \(EFGH\). Titik \(P\) di tengah \(EF\) dan \(Q\) di tengah \(EH\).
+                        Misalkan \(R\) adalah titik tengah garis \(PQ\).
+                    </p>
+                    <ul>
+                        <li>Diagonal \(EG = s\sqrt{2} = (2\sqrt{2})\sqrt{2} = 4\text{ cm}\)</li>
+                        <li>Ruas \(ER = \frac{1}{4} EG = \frac{1}{4}(4) = 1\text{ cm}\)</li>
+                        <li>Rusuk \(AE = 2\sqrt{2}\text{ cm}\) tegak lurus dengan \(ER\)</li>
+                    </ul>
+                    <p>
+                        Perhatikan segitiga \(\triangle AER\) yang siku-siku di \(E\):
+                        \[
+                        AR = \sqrt{AE^2 + ER^2} = \sqrt{(2\sqrt{2})^2 + 1^2} = \sqrt{8 + 1} = \sqrt{9} = 3\text{ cm}
+                        \]
+                    </p>
+                    <p>
+                        Jarak titik \(E\) ke bidang \(APQ\) sama dengan panjang garis tinggi \(ES \perp AR\) pada \(\triangle AER\):
+                        \[
+                        \begin{aligned}
+                        ES &= \frac{AE \times ER}{AR} \\[6pt]
+                           &= \frac{2\sqrt{2} \times 1}{3} = \frac{2}{3}\sqrt{2}\text{ cm}
+                        \end{aligned}
+                        \]
+                    </p>
+
+                    <!-- Visualisasi GeoSVG Soal 8 -->
+                    <div id="geosvg-kubus-8" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, jarak titik \(E\) ke bidang \(APQ\) adalah \(\dfrac{2}{3}\sqrt{2}\text{ cm}\).
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 9 -->
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Diketahui kubus \(ABCD.EFGH\) dengan panjang rusuk 6 cm. Jarak antara titik \(C\) ke bidang \(ABGH\) adalah ....
+                </p>
+                <ol class="pilgan">
+                    <li>\(3\sqrt{2}\text{ cm}\)</li>
+                    <li>\(3\sqrt{3}\text{ cm}\)</li>
+                    <li>\(6\text{ cm}\)</li>
+                    <li>\(6\sqrt{2}\text{ cm}\)</li>
+                    <li>\(6\sqrt{3}\text{ cm}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">
+                <a href="https://t.me/matematikazoneidbot" target="_blank" rel="noopener noreferrer">Matematika Zone Indonesia</a>
+            </div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Bidang \(ABGH\) adalah bidang diagonal kubus yang memuat ruas garis diagonal sisi \(BG\).
+                    </p>
+                    <p>
+                        Garis dari titik \(C\) yang tegak lurus ke bidang \(ABGH\) terletak pada bidang sisi kanan \(BCGF\), yaitu garis yang tegak lurus terhadap diagonal \(BG\).
+                        Misalkan proyeksi titik \(C\) pada \(BG\) adalah titik \(P\).
+                    </p>
+                    <p>
+                        Karena sisi \(BCGF\) adalah persegi, diagonal \(CF\) berpotongan tegak lurus dengan diagonal \(BG\) di titik tengahnya \(P\):
+                        \[
+                        \begin{aligned}
+                        BG &= 6\sqrt{2}\text{ cm} \\[6pt]
+                        CP &= \frac{1}{2} CF = \frac{1}{2}(6\sqrt{2}) = 3\sqrt{2}\text{ cm}
+                        \end{aligned}
+                        \]
+                    </p>
+
+                    <!-- Visualisasi GeoSVG Soal 9 -->
+                    <div id="geosvg-kubus-9" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, jarak antara titik \(C\) ke bidang \(ABGH\) adalah \(3\sqrt{2}\text{ cm}\).<br>
+                        <strong>Jawaban: A</strong>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 10 -->
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Sebuah kubus \(ABCD.EFGH\) memiliki panjang rusuk 12 cm. Titik \(P\) terletak pada rusuk \(CG\) sehingga \(CP : CG = 2 : 3\). Jarak titik \(B\) terhadap garis \(AP\) adalah ....
+                </p>
+                <ol class="pilgan">
+                    <li>\(\dfrac{3}{11}\sqrt{286}\text{ cm}\)</li>
+                    <li>\(\dfrac{6}{11}\sqrt{286}\text{ cm}\)</li>
+                    <li>\(\dfrac{7}{11}\sqrt{286}\text{ cm}\)</li>
+                    <li>\(\dfrac{15}{2}\sqrt{286}\text{ cm}\)</li>
+                    <li>\(\dfrac{17}{12}\sqrt{286}\text{ cm}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">
+                Penyisihan OGM 10 Tingkat SMA
+            </div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Diketahui rusuk kubus \(s = 12\text{ cm}\) dan \(CP : CG = 2 : 3\):
+                        \[
+                        CP = \frac{2}{3}(12) = 8\text{ cm}
+                        \]
+                    </p>
+                    <p>
+                        Hitung panjang sisi-sisi segitiga \(\triangle ABP\):
+                    </p>
+                    <ul>
+                        <li>\(AB = 12\text{ cm}\)</li>
+                        <li>Pada \(\triangle BCP\) siku-siku di \(C\):
+                            \[
+                            BP = \sqrt{BC^2 + CP^2} = \sqrt{12^2 + 8^2} = \sqrt{144 + 64} = \sqrt{208} = 4\sqrt{13}\text{ cm}
+                            \]
+                        </li>
+                        <li>Panjang ruas \(AP\):
+                            \[
+                            AP = \sqrt{AB^2 + BC^2 + CP^2} = \sqrt{12^2 + 12^2 + 8^2} = \sqrt{144 + 144 + 64} = \sqrt{352} = 4\sqrt{22}\text{ cm}
+                            \]
+                        </li>
+                    </ul>
+                    <p>
+                        Karena rusuk \(AB \perp\) bidang samping \(BCGF\), maka garis \(AB \perp BP\). Dengan demikian, \(\triangle ABP\) adalah <strong>segitiga siku-siku di \(B\)</strong>.
+                    </p>
+                    <p>
+                        Jarak titik \(B\) ke garis \(AP\) adalah panjang garis tinggi \(BQ \perp AP\):
+                        \[
+                        \begin{aligned}
+                        BQ &= \frac{AB \times BP}{AP} \\[6pt]
+                           &= \frac{12 \times 4\sqrt{13}}{4\sqrt{22}} \\[6pt]
+                           &= \frac{12\sqrt{13}}{\sqrt{22}} \times \frac{\sqrt{22}}{\sqrt{22}} \\[6pt]
+                           &= \frac{12\sqrt{286}}{22} = \frac{6\sqrt{286}}{11}\text{ cm}
+                        \end{aligned}
+                        \]
+                    </p>
+
+                    <!-- Visualisasi GeoSVG Soal 10 -->
+                    <div id="geosvg-kubus-10" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, jarak titik \(B\) terhadap garis \(AP\) adalah \(\dfrac{6}{11}\sqrt{286}\text{ cm}\).<br>
+                        <strong>Jawaban: B</strong>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Matematika Idham Daz. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Script Render GeoSVG & KaTeX -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Render KaTeX jika auto-render dimuat
+            if (typeof renderMathInElement === "function") {
+                renderMathInElement(document.body, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "\\[", right: "\\]", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false }
+                    ]
+                });
+            }
+
+            // Fungsi pembantu membuat kubus proyeksi miring standar
+            function buatKerangkaKubus(geo, pA, s, dx, dy) {
+                const pts = {
+                    A: pA,
+                    B: [pA[0] + s, pA[1]],
+                    C: [pA[0] + s + dx, pA[1] - dy],
+                    D: [pA[0] + dx, pA[1] - dy],
+                    E: [pA[0], pA[1] - s],
+                    F: [pA[0] + s, pA[1] - s],
+                    G: [pA[0] + s + dx, pA[1] - s - dy],
+                    H: [pA[0] + dx, pA[1] - s - dy]
+                };
+
+                // Rusuk belakang putus-putus
+                geo.buatSegmen(pts.A, pts.D, { stroke: "#94a3b8", strokeWidth: 1.2, dashed: true });
+                geo.buatSegmen(pts.D, pts.C, { stroke: "#94a3b8", strokeWidth: 1.2, dashed: true });
+                geo.buatSegmen(pts.D, pts.H, { stroke: "#94a3b8", strokeWidth: 1.2, dashed: true });
+
+                // Rusuk tampak solid
+                geo.buatSegmen(pts.A, pts.B, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.B, pts.C, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.E, pts.F, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.F, pts.G, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.G, pts.H, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.H, pts.E, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.A, pts.E, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.B, pts.F, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.C, pts.G, { stroke: "#334155", strokeWidth: 1.5 });
+
+                return pts;
+            }
+
+            function beriLabelTitikKubus(geo, pts) {
+                geo.buatTitik(pts.A, { label: "A", labelPosition: "bottom-left", color: "#1e293b", size: 3 });
+                geo.buatTitik(pts.B, { label: "B", labelPosition: "bottom-right", color: "#1e293b", size: 3 });
+                geo.buatTitik(pts.C, { label: "C", labelPosition: "middle-right", color: "#1e293b", size: 3 });
+                geo.buatTitik(pts.D, { label: "D", labelPosition: "top-left", color: "#64748b", size: 2.5 });
+                geo.buatTitik(pts.E, { label: "E", labelPosition: "top-left", color: "#1e293b", size: 3 });
+                geo.buatTitik(pts.F, { label: "F", labelPosition: "top-right", color: "#1e293b", size: 3 });
+                geo.buatTitik(pts.G, { label: "G", labelPosition: "top-right", color: "#1e293b", size: 3 });
+                geo.buatTitik(pts.H, { label: "H", labelPosition: "top-left", color: "#1e293b", size: 3 });
+            }
+
+            function renderAll() {
+                if (typeof GeoSVG === "undefined") {
+                    setTimeout(renderAll, 100);
+                    return;
+                }
+
+                const W = 320, H = 260;
+                const pA = [65, 215], s = 130, dx = 60, dy = 45;
+
+                // DIAGRAM 1
+                const el1 = document.getElementById("geosvg-kubus-1");
+                if (el1 && !el1.dataset.rendered) {
+                    el1.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-kubus-1", W, H, { margin: 10, title: "Kubus ABCD.EFGH Sudut BG dan FH" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    // Segitiga AFH
+                    geo.buatPoligon([k.A, k.F, k.H], { fill: "rgba(37, 99, 235, 0.12)", stroke: "#2563eb", strokeWidth: 1.8 });
+                    // Garis BG
+                    geo.buatSegmen(k.B, k.G, { stroke: "#ea580c", strokeWidth: 2, dashed: true });
+                    geo.buatTeks(k.H[0] + 12, k.H[1] + 25, "60°", { fill: "#2563eb", fontSize: "11px", fontWeight: "bold" });
+                    beriLabelTitikKubus(geo, k);
+                }
+
+                // DIAGRAM 2
+                const el2 = document.getElementById("geosvg-kubus-2");
+                if (el2 && !el2.dataset.rendered) {
+                    el2.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-kubus-2", W, H, { margin: 10, title: "Jarak Titik C ke Garis AG" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    // Segitiga ACG
+                    geo.buatSegmen(k.A, k.C, { stroke: "#059669", strokeWidth: 1.5, dashed: true });
+                    geo.buatSegmen(k.A, k.G, { stroke: "#2563eb", strokeWidth: 2, dashed: true });
+                    // Titik P pada AG: CP tegak lurus AG
+                    // Proyeksi C pada AG: rasio AC^2 / AG^2 = (24/36) = 2/3 dari G atau 1/3 dari G?
+                    // AG dari A ke G: AP = AC^2 / AG = 24 / 6 = 4 => 4/6 = 2/3 dari A ke G
+                    const pP = [k.A[0] + (2/3) * (k.G[0] - k.A[0]), k.A[1] + (2/3) * (k.G[1] - k.A[1])];
+                    geo.buatSegmen(k.C, pP, { stroke: "#dc2626", strokeWidth: 1.8 });
+                    geo.buatTitik(pP, { label: "P", labelPosition: "top-left", color: "#dc2626", size: 3 });
+                    geo.buatSiku(k.C, pP, k.G, { size: 7, stroke: "#dc2626" });
+                    beriLabelTitikKubus(geo, k);
+                }
+
+                // DIAGRAM 3
+                const el3 = document.getElementById("geosvg-kubus-3");
+                if (el3 && !el3.dataset.rendered) {
+                    el3.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-kubus-3", W, H, { margin: 10, title: "Sudut antara AG dan EG" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    geo.buatSegmen(k.E, k.G, { stroke: "#059669", strokeWidth: 1.8 });
+                    geo.buatSegmen(k.A, k.G, { stroke: "#2563eb", strokeWidth: 2, dashed: true });
+                    geo.buatSiku(k.A, k.E, k.G, { size: 9, stroke: "#059669" });
+                    geo.buatSudut(k.A, k.G, k.E, { radius: 25, stroke: "#7c3aed", fill: "rgba(124, 58, 237, 0.15)", label: "θ", labelColor: "#6d28d9" });
+                    beriLabelTitikKubus(geo, k);
+                }
+
+                // DIAGRAM 4
+                const el4 = document.getElementById("geosvg-kubus-4");
+                if (el4 && !el4.dataset.rendered) {
+                    el4.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-kubus-4", W, H, { margin: 10, title: "Jarak Titik P ke Garis QR" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    const pP = [(k.E[0] + k.H[0]) / 2, (k.E[1] + k.H[1]) / 2];
+                    const pQ = [(k.B[0] + k.F[0]) / 2, (k.B[1] + k.F[1]) / 2];
+                    const pR = [(k.C[0] + k.G[0]) / 2, (k.C[1] + k.G[1]) / 2];
+                    const pI = [(pQ[0] + pR[0]) / 2, (pQ[1] + pR[1]) / 2];
+                    geo.buatSegmen(pQ, pR, { stroke: "#059669", strokeWidth: 2 });
+                    geo.buatSegmen(pP, pI, { stroke: "#dc2626", strokeWidth: 2 });
+                    geo.buatTitik(pP, { label: "P", labelPosition: "top-center", color: "#2563eb", size: 3 });
+                    geo.buatTitik(pQ, { label: "Q", labelPosition: "middle-left", color: "#059669", size: 3 });
+                    geo.buatTitik(pR, { label: "R", labelPosition: "middle-right", color: "#059669", size: 3 });
+                    geo.buatTitik(pI, { label: "I", labelPosition: "bottom-center", color: "#dc2626", size: 3 });
+                    beriLabelTitikKubus(geo, k);
+                }
+
+                // DIAGRAM 5
+                const el5 = document.getElementById("geosvg-kubus-5");
+                if (el5 && !el5.dataset.rendered) {
+                    el5.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-kubus-5", W, H, { margin: 10, title: "Jarak Titik P ke Titik Q" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    const pP = [(k.E[0] + k.H[0]) / 2, (k.E[1] + k.H[1]) / 2];
+                    const pQ = [k.C[0] + (3/4) * (k.G[0] - k.C[0]), k.C[1] + (3/4) * (k.G[1] - k.C[1])];
+                    geo.buatSegmen(pP, pQ, { stroke: "#dc2626", strokeWidth: 2 });
+                    geo.buatTitik(pP, { label: "P", labelPosition: "top-left", color: "#2563eb", size: 3 });
+                    geo.buatTitik(pQ, { label: "Q", labelPosition: "middle-right", color: "#dc2626", size: 3 });
+                    beriLabelTitikKubus(geo, k);
+                }
+
+                // DIAGRAM 6
+                const el6 = document.getElementById("geosvg-kubus-6");
+                if (el6 && !el6.dataset.rendered) {
+                    el6.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-kubus-6", W, H, { margin: 10, title: "Jarak Titik E ke Bidang BDG" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    // Bidang BDG
+                    geo.buatPoligon([k.B, k.D, k.G], { fill: "rgba(37, 99, 235, 0.15)", stroke: "#2563eb", strokeWidth: 1.5 });
+                    geo.buatSegmen(k.E, k.C, { stroke: "#ea580c", strokeWidth: 1.8, dashed: true });
+                    beriLabelTitikKubus(geo, k);
+                }
+
+                // DIAGRAM 7
+                const el7 = document.getElementById("geosvg-kubus-7");
+                if (el7 && !el7.dataset.rendered) {
+                    el7.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-kubus-7", W, H, { margin: 10, title: "Jarak Titik E ke Bidang BDHF" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    // Bidang BDHF
+                    geo.buatPoligon([k.B, k.D, k.H, k.F], { fill: "rgba(16, 185, 129, 0.15)", stroke: "#059669", strokeWidth: 1.5 });
+                    geo.buatSegmen(k.E, k.G, { stroke: "#2563eb", strokeWidth: 1.5 });
+                    const pO = [(k.E[0] + k.G[0]) / 2, (k.E[1] + k.G[1]) / 2];
+                    geo.buatSegmen(k.E, pO, { stroke: "#dc2626", strokeWidth: 2 });
+                    geo.buatTitik(pO, { label: "O", labelPosition: "bottom-center", color: "#dc2626", size: 3 });
+                    beriLabelTitikKubus(geo, k);
+                }
+
+                // DIAGRAM 8
+                const el8 = document.getElementById("geosvg-kubus-8");
+                if (el8 && !el8.dataset.rendered) {
+                    el8.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-kubus-8", W, H, { margin: 10, title: "Jarak Titik E ke Bidang APQ" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    const pP = [(k.E[0] + k.F[0]) / 2, (k.E[1] + k.F[1]) / 2];
+                    const pQ = [(k.E[0] + k.H[0]) / 2, (k.E[1] + k.H[1]) / 2];
+                    const pR = [(pP[0] + pQ[0]) / 2, (pP[1] + pQ[1]) / 2];
+                    geo.buatPoligon([k.A, pP, pQ], { fill: "rgba(124, 58, 237, 0.15)", stroke: "#7c3aed", strokeWidth: 1.5 });
+                    geo.buatSegmen(k.E, pR, { stroke: "#059669", strokeWidth: 1.5 });
+                    geo.buatSegmen(k.A, pR, { stroke: "#ea580c", strokeWidth: 1.5 });
+                    geo.buatTitik(pP, { label: "P", labelPosition: "top-center", color: "#7c3aed", size: 3 });
+                    geo.buatTitik(pQ, { label: "Q", labelPosition: "top-left", color: "#7c3aed", size: 3 });
+                    geo.buatTitik(pR, { label: "R", labelPosition: "bottom-right", color: "#059669", size: 2.5 });
+                    beriLabelTitikKubus(geo, k);
+                }
+
+                // DIAGRAM 9
+                const el9 = document.getElementById("geosvg-kubus-9");
+                if (el9 && !el9.dataset.rendered) {
+                    el9.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-kubus-9", W, H, { margin: 10, title: "Jarak Titik C ke Bidang ABGH" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    geo.buatPoligon([k.A, k.B, k.G, k.H], { fill: "rgba(37, 99, 235, 0.15)", stroke: "#2563eb", strokeWidth: 1.5 });
+                    const pP = [(k.B[0] + k.G[0]) / 2, (k.B[1] + k.G[1]) / 2];
+                    geo.buatSegmen(k.C, pP, { stroke: "#dc2626", strokeWidth: 2 });
+                    geo.buatTitik(pP, { label: "P", labelPosition: "top-right", color: "#dc2626", size: 3 });
+                    beriLabelTitikKubus(geo, k);
+                }
+
+                // DIAGRAM 10
+                const el10 = document.getElementById("geosvg-kubus-10");
+                if (el10 && !el10.dataset.rendered) {
+                    el10.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-kubus-10", W, H, { margin: 10, title: "Jarak Titik B ke Garis AP" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    const pP = [k.C[0] + (2/3) * (k.G[0] - k.C[0]), k.C[1] + (2/3) * (k.G[1] - k.C[1])];
+                    geo.buatSegmen(k.A, pP, { stroke: "#2563eb", strokeWidth: 1.8, dashed: true });
+                    geo.buatSegmen(k.B, pP, { stroke: "#059669", strokeWidth: 1.5 });
+                    // Garis tinggi BQ tegak lurus AP: BQ = AB*BP / AP
+                    // Proyeksi B pada AP: AQ = AB^2 / AP = 144 / (4√22) = 36 / √22
+                    // Rasio AQ / AP = 144 / 352 = 9 / 22 ≈ 0.409
+                    const pQ = [k.A[0] + (9/22) * (pP[0] - k.A[0]), k.A[1] + (9/22) * (pP[1] - k.A[1])];
+                    geo.buatSegmen(k.B, pQ, { stroke: "#dc2626", strokeWidth: 2 });
+                    geo.buatTitik(pP, { label: "P", labelPosition: "middle-right", color: "#059669", size: 3 });
+                    geo.buatTitik(pQ, { label: "Q", labelPosition: "top-left", color: "#dc2626", size: 3 });
+                    geo.buatSiku(k.B, pQ, pP, { size: 7, stroke: "#dc2626" });
+                    beriLabelTitikKubus(geo, k);
+                }
+            }
+
+            renderAll();
+        });
+    </script>
+
+    <!-- Script Math Blog Otomatis (Navigasi Level, Penomoran, Toggle Solusi) -->
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>

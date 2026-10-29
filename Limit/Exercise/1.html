@@ -1,326 +1,477 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>Exercise Zone : Limit</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../katex/katex.css">
-      <script src="../katex/katex.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-   </head> 
-     <body> <div class="w3-container">
-      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Limit</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-      <h3>Tipe: </h3>
-      <div class="w3-bar w3-border w3-round"><span class="w3-bar-item w3-deep-purple w3-hide" id="standar">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-      <br>
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>
+<!DOCTYPE html>
+<html lang="id">
 
-      <div id="1" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3><z>\displaystyle\lim_{x\to3}\dfrac{3-\sqrt{2x+3}}{x-3}=....</z> 
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://web.facebook.com/groups/441012386099919/permalink/765557553645399/" target="_blank">Dunia Matematika Indonesia</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><h1>CARA 1</h1>
-          \begin{aligned}
-        \displaystyle\lim_{x\to3}\dfrac{3-\sqrt{2x+3}}{x-3}&amp;=\displaystyle\lim_{x\to3}\dfrac{3-\sqrt{2x+3}}{x-3}\cdot\dfrac{3+\sqrt{2x+3}}{3+\sqrt{2x+3}}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to3}\dfrac{9-(2x+3)}{(x-3)\left(3+\sqrt{2x+3}\right)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to3}\dfrac{9-2x-3}{(x-3)\left(3+\sqrt{2x+3}\right)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to3}\dfrac{6-2x}{(x-3)\left(3+\sqrt{2x+3}\right)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to3}\dfrac{-2(x-3)}{(x-3)\left(3+\sqrt{2x+3}\right)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to3}\dfrac{-2}{3+\sqrt{2x+3}}\\[3.7pt]
-        &amp;=\dfrac{-2}{3+\sqrt{2(3)+3}}\\[3.7pt]
-        &amp;=\dfrac{-2}{3+\sqrt{6+3}}\\[3.7pt]
-        &amp;=\dfrac{-2}{3+\sqrt9}\\[3.7pt]
-        &amp;=\dfrac{-2}{3+3}\\[3.7pt]
-        &amp;=\dfrac{-2}6\\[3.7pt]
-        &amp;=\boxed{\boxed{-\dfrac13}}
-        \end{aligned}
-        <h1>CARA 2</h1>
-        \begin{aligned}
-        \displaystyle\lim_{x\to3}\dfrac{3-\sqrt{2x+3}}{x-3}&amp;=\displaystyle\lim_{x\to3}\dfrac{0-\dfrac2{2\sqrt{2x+3}}}{1-0}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to3}\left(-\dfrac1{\sqrt{2x+3}}\right)\\[3.7pt]
-        &amp;=-\dfrac1{\sqrt{2(3)+3}}\\[3.7pt]
-        &amp;=-\dfrac1{\sqrt{6+3}}\\[3.7pt]
-        &amp;=-\dfrac1{\sqrt9}\\[3.7pt]
-        &amp;=\boxed{\boxed{-\dfrac13}}
-        \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to3}\dfrac{3-\sqrt{2x+3}}{x-3}=-\dfrac13</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3><z>\displaystyle\lim_{x\to3}\dfrac{\left(\sqrt{x-1}-\sqrt{5-x}\right)\left(\sqrt{4x-3}-1\right)}{x^2-9}=....</z>
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb"><m>-\dfrac16\sqrt2</m></li>
-        <li class="pb"><m>-\dfrac14\sqrt2</m></li>
-        <li><m>-\dfrac12\sqrt2</m></li>
-        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb"><m>\dfrac16\sqrt2</m></li>
-        <li><m>\dfrac12\sqrt2</m></li>
-        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\begin{aligned}
-        \displaystyle\lim_{x\to3}\dfrac{\left(\sqrt{x-1}-\sqrt{5-x}\right)\left(\sqrt{4x-3}-1\right)}{x^2-9}&amp;=\displaystyle\lim_{x\to3}\dfrac{\left(\sqrt{x-1}-\sqrt{5-x}\right)\left(\sqrt{4x-3}-1\right)}{x^2-9}\cdot\dfrac{\sqrt{x-1}+\sqrt{5-x}}{\sqrt{x-1}+\sqrt{5-x}}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to3}\dfrac{\left((x-1)-(5-x)\right)\left(\sqrt{4x-3}-1\right)}{\left(x^2-9\right)\left(\sqrt{x-1}+\sqrt{5-x}\right)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to3}\dfrac{(x-1-5+x)\left(\sqrt{4x-3}-1\right)}{\left(x^2-9\right)\left(\sqrt{x-1}+\sqrt{5-x}\right)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to3}\dfrac{(2x-6)\left(\sqrt{4x-3}-1\right)}{\left(x^2-9\right)\left(\sqrt{x-1}+\sqrt{5-x}\right)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to3}\dfrac{2(x-3)\left(\sqrt{4x-3}-1\right)}{(x+3)(x-3)\left(\sqrt{x-1}+\sqrt{5-x}\right)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to3}\dfrac{2\left(\sqrt{4x-3}-1\right)}{(x+3)\left(\sqrt{x-1}+\sqrt{5-x}\right)}\\[3.7pt]
-        &amp;=\dfrac{2\left(\sqrt{4(3)-3}-1\right)}{(3+3)\left(\sqrt{3-1}+\sqrt{5-3}\right)}\\[3.7pt]
-        &amp;=\dfrac{2\left(\sqrt9-1\right)}{(3+3)\left(\sqrt2+\sqrt2\right)}\\[3.7pt]
-        &amp;=\dfrac{2(3-1)}{(6)\left(2\sqrt2\right)}\\[3.7pt]
-        &amp;=\dfrac{2}{6\left(\sqrt2\right)}\\[3.7pt]
-        &amp;=\dfrac1{3\sqrt2}\cdot\dfrac{\sqrt2}{\sqrt2}\\[3.7pt]
-        &amp;=\dfrac1{3\cdot2}\sqrt2\\[3.7pt]
-        &amp;=\boxed{\boxed{\dfrac16\sqrt2}}
-        \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to3}\dfrac{\left(\sqrt{x-1}-\sqrt{5-x}\right)\left(\sqrt{4x-3}-1\right)}{x^2-9}=\dfrac16\sqrt2</m>.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3><z>\displaystyle\lim_{x\to2}\left(\dfrac6{x^2-x-2}-\dfrac2{x-2}\right)=....</z> 
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneId/266" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\begin{aligned}
-        \displaystyle\lim_{x\to2}\left(\dfrac6{x^2-x-2}-\dfrac2{x-2}\right)&amp;=\displaystyle\lim_{x\to2}\left(\dfrac6{(x-2)(x+1)}-\dfrac2{x-2}\right)\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to2}\dfrac{6-2(x+1)}{(x-2)(x+1)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to2}\dfrac{6-2x-2}{(x-2)(x+1)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to2}\dfrac{-2x+4}{(x-2)(x+1)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to2}\dfrac{-2\cancel{(x-2)}}{\cancel{(x-2)}(x+1)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to2}\dfrac{-2}{x+1}\\[3.7pt]
-        &amp;=\dfrac{-2}{2+1}\\[3.7pt]
-        &amp;=-\dfrac23
-        \end{aligned}</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to2}\left(\dfrac6{x^2-x-2}-\dfrac2{x-2}\right)=-\dfrac23</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Limit</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="../../scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Limit</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    \[\lim_{x\to3}\dfrac{3-\sqrt{2x+3}}{x-3}=\dots\]
+                </p>
             </div>
-          </details>
-          <hr>
-</div>
-        
-        <div id="4"><h3>No. <span class="w3-badge w3-red nomor"></span></h3><z>\displaystyle\lim_{x\to-2}\dfrac{x^3-x^2-2x+8}{x^3+8}=....</z> 
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">Ganesha Operation</div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><h1>CARA 1 : PEMFAKTORAN</h1>\begin{aligned}
-        \displaystyle\lim_{x\to-2}\dfrac{x^3-x^2-2x+8}{x^3+8}&amp;=\displaystyle\lim_{x\to-2}\dfrac{(x+2)\left(x^2-3x+4\right)}{(x+2)\left(x^2-2x+4\right)}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to-2}\dfrac{x^2-3x+4}{x^2-2x+4}\\[3.7pt]
-        &amp;=\dfrac{(-2)^2-3(-2)+4}{(-2)^2-2(-2)+4}\\[3.7pt]
-        &amp;=\dfrac{4+6+4}{4+4+4}\\[3.7pt]
-        &amp;=\dfrac{14}{12}\\[3.7pt]
-        &amp;=\boxed{\boxed{\dfrac76}}
-        \end{aligned}
-        <h1>CARA 2 : L'HOPITAL</h1>\begin{aligned}
-        \displaystyle\lim_{x\to-2}\dfrac{x^3-x^2-2x+8}{x^3+8}&amp;=\displaystyle\lim_{x\to-2}\dfrac{3x^2-2x-2}{3x^2}\\[3.7pt]
-        &amp;=\dfrac{3(-2)^2-2(-2)-2}{3(-2)^2}\\[3.7pt]
-        &amp;=\dfrac{12+4-2}{12}\\[3.7pt]
-        &amp;=\dfrac{14}{12}\\[3.7pt]
-        &amp;=\boxed{\boxed{\dfrac76}}
-        \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to-2}\dfrac{x^3-x^2-2x+8}{x^3+8}=\dfrac76</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div id="5"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Diketahui fungsi <em>g</em> kontinu di <e><em>x</em> = 2</e> dan <m>\displaystyle\lim_{x\to2}g(x)=4</m>. Nilai <m>\displaystyle\lim_{x\to2}\left(g(x)\dfrac{x-2}{\sqrt{x}-\sqrt2}\right)</m> adalah ....
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">Ganesha Operation</div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\begin{aligned}
-        \displaystyle\lim_{x\to2}\left(g(x)\dfrac{x-2}{\sqrt{x}-\sqrt2}\right)&amp;=\displaystyle\lim_{x\to2}\left(g(x)\dfrac{x-2}{\sqrt{x}-\sqrt2}\cdot\dfrac{\sqrt{x}+\sqrt2}{\sqrt{x}+\sqrt2}\right)\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to2}\left(g(x)\dfrac{(x-2)\left(\sqrt{x}+\sqrt2\right)}{x-2}\right)\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to2}\left(g(x)\left(\sqrt{x}+\sqrt2\right)\right)\\
-        &amp;=4\left(\sqrt2+\sqrt2\right)\\
-        &amp;=4\left(2\sqrt2\right)\\
-        &amp;=\boxed{\boxed{8\sqrt2}}
-        \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to2}\left(g(x)\dfrac{x-2}{\sqrt{x}-\sqrt2}\right)=8\sqrt2</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div id="6"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Tentukan nilai dari <m>\displaystyle\lim_{x\to5}\dfrac{x^2-25}{\sqrt{x^2+24}-7}</m>!
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">Ganesha Operation</div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><h1>CARA 1 : KALIKAN DENGAN SEKAWAN</h1>\begin{aligned}
-        \displaystyle\lim_{x\to5}\dfrac{x^2-25}{\sqrt{x^2+24}-7}&amp;=\displaystyle\lim_{x\to5}\dfrac{x^2-25}{\sqrt{x^2+24}-7}\cdot\dfrac{\sqrt{x^2+24}+7}{\sqrt{x^2+24}+7}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to5}\dfrac{\left(x^2-25\right)\left(\sqrt{x^2+24}+7\right)}{x^2+24-49}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to5}\dfrac{\left(x^2-25\right)\left(\sqrt{x^2+24}+7\right)}{x^2-25}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to5}\left(\sqrt{x^2+24}+7\right)\\
-        &amp;=\sqrt{5^2+24}+7\\
-        &amp;=\sqrt{25+24}+7\\
-        &amp;=\sqrt{49}+7\\
-        &amp;=7+7\\
-        &amp;=\boxed{\boxed{14}}
-        \end{aligned}
-        <h1>CARA 2 : L'HOPITAL</h1>\begin{aligned}
-        \displaystyle\lim_{x\to5}\dfrac{x^2-25}{\sqrt{x^2+24}-7}&amp;=\displaystyle\lim_{x\to5}\dfrac{2x}{\dfrac{2x}{2\sqrt{x^2+24}}}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to5}2\sqrt{x^2+24}\\
-        &amp;=2\sqrt{5^2+24}\\
-        &amp;=2\sqrt{25+24}\\
-        &amp;=2\sqrt{49}\\
-        &amp;=2(7)\\
-        &amp;=\boxed{\boxed{14}}
-        \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to5}\dfrac{x^2-25}{\sqrt{x^2+24}-7}=14</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div id="7"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Tentukan nilai dari <m>\displaystyle\lim_{x\to2}\dfrac{x^3+2x^2-4x-8}{x^3-8}</m>!
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">Ganesha Operation</div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><h1>CARA 1 : PEMFAKTORAN</h1><table class="noborder tengah"><tbody>
-        <tr><td style="border-right: 1px solid black;">2</td><td>1</td><td>2</td><td>&minus;4</td><td>&minus;8</td></tr>
-        <tr><td style="border-right: 1px solid black;"></td><td style="border-bottom: 1px solid black;"></td><td style="border-bottom: 1px solid black;">2</td><td style="border-bottom: 1px solid black;">8</td><td style="border-bottom: 1px solid black;">8</td></tr>
-        <tr><td></td><td>1</td><td>4</td><td>4</td><td style="border: 1px solid black;">0</td></tr>
-        </tbody></table><table class="noborder tengah"><tbody>
-        <tr><td style="border-right: 1px solid black;">2</td><td>1</td><td>0</td><td>0</td><td>&minus;8</td></tr>
-        <tr><td style="border-right: 1px solid black;"></td><td style="border-bottom: 1px solid black;"></td><td style="border-bottom: 1px solid black;">2</td><td style="border-bottom: 1px solid black;">4</td><td style="border-bottom: 1px solid black;">8</td></tr>
-        <tr><td></td><td>1</td><td>2</td><td>4</td><td style="border: 1px solid black;">0</td></tr>
-        </tbody></table>\begin{aligned}
-        \displaystyle\lim_{x\to2}\dfrac{x^3+2x^2-4x-8}{x^3-8}&amp;=\displaystyle\lim_{x\to2}\dfrac{\cancel{(x-2)}\left(x^2+4x+4\right)}{\cancel{(x-2)}\left(x^2+2x+4\right)}\\[3.7pt]
-        &amp;=\dfrac{2^2+4(2)+4}{2^2+2(2)+4}\\[3.7pt]
-        &amp;=\dfrac{4+8+4}{4+4+4}\\[3.7pt]
-        &amp;=\dfrac{16}{12}\\[3.7pt]
-        &amp;=\boxed{\boxed{\dfrac43}}
-        \end{aligned}
-        <h1>CARA 2 : L'HOPITAL</h1>\begin{aligned}
-        \displaystyle\lim_{x\to2}\dfrac{x^3+2x^2-4x-8}{x^3-8}&amp;=\displaystyle\lim_{x\to2}\dfrac{3x^2+4x-4}{3x^2}\\[3.7pt]
-        &amp;=\dfrac{3(2)^2+4(2)-4}{3(2)^2}\\[3.7pt]
-        &amp;=\dfrac{3(4)+8-4}{3(4)}\\[3.7pt]
-        &amp;=\dfrac{12+4}{12}\\[3.7pt]
-        &amp;=\dfrac{16}{12}\\[3.7pt]
-        &amp;=\boxed{\boxed{\dfrac43}}
-        \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to2}\dfrac{x^3+2x^2-4x-8}{x^3-8}=\dfrac43</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div id="8"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Jika <m>f(x)=\cos\left(\dfrac12x\right)</m>, maka <m>\displaystyle\lim_{h\to0}\dfrac{f\left(x+\dfrac{h}2\right)-2f(x)+f\left(x-\dfrac{h}2\right)}{h^2}=</m> ....
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb"><m>\dfrac12\sin2x</m></span></li>
-        <li class="pb"><m>-\dfrac1{16}\cos\dfrac12x</m></span></li>
-        <li><m>-\dfrac1{16}\sin\dfrac12x</m></span></li>
-        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb"><m>\dfrac1{16}\cos2x</m></span></li>
-        <li><m>-\dfrac1{16}\sin2x</m></span></li>
-        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><h1>CARA 1</h1>\begin{aligned}
-        \displaystyle\lim_{h\to0}\dfrac{f\left(x+\dfrac{h}2\right)-2f(x)+f\left(x-\dfrac{h}2\right)}{h^2}&=\displaystyle\lim_{h\to0}\dfrac{\cos\dfrac12\left(x+\dfrac{h}2\right)-2\cos\dfrac12x+\cos\dfrac12\left(x-\dfrac{h}2\right)}{h^2}\\[3.7pt]
-        &=\displaystyle\lim_{h\to0}\dfrac{\cos\left(\dfrac12x+\dfrac{h}4\right)-2\cos\dfrac12x+\cos\left(\dfrac12x-\dfrac{h}4\right)}{h^2}\\[3.7pt]
-        &=\displaystyle\lim_{h\to0}\dfrac{\cos\dfrac12x\cos\dfrac{h}4-\sin\dfrac12x\sin\dfrac{h}4-2\cos\dfrac12x+\cos\dfrac12x\cos\dfrac{h}4+\sin\dfrac12x\sin\dfrac{h}4}{h^2}\\[3.7pt]
-        &=\displaystyle\lim_{h\to0}\dfrac{2\cos\dfrac12x\cos\dfrac{h}4-2\cos\dfrac12x+\cos\dfrac12x\cos\dfrac{h}4}{h^2}\\[3.7pt]
-        &=\displaystyle\lim_{h\to0}\dfrac{2\cos\dfrac12x\left(\cos\dfrac{h}4-1\right)}{h^2}\\[3.7pt]
-        &=\displaystyle\lim_{h\to0}\dfrac{2\cos\dfrac12x\left(1-2\sin^2\dfrac{h}8-1\right)}{h^2}\\[3.7pt]
-        &=\displaystyle\lim_{h\to0}\dfrac{-4\cos\dfrac12x\sin^2\dfrac{h}8}{h^2}\\[3.7pt]
-        &=\displaystyle\lim_{h\to0}\left(-4\cos\dfrac12x\right)\cdot\dfrac{\sin\dfrac{h}8}h\cdot\dfrac{\sin\dfrac{h}8}h\\[3.7pt]
-        &=-4\cos\dfrac12x\cdot\dfrac18\cdot\dfrac18\\
-        &=\boxed{\boxed{-\dfrac1{16}\cos\dfrac12x}}
-        \end{aligned}
-        
-        <h1>CARA 2 : L'HOPITAL</h1>\begin{aligned}
-        f'(x)&=-\dfrac12\sin\dfrac12x\\[3.7pt]
-        f''(x)&=-\dfrac14\cos\dfrac12x
-        \end{aligned}
-        \begin{aligned}
-        \displaystyle\lim_{h\to0}\dfrac{f\left(x+\dfrac{h}2\right)-2f(x)+f\left(x-\dfrac{h}2\right)}{h^2}&=\displaystyle\lim_{h\to0}\dfrac{\dfrac12f'\left(x+\dfrac{h}2\right)-0+\left(-\dfrac12\right)f'\left(x-\dfrac{h}2\right)}{2h}\\[3.7pt]
-        &=\displaystyle\lim_{h\to0}\dfrac{\dfrac12f'\left(x+\dfrac{h}2\right)-\dfrac12f'\left(x-\dfrac{h}2\right)}{2h}\\[3.7pt]
-        &=\displaystyle\lim_{h\to0}\dfrac{\dfrac14f''\left(x+\dfrac{h}2\right)+\dfrac14f''\left(x-\dfrac{h}2\right)}2\\[3.7pt]
-        &=\dfrac{\dfrac14f''\left(x+\dfrac02\right)+\dfrac14f''\left(x-\dfrac02\right)}2\\[3.7pt]
-        &=\dfrac{\dfrac14f''\left(x\right)+\dfrac14f''\left(x\right)}2\\[3.7pt]
-        &=\dfrac{\dfrac12f''\left(x\right)}2\\[3.7pt]
-        &=\dfrac14f''\left(x\right)\\[3.7pt]
-        &=\dfrac14\left(-\dfrac14\cos\dfrac12x\right)\\
-        &=\boxed{\boxed{-\dfrac1{16}\cos\dfrac12x}}
-        \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{h\to0}\dfrac{f\left(x+\dfrac{h}2\right)-2f(x)+f\left(x-\dfrac{h}2\right)}{h^2}=-\dfrac1{16}\cos\dfrac12x</m>.<br><b>JAWAB: B</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div id="9" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3><e><em>f</em>(<em>x</em>) = <em>x</em><sup>2</sup> + 2<em>x</em></e><br />
-        <m>\displaystyle\lim_{h\to0}\dfrac{f(x-2h)-f(x)}{4h}=</m> ....
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/14324" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\begin{aligned}
-        \displaystyle\lim_{h\to0}\dfrac{f(x-2h)-f(x)}{4h}&=\displaystyle\lim_{h\to0}\dfrac{(x-2h)^2+2(x-2h)-\left(x^2+2x\right)}{4h}\\[3.7pt]
-        &=\displaystyle\lim_{h\to0}\dfrac{x^2-4xh+4h^2+2x-4h-x^2-2x}{4h}\\[3.7pt]
-        &=\displaystyle\lim_{h\to0}\dfrac{-4xh+4h^2+-4h}{4h}\\[3.7pt]
-        &=\displaystyle\lim_{h\to0}(-x+h+-1)\\
-        &=-x+0-1\\
-        &=-x-1
-        \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{h\to0}\dfrac{f(x-2h)-f(x)}{4h}=-x-1</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        </div>
-        
-        <div id="10" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Jika <m>f(x)=\dfrac{x-\sqrt{x}}{x+\sqrt{x}}</m>, maka <m>\displaystyle\lim_{x\to0}f(x)=</m>
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>0</li>
-        <li class="pb"><m>-\dfrac12</m></li>
-        <li>&minus;1</li>
-        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>&minus;2</li>
-        <li>&infin;</li>
-        </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><h1>CARA BIASA : KALI SEKAWAN</h1>\begin{aligned}
-        \displaystyle\lim_{x\to0}f(x)&=\displaystyle\lim_{x\to0}\dfrac{x-\sqrt{x}}{x+\sqrt{x}}\cdot\dfrac{x-\sqrt{x}}{x-\sqrt{x}}\\[3.7pt]
-        &=\displaystyle\lim_{x\to0}\dfrac{x^2-2x\sqrt{x}+x}{x^2-x}\\[3.7pt]
-        &=\displaystyle\lim_{x\to0}\dfrac{x(x-2\sqrt{x}+1)}{x(x-1)}\\[3.7pt]
-        &=\displaystyle\lim_{x\to0}\dfrac{x-2\sqrt{x}+1}{x-1}\\[3.7pt]
-        &=\dfrac{0-2\sqrt{0}+1}{0-1}\\[3.7pt]
-        &=\dfrac1{-1}\\
-        &=\boxed{\boxed{-1}}
-        \end{aligned}
-        <h1>CARA L'HOPITAL</h1>\begin{aligned}
-        \displaystyle\lim_{x\to0}f(x)&=\displaystyle\lim_{x\to0}\dfrac{x-\sqrt{x}}{x+\sqrt{x}}\\[3.7pt]
-        &=\displaystyle\lim_{x\to0}\dfrac{1-\dfrac1{2\sqrt{x}}}{1+\dfrac1{2\sqrt{x}}}\cdot\dfrac{2\sqrt{x}}{2\sqrt{x}}\\[3.7pt]
-        &=\displaystyle\lim_{x\to0}\dfrac{2\sqrt{x}-1}{2\sqrt{x}+1}\\[3.7pt]
-        &=\dfrac{2\sqrt{0}-1}{2\sqrt{0}+1}\\[3.7pt]
-        &=\dfrac{-1}1\\
-        &=\boxed{\boxed{-1}}
-        \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\displaystyle\lim_{x\to0}f(x)=-1</m>.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-                
-        <br>
-        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-        <br>
-          <script>soal(limit,1,1)</script>
-        </div>
-   </body>
-</html> 
+            <div class="soal-sumber"><a href="https://web.facebook.com/groups/441012386099919/permalink/765557553645399/" target="_blank" rel="noopener noreferrer">Dunia Matematika Indonesia</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p><strong>Cara 1: Mengalikan dengan Bentuk Sekawan</strong></p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to3}\dfrac{3-\sqrt{2x+3}}{x-3}&=\lim_{x\to3}\dfrac{3-\sqrt{2x+3}}{x-3}\cdot\dfrac{3+\sqrt{2x+3}}{3+\sqrt{2x+3}}\\[3.7pt]
+                    &=\lim_{x\to3}\dfrac{9-(2x+3)}{(x-3)\left(3+\sqrt{2x+3}\right)}\\[3.7pt]
+                    &=\lim_{x\to3}\dfrac{6-2x}{(x-3)\left(3+\sqrt{2x+3}\right)}\\[3.7pt]
+                    &=\lim_{x\to3}\dfrac{-2(x-3)}{(x-3)\left(3+\sqrt{2x+3}\right)}\\[3.7pt]
+                    &=\lim_{x\to3}\dfrac{-2}{3+\sqrt{2x+3}}\\[3.7pt]
+                    &=\dfrac{-2}{3+\sqrt{2(3)+3}}\\[3.7pt]
+                    &=\dfrac{-2}{3+3}\\[3.7pt]
+                    &=-\dfrac{2}{6} = -\dfrac{1}{3}
+                    \end{aligned}
+                    \]
+
+                    <p><strong>Cara 2: Aturan L'Hôpital</strong></p>
+                    <p>Karena substitusi langsung menghasilkan bentuk tak tentu \(\frac{0}{0}\), turunkan pembilang dan penyebut terhadap \(x\):</p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to3}\dfrac{3-\sqrt{2x+3}}{x-3}&=\lim_{x\to3}\dfrac{0-\dfrac{2}{2\sqrt{2x+3}}}{1}\\[3.7pt]
+                    &=\lim_{x\to3}\left(-\dfrac{1}{\sqrt{2x+3}}\right)\\[3.7pt]
+                    &=-\dfrac{1}{\sqrt{2(3)+3}}\\[3.7pt]
+                    &=-\dfrac{1}{\sqrt{9}} = -\dfrac{1}{3}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(\displaystyle\lim_{x\to3}\dfrac{3-\sqrt{2x+3}}{x-3}=-\dfrac{1}{3}\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    \[\lim_{x\to3}\dfrac{\left(\sqrt{x-1}-\sqrt{5-x}\right)\left(\sqrt{4x-3}-1\right)}{x^2-9}=\dots\]
+                </p>
+                <ol class="pilgan">
+                    <li>\(-\dfrac{1}{6}\sqrt{2}\)</li>
+                    <li>\(-\dfrac{1}{4}\sqrt{2}\)</li>
+                    <li>\(-\dfrac{1}{2}\sqrt{2}\)</li>
+                    <li>\(\dfrac{1}{6}\sqrt{2}\)</li>
+                    <li>\(\dfrac{1}{2}\sqrt{2}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Kalikan faktor \(\left(\sqrt{x-1}-\sqrt{5-x}\right)\) dengan sekawannya \(\left(\sqrt{x-1}+\sqrt{5-x}\right)\):</p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to3}\dfrac{\left(\sqrt{x-1}-\sqrt{5-x}\right)\left(\sqrt{4x-3}-1\right)}{x^2-9}&=\lim_{x\to3}\dfrac{\left(\sqrt{x-1}-\sqrt{5-x}\right)\left(\sqrt{4x-3}-1\right)}{x^2-9}\cdot\dfrac{\sqrt{x-1}+\sqrt{5-x}}{\sqrt{x-1}+\sqrt{5-x}}\\[3.7pt]
+                    &=\lim_{x\to3}\dfrac{\left((x-1)-(5-x)\right)\left(\sqrt{4x-3}-1\right)}{\left(x^2-9\right)\left(\sqrt{x-1}+\sqrt{5-x}\right)}\\[3.7pt]
+                    &=\lim_{x\to3}\dfrac{(2x-6)\left(\sqrt{4x-3}-1\right)}{(x-3)(x+3)\left(\sqrt{x-1}+\sqrt{5-x}\right)}\\[3.7pt]
+                    &=\lim_{x\to3}\dfrac{2(x-3)\left(\sqrt{4x-3}-1\right)}{(x-3)(x+3)\left(\sqrt{x-1}+\sqrt{5-x}\right)}\\[3.7pt]
+                    &=\lim_{x\to3}\dfrac{2\left(\sqrt{4x-3}-1\right)}{(x+3)\left(\sqrt{x-1}+\sqrt{5-x}\right)}\\[3.7pt]
+                    &=\dfrac{2\left(\sqrt{4(3)-3}-1\right)}{(3+3)\left(\sqrt{3-1}+\sqrt{5-3}\right)}\\[3.7pt]
+                    &=\dfrac{2(\sqrt{9}-1)}{6(\sqrt{2}+\sqrt{2})}\\[3.7pt]
+                    &=\dfrac{2(3-1)}{6(2\sqrt{2})} = \dfrac{4}{12\sqrt{2}} = \dfrac{1}{3\sqrt{2}}\cdot\dfrac{\sqrt{2}}{\sqrt{2}} = \dfrac{1}{6}\sqrt{2}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(\displaystyle\lim_{x\to3}\dfrac{\left(\sqrt{x-1}-\sqrt{5-x}\right)\left(\sqrt{4x-3}-1\right)}{x^2-9}=\dfrac{1}{6}\sqrt{2}\).<br><b>Jawaban: D</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    \[\lim_{x\to2}\left(\dfrac{6}{x^2-x-2}-\dfrac{2}{x-2}\right)=\dots\]
+                </p>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneId/266" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Faktorkan penyebut \(x^2-x-2 = (x-2)(x+1)\) lalu samakan penyebutnya:</p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to2}\left(\dfrac{6}{x^2-x-2}-\dfrac{2}{x-2}\right)&=\lim_{x\to2}\left(\dfrac{6}{(x-2)(x+1)}-\dfrac{2}{x-2}\right)\\[3.7pt]
+                    &=\lim_{x\to2}\dfrac{6-2(x+1)}{(x-2)(x+1)}\\[3.7pt]
+                    &=\lim_{x\to2}\dfrac{6-2x-2}{(x-2)(x+1)}\\[3.7pt]
+                    &=\lim_{x\to2}\dfrac{-2x+4}{(x-2)(x+1)}\\[3.7pt]
+                    &=\lim_{x\to2}\dfrac{-2(x-2)}{(x-2)(x+1)}\\[3.7pt]
+                    &=\lim_{x\to2}\dfrac{-2}{x+1}\\[3.7pt]
+                    &=\dfrac{-2}{2+1} = -\dfrac{2}{3}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(\displaystyle\lim_{x\to2}\left(\dfrac{6}{x^2-x-2}-\dfrac{2}{x-2}\right)=-\dfrac{2}{3}\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    \[\lim_{x\to-2}\dfrac{x^3-x^2-2x+8}{x^3+8}=\dots\]
+                </p>
+            </div>
+            <div class="soal-sumber">Ganesha Operation</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p><strong>Cara 1: Pemfaktoran</strong></p>
+                    <p>Faktorkan pembilang dan penyebut dengan membagi \((x+2)\):</p>
+                    \[
+                    \begin{aligned}
+                    x^3-x^2-2x+8 &= (x+2)(x^2-3x+4)\\[3.7pt]
+                    x^3+8 &= (x+2)(x^2-2x+4)
+                    \end{aligned}
+                    \]
+                    Sehingga:
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to-2}\dfrac{x^3-x^2-2x+8}{x^3+8}&=\lim_{x\to-2}\dfrac{(x+2)\left(x^2-3x+4\right)}{(x+2)\left(x^2-2x+4\right)}\\[3.7pt]
+                    &=\lim_{x\to-2}\dfrac{x^2-3x+4}{x^2-2x+4}\\[3.7pt]
+                    &=\dfrac{(-2)^2-3(-2)+4}{(-2)^2-2(-2)+4}\\[3.7pt]
+                    &=\dfrac{4+6+4}{4+4+4}\\[3.7pt]
+                    &=\dfrac{14}{12} = \dfrac{7}{6}
+                    \end{aligned}
+                    \]
+
+                    <p><strong>Cara 2: Aturan L'Hôpital</strong></p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to-2}\dfrac{x^3-x^2-2x+8}{x^3+8}&=\lim_{x\to-2}\dfrac{3x^2-2x-2}{3x^2}\\[3.7pt]
+                    &=\dfrac{3(-2)^2-2(-2)-2}{3(-2)^2}\\[3.7pt]
+                    &=\dfrac{12+4-2}{12}\\[3.7pt]
+                    &=\dfrac{14}{12} = \dfrac{7}{6}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(\displaystyle\lim_{x\to-2}\dfrac{x^3-x^2-2x+8}{x^3+8}=\dfrac{7}{6}\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Diketahui fungsi \(g\) kontinu di \(x = 2\) dan \(\displaystyle\lim_{x\to2}g(x)=4\). Nilai dari
+                    \[\lim_{x\to2}\left(g(x)\dfrac{x-2}{\sqrt{x}-\sqrt{2}}\right)\]
+                    adalah ....
+                </p>
+            </div>
+            <div class="soal-sumber">Ganesha Operation</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Kalikan faktor \(\dfrac{x-2}{\sqrt{x}-\sqrt{2}}\) dengan sekawan \(\dfrac{\sqrt{x}+\sqrt{2}}{\sqrt{x}+\sqrt{2}}\):</p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to2}\left(g(x)\dfrac{x-2}{\sqrt{x}-\sqrt{2}}\right)&=\lim_{x\to2}\left(g(x)\dfrac{x-2}{\sqrt{x}-\sqrt{2}}\cdot\dfrac{\sqrt{x}+\sqrt{2}}{\sqrt{x}+\sqrt{2}}\right)\\[3.7pt]
+                    &=\lim_{x\to2}\left(g(x)\dfrac{(x-2)\left(\sqrt{x}+\sqrt{2}\right)}{x-2}\right)\\[3.7pt]
+                    &=\lim_{x\to2}\left(g(x)\left(\sqrt{x}+\sqrt{2}\right)\right)\\[3.7pt]
+                    &=\left(\lim_{x\to2}g(x)\right)\cdot\left(\lim_{x\to2}\left(\sqrt{x}+\sqrt{2}\right)\right)\\[3.7pt]
+                    &=4\left(\sqrt{2}+\sqrt{2}\right)\\[3.7pt]
+                    &=4\left(2\sqrt{2}\right) = 8\sqrt{2}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(\displaystyle\lim_{x\to2}\left(g(x)\dfrac{x-2}{\sqrt{x}-\sqrt{2}}\right)=8\sqrt{2}\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 6 -->
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Tentukan nilai dari:
+                    \[\lim_{x\to5}\dfrac{x^2-25}{\sqrt{x^2+24}-7}\]
+                </p>
+            </div>
+            <div class="soal-sumber">Ganesha Operation</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p><strong>Cara 1: Mengalikan dengan Sekawan</strong></p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to5}\dfrac{x^2-25}{\sqrt{x^2+24}-7}&=\lim_{x\to5}\dfrac{x^2-25}{\sqrt{x^2+24}-7}\cdot\dfrac{\sqrt{x^2+24}+7}{\sqrt{x^2+24}+7}\\[3.7pt]
+                    &=\lim_{x\to5}\dfrac{\left(x^2-25\right)\left(\sqrt{x^2+24}+7\right)}{(x^2+24)-49}\\[3.7pt]
+                    &=\lim_{x\to5}\dfrac{\left(x^2-25\right)\left(\sqrt{x^2+24}+7\right)}{x^2-25}\\[3.7pt]
+                    &=\lim_{x\to5}\left(\sqrt{x^2+24}+7\right)\\[3.7pt]
+                    &=\sqrt{5^2+24}+7\\[3.7pt]
+                    &=\sqrt{49}+7 = 7+7 = 14
+                    \end{aligned}
+                    \]
+
+                    <p><strong>Cara 2: Aturan L'Hôpital</strong></p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to5}\dfrac{x^2-25}{\sqrt{x^2+24}-7}&=\lim_{x\to5}\dfrac{2x}{\dfrac{2x}{2\sqrt{x^2+24}}}\\[3.7pt]
+                    &=\lim_{x\to5}2\sqrt{x^2+24}\\[3.7pt]
+                    &=2\sqrt{5^2+24}\\[3.7pt]
+                    &=2\sqrt{49} = 2(7) = 14
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(\displaystyle\lim_{x\to5}\dfrac{x^2-25}{\sqrt{x^2+24}-7}=14\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 7 -->
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Tentukan nilai dari:
+                    \[\lim_{x\to2}\dfrac{x^3+2x^2-4x-8}{x^3-8}\]
+                </p>
+            </div>
+            <div class="soal-sumber">Ganesha Operation</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p><strong>Cara 1: Pemfaktoran</strong></p>
+                    <p>Faktorkan pembilang dan penyebut:</p>
+                    \[
+                    \begin{aligned}
+                    x^3+2x^2-4x-8 &= x^2(x+2)-4(x+2) = (x^2-4)(x+2) = (x-2)(x+2)^2 = (x-2)(x^2+4x+4)\\[3.7pt]
+                    x^3-8 &= (x-2)(x^2+2x+4)
+                    \end{aligned}
+                    \]
+                    Maka:
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to2}\dfrac{x^3+2x^2-4x-8}{x^3-8}&=\lim_{x\to2}\dfrac{(x-2)\left(x^2+4x+4\right)}{(x-2)\left(x^2+2x+4\right)}\\[3.7pt]
+                    &=\dfrac{2^2+4(2)+4}{2^2+2(2)+4}\\[3.7pt]
+                    &=\dfrac{4+8+4}{4+4+4}\\[3.7pt]
+                    &=\dfrac{16}{12} = \dfrac{4}{3}
+                    \end{aligned}
+                    \]
+
+                    <p><strong>Cara 2: Aturan L'Hôpital</strong></p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to2}\dfrac{x^3+2x^2-4x-8}{x^3-8}&=\lim_{x\to2}\dfrac{3x^2+4x-4}{3x^2}\\[3.7pt]
+                    &=\dfrac{3(2)^2+4(2)-4}{3(2)^2}\\[3.7pt]
+                    &=\dfrac{12+8-4}{12}\\[3.7pt]
+                    &=\dfrac{16}{12} = \dfrac{4}{3}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(\displaystyle\lim_{x\to2}\dfrac{x^3+2x^2-4x-8}{x^3-8}=\dfrac{4}{3}\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 8 -->
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Jika \(f(x)=\cos\left(\dfrac{1}{2}x\right)\), maka nilai dari
+                    \[\lim_{h\to0}\dfrac{f\left(x+\dfrac{h}{2}\right)-2f(x)+f\left(x-\dfrac{h}{2}\right)}{h^2}=\dots\]
+                </p>
+                <ol class="pilgan">
+                    <li>\(\dfrac{1}{2}\sin 2x\)</li>
+                    <li>\(-\dfrac{1}{16}\cos\dfrac{1}{2}x\)</li>
+                    <li>\(-\dfrac{1}{16}\sin\dfrac{1}{2}x\)</li>
+                    <li>\(\dfrac{1}{16}\cos 2x\)</li>
+                    <li>\(-\dfrac{1}{16}\sin 2x\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p><strong>Cara 1: Penjabaran Trigonometri</strong></p>
+                    \[
+                    \begin{aligned}
+                    \lim_{h\to0}\dfrac{f\left(x+\dfrac{h}{2}\right)-2f(x)+f\left(x-\dfrac{h}{2}\right)}{h^2}&=\lim_{h\to0}\dfrac{\cos\left(\dfrac{1}{2}x+\dfrac{h}{4}\right)-2\cos\left(\dfrac{1}{2}x\right)+\cos\left(\dfrac{1}{2}x-\dfrac{h}{4}\right)}{h^2}
+                    \end{aligned}
+                    \]
+                    Gunakan identitas penjumlahan kosinus \(\cos(A+B)+\cos(A-B)=2\cos A\cos B\):
+                    \[
+                    \begin{aligned}
+                    &=\lim_{h\to0}\dfrac{2\cos\left(\dfrac{1}{2}x\right)\cos\left(\dfrac{h}{4}\right)-2\cos\left(\dfrac{1}{2}x\right)}{h^2}\\[3.7pt]
+                    &=\lim_{h\to0}\dfrac{2\cos\left(\dfrac{1}{2}x\right)\left(\cos\left(\dfrac{h}{4}\right)-1\right)}{h^2}\\[3.7pt]
+                    &=\lim_{h\to0}\dfrac{2\cos\left(\dfrac{1}{2}x\right)\left(-2\sin^2\left(\dfrac{h}{8}\right)\right)}{h^2}\\[3.7pt]
+                    &=\lim_{h\to0}\left(-4\cos\left(\dfrac{1}{2}x\right)\right)\cdot\dfrac{\sin\left(\dfrac{h}{8}\right)}{h}\cdot\dfrac{\sin\left(\dfrac{h}{8}\right)}{h}\\[3.7pt]
+                    &=-4\cos\left(\dfrac{1}{2}x\right)\cdot\dfrac{1}{8}\cdot\dfrac{1}{8} = -\dfrac{1}{16}\cos\left(\dfrac{1}{2}x\right)
+                    \end{aligned}
+                    \]
+
+                    <p><strong>Cara 2: Konsep Turunan Kedua</strong></p>
+                    <p>Limit di atas merupakan bentuk limit beda hingga pusat untuk turunan kedua \(f''(x)\):</p>
+                    \[
+                    \begin{aligned}
+                    f'(x) &= -\dfrac{1}{2}\sin\left(\dfrac{1}{2}x\right)\\[3.7pt]
+                    f''(x) &= -\dfrac{1}{4}\cos\left(\dfrac{1}{2}x\right)
+                    \end{aligned}
+                    \]
+                    Dengan aturan L'Hôpital terhadap variabel \(h\):
+                    \[
+                    \begin{aligned}
+                    \lim_{h\to0}\dfrac{f\left(x+\dfrac{h}{2}\right)-2f(x)+f\left(x-\dfrac{h}{2}\right)}{h^2}&=\lim_{h\to0}\dfrac{\frac{1}{2}f'\left(x+\dfrac{h}{2}\right)-\frac{1}{2}f'\left(x-\dfrac{h}{2}\right)}{2h}\\[3.7pt]
+                    &=\lim_{h\to0}\dfrac{\frac{1}{4}f''\left(x+\dfrac{h}{2}\right)+\frac{1}{4}f''\left(x-\dfrac{h}{2}\right)}{2}\\[3.7pt]
+                    &=\dfrac{\frac{1}{2}f''(x)}{2} = \dfrac{1}{4}f''(x)\\[3.7pt]
+                    &=\dfrac{1}{4}\left(-\dfrac{1}{4}\cos\left(\dfrac{1}{2}x\right)\right) = -\dfrac{1}{16}\cos\left(\dfrac{1}{2}x\right)
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, hasilnya adalah \(-\dfrac{1}{16}\cos\left(\dfrac{1}{2}x\right)\).<br><b>Jawaban: B</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 9 -->
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Diketahui \(f(x) = x^2 + 2x\). Nilai dari
+                    \[\lim_{h\to0}\dfrac{f(x-2h)-f(x)}{4h}=\dots\]
+                </p>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/14324" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Substitusikan \(f(x-2h)\) ke dalam bentuk limit:</p>
+                    \[
+                    \begin{aligned}
+                    \lim_{h\to0}\dfrac{f(x-2h)-f(x)}{4h}&=\lim_{h\to0}\dfrac{\left[(x-2h)^2+2(x-2h)\right]-\left[x^2+2x\right]}{4h}\\[3.7pt]
+                    &=\lim_{h\to0}\dfrac{\left(x^2-4xh+4h^2+2x-4h\right)-\left(x^2+2x\right)}{4h}\\[3.7pt]
+                    &=\lim_{h\to0}\dfrac{-4xh+4h^2-4h}{4h}\\[3.7pt]
+                    &=\lim_{h\to0}(-x+h-1)\\[3.7pt]
+                    &=-x+0-1 = -x-1
+                    \end{aligned}
+                    \]
+                    <p><em>Alternatif Turunan:</em></p>
+                    \[
+                    \lim_{h\to0}\dfrac{f(x-2h)-f(x)}{4h} = \lim_{h\to0}\dfrac{f(x+(-2h))-f(x)}{-2h}\cdot\left(-\dfrac{1}{2}\right) = -\dfrac{1}{2}f'(x) = -\dfrac{1}{2}(2x+2) = -x-1
+                    \]
+                    <div class="kesimpulan">Jadi, \(\displaystyle\lim_{h\to0}\dfrac{f(x-2h)-f(x)}{4h}=-x-1\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 10 -->
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Jika \(f(x)=\dfrac{x-\sqrt{x}}{x+\sqrt{x}}\), maka nilai \(\displaystyle\lim_{x\to0}f(x)=\dots\)
+                </p>
+                <ol class="pilgan">
+                    <li>\(0\)</li>
+                    <li>\(-\dfrac{1}{2}\)</li>
+                    <li>\(-1\)</li>
+                    <li>\(-2\)</li>
+                    <li>\(\infty\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p><strong>Cara 1: Membagi dengan \(\sqrt{x}\)</strong></p>
+                    <p>Faktorkan \(\sqrt{x}\) dari pembilang dan penyebut (untuk \(x > 0\)):</p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to0}\dfrac{x-\sqrt{x}}{x+\sqrt{x}}&=\lim_{x\to0}\dfrac{\sqrt{x}(\sqrt{x}-1)}{\sqrt{x}(\sqrt{x}+1)}\\[3.7pt]
+                    &=\lim_{x\to0}\dfrac{\sqrt{x}-1}{\sqrt{x}+1}\\[3.7pt]
+                    &=\dfrac{\sqrt{0}-1}{\sqrt{0}+1}\\[3.7pt]
+                    &=\dfrac{-1}{1} = -1
+                    \end{aligned}
+                    \]
+
+                    <p><strong>Cara 2: Aturan L'Hôpital</strong></p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to0}\dfrac{x-\sqrt{x}}{x+\sqrt{x}}&=\lim_{x\to0}\dfrac{1-\dfrac{1}{2\sqrt{x}}}{1+\dfrac{1}{2\sqrt{x}}}\cdot\dfrac{2\sqrt{x}}{2\sqrt{x}}\\[3.7pt]
+                    &=\lim_{x\to0}\dfrac{2\sqrt{x}-1}{2\sqrt{x}+1}\\[3.7pt]
+                    &=\dfrac{2(0)-1}{2(0)+1} = -1
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(\displaystyle\lim_{x\to0}f(x)=-1\).<br><b>Jawaban: C</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <!-- Script Math Blog Otomatis (Navigasi Level, Penomoran, Toggle Solusi) -->
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>

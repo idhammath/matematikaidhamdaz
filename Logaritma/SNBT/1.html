@@ -1,247 +1,280 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SNBT Zone : Logaritma</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal SNBT - Logaritma</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="../../scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-    <div class="separator w3-hide" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5B1XcTcLYsOLUIRYBje9zamA8ZzFfTI7Bb04CjEYrn3c-qFe1_exR_yhp1x-28QZRHathF_pmpRECM_SD6ZrZmPbLIhCMlu55jy3D74yAOwiBFcHXv1qTlSLSjhFJH0aXAi_y7qKmtOruJkVYfckGmLUm9nqPFsej3tgOW-NxnLKMFakCOy4p1jdMXw/s1080/LOGARITMA%20SNBT.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5B1XcTcLYsOLUIRYBje9zamA8ZzFfTI7Bb04CjEYrn3c-qFe1_exR_yhp1x-28QZRHathF_pmpRECM_SD6ZrZmPbLIhCMlu55jy3D74yAOwiBFcHXv1qTlSLSjhFJH0aXAi_y7qKmtOruJkVYfckGmLUm9nqPFsej3tgOW-NxnLKMFakCOy4p1jdMXw/s320/LOGARITMA%20SNBT.png"/></a></div>
-    Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Logaritma</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
 
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><span id="snbt" class="w3-bar-item w3-deep-purple w3-hide">SNBT</span><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Logaritma</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-  <div id="1" class="justify"><h3>No. <span class="w3-badge w3-red nomor">1</span></h3>Jika <e><sup>3</sup>log <em>a</em> + 2(<sup>3</sup>log <em>b</em>) = 1</e> dan <e><sup>3</sup>log <em>b</em> + 2(<sup>3</sup>log <em>a</em>) = 2</e>, maka nilai <em>ab</em> adalah ....<div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>2</li>
-    <li class="pas2">3
-    </li>
-    <li class="pas2">6
-    </li>
-    </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>9</li>
-    <li class="pas2">12
-    </li>
-    </ol></div></div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><m>\begin{aligned}
-    ^3\negthinspace\log b+2\left({^3}\negthinspace\log a\right)&amp;=2\\
-    2\left({^3}\negthinspace\log a\right)+{^3}\negthinspace\log b&amp;=2
-    \end{aligned}</m><br />
-    <br />
-    <m>\begin{aligned}
-    ^3\negthinspace\log a+2\left({^3}\negthinspace\log b\right)&amp;=1\\
-    2\left({^3}\negthinspace\log a\right)+{^3}\negthinspace\log b&amp;=2&amp;\ +\\\hline
-    3\left({^3}\negthinspace\log a\right)+3\left({^3}\negthinspace\log b\right)&amp;=3\\
-    {^3}\negthinspace\log a+{^3}\negthinspace\log b&amp;=1\\
-    {^3}\negthinspace\log (ab)&amp;={^3}\negthinspace\log3\\
-    ab&amp;=3
-    \end{aligned}</m></div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <em>ab</em> = 3.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-</div>
-    
-    <div id="2"><h3>No. <span class="w3-badge w3-red nomor">2</span></h3>Diketahui <e><sup><em>p</em></sup>log 2 = 10</e> dan <e><sup><em>q</em></sup>log 4 = 2</e>. Jika <e><em>s</em> = <em>p</em><sup>5</sup></e> dan <e><em>t</em> = <em>q</em><sup>4</sup></e>, maka nilai <e><sup><em>t</em></sup>log <em>s</em></e> adalah
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li><m>\dfrac19</m></li>
-    <li class="pas2"><m>\dfrac18</m>
-    </li>
-    <li class="pas2"><m>\dfrac17</m>
-    </li>
-    </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li><m>\dfrac16</m></li>
-    <li class="pas2"><m>\dfrac15</m>
-    </li>
-    </ol></div></div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><m>\begin{aligned}
-    ^p\negthinspace\log2&amp;=10\\
-    p&amp;=2^{\frac1{10}}
-    \end{aligned}</m><br />
-    <br />
-    <m>\begin{aligned}
-    ^q\negthinspace\log4&amp;=2\\
-    q&amp;=4^{\frac12}
-    \end{aligned}</m><br />
-    <br />
-    <m>\begin{aligned}
-    ^t\negthinspace\log s&amp;={^{q^4}\negthinspace\log p^5}\\
-    &amp;={^{\left(4^{\frac12}\right)^4}\negthinspace\log \left(2^{\frac1{10}}\right)^5}\\
-    &amp;={^{4^2}\negthinspace\log2^{\frac12}}\\
-    &amp;={^{\left(2^2\right)^2}\negthinspace\log2^{\frac12}}\\
-    &amp;={^{2^4}\negthinspace\log2^{\frac12}}\\
-    &amp;=\dfrac{\dfrac12}4\\
-    &amp;=\boxed{\boxed{\dfrac18}}
-    \end{aligned}</m></div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <m>^t\negthinspace\log s=\dfrac18</m>.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-</div>
-    
-    <div id="3"><h3>No. <span class="w3-badge w3-red nomor">3</span></h3>Bentuk sederhana dari <m>\dfrac{\log p^3q-2\log q+\log p^2q^6}{3\log pq}=</m> ....
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li><m>\dfrac52\log pq</m></li>
-    <li class="pas2"><m>\dfrac25\log pq</m>
-    </li>
-    <li class="pas2"><m>\dfrac25</m>
-    </li>
-    </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li><m>\dfrac35</m></li>
-    <li class="pas2"><m>\dfrac53</m>
-    </li>
-    </ol></div></div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><m>\begin{aligned}
-    \dfrac{\log p^3q-2\log q+\log p^2q^6}{3\log pq}&amp;=\dfrac{\log p^3q-\log q^2+\log p^2q^6}{3\log pq}\\[8pt]
-    &amp;=\dfrac{\log\dfrac{p^3q\cdot p^2q^6}{q^2}}{3\log pq}\\[8pt]
-    &amp;=\dfrac{\log p^5q^5}{3\log pq}\\[8pt]
-    &amp;=\dfrac{\log (pq)^5}{3\log pq}\\[8pt]
-    &amp;=\dfrac{5\log pq}{3\log pq}\\
-    &amp;=\boxed{\boxed{\dfrac53}}
-    \end{aligned}</m></div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <m>\dfrac{\log p^3q-2\log q+\log p^2q^6}{3\log pq}=\dfrac53</m>.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-</div>
-    
-    <div class="justify" id="4"><h3>No. <span class="w3-badge w3-red nomor">4</span></h3>Jika <e><em>a</em> &gt; 1</e>, maka penyelesaian <m>{\left({^a\negthinspace\log}(2x+1)\right)\left({^3\negthinspace\log}\sqrt{a}\right)=1}</m> adalah<br />
-    <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>1</li>
-    <li>2
-    </li>
-    <li>3
-    </li>
-    </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>4</li>
-    <li>5
-    </li>
-    </ol></div></div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><m>\begin{aligned}
-    \left({^a\negthinspace\log}(2x+1)\right)\left({^3\negthinspace\log}\sqrt{a}\right)&amp;=1\\
-    \left({^a\negthinspace\log}(2x+1)\right)\left({^3\negthinspace\log}a^{\frac12}\right)&amp;=1\\
-    \left({^a\negthinspace\log}(2x+1)\right)\left(\dfrac12{^3\negthinspace\log}a\right)&amp;=1\\
-    \dfrac12\left({^3\negthinspace\log}a\right)\left({^a\negthinspace\log}(2x+1)\right)&amp;=1\\
-    {^3\negthinspace\log}(2x+1)&amp;=2\\
-    2x+1&amp;=3^2\\
-    2x+1&amp;=9\\
-    2x&amp;=8\\
-    x&amp;=\boxed{\boxed{4}}
-    \end{aligned}</m></div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, penyelesaian <m>\left({^a\negthinspace\log}(2x+1)\right)\left({^3\negthinspace\log}\sqrt{a}\right)=1</m> adalah 4.<br><b>JAWAB: D</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-</div>
-    
-    <div class="justify" id="5"><h3>No. <span class="w3-badge w3-red nomor">5</span></h3>Diketahui <em>a</em> dan <em>b</em> merupakan bilangan positif tidak satu, jika <e><sup><em>ab</em></sup>log <em>ac</em> = 6</e>, maka tentukan nilai <e><sup><em>b</em></sup>log <em>c</em></e><br />
-    (1)  <e><sup><em>a</em></sup>log <em>a</em><sup>3</sup><em>b</em><sup>4</sup> = 4</e><br />
-    (2)  <e><sup><em>b</em></sup>log <em>abc</em> = 6</e><br />
-    Putuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut?<br />
-    <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</li>
-    <li>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.<br />
-    </li>
-    <li>Dua pernyataan BERSAMA-SAMA cukup untuk menjawab pernyataan, tetapi SATU pernyataan SAJA tidak cukup<br />
-    </li>
-    </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pertanyaan (2) SAJA cukup.</li>
-    <li>Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan.<br />
-    </li>
-    </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><m>\begin{aligned}
-    {^{ab}\negmedspace\log ac}&=6\\
-    ac&=(ab)^6\\
-    ac&=a^6b^6\\
-    c&=a^5b^6
-    \end{aligned}</m><br />
-    <ul><li>Pernyataan (1) SAJA<br />
-    <m>\begin{aligned}
-    {^a\negmedspace\log a^3b^4}&=4\\
-    a^3b^4&=a^4\\
-    b^4&=a\\
-    a&=b^4
-    \end{aligned}</m><br />
-    <br />
-    <m>\begin{aligned}
-    c&=a^5b^6\\
-    &=\left(b^4\right)^5b^6\\
-    &=b^{20}\cdot b^6\\
-    &=b^{26}
-    \end{aligned}</m><br />
-    <br />
-    <m>\begin{aligned}
-    {^b\negmedspace\log c}&={^b\negmedspace\log b^{26}}\\
-    &=26
-    \end{aligned}</m><br />
-    <b>Pernyataan (1) SAJA cukup</b></li>
-    <li>Pernyataan (2) SAJA<br />
-    <m>\begin{aligned}
-    {^b\negmedspace\log abc}&=6\\
-    abc&=b^6\\
-    a&=\dfrac{b^6}{bc}\\
-    &=\dfrac{b^5}c
-    \end{aligned}</m><br />
-    <br />
-    <m>\begin{aligned}
-    c&=a^5b^6\\
-    c&=\left(\dfrac{b^5}c\right)^5b^6\\
-    c&=\dfrac{b^{25}}{c^5}\cdot b^6\\[8pt]
-    c^6&=b^{31}\\
-    c&=b^{\frac{31}6}
-    \end{aligned}</m><br />
-    <br />
-    <m>\begin{aligned}
-    {^b\negmedspace\log c}&={^b\negmedspace\log b^{\frac{31}6}}\\
-    &=\dfrac{31}6
-    \end{aligned}</m><br />
-    <b>Pernyataan (2) SAJA cukup</b></li>
-    </ul></div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pertanyaan (2) SAJA cukup.<br><b>JAWAB: D</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-</div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-  <br><br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(logaritma,2,1)</script>
-</div>
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika ${}^3\log a + 2({}^3\log b) = 1$ dan ${}^3\log b + 2({}^3\log a) = 2$, maka nilai dari $ab$ adalah ...
+                <ol class="pilgan" type="A">
+                    <li>$2$</li>
+                    <li>$3$</li>
+                    <li>$6$</li>
+                    <li>$9$</li>
+                    <li>$12$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Grup Matematika Idhamdaz</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Jumlahkan kedua persamaan yang diberikan:</p>
+                    \[
+                    \begin{aligned}
+                    {}^3\log a + 2({}^3\log b) &= 1 \\
+                    2({}^3\log a) + {}^3\log b &= 2 \quad (+) \\
+                    \hline
+                    3({}^3\log a) + 3({}^3\log b) &= 3 \\
+                    {}^3\log a + {}^3\log b &= 1 \\
+                    {}^3\log (ab) &= 1 \\
+                    ab &= 3^1 = 3
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, nilai $ab = 3$.<br><strong>Jawaban: B</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui ${}^p\log 2 = 10$ dan ${}^q\log 4 = 2$. Jika $s = p^5$ dan $t = q^4$, maka nilai dari ${}^t\log s$ adalah ...
+                <ol class="pilgan" type="A">
+                    <li>$\dfrac{1}{9}$</li>
+                    <li>$\dfrac{1}{8}$</li>
+                    <li>$\dfrac{1}{7}$</li>
+                    <li>$\dfrac{1}{6}$</li>
+                    <li>$\dfrac{1}{5}$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Grup Matematika Idhamdaz</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Nyatakan $p$ dan $q$ dalam bilangan berpangkat basis $2$:</p>
+                    \[
+                    \begin{aligned}
+                    {}^p\log 2 &= 10 \implies p^{10} = 2 \implies p = 2^{1/10} \\
+                    {}^q\log 4 &= 2 \implies q^2 = 4 = 2^2 \implies q = 2
+                    \end{aligned}
+                    \]
+                    <p>Tentukan nilai $s$ dan $t$:</p>
+                    \[
+                    \begin{aligned}
+                    s &= p^5 = (2^{1/10})^5 = 2^{1/2} \\
+                    t &= q^4 = 2^4
+                    \end{aligned}
+                    \]
+                    <p>Hitung nilai ${}^t\log s$:</p>
+                    \[
+                    {}^t\log s = {}^{2^4}\log 2^{1/2} = \frac{\frac{1}{2}}{4} \cdot {}^2\log 2 = \frac{1}{8}
+                    \]
+                    <div class="kesimpulan">Jadi, ${}^t\log s = \dfrac{1}{8}$.<br><strong>Jawaban: B</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Bentuk sederhana dari:
+                \[
+                \frac{\log p^3q - 2\log q + \log p^2q^6}{3\log pq} = \dots
+                \]
+                <ol class="pilgan" type="A">
+                    <li>$\dfrac{5}{2}\log pq$</li>
+                    <li>$\dfrac{2}{5}\log pq$</li>
+                    <li>$\dfrac{2}{5}$</li>
+                    <li>$\dfrac{3}{5}$</li>
+                    <li>$\dfrac{5}{3}$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Grup Matematika Idhamdaz</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Gabungkan logaritma pada bagian pembilang:</p>
+                    \[
+                    \begin{aligned}
+                    \frac{\log p^3q - 2\log q + \log p^2q^6}{3\log pq}
+                    &= \frac{\log p^3q - \log q^2 + \log p^2q^6}{3\log pq} \\[6pt]
+                    &= \frac{\log\left(\frac{p^3q \cdot p^2q^6}{q^2}\right)}{3\log pq} \\[6pt]
+                    &= \frac{\log\left(\frac{p^5q^7}{q^2}\right)}{3\log pq} \\[6pt]
+                    &= \frac{\log(p^5q^5)}{3\log pq} \\[6pt]
+                    &= \frac{\log(pq)^5}{3\log pq} \\[6pt]
+                    &= \frac{5\log pq}{3\log pq} = \frac{5}{3}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, bentuk sederhana dari ekspresi tersebut adalah $\dfrac{5}{3}$.<br><strong>Jawaban: E</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika $a > 1$, maka penyelesaian dari persamaan:
+                \[
+                \left({}^a\log(2x + 1)\right)\left({}^3\log\sqrt{a}\right) = 1
+                \]
+                adalah ...
+                <ol class="pilgan" type="A">
+                    <li>$1$</li>
+                    <li>$2$</li>
+                    <li>$3$</li>
+                    <li>$4$</li>
+                    <li>$5$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Grup Matematika Idhamdaz</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Sederhanakan faktor kedua menggunakan sifat pangkat logaritma:</p>
+                    \[
+                    {}^3\log\sqrt{a} = {}^3\log a^{1/2} = \frac{1}{2} \cdot {}^3\log a
+                    \]
+                    <p>Substitusikan ke persamaan:</p>
+                    \[
+                    \begin{aligned}
+                    \left({}^a\log(2x + 1)\right) \cdot \left(\frac{1}{2} \cdot {}^3\log a\right) &= 1 \\[6pt]
+                    \frac{1}{2} \cdot \left({}^3\log a \cdot {}^a\log(2x + 1)\right) &= 1 \\[6pt]
+                    {}^3\log(2x + 1) &= 2 \\[6pt]
+                    2x + 1 &= 3^2 = 9 \\[6pt]
+                    2x &= 8 \implies x = 4
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, penyelesaian dari persamaan tersebut adalah $x = 4$.<br><strong>Jawaban: D</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui $a$ dan $b$ merupakan bilangan real positif yang tidak sama dengan satu. Jika ${}^{ab}\log ac = 6$, maka tentukan nilai dari ${}^b\log c$.
+                <br><br>
+                (1) ${}^a\log(a^3b^4) = 4$<br>
+                (2) ${}^b\log(abc) = 6$<br><br>
+                Putuskan apakah pernyataan (1) dan (2) berikut cukup untuk menjawab pertanyaan tersebut:
+                <ol class="pilgan" type="A">
+                    <li>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (2) SAJA tidak cukup.</li>
+                    <li>Pernyataan (2) SAJA cukup untuk menjawab pertanyaan, tetapi pernyataan (1) SAJA tidak cukup.</li>
+                    <li>Dua pernyataan BERSAMA-SAMA cukup untuk menjawab pertanyaan, tetapi SATU pernyataan SAJA tidak cukup.</li>
+                    <li>Pernyataan (1) SAJA cukup untuk menjawab pertanyaan dan pernyataan (2) SAJA cukup.</li>
+                    <li>Pernyataan (1) dan pernyataan (2) tidak cukup untuk menjawab pertanyaan.</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Grup Matematika Idhamdaz</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Dari persamaan ${}^{ab}\log ac = 6$:</p>
+                    \[
+                    \begin{aligned}
+                    ac &= (ab)^6 = a^6 b^6 \\
+                    c &= a^5 b^6
+                    \end{aligned}
+                    \]
+                    <p><strong>Uji Pernyataan (1):</strong></p>
+                    \[
+                    \begin{aligned}
+                    {}^a\log(a^3b^4) &= 4 \\
+                    a^3b^4 &= a^4 \\
+                    b^4 &= a \iff a = b^4
+                    \end{aligned}
+                    \]
+                    <p>Substitusikan $a = b^4$ ke persamaan $c$:</p>
+                    \[
+                    c = (b^4)^5 \cdot b^6 = b^{20} \cdot b^6 = b^{26}
+                    \]
+                    <p>Maka ${}^b\log c = {}^b\log b^{26} = 26$. Nilai ${}^b\log c$ dapat ditentukan secara unik. Jadi, <strong>Pernyataan (1) SAJA cukup</strong>.</p>
+
+                    <p><strong>Uji Pernyataan (2):</strong></p>
+                    \[
+                    \begin{aligned}
+                    {}^b\log(abc) &= 6 \\
+                    abc &= b^6 \iff a = \frac{b^6}{bc} = \frac{b^5}{c}
+                    \end{aligned}
+                    \]
+                    <p>Substitusikan $a = \frac{b^5}{c}$ ke persamaan $c$:</p>
+                    \[
+                    \begin{aligned}
+                    c &= a^5 b^6 \\
+                    c &= \left(\frac{b^5}{c}\right)^5 \cdot b^6 = \frac{b^{25} \cdot b^6}{c^5} = \frac{b^{31}}{c^5} \\
+                    c^6 &= b^{31} \iff c = b^{31/6}
+                    \end{aligned}
+                    \]
+                    <p>Maka ${}^b\log c = {}^b\log b^{31/6} = \frac{31}{6}$. Nilai ${}^b\log c$ dapat ditentukan secara unik. Jadi, <strong>Pernyataan (2) SAJA cukup</strong>.</p>
+                    <div class="kesimpulan">Jadi, Pernyataan (1) SAJA cukup dan Pernyataan (2) SAJA cukup.<br><strong>Jawaban: D</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

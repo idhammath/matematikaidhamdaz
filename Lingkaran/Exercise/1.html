@@ -1,161 +1,283 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>Exercise Zone : Lingkaran</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-     </head> 
-     <body>
-      <div class="separator w3-hide" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ-t6VaHElFjuIMXgr0H8-tGGnWtzxWOgCN3Bb1tU0KFPWTH7wAuhARI3p7OEZzte5SOpW7Uxpr3O0_Qs3Frvpzc8UfPMmUw2XEWiNEvv1bk3bUbNbfTFTJ5aeYyoFkckNgR8On0qt-muHB5ETVJKMwbdMeY-7t6nDvGpcwoMX90_h0FpIArUrLlv59A/s1080/LINGKARAN%20DASAR.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ-t6VaHElFjuIMXgr0H8-tGGnWtzxWOgCN3Bb1tU0KFPWTH7wAuhARI3p7OEZzte5SOpW7Uxpr3O0_Qs3Frvpzc8UfPMmUw2XEWiNEvv1bk3bUbNbfTFTJ5aeYyoFkckNgR8On0qt-muHB5ETVJKMwbdMeY-7t6nDvGpcwoMX90_h0FpIArUrLlv59A/s320/LINGKARAN%20DASAR.png"/></a></div>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Lingkaran</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
-      <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
+<!DOCTYPE html>
+<html lang="id">
 
-    <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      <div id="tempatsvg1" class="tengah"></div>
-  Jika gambar di atas menunjukkan sebuah taman berbentuk lingkaran yang dikelilingi oleh jalan setapak, maka berapa luas jalan setapak tersebut?
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/9615" target="_blank">Grup Telegram</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\(\begin{aligned}r&=\dfrac{21}2\\
-          &=10{,}5
-          \end{aligned}\)<br><br>
-      
-          \(\begin{aligned} 
-          R&=10{,}5+1{,}5\\
-          &=12
-          \end{aligned}\)<br><br>
-      
-          \(\begin{aligned} 
-          L&=\pi R^2-\pi r^2\\
-          &=3{,}14\times 12^2-\dfrac{22}7\times\dfrac{21}2\times\dfrac{21}2\\
-          &=452{,}16-346{,}5\\
-          &=\boxed{\boxed{105{,}66}} 
-          \end{aligned}\)</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, luas jalan setapak tersebut adalah 105,66.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        <script>
-          var a1 = [1,7,8,4];
-          var garis1 = [[a1[3],a1[2]+a1[3]],[2*(a1[2])+a1[3],a1[2]+a1[3]]];
-          var garis2 = [[a1[2]+a1[3],0],[a1[2]+a1[3],a1[3]]];
-          document.getElementById("tempatsvg1").innerHTML = String.raw`${svgawal(2*(a1[2]+a1[3]),2*(a1[2]+a1[3]),a1[1],a1[0])}
-          ${svglingkaran([a1[2]+a1[3],a1[2]+a1[3]],a1[2]+a1[3],{warnagaris:"none",isi:"grey"})}
-          ${svglingkaran([a1[2]+a1[3],a1[2]+a1[3]],a1[2],{warnagaris:"none",isi:"green"})}
-          ${svggaris(garis1,{tebalgaris:2/a1[1],warna:"white"})}
-          ${svggaris(garis2,{tebalgaris:2/a1[1],warna:"white"})}
-          ${svglabelgaris(garis1,21,{ukuran:1/a1[1],anchor:"middle",yplus:-0.5,warna:"white"})}
-          ${svglabelgaris(garis2,"1,5",{ukuran:1/a1[1],baseline:"central",xplus:0.5,warna:"white"})}
-          </svg>`
-        </script>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal Dasar - Lingkaran</title>
 
-      <div class="justify" id="2">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Diberikan dua buah lingkaran <br>
-        <e><em>L</em><sub>1</sub> &equiv; <em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> = <em>r</em><sup>2</sup></e><br>
-        <e><em>L</em><sub>2</sub> &equiv; <em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> &minus; 10<em>x</em> + 16 = 0</e><br>
-        Agar <em>L</em><sub>1</sub> dan <em>L</em><sub>2</sub> saling berpotongan, maka batasan nilai <em>r</em> nya adalah .... 
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><div class="w3-row">
-              <div class="w3-col l6">\(\begin{aligned}
-            L_2&\equiv x^2+y^2-10x+16=0\\
-            &\equiv (x-5)^2+y^2=9
-            \end{aligned}\) <br><br>
-            <em>P</em><sub>1</sub> (0, 0)<br>
-            <em>P</em><sub>2</sub> (5, 0)<br>
-            <em>r</em><sub>1</sub> = <em>r</em><br>
-            <em>r</em><sub>2</sub> = 3<br><br>
-            <em>P</em><sub>1</sub><em>P</em><sub>2</sub> = 5 <br><br></div>
-              <div class="w3-col l6">\(\begin{array}{rcccl}
-            \left|r_1-r_2\right|&\lt&P_1P_2&\lt&r_1+r_2\\
-            \left|r-3\right|&\lt&5&\lt&r+3
-            \end{array}\)
-            <ul>
-              <li>|<em>r</em> &minus; 3| &lt; 5<br>
-                \(\begin{array}{rcccl}
-                -5&\lt&r-3&\lt&5\\
-                -2&\lt&r&\lt&8\\
-                \end{array}\)
-              </li>
-              <li>5 &lt; <em>r</em> + 3<br>
-                <em>r</em> &gt; 2</li>
-            </ul>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 258 70" style="enable-background:new 0 0 258 70;" xml:space="preserve" width="60%">
-<style type="text/css">
-	.st0{fill:#FFFF00;}
-	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st2{font-family:'ArialMT';}
-	.st3{font-size:12px;}
-	.st4{fill:none;stroke:#000000;stroke-miterlimit:10;}
-	.st5{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:12;}
-</style>
-<rect x="106.5" y="22.5" class="st0" width="80" height="20"/>
-<g>
-	<g>
-		<line class="st1" x1="24.1" y1="42" x2="236.9" y2="42"/>
-		<g>
-			<path d="M12,42c5.7,2.1,12.7,5.7,17.1,9.5L25.7,42l3.4-9.5C24.7,36.3,17.7,39.9,12,42z"/>
-		</g>
-		<g>
-			<path d="M249,42c-5.7,2.1-12.7,5.7-17.1,9.5l3.4-9.5l-3.4-9.5C236.3,36.3,243.3,39.9,249,42z"/>
-		</g>
-	</g>
-</g>
-<text transform="matrix(1 0 0 1 45.6079 57.5527)" class="st2 st3">-2</text>
-<text transform="matrix(1 0 0 1 103.6079 57.5527)" class="st2 st3">2</text>
-<text transform="matrix(1 0 0 1 183.6079 57.5527)" class="st2 st3">8</text>
-<g>
-	<g>
-		<line class="st4" x1="50" y1="42" x2="50" y2="36"/>
-		<line class="st4" x1="50" y1="28" x2="50" y2="22"/>
-	</g>
-</g>
-<g>
-	<g>
-		<line class="st4" x1="186.5" y1="42" x2="186.5" y2="36"/>
-		<line class="st4" x1="186.5" y1="28" x2="186.5" y2="22"/>
-	</g>
-</g>
-<line class="st4" x1="50.5" y1="22.5" x2="186.5" y2="22.5"/>
-<line class="st5" x1="106.5" y1="42.5" x2="106.5" y2="11.5"/>
-<g>
-	<g>
-		<line class="st4" x1="224.5" y1="11.5" x2="106.5" y2="11.5"/>
-		<g>
-			<path d="M230.5,11.5c-2.8-1.1-6.4-2.9-8.5-4.8l1.7,4.8l-1.7,4.8C224.1,14.4,227.7,12.6,230.5,11.5z"/>
-		</g>
-	</g>
-</g>
-</svg></div>
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="../../scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Lingkaran</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <div id="geosvg-taman" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+                Sebuah taman berbentuk lingkaran dengan diameter $21\text{ m}$ dikelilingi oleh jalan setapak selebar $1{,}5\text{ m}$. Berapakah luas jalan setapak tersebut?
             </div>
-              
-            
-          </div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, batasan nilai <em>r</em> nya adalah <e>2 &lt; <em>r</em> &lt; 8.</e><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-      </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/9615" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Diketahui diameter taman $d = 21\text{ m}$, sehingga jari-jari taman adalah:</p>
+                    \[
+                    r = \frac{21}{2} = 10{,}5\text{ m}
+                    \]
+                    <p>Karena taman dikelilingi jalan setapak selebar $1{,}5\text{ m}$, maka jari-jari lingkaran luar (taman ditambah jalan) adalah:</p>
+                    \[
+                    R = r + 1{,}5 = 10{,}5 + 1{,}5 = 12\text{ m}
+                    \]
+                    <p>Luas jalan setapak adalah selisih antara luas lingkaran luar dan luas lingkaran dalam:</p>
+                    \[
+                    \begin{aligned}
+                    L_{\text{jalan}} &= \pi R^2 - \pi r^2 \\
+                    &= 3{,}14 \times 12^2 - \frac{22}{7} \times \left(\frac{21}{2}\right)^2 \\
+                    &= 3{,}14 \times 144 - \frac{22}{7} \times \frac{441}{4} \\
+                    &= 452{,}16 - 346{,}5 \\
+                    &= 105{,}66\text{ m}^2
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, luas jalan setapak tersebut adalah $105{,}66\text{ m}^2$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-      <br>
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>
-           <script>soal(lingk,1,1)</script>     
-   </body>
-</html> 
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diberikan dua buah lingkaran:
+                \[
+                \begin{aligned}
+                L_1 &\equiv x^2 + y^2 = r^2 \\
+                L_2 &\equiv x^2 + y^2 - 10x + 16 = 0
+                \end{aligned}
+                \]
+                Agar $L_1$ dan $L_2$ saling berpotongan di dua titik, maka batasan nilai $r$ adalah ...
+            </div>
+            <div class="soal-sumber">Grup Matematika Idhamdaz</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Ubah persamaan lingkaran $L_2$ ke bentuk baku:</p>
+                    \[
+                    \begin{aligned}
+                    x^2 - 10x + y^2 &= -16 \\
+                    (x - 5)^2 - 25 + y^2 &= -16 \\
+                    (x - 5)^2 + y^2 &= 9
+                    \end{aligned}
+                    \]
+                    <p>Dari bentuk tersebut diperoleh:</p>
+                    <ul>
+                        <li>Pusat lingkaran $L_1$ adalah $P_1(0, 0)$ dengan jari-jari $r_1 = r$.</li>
+                        <li>Pusat lingkaran $L_2$ adalah $P_2(5, 0)$ dengan jari-jari $r_2 = \sqrt{9} = 3$.</li>
+                    </ul>
+                    <p>Jarak antara kedua pusat lingkaran adalah:</p>
+                    \[
+                    P_1P_2 = \sqrt{(5 - 0)^2 + (0 - 0)^2} = 5
+                    \]
+                    <p>Dua lingkaran berpotongan di dua titik jika dan hanya jika:</p>
+                    \[
+                    |r_1 - r_2| < P_1P_2 < r_1 + r_2
+                    \]
+                    <p>Substitusikan nilai yang diketahui:</p>
+                    \[
+                    |r - 3| < 5 < r + 3
+                    \]
+                    <p>Kita selesaikan kedua pertidaksamaan tersebut:</p>
+                    <ol>
+                        <li>Dari $|r - 3| < 5$:
+                            \[
+                            -5 < r - 3 < 5 \iff -2 < r < 8
+                            \]
+                            Karena $r$ adalah panjang jari-jari, maka $r > 0$, sehingga diperoleh $0 < r < 8$.
+                        </li>
+                        <li>Dari $5 < r + 3$:
+                            \[
+                            r > 2
+                            \]
+                        </li>
+                    </ol>
+                    <p>Mengambil irisan dari kedua pertidaksamaan tersebut diperoleh:</p>
+                    \[
+                    2 < r < 8
+                    \]
+                    <div id="geosvg-garis-bilangan" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+                    <div class="kesimpulan">Jadi, batasan nilai $r$ agar kedua lingkaran berpotongan adalah $2 < r < 8$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // DIAGRAM SOAL 1: Taman dan Jalan Setapak
+            const elTaman = document.getElementById("geosvg-taman");
+            if (elTaman && typeof GeoSVG !== "undefined") {
+                const W = 320, H = 260;
+                const geo = new GeoSVG("geosvg-taman", W, H, { margin: 10, title: "Taman dan Jalan Setapak Lingkaran" });
+                if (geo.svg) {
+                    geo.svg.style.width = "100%";
+                    geo.svg.style.maxWidth = `${W}px`;
+                    geo.svg.style.height = "auto";
+                }
+
+                const pusat = [160, 130];
+                const rLuar = 100;
+                const rDalam = 82;
+
+                // Lingkaran luar (jalan setapak)
+                geo.buatLingkaran(pusat, rLuar, {
+                    fill: "#e2e8f0",
+                    stroke: "#64748b",
+                    strokeWidth: 2
+                });
+
+                // Lingkaran dalam (taman)
+                geo.buatLingkaran(pusat, rDalam, {
+                    fill: "#86efac",
+                    stroke: "#16a34a",
+                    strokeWidth: 2
+                });
+
+                // Titik pusat
+                geo.buatTitik(pusat, { size: 3.5, color: "#1e293b" });
+
+                // Garis diameter taman
+                const pKiri = [pusat[0] - rDalam, pusat[1]];
+                const pKanan = [pusat[0] + rDalam, pusat[1]];
+                geo.buatSegmen(pKiri, pKanan, { stroke: "#047857", strokeWidth: 1.8, dashed: "4 3" });
+                geo.buatTeks(pusat[0], pusat[1] - 10, "d = 21 m", {
+                    fontSize: "12px",
+                    fontWeight: "bold",
+                    fill: "#065f46",
+                    position: "bottom-center"
+                });
+
+                // Indikator lebar jalan setapak
+                const pTamanAtas = [pusat[0], pusat[1] - rDalam];
+                const pLuarAtas = [pusat[0], pusat[1] - rLuar];
+                geo.buatSegmen(pTamanAtas, pLuarAtas, { stroke: "#dc2626", strokeWidth: 2 });
+                geo.buatTeks(pusat[0] + 8, pusat[1] - (rDalam + rLuar) / 2, "1,5 m", {
+                    fontSize: "11px",
+                    fontWeight: "bold",
+                    fill: "#dc2626",
+                    position: "middle-left"
+                });
+
+                // Label nama daerah
+                geo.buatTeks(pusat[0], pusat[1] + 28, "Taman", {
+                    fontSize: "13px",
+                    fontWeight: "bold",
+                    fill: "#047857",
+                    position: "top-center"
+                });
+                geo.buatTeks(pusat[0], pusat[1] + rDalam + 10, "Jalan Setapak", {
+                    fontSize: "11px",
+                    fill: "#475569",
+                    position: "top-center"
+                });
+            }
+
+            // DIAGRAM SOAL 2: Garis Bilangan Daerah Solusi
+            const elGaris = document.getElementById("geosvg-garis-bilangan");
+            if (elGaris && typeof GeoSVG !== "undefined") {
+                const W = 360, H = 80;
+                const geoGaris = new GeoSVG("geosvg-garis-bilangan", W, H, { margin: 10, title: "Garis Bilangan Daerah Solusi r" });
+                if (geoGaris.svg) {
+                    geoGaris.svg.style.width = "100%";
+                    geoGaris.svg.style.maxWidth = `${W}px`;
+                    geoGaris.svg.style.height = "auto";
+                }
+
+                const yAxis = 45;
+                const xStart = 30, xEnd = 330;
+
+                // Garis sumbu r
+                geoGaris.buatSegmen([xStart, yAxis], [xEnd, yAxis], { stroke: "#334155", strokeWidth: 2 });
+
+                // Skala r: petakan r dari 0 sampai 10
+                // r = 2 -> 90 px, r = 8 -> 270 px
+                const toX = val => xStart + 20 + ((val + 2) / 12) * (xEnd - xStart - 40);
+
+                const xMin2 = toX(-2);
+                const x2 = toX(2);
+                const x8 = toX(8);
+
+                // Daerah arsiran 2 < r < 8
+                geoGaris.buatSegmen([x2, yAxis], [x8, yAxis], { stroke: "#3b82f6", strokeWidth: 6, opacity: 0.85 });
+
+                // Tanda dan label titik
+                [ { val: "-2", x: xMin2 }, { val: "2", x: x2 }, { val: "8", x: x8 } ].forEach(pt => {
+                    geoGaris.buatSegmen([pt.x, yAxis - 6], [pt.x, yAxis + 6], { stroke: "#334155", strokeWidth: 1.5 });
+                    geoGaris.buatTeks(pt.x, yAxis + 16, pt.val, {
+                        fontSize: "12px",
+                        fontWeight: "bold",
+                        fill: "#1e293b",
+                        position: "top-center"
+                    });
+                });
+
+                // Lingkaran terbuka di 2 dan 8
+                geoGaris.buatLingkaran([x2, yAxis], 4.5, { fill: "#ffffff", stroke: "#2563eb", strokeWidth: 2 });
+                geoGaris.buatLingkaran([x8, yAxis], 4.5, { fill: "#ffffff", stroke: "#2563eb", strokeWidth: 2 });
+
+                // Label daerah solusi
+                geoGaris.buatTeks((x2 + x8) / 2, yAxis - 18, "2 < r < 8", {
+                    fontSize: "12px",
+                    fontWeight: "bold",
+                    fill: "#2563eb",
+                    position: "bottom-center"
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

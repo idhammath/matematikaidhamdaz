@@ -1,462 +1,1225 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>Exercise Zone : Luas Daerah Di Bawah Kurva</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-     </head> 
-     <body> 
-      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Luas Daerah Di Bawah Kurva</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
+<!DOCTYPE html>
+<html lang="id">
 
-      <h3>Tipe: </h3>
-      <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-      <br><br>
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>   
-        
-        <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Luas daerah yang diarsir adalah .... satuan luas.
-          <div id="tempatsvg1" class="tengah"></div>
-          <script>
-            var a1 = 3;
-            document.getElementById("tempatsvg1").innerHTML = String.raw`${svgkoord([-1,3],[-6,1],{rasio:a1,ukuranhuruf:2})}
-            ${svgkfungkuad(koef=[-1,0,-1],intervalx=[-1,3],{rasio:a1,tebalgaris:2,warnagaris:"green"})}
-            <path d="M 1 0 L 1 2 Q ${(-2 + 8 + 2 - 5)/(4-2)} ${(-2*4 + 2*4*2 + 4*2 - 2*5)/(4-2)} ${2} ${5} L 2 0 z" stroke="red" fill="pink" stroke-width="${2/(a1*16)}"" stroke-opacity="0.4" fill-opacity="0.4"/>
-            <text x="3"  y="5.8" text-anchor="end" style="font-family:'Times New Roman', Times, serif; font-size:${1.5/(a1*16)}em">&#119910; = &minus;&#119909;&sup2; &minus; 1</text>
-            </svg>`;
-          </script>
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">\(\dfrac73\)</li>
-        <li class="pas2 pb">\(\dfrac{10}3\)</li>
-        <li class="pas2">3</li>
-        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">2</li>
-        <li class="pas2">\(\dfrac53\)</li>
-        </ol></div></div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\(\begin{aligned}
-        L&=-\displaystyle\intop_1^2\left(-x^2-1\right)\ dx\\
-        &=-\left[-\dfrac13x^3-x\right]_1^2\\
-        &=-\left[\left(-\dfrac13(2)^3-2\right)-\left(-\dfrac13(1)^3-1\right)\right]\\
-        &=-\left[\left(-\dfrac83-2\right)-\left(-\dfrac13-1\right)\right]\\
-        &=-\left[-\dfrac{14}3-\left(-\dfrac43\right)\right]\\
-        &=-\left[-\dfrac{10}3\right]\\
-        &=\boxed{\boxed{\dfrac{10}3}}
-        \end{aligned}\)</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, luas daerah yang diarsir adalah \(\dfrac{10}3\) satuan luas.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Luas daerah yang diarsir adalah
-          <div id="tempatsvg2" class="tengah"></div>
-          <script>
-            var a2 = 3;
-            function fx(k){
-              return -4*k*k*k+8*k*k;
-            };
-            document.getElementById("tempatsvg2").innerHTML = String.raw`${svgkoord([-1,3],[-1,5],{rasio:a2,ukuranhuruf:2})}
-            ${svgkkurvaL(fx,interval=[-1,3],iterasi=100,{rasio:a2,warnagaris:"limegreen"})}
-            ${svgkareakurvaL(function(x){return -4*x*x*x+8*x*x},interval=[0,2],iterasi=150,opsi={rasio:a2,isi:"red"})}
-            <text x="3"  y="0.9" text-anchor="end" style="font-family:'Times New Roman', Times, serif; font-size:${1.2/(a2*16)}em">&#119910; = &minus;4&#119909;&sup3; + &#119909;&sup2;</text>
-            </svg>`
-          </script>
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">\(\dfrac83\) satuan luas</li>
-        <li class="pas2 pb">\(\dfrac{16}3\) satuan luas</li>
-        <li class="pas2">\(\dfrac{24}8\) satuan luas</li>
-        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">\(\dfrac{32}3\) satuan luas</li>
-        <li class="pas2">\(\dfrac{40}3\) satuan luas</li>
-        </ol></div></div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">Titik potong kurva terhadap sumbu <em>x</em><br />
-        \(\begin{aligned}
-        -4x^3+8x^2&=0\\
-        -4x^2(x-2)&=0
-        \end{aligned}\)<br />
-        <em>x</em> = 0 dan <em>x</em> = 2<br />
-        <br />
-        \(\begin{aligned}
-        L&=\displaystyle\intop_0^2\left(-4x^3+8x^2\right)\\
-        &=\left[-x^4+\dfrac83x^3\right]_0^2\\
-        &=\left[-2^4+\dfrac83(2)^3\right]-\left[-0^4+\dfrac83(0)^3\right]\\
-        &=\left[-16+\dfrac83(8)\right]-\left[0+\dfrac83(0)\right]\\
-        &=\left[-16+\dfrac{64}3\right]-\left[0\right]\\
-        &=\boxed{\boxed{\dfrac{16}3}}
-        \end{aligned}\)</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, luas daerah yang diarsir adalah \(\dfrac{16}3\) satuan luas.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div id="3" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Luas daerah yang dibatasi oleh kurva <e><em>y</em> = <em>x</em><sup>2</sup> + 1</e>, <e><em>x</em> = 2</e>, sumbu <em>y</em>, dan sumbu <em>x</em> adalah .... satuan luas.<br />
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">2</li>
-        <li class="pas2 pb">\(\dfrac83\)</li>
-        <li class="pas2">4</li>
-        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">\(\dfrac{13}3\)</li>
-        <li class="pas2">\(\dfrac{14}3\)</li>
-        </ol></div></div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">
-              <div id="tempatsvg3" class="tengah"></div>
-              <script>
-                var a3 = 3;
-            document.getElementById("tempatsvg3").innerHTML = String.raw`${svgkoord([-1,3],[-1,6],{rasio:a3,ukuranhuruf:2})}
-            ${svgkfungkuad(koef=[1,0,1],intervalx=[-1,3],opsi={rasio:a3})}
-            ${svgkareakurvaL(function(x){return x*x+1},interval=[0,2],iterasi=150,opsi={rasio:a3,isi:"red"})}
-            ${svgkgaris(garis=[[2,-1],[2,6]],opsi={tebalgaris:2/a3})}
-            </svg>`
-              </script>
-              \(\begin{aligned}
-        L&=\displaystyle\intop_0^2\left(x^2+1\right)\ dx\\
-        &=\left[\dfrac13x^3+x\right]_0^2\\
-        &=\left[\dfrac13(2)^3+2\right]-\left[\dfrac13(0)^3+0\right]\\
-        &=\left[\dfrac13(8)+2\right]-\left[0+0\right]\\
-        &=\left[\dfrac83+2\right]-0\\
-        &=\boxed{\boxed{\dfrac{14}3}}
-        \end{aligned}\)</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah \(\dfrac{14}3\) satuan luas.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div id="4" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          <div id="tempatsvg4" class="tengah"></div>
-          Luas daerah yang diarsir pada gambar di atas adalah<br />
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">\(\dfrac54\)</li>
-        <li class="pb">\(\dfrac65\)</li>
-        <li>\(\dfrac76\)</li>
-        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">\(\dfrac87\)</li>
-        <li>1</li>
-        </ol></div></div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">kita bagi menjadi dua daerah seperti pada gambar berikut:
-              <div id="tempatsvg5" class="tengah"></div>
-        Luas daerah I<br />
-        \(\begin{aligned}
-        L_1&=\displaystyle\intop_0^1\sqrt{x}\ dx\\
-        &=\displaystyle\intop_0^1x^{\frac12}\ dx\\
-        &=\left[\dfrac23x^{\frac32}\right]_0^1\\
-        &=\dfrac23\left[x\sqrt{x}\right]_0^1\\
-        &=\dfrac23\left[1\sqrt1-0\sqrt0\right]\\
-        &=\dfrac23
-        \end{aligned}\)<br />
-        <br />
-        Luas daerah 2<br />
-        \(\begin{aligned}
-        L_2&=\dfrac12\cdot1\cdot1\\
-        &=\dfrac12
-        \end{aligned}\)<br />
-        <br />
-        Luas keseluruhan,<br />
-        \(\begin{aligned}
-        L&=L_1+L_2\\
-        &=\dfrac23+\dfrac12\\
-        &=\boxed{\boxed{\dfrac76}}
-        \end{aligned}\)</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah \(\dfrac76\) satuan luas.<br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        <script>
-          var a4 = [1,5];
-          document.getElementById("tempatsvg4").innerHTML = String.raw`${svgkoord([-1,3],[-2,2],{rasio:a4[1],ukuranhuruf:2,wm:true,wmsize:1.7,wmtampak:0.2})}
-          ${svgkareakurvaL(function(x){return Math.sqrt(x)},[0,1],50,{warnagaris:"none",isi:"yellow",tampakisi:0.6})}
-          ${svgkareakurvaL(function(x){return 2-x},[1,2],50,{warnagaris:"none",isi:"yellow",tampakisi:0.6})}
-          ${svgkkurvaL(function(x){return Math.sqrt(x)},[0,1],50,{warnagaris:"blue",tebalgaris:2/a4[1]})}
-          ${svgkkurvaL(function(x){return -Math.sqrt(x)},[0,1],50,{warnagaris:"blue",tebalgaris:2/a4[1]})}
-          ${svgkgaris([[1,1],[2,0]],{warna:"blue",tebalgaris:2/a4[1]})}
-          ${svgklabeltitik([1,-1],"&#119909; = &#119910;&sup2;",{rasio:a4[1],ukuran:1.2,baseline:"mathematical",xplus:5})}
-          </svg>`;
-          document.getElementById("tempatsvg5").innerHTML = String.raw`${svgkoord([-1,3],[-2,2],{rasio:a4[1],ukuranhuruf:2,wm:true,wmsize:1.7,wmtampak:0.2})}
-          ${svgkareakurvaL(function(x){return Math.sqrt(x)},[0,1],50,{warnagaris:"none",isi:"yellow",tampakisi:0.6})}
-          ${svgkareakurvaL(function(x){return 2-x},[1,2],50,{warnagaris:"none",isi:"yellow",tampakisi:0.6})}
-          ${svgkkurvaL(function(x){return Math.sqrt(x)},[0,1],50,{warnagaris:"blue",tebalgaris:2/a4[1]})}
-          ${svgkkurvaL(function(x){return -Math.sqrt(x)},[0,1],50,{warnagaris:"blue",tebalgaris:2/a4[1]})}
-          ${svgkgaris([[1,1],[2,0]],{warna:"blue",tebalgaris:2/a4[1]})}
-          ${svgklabeltitik([1,-1],"&#119909; = &#119910;&sup2;",{rasio:a4[1],ukuran:1.2,baseline:"mathematical",xplus:5})}
-          ${svgkgaris([[1,0],[1,1]],{warna:"blue",tebalgaris:2/a4[1],dash:0.1})}
-          <text x="0.7"  y="-0.3"  text-anchor="middle" dominant-baseline="central" style="font-family:'Times New Roman', Times, serif; font-size:${0.7*2/(a4[1]*16)}em">I</text>
-          <text x="1.3"  y="-0.3"  text-anchor="middle" dominant-baseline="central" style="font-family:'Times New Roman', Times, serif; font-size:${0.7*2/(a4[1]*16)}em">II</text>
-          </svg>`;
-        </script>
-</div>
-        
-        <div id="5" class="justify"><h3><span class="w3-badge w3-red nomor"></span></h3><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-UsXWv1BY6IE/XGnpT-EF2FI/AAAAAAAAAy8/Z0pg6lgopJUg5i9zZ065aHtJVuJogYB1wCLcBGAs/s1600/2019-02-18_6-05-18.jpg" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="338" data-original-width="723" height="93" src="https://1.bp.blogspot.com/-UsXWv1BY6IE/XGnpT-EF2FI/AAAAAAAAAy8/Z0pg6lgopJUg5i9zZ065aHtJVuJogYB1wCLcBGAs/s200/2019-02-18_6-05-18.jpg" width="200" /></a></div>Luas daerah yang diarsir pada gambar adalah<br />
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">\(10\dfrac13\)</li>
-        <li class="pb">\(10\dfrac23\)</li>
-        <li>11</li>
-        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">\(12\dfrac13\)</li>
-        <li>\(12\dfrac23\)</li>
-        </ol></div></div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\(\begin{aligned}
-        L&=\displaystyle\intop_0^4\left(2x-\left(x^2-2x\right)\right)\ dx\\
-        &=\displaystyle\intop_0^4\left(2x-x^2+2x\right)\ dx\\
-        &=\displaystyle\intop_0^4\left(-x^2+4x\right)\ dx\\
-        &=\left[-\dfrac13x^3+2x^2\right]_0^4\\
-        &=\left[-\dfrac13(4)^3+2(4)^2\right]-\left[-\dfrac13(0)^3+(0)^2\right]\\
-        &=\left[-\dfrac{64}3+32\right]-0\\
-        &=-21\dfrac13+32\\
-        &=11-\dfrac13\\
-        &=\boxed{\boxed{10\dfrac23}}
-        \end{aligned}\)</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah \(10\dfrac23\) satuan luas.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div id="6" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Luas daerah antara kurva <e><em>y</em> = &minus;<em>x</em><sup>3</sup> &minus; <em>x</em><sup>2</sup> + 2<em>x</em></e> dengan sumbu <em>x</em> adalah<br />
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">\(\dfrac{40}{12}\) satuan luas</li>
-        <li class="pb">\(\dfrac{39}{12}\) satuan luas</li>
-        <li>\(\dfrac{37}{12}\) satuan luas</li>
-        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">\(\dfrac{29}{12}\) satuan luas</li>
-        <li>\(\dfrac{15}{12}\) satuan luas</li>
-        </ol></div></div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">Titik potong kurva terhadap sumbu <em>x</em><br />
-        \(\begin{aligned}
-        -x^3-x^2+2x&=0\\
-        -x\left(x^2+x-2\right)&=0\\
-        -x(x+2)(x-1)&=0
-        \end{aligned}\)<br />
-        <e><em>x</em> = 0</e>, <e><em>x</em> = &minus;2</e>, <e><em>x</em> = 1</e><br />
-        <div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-j_08ih1iq3Q/XGom2VOsqnI/AAAAAAAAAzU/NcrkpHMioqkSLhD0bl_2a_qeQa0TCEf7ACLcBGAs/s1600/2019-02-18_10-27-13.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="307" data-original-width="295" height="200" src="https://3.bp.blogspot.com/-j_08ih1iq3Q/XGom2VOsqnI/AAAAAAAAAzU/NcrkpHMioqkSLhD0bl_2a_qeQa0TCEf7ACLcBGAs/s200/2019-02-18_10-27-13.jpg" width="192" /></a></div>Ada 2 daerah, yaitu dari <e><em>x</em> = &minus;2</e> sampai <e><em>x</em> = 0</e>, dan dari <e><em>x</em> = 0</e> sampai <e><em>x</em> = 1</e>.<br />
-        <br />
-        <h1>Luas daerah 1</h1>karena daerahnya berada di bawah sumbu <em>x</em>, maka kita gunakan tanda negatif sebelum tanda integral.<br />
-        \(\begin{aligned}
-        L_1&=-\displaystyle\intop_{-2}^0\left(-x^3-x^2+2x\right)\ dx\\
-        &=-\left[-\dfrac14x^4-\dfrac13x^3+x^2\right]_{-2}^0\\
-        &=-\left[\left(-\dfrac14(0)^4-\dfrac13(0)^3+0^2\right)-\left(-\dfrac14(-2)^4-\dfrac13(-2)^3+(-2)^2\right)\right]\\
-        &=-\left[\left(-\dfrac14(0)-\dfrac13(0)+0\right)-\left(-\dfrac14(16)-\dfrac13(-8)+4\right)\right]\\
-        &=-\left[\left(0-0+0\right)-\left(-4+\dfrac83+4\right)\right]\\
-        &=-\left[0-\dfrac83\right]\\
-        &=\dfrac83
-        \end{aligned}\)<br />
-        <br />
-        <h1>Luas daerah 2</h1>\(\begin{aligned}
-        L_1&=\displaystyle\intop_0^1\left(-x^3-x^2+2x\right)\ dx\\
-        &=\left[-\dfrac14x^4-\dfrac13x^3+x^2\right]_0^1\\
-        &=\left[-\dfrac14(1)^4-\dfrac13(1)^3+1^2\right]-\left[-\dfrac14(0)^4-\dfrac13(0)^3+0^2\right]\\
-        &=\left[-\dfrac14-\dfrac13+1\right]-\left[0\right]\\
-        &=\dfrac5{12}
-        \end{aligned}\)<br />
-        <br />
-        <h1>Luas keseluruhan</h1>\(\begin{aligned}
-        L&=L_1+L_2\\
-        &=\dfrac83+\dfrac5{12}\\
-        &=\boxed{\boxed{\dfrac{37}{12}}}
-        \end{aligned}\)</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah \(\dfrac{37}{12}\) satuan luas.<br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div id="7" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Luas daerah yang dibatasi oleh kurva <e><em>y</em> = <em>x</em><sup>2</sup> &minus; 4<em>x</em> + 3</e>, sumbu <em>x</em> dan sumbu <em>y</em> adalah .... satuan luas.<br />
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">\(\dfrac13\)</li>
-        <li class="pb">2</li>
-        <li>\(\dfrac43\)</li>
-        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">1</li>
-        <li>\(\dfrac53\)</li>
-        </ol></div></div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">Titik potong kurva dengan sumbu <em>x</em><br />
-        \(\begin{aligned}
-        x^2-4x+3&=0\\
-        (x-1)(x-3)&=0
-        \end{aligned}\)<br />
-        <e><em>x</em> = 1</e> dan <e><em>x</em> = 3</e><br />
-        <div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-5NMAlEgQqtQ/XG43_GY4gKI/AAAAAAAAAzs/YQThnUorBsUf-b7SsegdkfeHKGT6zebwgCLcBGAs/s1600/2019-02-21_12-15-46.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="458" data-original-width="380" height="200" src="https://4.bp.blogspot.com/-5NMAlEgQqtQ/XG43_GY4gKI/AAAAAAAAAzs/YQThnUorBsUf-b7SsegdkfeHKGT6zebwgCLcBGAs/s200/2019-02-21_12-15-46.jpg" width="166" /></a></div>\(\begin{aligned}
-        L&=\displaystyle\intop_0^1\left(x^2-4x+3\right)\ dx\\
-        &=\left[\dfrac13x^3-2x^2+3x\right]_0^1\\
-        &=\left[\dfrac13(1)^3-2(1)^2+3(1)\right]-\left[\dfrac13(0)^3-2(0)^2+3(0)\right]\\
-        &=\dfrac13-2+3\\
-        &=\boxed{\boxed{\dfrac43}}
-        \end{aligned}\)</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah \(\dfrac43\) satuan luas.<br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-</div>
-        
-        <div id="8" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3><div class="w3-row"><div class="col-md-4"><a href="https://3.bp.blogspot.com/-KBeeoSeXrhU/XHAGLcA0H4I/AAAAAAAAA1k/JxtCZJJLdMUZbLiLvwQu8jFBxo7aXYsswCLcBGAs/s1600/2019-02-22_21-19-39.jpg"><img border="0" data-original-height="297" data-original-width="577" height="103" src="https://3.bp.blogspot.com/-KBeeoSeXrhU/XHAGLcA0H4I/AAAAAAAAA1k/JxtCZJJLdMUZbLiLvwQu8jFBxo7aXYsswCLcBGAs/s200/2019-02-22_21-19-39.jpg" width="200" /></a><br />
-        </div><div class="col-md-8">Luas daerah yang diarsir pada gambar di samping ini adalah .... satuan luas.<br />
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb">2</li>
-        <li class="pb">\(2\dfrac12\)</li>
-        <li>\(2\dfrac23\)</li>
-        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb">4</li>
-        <li>\(4\dfrac13\)</li>
-        </ol></div></div></div></div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><h1>CARA 1</h1>Fungsi kuadrat tersebut mempunyai titik puncak di <e>(3, 0)</e>.<br />
-        \(\begin{aligned}
-        y&=a\left(x-x_p\right)^2+y_p\\
-        &=a\left(x-3\right)^2+0\\
-        &=a\left(x-3\right)^2
-        \end{aligned}\)<br />
-        <br />
-        Melalui <e>(0, 2)</e>,<br />
-        \(\begin{aligned}
-        2&=a\left(0-3\right)^2\\
-        2&=a\left(-3\right)^2\\
-        2&=a\left(9\right)\\
-        a&=\dfrac29
-        \end{aligned}\)<br />
-        Substitusikan ke persamaan awal,<br />
-        \(y=\dfrac29(x-3)^2\)<br />
-        <br />
-        Luas daerahnya,<br />
-        \(\begin{aligned}
-        L&=\displaystyle\intop_0^3\left(\dfrac29(x-3)^2\right)\ dx\\
-        &=\left[\dfrac29\cdot\dfrac13(x-3)^3\right]_0^3\\[8pt]
-        &=\dfrac2{27}\left[(x-3)^3\right]_0^3\\[8pt]
-        &=\dfrac2{27}\left[(3-3)^3-(0-3)^3\right]\\[8pt]
-        &=\dfrac2{27}\left[0^3-(-3)^3\right]\\[8pt]
-        &=\dfrac2{27}\left[0-(-27)\right]\\[8pt]
-        &=\dfrac2{27}\left[0+27\right]\\[8pt]
-        &=\dfrac2{27}\left[27\right]\\
-        &=\boxed{\boxed{2}}
-        \end{aligned}\)<br />
-        <br />
-        <h1>CARA 2</h1>\(\begin{aligned}
-        L&=\dfrac{2\cdot3}3\\
-        &=\boxed{\boxed{2}}
-        \end{aligned}\)</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah 2 satuan luas.<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-          </div>
-        
-        <div id="9" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Luas daerah yang diarsir pada gambar di bawah ini adalah ....
-          <div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-Oh5JId-xU7U/X3eoHpHpX_I/AAAAAAAAPpw/Nd_7qZ7J4gsJyDBgENUVKwp4HBXIJU5aACLcBGAsYHQ/s691/Screenshot%2B2020-10-03%2B052125.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="514" data-original-width="691" src="https://1.bp.blogspot.com/-Oh5JId-xU7U/X3eoHpHpX_I/AAAAAAAAPpw/Nd_7qZ7J4gsJyDBgENUVKwp4HBXIJU5aACLcBGAsYHQ/s320/Screenshot%2B2020-10-03%2B052125.png"/></a></div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">SKB CPNS MATEMATIKA 2020</div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><h1>CARA BIASA</h1>
-          <h2>Titik Potong Kedua Kurva</h2>
-          \(\eqalign{
-          3x-x^2&=-x+3\\
-          3x-x^2+x-3&=0\\
-          -x^2+4x-3&=0\\
-          x^2-4x+3&=0\\
-          (x-1)(x-3)&=0
-          }\)<br>
-          <e><em>x</em> = 1</e> dan <e><em>x</em> = 3</e><br>
-          <h2>Luas Daerah</h2>
-          \(\eqalign{
-          L&=\displaystyle\intop_1^3\left(3x-x^2\right)-(-x+3)\ dx\\
-          &=\displaystyle\intop_1^33x-x^2+x-3\ dx\\
-          &=\displaystyle\intop_1^3-x^2+4x-3\ dx\\
-          &=\left[-\dfrac13x^3+2x^2-3x\right]_1^3\\
-          &=\left[-\dfrac13(3)^3+2(3)^2-3(3)\right]-\left[-\dfrac13(1)^3+2(1)^2-3(1)\right]\\
-          &=\left[-9+18-9\right]-\left[-\dfrac13+2-3\right]\\
-          &=[0]-\left[-1\dfrac13\right]\\
-          &=\boxed{\boxed{1\dfrac13}}
-          }\)<br>
-          <h1>CARA CEPAT</h1>
-          \(\eqalign{
-          3x-x^2-(-x+3)&=3x-x^2+x-3\\
-          &=-x^2+4x-3
-          }\)<br>
-          <e><em>a</em> = &minus;1</e>, <e><em>b</em> = 4</e>, <e><em>c</em> = &minus;3</e><br><br>
-          \(\eqalign{
-          D&=b^2-4ac\\
-          &=4^2-4(-1)(-3)\\
-          &=16-12\\
-          &=4
-          }\)<br><br>
-          \(\eqalign{
-          L&=\dfrac{D\sqrt{D}}{6a^2}\\
-          &=\dfrac{4\sqrt4}{6(-1)^2}\\
-          &=\dfrac86\\
-          &=\dfrac43\\
-          &=\boxed{\boxed{1\dfrac13}}
-          }\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, luasnya adalah \(1\dfrac13\) satuan luas.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal Luas Daerah Di Bawah Kurva - Matematika SMA</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="../../scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        
-        <div class="justify" id="10">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Sketch the curve and find the total area between the curve and the given interval on the <em>x</em>-axis<br>
-          \(y=\sqrt{x+1}-1\); <e>[-1, 1]</e>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://brainly.co.id/tugas/35611838" target="_blank">brainly.co.id</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-xn_E3GBh_Ek/X6nrXz73klI/AAAAAAAAo-Y/1RcbJNkcCCYz6WIoBCQUR711hyTYhxWMgCLcBGAsYHQ/s479/Screenshot%2B2020-11-10%2B080343.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="368" data-original-width="479" src="https://1.bp.blogspot.com/-xn_E3GBh_Ek/X6nrXz73klI/AAAAAAAAo-Y/1RcbJNkcCCYz6WIoBCQUR711hyTYhxWMgCLcBGAsYHQ/s320/Screenshot%2B2020-11-10%2B080343.png"/></a></div>
-              \(\eqalign{
-              L_1&=-\displaystyle\intop_{-1}^0\left(\sqrt{x+1}-1\right)\ dx\\
-              &=-\displaystyle\intop_{-1}^0\left((x+1)^{\frac12}-1\right)\ d(x+1)\\
-              &=-\left[\dfrac23(x+1)^{\frac32}-x\right]_{-1}^0\\
-              &=-\left[\left(\dfrac23(0+1)^{\frac32}-0\right)-\left(\dfrac23(-1+1)^{\frac32}-(-1)\right)\right]\\
-              &=-\left[\left(\dfrac23(1)^{\frac32}\right)-\left(\dfrac23(0)^{\frac32}+1\right)\right]\\
-              &=-\left[\dfrac23-1\right]\\
-              &=-\left[-\dfrac13\right]\\
-              &=\dfrac13
-              }\)<br><br>
-              \(\eqalign{
-              L_2&=\displaystyle\intop_0^1\left(\sqrt{x+1}-1\right)\ dx\\
-              &=\displaystyle\intop_0^1\left((x+1)^{\frac12}-1\right)\ d(x+1)\\
-              &=\left[\dfrac23(x+1)^{\frac32}-x\right]_0^1\\
-              &=\left(\dfrac23(1+1)^{\frac32}-1\right)-\left(\dfrac23(0+1)^{\frac32}-0\right)\\
-              &=\left(\dfrac23(2)^{\frac32}-1\right)-\left(\dfrac23(1)^{\frac32}\right)\\
-              &=\left(\dfrac23\left(2\sqrt2\right)-1\right)-\left(\dfrac23\right)\\
-              &=\dfrac43\sqrt2-1-\dfrac23\\
-              &=\dfrac43\sqrt2-\dfrac53
-              }\)<br><br>
-              \({L=L_1+L_2=\dfrac13+\dfrac43\sqrt2-\dfrac53=\boxed{\boxed{\dfrac43\sqrt2-\dfrac43}}}\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, the total area between the curve and the given interval on the <em>x</em>-axis is \(\dfrac43\sqrt2-\dfrac43\)<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Luas Daerah Di Bawah Kurva</span>
+            </p>
+            <div id="level-nav" class="level-nav"></div>
         </div>
 
-        
-        <br />
-        LIHAT JUGA:<br />
-        <a class="btn btn-success" href="https://matematika.zone.id/2017/05/integral-tentu-soal-dan-pembahasan.html">INTEGRAL TENTU</a> <a class="btn btn-success" href="https://matematika.zone.id/2019/02/integral-tak-tentu-soal-dan-pembahasan.html">INTEGRAL TAK TENTU</a><br />
-        <br>
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>   
-<script>soal(luda,1,1)</script>        
-   </body>
-</html> 
+        <!-- Pagination Atas -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR 10 SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Perhatikan gambar kurva berikut ini.<br>
+                <div id="geosvg-soal-1" style="display: flex; justify-content: center; margin: 15px 0;"></div>
+                Luas daerah yang diarsir pada gambar di atas adalah .... satuan luas.
+                <ol type="A">
+                    <li>\(\dfrac{7}{3}\)</li>
+                    <li>\(\dfrac{10}{3}\)</li>
+                    <li>\(3\)</li>
+                    <li>\(2\)</li>
+                    <li>\(\dfrac{5}{3}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Matematika SMA / Integral Tentu</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Daerah yang diarsir dibatasi oleh kurva \(y = -x^2 - 1\), sumbu-\(X\), garis \(x = 1\), dan garis \(x = 2\).<br>
+                    Karena daerah tersebut berada di <strong>bawah</strong> sumbu-\(X\) (\(y \le 0\)), maka luasnya dirumuskan dengan:
+                    \[
+                    \begin{aligned}
+                    L &= -\int_1^2 \left(-x^2 - 1\right)\,dx \\
+                    &= \int_1^2 \left(x^2 + 1\right)\,dx \\
+                    &= \left[ \frac{1}{3}x^3 + x \right]_1^2 \\
+                    &= \left( \frac{1}{3}(2)^3 + 2 \right) - \left( \frac{1}{3}(1)^3 + 1 \right) \\
+                    &= \left( \frac{8}{3} + 2 \right) - \left( \frac{1}{3} + 1 \right) \\
+                    &= \frac{14}{3} - \frac{4}{3} \\
+                    &= \mathbf{\frac{10}{3}}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, luas daerah yang diarsir adalah \(\mathbf{\dfrac{10}{3}}\) satuan luas. (Pilihan B)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Perhatikan kurva fungsi kubik pada gambar di bawah.<br>
+                <div id="geosvg-soal-2" style="display: flex; justify-content: center; margin: 15px 0;"></div>
+                Luas daerah yang diarsir adalah ....
+                <ol type="A">
+                    <li>\(\dfrac{8}{3}\) satuan luas</li>
+                    <li>\(\dfrac{16}{3}\) satuan luas</li>
+                    <li>\(\dfrac{24}{8}\) satuan luas</li>
+                    <li>\(\dfrac{32}{3}\) satuan luas</li>
+                    <li>\(\dfrac{40}{3}\) satuan luas</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Matematika SMA / Penerapan Integral</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Menentukan titik potong kurva \(y = -4x^3 + 8x^2\) dengan sumbu-\(X\) (\(y = 0\)):
+                    \[
+                    \begin{aligned}
+                    -4x^3 + 8x^2 &= 0 \\
+                    -4x^2(x - 2) &= 0
+                    \end{aligned}
+                    \]
+                    Diperoleh batas integrasi \(x = 0\) dan \(x = 2\). Pada interval \([0, 2]\), kurva berada di atas sumbu-\(X\).<br><br>
+                    Luas daerah yang diarsir:
+                    \[
+                    \begin{aligned}
+                    L &= \int_0^2 \left(-4x^3 + 8x^2\right)\,dx \\
+                    &= \left[ -x^4 + \frac{8}{3}x^3 \right]_0^2 \\
+                    &= \left( -2^4 + \frac{8}{3}(2)^3 \right) - \left( -0^4 + \frac{8}{3}(0)^3 \right) \\
+                    &= \left( -16 + \frac{64}{3} \right) - 0 \\
+                    &= -\frac{48}{3} + \frac{64}{3} \\
+                    &= \mathbf{\frac{16}{3}}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, luas daerah yang diarsir adalah \(\mathbf{\dfrac{16}{3}}\) satuan luas. (Pilihan B)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Luas daerah yang dibatasi oleh kurva \(y = x^2 + 1\), garis \(x = 2\), sumbu-\(Y\), dan sumbu-\(X\) adalah .... satuan luas.
+                <ol type="A">
+                    <li>\(2\)</li>
+                    <li>\(\dfrac{8}{3}\)</li>
+                    <li>\(4\)</li>
+                    <li>\(\dfrac{13}{3}\)</li>
+                    <li>\(\dfrac{14}{3}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Matematika SMA / Ujian Masuk PTN</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Visualisasi daerah integrasi:
+                    <div id="geosvg-soal-3" style="display: flex; justify-content: center; margin: 15px 0;"></div>
+                    Daerah dibatasi oleh:
+                    <ul>
+                        <li>Sumbu-\(Y\) yang merupakan garis \(x = 0\) (batas kiri)</li>
+                        <li>Garis \(x = 2\) (batas kanan)</li>
+                        <li>Sumbu-\(X\) yaitu garis \(y = 0\) (batas bawah)</li>
+                        <li>Kurva \(y = x^2 + 1\) (batas atas)</li>
+                    </ul>
+                    Maka luasnya adalah:
+                    \[
+                    \begin{aligned}
+                    L &= \int_0^2 \left(x^2 + 1\right)\,dx \\
+                    &= \left[ \frac{1}{3}x^3 + x \right]_0^2 \\
+                    &= \left( \frac{1}{3}(2)^3 + 2 \right) - 0 \\
+                    &= \frac{8}{3} + 2 \\
+                    &= \mathbf{\frac{14}{3}}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, luasnya adalah \(\mathbf{\dfrac{14}{3}}\) satuan luas. (Pilihan E)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Perhatikan daerah tertutup yang diarsir pada gambar berikut.<br>
+                <div id="geosvg-soal-4" style="display: flex; justify-content: center; margin: 15px 0;"></div>
+                Luas daerah yang diarsir pada gambar di atas adalah .... satuan luas.
+                <ol type="A">
+                    <li>\(\dfrac{5}{4}\)</li>
+                    <li>\(\dfrac{6}{5}\)</li>
+                    <li>\(\dfrac{7}{6}\)</li>
+                    <li>\(\dfrac{8}{7}\)</li>
+                    <li>\(1\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Matematika SMA / SNMPTN</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Daerah dibatasi oleh kurva parabola \(y^2 = x \iff y = \sqrt{x}\), garis \(x + y = 2 \iff y = 2 - x\), dan sumbu-\(X\).<br><br>
+                    <strong>Titik potong kedua kurva:</strong>
+                    \[
+                    \begin{aligned}
+                    \sqrt{x} &= 2 - x \\
+                    x &= (2 - x)^2 \\
+                    x &= 4 - 4x + x^2 \\
+                    x^2 - 5x + 4 &= 0 \\
+                    (x - 1)(x - 4) &= 0
+                    \end{aligned}
+                    \]
+                    Karena berada di kuadran I, diambil \(x = 1\) sehingga \(y = 1\). Garis memotong sumbu-\(X\) di titik \((2, 0)\).<br><br>
+                    Kita bagi daerah integrasi menjadi dua bagian di \(x = 1\):
+                    <div id="geosvg-solusi-4" style="display: flex; justify-content: center; margin: 15px 0;"></div>
+                    <strong>1. Luas Daerah I (\(0 \le x \le 1\)):</strong>
+                    \[
+                    \begin{aligned}
+                    L_1 &= \int_0^1 \sqrt{x}\,dx = \int_0^1 x^{\frac{1}{2}}\,dx \\
+                    &= \left[ \frac{2}{3}x^{\frac{3}{2}} \right]_0^1 = \frac{2}{3}(1) - 0 = \frac{2}{3}
+                    \end{aligned}
+                    \]
+                    <strong>2. Luas Daerah II (\(1 \le x \le 2\)):</strong><br>
+                    Merupakan segitiga siku-siku dengan alas \(2 - 1 = 1\) dan tinggi \(1\):
+                    \[
+                    L_2 = \frac{1}{2} \cdot \text{alas} \cdot \text{tinggi} = \frac{1}{2} \cdot 1 \cdot 1 = \frac{1}{2}
+                    \]
+                    <strong>Luas Total:</strong>
+                    \[
+                    L = L_1 + L_2 = \frac{2}{3} + \frac{1}{2} = \frac{4 + 3}{6} = \mathbf{\frac{7}{6}}
+                    \]
+                    <div class="kesimpulan">Jadi, luas daerah yang diarsir adalah \(\mathbf{\dfrac{7}{6}}\) satuan luas. (Pilihan C)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Perhatikan daerah tertutup antara parabola dan garis pada gambar berikut.<br>
+                <div id="geosvg-soal-5" style="display: flex; justify-content: center; margin: 15px 0;"></div>
+                Luas daerah yang dibatasi oleh parabola \(y = x^2 - 2x\) dan garis \(y = 2x\) adalah .... satuan luas.
+                <ol type="A">
+                    <li>\(10\dfrac{1}{3}\)</li>
+                    <li>\(10\dfrac{2}{3}\)</li>
+                    <li>\(11\)</li>
+                    <li>\(12\dfrac{1}{3}\)</li>
+                    <li>\(12\dfrac{2}{3}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Matematika SMA / Ujian Nasional</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <strong>1. Menentukan Titik Potong:</strong>
+                    \[
+                    \begin{aligned}
+                    x^2 - 2x &= 2x \\
+                    x^2 - 4x &= 0 \\
+                    x(x - 4) &= 0
+                    \end{aligned}
+                    \]
+                    Diperoleh batas integrasi \(x = 0\) dan \(x = 4\). Pada interval ini, garis \(y = 2x\) berada di atas parabola.<br><br>
+                    <strong>2. Cara Biasa (Integral):</strong>
+                    \[
+                    \begin{aligned}
+                    L &= \int_0^4 \left[ 2x - (x^2 - 2x) \right]\,dx \\
+                    &= \int_0^4 \left( -x^2 + 4x \right)\,dx \\
+                    &= \left[ -\frac{1}{3}x^3 + 2x^2 \right]_0^4 \\
+                    &= \left( -\frac{1}{3}(4)^3 + 2(4)^2 \right) - 0 \\
+                    &= -\frac{64}{3} + 32 \\
+                    &= -\frac{64}{3} + \frac{96}{3} \\
+                    &= \frac{32}{3} = \mathbf{10\frac{2}{3}}
+                    \end{aligned}
+                    \]
+                    <strong>3. Cara Cepat (Rumus Diskriminan):</strong><br>
+                    Persamaan kuadrat selisih: \(x^2 - 4x = 0 \implies a = 1, b = -4, c = 0\).<br>
+                    Diskriminan \(D = b^2 - 4ac = (-4)^2 - 0 = 16\).
+                    \[
+                    L = \frac{D\sqrt{D}}{6a^2} = \frac{16\sqrt{16}}{6(1)^2} = \frac{16 \cdot 4}{6} = \frac{64}{6} = \frac{32}{3} = \mathbf{10\frac{2}{3}}
+                    \]
+                    <div class="kesimpulan">Jadi, luas daerahnya adalah \(\mathbf{10\dfrac{2}{3}}\) satuan luas. (Pilihan B)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 6 -->
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Luas daerah antara kurva \(y = -x^3 - x^2 + 2x\) dengan sumbu-\(X\) adalah ....
+                <ol type="A">
+                    <li>\(\dfrac{40}{12}\) satuan luas</li>
+                    <li>\(\dfrac{39}{12}\) satuan luas</li>
+                    <li>\(\dfrac{37}{12}\) satuan luas</li>
+                    <li>\(\dfrac{29}{12}\) satuan luas</li>
+                    <li>\(\dfrac{15}{12}\) satuan luas</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Matematika SMA / SBMPTN</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <strong>1. Menentukan Titik Potong terhadap Sumbu-\(X\):</strong>
+                    \[
+                    \begin{aligned}
+                    -x^3 - x^2 + 2x &= 0 \\
+                    -x\left(x^2 + x - 2\right) &= 0 \\
+                    -x(x + 2)(x - 1) &= 0
+                    \end{aligned}
+                    \]
+                    Diperoleh titik potong di \(x = -2\), \(x = 0\), dan \(x = 1\).<br>
+                    <div id="geosvg-soal-6" style="display: flex; justify-content: center; margin: 15px 0;"></div>
+                    Terdapat 2 daerah arsir:
+                    <ul>
+                        <li>Daerah 1: dari \(x = -2\) sampai \(x = 0\) (berada di <strong>bawah</strong> sumbu-\(X\))</li>
+                        <li>Daerah 2: dari \(x = 0\) sampai \(x = 1\) (berada di <strong>atas</strong> sumbu-\(X\))</li>
+                    </ul>
+                    <strong>2. Menghitung Luas Daerah 1 (\(L_1\)):</strong>
+                    \[
+                    \begin{aligned}
+                    L_1 &= -\int_{-2}^0 \left(-x^3 - x^2 + 2x\right)\,dx = \int_{-2}^0 \left(x^3 + x^2 - 2x\right)\,dx \\
+                    &= \left[ \frac{1}{4}x^4 + \frac{1}{3}x^3 - x^2 \right]_{-2}^0 \\
+                    &= 0 - \left( \frac{1}{4}(-2)^4 + \frac{1}{3}(-2)^3 - (-2)^2 \right) \\
+                    &= - \left( 4 - \frac{8}{3} - 4 \right) = \frac{8}{3} = \frac{32}{12}
+                    \end{aligned}
+                    \]
+                    <strong>3. Menghitung Luas Daerah 2 (\(L_2\)):</strong>
+                    \[
+                    \begin{aligned}
+                    L_2 &= \int_0^1 \left(-x^3 - x^2 + 2x\right)\,dx \\
+                    &= \left[ -\frac{1}{4}x^4 - \frac{1}{3}x^3 + x^2 \right]_0^1 \\
+                    &= \left( -\frac{1}{4} - \frac{1}{3} + 1 \right) - 0 \\
+                    &= \frac{-3 - 4 + 12}{12} = \frac{5}{12}
+                    \end{aligned}
+                    \]
+                    <strong>4. Luas Keseluruhan:</strong>
+                    \[
+                    L = L_1 + L_2 = \frac{32}{12} + \frac{5}{12} = \mathbf{\frac{37}{12}}
+                    \]
+                    <div class="kesimpulan">Jadi, luasnya adalah \(\mathbf{\dfrac{37}{12}}\) satuan luas. (Pilihan C)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 7 -->
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Luas daerah yang dibatasi oleh kurva \(y = x^2 - 4x + 3\), sumbu-\(X\), dan sumbu-\(Y\) adalah .... satuan luas.
+                <ol type="A">
+                    <li>\(\dfrac{1}{3}\)</li>
+                    <li>\(2\)</li>
+                    <li>\(\dfrac{4}{3}\)</li>
+                    <li>\(1\)</li>
+                    <li>\(\dfrac{5}{3}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Matematika SMA / Ujian Mandiri PTN</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <strong>1. Karakteristik Kurva:</strong><br>
+                    Titik potong kurva \(y = x^2 - 4x + 3\) dengan sumbu-\(X\) (\(y = 0\)):
+                    \[
+                    (x - 1)(x - 3) = 0 \implies x = 1 \text{ dan } x = 3
+                    \]
+                    Titik potong dengan sumbu-\(Y\) (\(x = 0\)): \(y = 3\).<br>
+                    <div id="geosvg-soal-7" style="display: flex; justify-content: center; margin: 15px 0;"></div>
+                    Daerah yang dibatasi oleh kurva, sumbu-\(Y\) (\(x = 0\)), dan sumbu-\(X\) adalah interval dari \(x = 0\) sampai perpotongan pertama di \(x = 1\). Di interval ini kurva bernilai positif (di atas sumbu-\(X\)).<br><br>
+                    <strong>2. Menghitung Luas:</strong>
+                    \[
+                    \begin{aligned}
+                    L &= \int_0^1 \left(x^2 - 4x + 3\right)\,dx \\
+                    &= \left[ \frac{1}{3}x^3 - 2x^2 + 3x \right]_0^1 \\
+                    &= \left( \frac{1}{3}(1)^3 - 2(1)^2 + 3(1) \right) - 0 \\
+                    &= \frac{1}{3} - 2 + 3 \\
+                    &= \frac{1}{3} + 1 = \mathbf{\frac{4}{3}}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, luasnya adalah \(\mathbf{\dfrac{4}{3}}\) satuan luas. (Pilihan C)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 8 -->
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Perhatikan gambar daerah di bawah kurva parabola berikut ini.<br>
+                <div id="geosvg-soal-8" style="display: flex; justify-content: center; margin: 15px 0;"></div>
+                Luas daerah yang diarsir pada gambar di atas adalah .... satuan luas.
+                <ol type="A">
+                    <li>\(2\)</li>
+                    <li>\(2\dfrac{1}{2}\)</li>
+                    <li>\(2\dfrac{2}{3}\)</li>
+                    <li>\(4\)</li>
+                    <li>\(4\dfrac{1}{3}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Matematika SMA / Latihan SPMB</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <strong>1. Menentukan Persamaan Kurva:</strong><br>
+                    Fungsi kuadrat memiliki titik puncak di \((x_p, y_p) = (3, 0)\):
+                    \[
+                    y = a(x - x_p)^2 + y_p = a(x - 3)^2 + 0 = a(x - 3)^2
+                    \]
+                    Kurva melalui titik \((0, 2)\), maka substitusikan:
+                    \[
+                    2 = a(0 - 3)^2 \implies 2 = 9a \implies a = \frac{2}{9}
+                    \]
+                    Sehingga persamaan kurva adalah \(y = \dfrac{2}{9}(x - 3)^2\).<br><br>
+                    <strong>2. Cara 1: Menggunakan Integral</strong>
+                    \[
+                    \begin{aligned}
+                    L &= \int_0^3 \left( \frac{2}{9}(x - 3)^2 \right)\,dx \\
+                    &= \left[ \frac{2}{9} \cdot \frac{1}{3}(x - 3)^3 \right]_0^3 \\
+                    &= \frac{2}{27} \left[ (3 - 3)^3 - (0 - 3)^3 \right] \\
+                    &= \frac{2}{27} \left[ 0 - (-27) \right] \\
+                    &= \frac{2}{27} (27) = \mathbf{2}
+                    \end{aligned}
+                    \]
+                    <strong>3. Cara 2: Rumus Cepat Luas Segmen Parabola</strong><br>
+                    Luas daerah yang dibatasi puncak parabola dan garis tegak lurus sumbu simetri:
+                    \[
+                    L = \frac{1}{3} \cdot \text{alas} \cdot \text{tinggi} = \frac{1}{3} \cdot 3 \cdot 2 = \mathbf{2}
+                    \]
+                    <div class="kesimpulan">Jadi, luasnya adalah \(\mathbf{2}\) satuan luas. (Pilihan A)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 9 -->
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Perhatikan daerah tertutup antara parabola dan garis pada gambar berikut.<br>
+                <div id="geosvg-soal-9" style="display: flex; justify-content: center; margin: 15px 0;"></div>
+                Luas daerah yang diarsir pada gambar di atas adalah ....
+                <ol type="A">
+                    <li>\(1\) satuan luas</li>
+                    <li>\(1\dfrac{1}{3}\) satuan luas</li>
+                    <li>\(1\dfrac{1}{2}\) satuan luas</li>
+                    <li>\(2\) satuan luas</li>
+                    <li>\(2\dfrac{2}{3}\) satuan luas</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">SKB CPNS Matematika 2020</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Kurva yang membatasi adalah parabola \(y = 3x - x^2\) dan garis \(y = -x + 3\).<br><br>
+                    <strong>1. Menentukan Titik Potong Kedua Kurva:</strong>
+                    \[
+                    \begin{aligned}
+                    3x - x^2 &= -x + 3 \\
+                    -x^2 + 4x - 3 &= 0 \\
+                    x^2 - 4x + 3 &= 0 \\
+                    (x - 1)(x - 3) &= 0
+                    \end{aligned}
+                    \]
+                    Diperoleh batas integrasi \(x = 1\) dan \(x = 3\).<br><br>
+                    <strong>2. Cara Biasa (Integral):</strong>
+                    \[
+                    \begin{aligned}
+                    L &= \int_1^3 \left[ (3x - x^2) - (-x + 3) \right]\,dx \\
+                    &= \int_1^3 \left( -x^2 + 4x - 3 \right)\,dx \\
+                    &= \left[ -\frac{1}{3}x^3 + 2x^2 - 3x \right]_1^3 \\
+                    &= \left( -\frac{1}{3}(3)^3 + 2(3)^2 - 3(3) \right) - \left( -\frac{1}{3}(1)^3 + 2(1)^2 - 3(1) \right) \\
+                    &= (-9 + 18 - 9) - \left( -\frac{1}{3} + 2 - 3 \right) \\
+                    &= 0 - \left( -1\frac{1}{3} \right) \\
+                    &= \mathbf{1\frac{1}{3}}
+                    \end{aligned}
+                    \]
+                    <strong>3. Cara Cepat (Rumus \(D\sqrt{D}/6a^2\)):</strong><br>
+                    Dari persamaan selisih: \(-x^2 + 4x - 3 = 0 \implies a = -1, b = 4, c = -3\).
+                    \[
+                    D = b^2 - 4ac = 4^2 - 4(-1)(-3) = 16 - 12 = 4
+                    \]
+                    \[
+                    L = \frac{D\sqrt{D}}{6a^2} = \frac{4\sqrt{4}}{6(-1)^2} = \frac{8}{6} = \frac{4}{3} = \mathbf{1\frac{1}{3}}
+                    \]
+                    <div class="kesimpulan">Jadi, luasnya adalah \(\mathbf{1\dfrac{1}{3}}\) satuan luas. (Pilihan B)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 10 -->
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diberikan fungsi \(y = \sqrt{x+1} - 1\). Luas total daerah yang dibatasi oleh kurva tersebut dan sumbu-\(X\) pada interval \([-1, 1]\) adalah ....
+                <ol type="A">
+                    <li>\(\dfrac{4}{3}\sqrt{2} - 1\)</li>
+                    <li>\(\dfrac{4}{3}\sqrt{2} - \dfrac{4}{3}\)</li>
+                    <li>\(\dfrac{2}{3}\sqrt{2} - \dfrac{1}{3}\)</li>
+                    <li>\(\dfrac{5}{3}\sqrt{2} - 2\)</li>
+                    <li>\(2\sqrt{2} - \dfrac{4}{3}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">brainly.co.id / Kalkulus Integral</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Visualisasi kurva dan interval:
+                    <div id="geosvg-soal-10" style="display: flex; justify-content: center; margin: 15px 0;"></div>
+                    <strong>1. Titik Potong dengan Sumbu-\(X\):</strong>
+                    \[
+                    \sqrt{x+1} - 1 = 0 \iff \sqrt{x+1} = 1 \iff x + 1 = 1 \iff x = 0
+                    \]
+                    Pada interval \([-1, 0]\), kurva berada di bawah sumbu-\(X\) (\(y \le 0\)).<br>
+                    Pada interval \([0, 1]\), kurva berada di atas sumbu-\(X\) (\(y \ge 0\)).<br><br>
+                    <strong>2. Menghitung \(L_1\) (Interval \([-1, 0]\)):</strong>
+                    \[
+                    \begin{aligned}
+                    L_1 &= -\int_{-1}^0 \left( \sqrt{x+1} - 1 \right)\,dx \\
+                    &= -\left[ \frac{2}{3}(x+1)^{\frac{3}{2}} - x \right]_{-1}^0 \\
+                    &= -\left[ \left(\frac{2}{3}(0+1)^{\frac{3}{2}} - 0\right) - \left(\frac{2}{3}(-1+1)^{\frac{3}{2}} - (-1)\right) \right] \\
+                    &= -\left[ \frac{2}{3} - (0 + 1) \right] = -\left[ -\frac{1}{3} \right] = \frac{1}{3}
+                    \end{aligned}
+                    \]
+                    <strong>3. Menghitung \(L_2\) (Interval \([0, 1]\)):</strong>
+                    \[
+                    \begin{aligned}
+                    L_2 &= \int_0^1 \left( \sqrt{x+1} - 1 \right)\,dx \\
+                    &= \left[ \frac{2}{3}(x+1)^{\frac{3}{2}} - x \right]_0^1 \\
+                    &= \left( \frac{2}{3}(1+1)^{\frac{3}{2}} - 1 \right) - \left( \frac{2}{3}(0+1)^{\frac{3}{2}} - 0 \right) \\
+                    &= \left( \frac{2}{3}(2\sqrt{2}) - 1 \right) - \frac{2}{3} \\
+                    &= \frac{4}{3}\sqrt{2} - \frac{5}{3}
+                    \end{aligned}
+                    \]
+                    <strong>4. Luas Total:</strong>
+                    \[
+                    L = L_1 + L_2 = \frac{1}{3} + \left( \frac{4}{3}\sqrt{2} - \frac{5}{3} \right) = \mathbf{\frac{4}{3}\sqrt{2} - \frac{4}{3}}
+                    \]
+                    <div class="kesimpulan">Jadi, total luas daerahnya adalah \(\mathbf{\dfrac{4}{3}\sqrt{2} - \dfrac{4}{3}}\) satuan luas. (Pilihan B)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+
+    <!-- Visualisasi GeoSVG.js untuk Kurva Luas Daerah -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function renderAllGeoSVG() {
+                if (typeof GeoSVG === "undefined") {
+                    setTimeout(renderAllGeoSVG, 100);
+                    return;
+                }
+
+                // ==========================================
+                // SOAL 1: y = -x^2 - 1, interval [1, 2]
+                // ==========================================
+                const el1 = document.getElementById("geosvg-soal-1");
+                if (el1 && !el1.dataset.rendered) {
+                    el1.dataset.rendered = "true";
+                    const W = 360, H = 240;
+                    const geo = new GeoSVG("geosvg-soal-1", W, H, {
+                        margin: 10,
+                        title: "Kurva y = -x^2 - 1 dari x = 1 ke 2"
+                    });
+                    if (geo.svg) {
+                        geo.svg.style.width = "100%";
+                        geo.svg.style.maxWidth = `${W}px`;
+                        geo.svg.style.height = "auto";
+                    }
+
+                    const ox = 70, oy = 40;
+                    const sx = 90, sy = 28;
+                    function p1(x, y) { return [ox + x * sx, oy - y * sy]; }
+
+                    // Sumbu Koordinat
+                    geo.buatSegmen(p1(-0.4, 0), p1(2.8, 0), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox + 2.8 * sx + 5, oy, "X", { position: "middle-left", fill: "#475569", fontWeight: "bold" });
+                    geo.buatSegmen(p1(0, -6.5), p1(0, 0.8), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox, oy - 0.8 * sy - 6, "Y", { position: "bottom-center", fill: "#475569", fontWeight: "bold" });
+                    geo.buatTeks(ox - 8, oy + 12, "O", { position: "middle-right", fill: "#64748b", fontSize: "11px" });
+
+                    // Titik Skala Sumbu
+                    [1, 2].forEach(xVal => {
+                        geo.buatSegmen(p1(xVal, 0.1), p1(xVal, -0.1), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox + xVal * sx, oy - 12, String(xVal), { position: "bottom-center", fill: "#334155", fontSize: "11px", fontWeight: "bold" });
+                    });
+                    [-1, -2, -5].forEach(yVal => {
+                        geo.buatSegmen(p1(-0.06, yVal), p1(0.06, yVal), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox - 8, oy - yVal * sy, String(yVal), { position: "middle-right", fill: "#334155", fontSize: "11px" });
+                    });
+
+                    // Kurva y = -x^2 - 1
+                    function f1(x) { return -x * x - 1; }
+                    const kurva1Pts = [];
+                    for (let x = -0.3; x <= 2.35; x += 0.05) {
+                        kurva1Pts.push(p1(x, f1(x)));
+                    }
+
+                    // Daerah Arsir [1, 2]
+                    const arsir1Pts = [p1(1, 0)];
+                    for (let x = 1; x <= 2.01; x += 0.05) {
+                        arsir1Pts.push(p1(x, f1(x)));
+                    }
+                    arsir1Pts.push(p1(2, 0));
+                    geo.buatPoligon(arsir1Pts, { fill: "rgba(239, 68, 68, 0.25)", stroke: "none" });
+
+                    // Garis Batas x=1 dan x=2
+                    geo.buatSegmen(p1(1, 0), p1(1, f1(1)), { stroke: "#ef4444", strokeWidth: 1.2, dashed: true });
+                    geo.buatSegmen(p1(2, 0), p1(2, f1(2)), { stroke: "#ef4444", strokeWidth: 1.2, dashed: true });
+
+                    // Gambar Kurva
+                    geo.buatPolyline(kurva1Pts, { stroke: "#059669", strokeWidth: 2.2 });
+                    geo.buatTeks(ox + 2.1 * sx, oy - f1(2.1) * sy + 8, "y = -x² - 1", { position: "middle-left", fill: "#047857", fontWeight: "bold", fontSize: "12px" });
+                }
+
+                // ==========================================
+                // SOAL 2: y = -4x^3 + 8x^2
+                // ==========================================
+                const el2 = document.getElementById("geosvg-soal-2");
+                if (el2 && !el2.dataset.rendered) {
+                    el2.dataset.rendered = "true";
+                    const W = 360, H = 250;
+                    const geo = new GeoSVG("geosvg-soal-2", W, H, {
+                        margin: 10,
+                        title: "Kurva y = -4x^3 + 8x^2 dari x = 0 ke 2"
+                    });
+                    if (geo.svg) {
+                        geo.svg.style.width = "100%";
+                        geo.svg.style.maxWidth = `${W}px`;
+                        geo.svg.style.height = "auto";
+                    }
+
+                    const ox = 70, oy = 200;
+                    const sx = 100, sy = 34;
+                    function p2(x, y) { return [ox + x * sx, oy - y * sy]; }
+
+                    // Sumbu Koordinat
+                    geo.buatSegmen(p2(-0.4, 0), p2(2.5, 0), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox + 2.5 * sx + 5, oy, "X", { position: "middle-left", fill: "#475569", fontWeight: "bold" });
+                    geo.buatSegmen(p2(0, -0.6), p2(0, 5.2), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox, oy - 5.2 * sy - 6, "Y", { position: "bottom-center", fill: "#475569", fontWeight: "bold" });
+                    geo.buatTeks(ox - 8, oy + 12, "0", { position: "middle-right", fill: "#64748b", fontSize: "11px" });
+
+                    // Titik Skala x = 1, 2
+                    [1, 2].forEach(xVal => {
+                        geo.buatSegmen(p2(xVal, 0.12), p2(xVal, -0.12), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox + xVal * sx, oy + 14, String(xVal), { position: "top-center", fill: "#334155", fontSize: "11px", fontWeight: "bold" });
+                    });
+
+                    function f2(x) { return -4 * x * x * x + 8 * x * x; }
+                    const kurva2Pts = [];
+                    for (let x = -0.3; x <= 2.22; x += 0.04) {
+                        kurva2Pts.push(p2(x, f2(x)));
+                    }
+
+                    // Daerah Arsir [0, 2]
+                    const arsir2Pts = [p2(0, 0)];
+                    for (let x = 0; x <= 2.01; x += 0.04) {
+                        arsir2Pts.push(p2(x, f2(x)));
+                    }
+                    arsir2Pts.push(p2(2, 0));
+                    geo.buatPoligon(arsir2Pts, { fill: "rgba(37, 99, 235, 0.25)", stroke: "none" });
+
+                    // Gambar Kurva
+                    geo.buatPolyline(kurva2Pts, { stroke: "#16a34a", strokeWidth: 2.2 });
+                    geo.buatTeks(ox + 1.25 * sx, oy - f2(1.25) * sy - 10, "y = -4x³ + 8x²", { position: "bottom-center", fill: "#15803d", fontWeight: "bold", fontSize: "12px" });
+
+                    // Titik puncak (4/3, 128/27 ~ 4.74)
+                    const xp = 4 / 3, yp = 128 / 27;
+                    geo.buatTitik(p2(xp, yp), { color: "#2563eb", size: 3.5 });
+                }
+
+                // ==========================================
+                // SOAL 3: y = x^2 + 1, x = 2, x = 0
+                // ==========================================
+                const el3 = document.getElementById("geosvg-soal-3");
+                if (el3 && !el3.dataset.rendered) {
+                    el3.dataset.rendered = "true";
+                    const W = 360, H = 250;
+                    const geo = new GeoSVG("geosvg-soal-3", W, H, {
+                        margin: 10,
+                        title: "Kurva y = x^2 + 1 dari x = 0 ke 2"
+                    });
+                    if (geo.svg) {
+                        geo.svg.style.width = "100%";
+                        geo.svg.style.maxWidth = `${W}px`;
+                        geo.svg.style.height = "auto";
+                    }
+
+                    const ox = 70, oy = 210;
+                    const sx = 95, sy = 32;
+                    function p3(x, y) { return [ox + x * sx, oy - y * sy]; }
+
+                    // Sumbu Koordinat
+                    geo.buatSegmen(p3(-0.4, 0), p3(2.6, 0), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox + 2.6 * sx + 5, oy, "X", { position: "middle-left", fill: "#475569", fontWeight: "bold" });
+                    geo.buatSegmen(p3(0, -0.4), p3(0, 5.8), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox, oy - 5.8 * sy - 6, "Y", { position: "bottom-center", fill: "#475569", fontWeight: "bold" });
+                    geo.buatTeks(ox - 8, oy + 12, "0", { position: "middle-right", fill: "#64748b", fontSize: "11px" });
+
+                    [1, 2].forEach(xVal => {
+                        geo.buatSegmen(p3(xVal, 0.12), p3(xVal, -0.12), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox + xVal * sx, oy + 14, String(xVal), { position: "top-center", fill: "#334155", fontSize: "11px", fontWeight: "bold" });
+                    });
+                    [1, 5].forEach(yVal => {
+                        geo.buatSegmen(p3(-0.06, yVal), p3(0.06, yVal), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox - 8, oy - yVal * sy, String(yVal), { position: "middle-right", fill: "#334155", fontSize: "11px" });
+                    });
+
+                    function f3(x) { return x * x + 1; }
+                    const kurva3Pts = [];
+                    for (let x = -0.5; x <= 2.2; x += 0.05) {
+                        kurva3Pts.push(p3(x, f3(x)));
+                    }
+
+                    // Daerah Arsir [0, 2]
+                    const arsir3Pts = [p3(0, 0)];
+                    for (let x = 0; x <= 2.01; x += 0.05) {
+                        arsir3Pts.push(p3(x, f3(x)));
+                    }
+                    arsir3Pts.push(p3(2, 0));
+                    geo.buatPoligon(arsir3Pts, { fill: "rgba(234, 88, 12, 0.25)", stroke: "none" });
+
+                    // Garis x = 2
+                    geo.buatSegmen(p3(2, 0), p3(2, 5.5), { stroke: "#ea580c", strokeWidth: 1.5, dashed: true });
+                    geo.buatTeks(ox + 2 * sx + 5, oy - 4.5 * sy, "x = 2", { position: "middle-left", fill: "#c2410c", fontSize: "11px", fontWeight: "bold" });
+
+                    geo.buatPolyline(kurva3Pts, { stroke: "#2563eb", strokeWidth: 2.2 });
+                    geo.buatTeks(ox + 1.2 * sx, oy - f3(1.2) * sy - 12, "y = x² + 1", { position: "bottom-right", fill: "#1d4ed8", fontWeight: "bold", fontSize: "12px" });
+                }
+
+                // ==========================================
+                // SOAL 4: y = sqrt(x) dan x + y = 2
+                // ==========================================
+                const el4 = document.getElementById("geosvg-soal-4");
+                if (el4 && !el4.dataset.rendered) {
+                    el4.dataset.rendered = "true";
+                    const W = 360, H = 230;
+                    const geo = new GeoSVG("geosvg-soal-4", W, H, {
+                        margin: 10,
+                        title: "Kurva y² = x dan Garis x + y = 2"
+                    });
+                    if (geo.svg) {
+                        geo.svg.style.width = "100%";
+                        geo.svg.style.maxWidth = `${W}px`;
+                        geo.svg.style.height = "auto";
+                    }
+
+                    const ox = 60, oy = 170;
+                    const sx = 100, sy = 70;
+                    function p4(x, y) { return [ox + x * sx, oy - y * sy]; }
+
+                    // Sumbu Koordinat
+                    geo.buatSegmen(p4(-0.3, 0), p4(2.5, 0), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox + 2.5 * sx + 5, oy, "X", { position: "middle-left", fill: "#475569", fontWeight: "bold" });
+                    geo.buatSegmen(p4(0, -0.6), p4(0, 1.8), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox, oy - 1.8 * sy - 6, "Y", { position: "bottom-center", fill: "#475569", fontWeight: "bold" });
+                    geo.buatTeks(ox - 8, oy + 12, "0", { position: "middle-right", fill: "#64748b", fontSize: "11px" });
+
+                    [1, 2].forEach(xVal => {
+                        geo.buatSegmen(p4(xVal, 0.08), p4(xVal, -0.08), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox + xVal * sx, oy + 14, String(xVal), { position: "top-center", fill: "#334155", fontSize: "11px", fontWeight: "bold" });
+                    });
+                    [1].forEach(yVal => {
+                        geo.buatSegmen(p4(-0.05, yVal), p4(0.05, yVal), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox - 8, oy - yVal * sy, String(yVal), { position: "middle-right", fill: "#334155", fontSize: "11px" });
+                    });
+
+                    // Kurva y = sqrt(x)
+                    const k4Pts = [];
+                    for (let x = 0; x <= 1.5; x += 0.03) {
+                        k4Pts.push(p4(x, Math.sqrt(x)));
+                    }
+                    // Kurva bawah y = -sqrt(x)
+                    const k4bPts = [];
+                    for (let x = 0; x <= 1.0; x += 0.03) {
+                        k4bPts.push(p4(x, -Math.sqrt(x)));
+                    }
+
+                    // Daerah arsir: 0->1 di bawah sqrt(x), 1->2 di bawah 2-x
+                    const arsir4Pts = [p4(0, 0)];
+                    for (let x = 0; x <= 1.0; x += 0.03) {
+                        arsir4Pts.push(p4(x, Math.sqrt(x)));
+                    }
+                    arsir4Pts.push(p4(2, 0));
+                    geo.buatPoligon(arsir4Pts, { fill: "rgba(234, 179, 8, 0.35)", stroke: "none" });
+
+                    // Garis x + y = 2
+                    geo.buatSegmen(p4(0.5, 1.5), p4(2.2, -0.2), { stroke: "#2563eb", strokeWidth: 2 });
+                    geo.buatTeks(ox + 1.8 * sx, oy - 0.7 * sy, "x + y = 2", { position: "middle-left", fill: "#1d4ed8", fontWeight: "bold", fontSize: "11px" });
+
+                    geo.buatPolyline(k4Pts, { stroke: "#059669", strokeWidth: 2 });
+                    geo.buatPolyline(k4bPts, { stroke: "#94a3b8", strokeWidth: 1.5, dashed: true });
+                    geo.buatTeks(ox + 0.6 * sx, oy - Math.sqrt(0.6) * sy - 8, "y = √x", { position: "bottom-center", fill: "#047857", fontWeight: "bold", fontSize: "11px" });
+
+                    // Titik potong (1, 1)
+                    geo.buatTitik(p4(1, 1), { color: "#dc2626", size: 3.5 });
+                }
+
+                // ==========================================
+                // SOLUSI 4: Pembagian Daerah I & II
+                // ==========================================
+                const el4s = document.getElementById("geosvg-solusi-4");
+                if (el4s && !el4s.dataset.rendered) {
+                    el4s.dataset.rendered = "true";
+                    const W = 360, H = 220;
+                    const geo = new GeoSVG("geosvg-solusi-4", W, H, {
+                        margin: 10,
+                        title: "Pembagian Daerah I dan II"
+                    });
+                    if (geo.svg) {
+                        geo.svg.style.width = "100%";
+                        geo.svg.style.maxWidth = `${W}px`;
+                        geo.svg.style.height = "auto";
+                    }
+
+                    const ox = 60, oy = 160;
+                    const sx = 100, sy = 70;
+                    function p4s(x, y) { return [ox + x * sx, oy - y * sy]; }
+
+                    geo.buatSegmen(p4s(-0.3, 0), p4s(2.4, 0), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatSegmen(p4s(0, -0.3), p4s(0, 1.6), { stroke: "#64748b", strokeWidth: 1.5 });
+
+                    // Daerah I
+                    const a1 = [p4s(0, 0)];
+                    for (let x = 0; x <= 1.0; x += 0.03) a1.push(p4s(x, Math.sqrt(x)));
+                    a1.push(p4s(1, 0));
+                    geo.buatPoligon(a1, { fill: "rgba(59, 130, 246, 0.3)", stroke: "none" });
+
+                    // Daerah II
+                    const a2 = [p4s(1, 0), p4s(1, 1), p4s(2, 0)];
+                    geo.buatPoligon(a2, { fill: "rgba(16, 185, 129, 0.3)", stroke: "none" });
+
+                    // Garis Pemisah x = 1
+                    geo.buatSegmen(p4s(1, 0), p4s(1, 1), { stroke: "#dc2626", strokeWidth: 1.8, dashed: true });
+
+                    // Garis & Kurva
+                    const kPts = [];
+                    for (let x = 0; x <= 1.3; x += 0.03) kPts.push(p4s(x, Math.sqrt(x)));
+                    geo.buatPolyline(kPts, { stroke: "#2563eb", strokeWidth: 2 });
+                    geo.buatSegmen(p4s(0.7, 1.3), p4s(2.1, -0.1), { stroke: "#059669", strokeWidth: 2 });
+
+                    geo.buatTeks(ox + 0.55 * sx, oy - 22, "Daerah I", { position: "middle-center", fill: "#1e40af", fontWeight: "bold", fontSize: "11px" });
+                    geo.buatTeks(ox + 1.35 * sx, oy - 22, "Daerah II", { position: "middle-center", fill: "#065f46", fontWeight: "bold", fontSize: "11px" });
+                }
+
+                // ==========================================
+                // SOAL 5: Parabola y = x^2 - 2x & Garis y = 2x
+                // ==========================================
+                const el5 = document.getElementById("geosvg-soal-5");
+                if (el5 && !el5.dataset.rendered) {
+                    el5.dataset.rendered = "true";
+                    const W = 360, H = 260;
+                    const geo = new GeoSVG("geosvg-soal-5", W, H, {
+                        margin: 10,
+                        title: "Daerah antara y = x^2 - 2x dan y = 2x"
+                    });
+                    if (geo.svg) {
+                        geo.svg.style.width = "100%";
+                        geo.svg.style.maxWidth = `${W}px`;
+                        geo.svg.style.height = "auto";
+                    }
+
+                    const ox = 60, oy = 210;
+                    const sx = 58, sy = 21;
+                    function p5(x, y) { return [ox + x * sx, oy - y * sy]; }
+
+                    // Sumbu Koordinat
+                    geo.buatSegmen(p5(-0.8, 0), p5(4.8, 0), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox + 4.8 * sx + 5, oy, "X", { position: "middle-left", fill: "#475569", fontWeight: "bold" });
+                    geo.buatSegmen(p5(0, -2), p5(0, 9.2), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox, oy - 9.2 * sy - 6, "Y", { position: "bottom-center", fill: "#475569", fontWeight: "bold" });
+                    geo.buatTeks(ox - 8, oy + 12, "0", { position: "middle-right", fill: "#64748b", fontSize: "11px" });
+
+                    [2, 4].forEach(xVal => {
+                        geo.buatSegmen(p5(xVal, 0.2), p5(xVal, -0.2), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox + xVal * sx, oy + 14, String(xVal), { position: "top-center", fill: "#334155", fontSize: "11px", fontWeight: "bold" });
+                    });
+                    [8].forEach(yVal => {
+                        geo.buatSegmen(p5(-0.1, yVal), p5(0.1, yVal), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox - 8, oy - yVal * sy, String(yVal), { position: "middle-right", fill: "#334155", fontSize: "11px" });
+                    });
+
+                    function f5(x) { return x * x - 2 * x; }
+                    function g5(x) { return 2 * x; }
+
+                    // Daerah arsir [0, 4]
+                    const arsir5Pts = [];
+                    for (let x = 0; x <= 4.01; x += 0.08) {
+                        arsir5Pts.push(p5(x, g5(x)));
+                    }
+                    for (let x = 4.0; x >= -0.01; x -= 0.08) {
+                        arsir5Pts.push(p5(x, f5(x)));
+                    }
+                    geo.buatPoligon(arsir5Pts, { fill: "rgba(139, 92, 246, 0.28)", stroke: "none" });
+
+                    // Parabola
+                    const k5Pts = [];
+                    for (let x = -0.6; x <= 4.3; x += 0.08) {
+                        k5Pts.push(p5(x, f5(x)));
+                    }
+                    geo.buatPolyline(k5Pts, { stroke: "#7c3aed", strokeWidth: 2.2 });
+                    geo.buatTeks(ox + 3.4 * sx, oy - f5(3.4) * sy + 15, "y = x² - 2x", { position: "middle-left", fill: "#6d28d9", fontWeight: "bold", fontSize: "11px" });
+
+                    // Garis y = 2x
+                    geo.buatSegmen(p5(-0.5, g5(-0.5)), p5(4.4, g5(4.4)), { stroke: "#059669", strokeWidth: 2 });
+                    geo.buatTeks(ox + 2.2 * sx, oy - g5(2.2) * sy - 10, "y = 2x", { position: "bottom-center", fill: "#047857", fontWeight: "bold", fontSize: "11px" });
+
+                    // Garis Proyeksi (4, 8)
+                    geo.buatSegmen(p5(4, 0), p5(4, 8), { stroke: "#94a3b8", strokeWidth: 1.2, dashed: true });
+                    geo.buatSegmen(p5(0, 8), p5(4, 8), { stroke: "#94a3b8", strokeWidth: 1.2, dashed: true });
+                    geo.buatTitik(p5(4, 8), { color: "#dc2626", size: 3.5 });
+                    geo.buatTitik(p5(0, 0), { color: "#dc2626", size: 3.5 });
+                }
+
+                // ==========================================
+                // SOAL 6: y = -x^3 - x^2 + 2x
+                // ==========================================
+                const el6 = document.getElementById("geosvg-soal-6");
+                if (el6 && !el6.dataset.rendered) {
+                    el6.dataset.rendered = "true";
+                    const W = 360, H = 250;
+                    const geo = new GeoSVG("geosvg-soal-6", W, H, {
+                        margin: 10,
+                        title: "Kurva y = -x^3 - x^2 + 2x terhadap Sumbu X"
+                    });
+                    if (geo.svg) {
+                        geo.svg.style.width = "100%";
+                        geo.svg.style.maxWidth = `${W}px`;
+                        geo.svg.style.height = "auto";
+                    }
+
+                    const ox = 190, oy = 130;
+                    const sx = 70, sy = 35;
+                    function p6(x, y) { return [ox + x * sx, oy - y * sy]; }
+
+                    // Sumbu Koordinat
+                    geo.buatSegmen(p6(-2.7, 0), p6(1.8, 0), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox + 1.8 * sx + 5, oy, "X", { position: "middle-left", fill: "#475569", fontWeight: "bold" });
+                    geo.buatSegmen(p6(0, -3.2), p6(0, 2.8), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox, oy - 2.8 * sy - 6, "Y", { position: "bottom-center", fill: "#475569", fontWeight: "bold" });
+                    geo.buatTeks(ox + 8, oy + 12, "0", { position: "middle-left", fill: "#64748b", fontSize: "11px" });
+
+                    [-2, -1, 1].forEach(xVal => {
+                        geo.buatSegmen(p6(xVal, 0.12), p6(xVal, -0.12), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox + xVal * sx, oy + (xVal > 0 ? 14 : -14), String(xVal), { position: xVal > 0 ? "top-center" : "bottom-center", fill: "#334155", fontSize: "11px", fontWeight: "bold" });
+                    });
+
+                    function f6(x) { return -x * x * x - x * x + 2 * x; }
+
+                    // Daerah 1 [-2, 0] di bawah sumbu X
+                    const arsir6a = [p6(-2, 0)];
+                    for (let x = -2; x <= 0.01; x += 0.05) arsir6a.push(p6(x, f6(x)));
+                    arsir6a.push(p6(0, 0));
+                    geo.buatPoligon(arsir6a, { fill: "rgba(239, 68, 68, 0.25)", stroke: "none" });
+
+                    // Daerah 2 [0, 1] di atas sumbu X
+                    const arsir6b = [p6(0, 0)];
+                    for (let x = 0; x <= 1.01; x += 0.04) arsir6b.push(p6(x, f6(x)));
+                    arsir6b.push(p6(1, 0));
+                    geo.buatPoligon(arsir6b, { fill: "rgba(37, 99, 235, 0.25)", stroke: "none" });
+
+                    // Kurva Kubik
+                    const k6Pts = [];
+                    for (let x = -2.35; x <= 1.35; x += 0.04) {
+                        k6Pts.push(p6(x, f6(x)));
+                    }
+                    geo.buatPolyline(k6Pts, { stroke: "#059669", strokeWidth: 2.2 });
+
+                    geo.buatTeks(ox - 1.1 * sx, oy + 28, "L₁ (bawah)", { position: "middle-center", fill: "#b91c1c", fontWeight: "bold", fontSize: "11px" });
+                    geo.buatTeks(ox + 0.5 * sx, oy - 22, "L₂ (atas)", { position: "middle-center", fill: "#1d4ed8", fontWeight: "bold", fontSize: "11px" });
+                }
+
+                // ==========================================
+                // SOAL 7: y = x^2 - 4x + 3
+                // ==========================================
+                const el7 = document.getElementById("geosvg-soal-7");
+                if (el7 && !el7.dataset.rendered) {
+                    el7.dataset.rendered = "true";
+                    const W = 360, H = 250;
+                    const geo = new GeoSVG("geosvg-soal-7", W, H, {
+                        margin: 10,
+                        title: "Kurva y = x^2 - 4x + 3 dari x = 0 ke 1"
+                    });
+                    if (geo.svg) {
+                        geo.svg.style.width = "100%";
+                        geo.svg.style.maxWidth = `${W}px`;
+                        geo.svg.style.height = "auto";
+                    }
+
+                    const ox = 70, oy = 180;
+                    const sx = 75, sy = 40;
+                    function p7(x, y) { return [ox + x * sx, oy - y * sy]; }
+
+                    // Sumbu Koordinat
+                    geo.buatSegmen(p7(-0.5, 0), p7(3.6, 0), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox + 3.6 * sx + 5, oy, "X", { position: "middle-left", fill: "#475569", fontWeight: "bold" });
+                    geo.buatSegmen(p7(0, -1.6), p7(0, 3.8), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox, oy - 3.8 * sy - 6, "Y", { position: "bottom-center", fill: "#475569", fontWeight: "bold" });
+                    geo.buatTeks(ox - 8, oy + 12, "0", { position: "middle-right", fill: "#64748b", fontSize: "11px" });
+
+                    [1, 2, 3].forEach(xVal => {
+                        geo.buatSegmen(p7(xVal, 0.1), p7(xVal, -0.1), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox + xVal * sx, oy + 14, String(xVal), { position: "top-center", fill: "#334155", fontSize: "11px", fontWeight: "bold" });
+                    });
+                    [3].forEach(yVal => {
+                        geo.buatSegmen(p7(-0.08, yVal), p7(0.08, yVal), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox - 8, oy - yVal * sy, String(yVal), { position: "middle-right", fill: "#334155", fontSize: "11px", fontWeight: "bold" });
+                    });
+
+                    function f7(x) { return x * x - 4 * x + 3; }
+
+                    // Daerah arsir [0, 1]
+                    const arsir7Pts = [p7(0, 0)];
+                    for (let x = 0; x <= 1.01; x += 0.05) arsir7Pts.push(p7(x, f7(x)));
+                    arsir7Pts.push(p7(1, 0));
+                    geo.buatPoligon(arsir7Pts, { fill: "rgba(16, 185, 129, 0.28)", stroke: "none" });
+
+                    // Parabola
+                    const k7Pts = [];
+                    for (let x = -0.3; x <= 3.6; x += 0.05) {
+                        k7Pts.push(p7(x, f7(x)));
+                    }
+                    geo.buatPolyline(k7Pts, { stroke: "#059669", strokeWidth: 2.2 });
+                    geo.buatTeks(ox + 2 * sx, oy - f7(2) * sy - 14, "Puncak (2, -1)", { position: "bottom-center", fill: "#047857", fontSize: "11px" });
+                    geo.buatTitik(p7(2, -1), { color: "#047857", size: 3 });
+
+                    geo.buatTeks(ox + 0.45 * sx, oy - 40, "Luas L", { position: "middle-center", fill: "#065f46", fontWeight: "bold", fontSize: "12px" });
+                }
+
+                // ==========================================
+                // SOAL 8: Puncak (3, 0) melalui (0, 2)
+                // ==========================================
+                const el8 = document.getElementById("geosvg-soal-8");
+                if (el8 && !el8.dataset.rendered) {
+                    el8.dataset.rendered = "true";
+                    const W = 360, H = 240;
+                    const geo = new GeoSVG("geosvg-soal-8", W, H, {
+                        margin: 10,
+                        title: "Kurva Parabola y = 2/9(x-3)^2"
+                    });
+                    if (geo.svg) {
+                        geo.svg.style.width = "100%";
+                        geo.svg.style.maxWidth = `${W}px`;
+                        geo.svg.style.height = "auto";
+                    }
+
+                    const ox = 70, oy = 180;
+                    const sx = 75, sy = 60;
+                    function p8(x, y) { return [ox + x * sx, oy - y * sy]; }
+
+                    // Sumbu Koordinat
+                    geo.buatSegmen(p8(-0.5, 0), p8(3.7, 0), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox + 3.7 * sx + 5, oy, "X", { position: "middle-left", fill: "#475569", fontWeight: "bold" });
+                    geo.buatSegmen(p8(0, -0.4), p8(0, 2.5), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox, oy - 2.5 * sy - 6, "Y", { position: "bottom-center", fill: "#475569", fontWeight: "bold" });
+                    geo.buatTeks(ox - 8, oy + 12, "0", { position: "middle-right", fill: "#64748b", fontSize: "11px" });
+
+                    [3].forEach(xVal => {
+                        geo.buatSegmen(p8(xVal, 0.08), p8(xVal, -0.08), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox + xVal * sx, oy + 14, String(xVal), { position: "top-center", fill: "#334155", fontSize: "11px", fontWeight: "bold" });
+                    });
+                    [2].forEach(yVal => {
+                        geo.buatSegmen(p8(-0.06, yVal), p8(0.06, yVal), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox - 8, oy - yVal * sy, String(yVal), { position: "middle-right", fill: "#334155", fontSize: "11px", fontWeight: "bold" });
+                    });
+
+                    function f8(x) { return (2 / 9) * (x - 3) * (x - 3); }
+
+                    // Daerah arsir [0, 3]
+                    const arsir8Pts = [p8(0, 0)];
+                    for (let x = 0; x <= 3.01; x += 0.05) arsir8Pts.push(p8(x, f8(x)));
+                    arsir8Pts.push(p8(3, 0));
+                    geo.buatPoligon(arsir8Pts, { fill: "rgba(59, 130, 246, 0.28)", stroke: "none" });
+
+                    const k8Pts = [];
+                    for (let x = -0.3; x <= 3.5; x += 0.05) k8Pts.push(p8(x, f8(x)));
+                    geo.buatPolyline(k8Pts, { stroke: "#2563eb", strokeWidth: 2.2 });
+
+                    geo.buatTitik(p8(0, 2), { color: "#dc2626", size: 3.5 });
+                    geo.buatTitik(p8(3, 0), { color: "#dc2626", size: 3.5 });
+                    geo.buatTeks(ox + 1.2 * sx, oy - 35, "Luas diarsir", { position: "middle-center", fill: "#1e40af", fontWeight: "bold", fontSize: "12px" });
+                }
+
+                // ==========================================
+                // SOAL 9: Parabola y = 3x - x^2 & Garis y = -x + 3
+                // ==========================================
+                const el9 = document.getElementById("geosvg-soal-9");
+                if (el9 && !el9.dataset.rendered) {
+                    el9.dataset.rendered = "true";
+                    const W = 360, H = 250;
+                    const geo = new GeoSVG("geosvg-soal-9", W, H, {
+                        margin: 10,
+                        title: "Daerah antara y = 3x - x^2 dan y = -x + 3"
+                    });
+                    if (geo.svg) {
+                        geo.svg.style.width = "100%";
+                        geo.svg.style.maxWidth = `${W}px`;
+                        geo.svg.style.height = "auto";
+                    }
+
+                    const ox = 70, oy = 190;
+                    const sx = 80, sy = 45;
+                    function p9(x, y) { return [ox + x * sx, oy - y * sy]; }
+
+                    // Sumbu Koordinat
+                    geo.buatSegmen(p9(-0.5, 0), p9(3.6, 0), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox + 3.6 * sx + 5, oy, "X", { position: "middle-left", fill: "#475569", fontWeight: "bold" });
+                    geo.buatSegmen(p9(0, -0.6), p9(0, 3.5), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox, oy - 3.5 * sy - 6, "Y", { position: "bottom-center", fill: "#475569", fontWeight: "bold" });
+                    geo.buatTeks(ox - 8, oy + 12, "0", { position: "middle-right", fill: "#64748b", fontSize: "11px" });
+
+                    [1, 3].forEach(xVal => {
+                        geo.buatSegmen(p9(xVal, 0.1), p9(xVal, -0.1), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox + xVal * sx, oy + 14, String(xVal), { position: "top-center", fill: "#334155", fontSize: "11px", fontWeight: "bold" });
+                    });
+                    [2, 3].forEach(yVal => {
+                        geo.buatSegmen(p9(-0.06, yVal), p9(0.06, yVal), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox - 8, oy - yVal * sy, String(yVal), { position: "middle-right", fill: "#334155", fontSize: "11px" });
+                    });
+
+                    function f9(x) { return 3 * x - x * x; }
+                    function g9(x) { return -x + 3; }
+
+                    // Daerah arsir [1, 3]
+                    const arsir9Pts = [];
+                    for (let x = 1; x <= 3.01; x += 0.05) arsir9Pts.push(p9(x, f9(x)));
+                    for (let x = 3; x >= 0.99; x -= 0.05) arsir9Pts.push(p9(x, g9(x)));
+                    geo.buatPoligon(arsir9Pts, { fill: "rgba(234, 88, 12, 0.3)", stroke: "none" });
+
+                    // Parabola
+                    const k9Pts = [];
+                    for (let x = -0.3; x <= 3.3; x += 0.05) k9Pts.push(p9(x, f9(x)));
+                    geo.buatPolyline(k9Pts, { stroke: "#2563eb", strokeWidth: 2.2 });
+                    geo.buatTeks(ox + 1.5 * sx, oy - f9(1.5) * sy - 10, "y = 3x - x²", { position: "bottom-center", fill: "#1d4ed8", fontWeight: "bold", fontSize: "11px" });
+
+                    // Garis y = -x + 3
+                    geo.buatSegmen(p9(0.3, g9(0.3)), p9(3.3, g9(3.3)), { stroke: "#ea580c", strokeWidth: 2 });
+                    geo.buatTeks(ox + 0.3 * sx, oy - g9(0.3) * sy - 8, "y = -x + 3", { position: "bottom-left", fill: "#c2410c", fontWeight: "bold", fontSize: "11px" });
+
+                    // Titik potong (1, 2) dan (3, 0)
+                    geo.buatTitik(p9(1, 2), { color: "#dc2626", size: 3.5 });
+                    geo.buatTitik(p9(3, 0), { color: "#dc2626", size: 3.5 });
+                    geo.buatSegmen(p9(1, 0), p9(1, 2), { stroke: "#94a3b8", strokeWidth: 1.2, dashed: true });
+                }
+
+                // ==========================================
+                // SOAL 10: y = sqrt(x+1) - 1 pada [-1, 1]
+                // ==========================================
+                const el10 = document.getElementById("geosvg-soal-10");
+                if (el10 && !el10.dataset.rendered) {
+                    el10.dataset.rendered = "true";
+                    const W = 360, H = 240;
+                    const geo = new GeoSVG("geosvg-soal-10", W, H, {
+                        margin: 10,
+                        title: "Kurva y = sqrt(x+1) - 1 pada interval [-1, 1]"
+                    });
+                    if (geo.svg) {
+                        geo.svg.style.width = "100%";
+                        geo.svg.style.maxWidth = `${W}px`;
+                        geo.svg.style.height = "auto";
+                    }
+
+                    const ox = 180, oy = 140;
+                    const sx = 90, sy = 70;
+                    function p10(x, y) { return [ox + x * sx, oy - y * sy]; }
+
+                    // Sumbu Koordinat
+                    geo.buatSegmen(p10(-1.5, 0), p10(1.6, 0), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox + 1.6 * sx + 5, oy, "X", { position: "middle-left", fill: "#475569", fontWeight: "bold" });
+                    geo.buatSegmen(p10(0, -1.3), p10(0, 1.0), { stroke: "#64748b", strokeWidth: 1.5 });
+                    geo.buatTeks(ox, oy - 1.0 * sy - 6, "Y", { position: "bottom-center", fill: "#475569", fontWeight: "bold" });
+                    geo.buatTeks(ox + 8, oy + 12, "0", { position: "middle-left", fill: "#64748b", fontSize: "11px" });
+
+                    [-1, 1].forEach(xVal => {
+                        geo.buatSegmen(p10(xVal, 0.08), p10(xVal, -0.08), { stroke: "#64748b", strokeWidth: 1.2 });
+                        geo.buatTeks(ox + xVal * sx, oy + (xVal > 0 ? 14 : -14), String(xVal), { position: xVal > 0 ? "top-center" : "bottom-center", fill: "#334155", fontSize: "11px", fontWeight: "bold" });
+                    });
+
+                    function f10(x) { return Math.sqrt(x + 1) - 1; }
+
+                    // Daerah 1: [-1, 0] di bawah sumbu X
+                    const a10a = [p10(-1, 0)];
+                    for (let x = -1; x <= 0.01; x += 0.04) a10a.push(p10(x, f10(x)));
+                    a10a.push(p10(0, 0));
+                    geo.buatPoligon(a10a, { fill: "rgba(239, 68, 68, 0.25)", stroke: "none" });
+
+                    // Daerah 2: [0, 1] di atas sumbu X
+                    const a10b = [p10(0, 0)];
+                    for (let x = 0; x <= 1.01; x += 0.04) a10b.push(p10(x, f10(x)));
+                    a10b.push(p10(1, 0));
+                    geo.buatPoligon(a10b, { fill: "rgba(37, 99, 235, 0.25)", stroke: "none" });
+
+                    // Garis Batas x = 1 dan x = -1
+                    geo.buatSegmen(p10(-1, 0), p10(-1, -1), { stroke: "#dc2626", strokeWidth: 1.2, dashed: true });
+                    geo.buatSegmen(p10(1, 0), p10(1, f10(1)), { stroke: "#2563eb", strokeWidth: 1.2, dashed: true });
+
+                    // Kurva
+                    const k10Pts = [];
+                    for (let x = -1; x <= 1.35; x += 0.04) k10Pts.push(p10(x, f10(x)));
+                    geo.buatPolyline(k10Pts, { stroke: "#059669", strokeWidth: 2.2 });
+
+                    geo.buatTeks(ox - 0.5 * sx, oy + 20, "L₁", { position: "middle-center", fill: "#b91c1c", fontWeight: "bold", fontSize: "12px" });
+                    geo.buatTeks(ox + 0.6 * sx, oy - 20, "L₂", { position: "middle-center", fill: "#1d4ed8", fontWeight: "bold", fontSize: "12px" });
+                    geo.buatTeks(ox + 0.9 * sx, oy - f10(1) * sy - 10, "y = √(x+1) - 1", { position: "bottom-center", fill: "#047857", fontWeight: "bold", fontSize: "11px" });
+                }
+            }
+
+            renderAllGeoSVG();
+        });
+    </script>
+</body>
+
+</html>

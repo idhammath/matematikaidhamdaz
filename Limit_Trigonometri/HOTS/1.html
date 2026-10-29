@@ -1,135 +1,170 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>HOTS Zone : Limit Trigonometri</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../katex/katex.css">
-      <script src="../katex/katex.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="https://cdn.fontawesomelib.com/releases/6.1.1/css/all.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-   </head> 
-     <body> 
-      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Limit Trigonometri</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-      <h3>Tipe: </h3>
-      <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">Standar</a><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
-      <br>
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>
-        
-        <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          $\displaystyle\lim_{x\to0^+}\left(\cot x\right)^\frac1{\ln x}=....$
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">Misal $y=\left(\cot x\right)^\frac1{\ln x}$ <br><br>
-            $\begin{aligned}
-        \ln y&amp;=\ln\left(\left(\cot x\right)^\frac1{\ln x}\right)\\
-        &amp;=\dfrac1{\ln x}\cdot\ln(\cot x)\\[3.7pt]
-        &amp;=\dfrac{\ln(\cot x)}{\ln x}\\[3.7pt]
-        \displaystyle\lim_{x\to0^+}\ln y&amp;=\displaystyle\lim_{x\to0^+}\dfrac{\ln(\cot x)}{\ln x}\\[3.7pt]
-        \ln\displaystyle\lim_{x\to0^+}y&amp;=\displaystyle\lim_{x\to0^+}\dfrac{-\dfrac1{\sin x\cos x}}{\dfrac1x}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to0^+}\dfrac{-x}{\sin x\cos x}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to0^+}\left(-\dfrac{x}{\sin x}\right)\cdot\displaystyle\lim_{x\to0^+}\dfrac1{\cos x}\\[3.7pt]
-        &amp;=(-1)\cdot\dfrac11\\[3.7pt]
-        &amp;=-1\\
-        \displaystyle\lim_{x\to0^+}y&amp;=e^{-1}\\
-        \displaystyle\lim_{x\to0^+}\left(\cot x\right)^\frac1{\ln x}&amp;=\dfrac1e
-        \end{aligned}$</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, $\displaystyle\lim_{x\to0^+}\left(\cot x\right)^\frac1{\ln x}=\dfrac1e$.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal HOTS - Limit Trigonometri</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="../../scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        
-        <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Nilai dari $\displaystyle\lim_{x\to0}\dfrac{\sin^{4030}2x+\tan^{4030}4x}{\sin^{4030}4x-(2x)^{4030}}$ yang paling mendekati adalah
-          <div class="w3-row">
-          <div class="w3-col s6">
-            <ol class="pas1" type="A">
-              <li>0</li>
-              <li>1</li>
-              <li>&minus;1</li>
-            </ol>
-          </div>
-          <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-              <li>&minus;&infin;</li>
-              <li>&infin;</li>
-            </ol>
-          </div>
-        </div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\begin{aligned}
-        \displaystyle\lim_{x\to0}\dfrac{\sin^{4030}2x+\tan^{4030}4x}{\sin^{4030}4x-(2x)^{4030}}&amp;=\displaystyle\lim_{x\to0}\dfrac{\dfrac{\sin^{4030}2x}{(4x)^{4030}}+\dfrac{\tan^{4030}4x}{(4x)^{4030}}}{\dfrac{\sin^{4030}4x}{(4x)^{4030}}-\dfrac{(2x)^{4030}}{(4x)^{4030}}}\\[3.7pt]
-        &amp;=\displaystyle\lim_{x\to0}\dfrac{\dfrac1{2^{4030}}\cdot\dfrac{\sin^{4030}2x}{(2x)^{4030}}+\dfrac{\tan^{4030}4x}{(4x)^{4030}}}{\dfrac{\sin^{4030}4x}{(4x)^{4030}}-\dfrac1{2^{4030}}\cdot\dfrac{(2x)^{4030}}{(2x)^{4030}}}\\[3.7pt]
-        &amp;=\dfrac{\dfrac1{2^{4030}}+1}{1-\dfrac1{2^{4030}}}\\[3.7pt]
-        &amp;=\dfrac{2^{4030}+1}{2^{4030}-1}\\[3.7pt]
-        &amp;=\dfrac{2^{4030}-1+2}{2^{4030}-1}\\[3.7pt]
-        &amp;=1+\dfrac2{2^{4030}-1}\\
-        &amp;=1+0{,}000...\\
-        &amp;=1{,}000...\\
-        &amp;\approx\boxed{\boxed{1}}
-        \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, nilai dari <m>\displaystyle\lim_{x\to0}\dfrac{\sin^{4030}2x+\tan^{4030}4x}{\sin^{4030}4x-(2x)^{4030}}</m> yang paling mendekati adalah 1.<br><b>JAWAB: B</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Limit Trigonometri</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
         </div>
 
-        <div class="justify" id="3">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          $\displaystyle\lim_{x\to+\infty}\left(5^{x-1}\tan\left(\dfrac3{5^x}\right)\right)$ = ....
-          <div class="w3-row"> 
-           <div class="w3-col s4"> 
-           <ol class="pas1" type="A"> 
-           <li class="pb">$\dfrac35$</li> 
-           <li>$\dfrac3{10}$</li> 
-           </ol> 
-           </div> 
-           <div class="w3-col s4"> 
-           <ol class="pas1" start="3" type="A"> 
-           <li class="pb">$\dfrac3{15}$</li> 
-           <li>$\dfrac3{20}$</li> 
-           </ol> 
-           </div> 
-           <div class="w3-col s4"> 
-           <ol class="pas1" start="5" type="A"> 
-           <li>$\dfrac3{25}$</li> 
-           </ol> 
-           </div> 
-           </div>  
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">KPATN 2024 Jenjang Guru</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">Misal <e>5<sup>&minus;<em>x</em></sup> = <em>y</em></e><br>
-                Jika <em>x</em> &rarr; +&infin; maka <em>y</em> &rarr; 0 <br><br>
-                \(\begin{aligned}
-                \displaystyle\lim_{x\to+\infty}\left(5^{x-1}\tan\left(\dfrac3{5^x}\right)\right)&=\displaystyle\lim_{x\to{+\infty}}\dfrac{\tan\left(3\cdot5^{-x}\right)}{5^{-x+1}}\\
-                &=\displaystyle\lim_{x\to{+\infty}}\dfrac{\tan\left(3\cdot5^{-x}\right)}{5\cdot5^{-x}}\\
-                &=\displaystyle\lim_{y\to0}\dfrac{\tan\left(3y\right)}{5y}\\
-                &=\color{blue}\boxed{\boxed{\color{black}\dfrac35}}
-                \end{aligned}\)
-              </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, $\displaystyle\lim_{to+\infty}\left(5^{x-1}\tan\left(\dfrac3{5^x}\right)\right)=\dfrac35$.<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    \[\lim_{x\to0^+}\left(\cot x\right)^{\frac{1}{\ln x}}=\dots\]
+                </p>
             </div>
-          </details>
-          <hr>
-        </div>
-        
-        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-        <br>
-<script>soal(limtri,3,1)</script>
-   </body>
-</html> 
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Bentuk limit ini merupakan bentuk tak tentu \(\infty^0\). Misalkan \(y = (\cot x)^{\frac{1}{\ln x}}\), gunakan logaritma natural:</p>
+                    \[
+                    \ln y = \ln\left((\cot x)^{\frac{1}{\ln x}}\right) = \dfrac{\ln(\cot x)}{\ln x}
+                    \]
+                    Ambil limit kedua ruas untuk \(x \to 0^+\):
+                    \[
+                    \lim_{x\to0^+}\ln y = \lim_{x\to0^+}\dfrac{\ln(\cot x)}{\ln x}
+                    \]
+                    Karena berbentuk \(\dfrac{\infty}{-\infty}\), terapkan aturan L'Hôpital:
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to0^+}\dfrac{\ln(\cot x)}{\ln x} &= \lim_{x\to0^+}\dfrac{\dfrac{-\csc^2 x}{\cot x}}{\dfrac{1}{x}}\\[3.7pt]
+                    &= \lim_{x\to0^+}\dfrac{-\dfrac{1}{\sin x\cos x}}{\dfrac{1}{x}}\\[3.7pt]
+                    &= \lim_{x\to0^+}\left(-\dfrac{x}{\sin x}\cdot\dfrac{1}{\cos x}\right)\\[3.7pt]
+                    &= (-1)\cdot\dfrac{1}{1} = -1
+                    \end{aligned}
+                    \]
+                    Maka:
+                    \[
+                    \ln\left(\lim_{x\to0^+}y\right) = -1 \implies \lim_{x\to0^+}y = e^{-1} = \dfrac{1}{e}
+                    \]
+                    <div class="kesimpulan">Jadi, \(\displaystyle\lim_{x\to0^+}\left(\cot x\right)^{\frac{1}{\ln x}}=\dfrac{1}{e}\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Nilai dari
+                    \[\lim_{x\to0}\dfrac{\sin^{4030}2x+\tan^{4030}4x}{\sin^{4030}4x-(2x)^{4030}}\]
+                    yang paling mendekati adalah ....
+                </p>
+                <ol class="pilgan">
+                    <li>\(0\)</li>
+                    <li>\(1\)</li>
+                    <li>\(-1\)</li>
+                    <li>\(-\infty\)</li>
+                    <li>\(\infty\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Bagi pembilang dan penyebut dengan \((4x)^{4030}\):</p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to0}\dfrac{\sin^{4030}2x+\tan^{4030}4x}{\sin^{4030}4x-(2x)^{4030}} &= \lim_{x\to0}\dfrac{\dfrac{\sin^{4030}2x}{(4x)^{4030}}+\dfrac{\tan^{4030}4x}{(4x)^{4030}}}{\dfrac{\sin^{4030}4x}{(4x)^{4030}}-\dfrac{(2x)^{4030}}{(4x)^{4030}}}\\[3.7pt]
+                    &= \lim_{x\to0}\dfrac{\left(\dfrac{\sin 2x}{4x}\right)^{4030}+\left(\dfrac{\tan 4x}{4x}\right)^{4030}}{\left(\dfrac{\sin 4x}{4x}\right)^{4030}-\left(\dfrac{2x}{4x}\right)^{4030}}\\[3.7pt]
+                    &= \dfrac{\left(\dfrac{2}{4}\right)^{4030}+1^{4030}}{1^{4030}-\left(\dfrac{2}{4}\right)^{4030}}\\[3.7pt]
+                    &= \dfrac{\left(\dfrac{1}{2}\right)^{4030}+1}{1-\left(\dfrac{1}{2}\right)^{4030}}\\[3.7pt]
+                    &= \dfrac{2^{4030}+1}{2^{4030}-1} = 1 + \dfrac{2}{2^{4030}-1}
+                    \end{aligned}
+                    \]
+                    Karena \(2^{4030}\) adalah bilangan yang luar biasa besar, maka \(\dfrac{2}{2^{4030}-1} \approx 0\), sehingga nilainya sangat mendekati \(1\).
+                    <div class="kesimpulan">Jadi, nilai yang paling mendekati adalah \(1\).<br><b>Jawaban: B</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    \[\lim_{x\to+\infty}\left(5^{x-1}\tan\left(\dfrac{3}{5^x}\right)\right)=\dots\]
+                </p>
+                <ol class="pilgan">
+                    <li>\(\dfrac{3}{5}\)</li>
+                    <li>\(\dfrac{3}{10}\)</li>
+                    <li>\(\dfrac{3}{15}\)</li>
+                    <li>\(\dfrac{3}{20}\)</li>
+                    <li>\(\dfrac{3}{25}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">KPATN 2024 Jenjang Guru</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Ubah bentuk aljabar eksponen \(5^{x-1} = \dfrac{5^x}{5}\). Misalkan \(y = 5^{-x} = \dfrac{1}{5^x}\). Saat \(x \to +\infty\), maka \(y \to 0^+\):</p>
+                    \[
+                    \begin{aligned}
+                    \lim_{x\to+\infty}\left(5^{x-1}\tan\left(\dfrac{3}{5^x}\right)\right) &= \lim_{x\to+\infty}\dfrac{\tan\left(3\cdot 5^{-x}\right)}{5\cdot 5^{-x}}\\[3.7pt]
+                    &= \lim_{y\to0}\dfrac{\tan(3y)}{5y}\\[3.7pt]
+                    &= \dfrac{3}{5}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, hasilnya adalah \(\dfrac{3}{5}\).<br><b>Jawaban: A</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <!-- Script Math Blog Otomatis (Navigasi Level, Penomoran, Toggle Solusi) -->
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>

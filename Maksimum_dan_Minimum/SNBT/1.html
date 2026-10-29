@@ -1,191 +1,320 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SBMPTN Zone : Maksimum dan Minimum</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../katex/katex.css">
-    <script src="../katex/katex.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-    <script defer src="../katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Maksimum dan Minimum</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+        </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Maksimum dan Minimum</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
 
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><span id="sbmptn" class="w3-bar-item w3-deep-purple w3-hide">SBMPTN</span><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div><br>
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Maksimum dan Minimum</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-  <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Nilai maksimum dari <e><em>f</em>(<em>x</em>) = <sup>2</sup>log(<em>x</em> &minus; 1) + <sup>2</sup>log(&minus;<em>x</em> &minus; 3)</e> adalah
-    <div class="w3-row">
-    <div class="w3-col s6">
-      <ol class="pas1" type="A">
-        <li>0</li>
-        <li>1</li>
-        <li>2</li>
-      </ol>
-    </div>
-    <div class="w3-col s6">
-      <ol class="pas1" start="4" type="A">
-        <li>3</li>
-        <li>4</li>
-      </ol>
-    </div>
-  </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/matematikazoneidgrup" target="_blank" rel="noopener noreferrer">Matematika Zone Indonesia</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">\(\begin{aligned}
-            f(x)&={^2\negmedspace\log}(x-1)+{^2\negmedspace\log}(-x-3)\\
-            &={^2\negmedspace\log}\left((x-1)(-x-3)\right)\\
-            &={^2\negmedspace\log}\left(-x^2-3x+x+3\right)\\
-            &={^2\negmedspace\log}\left(-x^2-2x+3\right)
-            \end{aligned}\)<br />
-            Karena fungsi log dengan basis lebih dari 1 adalah fungsi naik, maka kita cari dahulu nilai maksimum dari <e>&minus;<em>x</em><sup>2</sup> &minus; 2<em>x</em> + 3</e><br />
-            Misal <e><em>p</em> = &minus;<em>x</em><sup>2</sup> &minus; 2<em>x</em> + 3</e><br />
-            mencari <em>p</em><sub>max</sub> berarti <e><em>p</em>' = 0</e><br />
-            \(\begin{aligned}
-            -2x-2&=0\\
-            -2x&=2\\
-            x&=-1
-            \end{aligned}\)<br />
-            <br />
-            \(\begin{aligned}
-            f(x)_{\max}&={^2\negmedspace\log}\left(-(-1)^2-2(-1)+3\right)\\
-            &={^2\negmedspace\log}\left(-1+2+3\right)\\
-            &={^2\negmedspace\log}4\\
-            &=\boxed{\boxed{2}}
-            \end{aligned}\)</div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, nilai maksimum dari <e><em>f</em>(<em>x</em>) = <sup>2</sup>log(<em>x</em> &minus; 1) + <sup>2</sup>log(&minus;<em>x</em> &minus; 3)</e> adalah 2.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-</div>
-  
-<div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-  Jika <e><em>f</em>(<em>x</em>) = 3 &minus; <em>x</em><sup>2</sup></e> dan <e><em>g</em>(<em>x</em>) = &minus;2<em>x</em> + 4</e>, maka nilai minimum fungsi <e>(<em>f</em>&compfn;<em>g</em>)(<em>x</em>)</e> adalah
-  <div class="w3-row">
-  <div class="w3-col s6">
-    <ol class="pas1" type="A">
-      <li>6</li>
-      <li>5</li>
-      <li>4</li>
-    </ol>
-  </div>
-  <div class="w3-col s6">
-    <ol class="pas1" start="4" type="A">
-      <li>3</li>
-      <li>2</li>
-    </ol>
-  </div>
-</div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/matematikazoneidgrup" target="_blank" rel="noopener noreferrer">Matematika Zone Indonesia</a></div>
-  <details>
-    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-    <div class="w3-card-4">
-      <div class="w3-padding w3-sand flo">\(\begin{aligned}
-          \left(f\circ g\right)(x)&=f\left(g(x)\right)\\
-          &=f\left(-2x+4\right)\\
-          &=3-(-2x+4)^2
-          \end{aligned}\)<br />
-          <br />
-          \(\begin{aligned}
-          \left(f\circ g\right)'(x)&=0\\
-          -2(-2x+4)(-2)&=0\\
-          -8x+16&=0\\
-          8x&=16\\
-          x&=2
-          \end{aligned}\)<br />
-          <br />
-          \(\begin{aligned}
-          \left(f\circ g\right)(2)&=3-(-2(2)+4)^2\\
-          &=3-(-4+4)^2\\
-          &=3-(0)^2\\
-          =\boxed{\boxed{3}}
-          \end{aligned}\)</div>
-      <div class="w3-brown w3-padding tebal flo">Jadi, nilai minimum fungsi <e>(<em>f</em>&compfn;<em>g</em>)(<em>x</em>)</e> adalah 3.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-    </div>
-  </details>
-  <hr>
-</div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-<div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-  Jika <e><em>f</em>(<em>x</em>) = <em>ax</em><sup>3</sup> + <em>x</em><sup>2</sup> + <em>x</em> + 4<em>a</em></e> memotong
-  sumbu <em>y</em> di titik <e>(0, &minus;4)</e> maka nilai
-  maksimum <em>f</em>(<em>x</em>) untuk <e>0 ≤ <em>x</em> ≤ 2</e> adalah
-<div class="w3-row">
-  <div class="w3-col s6">
-    <ol class="pas1" type="A">
-      <li>&minus;3</li>
-      <li>&minus;4</li>
-      <li>5</li>
-    </ol>
-  </div>
-  <div class="w3-col s6">
-    <ol class="pas1" start="4" type="A">
-      <li>6</li>
-      <li>9</li>
-    </ol>
-  </div>
-</div>
-  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/matematikazoneidgrup" target="_blank" rel="noopener noreferrer">SKMP September 2020</a></div>
-  <details>
-    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-    <div class="w3-card-4">
-      <div class="w3-padding w3-sand flo">\(\begin{aligned}
-          4a&=-4\\
-          a&=-1
-          \end{aligned}\)<br><br>
-          \(\begin{aligned}
-          f(x)&=-x^3+x^2+x-4\\
-          f'(x)&=-3x^2+2x+1
-          \end{aligned}\)<br><br>
-          <e><em>f</em><sub>max</sub> &xrarr; <em>f</em>' = 0</e><br>
-          \(\begin{aligned}
-          -3x^2+2x+1&=0\\
-          3x^2-2x-1&=0\\
-          (3x+1)(x-1)&=0
-          \end{aligned}\)<br>
-          <m>x=-\dfrac13</m> (TM) dan <e><em>x</em> = 1</e>.<br><br>
-          \(\begin{aligned}
-          f(1)&=-1^3+1^2+1-4\\
-          &=\boxed{\boxed{-3}}
-          \end{aligned}\)</div>
-      <div class="w3-brown w3-padding tebal flo">Jadi, nilai
-          maksimum <em>f</em>(<em>x</em>) untuk <e>0 ≤ <em>x</em> ≤ 2</e> adalah &minus;3.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-    </div>
-  </details>
-  <hr>
-</div>
+        <!-- ================= DAFTAR 10 SOAL ================= -->
 
-  <br><br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(maksmin,2,1)</script>
-</div>
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Nilai maksimum dari <e><em>f</em>(<em>x</em>) = <sup>2</sup>log(<em>x</em> &minus; 1) + <sup>2</sup>log(&minus;<em>x</em> &minus; 3)</e> adalah
+                <ol class="pilgan">
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/matematikazoneidgrup" target="_blank" rel="noopener noreferrer">Matematika Zone Indonesia</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \(\begin{aligned}
+                    f(x)&={^2\negmedspace\log}(x-1)+{^2\negmedspace\log}(-x-3)\\
+                    &={^2\negmedspace\log}\left((x-1)(-x-3)\right)\\
+                    &={^2\negmedspace\log}\left(-x^2-3x+x+3\right)\\
+                    &={^2\negmedspace\log}\left(-x^2-2x+3\right)
+                    \end{aligned}\)<br>
+                    Karena fungsi log dengan basis lebih dari 1 adalah fungsi naik, maka kita cari dahulu nilai maksimum dari <e>&minus;<em>x</em><sup>2</sup> &minus; 2<em>x</em> + 3</e><br>
+                    Misal <e><em>p</em> = &minus;<em>x</em><sup>2</sup> &minus; 2<em>x</em> + 3</e><br>
+                    mencari <em>p</em><sub>max</sub> berarti <e><em>p</em>' = 0</e><br>
+                    \(\begin{aligned}
+                    -2x-2&=0\\
+                    -2x&=2\\
+                    x&=-1
+                    \end{aligned}\)<br><br>
+                    \(\begin{aligned}
+                    f(x)_{\max}&={^2\negmedspace\log}\left(-(-1)^2-2(-1)+3\right)\\
+                    &={^2\negmedspace\log}\left(-1+2+3\right)\\
+                    &={^2\negmedspace\log}4\\
+                    &=\boxed{\boxed{2}}
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, nilai maksimum dari <e><em>f</em>(<em>x</em>) = <sup>2</sup>log(<em>x</em> &minus; 1) + <sup>2</sup>log(&minus;<em>x</em> &minus; 3)</e> adalah 2.<br><b>JAWAB: C</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika <e><em>f</em>(<em>x</em>) = 3 &minus; <em>x</em><sup>2</sup></e> dan <e><em>g</em>(<em>x</em>) = &minus;2<em>x</em> + 4</e>, maka nilai minimum fungsi <e>(<em>f</em>&compfn;<em>g</em>)(<em>x</em>)</e> adalah
+                <ol class="pilgan">
+                    <li>6</li>
+                    <li>5</li>
+                    <li>4</li>
+                    <li>3</li>
+                    <li>2</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/matematikazoneidgrup" target="_blank" rel="noopener noreferrer">Matematika Zone Indonesia</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \(\begin{aligned}
+                    \left(f\circ g\right)(x)&=f\left(g(x)\right)\\
+                    &=f\left(-2x+4\right)\\
+                    &=3-(-2x+4)^2
+                    \end{aligned}\)<br><br>
+                    \(\begin{aligned}
+                    \left(f\circ g\right)'(x)&=0\\
+                    -2(-2x+4)(-2)&=0\\
+                    -8x+16&=0\\
+                    8x&=16\\
+                    x&=2
+                    \end{aligned}\)<br><br>
+                    \(\begin{aligned}
+                    \left(f\circ g\right)(2)&=3-(-2(2)+4)^2\\
+                    &=3-(-4+4)^2\\
+                    &=3-(0)^2\\
+                    &=\boxed{\boxed{3}}
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, nilai minimum fungsi <e>(<em>f</em>&compfn;<em>g</em>)(<em>x</em>)</e> adalah 3.<br><b>JAWAB: D</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika <e><em>f</em>(<em>x</em>) = <em>ax</em><sup>3</sup> + <em>x</em><sup>2</sup> + <em>x</em> + 4<em>a</em></e> memotong sumbu <em>y</em> di titik <e>(0, &minus;4)</e> maka nilai maksimum <em>f</em>(<em>x</em>) untuk <e>0 &le; <em>x</em> &le; 2</e> adalah
+                <ol class="pilgan">
+                    <li>&minus;3</li>
+                    <li>&minus;4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>9</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/matematikazoneidgrup" target="_blank" rel="noopener noreferrer">SKMP September 2020</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \(\begin{aligned}
+                    4a&=-4\\
+                    a&=-1
+                    \end{aligned}\)<br><br>
+                    \(\begin{aligned}
+                    f(x)&=-x^3+x^2+x-4\\
+                    f'(x)&=-3x^2+2x+1
+                    \end{aligned}\)<br><br>
+                    <e><em>f</em><sub>max</sub> &xrarr; <em>f</em>' = 0</e><br>
+                    \(\begin{aligned}
+                    -3x^2+2x+1&=0\\
+                    3x^2-2x-1&=0\\
+                    (3x+1)(x-1)&=0
+                    \end{aligned}\)<br>
+                    \(x=-\dfrac13\) (TM) dan <e><em>x</em> = 1</e>.<br><br>
+                    \(\begin{aligned}
+                    f(1)&=-1^3+1^2+1-4\\
+                    &=\boxed{\boxed{-3}}
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, nilai maksimum <em>f</em>(<em>x</em>) untuk <e>0 &le; <em>x</em> &le; 2</e> adalah &minus;3.<br><b>JAWAB: A</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 5 
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 6 
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 7 
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 8 
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 9 
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 10 
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+        <!-- Copy-paste blok <article class="soal-item">...</article> sampai 10 blok -->
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
+
+</html>

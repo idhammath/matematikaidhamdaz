@@ -1,375 +1,510 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SNBT Zone : Lingkaran (<i>Circle</i>)</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../katex/katex.css">
-    <script src="../katex/katex.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal SNBT - Lingkaran</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="../../scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  <div class="separator w3-hide" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEZHZfw0P0tyauGqcojr2pflkqmLPWEx23sw_a2SbhJmUMusweWs024qYAm9N7SqYSFYqSfI4proTYkfzxOTE3B0iADKyh75fCOu79C3rkpFmfC8PEWz3Sl9YLWjC7YFfTZ4La4dtaqF6K1VNMKtShOgNZNODUHFfHPDLchAVBNQCP85bLoUMScCdNgQ/s1080/LINGKARAN%20SNBT.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEZHZfw0P0tyauGqcojr2pflkqmLPWEx23sw_a2SbhJmUMusweWs024qYAm9N7SqYSFYqSfI4proTYkfzxOTE3B0iADKyh75fCOu79C3rkpFmfC8PEWz3Sl9YLWjC7YFfTZ4La4dtaqF6K1VNMKtShOgNZNODUHFfHPDLchAVBNQCP85bLoUMScCdNgQ/s320/LINGKARAN%20SNBT.png"/></a></div>
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Lingkaran (<i>Circle</i>)</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">Standar</a><span id="snbt" class="w3-bar-item w3-deep-purple w3-hide">SNBT</span><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-
-  <div id="1" class="justify">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    <div id="tempatsvg1" class="tengah"></div>
-<script>
-let pengali=10;
-    </script>Diketahui suatu lingkaran kecil dengan radius \(3\sqrt2\) melalui pusat suatu lingkaran besar yang mempunyai radius 6. Ruas garis yang menghubungkan dua titik potong lingkaran merupakan diameter dari lingkaran kecil, seperti pada gambar. Luas daerah irisan kedua lingkaran adalah.....
-  <div class="w3-row">
-  <div class="w3-col s6">
-    <ol class="pas1" type="A">
-      <li><e>18&pi; + 18</e></li>
-      <li><e>14&pi; &minus; 15</e></li>
-      <li><e>18&pi; &minus; 18</e></li>
-    </ol>
-  </div>
-  <div class="w3-col s6">
-    <ol class="pas1" start="4" type="A">
-      <li><e>10&pi; + 10</e></li>
-      <li><e>14&pi; + 14</e></li>
-    </ol>
-  </div>
-</div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SBMPTN 2017</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><div id="tempatsvg2" class="tengah"></div>\begin{aligned}
-                L&amp;=\dfrac12L_{\text{lingk. kecil}}+L_{\text{tembereng}}\\
-            &amp;=\dfrac12\pi\left(3\sqrt2\right)^2+\dfrac14\pi(6)^2-\dfrac12(6)^2\\
-            &amp;=9\pi+9\pi-18\\
-            &amp;=\boxed{\boxed{18\pi-18}}
-                \end{aligned}
-            </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, luas daerah irisan kedua lingkaran adalah <e>18&pi; &minus; 18</e>.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-    <script>
-      //[0:margin, 1:rasio]
-      var a1 = [0.3,10];
-      document.getElementById("tempatsvg1").innerHTML = String.raw`${svgawal(9+3*Math.sqrt(2),9+3*Math.sqrt(2),a1[1],a1[0])}
-      ${svglingkaran([6,3+3*Math.sqrt(2)],6,{tebalgaris:2/a1[1]})}
-      ${svglingkaran([9,3*Math.sqrt(2)],3*Math.sqrt(2),{tebalgaris:2/a1[1]})}
-      </svg>`;
-      document.getElementById("tempatsvg2").innerHTML = String.raw`${svgawal(9+3*Math.sqrt(2),9+3*Math.sqrt(2),a1[1],a1[0])}
-      <path d="M 12,${3+3*Math.sqrt(2)} A ${3*Math.sqrt(2)},${3*Math.sqrt(2)} 0 0,1 6,${3*Math.sqrt(2)-3} A 6,6 0 0,1 12,${3+3*Math.sqrt(2)}" fill="lightgreen" stroke="none" />
-      ${svglingkaran([6,3+3*Math.sqrt(2)],6,{tebalgaris:2/a1[1]})}
-      ${svglingkaran([9,3*Math.sqrt(2)],3*Math.sqrt(2),{tebalgaris:2/a1[1]})}
-      ${svgsegi([[12,3+3*Math.sqrt(2)],[6,3+3*Math.sqrt(2)],[6,3*Math.sqrt(2)-3]],{tebalgaris:2/a1[1],warnagaris:"blue"})}
-      </svg>`;
-    </script>
-  </div>
-
-  <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Jarak minimal titik pada lingkaran <e>(<em>x</em> + 5)<sup>2</sup> + (<em>y</em> &minus; 12)<sup>2</sup> = 196</e> ke titik <e>(0, 0)</e> adalah
-    <div class="w3-row">
-      <div class="w3-col s6">
-          <ol class="pas1" type="A">
-              <li>1</li>
-              <li class="pb">\(\sqrt2\)</li>
-              <li>\(\dfrac12\)</li>
-          </ol>
-      </div>
-      <div class="w3-col s6">
-          <ol class="pas1" start="4" type="A">
-              <li>13</li>
-              <li>14</li>
-          </ol>
-      </div>
-  </div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-  <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo">Titik pusat <e>(&minus;5, 12)</e><br />
-  Jari-jari:
-  \begin{aligned}
-  r&amp;=\sqrt{196}\\
-  &amp;=14
-  \end{aligned}
-  Misal <em>p</em> adalah jarak minimal lingkaran ke titik <e>(0, 0)</e>
-  \begin{aligned}
-  p&amp;=\left|\sqrt{(-5)^2+12^2}-14\right|\\
-  &amp;=\left|\sqrt{25+144}-14\right|\\
-  &amp;=\left|\sqrt{169}-14\right|\\
-  &amp;=\left|13-14\right|\\
-  &amp;=\left|-1\right|\\
-  &amp;=\boxed{\boxed{1}}
-  \end{aligned}</div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, jarak minimal titik pada lingkaran <e>(<em>x</em> + 5)<sup>2</sup> + (<em>y</em> &minus; 12)<sup>2</sup> = 196</e> ke titik <e>(0, 0)</e> adalah 1.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-  </details>
-  <hr>
-  </div>
-  
-  <div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Jarak minimal titik pada lingkaran <e>(<em>x</em> &minus; 3)<sup>2</sup> + (<em>y</em> + 2)<sup>2</sup> = 16</e> ke titik <e>(6, 2)</e> adalah
-    <div class="w3-row">
-    <div class="w3-col s6">
-      <ol class="pas1" type="A">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ol>
-    </div>
-    <div class="w3-col s6">
-      <ol class="pas1" start="4" type="A">
-        <li>6</li>
-        <li>7</li>
-      </ol>
-    </div>
-  </div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-  <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo">\begin{aligned}
-  r&amp;=\sqrt{16}\\
-  &amp;=4
-  \end{aligned}
-  Misal <em>p</em> adalah jarak lingkaran ke titik <e>(6, 2)</e>
-  \begin{aligned}
-  p&amp;=\sqrt{(3-6)^2+(-2-2)^2}-4\\
-  &amp;=\sqrt{(-3)^2+(-4)^2}-4\\
-  &amp;=\sqrt{9+16}-4\\
-  &amp;=\sqrt{25}-4\\
-  &amp;=5-4\\
-  &amp;=\boxed{\boxed{1}}
-  \end{aligned}</div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, jarak minimal titik pada lingkaran <e>(<em>x</em> &minus; 3)<sup>2</sup> + (<em>y</em> + 2)<sup>2</sup> = 16</e> ke titik <e>(6, 2)</e> adalah 1.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-  </details>
-  <hr>
-  </div>
-  
-  <div class="justify" id="4"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Diberikan lingkaran pada bidang koordinat dengan titik pusat <e>(<em>a</em>, <em>b</em>)</e> dan memotong sumbu-<em>X</em> di titik <e>(3, 0)</e> dan <e>(9, 0)</e>. Jika garis yang melalui titik <e>(0, 3)</e> menyinggung lingkaran di titik <e>(3, 0)</e> maka nilai <e><em>a</em><sup>2</sup> &minus; <em>b</em><sup>2</sup></e> adalah
-    <div class="w3-row">
-    <div class="w3-col s6">
-      <ol class="pas1" type="A">
-        <li>9</li>
-        <li>18</li>
-        <li>27</li>
-      </ol>
-    </div>
-    <div class="w3-col s6">
-      <ol class="pas1" start="4" type="A">
-        <li>36</li>
-        <li>45</li>
-      </ol>
-    </div>
-  </div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-  <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo">\(a=\dfrac12(3+9)=6\)<br />
-  <br />
-  misal <em>g</em> adalah garis yang melalui <e>(3, 0)</e> dan <e>(0, 3)</e>.<br />
-  Gradien garis <em>g</em> adalah
-  \begin{aligned}
-  m_1&amp;=\dfrac{3-0}{0-3}\\[8pt]
-  &amp;=-1
-  \end{aligned}
-  Misal garis <em>h</em> adalah garis yang tegak lurus dengan garis <em>g</em> dan melalui titik <e>(3, 0)</e>.<br />
-  Gradien garis <em>h</em> adalah 
-  \begin{aligned}
-  m_2&amp;=-\dfrac1{m_1}\\
-  &amp;=-\dfrac1{-1}\\
-  &amp;=1
-  \end{aligned}
-  Garis <em>h</em> melalui <e>(3, 0)</e> dan <e>(6, <em>b</em>)</e> (titik pusat lingkaran).
-  \begin{aligned}
-  \dfrac{b-0}{6-3}&amp;=1\\
-  \dfrac{b}3&amp;=1\\
-  b&amp;=3
-  \end{aligned}
-  \begin{aligned}
-  a^2-b^2&amp;=6^2-3^2\\
-  &amp;=36-9\\
-  &amp;=\boxed{\boxed{27}}
-  \end{aligned}</div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>a</em><sup>2</sup> &minus; <em>b</em><sup>2</sup> = 27</e>.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-  </details>
-  <hr>
-  </div>
-  
-  <div class="justify" id="5"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Titik pusat lingkaran yang menyinggung
-    garis \(y=-\sqrt3x+2\) dan menyinggung garis
-    <e><em>y</em> = 2</e> di <e>(3, 2)</e> adalah
-    <div class="w3-row">
-    <div class="w3-col s6">
-      <ol class="pas1" type="A">
-        <li>\((3, 2 + \sqrt3 )\)</li>
-        <li>\((3, 2 + 2 \sqrt3 )\)</li>
-        <li>\((3, 2 + 3 \sqrt3 )\)</li>
-      </ol>
-    </div>
-    <div class="w3-col s6">
-      <ol class="pas1" start="4" type="A">
-        <li>\((3, 3 \sqrt3)\)</li>
-        <li>\((3, 2 \sqrt3)\)</li>
-      </ol>
-    </div>
-  </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/" target="_blank">SKMP September 2020</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo">
-    Misal titik pusat lingkarannya adalah <e>P(3, <em>b</em>)</e> dengan <e><em>b</em> &gt; 2</e>.<br><br>
-    Jarak dari <em>P</em> ke garis <e><em>y</em> = 2 &xrarr; <em>y</em> &minus; 2 = 0</e>
-    \begin{aligned}
-    r&=\left|\dfrac{b-2}{\sqrt{1^2}}\right|\\
-    &=\left|\dfrac{b-2}1\right|\\
-    &=|b-2|\\
-    &=b-2
-    \end{aligned}
-    Jarak dari <em>P</em> ke garis \(y=-\sqrt3x+2\rightarrow \sqrt3x+y-2=0\)
-    \begin{aligned}
-    r&=\left|\dfrac{\sqrt3(3)+b-2}{\sqrt{\left(\sqrt3\right)^2+1^2}}\right|\\
-    &=\left|\dfrac{3\sqrt3+b-2}{\sqrt{3+1}}\right|\\
-    &=\left|\dfrac{b-2+3\sqrt3}{\sqrt4}\right|\\
-    &=\left|\dfrac{b-2+3\sqrt3}2\right|\\
-    &=\dfrac{3\sqrt3+b-2}2
-    \end{aligned}
-    \begin{aligned}
-    b-2&=\dfrac{b-2+3\sqrt3}2\\
-    2b-4&=b-2+3\sqrt3\\
-    b&=\boxed{\boxed{2+3\sqrt3}}
-    \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, titik pusat lingkarannya adalah \((3, 2 + 3 \sqrt3 )\).<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-    </details>
-    <hr>
-  </div>
-  
-  <div class="justify" id="6"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Diketahui persamaan lingkaran <e><em>C</em><sub>1</sub></e> dan <e><em>C</em><sub>2</sub></e>
-    berturut-turut adalah <e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> = 25</e> dan
-    <e>(<em>x</em> &minus; <em>a</em>)<sup>2</sup> + <em>y</em><sup>2</sup> = <em>r</em><sup>2</sup></e>. Lingkaran <e><em>C</em><sub>1</sub></e> dan <e><em>C</em><sub>2</sub></e>
-    bersinggungan di titik <e>(5, 0)</e>. Jika garis <em>l</em> adalah garis
-    singgung lingkaran <e><em>C</em><sub>1</sub></e> di titik <e>(3, 4)</e> yang merupakan
-    garis singgung juga untuk lingkaran <e><em>C</em><sub>2</sub></e> di titik <e>(<em>m</em>, <em>n</em>)</e>,
-    nilai <e><em>m</em> + <em>n</em> =</e> ....
-    <div class="w3-row">
-    <div class="w3-col s6">
-      <ol class="pas1" type="A">
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-      </ol>
-    </div>
-    <div class="w3-col s6">
-      <ol class="pas1" start="4" type="A">
-        <li>8</li>
-        <li>9</li>
-      </ol>
-    </div>
-  </div>
-  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/" target="_blank">SIMAK UI 2019</a></div>
-  <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">
-          <div id="tempatsvg5" class="tengah"></div>
-          <div id="tempatsvg6" class="tengah"></div>
-            <script>
-              var a5 = [0,2,10];
-              var tiO = [0,0];
-              var tiA = [3,4];
-              var tiD = [3/4,1];
-              var tiC = [5+5/4,0];
-              var tiB = [7,1];
-              document.getElementById("tempatsvg5").innerHTML = String.raw`${svgkoord([-6,9],[-6,6],{rasio:a5[1]})}
-              ${svgkling([0,0],5,{tebalgaris:2/a5[1]})}
-              ${svgkling([5+5/4,0],5/4,{tebalgaris:2/a5[1]})}
-              ${svgkgaris([[-6,(18+25)/4],[9,(25-27)/4]],{tebalgaris:2/a5[1]})}
-              ${svgkgaris([[0,0],tiA],{tebalgaris:2/a5[1]})}
-              ${svgkgaris([tiD,tiB],{tebalgaris:2/a5[1],warna:"blue"})}
-              ${svgkgaris([tiC,tiB],{tebalgaris:2/a5[1],warna:"red"})}
-              ${svgkgaris([tiA,[3,0]],{tebalgaris:2/a5[1],dash:"0.1"})}
-              ${svgkgaris([tiA,tiD],{tebalgaris:2/a5[1],warna:"blue"})}
-              ${svgkgaris([tiO,tiD],{tebalgaris:2/a5[1],warna:"red"})}
-              ${svgklabelgaris([tiA,tiD],namalabel="5 &minus; &#119903;",{rasio:a5[1],anchor:"middle",baseline:"auto",yplus:5,rotasi:-Math.atan(4/3)*180/Math.PI,warna:"blue"})}
-              ${svgklabelgaris([tiB,tiD],namalabel="5 + &#119903;",{rasio:a5[1],anchor:"middle",yplus:5,warna:"blue"})}
-              ${svgklabelgaris([tiB,tiC],namalabel="&#119903;",{rasio:a5[1],anchor:"end",xplus:-3,warna:"red"})}
-              ${svgklabelgaris([tiO,tiD],namalabel="&#119903;",{rasio:a5[1],anchor:"end",xplus:-2,warna:"red"})}
-              ${svgkgaris([tiC,[7,0]],{tebalgaris:2/a5[1],warna:"green"})}
-              ${svgkgaris([[7,1],[7,0]],{tebalgaris:2/a5[1],warna:"green"})}
-              </svg>`;
-              document.getElementById("tempatsvg6").innerHTML = String.raw`${svgkoord([5,8],[-1,2],{rasio:a5[2],ukuranhuruf:2})}
-              ${svgkling([6+1/4,0],5/4,{tebalgaris:2/a5[2]})}
-              ${svgkgaris([[-6,(18+25)/4],[9,(25-27)/4]],{tebalgaris:2/a5[2]})}
-              ${svgkgaris([tiC,tiB],{tebalgaris:2/a5[2],warna:"red"})}
-              ${svgkgaris([tiC,[7,0]],{tebalgaris:2/a5[2],warna:"green"})}
-              ${svgkgaris([[7,1],[7,0]],{tebalgaris:2/a5[2],warna:"green"})}
-              ${svgklabelgaris([[7,0],tiC],namalabel="&#119886;",{rasio:a5[2],anchor:"middle",baseline:"hanging",yplus:-3,warna:"green",ukuran:1.5})}
-              ${svgklabelgaris([[7,0],[7,1]],namalabel="&#119899;",{rasio:a5[2],anchor:"start",baseline:"central",xplus:3,warna:"green",ukuran:1.5})}
-              ${svgklabelgaris([tiB,tiC],namalabel="&#119903;",{rasio:a5[2],anchor:"end",xplus:-3,warna:"red",ukuran:1.5})}
-              </svg>`;
-            </script>
-            <div class="w3-row">
-      <div class="w3-col s6">
-       \(\begin{aligned}
-       \dfrac{5+r}{5-r}&=\dfrac53\\[4pt]
-       15+3r&=25-5r\\
-    8r&=10\\
-    r&=\dfrac{10}8\\
-    &=\dfrac54
-    \end{aligned}\)
-      </div>
-      <div class="w3-col s6">
-        \(\begin{aligned}
-        a:n:r&=3:4:5\\
-        a:n:\dfrac54&=3:4:5\\[4pt]
-        a:n:\dfrac54&=\dfrac34:1:\dfrac54
-        \end{aligned}\) <br>
-    \(a=\dfrac34\), <e><em>n</em> = 1</e><br><br>
-    \(m=5+\dfrac54+\dfrac34=7\)<br><br>
-    <e><em>m</em> + <em>n</em> = 7 + 1 = 8</e>
-      </div>
-    </div></div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>m</em> + <em>n</em> = 8</e>.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-  </details>
-  <hr>
-  </div>
+    </header>
 
-  <br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div><br>
-  <script>soal(lingk,2,1)</script>
-</div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Lingkaran</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <div id="geosvg-snbt-1" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+                Diketahui suatu lingkaran kecil dengan radius $3\sqrt{2}$ melalui pusat suatu lingkaran besar yang mempunyai radius $6$. Ruas garis yang menghubungkan dua titik potong lingkaran merupakan diameter dari lingkaran kecil, seperti pada gambar. Luas daerah irisan kedua lingkaran adalah ...
+                <ol class="pilgan" type="A">
+                    <li>$18\pi + 18$</li>
+                    <li>$14\pi - 15$</li>
+                    <li>$18\pi - 18$</li>
+                    <li>$10\pi + 10$</li>
+                    <li>$14\pi + 14$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">SBMPTN 2017</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Daerah irisan kedua lingkaran terdiri dari setengah lingkaran kecil ditambah daerah tembereng dari lingkaran besar:</p>
+                    \[
+                    \begin{aligned}
+                    L_{\text{irisan}} &= \frac{1}{2} L_{\text{lingkaran kecil}} + L_{\text{tembereng besar}} \\
+                    &= \frac{1}{2} \pi \left(3\sqrt{2}\right)^2 + \left(\frac{1}{4}\pi (6)^2 - \frac{1}{2}(6)^2\right) \\
+                    &= \frac{1}{2} \pi (18) + (9\pi - 18) \\
+                    &= 9\pi + 9\pi - 18 \\
+                    &= 18\pi - 18
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, luas daerah irisan kedua lingkaran adalah $18\pi - 18$.<br><strong>Jawaban: C</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <div id="geosvg-snbt-2" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+                Jarak minimal titik pada lingkaran $(x + 5)^2 + (y - 12)^2 = 196$ ke titik asal $(0, 0)$ adalah ...
+                <ol class="pilgan" type="A">
+                    <li>$1$</li>
+                    <li>$\sqrt{2}$</li>
+                    <li>$\dfrac{1}{2}$</li>
+                    <li>$13$</li>
+                    <li>$14$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">SBMPTN / Ujian Masuk PTN</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Dari persamaan lingkaran $(x + 5)^2 + (y - 12)^2 = 196$, diperoleh:</p>
+                    <ul>
+                        <li>Titik pusat lingkaran $P(-5, 12)$</li>
+                        <li>Jari-jari lingkaran $r = \sqrt{196} = 14$</li>
+                    </ul>
+                    <p>Jarak dari titik pusat $P(-5, 12)$ ke titik asal $O(0, 0)$ adalah:</p>
+                    \[
+                    d = \sqrt{(-5 - 0)^2 + (12 - 0)^2} = \sqrt{25 + 144} = \sqrt{169} = 13
+                    \]
+                    <p>Karena jarak pusat ke titik asal adalah $13$ dan jari-jari lingkaran adalah $14$, maka titik asal $O(0, 0)$ terletak di dalam lingkaran. Jarak minimal dari titik asal ke lingkaran adalah:</p>
+                    \[
+                    \text{Jarak minimal} = |d - r| = |13 - 14| = |-1| = 1
+                    \]
+                    <div class="kesimpulan">Jadi, jarak minimal titik pada lingkaran ke titik $(0, 0)$ adalah $1$.<br><strong>Jawaban: A</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <div id="geosvg-snbt-3" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+                Jarak minimal titik pada lingkaran $(x - 3)^2 + (y + 2)^2 = 16$ ke titik $(6, 2)$ adalah ...
+                <ol class="pilgan" type="A">
+                    <li>$1$</li>
+                    <li>$2$</li>
+                    <li>$3$</li>
+                    <li>$6$</li>
+                    <li>$7$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">SBMPTN / Ujian Masuk PTN</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Persamaan lingkaran $(x - 3)^2 + (y + 2)^2 = 16$ memiliki:</p>
+                    <ul>
+                        <li>Pusat lingkaran $P(3, -2)$</li>
+                        <li>Jari-jari $r = \sqrt{16} = 4$</li>
+                    </ul>
+                    <p>Jarak antara pusat $P(3, -2)$ dan titik $A(6, 2)$ adalah:</p>
+                    \[
+                    d = \sqrt{(6 - 3)^2 + (2 - (-2))^2} = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5
+                    \]
+                    <p>Karena jarak $d = 5 > r = 4$, maka titik $A(6, 2)$ berada di luar lingkaran. Jarak minimal dari titik $A$ ke keliling lingkaran adalah:</p>
+                    \[
+                    \text{Jarak minimal} = d - r = 5 - 4 = 1
+                    \]
+                    <div class="kesimpulan">Jadi, jarak minimal titik pada lingkaran ke titik $(6, 2)$ adalah $1$.<br><strong>Jawaban: A</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <div id="geosvg-snbt-4" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+                Diberikan lingkaran pada bidang koordinat dengan titik pusat $(a, b)$ dan memotong sumbu-$X$ di titik $(3, 0)$ dan $(9, 0)$. Jika garis yang melalui titik $(0, 3)$ menyinggung lingkaran di titik $(3, 0)$, maka nilai $a^2 - b^2$ adalah ...
+                <ol class="pilgan" type="A">
+                    <li>$9$</li>
+                    <li>$18$</li>
+                    <li>$27$</li>
+                    <li>$36$</li>
+                    <li>$45$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">SBMPTN / Ujian Masuk PTN</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Karena lingkaran memotong sumbu-$X$ di $(3, 0)$ dan $(9, 0)$, koordinat $x$ dari pusat lingkaran adalah titik tengah dari kedua titik potong tersebut:</p>
+                    \[
+                    a = \frac{3 + 9}{2} = 6
+                    \]
+                    <p>Garis singgung $g$ melalui titik $(0, 3)$ dan $(3, 0)$. Gradien garis $g$ adalah:</p>
+                    \[
+                    m_1 = \frac{0 - 3}{3 - 0} = -1
+                    \]
+                    <p>Garis yang menghubungkan titik pusat lingkaran $(6, b)$ dengan titik singgung $(3, 0)$ tegak lurus dengan garis singgung $g$, sehingga gradiennya adalah:</p>
+                    \[
+                    m_2 = -\frac{1}{m_1} = -\frac{1}{-1} = 1
+                    \]
+                    <p>Dari definisi gradien antara dua titik $(3, 0)$ dan $(6, b)$:</p>
+                    \[
+                    \frac{b - 0}{6 - 3} = 1 \iff \frac{b}{3} = 1 \iff b = 3
+                    \]
+                    <p>Sehingga nilai $a^2 - b^2$ adalah:</p>
+                    \[
+                    a^2 - b^2 = 6^2 - 3^2 = 36 - 9 = 27
+                    \]
+                    <div class="kesimpulan">Jadi, nilai $a^2 - b^2 = 27$.<br><strong>Jawaban: C</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <div id="geosvg-snbt-5" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+                Titik pusat lingkaran yang menyinggung garis $y = -\sqrt{3}x + 2$ dan menyinggung garis $y = 2$ di titik $(3, 2)$ adalah ...
+                <ol class="pilgan" type="A">
+                    <li>$(3, 2 + \sqrt{3})$</li>
+                    <li>$(3, 2 + 2\sqrt{3})$</li>
+                    <li>$(3, 2 + 3\sqrt{3})$</li>
+                    <li>$(3, 3\sqrt{3})$</li>
+                    <li>$(3, 2\sqrt{3})$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="/" target="_blank" rel="noopener noreferrer">SKMP September 2020</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Karena lingkaran menyinggung garis mendatar $y = 2$ di titik $(3, 2)$, maka garis normal yang melalui titik singgung adalah garis vertikal $x = 3$.</p>
+                    <p>Dengan demikian, titik pusat lingkaran dapat dinyatakan sebagai $P(3, b)$ dengan $b > 2$.</p>
+                    <p>Jari-jari lingkaran adalah jarak dari titik pusat $P(3, b)$ ke garis $y = 2$:</p>
+                    \[
+                    r = |b - 2| = b - 2
+                    \]
+                    <p>Jari-jari lingkaran juga sama dengan jarak dari $P(3, b)$ ke garis $\sqrt{3}x + y - 2 = 0$:</p>
+                    \[
+                    r = \frac{|\sqrt{3}(3) + b - 2|}{\sqrt{(\sqrt{3})^2 + 1^2}} = \frac{3\sqrt{3} + b - 2}{\sqrt{3 + 1}} = \frac{b - 2 + 3\sqrt{3}}{2}
+                    \]
+                    <p>Samakan kedua bentuk $r$ tersebut:</p>
+                    \[
+                    \begin{aligned}
+                    b - 2 &= \frac{b - 2 + 3\sqrt{3}}{2} \\
+                    2b - 4 &= b - 2 + 3\sqrt{3} \\
+                    b &= 2 + 3\sqrt{3}
+                    \end{aligned}
+                    \]
+                    <p>Sehingga koordinat titik pusat lingkaran adalah $(3, 2 + 3\sqrt{3})$.</p>
+                    <div class="kesimpulan">Jadi, titik pusat lingkarannya adalah $(3, 2 + 3\sqrt{3})$.<br><strong>Jawaban: C</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 6 -->
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <div id="geosvg-snbt-6" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+                Diketahui persamaan lingkaran $C_1$ dan $C_2$ berturut-turut adalah $x^2 + y^2 = 25$ dan $(x - a)^2 + y^2 = r^2$. Lingkaran $C_1$ dan $C_2$ bersinggungan di titik $(5, 0)$. Jika garis $l$ adalah garis singgung lingkaran $C_1$ di titik $(3, 4)$ yang merupakan garis singgung juga untuk lingkaran $C_2$ di titik $(m, n)$, maka nilai $m + n = \dots$
+                <ol class="pilgan" type="A">
+                    <li>$5$</li>
+                    <li>$6$</li>
+                    <li>$7$</li>
+                    <li>$8$</li>
+                    <li>$9$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="/" target="_blank" rel="noopener noreferrer">SIMAK UI 2019</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>Lingkaran $C_1$ memiliki pusat $(0, 0)$ dan jari-jari $R_1 = 5$. Karena $C_1$ dan $C_2$ bersinggungan luar di $(5, 0)$, maka titik pusat $C_2$ adalah $(a, 0)$ dengan $a = 5 + r$.</p>
+                    <p>Persamaan garis singgung $l$ pada $C_1$ di titik $(3, 4)$ adalah:</p>
+                    \[
+                    x_1 x + y_1 y = 25 \iff 3x + 4y = 25 \iff 3x + 4y - 25 = 0
+                    \]
+                    <p>Karena garis $l$ juga menyinggung lingkaran $C_2$, maka jarak dari pusat $C_2(5 + r, 0)$ ke garis $l$ harus sama dengan jari-jari $r$:</p>
+                    \[
+                    \begin{aligned}
+                    r &= \frac{|3(5 + r) + 4(0) - 25|}{\sqrt{3^2 + 4^2}} \\
+                    r &= \frac{|15 + 3r - 25|}{5} = \frac{|3r - 10|}{5}
+                    \end{aligned}
+                    \]
+                    <p>Karena posisi garis singgung luar, kita ambil $10 - 3r > 0$:</p>
+                    \[
+                    5r = 10 - 3r \iff 8r = 10 \iff r = \frac{10}{8} = \frac{5}{4}
+                    \]
+                    <p>Titik pusat $C_2$ adalah $\left(5 + \frac{5}{4}, 0\right) = \left(\frac{25}{4}, 0\right)$.</p>
+                    <p>Jari-jari lingkaran ke titik singgung $(m, n)$ tegak lurus dengan garis $l$. Berdasarkan kesebangunan segitiga dengan perbandingan arah normal $3 : 4 : 5$:</p>
+                    \[
+                    \Delta x = \frac{3}{5} r = \frac{3}{5} \left(\frac{5}{4}\right) = \frac{3}{4}, \quad \Delta y = \frac{4}{5} r = \frac{4}{5} \left(\frac{5}{4}\right) = 1
+                    \]
+                    <p>Maka koordinat titik singgung $(m, n)$ adalah:</p>
+                    \[
+                    m = \frac{25}{4} + \frac{3}{4} = \frac{28}{4} = 7, \quad n = 0 + 1 = 1
+                    \]
+                    <p>Sehingga diperoleh nilai:</p>
+                    \[
+                    m + n = 7 + 1 = 8
+                    \]
+                    <div class="kesimpulan">Jadi, nilai $m + n$ adalah $8$.<br><strong>Jawaban: D</strong></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (typeof GeoSVG === "undefined") return;
+
+            // DIAGRAM SOAL 1: Dua Lingkaran Berpotongan (Irisan)
+            const el1 = document.getElementById("geosvg-snbt-1");
+            if (el1) {
+                const W = 320, H = 220;
+                const geo = new GeoSVG("geosvg-snbt-1", W, H, { margin: 10, title: "Irisan Dua Lingkaran" });
+                if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+
+                const pBesar = [130, 110];
+                const rBesar = 75; // R = 6
+                const rKecil = 53; // r = 3*sqrt(2) approx 4.24 -> 53 px
+
+                // Pusat lingkaran kecil melalui keliling lingkaran besar
+                const pKecil = [130 + rKecil, 110];
+
+                // Gambar lingkaran besar dan kecil
+                geo.buatLingkaran(pBesar, rBesar, { stroke: "#1e293b", strokeWidth: 2, fill: "rgba(241, 245, 249, 0.4)" });
+                geo.buatLingkaran(pKecil, rKecil, { stroke: "#2563eb", strokeWidth: 2, fill: "rgba(59, 130, 246, 0.2)" });
+
+                // Tali busur perpotongan (diameter lingkaran kecil)
+                const pPotong1 = [130 + rKecil, 110 - rKecil];
+                const pPotong2 = [130 + rKecil, 110 + rKecil];
+                geo.buatSegmen(pPotong1, pPotong2, { stroke: "#dc2626", strokeWidth: 2 });
+
+                geo.buatTitik(pBesar, { label: "P₁", labelPosition: "middle-left", size: 3.5 });
+                geo.buatTitik(pKecil, { label: "P₂", labelPosition: "middle-center", size: 3, color: "#2563eb" });
+            }
+
+            // DIAGRAM SOAL 2: Jarak Lingkaran Pusat (-5, 12) ke (0, 0)
+            const el2 = document.getElementById("geosvg-snbt-2");
+            if (el2) {
+                const W = 320, H = 200;
+                const geo = new GeoSVG("geosvg-snbt-2", W, H, { margin: 10, title: "Lingkaran Pusat (-5, 12) dan Titik (0, 0)" });
+                if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+
+                // Skala koordinat
+                const origin = [220, 150];
+                const scale = 8;
+                const pPusat = [origin[0] - 5 * scale, origin[1] - 12 * scale];
+                const rad = 14 * scale;
+
+                // Sumbu Kartesius
+                geo.buatSegmen([30, origin[1]], [290, origin[1]], { stroke: "#94a3b8", strokeWidth: 1.5 });
+                geo.buatSegmen([origin[0], 20], [origin[0], 180], { stroke: "#94a3b8", strokeWidth: 1.5 });
+
+                // Lingkaran
+                geo.buatLingkaran(pPusat, rad, { stroke: "#2563eb", strokeWidth: 2, fill: "rgba(59, 130, 246, 0.08)" });
+
+                // Garis jarak pusat ke (0, 0)
+                geo.buatSegmen(pPusat, origin, { stroke: "#ef4444", strokeWidth: 1.8, dashed: "4 3" });
+
+                geo.buatTitik(origin, { label: "O(0, 0)", labelPosition: "bottom-right", size: 3.5, color: "#1e293b" });
+                geo.buatTitik(pPusat, { label: "P(-5, 12)", labelPosition: "top-left", size: 3.5, color: "#2563eb" });
+
+                geo.buatTeks((origin[0] + pPusat[0]) / 2 + 10, (origin[1] + pPusat[1]) / 2, "d = 13", {
+                    fontSize: "11px", fontWeight: "bold", fill: "#ef4444"
+                });
+            }
+
+            // DIAGRAM SOAL 3: Jarak Lingkaran Pusat (3, -2) ke (6, 2)
+            const el3 = document.getElementById("geosvg-snbt-3");
+            if (el3) {
+                const W = 320, H = 200;
+                const geo = new GeoSVG("geosvg-snbt-3", W, H, { margin: 10, title: "Lingkaran Pusat (3, -2) ke Titik (6, 2)" });
+                if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+
+                const origin = [70, 90];
+                const scale = 20;
+                const pPusat = [origin[0] + 3 * scale, origin[1] + 2 * scale];
+                const pA = [origin[0] + 6 * scale, origin[1] - 2 * scale];
+                const rad = 4 * scale;
+
+                // Sumbu Kartesius
+                geo.buatSegmen([20, origin[1]], [290, origin[1]], { stroke: "#94a3b8", strokeWidth: 1.2 });
+                geo.buatSegmen([origin[0], 20], [origin[0], 180], { stroke: "#94a3b8", strokeWidth: 1.2 });
+
+                geo.buatLingkaran(pPusat, rad, { stroke: "#0284c7", strokeWidth: 2, fill: "rgba(2, 132, 199, 0.08)" });
+                geo.buatSegmen(pPusat, pA, { stroke: "#dc2626", strokeWidth: 1.8 });
+
+                geo.buatTitik(pPusat, { label: "P(3, -2)", labelPosition: "bottom-left", size: 3.5, color: "#0284c7" });
+                geo.buatTitik(pA, { label: "A(6, 2)", labelPosition: "top-right", size: 3.5, color: "#dc2626" });
+            }
+
+            // DIAGRAM SOAL 4: Lingkaran Memotong Sumbu-X dan Garis Singgung
+            const el4 = document.getElementById("geosvg-snbt-4");
+            if (el4) {
+                const W = 320, H = 220;
+                const geo = new GeoSVG("geosvg-snbt-4", W, H, { margin: 10, title: "Lingkaran Memotong Sumbu X" });
+                if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+
+                const origin = [40, 160];
+                const scale = 20;
+
+                // Sumbu
+                geo.buatSegmen([20, origin[1]], [300, origin[1]], { stroke: "#94a3b8", strokeWidth: 1.5 });
+                geo.buatSegmen([origin[0], 20], [origin[0], 200], { stroke: "#94a3b8", strokeWidth: 1.5 });
+
+                const p1 = [origin[0] + 3 * scale, origin[1]];
+                const p2 = [origin[0] + 9 * scale, origin[1]];
+                const pPusat = [origin[0] + 6 * scale, origin[1] - 3 * scale];
+                const rad = Math.sqrt(3 * 3 + 3 * 3) * scale; // r = 3*sqrt(2)
+
+                geo.buatLingkaran(pPusat, rad, { stroke: "#2563eb", strokeWidth: 2, fill: "rgba(59, 130, 246, 0.08)" });
+
+                // Garis singgung melalui (0, 3) dan (3, 0)
+                const ptY = [origin[0], origin[1] - 3 * scale];
+                geo.buatSegmen([origin[0] - 10, origin[1] - 4 * scale], [origin[0] + 5 * scale, origin[1] + 2 * scale], {
+                    stroke: "#dc2626", strokeWidth: 2
+                });
+
+                geo.buatSegmen(pPusat, p1, { stroke: "#059669", strokeWidth: 1.5, dashed: "3 3" });
+                geo.buatSiku(pPusat, p1, ptY, { size: 7, stroke: "#059669" });
+
+                geo.buatTitik(p1, { label: "(3, 0)", labelPosition: "bottom-left", size: 3 });
+                geo.buatTitik(p2, { label: "(9, 0)", labelPosition: "bottom-right", size: 3 });
+                geo.buatTitik(pPusat, { label: "P(6, 3)", labelPosition: "top-center", size: 3.5, color: "#2563eb" });
+                geo.buatTitik(ptY, { label: "(0, 3)", labelPosition: "middle-left", size: 3 });
+            }
+
+            // DIAGRAM SOAL 5: Lingkaran Menyinggung y = 2 dan y = -sqrt(3)x + 2
+            const el5 = document.getElementById("geosvg-snbt-5");
+            if (el5) {
+                const W = 320, H = 220;
+                const geo = new GeoSVG("geosvg-snbt-5", W, H, { margin: 10, title: "Lingkaran Menyinggung Garis" });
+                if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+
+                const origin = [50, 180];
+                const scale = 18;
+
+                // Garis horizontal y = 2
+                const y2 = origin[1] - 2 * scale;
+                geo.buatSegmen([20, y2], [300, y2], { stroke: "#059669", strokeWidth: 1.8 });
+                geo.buatTeks(290, y2 - 8, "y = 2", { fontSize: "11px", fill: "#059669" });
+
+                // Garis y = -sqrt(3)x + 2
+                const pGarisA = [origin[0], y2];
+                const pGarisB = [origin[0] + 5 * scale, y2 + 5 * Math.SQRT3 * scale];
+                geo.buatSegmen([origin[0] - 15, y2 - 15 * Math.SQRT3], [origin[0] + 4 * scale, y2 + 4 * scale * 1.73], {
+                    stroke: "#dc2626", strokeWidth: 1.8
+                });
+
+                // Titik singgung (3, 2)
+                const pSinggung = [origin[0] + 3 * scale, y2];
+                const rad = (3 * Math.sqrt(3)) * scale * 0.75;
+                const pPusat = [pSinggung[0], pSinggung[1] - rad];
+
+                geo.buatLingkaran(pPusat, rad, { stroke: "#2563eb", strokeWidth: 2, fill: "rgba(59, 130, 246, 0.1)" });
+                geo.buatSegmen(pPusat, pSinggung, { stroke: "#2563eb", strokeWidth: 1.5, dashed: "3 3" });
+
+                geo.buatTitik(pSinggung, { label: "(3, 2)", labelPosition: "bottom-center", size: 3.5, color: "#059669" });
+                geo.buatTitik(pPusat, { label: "P(3, b)", labelPosition: "top-center", size: 3.5, color: "#2563eb" });
+            }
+
+            // DIAGRAM SOAL 6: Dua Lingkaran Bersinggungan Luar & Garis Singgung
+            const el6 = document.getElementById("geosvg-snbt-6");
+            if (el6) {
+                const W = 340, H = 220;
+                const geo = new GeoSVG("geosvg-snbt-6", W, H, { margin: 10, title: "SIMAK UI Lingkaran C1 dan C2" });
+                if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+
+                const origin = [70, 150];
+                const scale = 14;
+
+                // Sumbu koordinat
+                geo.buatSegmen([20, origin[1]], [320, origin[1]], { stroke: "#94a3b8", strokeWidth: 1.5 });
+                geo.buatSegmen([origin[0], 20], [origin[0], 200], { stroke: "#94a3b8", strokeWidth: 1.5 });
+
+                // C1: Pusat (0, 0), r = 5
+                const r1 = 5 * scale;
+                geo.buatLingkaran(origin, r1, { stroke: "#2563eb", strokeWidth: 2, fill: "rgba(59, 130, 246, 0.08)" });
+
+                // C2: Pusat (6.25, 0), r = 1.25
+                const pC2 = [origin[0] + 6.25 * scale, origin[1]];
+                const r2 = 1.25 * scale;
+                geo.buatLingkaran(pC2, r2, { stroke: "#059669", strokeWidth: 2, fill: "rgba(16, 185, 129, 0.1)" });
+
+                // Titik singgung (3, 4) pada C1
+                const pT1 = [origin[0] + 3 * scale, origin[1] - 4 * scale];
+                // Titik singgung (7, 1) pada C2
+                const pT2 = [origin[0] + 7 * scale, origin[1] - 1 * scale];
+
+                // Garis singgung persekutuan luar
+                geo.buatSegmen([origin[0] + 1 * scale, origin[1] - 5.5 * scale], [origin[0] + 9 * scale, origin[1] + 0.5 * scale], {
+                    stroke: "#dc2626", strokeWidth: 2
+                });
+
+                // Jari-jari tegak lurus ke garis singgung
+                geo.buatSegmen(origin, pT1, { stroke: "#2563eb", strokeWidth: 1.2, dashed: "3 3" });
+                geo.buatSegmen(pC2, pT2, { stroke: "#059669", strokeWidth: 1.2, dashed: "3 3" });
+
+                geo.buatTitik(pT1, { label: "(3, 4)", labelPosition: "top-left", size: 3.5, color: "#2563eb" });
+                geo.buatTitik(pT2, { label: "(m, n)", labelPosition: "top-right", size: 3.5, color: "#059669" });
+                geo.buatTitik([origin[0] + 5 * scale, origin[1]], { label: "(5, 0)", labelPosition: "bottom-center", size: 3 });
+                geo.buatTitik(origin, { label: "O", labelPosition: "bottom-left", size: 3 });
+            }
+        });
+    </script>
 </body>
-</html> 
+
+</html>

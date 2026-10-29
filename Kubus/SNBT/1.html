@@ -1,372 +1,505 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>SNBT Zone : Kubus</title>
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-   </head> 
-     <body> 
-      <div class="separator w3-hide" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRx7fXkP-K3goXiDtonn2dJvSr8k-fYYGMDvfV_33Rm7w2yTyfE2Di5qvgUdAaxARHY6EGS7DE1wixvZ7HwKKx73EkjwYxR3vpmIl0dccFgLzAYy34TsfOJOHMY5hM1XqCQR4ImTZK0JyeoosQ6uGdI-lwH1npWIlgzcOfdKNyh0OEGXl1qdHFeAt7vg/s1080/KUBUS%20SNBT.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRx7fXkP-K3goXiDtonn2dJvSr8k-fYYGMDvfV_33Rm7w2yTyfE2Di5qvgUdAaxARHY6EGS7DE1wixvZ7HwKKx73EkjwYxR3vpmIl0dccFgLzAYy34TsfOJOHMY5hM1XqCQR4ImTZK0JyeoosQ6uGdI-lwH1npWIlgzcOfdKNyh0OEGXl1qdHFeAt7vg/s320/KUBUS%20SNBT.png"/></a></div>
-      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Kubus</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-      <h3>Tipe: </h3>
-      <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">Standar</a><span id="snbt" class="w3-bar-item w3-deep-purple w3-hide">SNBT</span><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-      <br>
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>
+<!DOCTYPE html>
+<html lang="id">
 
-        <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Diketahui suatu kubus <em>ABCD.EFGH</em> memiliki panjang sisi <em>a</em> cm. Titik <em>P</em> berada di rusuk <em>AB</em> sehingga <e><em>AP</em>:<em>PB</em> = 1:3,</e> titik <em>Q</em> berada di rusuk <em>BC</em> sehingga <e><em>BQ</em>:<em>QC</em> = 3:1,</e> titik <em>R</em> berada di rusuk <em>BF</em> sehingga <e><em>BR</em>:<em>RF</em> = 3:1.</e> Jika <em>&alpha;</em> adalah sudut antara bidang <em>PQR</em> dan garis <em>DR</em>, maka nilai tan <em>&alpha;</em> = ....
-          <div class="w3-row">
-            <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                    <li class="pb">\(\dfrac{5\sqrt2}{14}\)</li>
-                    <li class="pb">\(\dfrac{14}{\sqrt{246}}\)</li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal SNBT - Kubus</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="../../scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Kubus</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Diketahui suatu kubus \(ABCD.EFGH\) memiliki panjang rusuk \(a\text{ cm}\). Titik \(P\) berada di rusuk \(AB\) sehingga \(AP : PB = 1 : 3\), titik \(Q\) berada di rusuk \(BC\) sehingga \(BQ : QC = 3 : 1\), dan titik \(R\) berada di rusuk \(BF\) sehingga \(BR : RF = 3 : 1\). Jika \(\alpha\) adalah sudut antara bidang \(PQR\) dan garis \(DR\), maka nilai \(\tan\alpha = \dots\)
+                </p>
+                <ol class="pilgan">
+                    <li>\(\dfrac{5\sqrt{2}}{14}\)</li>
+                    <li>\(\dfrac{14}{\sqrt{246}}\)</li>
                     <li>\(\dfrac{7\sqrt{246}}{123}\)</li>
+                    <li>\(\dfrac{\sqrt{246}}{14}\)</li>
+                    <li>\(\dfrac{1}{2}\sqrt{2}\)</li>
                 </ol>
             </div>
-            <div class="w3-col s6">
-                <ol class="pas1" start="4" type="A">
-                    <li class="pb">\(\dfrac{\sqrt{246}}{14}\)</li>
-                    <li>\(\dfrac12\sqrt2\)</li>
+            <div class="soal-sumber">
+                Grup Matematika Idhamdaz
+            </div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Dari perbandingan yang diberikan:
+                    </p>
+                    <ul>
+                        <li>\(PB = \frac{3}{4} a\) dan \(BQ = \frac{3}{4} a\) pada bidang alas \(ABCD\)</li>
+                        <li>\(BR = \frac{3}{4} a\) pada rusuk tegak \(BF\)</li>
+                    </ul>
+                    <p>
+                        Diagonal bidang alas adalah \(DB = a\sqrt{2}\). Garis \(PQ\) memotong diagonal \(DB\) di titik \(S\).
+                        Karena \(\triangle PBQ\) adalah segitiga siku-siku sama kaki, garis tinggi ke \(PQ\) membagi sudut siku-siku di \(B\) menjadi dua sama besar, sehingga:
+                        \[
+                        SB = \frac{3}{4} \left(\frac{1}{2} DB\right) = \frac{3}{4} \left(\frac{1}{2} a\sqrt{2}\right) = \frac{3}{8} a\sqrt{2}
+                        \]
+                    </p>
+                    <p>
+                        Karena rusuk \(BF \perp\) bidang alas \(ABCD\), maka segitiga \(\triangle DBR\) adalah segitiga siku-siku di \(B\).
+                        Garis \(RS\) adalah garis pada bidang \(PQR\) yang sebidang dengan \(DR\). Sudut antara bidang \(PQR\) dan garis \(DR\) adalah:
+                        \[
+                        \alpha = \angle SRD = \angle BRD - \angle BRS
+                        \]
+                    </p>
+                    <p>
+                        Hitung nilai tangen dari masing-masing sudut:
+                        \[
+                        \tan\angle BRD = \frac{DB}{BR} = \frac{a\sqrt{2}}{\frac{3}{4}a} = \frac{4}{3}\sqrt{2}
+                        \]
+                        \[
+                        \tan\angle BRS = \frac{SB}{BR} = \frac{\frac{3}{8}a\sqrt{2}}{\frac{3}{4}a} = \frac{1}{2}\sqrt{2}
+                        \]
+                    </p>
+                    <p>
+                        Gunakan rumus selisih tangen:
+                        \[
+                        \begin{aligned}
+                        \tan\alpha &= \frac{\tan\angle BRD - \tan\angle BRS}{1 + \tan\angle BRD \cdot \tan\angle BRS} \\[8pt]
+                                   &= \frac{\frac{4}{3}\sqrt{2} - \frac{1}{2}\sqrt{2}}{1 + \left(\frac{4}{3}\sqrt{2}\right)\left(\frac{1}{2}\sqrt{2}\right)} \\[8pt]
+                                   &= \frac{\frac{5}{6}\sqrt{2}}{1 + \frac{4}{3}} = \frac{\frac{5}{6}\sqrt{2}}{\frac{7}{3}} \\[8pt]
+                                   &= \frac{5}{6}\sqrt{2} \times \frac{3}{7} = \frac{5\sqrt{2}}{14}
+                        \end{aligned}
+                        \]
+                    </p>
+
+                    <!-- Visualisasi GeoSVG Soal 1 -->
+                    <div id="geosvg-snbt-1" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, nilai \(\tan\alpha = \dfrac{5\sqrt{2}}{14}\).<br>
+                        <strong>Jawaban: A</strong>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Diketahui kubus \(ABCD.EFGH\) dengan panjang rusuk \(2\sqrt{2}\text{ cm}\). Jika titik \(P\) di tengah-tengah rusuk \(AB\) dan titik \(Q\) di tengah-tengah rusuk \(BC\), maka jarak titik \(H\) ke garis \(PQ\) adalah ....
+                </p>
+                <ol class="pilgan">
+                    <li>\(\sqrt{15}\text{ cm}\)</li>
+                    <li>\(4\text{ cm}\)</li>
+                    <li>\(\sqrt{17}\text{ cm}\)</li>
+                    <li>\(3\sqrt{2}\text{ cm}\)</li>
+                    <li>\(\sqrt{19}\text{ cm}\)</li>
                 </ol>
             </div>
-        </div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">
-              <div id="tempatsvg1"></div>
-        \(DB=a\sqrt2\)<br />
-        \(OB=\dfrac12DB=\dfrac12a\sqrt2\)<br />
-        <br />
-        <e><em>OS</em>:<em>SB</em> = <em>AP</em>:<em>PB</em> = 1:3</e>
-        \begin{aligned}
-        SB&amp;=\dfrac3{1+3}OB\\[3.6pt]
-        &amp;=\dfrac34\left(\dfrac12a\sqrt2\right)\\[3.6pt]
-        &amp;=\dfrac38a\sqrt2
-        \end{aligned}
-        \(BR=\dfrac34a\)<br />
-        <div id="tempatsvg2"></div>
-        \begin{aligned}
-        \tan\alpha&amp;=\tan\left(\angle BRD-\angle BRS\right)\\
-        &amp;=\dfrac{\tan\angle BRD-\tan\angle BRS}{1+\tan\angle BRD\tan\angle BRS}\\[3.6pt]
-        &amp;=\dfrac{\dfrac{DB}{BR}-\dfrac{SB}{BR}}{1+\dfrac{DB}{BR}\cdot\dfrac{SB}{BR}}\\[3.6pt]
-        &amp;=\dfrac{\dfrac{a\sqrt2}{\dfrac34a}-\dfrac{\dfrac38a\sqrt2}{\dfrac34a}}{1+\dfrac{a\sqrt2}{\dfrac34a}\cdot\dfrac{\dfrac38a\sqrt2}{\dfrac34a}}\\[3.6pt]
-        &amp;=\dfrac{\dfrac43\sqrt2-\dfrac12\sqrt2}{1+\dfrac43\sqrt2\cdot\dfrac12\sqrt2}\\[3.6pt]
-        &amp;=\dfrac{\dfrac56\sqrt2}{1+\dfrac43}\\[3.6pt]
-        &amp;=\dfrac{\dfrac56\sqrt2}{\dfrac73}\cdot\dfrac66\\
-        &amp;=\boxed{\boxed{\dfrac{5\sqrt2}{14}}}
-        \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, \(\tan \alpha = \dfrac{5\sqrt2}{14}\).<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        <script>
-          //,[0:margin, 1:rasio, 2:panjang rusuk samping, 3:sudut rusuk samping]
-          var a1 = [1,20,5,45];
-          var tiA = [0,a1[2]*sin(a1[3])+10];
-          var tiB = [10,a1[2]*sin(a1[3])+10];
-          var tiC = [10+a1[2]*cos(a1[3]),10];
-          var tiD = [a1[2]*cos(a1[3]),10];
-          var tiE = [0,a1[2]*sin(a1[3])];
-          var tiF = [10,a1[2]*sin(a1[3])];
-          var tiG = [10+a1[2]*cos(a1[3]),0];
-          var tiH = [a1[2]*cos(a1[3]),0];
-          var tiP = [10/3,a1[2]*sin(a1[3])+10];
-          var tiQ = [10+2*a1[2]*cos(a1[3])/3,10+a1[2]*cos(a1[3])/3];
-          var tiR = [10,a1[2]*sin(a1[3])+10/3];
-          var tiO = titikpotong([tiA,tiC],[tiB,tiD]);
-          var tiS = titikpotong([tiP,tiQ],[tiB,tiD]);
-          var tiB2 = [10*Math.sqrt(2),20/3];
-          var tiD2 = [0,20/3];
-          var tiR2 = [10*Math.sqrt(2),0];
-          var tiS2 = [20*Math.sqrt(2)/3,20/3];
-          document.getElementById("tempatsvg1").innerHTML = String.raw`${svgawal(10+a1[2]*cos(a1[3]),10+a1[2]*sin(a1[3]),a1[1],a1[0])}
-          ${svgsegi([tiB,tiC,tiG,tiF],{tebalgaris:2/a1[1]})}
-          ${svgsegi([tiE,tiF,tiG,tiH],{tebalgaris:2/a1[1]})}
-          ${svggaris([tiH,tiD],{tebalgaris:2/a1[1],dash:"0.4"})}
-          ${svggaris([tiA,tiD],{tebalgaris:2/a1[1],dash:"0.4"})}
-          ${svggaris([tiC,tiD],{tebalgaris:2/a1[1],dash:"0.4"})}
-          ${svggaris([tiA,tiC],{tebalgaris:2/a1[1],dash:"0.4"})}
-          ${svggaris([tiB,tiD],{tebalgaris:2/a1[1],dash:"0.4"})}
-          ${svggaris([tiR,tiD],{tebalgaris:2/a1[1],dash:"0.4"})}
-          ${svggaris([tiP,tiQ],{tebalgaris:2/a1[1],dash:"0.4"})}
-          ${svggaris([tiP,tiR],{tebalgaris:2/a1[1]})}
-          ${svggaris([tiQ,tiR],{tebalgaris:2/a1[1]})}
-          ${svgsegi([tiP,tiQ,tiR],{warnagaris:"none",isi:"blue",tampakisi:0.4})}
-          ${svgsegi([tiA,tiB,tiF,tiE],{tebalgaris:2/a1[1]})}
-          ${svglabeltitik(tiA,"A",{ukuran:1.2/a1[1],anchor:"end",baseline:"mathematical"})}
-          ${svglabeltitik(tiB,"B",{ukuran:1.2/a1[1],anchor:"middle",baseline:"hanging",xplus:0.1,yplus:0.1})}
-          ${svglabeltitik(tiC,"C",{ukuran:1.2/a1[1],baseline:"central",xplus:0.1})}
-          ${svglabeltitik(tiD,"D",{ukuran:1.2/a1[1],anchor:"end",baseline:"central",xplus:-0.2,yplus:-0.2})}
-          ${svglabeltitik(tiE,"E",{ukuran:1.2/a1[1],anchor:"end",baseline:"central",xplus:-0.2})}
-          ${svglabeltitik(tiF,"F",{ukuran:1.2/a1[1],baseline:"central",xplus:0.2,yplus:0.3})}
-          ${svglabeltitik(tiG,"G",{ukuran:1.2/a1[1],baseline:"central",xplus:0.2})}
-          ${svglabeltitik(tiH,"H",{ukuran:1.2/a1[1],anchor:"end",yplus:-0.2})}
-          ${svglabeltitik(tiP,"P",{ukuran:1.2/a1[1],anchor:"middle",baseline:"hanging",yplus:0.2})}
-          ${svglabeltitik(tiQ,"Q",{ukuran:1.2/a1[1],baseline:"central",xplus:0.2,yplus:0.2})}
-          ${svglabeltitik(tiR,"R",{ukuran:1.2/a1[1],baseline:"central",xplus:0.2,yplus:-0.2})}
-          ${svglabeltitik(tiO,"O",{ukuran:1.2/a1[1],anchor:"middle",xplus:0.1,yplus:-0.3})}
-          ${svglabeltitik(tiS,"S",{ukuran:1.2/a1[1],anchor:"middle",baseline:"hanging",yplus:0.2})}
-          </svg>`;
-          document.getElementById("tempatsvg2").innerHTML = String.raw`${svgawal(10*Math.sqrt(2),20/3,a1[1],a1[0])}
-          ${svgsegi([tiB2,tiR2,tiD2],{tebalgaris:2/a1[1]})}
-          ${svggaris([tiR2,tiS2],{tebalgaris:2/a1[1]})}
-          ${svgsudut([tiS2,tiR2,tiD2],{r:2,warnagaris:"green",tebalgaris:1/a1[1]})}
-          ${svglabeltitik(tiD2,"D",{ukuran:1.2/a1[1],anchor:"end",baseline:"mathematical",xplus:-0.2})}
-          ${svglabeltitik(tiS2,"S",{ukuran:1.2/a1[1],anchor:"middle",baseline:"hanging",yplus:0.2})}
-          ${svglabeltitik(tiB2,"B",{ukuran:1.2/a1[1],baseline:"hanging",xplus:0.1,yplus:0.2})}
-          ${svglabeltitik(tiR2,"R",{ukuran:1.2/a1[1],xplus:0.1,yplus:-0.2})}
-          ${svglabeltitik(tiR2,"&alpha;",{ukuran:1.2/a1[1],anchor:"end",baseline:"hanging",xplus:-1,yplus:0.7})}
-          </svg>`;
-        </script>
-        </div>
-        
-        <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Diketahui kubus <em>ABCD.EFGH</em> dengan panjang rusuk \(2\sqrt2\) cm. Jika <em>P</em> di tengah-tengah <em>AB</em> dan titik <em>Q</em> di tengah-tengah <em>BC</em>, maka jarak titik <em>H</em> dengan garis <em>PQ</em> adalah ... cm.
-          <div class="w3-row">
-          <div class="w3-col s6">
-            <ol class="pas1" type="A">
-              <li>\(\sqrt{15}\)</li>
-              <li>4</li>
-              <li>\(\sqrt{17}\)</li>
-            </ol>
-          </div>
-          <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-              <li>\(3\sqrt2\)</li>
-              <li>\(\sqrt{19}\)</li>
-            </ol>
-          </div>
-        </div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">SBMPTN 2018</div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">
-                <div id="tempatsvg3"></div>
-                <div class="w3-row">
-                <div class="w3-col s6">
-          Hubungkan titik <em>H</em> dan titik <em>P</em>, hubungkan titik <em>H</em> dan titik <em>Q</em>. Segitiga <em>HPQ</em> merupakan segitiga sama kaki sehingga jarak titik <em>H</em> ke garis <em>PQ</em> adalah panjang garis dari titik <em>H</em> ke tengah garis <em>PQ</em>. Misal titik tengah <em>PQ</em> adalah titik <em>R</em>.<br />
-          \({AP=PB=BQ=\dfrac12\left(2\sqrt2\right)=\sqrt2}\)<br /><br />
-          \({PQ=\sqrt2\cdot\sqrt2=2}\)
-          \begin{aligned}
-          PR&amp;=\dfrac12PQ\\
-          &amp;=\dfrac12(2)\\
-          &amp;=1
-          \end{aligned}
-          </div>
-                <div class="w3-col s6">\(HA=2\sqrt2\cdot\sqrt2=4\)\begin{aligned}
-          HP&amp;=\sqrt{HA^2+AP^2}\\
-          &amp;=\sqrt{4^2+\left(\sqrt2\right)^2}\\
-          &amp;=\sqrt{16+4}\\
-          &amp;=\sqrt{20}
-          \end{aligned}
-          \begin{aligned}
-          HR&amp;=\sqrt{HP^2-PR^2}\\
-          &amp;=\sqrt{\left(\sqrt{20}\right)^2-1^2}\\
-          &amp;=\sqrt{20-1}\\
-          &amp;=\boxed{\boxed{\sqrt{19}}}
-          \end{aligned}</div>
-              </div>
-          </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, jarak titik <em>H</em> dengan garis <em>PQ</em> adalah \(\sqrt{19}\) cm.<br><b>JAWAB: E</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            <div class="soal-sumber">
+                SBMPTN 2018
             </div>
-          </details>
-          <hr>
-          <script>
-            var tiP3 = titiktengah([tiA,tiB]);
-            var tiQ3 = titiktengah([tiB,tiC]);
-            var tiR3 = titiktengah([tiP3,tiQ3]);
-            document.getElementById("tempatsvg3").innerHTML = String.raw`${svgawal(10+a1[2]*cos(a1[3]),10+a1[2]*sin(a1[3]),a1[1],a1[0])}
-            ${svggaris([tiR3,tiH],{tebalgaris:2/a1[1],warna:"green",dash:"0.4"})}
-          ${svgsegi([tiB,tiC,tiG,tiF],{tebalgaris:2/a1[1]})}
-          ${svgsegi([tiE,tiF,tiG,tiH],{tebalgaris:2/a1[1]})}
-          ${svggaris([tiH,tiD],{tebalgaris:2/a1[1],dash:"0.4"})}
-          ${svggaris([tiA,tiD],{tebalgaris:2/a1[1],dash:"0.4"})}
-          ${svggaris([tiC,tiD],{tebalgaris:2/a1[1],dash:"0.4"})}
-          ${svggaris([tiP3,tiH],{tebalgaris:2/a1[1],warna:"blue",dash:"0.4"})}
-          ${svggaris([tiQ3,tiH],{tebalgaris:2/a1[1],warna:"blue",dash:"0.4"})}
-          ${svggaris([tiP3,tiQ3],{tebalgaris:2/a1[1],warna:"blue",dash:"0.4"})}
-          ${svgsegi([tiA,tiB,tiF,tiE],{tebalgaris:2/a1[1]})}
-          ${svglabeltitik(tiA,"A",{ukuran:1.2/a1[1],anchor:"end",baseline:"mathematical"})}
-          ${svglabeltitik(tiB,"B",{ukuran:1.2/a1[1],anchor:"middle",baseline:"hanging",xplus:0.1,yplus:0.1})}
-          ${svglabeltitik(tiC,"C",{ukuran:1.2/a1[1],baseline:"central",xplus:0.1})}
-          ${svglabeltitik(tiD,"D",{ukuran:1.2/a1[1],anchor:"end",baseline:"central",xplus:-0.2,yplus:-0.2})}
-          ${svglabeltitik(tiE,"E",{ukuran:1.2/a1[1],anchor:"end",baseline:"central",xplus:-0.2})}
-          ${svglabeltitik(tiF,"F",{ukuran:1.2/a1[1],baseline:"central",xplus:0.2,yplus:0.3})}
-          ${svglabeltitik(tiG,"G",{ukuran:1.2/a1[1],baseline:"central",xplus:0.2})}
-          ${svglabeltitik(tiH,"H",{ukuran:1.2/a1[1],anchor:"end",yplus:-0.2})}
-          ${svglabeltitik(tiP3,"P",{ukuran:1.2/a1[1],anchor:"middle",baseline:"hanging",yplus:0.2})}
-          ${svglabeltitik(tiQ3,"Q",{ukuran:1.2/a1[1],baseline:"central",xplus:0.2,yplus:0.2})}
-          ${svglabeltitik(tiR3,"R",{ukuran:1.2/a1[1],baseline:"central",xplus:0.1,yplus:-0.6})}
-          </svg>`;
-          </script>
-        </div>
-        
-        <div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Sebuah kubus <em>ABCD.EFGH</em> memiliki panjang rusuk <em>x</em>. <em>Q</em> adalah titik tengah dari rusuk <em>GC</em>, dan <em>R</em> adalah perpanjangan garis <em>AB</em> sehingga <e><em>AB</em> + <em>BR</em> = <em>AR</em> = 4<em>x</em>.</e> Maka, perbandingan volume limas <em>Q.ARC</em> dan volume kubus <em>ABCD.EFGH</em> adalah
-          <div class="w3-row">
-          <div class="w3-col s6">
-            <ol class="pas1" type="A">
-              <li>1:1</li>
-              <li>1:2</li>
-              <li>2:1</li>
-            </ol>
-          </div>
-          <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-              <li>3:1</li>
-              <li>1:3</li>
-            </ol>
-          </div>
-        </div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">
-              <div id="tempatsvg4" class="tengah"></div>
-              <div class="w3-row">
-              <div class="w3-col s6">
-        \(t=CQ=\dfrac12x\)
-        \begin{aligned}
-        L_a&amp;=L_{ARC}\\
-        &amp;=\dfrac12\cdot AR\cdot BC\\
-        &amp;=\dfrac12\cdot4x\cdot x\\
-        &amp;=2x^2
-        \end{aligned}</div>
-              <div class="w3-col s6">\begin{aligned}
-        V_{Q.ARC}&amp;=\dfrac13L_at\\
-        &amp;=\dfrac13\cdot2x^2\cdot\dfrac12x\\
-        &amp;=\dfrac13x^3\\
-        \end{aligned}
-        \begin{aligned}
-        \dfrac{v_{Q.ARC}}{V_{ABCD.EFGH}}&amp;=\dfrac{\dfrac13x^3}{x^3}\\
-        &amp;=\dfrac13\\
-        &amp;=\boxed{\boxed{1:3}}
-        \end{aligned}</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Diketahui rusuk kubus \(s = 2\sqrt{2}\text{ cm}\).
+                    </p>
+                    <ul>
+                        <li>\(P\) titik tengah \(AB \implies AP = PB = \sqrt{2}\text{ cm}\)</li>
+                        <li>\(Q\) titik tengah \(BC \implies BQ = QC = \sqrt{2}\text{ cm}\)</li>
+                        <li>Pada \(\triangle PBQ\) siku-siku di \(B\): \(PQ = \sqrt{(\sqrt{2})^2 + (\sqrt{2})^2} = \sqrt{2 + 2} = 2\text{ cm}\)</li>
+                    </ul>
+                    <p>
+                        Hubungkan titik \(H\) ke \(P\) dan ke \(Q\). Karena simetri, \(\triangle HPQ\) adalah segitiga sama kaki (\(HP = HQ\)).
+                        Oleh karena itu, jarak titik \(H\) ke garis \(PQ\) adalah panjang garis tinggi \(HR\) dengan \(R\) merupakan titik tengah \(PQ\):
+                        \[
+                        PR = \frac{1}{2} PQ = \frac{1}{2}(2) = 1\text{ cm}
+                        \]
+                    </p>
+                    <p>
+                        Perhatikan segitiga \(\triangle HAP\) yang siku-siku di \(A\) (karena rusuk \(AD\) dan \(DH\) tegak lurus terhadap \(AB\), sehingga \(AH \perp AB\)):
+                    </p>
+                    <ul>
+                        <li>Diagonal sisi: \(HA = s\sqrt{2} = (2\sqrt{2})\sqrt{2} = 4\text{ cm}\)</li>
+                        <li>Ruas: \(AP = \sqrt{2}\text{ cm}\)</li>
+                    </ul>
+                    <p>
+                        \[
+                        HP = \sqrt{HA^2 + AP^2} = \sqrt{4^2 + (\sqrt{2})^2} = \sqrt{16 + 2} = \sqrt{18}\text{ cm}
+                        \]
+                    </p>
+                    <p>
+                        Pada \(\triangle HPR\) siku-siku di \(R\):
+                        \[
+                        \begin{aligned}
+                        HR &= \sqrt{HP^2 - PR^2} \\[6pt]
+                           &= \sqrt{(\sqrt{18})^2 - 1^2} \\[6pt]
+                           &= \sqrt{18 - 1} = \sqrt{17}\text{ cm}
+                        \end{aligned}
+                        \]
+                    </p>
+
+                    <!-- Visualisasi GeoSVG Soal 2 -->
+                    <div id="geosvg-snbt-2" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, jarak titik \(H\) dengan garis \(PQ\) adalah \(\sqrt{17}\text{ cm}\).<br>
+                        <strong>Jawaban: C</strong>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
             </div>
-              
-        </div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, perbandingan volume limas <em>Q.ARC</em> dan volume kubus <em>ABCD.EFGH</em> adalah 1:3.<br><b>JAWAB: E</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        <script>
-          var tiQ4 = titiktengah([tiG,tiC]);
-          var tiR4 = [40,tiB[1]];
-          var op1 = {tebalgaris:2/a1[1],dash:"0.4"};
-          var op2 = {tebalgaris:2/a1[1]};
-          var op3 = {tebalgaris:2/a1[1],warna:"blue",dash:"0.4"};
-          var op4 = {tebalgaris:2/a1[1],warna:"blue"};
-          document.getElementById("tempatsvg4").innerHTML = String.raw`${svgawal(40+a1[2]*cos(a1[3]),10+a1[2]*sin(a1[3]),a1[1],a1[0])}
-          ${svggaris([tiH,tiD],op1)}
-          ${svggaris([tiC,tiD],op1)}
-          ${svgsegi([tiB,tiC,tiG,tiF],op2)}
-        ${svgsegi([tiE,tiF,tiG,tiH],op2)}
-        ${svggaris([tiA,tiC],op3)}
-        ${svggaris([tiC,tiR4],op3)}
-        ${svgsegi([tiA,tiR4,tiQ4],{tebalgaris:2/a1[1],warnagaris:"none",isi:"yellow",tampakisi:0.6})}
-        ${svggaris([tiA,tiD],op1)}
-        ${svggaris([tiQ4,tiA],op3)}
-        ${svggaris([tiQ4,tiR4],op4)}
-        ${svggaris([tiB,tiR4],op4)}
-        ${svgsegi([tiA,tiB,tiF,tiE],op2)}
-        ${svglabeltitik(tiA,"A",{ukuran:1.2/a1[1],anchor:"end",baseline:"mathematical"})}
-        ${svglabeltitik(tiB,"B",{ukuran:1.2/a1[1],anchor:"middle",baseline:"hanging",xplus:0.1,yplus:0.1})}
-        ${svglabeltitik(tiC,"C",{ukuran:1.2/a1[1],xplus:0.1,yplus:-0.1})}
-        ${svglabeltitik(tiD,"D",{ukuran:1.2/a1[1],anchor:"end",baseline:"central",xplus:-0.2,yplus:-0.2})}
-        ${svglabeltitik(tiE,"E",{ukuran:1.2/a1[1],anchor:"end",baseline:"central",xplus:-0.2})}
-        ${svglabeltitik(tiF,"F",{ukuran:1.2/a1[1],baseline:"central",xplus:0.2,yplus:0.3})}
-        ${svglabeltitik(tiG,"G",{ukuran:1.2/a1[1],baseline:"central",xplus:0.2})}
-        ${svglabeltitik(tiH,"H",{ukuran:1.2/a1[1],anchor:"end",yplus:-0.2})}
-        ${svglabeltitik(tiQ4,"Q",{ukuran:1.2/a1[1],xplus:0.2,yplus:-0.1})}
-        ${svglabeltitik(tiR4,"R",{ukuran:1.2/a1[1],baseline:"central",xplus:0.1})}
-        </svg>`;
-        </script>
-        </div>
-        
-        <div class="justify" id="4"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Pada kubus <em>ABCD.EFGH</em>, <em>P</em> pada <em>EG</em> sehingga <e><em>EP</em>:<em>PG</em> = 1:2.</e> Jika jarak <em>E</em> ke garis <em>AP</em> adalah <em>a</em>, maka panjang rusuk kubus tersebut adalah
-          <div class="w3-row">
-            <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                    <li class="pb">\(\dfrac{a}{11}\sqrt2\)</li>
-                    <li class="pb">\(\dfrac{a}2\sqrt{11}\)</li>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Sebuah kubus \(ABCD.EFGH\) memiliki panjang rusuk \(x\). Titik \(Q\) adalah titik tengah dari rusuk \(GC\), dan \(R\) adalah titik pada perpanjangan garis \(AB\) sehingga \(AR = 4x\). Maka, perbandingan volume limas \(Q.ARC\) dan volume kubus \(ABCD.EFGH\) adalah ....
+                </p>
+                <ol class="pilgan">
+                    <li>\(1 : 1\)</li>
+                    <li>\(1 : 2\)</li>
+                    <li>\(2 : 1\)</li>
+                    <li>\(3 : 1\)</li>
+                    <li>\(1 : 3\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">
+                Grup Matematika Idhamdaz
+            </div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Perhatikan limas \(Q.ARC\):
+                    </p>
+                    <ul>
+                        <li>Alas limas adalah segitiga \(\triangle ARC\) yang terletak pada bidang horizontal yang memuat alas kubus.</li>
+                        <li>Tinggi limas adalah panjang garis dari puncak \(Q\) tegak lurus ke bidang alas, yaitu ruas \(QC\) (karena rusuk \(GC \perp\) bidang alas \(ABCD\)):
+                            \[
+                            t = QC = \frac{1}{2} GC = \frac{1}{2}x
+                            \]
+                        </li>
+                    </ul>
+                    <p>
+                        Luas alas \(\triangle ARC\):<br>
+                        Alas segitiga adalah \(AR = 4x\). Karena garis \(BC \perp AB\) (rusuk persegi), maka jarak tegak lurus dari titik \(C\) ke garis perpanjangan \(AR\) adalah panjang rusuk \(BC = x\).
+                        \[
+                        L_{\triangle ARC} = \frac{1}{2} \times \text{alas} \times \text{tinggi} = \frac{1}{2} \times 4x \times x = 2x^2
+                        \]
+                    </p>
+                    <p>
+                        Hitung volume limas \(Q.ARC\):
+                        \[
+                        V_{Q.ARC} = \frac{1}{3} \times L_{\triangle ARC} \times t = \frac{1}{3} \times 2x^2 \times \frac{1}{2}x = \frac{1}{3}x^3
+                        \]
+                    </p>
+                    <p>
+                        Volume kubus \(ABCD.EFGH\):
+                        \[
+                        V_{\text{kubus}} = x^3
+                        \]
+                    </p>
+                    <p>
+                        Perbandingan volume keduanya:
+                        \[
+                        \frac{V_{Q.ARC}}{V_{\text{kubus}}} = \frac{\frac{1}{3}x^3}{x^3} = \frac{1}{3} \implies 1 : 3
+                        \]
+                    </p>
+
+                    <!-- Visualisasi GeoSVG Soal 3 -->
+                    <div id="geosvg-snbt-3" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, perbandingan volume limas \(Q.ARC\) dan volume kubus \(ABCD.EFGH\) adalah \(1 : 3\).<br>
+                        <strong>Jawaban: E</strong>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>
+                    Pada kubus \(ABCD.EFGH\), titik \(P\) terletak pada diagonal bidang \(EG\) sehingga \(EP : PG = 1 : 2\). Jika jarak dari titik \(E\) ke garis \(AP\) adalah \(a\), maka panjang rusuk kubus tersebut adalah ....
+                </p>
+                <ol class="pilgan">
+                    <li>\(\dfrac{a}{11}\sqrt{2}\)</li>
+                    <li>\(\dfrac{a}{2}\sqrt{11}\)</li>
                     <li>\(a\sqrt{22}\)</li>
-                </ol>
-            </div>
-            <div class="w3-col s6">
-                <ol class="pas1" start="4" type="A">
-                    <li class="pb">\(\dfrac{a}2\sqrt{22}\)</li>
+                    <li>\(\dfrac{a}{2}\sqrt{22}\)</li>
                     <li>\(a\sqrt{11}\)</li>
                 </ol>
             </div>
-        </div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">
-              <div id="tempatsvg5" class="tengah"></div>
-              <div class="w3-row">
-              <div class="w3-col s6">
-        Misal jarak <em>E</em> ke <em>AP</em> adalah <e><em>EQ</em> = <em>a</em>,</e> dan panjang rusuknya adalah <em>s</em>.
-        \begin{aligned}
-        AP&amp;=\sqrt{s^2+\left(\dfrac13s\sqrt2\right)^2}\\
-        &amp;=\sqrt{s^2+\dfrac29s^2}\\
-        &amp;=\sqrt{\dfrac{11}9s^2}\\
-        &amp;=\dfrac{s}3\sqrt{11}
-        \end{aligned}</div>
-              <div class="w3-col s6">\begin{aligned}
-        EQ&amp;=\dfrac{AE\cdot EP}{AP}\\[3.6pt]
-        a&amp;=\dfrac{s\cdot \dfrac{s}3}{\dfrac{s}3\sqrt{11}}\\[3.6pt]
-        &amp;=\dfrac{s}{\sqrt{11}}\\
-        s&amp;=\boxed{\boxed{a\sqrt{11}}}
-        \end{aligned}</div>
+            <div class="soal-sumber">
+                Grup Matematika Idhamdaz
             </div>
-        </div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, panjang rusuk kubus tersebut adalah \(a\sqrt{11}\).<br><b>JAWAB: E</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        <script>
-          var tiP5 = titikpadagaris([tiE,tiG],1/2);
-          var tiQ5 = titikpadagaris([tiA,tiP5],4);
-          document.getElementById("tempatsvg5").innerHTML = String.raw`${svgawal(10+a1[2]*cos(a1[3]),10+a1[2]*sin(a1[3]),a1[1],a1[0])}
-          ${svggaris([tiH,tiD],op1)}
-          ${svggaris([tiC,tiD],op1)}
-          ${svgsegi([tiB,tiC,tiG,tiF],op2)}
-        ${svgsegi([tiE,tiF,tiG,tiH],op2)}
-        ${svggaris([tiA,tiD],op1)}
-        ${svggaris([tiA,tiP5],{tebalgaris:2/a1[1],warna:"purple"})}
-        ${svggaris([tiE,tiG],{tebalgaris:2/a1[1],warna:"blue"})}
-        ${svggaris([tiE,tiQ5],{tebalgaris:2/a1[1],warna:"red"})}
-        ${svgsegi([tiA,tiB,tiF,tiE],op2)}
-        ${svglabeltitik(tiA,"A",{ukuran:1.2/a1[1],anchor:"end",baseline:"mathematical"})}
-        ${svglabeltitik(tiB,"B",{ukuran:1.2/a1[1],anchor:"middle",baseline:"hanging",xplus:0.1,yplus:0.1})}
-        ${svglabeltitik(tiC,"C",{ukuran:1.2/a1[1],xplus:0.1,yplus:-0.1})}
-        ${svglabeltitik(tiD,"D",{ukuran:1.2/a1[1],anchor:"end",baseline:"central",xplus:-0.2,yplus:-0.2})}
-        ${svglabeltitik(tiE,"E",{ukuran:1.2/a1[1],anchor:"end",baseline:"central",xplus:-0.2})}
-        ${svglabeltitik(tiF,"F",{ukuran:1.2/a1[1],baseline:"central",xplus:0.2,yplus:0.3})}
-        ${svglabeltitik(tiG,"G",{ukuran:1.2/a1[1],baseline:"central",xplus:0.2})}
-        ${svglabeltitik(tiH,"H",{ukuran:1.2/a1[1],anchor:"end",yplus:-0.2})}
-        ${svglabeltitik(tiP5,"P",{ukuran:1.2/a1[1],anchor:"middle",xplus:0.1,yplus:-0.2})}
-        ${svglabeltitik(tiQ5,"Q",{ukuran:1.2/a1[1],baseline:"central",xplus:0.2,yplus:0.1})}
-        </svg>`;
-        </script>
-        </div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p>
+                        Misalkan panjang rusuk kubus adalah \(s\).
+                    </p>
+                    <ul>
+                        <li>Diagonal bidang atas: \(EG = s\sqrt{2}\)</li>
+                        <li>Karena \(EP : PG = 1 : 2\), maka:
+                            \[
+                            EP = \frac{1}{1 + 2} EG = \frac{1}{3}(s\sqrt{2}) = \frac{s\sqrt{2}}{3}
+                            \]
+                        </li>
+                    </ul>
+                    <p>
+                        Perhatikan bahwa rusuk tegak \(AE\) tegak lurus dengan seluruh bidang atas \(EFGH\), sehingga \(AE \perp EP\).
+                        Dengan demikian, segitiga \(\triangle AEP\) adalah <strong>segitiga siku-siku di \(E\)</strong>.
+                    </p>
+                    <p>
+                        Hitung sisi miring \(AP\):
+                        \[
+                        \begin{aligned}
+                        AP &= \sqrt{AE^2 + EP^2} \\[6pt]
+                           &= \sqrt{s^2 + \left(\frac{s\sqrt{2}}{3}\right)^2} = \sqrt{s^2 + \frac{2}{9}s^2} = \sqrt{\frac{11}{9}s^2} \\[6pt]
+                           &= \frac{s\sqrt{11}}{3}
+                        \end{aligned}
+                        \]
+                    </p>
+                    <p>
+                        Jarak dari titik \(E\) ke garis \(AP\) adalah panjang garis tinggi \(EQ = a\) dengan \(EQ \perp AP\). Menggunakan rumus luas \(\triangle AEP\):
+                        \[
+                        \begin{aligned}
+                        L &= \frac{1}{2} \times AE \times EP = \frac{1}{2} \times AP \times EQ \\[6pt]
+                        EQ &= \frac{AE \times EP}{AP} \\[6pt]
+                        a &= \frac{s \times \frac{s\sqrt{2}}{3}}{\frac{s\sqrt{11}}{3}} \\[6pt]
+                        a &= \frac{s\sqrt{2}}{\sqrt{11}}
+                        \end{aligned}
+                        \]
+                    </p>
+                    <p>
+                        Menentukan panjang rusuk \(s\):
+                        \[
+                        s = \frac{a\sqrt{11}}{\sqrt{2}} \times \frac{\sqrt{2}}{\sqrt{2}} = \frac{a\sqrt{22}}{2} = \frac{a}{2}\sqrt{22}
+                        \]
+                    </p>
 
-        <br>
-        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-        <br>
-        <script>soal(kubus,2,1)</script>
-   </body>
-</html> 
+                    <!-- Visualisasi GeoSVG Soal 4 -->
+                    <div id="geosvg-snbt-4" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+
+                    <div class="kesimpulan">
+                        Jadi, panjang rusuk kubus tersebut adalah \(\dfrac{a}{2}\sqrt{22}\).<br>
+                        <strong>Jawaban: D</strong>
+                    </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Matematika Idham Daz. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Script Render GeoSVG & KaTeX -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (typeof renderMathInElement === "function") {
+                renderMathInElement(document.body, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "\\[", right: "\\]", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false }
+                    ]
+                });
+            }
+
+            function buatKerangkaKubus(geo, pA, s, dx, dy) {
+                const pts = {
+                    A: pA,
+                    B: [pA[0] + s, pA[1]],
+                    C: [pA[0] + s + dx, pA[1] - dy],
+                    D: [pA[0] + dx, pA[1] - dy],
+                    E: [pA[0], pA[1] - s],
+                    F: [pA[0] + s, pA[1] - s],
+                    G: [pA[0] + s + dx, pA[1] - s - dy],
+                    H: [pA[0] + dx, pA[1] - s - dy]
+                };
+
+                geo.buatSegmen(pts.A, pts.D, { stroke: "#cbd5e1", strokeWidth: 1.2, dashed: true });
+                geo.buatSegmen(pts.D, pts.C, { stroke: "#cbd5e1", strokeWidth: 1.2, dashed: true });
+                geo.buatSegmen(pts.D, pts.H, { stroke: "#cbd5e1", strokeWidth: 1.2, dashed: true });
+                geo.buatSegmen(pts.A, pts.B, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.B, pts.C, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.E, pts.F, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.F, pts.G, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.G, pts.H, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.H, pts.E, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.A, pts.E, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.B, pts.F, { stroke: "#334155", strokeWidth: 1.5 });
+                geo.buatSegmen(pts.C, pts.G, { stroke: "#334155", strokeWidth: 1.5 });
+
+                return pts;
+            }
+
+            function beriLabelTitikKubus(geo, pts) {
+                geo.buatTitik(pts.A, { label: "A", labelPosition: "bottom-left", color: "#1e293b", size: 3 });
+                geo.buatTitik(pts.B, { label: "B", labelPosition: "bottom-right", color: "#1e293b", size: 3 });
+                geo.buatTitik(pts.C, { label: "C", labelPosition: "middle-right", color: "#1e293b", size: 3 });
+                geo.buatTitik(pts.D, { label: "D", labelPosition: "top-left", color: "#64748b", size: 2.5 });
+                geo.buatTitik(pts.E, { label: "E", labelPosition: "top-left", color: "#1e293b", size: 3 });
+                geo.buatTitik(pts.F, { label: "F", labelPosition: "top-right", color: "#1e293b", size: 3 });
+                geo.buatTitik(pts.G, { label: "G", labelPosition: "top-right", color: "#1e293b", size: 3 });
+                geo.buatTitik(pts.H, { label: "H", labelPosition: "top-left", color: "#1e293b", size: 3 });
+            }
+
+            function renderAll() {
+                if (typeof GeoSVG === "undefined") {
+                    setTimeout(renderAll, 100);
+                    return;
+                }
+
+                const W = 320, H = 260;
+                const pA = [65, 215], s = 130, dx = 60, dy = 45;
+
+                // DIAGRAM SNBT 1
+                const el1 = document.getElementById("geosvg-snbt-1");
+                if (el1 && !el1.dataset.rendered) {
+                    el1.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-snbt-1", W, H, { margin: 10, title: "Bidang PQR dan Garis DR pada Kubus" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    const pP = [k.A[0] + 0.25 * (k.B[0] - k.A[0]), k.A[1]];
+                    const pQ = [k.B[0] + 0.75 * (k.C[0] - k.B[0]), k.B[1] + 0.75 * (k.C[1] - k.B[1])];
+                    const pR = [k.B[0], k.B[1] - 0.75 * s];
+                    geo.buatPoligon([pP, pQ, pR], { fill: "rgba(37, 99, 235, 0.2)", stroke: "#2563eb", strokeWidth: 1.8 });
+                    geo.buatSegmen(k.D, k.B, { stroke: "#64748b", strokeWidth: 1.2, dashed: true });
+                    geo.buatSegmen(k.D, pR, { stroke: "#ea580c", strokeWidth: 2, dashed: true });
+                    geo.buatTitik(pP, { label: "P", labelPosition: "bottom-center", color: "#2563eb", size: 3 });
+                    geo.buatTitik(pQ, { label: "Q", labelPosition: "middle-right", color: "#2563eb", size: 3 });
+                    geo.buatTitik(pR, { label: "R", labelPosition: "middle-left", color: "#ea580c", size: 3 });
+                    beriLabelTitikKubus(geo, k);
+                }
+
+                // DIAGRAM SNBT 2
+                const el2 = document.getElementById("geosvg-snbt-2");
+                if (el2 && !el2.dataset.rendered) {
+                    el2.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-snbt-2", W, H, { margin: 10, title: "Jarak Titik H ke Garis PQ" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    const pP = [(k.A[0] + k.B[0]) / 2, k.A[1]];
+                    const pQ = [(k.B[0] + k.C[0]) / 2, (k.B[1] + k.C[1]) / 2];
+                    const pR = [(pP[0] + pQ[0]) / 2, (pP[1] + pQ[1]) / 2];
+                    geo.buatSegmen(pP, pQ, { stroke: "#059669", strokeWidth: 2 });
+                    geo.buatSegmen(k.H, pP, { stroke: "#2563eb", strokeWidth: 1.5, dashed: true });
+                    geo.buatSegmen(k.H, pQ, { stroke: "#2563eb", strokeWidth: 1.5, dashed: true });
+                    geo.buatSegmen(k.H, pR, { stroke: "#dc2626", strokeWidth: 2, dashed: true });
+                    geo.buatTitik(pP, { label: "P", labelPosition: "bottom-center", color: "#059669", size: 3 });
+                    geo.buatTitik(pQ, { label: "Q", labelPosition: "middle-right", color: "#059669", size: 3 });
+                    geo.buatTitik(pR, { label: "R", labelPosition: "top-left", color: "#dc2626", size: 3 });
+                    beriLabelTitikKubus(geo, k);
+                }
+
+                // DIAGRAM SNBT 3
+                const el3 = document.getElementById("geosvg-snbt-3");
+                if (el3 && !el3.dataset.rendered) {
+                    el3.dataset.rendered = "true";
+                    const W3 = 380, H3 = 260;
+                    const geo = new GeoSVG("geosvg-snbt-3", W3, H3, { margin: 10, title: "Limas Q.ARC dan Kubus ABCD.EFGH" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W3}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, [50, 215], 100, 50, 38);
+                    const pR = [k.A[0] + 4 * 100, k.A[1]]; // AR = 4x
+                    const pQ = [(k.C[0] + k.G[0]) / 2, (k.C[1] + k.G[1]) / 2];
+                    // Perpanjangan AB ke R
+                    geo.buatSegmen(k.B, pR, { stroke: "#ea580c", strokeWidth: 1.8 });
+                    geo.buatPoligon([k.A, pR, pQ], { fill: "rgba(234, 88, 12, 0.12)", stroke: "#ea580c", strokeWidth: 1.5 });
+                    geo.buatSegmen(k.C, pR, { stroke: "#ea580c", strokeWidth: 1.2, dashed: true });
+                    geo.buatTitik(pQ, { label: "Q", labelPosition: "middle-right", color: "#2563eb", size: 3 });
+                    geo.buatTitik(pR, { label: "R", labelPosition: "bottom-right", color: "#ea580c", size: 3 });
+                    beriLabelTitikKubus(geo, k);
+                }
+
+                // DIAGRAM SNBT 4
+                const el4 = document.getElementById("geosvg-snbt-4");
+                if (el4 && !el4.dataset.rendered) {
+                    el4.dataset.rendered = "true";
+                    const geo = new GeoSVG("geosvg-snbt-4", W, H, { margin: 10, title: "Jarak E ke Garis AP pada Kubus" });
+                    if (geo.svg) { geo.svg.style.width = "100%"; geo.svg.style.maxWidth = `${W}px`; geo.svg.style.height = "auto"; }
+                    const k = buatKerangkaKubus(geo, pA, s, dx, dy);
+                    geo.buatSegmen(k.E, k.G, { stroke: "#059669", strokeWidth: 1.5 });
+                    // P pada EG dengan EP : PG = 1 : 2
+                    const pP = [k.E[0] + (1/3) * (k.G[0] - k.E[0]), k.E[1] + (1/3) * (k.G[1] - k.E[1])];
+                    geo.buatSegmen(k.A, pP, { stroke: "#2563eb", strokeWidth: 2, dashed: true });
+                    // Garis tinggi EQ tegak lurus AP
+                    // Proyeksi E pada AP: rasio AE^2 / AP^2 = s^2 / (11/9 s^2) = 9/11
+                    const pQ = [k.A[0] + (9/11) * (pP[0] - k.A[0]), k.A[1] + (9/11) * (pP[1] - k.A[1])];
+                    geo.buatSegmen(k.E, pQ, { stroke: "#dc2626", strokeWidth: 1.8 });
+                    geo.buatTitik(pP, { label: "P", labelPosition: "top-center", color: "#059669", size: 3 });
+                    geo.buatTitik(pQ, { label: "Q", labelPosition: "middle-left", color: "#dc2626", size: 3 });
+                    geo.buatSiku(k.E, pQ, pP, { size: 6, stroke: "#dc2626" });
+                    beriLabelTitikKubus(geo, k);
+                }
+            }
+
+            renderAll();
+        });
+    </script>
+
+    <!-- Script Math Blog Otomatis (Navigasi Level, Penomoran, Toggle Solusi) -->
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>

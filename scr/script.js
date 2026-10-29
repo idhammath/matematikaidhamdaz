@@ -41,6 +41,7 @@ const DAFTAR_TOPIK = [
         topik: [
             { judul: "Asimtot Kurva", folder: "Asimtot_Kurva" },
             { judul: "Aturan Pencacahan", folder: "Aturan_Pencacahan" },
+            { judul: "Matriks", folder: "Matriks" },
             { judul: "Integral Lipat", folder: "Integral_Lipat" },
             { judul: "Integral Tak Tentu", folder: "Integral_Tak_Tentu" },
             { judul: "Integral Tentu", folder: "Integral_Tentu" }

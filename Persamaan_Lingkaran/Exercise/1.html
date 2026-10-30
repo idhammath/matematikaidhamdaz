@@ -1,289 +1,415 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Exercise Zone : Persamaan Lingkaran</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Persamaan Lingkaran</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+        </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Persamaan Lingkaran</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
 
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-  <br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Persamaan Lingkaran</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-  <div id="1" class="justify">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Persamaan lingkaran yang berpusat <e>(&minus;3, 4)</e> dan diameter 14 adalah
-    <div class="w3-row">
-        <div class="w3-col s6">
-            <ol class="pas1" type="A">
-                <li><e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 6<em>x</em> &minus; 6<em>y</em> &minus; 14 = 0</e></li>
-                <li><e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 8<em>x</em> &minus; 8<em>y</em> &minus; 14 = 0</e></li>
-                <li><e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 6<em>x</em> &minus; 8<em>y</em> &minus; 22 = 0</e></li>
-            </ol>
-        </div>
-        <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-                <li><e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 6<em>x</em> &minus; 8<em>y</em> &minus; 24 = 0</e></li>
-                <li><e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 8<em>x</em> &minus; 8<em>y</em> &minus; 24 = 0</e></li>
-            </ol>
-        </div>
-    </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Ganesha Operation</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><em>a</em> = &minus;3 <br>
-            <em>b</em> = 4 <br>
-            $r=\dfrac{14}2=7$ <br><br>
-            Persamaan lingkarannya adalah<br />
-        \(\begin{aligned}
-        (x-a)^2+(y-b)^2&amp;=r^2\\
-        (x+3)^2+(y-4)^2&amp;=7^2\\
-        x^2+6x+9+y^2-8y+16&amp;=49\\
-        x^2+y^2+6x-8y-24&amp;=0
-        \end{aligned}\)
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, persamaan lingkaran yang berpusat <e>(&minus;3, 4)</e> dan diameter 14 adalah <e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 6<em>x</em> &minus; 8<em>y</em> &minus; 24 = 0</e>.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-  <div class="justify" id="2">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Tentukan persamaan lingkaran yang berpusat di sepanjang garis <e><em>y</em> = 2<em>x</em> + 1</e> dan menyinggung sumbu-<em>x</em> pada titik <e>( 3 ,0)</e>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/8034" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">Titik pusat lingkaran berada di <e>(3, <em>q</em>)</e>, dengan jari-jari <e><em>r</em> = <em>q</em></e>.<br><br>
-                $\begin{aligned} 
-                    y&=2x+1\\
-                    q&=2(3)+1\\
-                    q&=6+1\\
-                    q&=7
-                    \end{aligned}
-                $<br><br>
-                Persamaan lingkaran dengan titik pusat <e>(3, 7)</e> dengan jari-jari 7 adalah<br>
-                $\begin{aligned} 
-                    (x-3)^2+(y-7)^2&=7^2\\
-                    x^2-6x+9+y^2-14y+49&=49\\
-                    x^2+y^2-6x-14y+9&=0
-                    \end{aligned}
-                $</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, persamaan lingkaran yang berpusat di sepanjang garis <e><em>y</em> = 2<em>x</em> + 1</e> dan menyinggung sumbu-<em>x</em> pada titik <e>( 3 ,0)</e> adalah <e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> &minus; 6<em>x</em> &minus; 14<em>y</em> + 9 = 0.</e><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-  </div>
+        <!-- ================= DAFTAR 10 SOAL ================= -->
 
-  <div class="justify" id="3">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Titik pusat sebuah lingkaran berada pada garis $y=\sqrt3$. Lingkaran tersebut menyinggung sumbu <em>Y</em> dan garis ${\sqrt3x-3y=0}$. Tentukanlah persamaan lingkaran.
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/10290" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">Misal titik pusatnya adalah $\left(p,\sqrt3\right)$. <br><br>
-                Menyinggung sumbu <em>Y</em> artinya <e><em>r</em> = |<em>p</em>|</e>. <br><br>
-                Jari-jari <em>r</em> adalah jarak titik pusat $\left(p,\sqrt3\right)$ ke garis ${\sqrt3x-3y=0}$. <br>
-                $\begin{aligned} 
-                  r&=\left|\dfrac{\sqrt3p-3\sqrt3}{\sqrt{\left(\sqrt3\right)^2+(-3)^2}}\right|\\
-                  |p|&=\left|\dfrac{\sqrt3(p-3)}{\sqrt{3+9}}\right|\\
-                  |p|&=\left|\dfrac{\sqrt3(p-3)}{\sqrt{12}}\right|\\
-                  |p|&=\left|\dfrac{\sqrt3(p-3)}{2\sqrt3}\right|\\
-                  |p|&=\left|\dfrac{p-3}2\right|\\
-                  p&=\pm\dfrac{p-3}2
-                  \end{aligned}$
-                  <table class="w3-table-all table-bordered">
-                    <tbody>
-                      <tr>
-                        <td>$\begin{aligned} 
-                          p&=\dfrac{p-3}2\\
-                          2p&=p-3\\
-                          p&=-3
-                          \end{aligned}$<br><br>
-                        Persamaan lingkaran dengan titik pusat $\left(-3,\sqrt3\right)$ dan jari-jari 3<br>
-                        $\begin{aligned} 
-                          (x-p)^2+(y-q)^2&=r^2\\
-                          (x-(-3))^2+(y-\sqrt3)^2&=3^2\\
-                          (x+3)^2+(y-\sqrt3)^2&=9\\
-                          x^2+6x+9+y^2-2\sqrt3y+3-9&=0\\
-                          x^2+y^2+6x-2\sqrt3y+3&=0
-                          \end{aligned}$
-                      </td>
-                        <td>$\begin{aligned} 
-                          p&=-\dfrac{p-3}2\\
-                          2p&=-p+3\\
-                          3p&=3\\
-                          p&=1
-                          \end{aligned}$<br><br>
-                          Persamaan lingkaran dengan titik pusat $\left(1,\sqrt3\right)$ dan jari-jari 1<br>
-                          $\begin{aligned} 
-                            (x-p)^2+(y-q)^2&=r^2\\
-                            (x-1)^2+(y-\sqrt3)^2&=1^2\\
-                            x^2-2x+1+y^2-2\sqrt3y+3&=1\\
-                            x^2+y^2-2x-2\sqrt3y+3&=0
-                            \end{aligned}$</td>
-                      </tr>
-                    </tbody>
-                  </table></div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, persamaan lingkarannya adalah $x^2+y^2+6x-2\sqrt3y+3=0$ atau $x^2+y^2-2x-2\sqrt3y+3=0$.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-  </div>
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Persamaan lingkaran yang berpusat <e>(&minus;3, 4)</e> dan diameter 14 adalah
+                <div class="w3-row">
+                    <div class="w3-col s6">
+                        <ol class="pas1" type="A">
+                            <li><e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 6<em>x</em> &minus; 6<em>y</em> &minus; 14 = 0</e></li>
+                            <li><e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 8<em>x</em> &minus; 8<em>y</em> &minus; 14 = 0</e></li>
+                            <li><e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 6<em>x</em> &minus; 8<em>y</em> &minus; 22 = 0</e></li>
+                        </ol>
+                    </div>
+                    <div class="w3-col s6">
+                        <ol class="pas1" start="4" type="A">
+                            <li><e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 6<em>x</em> &minus; 8<em>y</em> &minus; 24 = 0</e></li>
+                            <li><e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 8<em>x</em> &minus; 8<em>y</em> &minus; 24 = 0</e></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">Ganesha Operation</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <em>a</em> = &minus;3 <br>
+                    <em>b</em> = 4 <br>
+                    $r=\dfrac{14}2=7$ <br><br>
+                    Persamaan lingkarannya adalah<br>
+                    \(\begin{aligned}
+                    (x-a)^2+(y-b)^2&=r^2\\
+                    (x+3)^2+(y-4)^2&=7^2\\
+                    x^2+6x+9+y^2-8y+16&=49\\
+                    x^2+y^2+6x-8y-24&=0
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, persamaan lingkaran yang berpusat <e>(&minus;3, 4)</e> dan diameter 14 adalah <e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 6<em>x</em> &minus; 8<em>y</em> &minus; 24 = 0</e>.<br><b>JAWAB: D</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <div class="justify" id="4">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Jari-jari dan titik pusat lingkaran <e>4<em>x</em><sup>2</sup> + 4<em>y</em><sup>2</sup> + 4<em>x</em> &minus; 12<em>y</em> + 1 = 0</e> adalah
-    <div class="w3-row"> 
-     <div class="w3-col s6"> 
-      <ol class="pas1" type="A"> 
-       <li class="pb">$\dfrac32$ dan $\left(-\dfrac12,1\right)$</li> 
-       <li class="pb">$\dfrac32$ dan $\left(-\dfrac12,\dfrac32\right)$</li> 
-       <li>$\dfrac32$ dan $\left(\dfrac12,\dfrac32\right)$</li> 
-      </ol> 
-     </div> 
-     <div class="w3-col s6"> 
-     <ol class="pas1" start="4" type="A"> 
-     <li>3 dan <e>(1, 3)</e></li> 
-     <li>3 dan <e>(&minus;1, 3)</e></li> 
-     </ol> 
-     </div> 
-     </div>    
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2023/12/download-big-book-matematika-sma.html" target="_blank" rel="noopener noreferrer">Big Book Matematika SMA</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\(\begin{aligned}
-            4x^2+4y^2+4x-12x+1&=0&\color{red}:4\\
-            x^2+y^2+x-3x+\dfrac14&=0
-            \end{aligned}\) <br>
-            <em>A</em> = 1; <em>B</em> = &minus;3; $C=\dfrac14$ <br><br>
-            <h3>Titik Pusat</h3>
-            \(\begin{aligned}
-            \left(-\dfrac12A,-\dfrac12B\right)&=\left(-\dfrac12(1),-\dfrac12(-3)\right)\\[4pt]
-            &=\color{blue}\boxed{\boxed{\color{black}\left(-\dfrac12,\dfrac32\right)}}
-            \end{aligned}\) <br><br>
-            <h3>Jari-Jari</h3>
-            \(\begin{aligned}
-            r&=\sqrt{\left(-\dfrac12\right)^2+\left(\dfrac32\right)^2-\dfrac14}\\
-            &=\sqrt{{\color{red}\dfrac14}+\left(\dfrac32\right)^2-{\color{red}\dfrac14}}\\
-            &=\color{blue}\boxed{\boxed{\color{black}\dfrac32}}
-            \end{aligned}\)
-        </div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, jari-jari dan titik pusat lingkaran <e>4<em>x</em><sup>2</sup> + 4<em>y</em><sup>2</sup> + 4<em>x</em> &minus; 12<em>y</em> + 1 = 0</e> adalah $\dfrac32$ dan $\left(-\dfrac12,\dfrac32\right)$.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-  </div>
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tentukan persamaan lingkaran yang berpusat di sepanjang garis <e><em>y</em> = 2<em>x</em> + 1</e> dan menyinggung sumbu-<em>x</em> pada titik <e>( 3 ,0)</e>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/8034" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Titik pusat lingkaran berada di <e>(3, <em>q</em>)</e>, dengan jari-jari <e><em>r</em> = <em>q</em></e>.<br><br>
+                    $\begin{aligned} 
+                        y&=2x+1\\
+                        q&=2(3)+1\\
+                        q&=6+1\\
+                        q&=7
+                        \end{aligned}
+                    $<br><br>
+                    Persamaan lingkaran dengan titik pusat <e>(3, 7)</e> dengan jari-jari 7 adalah<br>
+                    $\begin{aligned} 
+                        (x-3)^2+(y-7)^2&=7^2\\
+                        x^2-6x+9+y^2-14y+49&=49\\
+                        x^2+y^2-6x-14y+9&=0
+                        \end{aligned}
+                    $
+                    <div class="kesimpulan">Jadi, persamaan lingkaran yang berpusat di sepanjang garis <e><em>y</em> = 2<em>x</em> + 1</e> dan menyinggung sumbu-<em>x</em> pada titik <e>( 3 ,0)</e> adalah <e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> &minus; 6<em>x</em> &minus; 14<em>y</em> + 9 = 0.</e></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <div class="justify" id="5">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Persamaan lingkaran yang melalui (0, 0) dan <e>(1, &minus;1)</e> serta berjari-jari $\sqrt5$ adalah ....
-    <div class="w3-row">
-      <div class="w3-col s6">
-        <ol class="pas1" type="A">
-          <li><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> &minus; 2<em>x</em> &minus; 2<em>y</em> &minus; 2 = 0</li>
-          <li><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 4<em>x</em> &minus; 2<em>y</em> &minus; 5 = 0</li>
-          <li><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 4<em>x</em> + <em>y</em> + 5 = 0</li>
-        </ol>
-      </div>
-      <div class="w3-col s6">
-        <ol class="pas1" start="4" type="A">
-          <li><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> &minus; 4<em>x</em> &minus; 2<em>y</em> = 0</li>
-          <li><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 4<em>x</em> + 2<em>y</em> = 0</li>
-        </ol>
-      </div>
-    </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><div class="w3-row">
-          <div class="w3-col l6">Misal persamaan lingkarannya adalah <br>
-            \(\begin{aligned}
-            (x-a)^2+(y-b)^2&=r^2\\
-            (x-a)^2+(y-b)^2&=\left(\sqrt5\right)^2\\
-            (x-a)^2+(y-b)^2&=5
-            \end{aligned}\)
-            <br>
-            <h3>Melalui (0, 0)</h3>
-            \(\begin{aligned}
-            (0-a)^2+(0-b)^2&=5\\
-            a^2+b^2&=5&{\color{red}(1)}\\
-            \end{aligned}\)
-            <h3>Melalui (1, &minus;1)</h3>
-            \(\begin{aligned}
-            (1-a)^2+(-1-b)^2&=5\\
-            1-2a+a^2+1+2b+b^2&=5\\
-            2a-2b&=2\\
-            a&=b+1
-            \end{aligned}\)</div>
-          <div class="w3-col l6"><h3>Substitusikan ke persamaan (1)</h3>
-            \(\begin{aligned}
-            (b+1)^2+b^2&=5\\
-            b^2+2b+1+b^2&=5\\
-            2a^2+2b-4&=0\\
-            b^2+b-2&=0\\
-            (b+2)(b-1)&=0\\
-            \end{aligned}\) <br>
-            <em>b</em> = &minus;2, atau <em>b</em> = 1 <br>
-            <h3><em>a</em> = &minus;1</h3>
-            <em>b</em> = 1 &minus; (&minus;1) = 2 <br><br>
-            \(\begin{aligned}
-            (x+1)^2+(y-2)^2&=5\\
-            x^2+2x+1+y^2-4y+4&=5\\
-            x^2+y^2+2x-4y&=0
-            \end{aligned}\)
-            <h3><em>a</em> = 2</h3>
-            <em>b</em> = 1 &minus; 2 = &minus;1 <br><br>
-            \(\begin{aligned}
-            (x-2)^2+(y+1)^2&=5\\
-            x^2+y^2-4x+2y&=0
-            \end{aligned}\)</div>
-        </div>
-          
-          
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <br><b>JAWAB: </b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Titik pusat sebuah lingkaran berada pada garis $y=\sqrt3$. Lingkaran tersebut menyinggung sumbu <em>Y</em> dan garis ${\sqrt3x-3y=0}$. Tentukanlah persamaan lingkaran.
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/10290" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Misal titik pusatnya adalah $\left(p,\sqrt3\right)$. <br><br>
+                    Menyinggung sumbu <em>Y</em> artinya <e><em>r</em> = |<em>p</em>|</e>. <br><br>
+                    Jari-jari <em>r</em> adalah jarak titik pusat $\left(p,\sqrt3\right)$ ke garis ${\sqrt3x-3y=0}$. <br>
+                    $\begin{aligned} 
+                      r&=\left|\dfrac{\sqrt3p-3\sqrt3}{\sqrt{\left(\sqrt3\right)^2+(-3)^2}}\right|\\
+                      |p|&=\left|\dfrac{\sqrt3(p-3)}{\sqrt{3+9}}\right|\\
+                      |p|&=\left|\dfrac{\sqrt3(p-3)}{\sqrt{12}}\right|\\
+                      |p|&=\left|\dfrac{\sqrt3(p-3)}{2\sqrt3}\right|\\
+                      |p|&=\left|\dfrac{p-3}2\right|\\
+                      p&=\pm\dfrac{p-3}2
+                      \end{aligned}$
+                    <table class="w3-table-all table-bordered">
+                        <tbody>
+                            <tr>
+                                <td>$\begin{aligned} 
+                                  p&=\dfrac{p-3}2\\
+                                  2p&=p-3\\
+                                  p&=-3
+                                  \end{aligned}$<br><br>
+                                Persamaan lingkaran dengan titik pusat $\left(-3,\sqrt3\right)$ dan jari-jari 3<br>
+                                $\begin{aligned} 
+                                  (x-p)^2+(y-q)^2&=r^2\\
+                                  (x-(-3))^2+(y-\sqrt3)^2&=3^2\\
+                                  (x+3)^2+(y-\sqrt3)^2&=9\\
+                                  x^2+6x+9+y^2-2\sqrt3y+3-9&=0\\
+                                  x^2+y^2+6x-2\sqrt3y+3&=0
+                                  \end{aligned}$
+                                </td>
+                                <td>$\begin{aligned} 
+                                  p&=-\dfrac{p-3}2\\
+                                  2p&=-p+3\\
+                                  3p&=3\\
+                                  p&=1
+                                  \end{aligned}$<br><br>
+                                  Persamaan lingkaran dengan titik pusat $\left(1,\sqrt3\right)$ dan jari-jari 1<br>
+                                  $\begin{aligned} 
+                                    (x-p)^2+(y-q)^2&=r^2\\
+                                    (x-1)^2+(y-\sqrt3)^2&=1^2\\
+                                    x^2-2x+1+y^2-2\sqrt3y+3&=1\\
+                                    x^2+y^2-2x-2\sqrt3y+3&=0
+                                    \end{aligned}$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="kesimpulan">Jadi, persamaan lingkarannya adalah $x^2+y^2+6x-2\sqrt3y+3=0$ atau $x^2+y^2-2x-2\sqrt3y+3=0$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(persling,1,1)</script>
-</div>
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jari-jari dan titik pusat lingkaran <e>4<em>x</em><sup>2</sup> + 4<em>y</em><sup>2</sup> + 4<em>x</em> &minus; 12<em>y</em> + 1 = 0</e> adalah
+                <div class="w3-row"> 
+                    <div class="w3-col s6"> 
+                        <ol class="pas1" type="A"> 
+                            <li class="pb">$\dfrac32$ dan $\left(-\dfrac12,1\right)$</li> 
+                            <li class="pb">$\dfrac32$ dan $\left(-\dfrac12,\dfrac32\right)$</li> 
+                            <li>$\dfrac32$ dan $\left(\dfrac12,\dfrac32\right)$</li> 
+                        </ol> 
+                    </div> 
+                    <div class="w3-col s6"> 
+                        <ol class="pas1" start="4" type="A"> 
+                            <li>3 dan <e>(1, 3)</e></li> 
+                            <li>3 dan <e>(&minus;1, 3)</e></li> 
+                        </ol> 
+                    </div> 
+                </div>
+            </div>
+            <div class="soal-sumber"><a href="/2023/12/download-big-book-matematika-sma.html" target="_blank" rel="noopener noreferrer">Big Book Matematika SMA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \(\begin{aligned}
+                    4x^2+4y^2+4x-12x+1&=0&\color{red}:4\\
+                    x^2+y^2+x-3x+\dfrac14&=0
+                    \end{aligned}\) <br>
+                    <em>A</em> = 1; <em>B</em> = &minus;3; $C=\dfrac14$ <br><br>
+                    <h3>Titik Pusat</h3>
+                    \(\begin{aligned}
+                    \left(-\dfrac12A,-\dfrac12B\right)&=\left(-\dfrac12(1),-\dfrac12(-3)\right)\\[4pt]
+                    &=\color{blue}\boxed{\boxed{\color{black}\left(-\dfrac12,\dfrac32\right)}}
+                    \end{aligned}\) <br><br>
+                    <h3>Jari-Jari</h3>
+                    \(\begin{aligned}
+                    r&=\sqrt{\left(-\dfrac12\right)^2+\left(\dfrac32\right)^2-\dfrac14}\\
+                    &=\sqrt{{\color{red}\dfrac14}+\left(\dfrac32\right)^2-{\color{red}\dfrac14}}\\
+                    &=\color{blue}\boxed{\boxed{\color{black}\dfrac32}}
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, jari-jari dan titik pusat lingkaran <e>4<em>x</em><sup>2</sup> + 4<em>y</em><sup>2</sup> + 4<em>x</em> &minus; 12<em>y</em> + 1 = 0</e> adalah $\dfrac32$ dan $\left(-\dfrac12,\dfrac32\right)$.<br><b>JAWAB: B</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Persamaan lingkaran yang melalui (0, 0) dan <e>(1, &minus;1)</e> serta berjari-jari $\sqrt5$ adalah ....
+                <div class="w3-row">
+                    <div class="w3-col s6">
+                        <ol class="pas1" type="A">
+                            <li><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> &minus; 2<em>x</em> &minus; 2<em>y</em> &minus; 2 = 0</li>
+                            <li><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 4<em>x</em> &minus; 2<em>y</em> &minus; 5 = 0</li>
+                            <li><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 4<em>x</em> + <em>y</em> + 5 = 0</li>
+                        </ol>
+                    </div>
+                    <div class="w3-col s6">
+                        <ol class="pas1" start="4" type="A">
+                            <li><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> &minus; 4<em>x</em> &minus; 2<em>y</em> = 0</li>
+                            <li><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + 4<em>x</em> + 2<em>y</em> = 0</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div class="row">
+                        <div class="col">
+                            Misal persamaan lingkarannya adalah <br>
+                            \(\begin{aligned}
+                            (x-a)^2+(y-b)^2&=r^2\\
+                            (x-a)^2+(y-b)^2&=\left(\sqrt5\right)^2\\
+                            (x-a)^2+(y-b)^2&=5
+                            \end{aligned}\)
+                            <br>
+                            <h3>Melalui (0, 0)</h3>
+                            \(\begin{aligned}
+                            (0-a)^2+(0-b)^2&=5\\
+                            a^2+b^2&=5&{\color{red}(1)}\\
+                            \end{aligned}\)
+                            <h3>Melalui (1, &minus;1)</h3>
+                            \(\begin{aligned}
+                            (1-a)^2+(-1-b)^2&=5\\
+                            1-2a+a^2+1+2b+b^2&=5\\
+                            2a-2b&=2\\
+                            a&=b+1
+                            \end{aligned}\)
+                        </div>
+                        <div class="col">
+                            <h3>Substitusikan ke persamaan (1)</h3>
+                            \(\begin{aligned}
+                            (b+1)^2+b^2&=5\\
+                            b^2+2b+1+b^2&=5\\
+                            2a^2+2b-4&=0\\
+                            b^2+b-2&=0\\
+                            (b+2)(b-1)&=0\\
+                            \end{aligned}\) <br>
+                            <em>b</em> = &minus;2, atau <em>b</em> = 1 <br>
+                            <h3><em>a</em> = &minus;1</h3>
+                            <em>b</em> = 1 &minus; (&minus;1) = 2 <br><br>
+                            \(\begin{aligned}
+                            (x+1)^2+(y-2)^2&=5\\
+                            x^2+2x+1+y^2-4y+4&=5\\
+                            x^2+y^2+2x-4y&=0
+                            \end{aligned}\)
+                            <h3><em>a</em> = 2</h3>
+                            <em>b</em> = 1 &minus; 2 = &minus;1 <br><br>
+                            \(\begin{aligned}
+                            (x-2)^2+(y+1)^2&=5\\
+                            x^2+y^2-4x+2y&=0
+                            \end{aligned}\)
+                        </div>
+                    </div>
+                    <div class="kesimpulan">Jadi, <br><b>JAWAB: </b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 6 
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 7 
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 8 
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 9 
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 10 
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+        <!-- Copy-paste blok <article class="soal-item">...</article> sampai 10 blok -->
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

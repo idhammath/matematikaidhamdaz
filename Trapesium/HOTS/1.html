@@ -1,188 +1,263 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HOTS Zone : Trapesium</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Trapesium</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+        </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Trapesium</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-
-  <div id="1" class="justify">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Diberikan trapesium <em>ABCD</em> dengan <e><em>AB</em> = 13,</e> <e><em>CD</em> = 18,</e> <em>AB</em> sejajar <em>CD</em>, dan ̸&angle;<em>ADC</em>, ̸&angle;<em>BCD</em> keduanya dibawah 90◦. Jika <em>P</em> dan <em>Q</em> adalah titik pada sisi <em>CD</em> sehingga <e><em>AD</em> = <em>AP</em></e> dan <e><em>BC</em> = <em>BQ</em>,</e> tentukan nilai dari <em>PQ</em>.
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2023/04/soal-osk-matematika-sma-2023-solusi.html" target="_blank" rel="noopener noreferrer">OSK 2023 SMA</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><div id="tempatsvg1" class="w3-center"></div>
-        \begin{aligned} 
-        x+y&=18-13\\
-        &=5
-        \end{aligned}
-        \begin{aligned}
-        x+PQ+y&=13\\
-        PQ+5&=13\\
-        PQ&=\boxed{\boxed{8}}
-        \end{aligned}
-    </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <em>PQ</em> = 8.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-    <script>
-        var a1 = [18,12,10,3,3,4];
-        var tiA = [a1[4],0];
-        var tiB = [tiA[0]+11,0];
-        var tiC = [18,a1[1]];
-        var tiD = [0,a1[1]];
-        var tiP = [2*a1[4],a1[1]];
-        var tiQ = [18-2*(7-a1[4]),a1[1]]
-        document.getElementById("tempatsvg1").innerHTML = String.raw`${svgawal(a1[0],a1[1],a1[2],a1[3])}
-        ${svgsegi([tiA,tiB,tiC,tiD],opsi={tebalgaris:1/a1[2]})}
-        ${svggaris([tiA,tiP],{tebalgaris:1/a1[2]})}
-        ${svggaris([tiB,tiQ],{tebalgaris:1/a1[2]})}
-        ${svggaris([tiA,[tiA[0],a1[1]]],{tebalgaris:1/a1[2],dash:"0.5"})}
-        ${svggaris([tiB,[tiB[0],a1[1]]],{tebalgaris:1/a1[2],dash:"0.5"})}
-        ${svglabeltitik(tiA,namalabel="A",{ukuran:1.5/a1[2],anchor:"end",yplus:-0.5})}
-        ${svglabeltitik(tiB,"B",{ukuran:1.5/a1[2],yplus:-0.5})}
-        ${svglabeltitik(tiC,"C",{ukuran:1.5/a1[2],baseline:"hanging",yplus:0.2})}
-        ${svglabeltitik(tiD,"D",{ukuran:1.5/a1[2],anchor:"end",baseline:"hanging",yplus:0.2})}
-        ${svglabeltitik(tiP,"P",{ukuran:1/a1[2],anchor:"middle",baseline:"hanging",yplus:0.2})}
-        ${svglabeltitik(tiQ,"Q",{ukuran:1/a1[2],anchor:"middle",baseline:"hanging",yplus:0.2})}
-        ${svglabelgaris([tiD,[tiA[0],a1[1]]],"&#119909;",{ukuran:1/a1[2],anchor:"middle",baseline:"auto",yplus:-0.4})}
-        ${svglabelgaris([tiP,[tiA[0],a1[1]]],"&#119909;",{ukuran:1/a1[2],anchor:"middle",baseline:"auto",yplus:-0.4})}
-        ${svglabelgaris([tiC,[tiB[0],a1[1]]],"&#119910;",{ukuran:1/a1[2],anchor:"middle",baseline:"auto",yplus:-0.4})}
-        ${svglabelgaris([tiQ,[tiB[0],a1[1]]],"&#119910;",{ukuran:1/a1[2],anchor:"middle",baseline:"auto",yplus:-0.4})}
-        </svg>`
-    </script>
-  </div>
-
-  <div id="2" class="justify">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Diberikan trapesium <em>ABCD</em> dengan <e><em>AB</em> = 14,</e> <e><em>CD</em> = 19,</e> <em>AB</em> sejajar <em>CD</em>, dan &angle;<em>ADC</em>, &angle;<em>BCD</em> keduanya dibawah 90◦. Jika <em>P</em> dan <em>Q</em> adalah titik pada sisi <em>CD</em> sehingga <e><em>AD</em> = <em>AP</em></e> dan <e><em>BC</em> = <em>BQ</em>,</e> tentukan nilai dari PQ.
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2023/04/soal-osk-matematika-sma-2023-solusi.html" target="_blank" rel="noopener noreferrer">OSK 2023 SMA</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><div id="tempatsvg2" class="w3-center"></div>
-        \begin{aligned} 
-        x+y&=19-14\\
-        &=5
-        \end{aligned}
-        \begin{aligned}
-        x+PQ+y&=14\\
-        PQ+5&=14\\
-        PQ&=\boxed{\boxed{9}}
-        \end{aligned}
-    </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <em>PQ</em> = 9.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-    <script>
-        document.getElementById("tempatsvg2").innerHTML = String.raw`${svgawal(a1[0],a1[1],a1[2],a1[3])}
-        ${svgsegi([tiA,tiB,tiC,tiD],opsi={tebalgaris:1/a1[2]})}
-        ${svggaris([tiA,tiP],{tebalgaris:1/a1[2]})}
-        ${svggaris([tiB,tiQ],{tebalgaris:1/a1[2]})}
-        ${svggaris([tiA,[tiA[0],a1[1]]],{tebalgaris:1/a1[2],dash:"0.5"})}
-        ${svggaris([tiB,[tiB[0],a1[1]]],{tebalgaris:1/a1[2],dash:"0.5"})}
-        ${svglabeltitik(tiA,namalabel="A",{ukuran:1.5/a1[2],anchor:"end",yplus:-0.5})}
-        ${svglabeltitik(tiB,"B",{ukuran:1.5/a1[2],yplus:-0.5})}
-        ${svglabeltitik(tiC,"C",{ukuran:1.5/a1[2],baseline:"hanging",yplus:0.2})}
-        ${svglabeltitik(tiD,"D",{ukuran:1.5/a1[2],anchor:"end",baseline:"hanging",yplus:0.2})}
-        ${svglabeltitik(tiP,"P",{ukuran:1/a1[2],anchor:"middle",baseline:"hanging",yplus:0.2})}
-        ${svglabeltitik(tiQ,"Q",{ukuran:1/a1[2],anchor:"middle",baseline:"hanging",yplus:0.2})}
-        ${svglabelgaris([tiD,[tiA[0],a1[1]]],"&#119909;",{ukuran:1/a1[2],anchor:"middle",baseline:"auto",yplus:-0.4})}
-        ${svglabelgaris([tiP,[tiA[0],a1[1]]],"&#119909;",{ukuran:1/a1[2],anchor:"middle",baseline:"auto",yplus:-0.4})}
-        ${svglabelgaris([tiC,[tiB[0],a1[1]]],"&#119910;",{ukuran:1/a1[2],anchor:"middle",baseline:"auto",yplus:-0.4})}
-        ${svglabelgaris([tiQ,[tiB[0],a1[1]]],"&#119910;",{ukuran:1/a1[2],anchor:"middle",baseline:"auto",yplus:-0.4})}
-        </svg>`
-    </script>
-  </div>
-
-  <div class="justify" id="3">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Trapesium <em>ABCD</em> dengan <em>AB</em> sejajar <em>DC</em>, panjang <e><em>AB</em> = 4</e> dan <em>DC</em> = 2. Diagonal <em>AC</em> dan <em>BD</em> berpotongan di titik <em>X</em>. Diketahui perbandingan panjang <em>AX</em> dengan <em>XD</em> adalah 4 : 1 dan panjang diagonal <em>AC</em> = 6. Maka keliling segitiga <em>CXD</em> adalah ...
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM September 2024</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><div id="temsvg3" class="w3-center"></div>
-        <div class="w3-row">
-          <div class="w3-col m6">Misal <e><em>XD</em> = <em>x</em>,</e> maka <e><em>AX</em> = 4<em>x</em>.</e><br>
-      \(\begin{aligned}
-      \dfrac{CX}{AX}&=\dfrac{DC}{AB}\\[4pt]
-      \dfrac{CX}{4x}&=\dfrac24\\[4pt]
-      CX&=2x
-      \end{aligned}\) <br><br></div>
-          <div class="w3-col m6">\(\begin{aligned}
-      AX+CX&=AC\\
-      4x+2x&=6\\
-      6x&=6\\
-      x&=1
-      \end{aligned}\) <br><br>
-      <e><em>XD</em> = 1,</e> <e><em>CX</em> = 2</e><br>
-      <e><em>XD</em> + <em>CX</em> + <em>DC</em> = 1 + 2 + 2 = 5</e></div>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-    </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <br><b>JAWAB: </b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-    <script>
-      var svg3 = geomBuat("temsvg3",21/4,3*Math.sqrt(15)/4,{rasio:30,margin:1});
-      var tiA3 = [0,3*Math.sqrt(15)/4];
-      var tiB3 = [4,3*Math.sqrt(15)/4];
-      var tiC3 = [21/4,0];
-      var tiD3 = [21/4-2,0];
-      var tiX3 = titikpotong([tiA3,tiC3],[tiB3,tiD3])
-      geomSegi(svg3,[tiA3,tiB3,tiC3,tiD3])
-      geomLabelTitik(svg3,tiA3,"A",{ukuran:1.2,anchor:"end",baseline:"mathematical",xplus:-0.05})
-      geomLabelTitik(svg3,tiB3,"B",{ukuran:1.2,anchor:"start",baseline:"hanging",xplus:0.05})
-      geomLabelTitik(svg3,tiC3,"C",{ukuran:1.2,anchor:"start",baseline:"auto",xplus:0.01})
-      geomLabelTitik(svg3,tiD3,"D",{ukuran:1.2,anchor:"middle",baseline:"auto",yplus:-0.1})
-      geomSegmen(svg3,[tiA3,tiC3])
-      geomSegmen(svg3,[tiB3,tiD3])
-      geomLabelTitik(svg3,tiX3,"X",{ukuran:1.2,anchor:"start",baseline:"central",xplus:0.2,yplus:0.1})
-      geomLabelGaris(svg3,[tiA3,tiB3],"4",{ukuran:1.1,anchor:"middle",baseline:"hanging",yplus:0.1})
-      geomLabelGaris(svg3,[tiC3,tiD3],"2",{ukuran:1.1,anchor:"middle",baseline:"auto",yplus:-0.1})
-    </script>
-  </div>
+    </header>
 
-  <br><br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(trapes,3,1)</script>
-</div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Trapesium</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Diberikan trapesium $ABCD$ dengan $AB = 13$, $CD = 18$, $AB$ sejajar $CD$, dan
+                    $\angle ADC$, $\angle BCD$ keduanya di bawah $90^\circ$. Jika $P$ dan $Q$ adalah titik pada
+                    sisi $CD$ sehingga $AD = AP$ dan $BC = BQ$, tentukan nilai dari $PQ$.</p>
+            </div>
+            <div class="soal-sumber">OSK 2023 SMA</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div id="gambar-1" class="tengah"></div>
+                    <p>Karena $AD = AP$ dan $BC = BQ$, kaki garis tegak lurus dari $A$ dan $B$ ke $CD$ membagi $DP$
+                        dan $QC$ sama panjang, yaitu masing-masing $x$ dan $y$. Maka $CD = 2x + PQ + 2y$ dan
+                        $AB = x + PQ + y$, sehingga $x + y = CD - AB$.</p>
+                    $$\begin{aligned}
+                    x+y&=18-13\\
+                    &=5
+                    \end{aligned}$$
+                    $$\begin{aligned}
+                    x+PQ+y&=13\\
+                    PQ+5&=13\\
+                    PQ&=\boxed{\boxed{8}}
+                    \end{aligned}$$
+                    <div class="kesimpulan">Jadi, $PQ = 8$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Diberikan trapesium $ABCD$ dengan $AB = 14$, $CD = 19$, $AB$ sejajar $CD$, dan
+                    $\angle ADC$, $\angle BCD$ keduanya di bawah $90^\circ$. Jika $P$ dan $Q$ adalah titik pada
+                    sisi $CD$ sehingga $AD = AP$ dan $BC = BQ$, tentukan nilai dari $PQ$.</p>
+            </div>
+            <div class="soal-sumber">OSK 2023 SMA</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div id="gambar-2" class="tengah"></div>
+                    <p>Karena $AD = AP$ dan $BC = BQ$, kaki garis tegak lurus dari $A$ dan $B$ ke $CD$ membagi $DP$
+                        dan $QC$ sama panjang, yaitu masing-masing $x$ dan $y$. Maka $CD = 2x + PQ + 2y$ dan
+                        $AB = x + PQ + y$, sehingga $x + y = CD - AB$.</p>
+                    $$\begin{aligned}
+                    x+y&=19-14\\
+                    &=5
+                    \end{aligned}$$
+                    $$\begin{aligned}
+                    x+PQ+y&=14\\
+                    PQ+5&=14\\
+                    PQ&=\boxed{\boxed{9}}
+                    \end{aligned}$$
+                    <div class="kesimpulan">Jadi, $PQ = 9$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Trapesium $ABCD$ dengan $AB$ sejajar $DC$, panjang $AB = 4$ dan $DC = 2$. Diagonal $AC$ dan
+                    $BD$ berpotongan di titik $X$. Diketahui perbandingan panjang $AX$ dengan $XD$ adalah $4 : 1$
+                    dan panjang diagonal $AC = 6$. Maka keliling segitiga $CXD$ adalah ...</p>
+            </div>
+            <div class="soal-sumber">Evaluasi GMOM September 2024</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div id="gambar-3" class="tengah"></div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Misal $XD = x$, maka $AX = 4x$.</p>
+                            $$\begin{aligned}
+                            \dfrac{CX}{AX}&=\dfrac{DC}{AB}\\[4pt]
+                            \dfrac{CX}{4x}&=\dfrac24\\[4pt]
+                            CX&=2x
+                            \end{aligned}$$
+                        </div>
+                        <div class="col">
+                            $$\begin{aligned}
+                            AX+CX&=AC\\
+                            4x+2x&=6\\
+                            6x&=6\\
+                            x&=1
+                            \end{aligned}$$
+                            <p>$XD = 1$, $CX = 2$</p>
+                            $$\begin{aligned}
+                            \text{Keliling}&=XD+CX+DC\\
+                            &=1+2+2\\
+                            &=\boxed{\boxed{5}}
+                            \end{aligned}$$
+                        </div>
+                    </div>
+                    <div class="kesimpulan">Jadi, keliling segitiga $CXD$ adalah $5$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <!-- Gambar trapesium memakai GeoSVG.js (otomatis mengikuti Dark Mode lewat currentColor) -->
+    <script>
+        (function () {
+            var WARNA = 'currentColor';
+            var FONT = 'Cambria, Times, Georgia, serif';
+
+            // GeoSVG bisa datang terlambat jika file lokal gagal dimuat dan beralih ke CDN
+            function siap(fn) {
+                if (window.GeoSVG) { fn(); return; }
+                var t = setInterval(function () {
+                    if (window.GeoSVG) { clearInterval(t); fn(); }
+                }, 100);
+                setTimeout(function () { clearInterval(t); }, 10000);
+            }
+
+            // Kanvas dengan sumbu Y ke atas; (0,0) di kiri-bawah gambar, margin untuk label
+            function kanvas(id, W, H, m, judul) {
+                return new GeoSVG(id, W + 2 * m, H + 2 * m, {
+                    yUp: true,
+                    viewBox: (-m) + ' ' + (-m) + ' ' + (W + 2 * m) + ' ' + (H + 2 * m),
+                    defaultStroke: WARNA,
+                    fontFamily: FONT,
+                    fontSize: '16px',
+                    title: judul,
+                    clearContainer: true
+                });
+            }
+
+            function titik(g, p, label, pos) {
+                g.buatTitik(p, {
+                    size: 2.5, color: WARNA, label: label, labelPosition: pos,
+                    labelDistance: 7, fontStyle: 'italic', fontSize: '17px'
+                });
+            }
+
+            function teks(g, x, y, isi, pos, miring) {
+                g.buatTeks(x, y, isi, {
+                    position: pos, fill: WARNA, fontSize: '15px',
+                    fontStyle: miring ? 'italic' : 'normal'
+                });
+            }
+
+            // Soal 1 & 2: trapesium ABCD (AB sejajar CD), CD = AB + 5, x = 2 dan y = 3 (x + y = 5)
+            function trapesium(id, ab) {
+                var u = 14, h = 8 * u, cd = ab + 5, m = 34;
+                var g = kanvas(id, cd * u, h, m, 'Trapesium ABCD dengan titik P dan Q pada sisi CD');
+                var A = [2 * u, h], B = [(2 + ab) * u, h], C = [cd * u, 0], D = [0, 0];
+                var P = [4 * u, 0], Q = [(ab - 1) * u, 0];
+                var kakiA = [A[0], 0], kakiB = [B[0], 0];
+
+                g.buatPoligon([A, B, C, D], { stroke: WARNA, strokeWidth: 2 });
+                g.buatSegmen(A, P, { stroke: WARNA, strokeWidth: 2 });
+                g.buatSegmen(B, Q, { stroke: WARNA, strokeWidth: 2 });
+                g.buatSegmen(A, kakiA, { stroke: WARNA, strokeWidth: 1, dashed: '4 3' });
+                g.buatSegmen(B, kakiB, { stroke: WARNA, strokeWidth: 1, dashed: '4 3' });
+
+                titik(g, A, 'A', 'top-left');
+                titik(g, B, 'B', 'top-right');
+                titik(g, C, 'C', 'bottom-right');
+                titik(g, D, 'D', 'bottom-left');
+                titik(g, P, 'P', 'bottom-center');
+                titik(g, Q, 'Q', 'bottom-center');
+
+                teks(g, 1 * u, 3, 'x', 'top-center', true);
+                teks(g, 3 * u, 3, 'x', 'top-center', true);
+                teks(g, kakiB[0] - 1.5 * u, 3, 'y', 'top-center', true);
+                teks(g, kakiB[0] + 1.5 * u, 3, 'y', 'top-center', true);
+            }
+
+            // Soal 3: AB = 4, DC = 2, AC = 6, BD = 3, diagonal berpotongan di X
+            function trapesiumDiagonal(id) {
+                var k = 40, W = 21 / 4 * k, h = 3 * Math.sqrt(15) / 4 * k, m = 34;
+                var g = kanvas(id, W, h, m, 'Trapesium ABCD dengan diagonal AC dan BD berpotongan di X');
+                var A = [0, h], B = [4 * k, h], C = [W, 0], D = [13 / 4 * k, 0];
+                var X = g.hitungTitikPotong([A, C], [B, D])[0];
+
+                g.buatPoligon([A, B, C, D], { stroke: WARNA, strokeWidth: 2 });
+                g.buatSegmen(A, C, { stroke: WARNA, strokeWidth: 2 });
+                g.buatSegmen(B, D, { stroke: WARNA, strokeWidth: 2 });
+
+                titik(g, A, 'A', 'top-left');
+                titik(g, B, 'B', 'top-right');
+                titik(g, C, 'C', 'bottom-right');
+                titik(g, D, 'D', 'bottom-left');
+                titik(g, X, 'X', 'middle-right');
+
+                teks(g, (A[0] + B[0]) / 2, h + 6, '4', 'top-center', false);
+                teks(g, (C[0] + D[0]) / 2, -6, '2', 'bottom-center', false);
+            }
+
+            siap(function () {
+                trapesium('gambar-1', 13);
+                trapesium('gambar-2', 14);
+                trapesiumDiagonal('gambar-3');
+            });
+        })();
+    </script>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

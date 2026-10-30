@@ -1,72 +1,269 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>SNBT Zone :  Permutasi dan Kombinasi</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-  <!--link rel="stylesheet" href="style.css"-->
-  <style>body{
-  font-family: roboto,sans-serif;   
-  }</style>
-     </head> 
-     <body> <div class="w3-container">
-        Berikut ini adalah kumpulan soal mengenai permutasi dan kombinasi tipe SBMPTN. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://web.facebook.com/groups/matematikazoneid/" target="_blank">Facebook </a>atau <a href="https://t.me/matematikazoneidgrup" target="_blank">Telegram</a>.<span><!--more--></span>
+<!DOCTYPE html>
+<html lang="id">
 
-        <h3>Tipe: </h3>
-        <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><span id="snbt" class="w3-bar-item w3-deep-purple w3-hide">SNBT</span><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div><br>
-        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-        <br>
-        
-        <div id="1" class="justify">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Soal - Permutasi dan Kombinasi</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: false},{left: '\\(', right: '\\)', display: false},{left: '\\[', right: '\\]', display: true}]});"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/idhamdaz/GeoSVG@main/GeoSVG.js"
+    onerror="this.onerror=null;this.src='../../scr/GeoSVG.js'"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header class="page-header">
+      <h1>Kumpulan Soal <span class="topic-highlight">Permutasi dan Kombinasi</span></h1>
+      <p>Gunakan soal-soal berikut untuk menguji pemahamanmu. Jika butuh diskusi, silakan bergabung ke grup <a
+          href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener">Matematika Idhamdaz</a>.</p>
+
+      <div id="level-nav" class="level-nav"></div>
+    </header>
+
+    <div class="pagination-wrapper"></div>
+
+    <div id="soal-container">
+
+      <!-- SOAL 1 -->
+      <article class="soal-item" id="1">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
           Banyak garis lurus <e><em>Ax</em> + 2<em>By</em> = 0</e> dengan <em>A</em> dan <em>B</em> dua bilangan berbeda yang dipilih dari <e>{0, 1, 2, 4}</e> adalah
-        <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>4</li>
-        <li>5
-        </li>
-        <li>6
-        </li>
-        </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>8</li>
-        <li>10
-        </li>
-        </ol></div></div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned}
-                Ax+2By&amp;=0\\
-                2By&amp;=-Ax\\
-                y&amp;=-\dfrac{A}{2B}x
-                \end{aligned}\)<br />
-                <table class="w3-table-all"><tbody>
-                <tr><td>Memilih 2 dari 4</td><td><e>\(P_2^4=12\)</td></tr>
-                <tr><td>Pasangan <e>(<em>A</em>, <em>B</em>)</e> yang menghasilkan \(\dfrac{A}B\) yang sama<br />
+          <ol class="pilgan">
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>8</li>
+            <li>10</li>
+          </ol>
+        </div>
+        <div class="soal-sumber">Sumber: <a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            \(\begin{aligned}
+            Ax+2By&amp;=0\\
+            2By&amp;=-Ax\\
+            y&amp;=-\dfrac{A}{2B}x
+            \end{aligned}\)<br>
+            <table class="w3-table-all"><tbody>
+              <tr><td>Memilih 2 dari 4</td><td><e>\(P_2^4=12\)</e></td></tr>
+              <tr><td>Pasangan <e>(<em>A</em>, <em>B</em>)</e> yang menghasilkan \(\dfrac{A}B\) yang sama<br>
                 <e>{(0, 1), (0, 2), (0, 4)}</e></td><td>&minus;2</td></tr>
-                <tr><td>Pasangan <e>(<em>A</em>, <em>B</em>)</e> yang menghasilkan \(\dfrac{A}B\) yang sama<br />
+              <tr><td>Pasangan <e>(<em>A</em>, <em>B</em>)</e> yang menghasilkan \(\dfrac{A}B\) yang sama<br>
                 <e>{(1, 0), (2, 0), (4, 0)}</e></td><td>&minus;2</td></tr>
-                <tr><td>Pasangan <e>(<em>A</em>, <em>B</em>)</e> yang menghasilkan \(\dfrac{A}B\) yang sama<br />
-                <e>{(1, 2), (2, 4)}</e></td><td>1</td></tr>
-                <tr><td>Pasangan <e>(<em>A</em>, <em>B</em>)</e> yang menghasilkan \(\dfrac{A}B\) yang sama<br />
+              <tr><td>Pasangan <e>(<em>A</em>, <em>B</em>)</e> yang menghasilkan \(\dfrac{A}B\) yang sama<br>
+                <e>{(1, 2), (2, 4)}</e></td><td>&minus;1</td></tr>
+              <tr><td>Pasangan <e>(<em>A</em>, <em>B</em>)</e> yang menghasilkan \(\dfrac{A}B\) yang sama<br>
                 <e>{(2, 1), (4, 2)}</e></td><td>&minus;1</td></tr>
-                <tr><th>JUMLAH</th><th>6</th></tr>
-                </tbody></table></div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, banyak garis lurus ada 6.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
+              <tr><th>JUMLAH</th><th>6</th></tr>
+            </tbody></table>
+            <div class="kesimpulan">Jadi, banyak garis lurus ada 6.<br><b>JAWAB: C</b></div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
         </div>
-        </div>
+      </article>
 
-        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-        <script>soal(permukom,2,1)</script>
-      </div>
-   </body>
-</html> 
+      <!-- SOAL 2 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 2
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 2
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 3 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 3
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 3
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 4 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 4
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 4
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 5 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 5
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 5
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 6 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 6
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 6
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 7 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 7
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 7
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 8 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 8
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 8
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 9 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 9
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 9
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 10 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 10
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 10
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+    </div>
+
+    <div class="pagination-wrapper"></div>
+
+  </main>
+
+  <script src="../../scr/script.js"></script>
+</body>
+
+</html>

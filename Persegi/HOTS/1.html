@@ -1,670 +1,738 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HOTS Zone : Persegi</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Persegi</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="../../scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+        </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: white">
-  <div class="separator w3-hide" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYx7u8XVMhMqwVcg7p3SdQcUzp_rYRen-36zYWwDzHVPWuu6EJ6XjAJWwBk-_ZL_JowjxfMQj1jalcz_F0XWndMfcWD3AbeWyJoQFNXzwRmIekmIYZghilxjJP5CdePFIPhybEutL6JZbMhK7-41eg2P_pe04X4eNBjCrhGfB6xvUFxw5XzJCDQRnGrp7b/s1080/matematika%20zone%20id.png" style="display: block; padding: 1em 0; text-align: center; clear: left; float: left;"><img alt="" border="0" width="200" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYx7u8XVMhMqwVcg7p3SdQcUzp_rYRen-36zYWwDzHVPWuu6EJ6XjAJWwBk-_ZL_JowjxfMQj1jalcz_F0XWndMfcWD3AbeWyJoQFNXzwRmIekmIYZghilxjJP5CdePFIPhybEutL6JZbMhK7-41eg2P_pe04X4eNBjCrhGfB6xvUFxw5XzJCDQRnGrp7b/s200/matematika%20zone%20id.png"/></a></div>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Persegi</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
 
-  <h2>Tipe: </h2>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Persegi</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-  <div id="1" class="justify"><h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-    <em>ABCD</em> adalah persegi dengan panjang sisi 4. Jika <e><em>DQ</em> = 1</e> berapa perbandingan luas yang diarsir (berwarna biru) dengan luas persegi <em>ABCD</em>?
-    <div class="w3-center"><svg version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: 100px; width: 240px; max-width: 780px; min-height: 150px; max-height: 500px;' viewbox="0 0 6 6">
-        <polygon points="1,1 4.2,4.2 1,5" style="fill:blue; stroke:none"/>
-    <rect x="1" y="1" width="4" height="4" style="stroke:black; fill:none; stroke-width:0.1"/>
-    <line x1="1" y1="1"
-          x2="5" y2="5"
-          stroke="black"
-          stroke-width="0.1"/>
-          <line x1="1" y1="5"
-              x2="5" y2="4"
-              stroke="black"
-              stroke-width="0.1"/>
-        <text x="0.6"  y="1" style="font-family:'Times New Roman', Times, serif; font-style:italic; font-size: 0.5px">B</text>
-        <text x="5.1"  y="1" style="font-family:'Times New Roman', Times, serif; font-style:italic; font-size: 0.5px">C</text>
-        <text x="5.1"  y="5.3" style="font-family:'Times New Roman', Times, serif; font-style:italic; font-size: 0.5px">D</text>
-        <text x="0.6"  y="5.3" style="font-family:'Times New Roman', Times, serif; font-style:italic; font-size: 0.5px">A</text>
-        <text x="5.1"  y="4" style="font-family:'Times New Roman', Times, serif; font-style:italic; font-size: 0.5px">Q</text>
-        <text x="5.1"  y="4.6" style="font-size: 0.5px">1</text>
-        <text x="0.6"  y="3.3" style="font-size: 0.5px">4</text>
-    </svg></div>
-    <div class="w3-row">
-        <div class="col">
-            <ol class="pas1" type="A">
-                <li>2:5</li>
-                <li>1:3</li>
-            </ol>
-        </div>
-        <div class="col">
-            <ol class="pas1" start="3" type="A">
-                <li>1:4</li>
-                <li>3:7</li>
-            </ol>
-        </div>
-    </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/MatematikaZoneIdGrup/12942" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">
-                <div class="w3-center"><svg version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xhtml="http://www.w3.org/1999/xhtml" style='min-width: 100px; width: 400px; max-width: 780px; min-height: 150px; max-height: 500px;' viewbox="0 0 6 6">
-                    <polygon points="1,1 4.2,4.2 1,5" style="fill:blue; stroke:none"/>
-                <rect x="1" y="1" width="4" height="4" style="stroke:black; fill:none; stroke-width:0.1"/>
-                <line x1="1" y1="1"
-                      x2="5" y2="5"
-                      stroke="black"
-                      stroke-width="0.1"/>
-                      <line x1="1" y1="5"
-                          x2="5" y2="4"
-                          stroke="black"
-                          stroke-width="0.1"/>
-                    <text x="0.6"  y="1" style="font-family:'Times New Roman', Times, serif; font-style:italic; font-size: 0.5px">B</text>
-                    <text x="5.1"  y="1" style="font-family:'Times New Roman', Times, serif; font-style:italic; font-size: 0.5px">C</text>
-                    <text x="5.1"  y="5.3" style="font-family:'Times New Roman', Times, serif; font-style:italic; font-size: 0.5px">D</text>
-                    <text x="0.6"  y="5.3" style="font-family:'Times New Roman', Times, serif; font-style:italic; font-size: 0.5px">A</text>
-                    <text x="5.1"  y="4" style="font-family:'Times New Roman', Times, serif; font-style:italic; font-size: 0.5px">Q</text>
-                    <text x="5.1"  y="4.6" style="font-size: 0.5px">1</text>
-                    <text x="0.6"  y="3.3" style="font-size: 0.5px">4</text>
-                    <line x1="1" y1="4.2"
-                          x2="4.2" y2="4.2"
-                          stroke="red"
-                          stroke-width="0.1"/>
-                          <line x1="4.2" y1="4.2"
-                          x2="5" y2="4.2"
-                          stroke="green"
-                          stroke-width="0.1"/>
-                </svg></div>            
-                Misal panjang garis berwarna merah adalah <em>t</em><sub>1</sub> dan panjang garis berwarna hijau adalah <em>t</em><sub>2</sub><br><br>
-                $\dfrac{t_1}{t_2}=\dfrac41$<br />
-    <br />
-    \(\eqalign{
-    t_1&amp;=\dfrac4{4+1}\cdot4\\
-    &amp;=\dfrac45\cdot4
-    }\)<br />
-    <br />
-    misal luas daerah yang diarsir adalah $L_1$<br />
-    \(\eqalign{
-    \dfrac{L_1}{L_2}&amp;=\dfrac{\dfrac12\cdot4\cdot\dfrac45\cdot4}{4\cdot4}\\
-    &amp;=\dfrac25
-    }\)</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, perbandingannya adalah $2:5$.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-    </details>
-    <hr>
-      </div>
-    
-    <div id="2" class="justify"><h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-      Diberikan persegi berukuran 3&times;3 satuan seperti pada gambar. Luas segilima yang diarsir adalah....
-      <div id="tempatsvg" class="w3-center"></div>
-      <script>
-        var isisvg = String.raw`<svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: 100px; width: 300px; max-width: 780px; min-height: 150px; height: 300px; max-height: 500px;' viewbox="0 0 4 4"><polygon points="1.5,1.5 2.5,1.5 2.5,2 ${1.5+2/3},2.5 1.5,2.5" style="stroke:none; fill:aquamarine"/>`;
-            for (let i = 0; i < 3; i++) {
-                for (let j = 0; j < 3; j++) {
-                    isisvg+= String.raw`<rect x="${j+0.5}" y="${i+0.5}" width="1" height="1" style="stroke: black; stroke-width: 0.05; fill: none;"/>`
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR 10 SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <em>ABCD</em> adalah persegi dengan panjang sisi 4. Jika <e><em>DQ</em> = 1</e> berapa perbandingan luas yang diarsir (berwarna biru) dengan luas persegi <em>ABCD</em>?
+                <div id="svg-soal-1" class="w3-center" style="margin: 1rem 0;"></div>
+                <div class="w3-row">
+                    <div class="w3-col s6">
+                        <ol class="pas1" type="A">
+                            <li>2:5</li>
+                            <li>1:3</li>
+                        </ol>
+                    </div>
+                    <div class="w3-col s6">
+                        <ol class="pas1" start="3" type="A">
+                            <li>1:4</li>
+                            <li>3:7</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/12942" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div id="svg-pembahasan-1" class="w3-center" style="margin: 1rem 0;"></div>
+                    Misal panjang garis berwarna merah adalah <em>t</em><sub>1</sub> dan panjang garis berwarna hijau adalah <em>t</em><sub>2</sub><br><br>
+                    $\dfrac{t_1}{t_2}=\dfrac41$<br><br>
+                    \(\begin{aligned}
+                    t_1&=\dfrac4{4+1}\cdot4\\
+                    &=\dfrac45\cdot4
+                    \end{aligned}\)<br><br>
+                    Misal luas daerah yang diarsir adalah $L_1$<br>
+                    \(\begin{aligned}
+                    \dfrac{L_1}{L_2}&=\dfrac{\dfrac12\cdot4\cdot\dfrac45\cdot4}{4\cdot4}\\
+                    &=\dfrac25
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, perbandingannya adalah $2:5$.<br><b>JAWAB: A</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diberikan persegi berukuran 3&times;3 satuan seperti pada gambar. Luas segilima yang diarsir adalah....
+                <div id="svg-soal-2" class="w3-center" style="margin: 1rem 0;"></div>
+            </div>
+            <div class="soal-sumber">OSK 2018</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div id="svg-pembahasan-2" class="w3-center" style="margin: 1rem 0;"></div>
+                    \(\dfrac{a}b=\dfrac32\) <br><br>
+                    \(\begin{aligned}
+                    \dfrac{a}{a+1}&=\dfrac{b}1\\[4pt]
+                    \dfrac{a}{b}&=a+1\\[4pt]
+                    a+1&=\dfrac32\\[4pt]
+                    a&=\dfrac12
+                    \end{aligned}\)<br><br>
+                    \(b=\dfrac13\)<br><br>
+                    \(\begin{aligned}
+                        L&=1^2-\dfrac12\cdot\dfrac13\cdot\dfrac12\\
+                        &=1-\dfrac1{12}\\
+                        &=\boxed{\boxed{\dfrac{11}{12}}}
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, luas segilima yang diarsir adalah $\dfrac{11}{12}$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <em>ABCD</em> adalah persegi dengan <e><em>AE</em> = <em>BF</em> = <em>CG</em> = <em>DH</em>.</e> Berapa luas dari segiempat <em>DHMG</em>?<br>
+                <div id="svg-soal-3" class="w3-center" style="margin: 1rem 0;"></div>
+            </div>
+            <div class="soal-sumber"><a href="https://brilliant.org" target="_blank" rel="noopener noreferrer">Brilliant.org</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \(\begin{aligned}
+                    |AEH|=|BFE|=|CGF|=|DHG|=x
+                    \end{aligned}\)<br>
+                    \(\begin{aligned}
+                    |EMH|+|FMG|&=|EFM|+|GMH|\\
+                    69-x+93-x&=60-x+|DHMG|-x\\
+                    |DHMG|&=102
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, luas dari segiempat <em>DHMG</em> adalah 102.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <div class="w3-row">
+                    <div class="w3-col s8">
+                        Pada gambar disamping, <em>ABCD</em> adalah persegi dan <em>ABE</em> adalah segitiga sama sisi. Besar sudut <em>DAE</em> adalah .... 
+                        <div class="w3-row">
+                            <div class="w3-col s6">
+                                <ol class="pas1" type="A">
+                                    <li>15&deg;</li>
+                                    <li>30&deg;</li>
+                                    <li>45&deg;</li>
+                                </ol>
+                            </div>
+                            <div class="w3-col s6">
+                                <ol class="pas1" start="4" type="A">
+                                    <li>60&deg;</li>
+                                    <li>75&deg;</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col s4 w3-center" id="svg-soal-4"></div>
+                </div>
+            </div>
+            <div class="soal-sumber"><a href="/2023/01/download-soal-osk-matematika-smp-2003.html" target="_blank" rel="noopener noreferrer">OSK SMP 2003</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \(\begin{aligned}
+                    \angle DAE&=\angle DAB-\angle EAB\\
+                    &=90^\circ-60^\circ\\
+                    &=\boxed{\boxed{30^\circ}}
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, besar sudut <em>DAE</em> adalah 30&deg;.<br><b>JAWAB: B</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Gambar bangun berikut disusun oleh 5 persegi yang kongruen. Kalau keliling bangun ini 72 cm, maka luas bangun tersebut adalah .... 
+                <div id="svg-soal-5" class="w3-center" style="margin: 1rem 0;"></div>
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">OSK SMP 2003</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Misal panjang masing-masing persegi adalah <em>a</em>. <br>
+                    \(\begin{aligned}
+                    12a&=72\\
+                    a&=6
+                    \end{aligned}\)<br><br>
+                    \(\begin{aligned}
+                    L&=5\cdot6^2\\
+                    &=\boxed{\boxed{180}}
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, luas bangun tersebut adalah 180 cm<sup>2</sup>.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 6 -->
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Gambar bangun berikut, <em>ABCD</em> adalah persegi dengan sisi 6 satuan. Titik <em>E</em> dan <em>F</em> membagi diagonal <em>AC</em> menjadi tiga bagian sama panjang. Luas segitiga <em>DEF</em> = .... 
+                <div id="svg-soal-6" class="w3-center" style="margin: 1rem 0;"></div>
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">OSK SMP 2003</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \(\begin{aligned}
+                    L_{DEF}&=L_{BEF}\\
+                    &=\dfrac13L_{ABC}\\
+                    &=\dfrac13\cdot\dfrac12\cdot6\cdot6\\
+                    &=\boxed{\boxed{6}}
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, luas segitiga <em>DEF</em> = 6 satuan luas.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 7 -->
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diberikan persegi <em>ABCD</em>, kemudian dibuat lingkaran &omega;<sub>1</sub> yang terletak di dalam persegi tersebut sedemikian sehingga &omega;<sub>1</sub> menyinggung sisi <em>AD</em> dan sisi <em>CD</em>. Selanjutnya dibuat lingkaran &omega;<sub>2</sub> yang terletak di dalam persegi <em>ABCD</em> sedemikian sehingga menyinggung sisi <em>BC</em>, sisi <em>CD</em>, dan lingkaran &omega;<sub>1</sub>. Jika panjang jari-jari lingkaran &omega;<sub>1</sub> dan lingkaran &omega;<sub>2</sub> berturut-turut adalah 3 dan 1, maka panjang persegi <em>ABCD</em> adalah ....
+                <div class="w3-row">
+                    <div class="w3-col s6">
+                        <ol class="pas1" type="A">
+                            <li>\(3+\sqrt5\)</li>
+                            <li>\(4+2\sqrt3\)</li>
+                        </ol>
+                    </div>
+                    <div class="w3-col s6">
+                        <ol class="pas1" start="3" type="A">
+                            <li>\(5+\sqrt3\)</li>
+                            <li>\(6-2\sqrt5\)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">KTOM - TO OSK SMP 2023</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div class="row">
+                        <div class="col">
+                            <div id="svg-pembahasan-7" class="w3-center"></div>
+                        </div>
+                        <div class="col">
+                            \(\begin{aligned}
+                              x&=\sqrt{(3+1)^2-2^2}\\
+                              &=\sqrt{16-4}\\
+                              &=\sqrt{12}\\
+                              &=2\sqrt3
+                              \end{aligned}\)<br><br>
+                            \(\begin{aligned}
+                              a&=3+x+1\\
+                              &=\boxed{\boxed{4+2\sqrt3}}
+                              \end{aligned}\)
+                        </div>
+                    </div>
+                    <div class="kesimpulan">Jadi, panjang persegi <em>ABCD</em> adalah \(4+2\sqrt3\).<br><b>JAWAB: B</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 8 -->
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Sebuah persegi <em>ABCD</em> dengan panjang sisi 4 cm. Titik <em>E</em> terletak pada tengah-tengah <em>CD</em>, titik <em>F</em> terletak pada <em>AE</em> sehingga <e><em>AE</em> &perp; <em>FB</em>.</e> Panjang <em>FC</em> adalah ... cm
+            </div>
+            <div class="soal-sumber"><a href="#" target="_blank" rel="noopener noreferrer">Latihan ke-3 GMOM September 2023</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <h3>CARA 1</h3>
+                    <div id="svg-pembahasan-8-1" class="w3-center" style="margin: 1rem 0;"></div>
+                    <em>AD</em> = 2<em>DE</em>. <br>
+                    &#8710;<em>ABF</em> &sim; &#8710;<em>ADE</em>. <br>
+                    (<e>&angle;<em>BAF</em> = 90&deg; &minus; &angle;<em>DAE</em> = &angle;<em>AED</em></e> dan <e>&angle;<em>AFB</em> = &angle;<em>ADE</em> = 90&deg;</e>)<br>
+                    Sehingga <em>BF</em> = 2<em>AF</em>. <br><br>
+                    Misal terdapat titik <em>G</em> pada <em>FB</em> sehingga <e><em>CG</em> &perp; <em>FB</em></e>.<br>
+                    &#8710;<em>ABF</em> &cong; &#8710;<em>BCG</em> karena:<br>
+                    - <e>&angle;<em>CBG</em> = 90&deg; &minus; &angle;<em>FBA</em> = &angle;<em>BAF</em></e><br>
+                    - <em>BC</em> = <em>AB</em> = 4<br>
+                    - <e>&angle;<em>BGC</em> = &angle;<em>AFB</em> = 90&deg;</e><br><br>
+                    Akibatnya <e><em>FB</em> = <em>CG</em> = 2<em>BG</em></e>, sehingga <e><em>FG</em> = <em>BG</em></e>.<br>
+                    Karena <e><em>CG</em> = <em>CG</em> (berimpit)</e> dan <e>&angle;<em>CGF</em> = &angle;<em>CGB</em> = 90&deg;</e> maka <e>&#8710;<em>CGF</em> &cong; &#8710;<em>CGB</em></e>. <br>
+                    Sehingga <e><em>FC</em> = <em>BC</em> = 4</e>.
+                    <hr>
+                    <h3>CARA 2</h3>
+                    Buat garis sejajar <em>AE</em> dari <em>B</em>, misal bertemu perpanjangan <em>DC</em> di <em>H</em>. <br>
+                    Misal terdapat titik <em>G</em> pada <em>FB</em> sehingga <e><em>CG</em> &perp; <em>FB</em></e>.
+                    <div id="svg-pembahasan-8-2" class="w3-center" style="margin: 1rem 0;"></div>
+                    <em>EFGC</em> &sim; <em>CGBH</em>. Karena <e><em>EC</em> = <em>CH</em></e> maka <e><em>FG</em> = <em>GB</em>.</e><br>
+                    Karena <e><em>CG</em> = <em>CG</em> (berimpit)</e> dan <e>&angle;<em>CGF</em> = &angle;<em>CGB</em></e> maka <e>&#8710;<em>CGF</em> &cong; &#8710;<em>CGB</em></e>. <br>
+                    Sehingga <e><em>FC</em> = <em>BC</em> = 4</e>.
+                    <div class="kesimpulan">Jadi, <em>FC</em> = 4 cm.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 9 -->
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Sebuah persegi dibagi menjadi 2 persegi panjang, seperti terlihat pada gambar. Diketahui hasil penjumlahan kedua keliling persegi panjang tersebut adalah 60, maka luas persegi adalah ....
+                <div id="svg-soal-9" class="w3-center" style="margin: 1rem 0;"></div>
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">OSK SMA 2024</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div id="svg-pembahasan-9" class="w3-center" style="margin: 1rem 0;"></div>
+                    Misal panjang sisi perseginya adalah <em>s</em>. Perhatikan bahwa jika kita mengelilingi kedua persegi panjang, maka akan melalui 6<em>s</em>, yaitu keempat sisi persegi, dan 2 kali melalui garis yang ada di dalam. <br>
+                    \(\begin{aligned}
+                    6s&=60\\
+                    s&=10\\
+                    L&=10^2\\
+                    &=\color{blue}\boxed{\boxed{\color{black}100}}
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, luas persegi adalah 100.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 10 -->
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Terdapat sebuah persegi <em>KMNR</em> dengan luas 900 cm<sup>2</sup>. Titik <em>P</em> dan <em>Q</em> berturut-turut merupakan titik tengah <em>KM</em> dan <em>MN</em>. Ruas garis <em>KQ</em> dan <em>RP</em> berpotongan di titik <em>S</em>. Luas segi empat <em>RSQN</em> adalah .... cm<sup>2</sup>.
+                <div class="w3-row">
+                    <div class="w3-col s6">
+                        <ol class="pas1" type="A">
+                            <li>545</li>
+                            <li>525</li>
+                            <li>515</li>
+                        </ol>
+                    </div>
+                    <div class="w3-col s6">
+                        <ol class="pas1" start="4" type="A">
+                            <li>500</li>
+                            <li>495</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">Penyisihan OGM 10 Tingkat SMA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Perhatikan gambar berikut.
+                    <div id="svg-pembahasan-10" class="w3-center" style="margin: 1rem 0;"></div>
+                    2 bangun yang warnanya sama memiliki luas yang sama. <br>
+                    \(\begin{aligned}
+                    KS^2+SR^2&=KR^2\\
+                    \left(\dfrac12a\right)^2+a^2&=900\\
+                    \dfrac14a^2+a^2&=900\\
+                    \dfrac54a^2&=900\\
+                    a^2&=720\\
+                    \left[RTUS\right]&=720
+                    \end{aligned}\) <br><br>
+                    \(\begin{aligned}
+                    \left[RSQN\right]&=\left[RTUS\right]-\left([RTN]+[QUN]\right)\\
+                    &=\left[RTUS\right]-\left([KSR]+[KSP]\right)\\
+                    &=\left[RTUS\right]-[PKR]\\
+                    &=720-\dfrac12\cdot15\cdot30\\
+                    &=720-225\\
+                    &=495
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, luas segi empat <em>RSQN</em> adalah 495 cm<sup>2</sup>.<br><b>JAWAB: E</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script>
+        (function renderAllGeoSVG() {
+            if (typeof GeoSVG === 'undefined') {
+                window.addEventListener('load', renderAllGeoSVG);
+                return;
+            }
+
+            // ================= SOAL 1 =================
+            function drawSoal1(containerId, isPembahasan) {
+                const geo = new GeoSVG(containerId, 160, 160, {
+                    margin: 28,
+                    defaultStrokeWidth: 1.5,
+                    fontFamily: "'Times New Roman', Times, serif",
+                    fontSize: "15px",
+                    clearContainer: true
+                });
+                const B = [0, 0], C = [160, 0], D = [160, 160], A = [0, 160];
+                const Q = [160, 120];
+                const P = geo.hitungTitikPotong([B, D], [A, Q])[0];
+
+                geo.buatPoligon([A, B, P], { fill: "royalblue", fillOpacity: 0.75, stroke: "none" });
+                geo.buatPersegi(0, 0, 160);
+                geo.buatSegmen(B, D);
+                geo.buatSegmen(A, Q);
+
+                if (isPembahasan) {
+                    geo.buatSegmen([0, P[1]], P, { stroke: "red", strokeWidth: 2.2 });
+                    geo.buatSegmen(P, [160, P[1]], { stroke: "green", strokeWidth: 2.2 });
+                }
+
+                geo.buatTeks(B[0] - 8, B[1], "B", { position: "middle-left", fontStyle: "italic" });
+                geo.buatTeks(C[0] + 8, C[1], "C", { position: "middle-right", fontStyle: "italic" });
+                geo.buatTeks(D[0] + 8, D[1], "D", { position: "middle-right", fontStyle: "italic" });
+                geo.buatTeks(A[0] - 8, A[1], "A", { position: "middle-left", fontStyle: "italic" });
+                geo.buatTeks(Q[0] + 8, Q[1], "Q", { position: "middle-right", fontStyle: "italic" });
+                geo.buatLabelSisi(B, A, "4", { sisi: "kanan", jarak: 12 });
+                geo.buatLabelSisi(Q, D, "1", { sisi: "kiri", jarak: 12 });
+            }
+            drawSoal1("svg-soal-1", false);
+            drawSoal1("svg-pembahasan-1", true);
+
+            // ================= SOAL 2 =================
+            function drawSoal2(containerId, isPembahasan) {
+                const s = 60;
+                const geo = new GeoSVG(containerId, 3 * s, 3 * s, {
+                    margin: 15,
+                    defaultStrokeWidth: 1.5,
+                    fontFamily: "'Times New Roman', Times, serif",
+                    fontSize: "14px",
+                    clearContainer: true
+                });
+                const P1 = [s, s], P2 = [2 * s, s], P3 = [2 * s, 1.5 * s], P4 = [(1 + 2 / 3) * s, 2 * s], P5 = [s, 2 * s];
+                geo.buatPoligon([P1, P2, P3, P4, P5], { fill: "aquamarine", stroke: "none" });
+                for (let i = 0; i < 3; i++) {
+                    for (let j = 0; j < 3; j++) {
+                        geo.buatPersegi(j * s, i * s, s);
+                    }
+                }
+                geo.buatSegmen([3 * s, 0], [s, 3 * s]);
+                if (isPembahasan) {
+                    geo.buatSegmen(P3, [2 * s, 2 * s], { stroke: "red", strokeWidth: 2.2 });
+                    geo.buatSegmen(P4, [2 * s, 2 * s], { stroke: "blue", strokeWidth: 2.2 });
+                    geo.buatTeks(2 * s + 5, 1.75 * s, "a", { position: "middle-right", fontStyle: "italic" });
+                    geo.buatTeks(1.83 * s, 2 * s + 6, "b", { position: "bottom-center", fontStyle: "italic" });
                 }
             }
-            isisvg += String.raw`<line x1="3.5" y1="0.5"
-          x2="1.5" y2="3.5"
-          stroke="black"
-          stroke-width="0.05"/>`;
-            isisvg+=String.raw`</svg>`;
-            document.getElementById("tempatsvg").innerHTML = isisvg;
-      </script>
-      
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">OSK 2018</div>
-      <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">      <div id="tempatsvg2" class="w3-center"></div>
-              <script>
-                var isisvg2 = String.raw`<svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: 100px; width: 300px; max-width: 780px; min-height: 150px; height: 300px; max-height: 500px;' viewbox="0 0 4 4"><polygon points="1.5,1.5 2.5,1.5 2.5,2 ${1.5+2/3},2.5 1.5,2.5" style="stroke:none; fill:aquamarine"/>`;
-                    for (let i = 0; i < 3; i++) {
-                        for (let j = 0; j < 3; j++) {
-                            isisvg2+= String.raw`<rect x="${j+0.5}" y="${i+0.5}" width="1" height="1" style="stroke: black; stroke-width: 0.05; fill: none;"/>`
-                        }
-                    }
-                    isisvg2 += String.raw`<line x1="3.5" y1="0.5"
-                  x2="1.5" y2="3.5"
-                  stroke="black"
-                  stroke-width="0.05"/><line x1="2.5" y1="2"
-              x2="2.5" y2="2.5"
-              stroke="red"
-              stroke-width="0.05"/>        <polyline points="2.5,2 2.5,2.5 ${1.5+2/3},2.5" style="stroke:blue; stroke-width: 0.05; fill: none"/>
-              <text x="2.55"  y="2.3" style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 0.4px;">a</text>
-              <text x="2.22"  y="2.85" style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 0.4px;">b</text>`;
-                    isisvg2+=String.raw`</svg>`;
-                    document.getElementById("tempatsvg2").innerHTML = isisvg2;
-              </script>
-              \(\dfrac{a}b=\dfrac32\) <br><br>
-              \(\begin{aligned}
-              \dfrac{a}{a+1}&=\dfrac{b}1\\[4pt]
-              \dfrac{a}{b}&=a+1\\[4pt]
-              a+1&=\dfrac32\\[4pt]
-              a&=\dfrac12
-              \end{aligned}\)<br><br>
-              \(b=\dfrac13\)<br><br>
-                $\eqalign{
-                    L&=1^2-\dfrac12\cdot\dfrac13\cdot\dfrac12\\
-                    &=1-\dfrac1{12}\\
-                    &=\boxed{\boxed{\dfrac{11}{12}}}
-                }$</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, luas segilima yang diarsir adalah $\dfrac{11}{12}$.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-      </details>
-      <hr>
-    </div>
+            drawSoal2("svg-soal-2", false);
+            drawSoal2("svg-pembahasan-2", true);
 
-    <div id="3" class="justify">
-        <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-        <em>ABCD</em> adalah persegi dengan <e><em>AE</em> = <em>BF</em> = <em>CG</em> = <em>DH</em>.</e> Berapa luas dari segiempat <em>DHMG</em>?<br />
-        <div id="tempatsvg3" class="w3-center"></div>
-        <script>
-            var koordm = [45,65];
-            document.getElementById("tempatsvg3").innerHTML = String.raw`<svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: 100px; width: 200px; max-width: 780px; min-height: 150px;
-        height: 200px; max-height: 500px;' viewbox="0 0 100 100">
-        <rect x="10" y="10" width="80" height="80" style="stroke:black; stroke-width: 1; fill:#fba34c"/>
-        <polygon points="90,10 90,80 ${koordm} 80,10" style="stroke:black; stroke-width: 1; fill:greenyellow"/><polygon points="10,20 ${koordm} 20,90 10,90" style="stroke:black; stroke-width: 1; fill:#dc5c4c"/><polygon points="20,90 ${koordm} 90,80 90,90" style="stroke:black; stroke-width: 1; fill:cornflowerblue"/><line x1="85" y1="7"
-              x2="85" y2="13"
-              stroke="black"
-              stroke-width="1.3"/><line x1="87" y1="85"
-              x2="93" y2="85"
-              stroke="black"
-              stroke-width="1.3"/><line x1="85" y1="7"
-              x2="85" y2="13"
-              stroke="black"
-              stroke-width="1.3"/><line x1="15" y1="87"
-              x2="15" y2="93"
-              stroke="black"
-              stroke-width="1.3"/><line x1="7" y1="15"
-              x2="13" y2="15"
-              stroke="black"
-              stroke-width="1.3"/><text x="4"  y="10" style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 7px;">D</text><text x="91"  y="10" style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 7px;">C</text><text x="91"  y="95" style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 7px;">B</text><text x="4"  y="95" style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 7px;">A</text><text x="77"  y="8" style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 7px;">G</text><text x="91"  y="82" style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 7px;">F</text><text x="18"  y="97" style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 7px;">E</text><text x="3"  y="23" style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 7px;">H</text><text x="${koordm[0]+3}"  y="${koordm[1]}" style="font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 7px;">M</text><text x="${koordm[0]+2.5}"  y="${koordm[1]+18}" style="font-size: 10px; font-style: bold;">60</text><text x="17"  y="65" style="font-size: 10px; font-style: bold;">69</text><text x="65"  y="57" style="font-size: 10px; font-style: bold;">93</text>
-              <text x="40"  y="30" style="font-size: 12px; font-style: bold;">?</text>
-        </svg>`;
-        </script>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://brilliant.org" target="_blank" rel="noopener noreferrer">Brilliant.org</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo">\begin{aligned}
-                    |AEH|=|BFE|=|CGF|=|DHG|=x
-                    \end{aligned}
-                    \begin{aligned}
-                    |EMH|+|FMG|&amp;=|EFM|+|GMH|\\
-                    69-x+93-x&amp;=60-x+|DHMG|-x\\
-                    |DHMG|&amp;=102
-                    \end{aligned}</div>
-                <div class="w3-brown w3-padding tebal">Jadi, luas dari segiempat <em>DHMG</em> adalah 102.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-        </details>
-        <hr>
-    </div>
+            // ================= SOAL 3 =================
+            (function drawSoal3() {
+                const geo = new GeoSVG("svg-soal-3", 200, 200, {
+                    margin: 28,
+                    defaultStrokeWidth: 1.5,
+                    fontFamily: "'Times New Roman', Times, serif",
+                    fontSize: "15px",
+                    clearContainer: true
+                });
+                const D = [0, 0], C = [200, 0], B = [200, 200], A = [0, 200];
+                const G = [175, 0], F = [200, 175], E = [25, 200], H = [0, 25];
+                const M = [88, 138];
 
-    <div class="justify" id="4">
-      <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-      <div class="w3-row">
-        <div class="w3-col s8">Pada gambar disamping, <em>ABCD</em> adalah persegi dan ABE adalah segitiga sama sisi. Besar sudut <em>DAE</em> adalah .... 
-          <div class="w3-row">
-            <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                <li>15&deg;</li>
-                <li>30°</li>
-                <li>45°</li>
-              </ol>
-            </div>
-            <div class="w3-col s6">
-              <ol class="pas1" start="4" type="A">
-                <li>60°</li>
-                <li>75°</li>
-              </ol>
-            </div>
-          </div></div>
-        <div class="w3-col s4" id="tempatsvg4"><svg width='150' height='150' version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: 100px; width: 250px; max-width: 780px; min-height: 150px; height: 250px; max-height: 500px;' viewbox="0 0 10 10">
-        <rect x="2" y="2" width="6" height="6" style="stroke:black; fill:none; stroke-width: 0.1;"/>
-        <polyline points="2,8 5,2 8,8" style="stroke:black; fill:none; stroke-width: 0.1;"/>      
-        <text x="1.2"  y="2" style="font-family: 'Times New Roman', Times, serif; font-style:italic; font-size: 1px;">D</text>
-        <text x="1.2"  y="8.5" style="font-family: 'Times New Roman', Times, serif; font-style:italic; font-size: 1px;">A</text>
-        <text x="8.2"  y="2" style="font-family: 'Times New Roman', Times, serif; font-style:italic; font-size: 1px;">C</text>
-        <text x="8.1"  y="8.5" style="font-family: 'Times New Roman', Times, serif; font-style:italic; font-size: 1px;">B</text>
-        <text x="4.7"  y="1.8" style="font-family: 'Times New Roman', Times, serif; font-style:italic; font-size: 1px;">E</text>
-      </svg></div>
-      </div>
-      
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2023/01/download-soal-osk-matematika-smp-2003.html" target="_blank" rel="noopener noreferrer">OSK SMP 2003</a></div>
-      <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo">\(\begin{aligned}
-          \angle DAE&=\angle DAB-\angle EAB\\
-          &=90°-60°\\
-          &=\boxed{\boxed{30°}}
-          \end{aligned}\)</div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, esar sudut <em>DAE</em> adalah 30°.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-      </details>
-      <hr>
-    </div>
+                geo.buatPoligon([D, G, M, H], { fill: "#fba34c" });
+                geo.buatPoligon([G, C, F, M], { fill: "greenyellow" });
+                geo.buatPoligon([H, M, E, A], { fill: "#dc5c4c" });
+                geo.buatPoligon([E, M, F, B], { fill: "cornflowerblue" });
 
-    <div class="justify" id="5">
-      <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-      Gambar bangun berikut disusun oleh 5 persegi yang kongruen. Kalau keliling bangun ini 72 cm, maka luas bangun tersebut adalah .... 
-      <div id="tempatsvg5"></div>
-      <script>
-        var a = 1;
-        var margin = 0.1;
-        var r = 70;
-        document.getElementById("tempatsvg5").innerHTML = String.raw`<svg version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: ${2*margin+3}px; max-width: ${r*(2*margin+3)}px; min-height: ${2*margin+3}px; max-height: ${r*(2*margin+3)}px;' viewbox="${-margin} ${-margin} ${2*margin+3} ${2*margin+3}">
-      <polygon points="0,1 1,1 1,0 2,0 2,1 3,1 3,2 2,2 2,3 1,3 1,2 0,2" style="stroke:black; stroke-width: ${1/r}; fill:none;"/>
-      <polygon points="1,1 2,1 2,2 1,2" stroke-dasharray="0.1 0.1" style="stroke:black; stroke-width: ${1/r}; fill:none;"/>
-      </svg>`
-      </script>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">OSK SMP 2003</a></div>
-      <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo">Misal panjang masing-masing persegi adalah <em>a</em>. <br>
-            \(\begin{aligned}
-            12a&=72\\
-            a&=6
-            \end{aligned}\)<br><br>
-            \(\begin{aligned}
-            L&=5\cdot6^2\\
-            &=\boxed{\boxed{180}}
-            \end{aligned}\)
-          </div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, luas bangun tersebut adalah 180 cm<sup>2</sup>.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-      </details>
-      <hr>
-    </div>
+                geo.buatTandaSamaPanjang(G, C, { size: 10, strokeWidth: 1.8 });
+                geo.buatTandaSamaPanjang(F, B, { size: 10, strokeWidth: 1.8 });
+                geo.buatTandaSamaPanjang(A, E, { size: 10, strokeWidth: 1.8 });
+                geo.buatTandaSamaPanjang(D, H, { size: 10, strokeWidth: 1.8 });
 
-    <div class="justify" id="6">
-      <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-      Gambar bangun berikut, <em>ABCD</em> adalah persegi dengan sisi 6 satuan. Titik <em>E</em> dan <em>F</em> membagi diagonal <em>AC</em> menjadi tiga bagian sama panjang. Luas segitiga <em>DEF</em> = .... 
-      <div id="tempatsvg6"></div>
-      <script>
-        var margin = 0.8;
-        var r2 = 20;
-        document.getElementById("tempatsvg6").innerHTML = String.raw`<svg version='1.1' xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='min-width: ${2*margin+6}px; max-width: ${r2*(2*margin+6)}px; min-height: ${2*margin+6}px; max-height: ${r2*(2*margin+6)}px;' viewbox="${-margin} ${-margin} ${2*margin+6} ${2*margin+6}">
-      <rect x="0" y="0" width="6" height="6" style="stroke:black; stroke-width: ${1/r2}; fill:none;"/>
-      <text x="${-margin}"  y="0" style="font-family:'Times New Roman', Times, serif; font-style: italic; font-size: ${18/r2}">D</text>
-      <text x="6.1"  y="0" style="font-family:'Times New Roman', Times, serif; font-style: italic; font-size: ${18/r2}">C</text>
-      <text x="6.2"  y="6.5" style="font-family:'Times New Roman', Times, serif; font-style: italic; font-size: ${18/r2}">B</text>
-      <text x="${-margin}"  y="6.5" style="font-family:'Times New Roman', Times, serif; font-style: italic; font-size: ${18/r2}">A</text>
-      <line x1="0" y1="6"
-          x2="6" y2="0"
-          stroke="black"
-          stroke-width="${1/r2}"/>
-          <line x1="6" y1="6"
-          x2="2" y2="4"
-          stroke="black"
-          stroke-width="${1/r2}"/>
-          <line x1="6" y1="6"
-          x2="4" y2="2"
-          stroke="black"
-          stroke-width="${1/r2}"/>
-          <text x="1.3"  y="4" style="font-family:'Times New Roman', Times, serif; font-style: italic; font-size: ${18/r2}">E</text>
-          <text x="3.3"  y="2" style="font-family:'Times New Roman', Times, serif; font-style: italic; font-size: ${18/r2}">F</text>
-      </svg>
-`;
-      </script>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">OSK SMP 2003</a></div>
-      <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo">\(\begin{aligned}
-          L_{DEF}&=L_{BEF}\\
-          &=\dfrac13L_{ABC}\\
-          &=\dfrac13\cdot\dfrac12\cdot6\cdot6\\
-          &=\boxed{\boxed{6}}
-          \end{aligned}\)</div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, luas segitiga <em>DEF</em> = 6 satuan luas.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-      </details>
-      <hr>
-    </div>
+                geo.buatTeks(D[0] - 6, D[1] - 4, "D", { position: "top-left", fontStyle: "italic" });
+                geo.buatTeks(C[0] + 6, C[1] - 4, "C", { position: "top-right", fontStyle: "italic" });
+                geo.buatTeks(B[0] + 6, B[1] + 4, "B", { position: "bottom-right", fontStyle: "italic" });
+                geo.buatTeks(A[0] - 6, A[1] + 4, "A", { position: "bottom-left", fontStyle: "italic" });
+                geo.buatTeks(G[0], G[1] - 6, "G", { position: "top-center", fontStyle: "italic" });
+                geo.buatTeks(F[0] + 6, F[1], "F", { position: "middle-right", fontStyle: "italic" });
+                geo.buatTeks(E[0], E[1] + 6, "E", { position: "bottom-center", fontStyle: "italic" });
+                geo.buatTeks(H[0] - 6, H[1], "H", { position: "middle-left", fontStyle: "italic" });
+                geo.buatTeks(M[0] + 6, M[1] - 4, "M", { position: "top-right", fontStyle: "italic" });
 
-    <div class="justify" id="7">
-      <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-      Diberikan persegi <em>ABCD</em>, kemudian dibuat lingkaran &omega;<sub>1</sub> yang terletak di dalam persegi tersebut sedemikian sehingga &omega;<sub>1</sub> menyinggung sisi <em>AD</em> dan sisi <em>CD</em>. Selanjutnya dibuat lingkaran &omega;<sub>2</sub> yang terletak di dalam persegi <em>ABCD</em> sedemikian sehingga menyinggung sisi <em>BC</em>, sisi <em>CD</em>, dan lingkaran &omega;<sub>1</sub>. Jika panjang jari-jari lingkaran &omega;<sub>1</sub> dan lingkaran &omega;<sub>2</sub> berturut-turut adalah 3 dan 1, maka panjang persegi <em>ABCD</em> adalah ....
-      <div class="w3-row">
-        <div class="w3-col s6">
-          <ol class="pas1" type="A">
-            <li>\(3+\sqrt5\)</li>
-            <li>\(4+2\sqrt3\)</li>
-          </ol>
-        </div>
-        <div class="w3-col s6">
-          <ol class="pas1" start="3" type="A">
-            <li>\(5+\sqrt3\)</li>
-            <li>\(6-2\sqrt5\)</li>
-          </ol>
-        </div>
-      </div>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">KTOM - TO OSK SMP 2023</a></div>
-      <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo"><div class="w3-row">
-            <div class="w3-col s8"><div id="temsvg7" class="w3-center"></div>
-            <script>
-              var a7 = [4+2*Math.sqrt(3),50,0.7];
-              var tiA7 = [0,0]
-              var tiB7 = [a7[0],0];
-              var tiE7 = [a7[0],a7[0]-1]
-              var tiF7 = [0,a7[0]-3]
-              var tiO7 = [3,a7[0]-3];
-              var tiP7 = [a7[0]-1,a7[0]-1];
-              document.getElementById("temsvg7").innerHTML = String.raw`${svgawal(a7[0],a7[0],a7[1],a7[2])}
-              ${svgpersegi([tiA7,tiB7],{tebalgaris:1/a7[1],warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:0.3})}
-              ${svglingkaran(tiO7,3,{tebalgaris:1/a7[1],warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:0.3,dash:""})}
-              ${svglingkaran(tiP7,1,{tebalgaris:1/a7[1],warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:0.3,dash:""})}
-              ${svggaris([tiO7,tiP7],{tebalgaris:2/a7[1],warna:"white",dash:""})}
-              ${svggaris([tiE7,tiP7],{tebalgaris:2/a7[1],warna:"red",dash:""})}
-              ${svggaris([[tiP7[0],tiP7[1]+1],tiP7],{tebalgaris:2/a7[1],warna:"red",dash:""})}
-              ${svggaris([titikpadagaris([tiP7,tiO7],1/3),tiP7],{tebalgaris:2/a7[1],warna:"red",dash:""})}
-              ${svggaris([titikpadagaris([tiP7,tiO7],1/3),tiO7],{tebalgaris:2/a7[1],warna:"blue",dash:""})}
-              ${svggaris([tiO7,tiF7],{tebalgaris:2/a7[1],warna:"blue",dash:""})}
-              ${svggaris([tiO7,[tiO7[0],tiO7[1]+2]],{tebalgaris:2/a7[1],warna:"green",dash:""})}
-              ${svggaris([tiP7,[tiO7[0],tiO7[1]+2]],{tebalgaris:2/a7[1],warna:"purple",dash:""})}
-              ${svggaris([[tiO7[0],tiO7[1]+3],[tiO7[0],tiO7[1]+2]],{tebalgaris:2/a7[1],warna:"red",dash:""})}
-              ${svglabelgaris([tiO7,tiF7],"3",{ukuran:2/a7[1],warna:"blue",anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.15})}
-              ${svglabelgaris([titikpadagaris([tiP7,tiO7],1/3),tiO7],"3",{ukuran:2/a7[1],warna:"blue",anchor:"start",baseline:"baseline",xplus:0,yplus:-0.1})}
-              ${svglabelgaris([tiO7,[tiO7[0],tiO7[1]+2]],"2",{ukuran:2/a7[1],warna:"green",anchor:"end",baseline:"central",xplus:-0.1,yplus:0})}
-              ${svglabelgaris([[tiO7[0],tiO7[1]+3],[tiO7[0],tiO7[1]+2]],"1",{ukuran:2/a7[1],warna:"red",anchor:"end",baseline:"central",xplus:-0.1,yplus:0})}
-              ${svglabelgaris([[tiP7[0],tiP7[1]+1],tiP7],"1",{ukuran:2/a7[1],warna:"red",anchor:"start",baseline:"central",xplus:0.1,yplus:0})}
-              ${svglabelgaris([titikpadagaris([tiP7,tiO7],1/3),tiP7],"1",{ukuran:2/a7[1],warna:"red",anchor:"start",baseline:"baseline",xplus:0,yplus:-0.1})}
-              ${svglabelgaris([tiE7,tiP7],"1",{ukuran:2/a7[1],warna:"red",anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.1})}
-              ${svglabelgaris([tiP7,[tiO7[0],tiO7[1]+2]],"&#119909;",{ukuran:2/a7[1],warna:"purple",anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.1})}
-              ${svggaris([[a7[0],a7[0]],[0,a7[0]]],{tebalgaris:2/a7[1],warna:"black",dash:""})}
-              ${svglabelgaris([[a7[0],a7[0]],[0,a7[0]]],"&#119886;",{ukuran:2/a7[1],warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.1})}
-  </svg>`
-            </script></div>
-            <div class="w3-col s4">\(\begin{aligned}
-              x&=\sqrt{(3+1)^2-2^2}\\
-              &=\sqrt{16-4}\\
-              &=\sqrt{12}\\
-              &=2\sqrt3
-              \end{aligned}\)<br><br>
-              \(\begin{aligned}
-              a&=3+x+1\\
-              &=\boxed{\boxed{4+2\sqrt3}}
-              \end{aligned}\)</div>
-          </div>
-        </div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, panjang persegi <em>ABCD</em> adalah \(4+2\sqrt3\).<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-      </details>
-      <hr>
-    </div>
+                geo.buatTeks(80, 55, "?", { position: "middle-center", fontSize: "22px", fontWeight: "bold" });
+                geo.buatTeks(150, 110, "93", { position: "middle-center", fontSize: "18px", fontWeight: "bold" });
+                geo.buatTeks(38, 125, "69", { position: "middle-center", fontSize: "18px", fontWeight: "bold" });
+                geo.buatTeks(105, 175, "60", { position: "middle-center", fontSize: "18px", fontWeight: "bold" });
+            })();
 
-    <div class="justify" id="8">
-      <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-      Sebuah persegi ABCD dengan panjang sisi 4 cm. Titik E terletak pada tengah-tengah CD, titik F terletak pada AE sehingga <e>AE &perp; FB.</e> Panjang FC adalah ... cm
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="#" target="_blank" rel="noopener noreferrer">Latihan ke-3 GMOM September 2023</a></div>
-      <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo"><details>
-            <summary class="peny">CARA 1</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div id="temsvg8" class="w3-center"></div>
-              <script>var a8 = [40,1];
-              var tiA8 = [0,0];
-              var tiB8 = [4,0];
-              var tiC8 = [4,4];
-              var tiD8 = [0,4];
-              var tiE8 = [2,4];
-              var tiF8 = titikpadagaris([tiA8,tiE8],2/3);
-              var tiG8 = titiktengah([tiB8,tiF8]);
-              document.getElementById("temsvg8").innerHTML = String.raw`${svgawal(4,4,a8[0],a8[1])}
-              ${svgpersegi([tiA8,tiB8],{tebalgaris:2/a8[0],warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})} 
-              ${svggaris([tiB8,tiF8],{tebalgaris:2/a8[0],warna:"red",dash:""})}
-              ${svggaris([tiA8,tiE8],{tebalgaris:2/a8[0],warna:"blue",dash:""})}
-              ${svggaris([tiF8,tiC8],{tebalgaris:2/a8[0],warna:"green",dash:""})}
-              ${svggaris([tiG8,tiC8],{tebalgaris:2/a8[0],warna:"orange",dash:"0.1 0.1"})}
-              ${svglabeltitik(tiA8,"A",{ukuran:1.3/a8[0],anchor:"end",baseline:"baseline",xplus:-0.05,yplus:-0.05})}
-              ${svglabeltitik(tiB8,"B",{ukuran:1.3/a8[0],anchor:"start",baseline:"baseline",xplus:0.05,yplus:-0.05})}
-              ${svglabeltitik(tiC8,"C",{ukuran:1.3/a8[0],anchor:"start",baseline:"hanging",xplus:0.1,yplus:0})}
-              ${svglabeltitik(tiD8,"D",{ukuran:1.3/a8[0],anchor:"end",baseline:"hanging",xplus:-0.1,yplus:0})}
-              ${svglabeltitik(tiE8,"E",{ukuran:1.3/a8[0],anchor:"middle",baseline:"hanging",xplus:0,yplus:0.1})}
-              ${svglabeltitik(tiF8,"F",{ukuran:1.3/a8[0],anchor:"end",baseline:"hanging",xplus:-0.1,yplus:0})}
-              ${svglabeltitik(tiG8,"G",{ukuran:1.3/a8[0],anchor:"middle",baseline:"baseline",xplus:-0.1,yplus:-0.1})}
-              ${svglabelgaris([tiA8,tiB8],"4",{ukuran:1.2/a8[0],warna:"black",anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.15})}
-              ${svglabelgaris([tiC8,tiB8],"4",{ukuran:1.2/a8[0],warna:"black",anchor:"start",baseline:"middle",xplus:0.1,yplus:0})}
-              ${svglabelgaris([tiA8,tiD8],"4",{ukuran:1.2/a8[0],warna:"black",anchor:"end",baseline:"middle",xplus:-0.1,yplus:0})}
-              ${svglabelgaris([tiD8,tiE8],"2",{ukuran:1.2/a8[0],warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.15})}
-              ${svglabelgaris([tiC8,tiE8],"2",{ukuran:1.2/a8[0],warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.15})}
-                ${svgsiku([tiA8,tiF8,tiB8],{r:10/a8[0],tebalgaris:1/a8[0]})}
-                ${svgsiku([tiC8,tiG8,tiB8],{r:10/a8[0],tebalgaris:1/a8[0]})}
-    </svg>`
-              </script>
-              AD = 2DE. <br>
-              &#8710;ABF &sim; &#8710;ADE.
-              <details>
-                <summary class="peny">BUKTI</summary>
-                <div class="w3-card-4">
-                  <div class="w3-padding w3-sand flo"><e>&angle;BAF = 90&deg; &minus; &angle;DAE = &angle;AED</e><br>
-                    &angle;AFB = &ang;ADE = 90&deg;<br>
-                &there4; &#8710;ABF &sim; &#8710;ADE</div>
-                </div>
-              </details>
-              BF = 2AF. <br><br>
-                Misal terdapat titik G pada FB sehingga <e>CG &perp; FB</e>.<br>
-                &#8710;ABF &cong; &#8710;BCG.
-                <details>
-                  <summary class="peny">BUKTI</summary>
-                  <div class="w3-card-4">
-                    <div class="w3-padding w3-sand flo"><e>&angle;CBG = 90&deg; &minus; &angle;FBA = &angle;BAF</e>.<br>
-                      BC = AB = 4. <br>
-                      &angle;BGC = &ang;AFB = 90&deg;.<br>
-                      &angle;BCG = &ang;ABF.<br>
-                      &there4; &#8710;ABF &cong; &#8710;BCG (Sd, S, Sd)
-                  </div>
-                  </div>
-                </details>
-                <e>FB = CG = 2BG</e>, sehingga <e>FG = BG</e>.<br>
-                Karena <e>CG = CG (berimpit)</e> dan <e>&ang;CGF = &ang;CGB</e> maka <e>&#8710;CGF &cong; &#8710;CGB</e>. <br>
-                Sehingga <e>FC = BC = 4</e></div>
-            </div>
-          </details>
-          <details>
-            <summary class="peny">CARA 2</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">Buat garis sejajar AE dari B, misal bertemu perpanjangan DC di H. <br>
-                Misal terdapat titik G pada FB sehingga <e>CG &perp; FB</e>.
-                <div id="temsvg8-2" class="w3-center"></div>
-                <script>
-                  var tiH8 = [6,4];
-                  document.getElementById("temsvg8-2").innerHTML = String.raw`${svgawal(6,4,a8[0],a8[1])}
-              ${svgpersegi([tiA8,tiB8],{tebalgaris:2/a8[0],warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})} 
-              ${svggaris([tiB8,tiF8],{tebalgaris:2/a8[0],warna:"red",dash:""})}
-              ${svggaris([tiA8,tiE8],{tebalgaris:2/a8[0],warna:"blue",dash:""})}
-              ${svggaris([tiF8,tiC8],{tebalgaris:2/a8[0],warna:"green",dash:""})}
-              ${svggaris([tiG8,tiC8],{tebalgaris:2/a8[0],warna:"orange",dash:"0.1 0.1"})}
-              ${svggaris([tiH8,tiC8],{tebalgaris:2/a8[0],warna:"black",dash:""})}
-              ${svggaris([tiH8,tiB8],{tebalgaris:2/a8[0],warna:"black",dash:""})}
-              ${svglabeltitik(tiA8,"A",{ukuran:1.3/a8[0],anchor:"end",baseline:"baseline",xplus:-0.05,yplus:-0.05})}
-              ${svglabeltitik(tiB8,"B",{ukuran:1.3/a8[0],anchor:"start",baseline:"baseline",xplus:0.05,yplus:-0.05})}
-              ${svglabeltitik(tiC8,"C",{ukuran:1.3/a8[0],anchor:"middle",baseline:"hanging",xplus:0.1,yplus:0.05})}
-              ${svglabeltitik(tiD8,"D",{ukuran:1.3/a8[0],anchor:"end",baseline:"hanging",xplus:-0.05,yplus:0})}
-              ${svglabeltitik(tiE8,"E",{ukuran:1.3/a8[0],anchor:"middle",baseline:"hanging",xplus:0,yplus:0.1})}
-              ${svglabeltitik(tiF8,"F",{ukuran:1.3/a8[0],anchor:"end",baseline:"hanging",xplus:-0.1,yplus:0})}
-              ${svglabeltitik(tiG8,"G",{ukuran:1.3/a8[0],anchor:"middle",baseline:"baseline",xplus:-0.1,yplus:-0.1})}
-              ${svglabeltitik(tiH8,"H",{ukuran:1.3/a8[0],anchor:"middle",baseline:"hanging",xplus:0.1,yplus:0.1})}
-              ${svglabelgaris([tiA8,tiB8],"4",{ukuran:1.2/a8[0],warna:"black",anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.15})}
-              ${svglabelgaris([tiC8,tiB8],"4",{ukuran:1.2/a8[0],warna:"black",anchor:"start",baseline:"middle",xplus:0.1,yplus:0})}
-              ${svglabelgaris([tiA8,tiD8],"4",{ukuran:1.2/a8[0],warna:"black",anchor:"end",baseline:"middle",xplus:-0.1,yplus:0})}
-              ${svglabelgaris([tiD8,tiE8],"2",{ukuran:1.2/a8[0],warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.15})}
-              ${svglabelgaris([tiC8,tiE8],"2",{ukuran:1.2/a8[0],warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.15})}
-              ${svglabelgaris([tiC8,tiH8],"2",{ukuran:1.2/a8[0],warna:"black",anchor:"middle",baseline:"hanging",xplus:0,yplus:0.15})}
-                ${svgsiku([tiA8,tiF8,tiB8],{r:10/a8[0],tebalgaris:1/a8[0]})}
-                ${svgsiku([tiC8,tiG8,tiB8],{r:10/a8[0],tebalgaris:1/a8[0]})}
-    </svg>`
-                </script>
-                EFGC &sim; CGBH. Karena <e>EC = CH</e> maka <e>FG = GB.</e><br>
-                Karena <e>CG = CG (berimpit)</e> dan <e>&ang;CGF = &ang;CGB</e> maka <e>&#8710;CGF &cong; &#8710;CGB</e>. <br>
-                Sehingga <e>FC = BC = 4</e>
-              </div>
-            </div>
-          </details>
-        </div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, FC = 4 cm.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-      </details>
-      <hr>
-    </div>
+            // ================= SOAL 4 =================
+            (function drawSoal4() {
+                const s = 140;
+                const geo = new GeoSVG("svg-soal-4", s, s, {
+                    margin: 24,
+                    defaultStrokeWidth: 1.5,
+                    fontFamily: "'Times New Roman', Times, serif",
+                    fontSize: "15px",
+                    clearContainer: true
+                });
+                const D = [0, 0], C = [s, 0], B = [s, s], A = [0, s];
+                const E = [s / 2, s - (s * Math.sqrt(3)) / 2];
 
-    <div class="justify" id="9">
-      <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-      Sebuah persegi dibagi menjadi 2 persegi panjang, seperti terlihat pada gambar. Diketahui hasil penjumlahan kedua keliling persegi panjang tersebut adalah 60, maka luas persegi adalah ....
-      <div id="temsvg9" class="w3-center"></div>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">OSK SMA 2024</a></div>
-      <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo"><div id="temsvg9_1" class="w3-center"></div>
-          Misal panjang sisi perseginya adalah <em>s</em>. Perhatikan bahwa jika kita mengelilingi kedua persegi panjang, maka akan melalui 6<em>s</em>, yaitu keempat sisi persegi, dan 2 kali melalui garis yang ada di dalam. <br>
-          \(\begin{aligned}
-          6s&=60\\
-          s&=10\\
-          L&=10^2\\
-          &=\color{blue}\boxed{\boxed{\color{black}100}}
-          \end{aligned}\)
-        </div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, luas persegi adalah 100.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-      </details>
-      <hr>
-      <script>
-        var spg9 = geomBuat("temsvg9",10,10,{rasio:15,margin:1});
-        geomSegi(spg9,[[0,0],[10,0],[10,10],[0,10]],{tebalgaris:2})
-        geomSegmen(spg9,[[0,3],[10,3]],{tebal:2})
-        var spg9_1 = geomBuat("temsvg9_1",10,10,{rasio:15,margin:1});
-        geomSegi(spg9_1,[[0,0],[10,0],[10,3],[0,3]],{tebalgaris:2,warnagaris:"blue",tampakgaris:0.7})
-        geomSegi(spg9_1,[[0,3],[10,3],[10,10],[0,10]],{tebalgaris:2,warnagaris:"red",tampakgaris:0.7})
-      </script>
-    </div>
-    
-    <div class="justify" id="10">
-      <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-      Terdapat sebuah persegi <em>KMNR</em> dengan luas 900 cm<sup>2</sup>. Titik <em>P</em> dan <em>Q</em> berturut-turut merupakan titik tengah <em>KM</em> dan <em>MN</em>. Ruas garis <em>KQ</em> dan <em>RP</em> berpotongan di titik <em>S</em>. Luas segi empat <em>RSQN</em> adalah .... cm<sup>2</sup>.
-      <div class="w3-row">
-        <div class="w3-col s6">
-          <ol class="pas1" type="A">
-            <li>545</li>
-            <li>525</li>
-            <li>515</li>
-          </ol>
-        </div>
-        <div class="w3-col s6">
-          <ol class="pas1" start="4" type="A">
-            <li>500</li>
-            <li>495</li>
-          </ol>
-        </div>
-      </div>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Penyisihan OGM 10 Tingkat SMA</a></div>
-      <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo">
-            Perhatikan gambar berikut.
-            <div id="spg10" class="w3-center"></div>
-            2 bangun yang warnanya sama memiliki luas yang sama. <br>
-            \(\begin{aligned}
-            KS^2+SR^2&=KR^2\\
-            \left(\dfrac12a\right)^2+a^2&=900\\
-            \dfrac14a^2+a^2&=900\\
-            \dfrac54a^2&=900\\
-            a^2&=720\\
-            \left[RTUS\right]&=720
-            \end{aligned}\) <br><br>
-            \(\begin{aligned}
-            \left[RSQN\right]&=\left[RTUS\right]-\left([RTN]+[QUN]\right)\\
-            &=\left[RTUS\right]-\left([KSR]+[KSP]\right)\\
-            &=\left[RTUS\right]-[PKR]\\
-            &=720-\dfrac12\cdot15\cdot30\\
-            &=720-225\\
-            &=495
-            \end{aligned}\)
-          </div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, luas segi empat <em>RSQN</em> adalah 495 cm<sup>2</sup><br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-      </details>
-      <hr>
-      <script>
-        var a10 = 150;
-        var spg10 = geomBuat("spg10",36*a10/30,42*a10/30,{rasio:1,margin:20});
-        var tiK10 = [0,0];
-        var tiM10 = [a10,0];
-        var tiN10 = [a10,a10];
-        var tiR10 = [0,a10];
-        var tiP10 = titiktengah([tiK10,tiM10]);
-        var tiQ10 = titiktengah([tiM10,tiN10]);
-        var tiS10 = titikpotong([tiK10,tiQ10],[tiP10,tiR10]);
-        var tiT10 = [24*a10/30,42*a10/30];
-        var tiU10 = [36*a10/30,18*a10/30];
-        geomSegi(spg10,[tiR10,tiT10,tiN10],{tebal:0,isi:"lightgreen"})
-        geomSegi(spg10,[tiK10,tiS10,tiR10],{tebal:0,isi:"lightgreen"})
-        geomSegi(spg10,[tiQ10,tiU10,tiN10],{tebal:0,isi:"aquamarine"})
-        geomSegi(spg10,[tiK10,tiP10,tiS10],{tebal:0,isi:"aquamarine"})
-        geomSegi(spg10,[[0,0],[a10,0],[a10,a10],[0,a10]],{tebal:2})
-        geomSegmen(spg10,[tiK10,tiQ10],{tebal:2})
-        geomSegmen(spg10,[tiR10,tiP10],{tebal:2})
-        geomSegi(spg10,[tiR10,tiS10,tiQ10,tiN10],{tebal:2,isi:"lightcyan"})
-        geomSegmen(spg10,[tiR10,tiT10],{tebal:2,dash:"2 2"})
-        geomSegmen(spg10,[tiN10,tiT10],{tebal:2,dash:"2 2"})
-        geomSegmen(spg10,[tiN10,tiU10],{tebal:2,dash:"2 2"})
-        geomSegmen(spg10,[tiQ10,tiU10],{tebal:2,dash:"2 2"})
-        geomLabelTitik(spg10,tiK10,"K",{ukuran:1.2,anchor:"end",baseline:"middle",xplus:-3});
-        geomLabelTitik(spg10,tiM10,"M",{ukuran:1.2,anchor:"start",baseline:"middle",xplus:3});
-        geomLabelTitik(spg10,tiN10,"N",{ukuran:1.2,anchor:"start",baseline:"hanging",xplus:3});
-        geomLabelTitik(spg10,tiR10,"R",{ukuran:1.2,anchor:"end",baseline:"hanging",xplus:-3});
-        geomLabelTitik(spg10,tiP10,"P",{ukuran:1.2,anchor:"middle",baseline:"baseline",yplus:-3});
-        geomLabelTitik(spg10,tiQ10,"Q",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:2,yplus:-2});
-        geomLabelTitik(spg10,tiS10,"S",{ukuran:1.2,anchor:"middle",baseline:"hanging",xplus:3,yplus:4});
-        geomLabelTitik(spg10,tiT10,"T",{ukuran:1.2,anchor:"middle",baseline:"hanging",yplus:2});
-        geomLabelTitik(spg10,tiU10,"U",{ukuran:1.2,anchor:"start",baseline:"middle",xplus:2});
-        geomLabelGaris(spg10,[tiK10,tiS10],"½a",{ukuran:1.2,anchor:"middle",baseline:"hanging",xplus:-2,yplus:3})
-        geomLabelGaris(spg10,[tiS10,tiR10],"a",{ukuran:1.2,anchor:"start",baseline:"hanging",xplus:2,yplus:2})
-      </script>
-    </div>
+                geo.buatPersegi(0, 0, s);
+                geo.buatPolyline([A, E, B]);
 
-    <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(persegi,3,1)</script>
-</div>
+                geo.buatTeks(D[0] - 6, D[1], "D", { position: "middle-left", fontStyle: "italic" });
+                geo.buatTeks(C[0] + 6, C[1], "C", { position: "middle-right", fontStyle: "italic" });
+                geo.buatTeks(B[0] + 6, B[1], "B", { position: "middle-right", fontStyle: "italic" });
+                geo.buatTeks(A[0] - 6, A[1], "A", { position: "middle-left", fontStyle: "italic" });
+                geo.buatTeks(E[0], E[1] - 5, "E", { position: "top-center", fontStyle: "italic" });
+            })();
+
+            // ================= SOAL 5 =================
+            (function drawSoal5() {
+                const s = 50;
+                const geo = new GeoSVG("svg-soal-5", 3 * s, 3 * s, {
+                    margin: 15,
+                    defaultStrokeWidth: 1.5,
+                    clearContainer: true
+                });
+                geo.buatPoligon([
+                    [0, s], [s, s], [s, 0], [2 * s, 0],
+                    [2 * s, s], [3 * s, s], [3 * s, 2 * s], [2 * s, 2 * s],
+                    [2 * s, 3 * s], [s, 3 * s], [s, 2 * s], [0, 2 * s]
+                ]);
+                geo.buatPersegi(s, s, s, { dashed: "5 5" });
+            })();
+
+            // ================= SOAL 6 =================
+            (function drawSoal6() {
+                const s = 160;
+                const geo = new GeoSVG("svg-soal-6", s, s, {
+                    margin: 24,
+                    defaultStrokeWidth: 1.5,
+                    fontFamily: "'Times New Roman', Times, serif",
+                    fontSize: "15px",
+                    clearContainer: true
+                });
+                const D = [0, 0], C = [s, 0], B = [s, s], A = [0, s];
+                const E = [s / 3, (2 * s) / 3];
+                const F = [(2 * s) / 3, s / 3];
+
+                geo.buatPersegi(0, 0, s);
+                geo.buatSegmen(A, C);
+                geo.buatSegmen(B, E);
+                geo.buatSegmen(B, F);
+
+                geo.buatTeks(D[0] - 6, D[1], "D", { position: "middle-left", fontStyle: "italic" });
+                geo.buatTeks(C[0] + 6, C[1], "C", { position: "middle-right", fontStyle: "italic" });
+                geo.buatTeks(B[0] + 6, B[1], "B", { position: "middle-right", fontStyle: "italic" });
+                geo.buatTeks(A[0] - 6, A[1], "A", { position: "middle-left", fontStyle: "italic" });
+                geo.buatTeks(E[0] - 6, E[1] - 4, "E", { position: "top-left", fontStyle: "italic" });
+                geo.buatTeks(F[0] - 6, F[1] - 4, "F", { position: "top-left", fontStyle: "italic" });
+            })();
+
+            // ================= SOAL 7 =================
+            (function drawSoal7() {
+                const k = 30;
+                const side = (4 + 2 * Math.sqrt(3)) * k;
+                const geo = new GeoSVG("svg-pembahasan-7", side, side, {
+                    margin: 28,
+                    defaultStrokeWidth: 1.5,
+                    fontFamily: "'Times New Roman', Times, serif",
+                    fontSize: "14px",
+                    clearContainer: true
+                });
+                const r1 = 3 * k, r2 = 1 * k;
+                const O1 = [r1, side - r1];
+                const O2 = [side - r2, side - r2];
+                const K = [r1, side - r2];
+                const T = [(r1 * O2[0] + r2 * O1[0]) / (r1 + r2), (r1 * O2[1] + r2 * O1[1]) / (r1 + r2)];
+
+                geo.buatPersegi(0, 0, side, { strokeOpacity: 0.4 });
+                geo.buatLingkaran(O1, r1, { strokeOpacity: 0.4 });
+                geo.buatLingkaran(O2, r2, { strokeOpacity: 0.4 });
+
+                geo.buatSegmen([0, O1[1]], O1, { stroke: "blue", strokeWidth: 2, label: "3", labelSisi: "kanan", labelJarak: 5 });
+                geo.buatSegmen(O1, T, { stroke: "blue", strokeWidth: 2, label: "3", labelSisi: "kanan", labelJarak: 5 });
+                geo.buatSegmen(T, O2, { stroke: "red", strokeWidth: 2, label: "1", labelSisi: "kanan", labelJarak: 5 });
+                geo.buatSegmen(O2, [side, O2[1]], { stroke: "red", strokeWidth: 2, label: "1", labelSisi: "kanan", labelJarak: 5 });
+                geo.buatSegmen(O2, [O2[0], side], { stroke: "red", strokeWidth: 2, label: "1", labelSisi: "kiri", labelJarak: 5 });
+                geo.buatSegmen(O1, K, { stroke: "green", strokeWidth: 2, label: "2", labelSisi: "kiri", labelJarak: 5 });
+                geo.buatSegmen(K, [r1, side], { stroke: "red", strokeWidth: 2, label: "1", labelSisi: "kiri", labelJarak: 5 });
+                geo.buatSegmen(K, O2, { stroke: "purple", strokeWidth: 2, label: "x", labelSisi: "kanan", labelJarak: 5, italic: true });
+                geo.buatSegmen([0, side], [side, side], { stroke: "black", strokeWidth: 2, label: "a", labelSisi: "kiri", labelJarak: 8, italic: true });
+            })();
+
+            // ================= SOAL 8 =================
+            function drawSoal8(containerId, showH) {
+                const k = 42;
+                const w = showH ? 6 * k : 4 * k;
+                const h = 4 * k;
+                const geo = new GeoSVG(containerId, w, h, {
+                    margin: 28,
+                    defaultStrokeWidth: 1.5,
+                    fontFamily: "'Times New Roman', Times, serif",
+                    fontSize: "14px",
+                    clearContainer: true
+                });
+                const A = [0, 0], B = [4 * k, 0], C = [4 * k, 4 * k], D = [0, 4 * k], E = [2 * k, 4 * k];
+                const F = geo.hitungKakiTegakLurus(B, A, E);
+                const G = geo.hitungTitikTengah(B, F);
+
+                geo.buatPersegi(0, 0, 4 * k);
+                geo.buatSegmen(A, E, { stroke: "blue", strokeWidth: 1.8 });
+                geo.buatSegmen(B, F, { stroke: "red", strokeWidth: 1.8 });
+                geo.buatSegmen(F, C, { stroke: "green", strokeWidth: 1.8 });
+                geo.buatSegmen(G, C, { stroke: "orange", strokeWidth: 1.8, dashed: "4 4" });
+
+                geo.buatSiku(A, F, B, { size: 10 });
+                geo.buatSiku(C, G, B, { size: 10 });
+
+                geo.buatTeks(A[0] - 6, A[1] - 4, "A", { position: "top-left", fontStyle: "italic" });
+                geo.buatTeks(B[0] + 6, B[1] - 4, "B", { position: "top-right", fontStyle: "italic" });
+                geo.buatTeks(C[0] + 6, C[1] + 4, "C", { position: "bottom-right", fontStyle: "italic" });
+                geo.buatTeks(D[0] - 6, D[1] + 4, "D", { position: "bottom-left", fontStyle: "italic" });
+                geo.buatTeks(E[0], E[1] + 6, "E", { position: "bottom-center", fontStyle: "italic" });
+                geo.buatTeks(F[0] - 6, F[1] + 4, "F", { position: "bottom-left", fontStyle: "italic" });
+                geo.buatTeks(G[0] - 4, G[1] - 6, "G", { position: "top-left", fontStyle: "italic" });
+
+                geo.buatLabelSisi(A, B, "4", { sisi: "kiri", jarak: 12 });
+                geo.buatLabelSisi(B, C, "4", { sisi: "kiri", jarak: 12 });
+                geo.buatLabelSisi(D, A, "4", { sisi: "kiri", jarak: 12 });
+                geo.buatLabelSisi(E, D, "2", { sisi: "kiri", jarak: 12 });
+                geo.buatLabelSisi(C, E, "2", { sisi: "kiri", jarak: 12 });
+
+                if (showH) {
+                    const H = [6 * k, 4 * k];
+                    geo.buatSegmen(C, H);
+                    geo.buatSegmen(B, H);
+                    geo.buatTeks(H[0] + 6, H[1] + 4, "H", { position: "bottom-right", fontStyle: "italic" });
+                    geo.buatLabelSisi(H, C, "2", { sisi: "kiri", jarak: 12 });
+                }
+            }
+            drawSoal8("svg-pembahasan-8-1", false);
+            drawSoal8("svg-pembahasan-8-2", true);
+
+            // ================= SOAL 9 =================
+            (function drawSoal9() {
+                const s = 150, ySplit = 45;
+                const geo1 = new GeoSVG("svg-soal-9", s, s, {
+                    margin: 15,
+                    defaultStrokeWidth: 2,
+                    clearContainer: true
+                });
+                geo1.buatPersegi(0, 0, s);
+                geo1.buatSegmen([0, ySplit], [s, ySplit]);
+
+                const geo2 = new GeoSVG("svg-pembahasan-9", s, s, {
+                    margin: 15,
+                    defaultStrokeWidth: 2,
+                    clearContainer: true
+                });
+                geo2.buatPersegiPanjang(0, 0, s, ySplit, { stroke: "blue", strokeOpacity: 0.7 });
+                geo2.buatPersegiPanjang(0, ySplit, s, s - ySplit, { stroke: "red", strokeOpacity: 0.7 });
+            })();
+
+            // ================= SOAL 10 =================
+            (function drawSoal10() {
+                const a10 = 150;
+                const geo = new GeoSVG("svg-pembahasan-10", (36 * a10) / 30, (42 * a10) / 30, {
+                    margin: 24,
+                    defaultStrokeWidth: 1.8,
+                    fontFamily: "'Times New Roman', Times, serif",
+                    fontSize: "15px",
+                    clearContainer: true
+                });
+                const K = [0, 0], M = [a10, 0], N = [a10, a10], R = [0, a10];
+                const P = geo.hitungTitikTengah(K, M);
+                const Q = geo.hitungTitikTengah(M, N);
+                const S = geo.hitungTitikPotong([K, Q], [P, R])[0];
+                const T = [(24 * a10) / 30, (42 * a10) / 30];
+                const U = [(36 * a10) / 30, (18 * a10) / 30];
+
+                geo.buatPoligon([R, T, N], { fill: "lightgreen", stroke: "none" });
+                geo.buatPoligon([K, S, R], { fill: "lightgreen", stroke: "none" });
+                geo.buatPoligon([Q, U, N], { fill: "aquamarine", stroke: "none" });
+                geo.buatPoligon([K, P, S], { fill: "aquamarine", stroke: "none" });
+                geo.buatPoligon([R, S, Q, N], { fill: "lightcyan", stroke: "black" });
+
+                geo.buatPersegi(0, 0, a10);
+                geo.buatSegmen(K, Q);
+                geo.buatSegmen(R, P);
+                geo.buatSegmen(R, T, { dashed: "4 4" });
+                geo.buatSegmen(N, T, { dashed: "4 4" });
+                geo.buatSegmen(N, U, { dashed: "4 4" });
+                geo.buatSegmen(Q, U, { dashed: "4 4" });
+
+                geo.buatTeks(K[0] - 6, K[1], "K", { position: "middle-left", fontStyle: "italic" });
+                geo.buatTeks(M[0] + 6, M[1], "M", { position: "middle-right", fontStyle: "italic" });
+                geo.buatTeks(N[0] + 6, N[1] + 4, "N", { position: "bottom-right", fontStyle: "italic" });
+                geo.buatTeks(R[0] - 6, R[1] + 4, "R", { position: "bottom-left", fontStyle: "italic" });
+                geo.buatTeks(P[0], P[1] - 6, "P", { position: "top-center", fontStyle: "italic" });
+                geo.buatTeks(Q[0] + 6, Q[1] - 4, "Q", { position: "top-right", fontStyle: "italic" });
+                geo.buatTeks(S[0] + 4, S[1] + 6, "S", { position: "bottom-center", fontStyle: "italic" });
+                geo.buatTeks(T[0], T[1] + 6, "T", { position: "bottom-center", fontStyle: "italic" });
+                geo.buatTeks(U[0] + 6, U[1], "U", { position: "middle-right", fontStyle: "italic" });
+
+                geo.buatLabelSisi(K, S, "½a", { sisi: "kanan", jarak: 12, fontStyle: "italic" });
+                geo.buatLabelSisi(S, R, "a", { sisi: "kiri", jarak: 10, fontStyle: "italic" });
+            })();
+        })();
+    </script>
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

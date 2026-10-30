@@ -1,140 +1,309 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>HOTS Zone : Sistem Persamaan Aljabar [2]</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <script src="../katex/katex.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-     </head> 
-     <body>
-        <div class="w3-container">
-            Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Sistem Persamaan Aljabar</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
-            <h3>Tipe: </h3>
-            <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><span id="snbt" class="w3-bar-item w3-deep-purple w3-hide">SNBT</span><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
-            <br>
-            <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-            <br></br>
-    
-    <div class="justify" id="21"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Diketahui sistem persamaan 
-        \begin{align}\dfrac1a+\dfrac1{b+c}=2\\[4pt]\dfrac1b+\dfrac1{a+c}=3\\[4pt]\dfrac1c+\dfrac1{a+b}=4\end{align} Jika <e><em>a</em><sup>2</sup> + <em>b</em><sup>2</sup> + <em>c</em><sup>2</sup> = 10,</e> maka nilai <e><em>a</em> + <em>b</em> + <em>c</em> =</e> ....
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank">Grup WhatsApp</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\(\begin{aligned} 
-                \dfrac1a+\dfrac1{b+c}&=2\\[4pt]
-                \dfrac{a+b+c}{ab+ac}&=2\\[4pt] 
-                a+b+c&=2(ab+ac)\\
-                6(a+b+c)&=12(ab+ac)&\qquad{\color{red}(4)}
-              \end{aligned}\) <br><br>
-              Dengan cara yang sama, dari persamaan (2) dan (3) didapat: <br>
-              \(\begin{aligned}
-              4(a+b+c)&=12(ab+bc)&\qquad{\color{red}(5)}\\
-              3(a+b+c)&=12(ac+bc)&\qquad{\color{red}(6)}
-              \end{aligned}\) <br>
-              Jumlahkan persamaan (4), (5), dan (6) didapat: <br>
-              \(\begin{aligned}
-              13(a+b+c)&=12(2ab+2bc+2ac)\\
-              13(a+b+c)&=24(ab+bc+ac)\\
-              ab+bc+ac&=\dfrac{13}{24}(a+b+c)
-              \end{aligned}\) <br><br>
-              \(\begin{aligned}
-              a^2+b^2+c^2&=10\\
-              (a+b+c)^2-2(ab+bc+ac)&=10&{\color{red}\times12}\\
-              12(a+b+c)^2-24(ab+bc+ac)&=120\\
-              12(a+b+c)^2-13(a+b+c)-120&=0\\
-              12x^2-13x-120&=0\\
-              (4x-15)(3x+8)&=0
-              \end{aligned}\) <br>
-              <ul>
-                <li>4<em>x</em> &minus; 15 = 0 <br>
-                \(\begin{aligned}
-                x&=\dfrac{15}4\\
-                a+b+c&=\color{blue}\boxed{\boxed{\color{black}\dfrac{15}4}}
-                \end{aligned}\)</li>
-                <li>3<em>x</em> + 8 = 0 <br>
-                \(\begin{aligned}
-                x&=-\dfrac83\\
-                a+b+c&=\color{blue}\boxed{\boxed{\color{black}-\dfrac83}}
-                \end{aligned}\)</li>
-              </ul>
-            </div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, $a+b+c=\dfrac{15}4$ atau $-\dfrac83$.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTS - Sistem Persamaan Aljabar [3]</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        
-        <div class="justify" id="22">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Bilangan real <em>t</em> sehingga terdapat dengan tunggal tripel bilangan real <e>(<em>x</em>, <em>y</em>, <em>z</em>)</e> yang memenuhi <e><em>x</em><sup>2</sup> + 2<em>y</em><sup>2</sup> = 3<em>z</em></e> dan <e><em>x</em> + <em>y</em> + <em>z</em> = <em>t</em></e> adalah ....
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned}
-              x^2+2y^2&=3z\\
-              3x+3y+3z&=3t&\ +\\\hline
-              x^2+3x+2y^2+3y&=3t\\
-              x^2+3x+\dfrac94+2y^2+3y+\dfrac9{8}&=3t+\dfrac94+\dfrac9{8}\\[4pt]
-              \left(x+\dfrac32\right)^2+2\left(y+\dfrac34\right)^2&=3t+\dfrac{27}{8}
-              \end{aligned}\) <br>
-              Agar <e>(<em>x</em>, <em>y</em>, <em>z</em>)</e> tunggal, maka <br>
-              \(\begin{aligned}
-              3t+\dfrac{27}{8}&=0\\[4pt]
-              t&=\color{blue}\boxed{\boxed{\color{black}-\dfrac98}}
-              \end{aligned}\)
-            </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, bilangan real <em>t</em> sehingga terdapat dengan tunggal tripel bilangan real <e>(<em>x</em>, <em>y</em>, <em>z</em>)</e> yang memenuhi <e><em>x</em><sup>2</sup> + 2<em>y</em><sup>2</sup> = 3<em>z</em></e> dan <e><em>x</em> + <em>y</em> + <em>z</em> = <em>t</em></e> adalah $-\dfrac98$.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Sistem Persamaan Aljabar</span>
+            </p>
+            <div id="level-nav" class="level-nav"></div>
         </div>
 
-        <div class="justify" id="23">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Untuk <em>a</em>, <em>b</em>, <em>c</em>, dan <em>d</em> bilangan real tak nol yang memenuhi sistem persamaan
-          \[\begin{aligned}
-          a+b+c&=d\\
-          \dfrac1a+\dfrac1b+\dfrac1c&=\dfrac1d\\
-          a^3+b^3+c^3&=10^6
-          \end{aligned}\] Berapa nilai dari ekspresi <e><em>a</em> + <em>b</em> + <em>c</em> + <em>d</em></e>?
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">
-                \(\begin{aligned}
-                \dfrac1a+\dfrac1b+\dfrac1c&=\dfrac1d\\
-                \dfrac{ab+ac+bc}{abc}&=\dfrac1d\\
-                \end{aligned}\) <br><br>
-                <em>a</em>, <em>b</em>, dan <em>c</em> merupakan akar-akar persamaan kuadrat \(x^3-dx^2+kx-kd=0\). <br>
-                \(\begin{aligned}
-                a^2+b^2+c^2&=(a+b+c)^2-2(ab+ac+bc)\\
-                &=d^2-2k
-                \end{aligned}\)
-                \(\begin{aligned}
-                a^3+b^3+c^3&=(a+b+c)(a^2+b^2+c^2-ab-ac-bc)\\
-                10^6&=d(d^2-3k)\\
-                \end{aligned}\)
-              </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <br><b>JAWAB: </b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
+        <!-- Pagination Atas -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-    <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-    <script>soal(sisper,3,3)</script>    
-   </div>
-   </body>
-</html> 
+        <!-- ================= DAFTAR 10 SOAL ================= -->
+
+        <!-- SOAL 21 -->
+        <article class="soal-item" id="21">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui sistem persamaan:
+                \[\begin{cases}
+                \dfrac{1}{a} + \dfrac{1}{b+c} = 2 \\[6pt]
+                \dfrac{1}{b} + \dfrac{1}{a+c} = 3 \\[6pt]
+                \dfrac{1}{c} + \dfrac{1}{a+b} = 4
+                \end{cases}\]
+                Jika \(a^2 + b^2 + c^2 = 10\), maka nilai \(a + b + c = \dots\)
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Samakan penyebut pada masing-masing persamaan:
+                    \[\begin{aligned}
+                    \dfrac{1}{a} + \dfrac{1}{b+c} = 2 &\implies \dfrac{a+b+c}{a(b+c)} = 2 \implies 6(a+b+c) = 12(ab+ac) \quad \text{...(1)} \\
+                    \dfrac{1}{b} + \dfrac{1}{a+c} = 3 &\implies \dfrac{a+b+c}{b(a+c)} = 3 \implies 4(a+b+c) = 12(ab+bc) \quad \text{...(2)} \\
+                    \dfrac{1}{c} + \dfrac{1}{a+b} = 4 &\implies \dfrac{a+b+c}{c(a+b)} = 4 \implies 3(a+b+c) = 12(ac+bc) \quad \text{...(3)}
+                    \end{aligned}\]
+                    Jumlahkan persamaan (1), (2), dan (3):
+                    \[\begin{aligned}
+                    13(a+b+c) &= 12(2ab + 2bc + 2ac) \\
+                    13(a+b+c) &= 24(ab + bc + ac) \\
+                    2(ab + bc + ac) &= \dfrac{13}{12}(a+b+c)
+                    \end{aligned}\]
+                    Gunakan identitas aljabar:
+                    \[\begin{aligned}
+                    a^2 + b^2 + c^2 &= 10 \\
+                    (a+b+c)^2 - 2(ab+bc+ac) &= 10 \\
+                    (a+b+c)^2 - \dfrac{13}{12}(a+b+c) &= 10
+                    \end{aligned}\]
+                    Kalikan dengan 12:
+                    \[\begin{aligned}
+                    12(a+b+c)^2 - 13(a+b+c) - 120 &= 0 \\
+                    (4(a+b+c) - 15)(3(a+b+c) + 8) &= 0
+                    \end{aligned}\]
+                    Diperoleh:
+                    \[a + b + c = \dfrac{15}{4} \quad \text{atau} \quad a + b + c = -\dfrac{8}{3}\]
+                    <div class="kesimpulan">Jadi, \(a + b + c = \dfrac{15}{4}\) atau \(-\dfrac{8}{3}\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 22 -->
+        <article class="soal-item" id="22">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Bilangan real \(t\) sehingga terdapat dengan tunggal tripel bilangan real \((x, y, z)\) yang memenuhi \(x^2 + 2y^2 = 3z\) dan \(x + y + z = t\) adalah ....
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Dari persamaan kedua, \(3z = 3t - 3x - 3y\).<br>
+                    Substitusikan ke persamaan pertama:
+                    \[\begin{aligned}
+                    x^2 + 2y^2 &= 3z \\
+                    x^2 + 2y^2 &= 3t - 3x - 3y \\
+                    (x^2 + 3x) + (2y^2 + 3y) &= 3t
+                    \end{aligned}\]
+                    Lengkapkan kuadrat sempurna:
+                    \[\begin{aligned}
+                    \left(x + \dfrac{3}{2}\right)^2 - \dfrac{9}{4} + 2\left(y + \dfrac{3}{4}\right)^2 - 2\left(\dfrac{9}{16}\right) &= 3t \\
+                    \left(x + \dfrac{3}{2}\right)^2 + 2\left(y + \dfrac{3}{4}\right)^2 - \dfrac{9}{4} - \dfrac{9}{8} &= 3t \\
+                    \left(x + \dfrac{3}{2}\right)^2 + 2\left(y + \dfrac{3}{4}\right)^2 &= 3t + \dfrac{27}{8}
+                    \end{aligned}\]
+                    Karena ruas kiri merupakan penjumlahan kuadrat bilangan real yang bernilai non-negatif, agar tripel solusi \((x, y, z)\) tunggal, ruas kanan harus bernilai 0:
+                    \[\begin{aligned}
+                    3t + \dfrac{27}{8} &= 0 \\
+                    3t &= -\dfrac{27}{8} \\
+                    t &= -\dfrac{9}{8}
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, bilangan real \(t\) yang memenuhi adalah \(-\dfrac{9}{8}\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 23 -->
+        <article class="soal-item" id="23">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Untuk \(a, b, c,\) dan \(d\) bilangan real tak nol yang memenuhi sistem persamaan:
+                \[\begin{aligned}
+                a + b + c &= d \\
+                \dfrac{1}{a} + \dfrac{1}{b} + \dfrac{1}{c} &= \dfrac{1}{d} \\
+                a^3 + b^3 + c^3 &= 10^6
+                \end{aligned}\]
+                Berapa nilai dari ekspresi \(a + b + c + d\)?
+            </div>
+            <div class="soal-sumber">Kumpulan Soal Matematika</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Dari persamaan kedua:
+                    \[\begin{aligned}
+                    \dfrac{1}{a} + \dfrac{1}{b} + \dfrac{1}{c} &= \dfrac{1}{d} \\
+                    \dfrac{ab + bc + ca}{abc} &= \dfrac{1}{d} \\
+                    ab + bc + ca &= \dfrac{abc}{d}
+                    \end{aligned}\]
+                    Gunakan identitas aljabar:
+                    \[\begin{aligned}
+                    a^3 + b^3 + c^3 &= (a + b + c)^3 - 3(a + b + c)(ab + bc + ca) + 3abc \\
+                    10^6 &= d^3 - 3d\left(\dfrac{abc}{d}\right) + 3abc \\
+                    10^6 &= d^3 - 3abc + 3abc \\
+                    10^6 &= d^3 \implies d = 100
+                    \end{aligned}\]
+                    Karena \(a + b + c = d = 100\), maka nilai dari ekspresi yang dicari:
+                    \[\begin{aligned}
+                    a + b + c + d &= d + d \\
+                    &= 2d \\
+                    &= 2(100) = 200
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, nilai dari \(a + b + c + d\) adalah 200.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 24 
+        <article class="soal-item" id="24">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 25 
+        <article class="soal-item" id="25">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 26 
+        <article class="soal-item" id="26">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 27 
+        <article class="soal-item" id="27">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 28 
+        <article class="soal-item" id="28">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 29 
+        <article class="soal-item" id="29">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 30 
+        <article class="soal-item" id="30">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- Pagination Bawah -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>

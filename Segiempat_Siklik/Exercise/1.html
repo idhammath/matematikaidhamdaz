@@ -1,70 +1,218 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Exercise Zone : Segiempat Siklik (Segiempat Talibusur)</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - Segiempat Siklik (Segiempat Talibusur)</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Segiempat Siklik (Segiempat Talibusur)</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
 
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-  <br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Segiempat Siklik (Segiempat Talibusur)</span>
+            </p>
+            <!-- Tombol Tingkat dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-  <div id="1" class="justify">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Diberikan segiempat siklis ABCD dengan <e>AB = 6,</e> <e>BC = 3,</e> <e>CD = 7,</e> <e>AD = 4.</e> Luas dari segiempat tersebut adalah $\sqrt{m}$, nilai <e><em>m</em> =</e> ....
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM Februari 2024 tingkat SMA</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">\(\begin{aligned}
-        s&=\dfrac{6+3+7+4}2\\[4pt] 
-        &=10
-        \end{aligned}\) <br><br>
-        \(\begin{aligned}
-        L^2&=(s-a)(s-b)(s-c)(s-d)\\
-        \left(\sqrt{m}\right)^2&=(10-6)(10-3)(10-7)(10-4)\\
-        m&=(4)(7)(3)(6)\\
-        &=\color{blue}\boxed{\boxed{\color{black}504}}
-        \end{aligned}\)
-    </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, nilai <e><em>m</em> = 504</e>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(segiempatSiklikSoal,1,1)</script>
-</div>
+        <!-- ================= DAFTAR 10 SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diberikan segiempat siklis \(ABCD\) dengan \(AB = 6\), \(BC = 3\), \(CD = 7\), dan \(AD = 4\). Luas dari segiempat tersebut adalah \(\sqrt{m}\), nilai \(m = \dots.\)
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Evaluasi GMOM Februari 2024 tingkat SMA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Gunakan Rumus Brahmagupta untuk mencari luas segiempat siklis (segiempat tali busur) yang memiliki panjang sisi \(a, b, c, d\):
+                    \[s = \dfrac{a + b + c + d}{2}\]
+                    \[L = \sqrt{(s - a)(s - b)(s - c)(s - d)}\]
+                    Hitung nilai semi-perimeter \(s\):
+                    \[\begin{aligned}
+                    s &= \dfrac{6 + 3 + 7 + 4}{2}\\[4pt]
+                    &= \dfrac{20}{2} = 10
+                    \end{aligned}\]
+                    Maka kuadrat dari luas segiempat adalah:
+                    \[\begin{aligned}
+                    L^2 &= (s - a)(s - b)(s - c)(s - d)\\[4pt]
+                    (\sqrt{m})^2 &= (10 - 6)(10 - 3)(10 - 7)(10 - 4)\\[4pt]
+                    m &= 4 \times 7 \times 3 \times 6\\[4pt]
+                    m &= 504
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, nilai \(m = 504\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 (Placeholder) -->
+        <!--
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">Teks soal belum tersedia.</div>
+            <div class="soal-sumber">Sumber</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">Pembahasan belum tersedia.<div class="kesimpulan">Jadi, ...</div></div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 3 (Placeholder) -->
+        <!--
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">Teks soal belum tersedia.</div>
+            <div class="soal-sumber">Sumber</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">Pembahasan belum tersedia.<div class="kesimpulan">Jadi, ...</div></div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 4 (Placeholder) -->
+        <!--
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">Teks soal belum tersedia.</div>
+            <div class="soal-sumber">Sumber</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">Pembahasan belum tersedia.<div class="kesimpulan">Jadi, ...</div></div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 5 (Placeholder) -->
+        <!--
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">Teks soal belum tersedia.</div>
+            <div class="soal-sumber">Sumber</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">Pembahasan belum tersedia.<div class="kesimpulan">Jadi, ...</div></div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 6 (Placeholder) -->
+        <!--
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">Teks soal belum tersedia.</div>
+            <div class="soal-sumber">Sumber</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">Pembahasan belum tersedia.<div class="kesimpulan">Jadi, ...</div></div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 7 (Placeholder) -->
+        <!--
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">Teks soal belum tersedia.</div>
+            <div class="soal-sumber">Sumber</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">Pembahasan belum tersedia.<div class="kesimpulan">Jadi, ...</div></div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 8 (Placeholder) -->
+        <!--
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">Teks soal belum tersedia.</div>
+            <div class="soal-sumber">Sumber</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">Pembahasan belum tersedia.<div class="kesimpulan">Jadi, ...</div></div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 9 (Placeholder) -->
+        <!--
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">Teks soal belum tersedia.</div>
+            <div class="soal-sumber">Sumber</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">Pembahasan belum tersedia.<div class="kesimpulan">Jadi, ...</div></div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 10 (Placeholder) -->
+        <!--
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">Teks soal belum tersedia.</div>
+            <div class="soal-sumber">Sumber</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">Pembahasan belum tersedia.<div class="kesimpulan">Jadi, ...</div></div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

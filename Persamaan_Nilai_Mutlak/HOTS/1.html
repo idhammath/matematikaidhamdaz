@@ -1,219 +1,358 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HOTS Zone : Persamaan Nilai Mutlak</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Persamaan Nilai Mutlak</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+        </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Persamaan Nilai Mutlak</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div><br>
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-
-  <div class="justify" id="1">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Diketahui <e><em>x</em>, <em>y</em> &in; &Ropf;;</e> <e><em>x</em> &gt; 2016</e> dan <e><em>y</em> &gt; 2017.</e> Jika 
-   <div class="flo">\[2016\sqrt{(x+2016)(x-2016)}+2017\sqrt{(y+2017)(y-2017)}=\dfrac12\left(x^2+y^2\right)\]</div>  maka nilai <em>xy</em> = ....
-  <div class="w3-row">
-    <div class="w3-col s6">
-      <ol class="pas1" type="A">
-        <li>4066272</li>
-        <li>4068289</li>
-        <li>5750577,011</li>
-      </ol>
-    </div>
-    <div class="w3-col s6">
-      <ol class="pas1" start="4" type="A">
-        <li>5756281,95</li>
-        <li>8132544</li>
-      </ol>
-    </div>
-  </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://www.instagram.com/p/CmBhhIevNh1/" target="_blank" rel="noopener noreferrer">IG Matematika Idhamdaz</a></div>
-    <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\(\begin{aligned}
-                2016\sqrt{(x+2016)(x-2016)}+2017\sqrt{(y+2017)(y-2017)}&=\dfrac12\left(x^2+y^2\right)\\
-                2\cdot2016\sqrt{x^2-2106^2}+2\cdot2017\sqrt{y^2-2017^2}&=x^2-2016^2+2016^2+y^2-2017^2+2017^2
-            \end{aligned}\)<br><br>
-            Misal \({\sqrt{x^2-2016^2}=p}\) dan \({\sqrt{y^2-2017^2}=q}\)<br>
-            \(\begin{aligned}
-            2\cdot2016p+2\cdot2017q&=p^2+2016^2+q^2+2017^2\\
-            p^2-2\cdot2016p+2016^2+q^2-2\cdot2017q+2017^2&=0\\
-            (p-2016)^2+(q-2017)^2&=0
-            \end{aligned}\)<br><br>
-            \(\begin{aligned}
-            p-2016&=0\\
-            p&=2016\\
-            \sqrt{x^2-2016^2}&=2016\\
-            x^2-2016^2&=2016^2\\
-            x^2&=2\cdot2016^2\\
-            x&=2016\sqrt2
-            \end{aligned}\)<br><br>
-            \(\begin{aligned}
-            q-2017&=0\\
-            q&=2017\\
-            \sqrt{y^2-2017^2}&=2017\\
-            y&=2017\sqrt2
-            \end{aligned}\)<br><br>
-            \(\begin{aligned}
-            xy&=2016\sqrt2\cdot2017\sqrt2\\
-            &=\boxed{\boxed{8132544}}
-            \end{aligned}\)
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, nilai <em>xy</em> = 8132544.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Persamaan Nilai Mutlak</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
         </div>
-    </details>
-    <hr>
-</div>
 
-<div class="justify" id="2">
-  <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-  Hasil penjumlahan semua solusi persamaan \[\left|x-|2x+6|\right|=99\] adalah....
-  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2023/04/soal-osk-matematika-sma-2023-solusi.html" target="_blank" rel="noopener noreferrer">OSK 2023 SMA</a></div>
-  <details>
-    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-    <div class="w3-card-4">
-      <div class="w3-padding w3-sand flo"><table class="w3-table-all">
-        <tbody>
-          <tr>
-            <td colspan="2" style="border-right: 1px solid black;">\begin{aligned} 
-              x-|2x+6|&=-99\\
-              |2x+6|&=x+99 
-              \end{aligned} 
-              <e><em>x</em> + 99 &ge; 0</e> atau <e><em>x</em> &ge; &minus;99</e>
-            </td>
-            <td rowspan="2">\begin{aligned} 
-              x-|2x+6|&=99\\
-              |2x+6|&=x-99 
-              \end{aligned} 
-              <e><em>x</em> &minus; 99 &ge; 0</e> atau <e><em>x</em> &ge; 99</e><br>
-            Karena |2<em>x</em> + 6| &gt; <em>x</em> untuk <e><em>x</em> &ge; 99</e> maka tidak ada nilai <em>x</em> yang memenuhi</td>
-          </tr>
-          <tr>
-            <td style="border-right: 1px solid black;">\begin{aligned} 
-              2x+6&=-x-99\\
-              3x&=-105\\
-              x&=-35
-              \end{aligned}
-            </td>
-            <td style="border-right: 1px solid black;">\begin{aligned} 
-              2x+6&=x+99\\
-              x&=93\\
-              \end{aligned}</td>
-          </tr>
-        </tbody>
-      </table>
-      &minus;35 + 93  = 58
-    </div>
-      <div class="w3-brown w3-padding tebal flo">Jadi, hasil penjumlahan semua solusi persamaan \[\left|x-|2x+6|\right|=99\] adalah 58.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-    </div>
-  </details>
-  <hr>
-</div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-<div class="justify" id="3">
-  <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-  Hasil penjumlahan semua solusi persamaan \[\left|x-|2x+3|\right|=99\] adalah....
-  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2023/04/soal-osk-matematika-sma-2023-solusi.html" target="_blank" rel="noopener noreferrer">OSK 2023 SMA</a></div>
-  <details>
-    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-    <div class="w3-card-4">
-      <div class="w3-padding w3-sand flo"><table class="w3-table-all">
-        <tbody>
-          <tr>
-            <td colspan="2" style="border-right: 1px solid black;">\begin{aligned} 
-              x-|2x+3|&=-99\\
-              |2x+3|&=x+99 
-              \end{aligned} 
-              <e><em>x</em> + 99 &ge; 0</e> atau <e><em>x</em> &ge; &minus;99</e>
-            </td>
-            <td rowspan="2">\begin{aligned} 
-              x-|2x+3|&=99\\
-              |2x+3|&=x-99 
-              \end{aligned} 
-              <e><em>x</em> &minus; 99 &ge; 0</e> atau <e><em>x</em> &ge; 99</e><br>
-            Karena |2<em>x</em> + 3| &gt; <em>x</em> untuk <e><em>x</em> &ge; 99</e> maka tidak ada nilai <em>x</em> yang memenuhi</td>
-          </tr>
-          <tr>
-            <td style="border-right: 1px solid black;">\begin{aligned} 
-              2x+3&=-x-99\\
-              3x&=-102\\
-              x&=-34
-              \end{aligned}
-            </td>
-            <td style="border-right: 1px solid black;">\begin{aligned} 
-              2x+3&=x+99\\
-              x&=96\\
-              \end{aligned}</td>
-          </tr>
-        </tbody>
-      </table>
-      &minus;34 + 96  = 62
-    </div>
-      <div class="w3-brown w3-padding tebal flo">Jadi, hasil penjumlahan semua solusi persamaan \[\left|x-|2x+3|\right|=99\] adalah 62.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-    </div>
-  </details>
-  <hr>
-</div>
+        <!-- ================= DAFTAR 10 SOAL ================= -->
 
-<div class="justify" id="4">
-  <h2>No. <span class="w3-badge w3-red nomor"></span></h2>
-  Jumlah semua nilai <em>k</em> yang memenuhi persamaan: <br>
-  ||<em>k</em> &minus; 2025| &minus; 2025| = 0 adalah....
-  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Final OGM 10 Tingkat SMA</a></div>
-  <details>
-    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-    <div class="w3-card-4">
-      <div class="w3-padding w3-sand flo">
-        \(\begin{aligned}
-        ||k-2025|-2025|&=0\\
-        |k-2025|-2025&=0\\
-        |k-2025|&=2025\\
-        k-2025&=\pm2025
-        \end{aligned}\) <br><br>
-        <em>k</em><sub>1</sub> = 2025 + 2025 = 4050<br>
-        <em>k</em><sub>2</sub> = 2025 &minus; 2025 = 0<br><br>
-        4050 + 0 = 4050.
-      </div>
-      <div class="w3-brown w3-padding tebal flo">Jadi, jumlah semua nilai <em>k</em> yang memenuhi persamaan: <br>
-        ||<em>k</em> &minus; 2025| &minus; 2025| = 0 adalah 4050.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-    </div>
-  </details>
-  <hr>
-</div>
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui <e><em>x</em>, <em>y</em> &in; &Ropf;;</e> <e><em>x</em> &gt; 2016</e> dan <e><em>y</em> &gt; 2017.</e> Jika 
+                <div class="flo">\[2016\sqrt{(x+2016)(x-2016)}+2017\sqrt{(y+2017)(y-2017)}=\dfrac12\left(x^2+y^2\right)\]</div>
+                maka nilai <em>xy</em> = ....
+                <div class="w3-row">
+                    <div class="w3-col s6">
+                        <ol class="pas1" type="A">
+                            <li>4066272</li>
+                            <li>4068289</li>
+                            <li>5750577,011</li>
+                        </ol>
+                    </div>
+                    <div class="w3-col s6">
+                        <ol class="pas1" start="4" type="A">
+                            <li>5756281,95</li>
+                            <li>8132544</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="soal-sumber"><a href="https://www.instagram.com/p/CmBhhIevNh1/" target="_blank" rel="noopener noreferrer">IG Matematika Idhamdaz</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \(\begin{aligned}
+                        2016\sqrt{(x+2016)(x-2016)}+2017\sqrt{(y+2017)(y-2017)}&=\dfrac12\left(x^2+y^2\right)\\
+                        2\cdot2016\sqrt{x^2-2106^2}+2\cdot2017\sqrt{y^2-2017^2}&=x^2-2016^2+2016^2+y^2-2017^2+2017^2
+                    \end{aligned}\)<br><br>
+                    Misal \({\sqrt{x^2-2016^2}=p}\) dan \({\sqrt{y^2-2017^2}=q}\)<br>
+                    \(\begin{aligned}
+                    2\cdot2016p+2\cdot2017q&=p^2+2016^2+q^2+2017^2\\
+                    p^2-2\cdot2016p+2016^2+q^2-2\cdot2017q+2017^2&=0\\
+                    (p-2016)^2+(q-2017)^2&=0
+                    \end{aligned}\)<br><br>
+                    \(\begin{aligned}
+                    p-2016&=0\\
+                    p&=2016\\
+                    \sqrt{x^2-2016^2}&=2016\\
+                    x^2-2016^2&=2016^2\\
+                    x^2&=2\cdot2016^2\\
+                    x&=2016\sqrt2
+                    \end{aligned}\)<br><br>
+                    \(\begin{aligned}
+                    q-2017&=0\\
+                    q&=2017\\
+                    \sqrt{y^2-2017^2}&=2017\\
+                    y&=2017\sqrt2
+                    \end{aligned}\)<br><br>
+                    \(\begin{aligned}
+                    xy&=2016\sqrt2\cdot2017\sqrt2\\
+                    &=\boxed{\boxed{8132544}}
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, nilai <em>xy</em> = 8132544.<br><b>JAWAB: E</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <br><br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(persNilaiMutlak,3,1)</script>
-</div>
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Hasil penjumlahan semua solusi persamaan \[\left|x-|2x+6|\right|=99\] adalah....
+            </div>
+            <div class="soal-sumber"><a href="/2023/04/soal-osk-matematika-sma-2023-solusi.html" target="_blank" rel="noopener noreferrer">OSK 2023 SMA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <table class="w3-table-all">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="border-right: 1px solid black;">\(\begin{aligned} 
+                                  x-|2x+6|&=-99\\
+                                  |2x+6|&=x+99 
+                                  \end{aligned}\)<br>
+                                  <e><em>x</em> + 99 &ge; 0</e> atau <e><em>x</em> &ge; &minus;99</e>
+                                </td>
+                                <td rowspan="2">\(\begin{aligned} 
+                                  x-|2x+6|&=99\\
+                                  |2x+6|&=x-99 
+                                  \end{aligned}\)<br>
+                                  <e><em>x</em> &minus; 99 &ge; 0</e> atau <e><em>x</em> &ge; 99</e><br>
+                                Karena |2<em>x</em> + 6| &gt; <em>x</em> untuk <e><em>x</em> &ge; 99</e> maka tidak ada nilai <em>x</em> yang memenuhi</td>
+                            </tr>
+                            <tr>
+                                <td style="border-right: 1px solid black;">\(\begin{aligned} 
+                                  2x+6&=-x-99\\
+                                  3x&=-105\\
+                                  x&=-35
+                                  \end{aligned}\)
+                                </td>
+                                <td style="border-right: 1px solid black;">\(\begin{aligned} 
+                                  2x+6&=x+99\\
+                                  x&=93\\
+                                  \end{aligned}\)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &minus;35 + 93 = 58
+                    <div class="kesimpulan">Jadi, hasil penjumlahan semua solusi persamaan \[\left|x-|2x+6|\right|=99\] adalah 58.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Hasil penjumlahan semua solusi persamaan \[\left|x-|2x+3|\right|=99\] adalah....
+            </div>
+            <div class="soal-sumber"><a href="/2023/04/soal-osk-matematika-sma-2023-solusi.html" target="_blank" rel="noopener noreferrer">OSK 2023 SMA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <table class="w3-table-all">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="border-right: 1px solid black;">\(\begin{aligned} 
+                                  x-|2x+3|&=-99\\
+                                  |2x+3|&=x+99 
+                                  \end{aligned}\)<br>
+                                  <e><em>x</em> + 99 &ge; 0</e> atau <e><em>x</em> &ge; &minus;99</e>
+                                </td>
+                                <td rowspan="2">\(\begin{aligned} 
+                                  x-|2x+3|&=99\\
+                                  |2x+3|&=x-99 
+                                  \end{aligned}\)<br>
+                                  <e><em>x</em> &minus; 99 &ge; 0</e> atau <e><em>x</em> &ge; 99</e><br>
+                                Karena |2<em>x</em> + 3| &gt; <em>x</em> untuk <e><em>x</em> &ge; 99</e> maka tidak ada nilai <em>x</em> yang memenuhi</td>
+                            </tr>
+                            <tr>
+                                <td style="border-right: 1px solid black;">\(\begin{aligned} 
+                                  2x+3&=-x-99\\
+                                  3x&=-102\\
+                                  x&=-34
+                                  \end{aligned}\)
+                                </td>
+                                <td style="border-right: 1px solid black;">\(\begin{aligned} 
+                                  2x+3&=x+99\\
+                                  x&=96\\
+                                  \end{aligned}\)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &minus;34 + 96 = 62
+                    <div class="kesimpulan">Jadi, hasil penjumlahan semua solusi persamaan \[\left|x-|2x+3|\right|=99\] adalah 62.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jumlah semua nilai <em>k</em> yang memenuhi persamaan: <br>
+                ||<em>k</em> &minus; 2025| &minus; 2025| = 0 adalah....
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">Final OGM 10 Tingkat SMA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \(\begin{aligned}
+                    ||k-2025|-2025|&=0\\
+                    |k-2025|-2025&=0\\
+                    |k-2025|&=2025\\
+                    k-2025&=\pm2025
+                    \end{aligned}\) <br><br>
+                    <em>k</em><sub>1</sub> = 2025 + 2025 = 4050<br>
+                    <em>k</em><sub>2</sub> = 2025 &minus; 2025 = 0<br><br>
+                    4050 + 0 = 4050.
+                    <div class="kesimpulan">Jadi, jumlah semua nilai <em>k</em> yang memenuhi persamaan: <br>
+                    ||<em>k</em> &minus; 2025| &minus; 2025| = 0 adalah 4050.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 6 
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 7 
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 8 
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 9 
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 10 
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+        <!-- Copy-paste blok <article class="soal-item">...</article> sampai 10 blok -->
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
+
+</html>

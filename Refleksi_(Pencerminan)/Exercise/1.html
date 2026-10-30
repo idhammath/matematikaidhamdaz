@@ -2,584 +2,382 @@
 <html lang="id">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Refleksi">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise Zone : Refleksi (Pencerminan) [2]</title>
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-    <link rel="stylesheet" href="templatestyle.css">
-    <link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
+    <title>Exercise - Refleksi (Pencerminan)</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-    <div class="w3-container">
-        Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Refleksi</span> (Pencerminan). Jika ingin
-        bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a
-            href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY"
-            target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a
-            href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd"
-            target="_blank">WhatsApp</a>.<span><!--more--></span>
 
-        <div id="linktipe">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <h3>Tipe: </h3>
-                        </td>
-                        <td>
-                            <ul class="pagination" style="margin-left:0em">
-                                <li id="navstandar" class="page-item active d-none"><span id="standar"
-                                        class="page-link">Standar</span></li>
-                                <li id="navsbmptn" class="page-item d-none"><a href="#" id="sbmptn"
-                                        class="page-link">SBMPTN</a></li>
-                                <li id="navhots" class="page-item d-none"><a href="#" id="hots"
-                                        class="page-link">HOTS</a></li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        <div class="navi d-none">
-            <ul class="pagination pagi" style="margin-left:0em">
-            </ul>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Refleksi (Pencerminan)</span>
+            </p>
+            <!-- Tombol Tingkat dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
         </div>
 
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-        <div class="text-justify" id="1"><br />
-            <h3>No. <span class="badge bg-danger nomor"></span></h3>
-            Hasil pencerminan titik <m>(-2,2)</m> terhadap garis <m>{x+y=0}</m> dilanjutkan pencerminan terhadap garis
-            <m>{x-y=0}</m> adalah....
-            <div class="blockquote-footer text-end pt-3">Ganesha Operation</div>
-            <button class="btn btn-success tbl" data-toggle="collapse" type="button"><b>Alternatif
-                    Penyelesaian</b></button>
-            <div class="card">
-                <div class="collapse hide isi" role="tabpanel">
-                    <div class="card-body flo">
-                        <m>(-2,2)\longrightarrow(-2,2)\longrightarrow(2,-2)</m>
-                    </div>
-                    <div class="card-footer font-weight-bold">
-                        <table class="table table-borderless foot">
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">Jadi, hasil pencerminannya adalah <m>(2,-2)</m>.</td>
-                                    <td class="align-middle"><button class="btn btn-dark float-end tutup"
-                                            type="button"><b>Tutup</b></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+        <!-- ================= DAFTAR 10 SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Hasil pencerminan titik \((-2, 2)\) terhadap garis \(x + y = 0\) dilanjutkan pencerminan terhadap garis \(x - y = 0\) adalah ....
             </div>
-        </div>
-
-        <div class="text-justify" id="2"><br />
-            <h3>No. <span class="badge bg-danger nomor"></span></h3>
-            Parabola <m>y=ax^2+bx+c</m>, puncaknya <m>(p,q)</m> dicerminkan terhadap garis <m>{y=1}</m> menghasilkan <m>
-                {y=x^2-x-6}</m>. Milai <m>{a+b+c+p+q}</m> adalah
-            <div class="row">
-                <div class="col">
-                    <ol class="pas1" type="A">
-                        <li class="pb-3">
-                            <m>\dfrac{67}4</m>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Ganesha Operation</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Pencerminan dilakukan dalam dua tahap:
+                    <ol>
+                        <li>Pencerminan terhadap garis \(x + y = 0 \iff y = -x\):
+                            \[(x, y) \xrightarrow{y = -x} (-y, -x)\]
+                            Sehingga untuk titik \((-2, 2)\):
+                            \[(-2, 2) \xrightarrow{y = -x} (-2, -(-2)) = (-2, 2)\]
                         </li>
-                        <li class="pb-3">
-                            <m>\dfrac{33}4</m>
-                        </li>
-                        <li>
-                            <m>8</m>
+                        <li>Dilanjutkan pencerminan terhadap garis \(x - y = 0 \iff y = x\):
+                            \[(x', y') \xrightarrow{y = x} (y', x')\]
+                            Sehingga:
+                            \[(-2, 2) \xrightarrow{y = x} (2, -2)\]
                         </li>
                     </ol>
+                    <div class="kesimpulan">Jadi, hasil pencerminannya adalah \((2, -2)\).</div>
                 </div>
-                <div class="col">
-                    <ol class="pas1" start="4" type="A">
-                        <li class="pb-3">
-                            <m>\dfrac{31}4</m>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Parabola \(y = ax^2 + bx + c\), puncaknya \((p, q)\) dicerminkan terhadap garis \(y = 1\) menghasilkan \(y = x^2 - x - 6\). Nilai \(a + b + c + p + q\) adalah ....
+                <ol class="pilihan-ganda">
+                    <li>\(\dfrac{67}{4}\)</li>
+                    <li>\(\dfrac{33}{4}\)</li>
+                    <li>\(8\)</li>
+                    <li>\(\dfrac{31}{4}\)</li>
+                    <li>\(\dfrac{30}{4}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Karena pencerminan bersifat involusi (refleksi dua kali menghasilkan titik semula), kurva \(y = ax^2 + bx + c\) dapat diperoleh dengan mencerminkan kembali \(y = x^2 - x - 6\) terhadap garis \(y = 1\).<br><br>
+                    Rumus refleksi terhadap garis \(y = k\) dengan \(k = 1\):
+                    \[\begin{aligned}
+                    x' &= x \implies x = x'\\
+                    y' &= 2(1) - y = 2 - y \implies y = 2 - y'
+                    \end{aligned}\]
+                    Substitusikan ke persamaan bayangan \(y = x^2 - x - 6\):
+                    \[\begin{aligned}
+                    2 - y' &= (x')^2 - x' - 6\\
+                    -y' &= (x')^2 - x' - 8\\
+                    y' &= -(x')^2 + x' + 8\\
+                    y &= -x^2 + x + 8
+                    \end{aligned}\]
+                    Diperoleh nilai koefisien:
+                    \[a = -1, \quad b = 1, \quad c = 8\]
+                    Titik puncak \((p, q)\):
+                    \[\begin{aligned}
+                    p &= -\dfrac{b}{2a} = -\dfrac{1}{2(-1)} = \dfrac{1}{2}\\[6pt]
+                    q &= -p^2 + p + 8 = -\left(\dfrac{1}{2}\right)^2 + \dfrac{1}{2} + 8 = -\dfrac{1}{4} + \dfrac{2}{4} + \dfrac{32}{4} = \dfrac{33}{4}
+                    \end{aligned}\]
+                    Maka nilai yang dicari adalah:
+                    \[\begin{aligned}
+                    a + b + c + p + q &= -1 + 1 + 8 + \dfrac{1}{2} + \dfrac{33}{4}\\
+                    &= \dfrac{32}{4} + \dfrac{2}{4} + \dfrac{33}{4}\\
+                    &= \dfrac{67}{4}
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, \(a + b + c + p + q = \dfrac{67}{4}\).<br><b>JAWAB: A</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Hasil pencerminan lingkaran \(x^2 + y^2 + x - 2y - 4 = 0\) terhadap garis \(x = -2\) dan dilanjutkan terhadap garis \(y = 1\) adalah ....
+                <ol class="pilihan-ganda">
+                    <li>\(x^2 + y^2 - 2x - 2y + 15 = 0\)</li>
+                    <li>\(x^2 + y^2 + 7x - 2y + 8 = 0\)</li>
+                    <li>\(x^2 + y^2 - 7x + 2y - 15 = 0\)</li>
+                    <li>\(x^2 + y^2 + 2x - 7y - 16 = 0\)</li>
+                    <li>\(x^2 + y^2 - 2x + 7y - 16 = 0\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">SKMP Agustus 2020</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Pencerminan terhadap garis \(x = -2\) dan dilanjutkan terhadap garis \(y = 1\):
+                    \[\begin{aligned}
+                    x' &= 2(-2) - x = -4 - x \implies x = -4 - x'\\
+                    y' &= 2(1) - y = 2 - y \implies y = 2 - y'
+                    \end{aligned}\]
+                    Substitusikan ke persamaan lingkaran semula:
+                    \[\begin{aligned}
+                    x^2 + y^2 + x - 2y - 4 &= 0\\
+                    (-4 - x')^2 + (2 - y')^2 + (-4 - x') - 2(2 - y') - 4 &= 0\\
+                    (16 + 8x' + (x')^2) + (4 - 4y' + (y')^2) - 4 - x' - 4 + 2y' - 4 &= 0\\
+                    (x')^2 + (y')^2 + 7x' - 2y' + 8 &= 0\\
+                    x^2 + y^2 + 7x - 2y + 8 &= 0
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, hasil pencerminannya adalah \(x^2 + y^2 + 7x - 2y + 8 = 0\).<br><b>JAWAB: B</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Titik \(A(-1, 3)\) direfleksikan terhadap garis \(x = 2\) menghasilkan titik ....
+                <ol class="pilihan-ganda">
+                    <li>\(A'(-5, 3)\)</li>
+                    <li>\(A'(-3, 3)\)</li>
+                    <li>\(A'(1, 3)\)</li>
+                    <li>\(A'(3, 3)\)</li>
+                    <li>\(A'(5, 3)\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/5594" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Rumus refleksi titik \((x, y)\) terhadap garis \(x = h\):
+                    \[\begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} 2h - x \\ y \end{pmatrix}\]
+                    Dengan \(h = 2\), \(x = -1\), dan \(y = 3\):
+                    \[\begin{aligned}
+                    x' &= 2(2) - (-1) = 4 + 1 = 5\\
+                    y' &= 3
+                    \end{aligned}\]
+                    Diperoleh titik bayangan \(A'(5, 3)\).
+                    <div class="kesimpulan">Jadi, bayangannya adalah \(A'(5, 3)\).<br><b>JAWAB: E</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Parabola \(y = ax^2 + bx + c\), puncaknya \((p, q)\) dicerminkan terhadap garis \(y = -1\) menghasilkan \(y = x^2 + x - 2\). Nilai \(a + b + c + p + q\) adalah ....
+                <ol class="pilihan-ganda">
+                    <li>\(-\dfrac{9}{2}\)</li>
+                    <li>\(-\dfrac{9}{4}\)</li>
+                    <li>\(-2\)</li>
+                    <li>\(\dfrac{9}{4}\)</li>
+                    <li>\(\dfrac{9}{2}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Zone Id</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Cerminkan kembali persamaan bayangan \(y = x^2 + x - 2\) terhadap garis \(y = -1\):
+                    \[\begin{aligned}
+                    x' &= x \implies x = x'\\
+                    y' &= 2(-1) - y = -2 - y \implies y = -2 - y'
+                    \end{aligned}\]
+                    Substitusikan ke persamaan kurva:
+                    \[\begin{aligned}
+                    -2 - y' &= (x')^2 + x' - 2\\
+                    -y' &= (x')^2 + x'\\
+                    y' &= -(x')^2 - x'\\
+                    y &= -x^2 - x
+                    \end{aligned}\]
+                    Diperoleh:
+                    \[a = -1, \quad b = -1, \quad c = 0\]
+                    Titik puncak \((p, q)\):
+                    \[\begin{aligned}
+                    p &= -\dfrac{b}{2a} = -\dfrac{-1}{2(-1)} = -\dfrac{1}{2}\\[6pt]
+                    q &= -p^2 - p = -\left(-\dfrac{1}{2}\right)^2 - \left(-\dfrac{1}{2}\right) = -\dfrac{1}{4} + \dfrac{1}{2} = \dfrac{1}{4}
+                    \end{aligned}\]
+                    Sehingga nilai dari \(a + b + c + p + q\):
+                    \[\begin{aligned}
+                    a + b + c + p + q &= -1 + (-1) + 0 + \left(-\dfrac{1}{2}\right) + \dfrac{1}{4}\\
+                    &= -2 - \dfrac{1}{4}\\
+                    &= -\dfrac{9}{4}
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, \(a + b + c + p + q = -\dfrac{9}{4}\).<br><b>JAWAB: B</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 6 -->
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Garis \(12y - 7x = 84\) direfleksikan terhadap titik pusat \(O(0, 0)\), maka persamaan bayangannya adalah ....
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/7777" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Pencerminan terhadap titik asal \(O(0, 0)\):
+                    \[\begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} -x \\ -y \end{pmatrix}\]
+                    Sehingga:
+                    \[x = -x' \quad \text{dan} \quad y = -y'\]
+                    Substitusikan ke persamaan garis:
+                    \[\begin{aligned}
+                    12y - 7x &= 84\\
+                    12(-y') - 7(-x') &= 84\\
+                    -12y' + 7x' &= 84\\
+                    7x - 12y &= 84
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, bayangannya adalah \(7x - 12y = 84\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 7 -->
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Titik \(B(-17, 9)\) direfleksikan terhadap garis \(y = -8\), maka bayangannya adalah ....
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/7837" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Rumus refleksi terhadap garis horizontal \(y = k\):
+                    \[\begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} x \\ 2k - y \end{pmatrix}\]
+                    Dengan \(k = -8\), \(x = -17\), dan \(y = 9\):
+                    \[\begin{aligned}
+                    x' &= -17\\
+                    y' &= 2(-8) - 9 = -16 - 9 = -25
+                    \end{aligned}\]
+                    Diperoleh koordinat bayangan \(B'(-17, -25)\).
+                    <div class="kesimpulan">Jadi, bayangannya adalah \(B'(-17, -25)\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 8 -->
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Titik \(A(-2, -5)\) dicerminkan terhadap titik \(O(0, 0)\) kemudian dilanjutkan dengan pencerminan terhadap sumbu \(x\). Tentukan bayangan titik \(A\) tersebut.
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">BSE Kelas XI</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Pencerminan dilakukan bertahap:
+                    <ol>
+                        <li>Refleksi terhadap titik pusat \(O(0, 0)\):
+                            \[\begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} -2 \\ -5 \end{pmatrix} = \begin{pmatrix} 2 \\ 5 \end{pmatrix}\]
                         </li>
-                        <li>
-                            <m>\dfrac{30}4</m>
+                        <li>Dilanjutkan refleksi terhadap sumbu \(x\):
+                            \[\begin{pmatrix} x'' \\ y'' \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} 2 \\ 5 \end{pmatrix} = \begin{pmatrix} 2 \\ -5 \end{pmatrix}\]
                         </li>
                     </ol>
+                    <div class="kesimpulan">Jadi, bayangan akhir titik \(A\) adalah \(A''(2, -5)\).</div>
                 </div>
-            </div><button class="btn btn-success tbl" data-toggle="collapse" type="button"><b>Alternatif
-                    Penyelesaian</b></button>
-            <div class="card">
-                <div class="collapse hide isi" role="tabpanel">
-                    <div class="card-body flo">Jika <m>A</m> direfleksikan terhadap <m>T</m> menghasilkan <m>A'</m>,
-                        maka jika <m>A'</m> direfleksikan terhadap <m>T</m> akan menghasilkan <m>A</m>. Sehingga bisa
-                        dikatakan bahwa <m>{y=ax^2+bx+c}</m> adalah bayangan <m>{y=x^2-x-6}</m> setelah dicerminkan
-                        terhadap garis <m>{y=1}</m>.<br />
-                        <m>\begin{aligned}
-                            \begin{pmatrix}x'\\y'\end{pmatrix}&amp;=\begin{pmatrix}x\\2(1)-y\end{pmatrix}\\
-                            &amp;=\begin{pmatrix}x\\2-y\end{pmatrix}
-                            \end{aligned}</m><br />
-                        <br />
-                        <m>x'=x</m><br />
-                        <m>y'=2-y\longrightarrow y=2-y'</m><br />
-                        <br />
-                        <m>\begin{aligned}
-                            y&amp;=x^2-x-6\\
-                            2-y'&amp;=\left(x'\right)^2-x'-6\\
-                            -y'&amp;=\left(x'\right)^2-x'-6-2\\
-                            -y'&amp;=\left(x'\right)^2-x'-8\\
-                            y'&amp;=-\left(x'\right)^2+x'+8\\
-                            y&amp;=-x^2+x+8
-                            \end{aligned}</m><br />
-                        <br />
-                        <m>a=-1</m>, <m>b=1</m>, <m>c=8</m><br />
-                        <br />
-                        <m>\begin{aligned}
-                            p&amp;=-\dfrac{b}{2a}\\[8pt]
-                            &amp;=-\dfrac1{2(-1)}\\[8pt]
-                            &amp;=\dfrac12
-                            \end{aligned}</m><br />
-                        <br />
-                        <m>\begin{aligned}
-                            q&amp;=-p^2+p+8\\
-                            &amp;=-\left(\dfrac12\right)^2+\dfrac12+8\\[8pt]
-                            &amp;=-\dfrac14+\dfrac12+8\\[8pt]
-                            &amp;=\dfrac{33}4
-                            \end{aligned}</m><br />
-                        <br />
-                        <m>\begin{aligned}
-                            a+b+c+p+q&amp;=-1+1+8+\dfrac12+\dfrac{33}4\\
-                            &amp;=\boxed{\boxed{\dfrac{67}4}}
-                            \end{aligned}</m>
-                    </div>
-                    <div class="card-footer font-weight-bold">
-                        <table class="table table-borderless foot">
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">Jadi, <m>a+b+c+p+q=\dfrac{67}4</m>.<br />
-                                        JAWAB: A</td>
-                                    <td class="align-middle"><button class="btn btn-dark float-end tutup"
-                                            type="button"><b>Tutup</b></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <button class="btn-tutup">TUTUP</button>
             </div>
-        </div>
+        </article>
 
-        <div class="text-justify" id="3"><br />
-            <h3>No. <span class="badge bg-danger nomor"></span></h3>
-            Hasil pencerminan lingkaran <m>{x^2 + y^2 + x-2y-4 = 0}</m> terhadap garis <m>{x =-2}</m> dan <m>{y = 1}</m>
-            adalah
-            <div class="row">
-                <div class="col">
-                    <ol class="pas1" type="A">
-                        <li>
-                            <m>{x^2 + y^2-2x-2y + 15 = 0}</m>
-                        </li>
-                        <li>
-                            <m>{x^2 + y^2 + 7x-2y + 8 = 0}</m>
-                        </li>
-                        <li>
-                            <m>{x^2 + y^2-7x + 2y-15 = 0}</m>
-                        </li>
-                    </ol>
-                </div>
-                <div class="col">
-                    <ol class="pas1" start="4" type="A">
-                        <li>
-                            <m>{x^2 + y^2 + 2x-7y-16 = 0}</m>
-                        </li>
-                        <li>
-                            <m>{x^2 + y^2-2x + 7y-16 = 0}</m>
-                        </li>
-                    </ol>
-                </div>
+        <!-- SOAL 9 -->
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Garis \(2x - y + 5 = 0\) dicerminkan terhadap titik \(O(0, 0)\) kemudian dilanjutkan dengan pencerminan terhadap sumbu \(y\). Tentukan persamaan bayangan garis tersebut.
             </div>
-            <div class="blockquote-footer text-end pt-3"><a href="/2020/08/skmp-matematika-agustus-2020-kunci.html"
-                    target="_blank">SKMP Agustus 2020</a></div> <button class="btn btn-success tbl"
-                data-toggle="collapse" type="button"><b>Alternatif Penyelesaian</b></button>
-            <div class="card">
-                <div class="collapse hide isi" role="tabpanel">
-                    <div class="card-body flo">
-                        \(\eqalign{
-                        \pmatrix{x'\\y'}&amp;=\pmatrix{2(-2)-x\\2(1)-y}\\
-                        \pmatrix{x'\\y'}&amp;=\pmatrix{-4-x\\2-y}\\
-                        \pmatrix{x\\y}&amp;=\pmatrix{-4-x'\\2-y'}
-                        }\)<br /><br />
-                        \(\eqalign{
-                        x^2 + y^2 + x-2y-4&amp;= 0\\
-                        \left(-4-x'\right)^2+\left(2-y'\right)^2+\left(-4-x'\right)-2\left(2-y'\right)-4&amp;= 0\\
-                        16+8x'+\left(x'\right)^2+4-4y'+\left(y'\right)^2-4-x'-4+2y'-4&amp;=0\\
-                        \left(x'\right)^2+\left(y'\right)^2+7x'-2y'+8&amp;=0\\
-                        x^2+y^2+7x-2y+8&amp;=0
-                        }\)</div>
-                    <div class="card-footer font-weight-bold">
-                        <table class="table table-borderless foot">
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">Jadi, hasil pencerminannya adalah <m>{ x^2+y^2+7x-2y+8=0}
-                                        </m>.<br />
-                                        JAWAB: B</td>
-                                    <td class="align-middle"><button class="btn btn-dark float-end tutup"
-                                            type="button"><b>Tutup</b></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">BSE Kelas XI</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Komposisi matriks transformasi refleksi terhadap titik \(O(0, 0)\) dilanjutkan sumbu \(y\):
+                    \[\begin{aligned}
+                    \begin{pmatrix} x' \\ y' \end{pmatrix} &= \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix}\\
+                    &= \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix}\\
+                    &= \begin{pmatrix} x \\ -y \end{pmatrix}
+                    \end{aligned}\]
+                    Sehingga:
+                    \[x = x' \quad \text{dan} \quad y = -y'\]
+                    Substitusikan ke persamaan garis:
+                    \[\begin{aligned}
+                    2x - y + 5 &= 0\\
+                    2(x') - (-y') + 5 &= 0\\
+                    2x + y + 5 &= 0
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, persamaan bayangan garis tersebut adalah \(2x + y + 5 = 0\).</div>
                 </div>
+                <button class="btn-tutup">TUTUP</button>
             </div>
-        </div>
+        </article>
 
-        <div class="text-justify" id="4"><br />
-            <h3>No. <span class="badge bg-danger nomor"></span></h3>
-            Titik <m>A(-1,3)</m> refleksikan terhadap garis <m>x=2</m> menghasilkan titik ....
-            <div class="row">
-                <div class="col">
-                    <ol class="pas1" type="A">
-                        <li>
-                            <m>A'(-5,3)</m>
-                        </li>
-                        <li>
-                            <m>A'(-3,3)</m>
-                        </li>
-                        <li>
-                            <m>A'(1,3)</m>
-                        </li>
-                    </ol>
-                </div>
-                <div class="col">
-                    <ol class="pas1" start="4" type="A">
-                        <li>
-                            <m>A'(3,3)</m>
-                        </li>
-                        <li>
-                            <m>A'(5,3)</m>
-                        </li>
-                    </ol>
-                </div>
+        <!-- SOAL 10 -->
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Titik \(A(-1, -3)\) dicerminkan terhadap titik \(O(0, 0)\), kemudian dilanjutkan dengan pencerminan terhadap sumbu \(y\), dan dilanjutkan lagi dengan pencerminan terhadap garis \(y = x\). Tentukan bayangan titik \(A\) tersebut.
             </div>
-            <div class="blockquote-footer text-end pt-3"><a href="https://t.me/MatematikaZoneIdGrup/5594"
-                    target="_blank">Grup Telegram</a></div>
-            <button class="btn btn-success tbl" data-toggle="collapse" type="button"><b>Alternatif
-                    Penyelesaian</b></button>
-            <div class="card">
-                <div class="collapse hide isi" role="tabpanel">
-                    <div class="card-body flo">
-                        \(\eqalign{
-                        \pmatrix{x'\\y'}&=\pmatrix{2(2)-(-1)\\3}\\
-                        &=\pmatrix{5\\3}
-                        }\)</div>
-                    <div class="card-footer font-weight-bold">
-                        <table class="table table-borderless foot">
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">Jadi, <m>A'(5,3)</m>.<br>
-                                        JAWAB: E</td>
-                                    <td class="align-middle"><button class="btn btn-dark float-end tutup"
-                                            type="button"><b>Tutup</b></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">BSE Kelas XI</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Komposisi matriks ketiga refleksi tersebut berturut-turut:
+                    \[\begin{aligned}
+                    \begin{pmatrix} x' \\ y' \end{pmatrix} &= \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} -1 \\ -3 \end{pmatrix}\\[6pt]
+                    &= \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} -1 \\ -3 \end{pmatrix}\\[6pt]
+                    &= \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} -1 \\ -3 \end{pmatrix}\\[6pt]
+                    &= \begin{pmatrix} 3 \\ -1 \end{pmatrix}
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, bayangan titik \(A\) tersebut adalah \(A'(3, -1)\).</div>
                 </div>
+                <button class="btn-tutup">TUTUP</button>
             </div>
-        </div>
+        </article>
 
-        <div class="text-justify" id="5"><br />
-            <h3>No. <span class="badge bg-danger nomor"></span></h3>
-            Parabola <m>{y=ax^2+bx+c}</m>, puncaknya <m>{(p,q)}</m> dicerminkan terhadap garis <m>{y=-1}</m>
-            menghasilkan <m>{y=x^2+x-2}</m>. Nilai <m>{a+b+c+p+q}</m> adalah<br />
-            <div class="row">
-                <div class="col">
-                    <ol class="pas1" type="A">
-                        <li><span class="btn bg-white">
-                                <m>-\dfrac92</m>
-                            </span></li>
-                        <li><span class="btn bg-white">
-                                <m>-\dfrac94</m>
-                            </span></li>
-                        <li><span class="btn bg-white">
-                                <m>-2</m>
-                            </span></li>
-                    </ol>
-                </div>
-                <div class="col">
-                    <ol class="pas1" start="4" type="A">
-                        <li><span class="btn bg-white">
-                                <m>\dfrac94</m>
-                            </span></li>
-                        <li><span class="btn bg-white">
-                                <m>\dfrac92</m>
-                            </span></li>
-                    </ol>
-                </div>
-            </div><button class="btn btn-success tbl" data-toggle="collapse" type="button"><b>Alternatif
-                    Penyelesaian</b></button>
-            <div class="card">
-                <div class="collapse hide isi" role="tabpanel">
-                    <div class="card-body flo"> Bisa dikatakan bahwa <m>{y=ax^2+bx+c}</m> adalah bayangan <m>{y=x^2+x-2}
-                        </m> setelah dicerminkan terhadap garis <m>{y=-1}</m>.<br />
-                        <m>x'=x\rightarrow x=x'</m><br />
-                        <m>y'=2(-1)-y=-2-y\rightarrow y=-2-y'</m><br />
-                        <br />
-                        <m>\begin{aligned}
-                            y&=x^2+x-2\\
-                            -2-y'&=(x')^2+x'-2\\
-                            -y'&=(x')^2+x'\\
-                            y'&=-(x')^2-x'\\
-                            y&=-x^2-x
-                            \end{aligned}</m><br />
-                        <m>a=-1</m>, <m>b=-1</m>, <m>c=0</m><br />
-                        <br />
-                        <m>\begin{aligned}
-                            p&=-\dfrac{b}{2a}\\[8pt]
-                            &=-\dfrac{-1}{2(-1)}\\[8pt]
-                            &=\dfrac12
-                            \end{aligned}</m><br />
-                        <br />
-                        <m>\begin{aligned}
-                            q&=-p^2-p\\
-                            &=-\left(\dfrac12\right)^2-\dfrac12\\[8pt]
-                            &=-\dfrac14-\dfrac12\\[8pt]
-                            &=-\dfrac34
-                            \end{aligned}</m><br />
-                        <br />
-                        <m>\begin{aligned}
-                            a+b+c+p+q&=-1+(-1)+0+\dfrac12+\left(-\dfrac34\right)\\
-                            &=\boxed{\boxed{-\dfrac94}}
-                            \end{aligned}</m>
-                    </div>
-                    <div class="card-footer font-weight-bold">
-                        <table class="table table-borderless foot">
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">Jadi, <m>{a+b+c+p+q=-\dfrac94}</m>.<br />
-                                        JAWAB: B</td>
-                                    <td class="align-middle"><button class="btn btn-dark float-end tutup"
-                                            type="button"><b>Tutup</b></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
 
-        <div class="text-justify" id="6"><br />
-            <h3>No. <span class="badge bg-danger nomor"></span></h3>
-            Garis <m>12y - 7x = 84</m> direfleksikan terhadap titik pusat <m>O(0,0)</m>, maka bayangannya adalah
-            <div class="blockquote-footer text-end pt-3"><a href="https://t.me/MatematikaZoneIdGrup/7777"
-                    target="_blank">Grup Telegram</a></div>
-            <button class="btn btn-success tbl" data-toggle="collapse" type="button"><b>Alternatif
-                    Penyelesaian</b></button>
-            <div class="card">
-                <div class="collapse hide isi" role="tabpanel">
-                    <div class="card-body flo">
-                        <div class="row">
-                            <div class="col">
-                                \(\eqalign{
-                                \pmatrix{x'\\y'}&=\pmatrix{-1&0\\0&-1}\pmatrix{x\\y'}\\
-                                &=\pmatrix{-x\\-y}
-                                }\)<br>
-                                <m>x'=-x\rightarrow x=-x'</m><br>
-                                <m>y'=-y\rightarrow y=-y'</m><br>
-                            </div>
-                            <div class="col">
-                                \(\eqalign{
-                                12y - 7x &= 84\\
-                                12(-y')-7(-x')&=84\\
-                                -12y'+7x'&=84\\
-                                7x'-12y'&=84\\
-                                7x-12y&=84
-                                }\)
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer font-weight-bold">
-                        <table class="table table-borderless foot">
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">Jadi, bayangannya adalah <m>7x-12y=84</m>
-                                    </td>
-                                    <td class="align-middle"><button class="btn btn-dark float-end tutup"
-                                            type="button"><b>Tutup</b></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-justify" id="7"><br />
-            <h3>No. <span class="badge bg-danger nomor"></span></h3>
-            Titik <m>B(-17, 9)</m> direfleksikan terhadap garis <m>{y=-8}</m>, maka bayangannya adalah
-            <div class="blockquote-footer text-end pt-3"><a href="https://t.me/MatematikaZoneIdGrup/7837"
-                    target="_blank">Grup Telegram</a></div>
-            <button class="btn btn-success tbl" data-toggle="collapse" type="button"><b>Alternatif
-                    Penyelesaian</b></button>
-            <div class="card">
-                <div class="collapse hide isi" role="tabpanel">
-                    <div class="card-body flo">
-                        <m>B(-17, 9)\rightarrow B'(-17,2(-8)-9)=B'(-17,-25)</m>
-                    </div>
-                    <div class="card-footer font-weight-bold">
-                        <table class="table table-borderless foot">
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">Jadi, bayangannya adalah <m>B'(-17,-25)</m>
-                                    </td>
-                                    <td class="align-middle"><button class="btn btn-dark float-end tutup"
-                                            type="button"><b>Tutup</b></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-justify" id="8">
-            <br>
-            <h3>No. <span class="badge bg-danger nomor"></span></h3>
-            Titik <m>A(-2,-5)</m> dicerminkan terhadap titik <m>O</m> kemudian dilanjutkan dengan
-            pencerminan terhadap sumbu <m>x</m>. Tentukan bayangan titik <m>A</m> tersebut.
-            <div class="blockquote-footer text-end pt-3"><a href="#" target="_blank">BSE Kelas XI</a></div>
-            <button class="btn btn-success tbl" type="button"><b>Alternatif Penyelesaian</b></button>
-            <div class="card">
-                <div class="collapse hide isi" role="tabpanel">
-                    <div class="card-body flo">
-                        <div class="row">
-                            <div class="col">
-                                <h1>Refleksi terhadap titik <m>O</m>
-                                </h1>
-                                <m>\begin{aligned}
-                                    \begin{pmatrix}x'\\y'\end{pmatrix}&=\begin{pmatrix}-1&0\\0&-1\end{pmatrix}\begin{pmatrix}-2\\-5\end{pmatrix}\\
-                                    &=\begin{pmatrix}2\\5\end{pmatrix}
-                                    \end{aligned}
-                                </m><br>
-                            </div>
-                            <div class="col">
-                                <h1>Refleksi terhadap sumbu <m>x</m>
-                                </h1>
-                                <m>\begin{aligned}
-                                    \begin{pmatrix}x"\\y"\end{pmatrix}&=\begin{pmatrix}1&0\\0&-1\end{pmatrix}\begin{pmatrix}2\\5\end{pmatrix}\\
-                                    &=\begin{pmatrix}2\\-5\end{pmatrix}\end{aligned}
-                                </m>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer font-weight-bold">
-                        <table class="table table-borderless foot">
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">Jadi, bayangan titik <m>A</m> adalah <m>A"(2,-5)</m>.</td>
-                                    <td class="align-middle"><button class="btn btn-dark float-end tutup"
-                                            type="button"><b>Tutup</b></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-justify" id="9">
-            <br>
-            <h3>No. <span class="badge bg-danger nomor"></span></h3>
-            Garis <m>2x - y + 5 = 0</m> dicerminkan terhadap titik <m>O(0,0)</m> kemudian dilanjutkan dengan pencerminan
-            terhadap sumbu <m>y</m>. Tentukan persamaan bayangan garis tersebut.
-            <div class="blockquote-footer text-end pt-2"><a href="#" target="_blank">BSE Kelas XI</a></div>
-            <button class="btn btn-success tbl" type="button"><b>Alternatif Penyelesaian</b></button>
-            <div class="card">
-                <div class="collapse hide isi" role="tabpanel">
-                    <div class="card-body flo">
-                        <div class="row">
-                            <div class="col">
-                                <m>\begin{aligned}
-                                    \begin{pmatrix}x'\\y'\end{pmatrix}&=\begin{pmatrix}-1&0\\0&1\end{pmatrix}\begin{pmatrix}-1&0\\0&-1\end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}\\
-                                    &=\begin{pmatrix}-1&0\\0&1\end{pmatrix}\begin{pmatrix}-x\\-y\end{pmatrix}\\
-                                    &=\begin{pmatrix}x\\-y\end{pmatrix}
-                                    \end{aligned}
-                                </m><br><br>
-                            </div>
-                            <div class="col">
-                                <m>x'=x\rightarrow x=x'</m><br>
-                                <m>y'=-y\rightarrow y=-y'</m><br><br>
-                                <m>\begin{aligned}
-                                    2x-y+5&=0\\
-                                    2x'-(-y')+5&=0\\
-                                    2x'+y'+5&=0\\
-                                    2x+y+5&=0
-                                    \end{aligned}
-                                </m>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer font-weight-bold">
-                        <table class="table table-borderless foot">
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">Jadi, persamaan bayangan garis tersebut adalah <m>2x+y+5=0
-                                        </m>.</td>
-                                    <td class="align-middle"><button class="btn btn-dark float-end tutup"
-                                            type="button"><b>Tutup</b></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-justify" id="10">
-            <br>
-            <h3>No. <span class="badge bg-danger nomor"></span></h3>
-            Titik <m>A(-1, -3)</m> dicerminkan terhadap titik <m>O(0, 0)</m> kemudian dilanjutkan dengan pencerminan
-            terhadap sumbu <m>y</m> dan dilanjutkan lagi dengan pencerminan terhadap garis <m>y = x</m>. Tentukan
-            bayangan titik <m>A</m> tersebut.
-            <div class="blockquote-footer text-end pt-3"><a href="#" target="_blank">BSE Kelas XI</a></div>
-            <button class="btn btn-success tbl" type="button"><b>Alternatif Penyelesaian</b></button>
-            <div class="card">
-                <div class="collapse hide isi" role="tabpanel">
-                    <div class="card-body flo">
-                        <m>\begin{aligned}
-                            \begin{pmatrix}x'\\y'\end{pmatrix}&=\begin{pmatrix}0&1\\1&0\end{pmatrix}\begin{pmatrix}-1&0\\0&1\end{pmatrix}\begin{pmatrix}-1&0\\0&-1\end{pmatrix}\begin{pmatrix}-1\\-3\end{pmatrix}\\
-                            &=\begin{pmatrix}0&1\\1&0\end{pmatrix}\begin{pmatrix}-1&0\\0&1\end{pmatrix}\begin{pmatrix}1\\3\end{pmatrix}\\
-                            &=\begin{pmatrix}0&1\\1&0\end{pmatrix}\begin{pmatrix}-1\\3\end{pmatrix}\\
-                            &=\begin{pmatrix}3\\-1\end{pmatrix}
-                            \end{aligned}
-                        </m>
-                    </div>
-                    <div class="card-footer font-weight-bold">
-                        <table class="table table-borderless foot">
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">Jadi, bayangan titik <m>A</m> tersebut adalah <m>A'(3,-1)
-                                        </m>
-                                    </td>
-                                    <td class="align-middle"><button class="btn btn-dark float-end tutup"
-                                            type="button"><b>Tutup</b></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <br><br>
-        <div class="navi d-none">
-            <ul class="pagination pagi" style="margin-left:0em">
-            </ul>
-        </div>
-        <script>soal(refl, 1, 1)</script>
-
-    </div>
+    <script src="../../scr/script.js"></script>
 </body>
-<script defer src="scriptfoot.js"></script>
 
 </html>

@@ -1,90 +1,118 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>Exercise Zone: Turunan Fungsi Trigonometri [2]</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-    <link rel="stylesheet" href="templatestyle.css">
-    <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-    <!--link rel="stylesheet" href="style.css"-->
-    <style>body{
-    font-family: roboto,sans-serif;   
-    }</style>
- </head> 
-     <body> <div class="container">
-      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Turunan Fungsi Trigonometri</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-      <h3>Tipe: </h3>
-      <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-      <br>
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>      
-        
-        <div class="justify" id="11"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Diketahui <e><em>f</em>(<em>x</em>) = cos<sup>2</sup> <em>x</em> + 4 cos <em>x</em> + 4</e> dan <e><em>g</em>(<em>x</em>) = cos <em>x</em> + 2</e>.
-          <ol type="a">
-            <li>Tentukan turunan pertama dari <em>h</em>(<em>x</em>), jika diketahui \(h(x)=\dfrac{f(x)}{g(x)}\)</li>
-            <li>Hitunglah nilai dari \(\dfrac{d^2h(x)}{dx^2}\) untuk \(x=\dfrac{\pi}3\)</li>
-          </ol>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneIdGrup/5644" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="w3-row">
-            <div class="w3-col s6">
-                <ol type="a">
-            <li>\(h(x)=\dfrac{f(x)}{g(x)}\)<br>
-            \(\begin{aligned}
-              h(x)&=\dfrac{\cos^2x+4\cos x+4}{\cos x+2}\\[4pt]
-              &=\dfrac{(\cos x+2)^2}{\cos x+2}\\[4pt]
-              &=\cos x+2\\
-              \dfrac{dh(x)}{dx}&=\boxed{\boxed{-\sin x}}
-              \end{aligned}\)<br><br>
-                  </li></ol>
-            </div>
-            <div class="w3-col s6">
-             <ol type="a" start="2">   <li>\(\dfrac{d^2h(x)}{dx^2}=-\cos x\)<br>
-            \(\begin{aligned}
-              \dfrac{d^2h\left(\dfrac{\pi}3\right)}{dx^2}&=-\cos\dfrac{\pi}3\\
-              &=\boxed{\boxed{-\dfrac12}}
-              \end{aligned}\)
-            </li>
-          </ol>
-            </div>
-          </div></div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <ol type="a">
-                <li>turunan pertama dari <em>h</em>(<em>x</em>), jika diketahui \(h(x)=\dfrac{f(x)}{g(x)}\) adalah <e>&minus;sin <em>x</em></e></li>
-                  <li>nilai dari \(\dfrac{d^2h(x)}{dx^2}\) untuk \(x=\dfrac{\pi}3\) adalah \(-\dfrac12\)</li>
-              </ol><br><b>JAWAB: </b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Soal - Turunan Fungsi Trigonometri</title>
+
+  <!-- KaTeX CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+  <!-- GeoSVG.js -->
+  <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+  <script src="./scr/GeoSVG.js"
+    onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+  <!-- Style Blog -->
+  <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="../../index.html" class="home-btn">🏠 HOME</a>
+      <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Header Soal -->
+    <div class="page-header">
+      <p class="intro-text">
+        Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+        materi <span class="topic-highlight">Turunan Fungsi Trigonometri</span>
+      </p>
+      <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+      <div id="level-nav" class="level-nav"></div>
+    </div>
+
+    <!-- Pagination Atas (Otomatis) -->
+    <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+    <!-- ================= DAFTAR 10 SOAL ================= -->
+
+    <!-- SOAL 1 -->
+    <article class="soal-item" id="1">
+      <div class="soal-no"></div>
+      <div class="soal-teks">
+        Diketahui <e><em>f</em>(<em>x</em>) = cos<sup>2</sup> <em>x</em> + 4 cos <em>x</em> + 4</e> dan <e>
+          <em>g</em>(<em>x</em>) = cos <em>x</em> + 2
+        </e>.
+        <ol type="a">
+          <li>Tentukan turunan pertama dari <em>h</em>(<em>x</em>), jika diketahui \(h(x)=\dfrac{f(x)}{g(x)}\)</li>
+          <li>Hitunglah nilai dari \(\dfrac{d^2h(x)}{dx^2}\) untuk \(x=\dfrac{\pi}3\)</li>
+        </ol>
+      </div>
+      <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/5644" target="_blank">Grup Telegram</a></div>
+      <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+      <div class="pembahasan-box">
+        <div class="pembahasan-title">Pembahasan:</div>
+        <div class="pembahasan-isi">
+          \(h(x)=\dfrac{f(x)}{g(x)}\)<br>
+          \(\begin{aligned}
+          h(x)&==\dfrac{f(x)}{g(x)}\\[8pt]
+          &=\dfrac{\cos^2x+4\cos x+4}{\cos x+2}\\[4pt]
+          &=\dfrac{(\cos x+2)^2}{\cos x+2}\\[4pt]
+          &=\cos x+2\\
+          \dfrac{dh(x)}{dx}&=\boxed{\boxed{-\sin x}}
+          \end{aligned}\)<br><br>
+          \(\begin{aligned}
+          \dfrac{d^2h(x)}{dx^2}&=-\cos x\\[8pt]
+          \dfrac{d^2h\left(\dfrac{\pi}3\right)}{dx^2}&=-\cos\dfrac{\pi}3\\
+          &=\boxed{\boxed{-\dfrac12}}
+          \end{aligned}\)
+          <div class="kesimpulan">Jadi, <ol type="a">
+              <li>turunan pertama dari <em>h</em>(<em>x</em>), jika diketahui \(h(x)=\dfrac{f(x)}{g(x)}\) adalah <e>
+                  &minus;sin <em>x</em></e>
+              </li>
+              <li>nilai dari \(\dfrac{d^2h(x)}{dx^2}\) untuk \(x=\dfrac{\pi}3\) adalah \(-\dfrac12\)</li>
+            </ol>
+          </div>
         </div>
-        
-        <div class="justify" id="12"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Tentukan <em>y</em>' jlka diketahui fungsi <em>y</em> sebagai berikut!
-          \[y=x^3\tan2x-\dfrac12x^2\tan2x+x\tan2x-\tan2x\]
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneIdGrup/5644" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        <button class="btn-tutup">TUTUP</button>
+      </div>
+    </article>
+
+    <!-- SOAL 2 -->
+    <article class="soal-item" id="2">
+      <div class="soal-no"></div>
+      <div class="soal-teks">
+        Tentukan <em>y</em>' jlka diketahui fungsi <em>y</em> sebagai berikut!
+        \[y=x^3\tan2x-\dfrac12x^2\tan2x+x\tan2x-\tan2x\]
+      </div>
+      <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/5644" target="_blank">Grup Telegram</a></div>
+      <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+      <div class="pembahasan-box">
+        <div class="pembahasan-title">Pembahasan:</div>
+        <div class="pembahasan-isi">
+          \(\begin{aligned}
           y&=x^3\tan2x-\dfrac12\tan2x+x\tan2x-\tan2x\\
           &=\tan2x\left(x^3-\dfrac12x^2+x-1\right)
           \end{aligned}\)<br><br>
-            <div class="w3-row">
-            <div class="w3-col s6">
+          <div class="row">
+            <div class="col">
               \(\begin{aligned}
               u&=\tan2x\\
               u'&=2\sec^22x
               \end{aligned}\)
             </div>
-            <div class="w3-col s6">
+            <div class="col">
               \(\begin{aligned}
               v&=x^3-\dfrac12x^2+x-1\\
               v'&=3x^2-x+1
@@ -95,73 +123,98 @@
           y'&=u'v+uv'\\
           &=2\sec^22x\left(x^3-\dfrac12x^2+x-1\right)+\tan2x\left(3x^2-x+1\right)\\
           &=\boxed{\boxed{2x^3\sec^22x-x^2\sec^22x+2x\sec^22x-2\sec^22x+3x^2\tan2x-x\tan2x+\tan2x}}
-          \end{aligned}\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>y</em>' = 2<em>x</em>^3 sec^22<em>x</em> - <em>x</em>^2\sec^22<em>x</em> + 2<em>x</em> sec^22<em>x</em> -2 sec^22<em>x</em> + 3<em>x</em>^2\tan 2<em>x</em> -<em>x</em> tan 2<em>x</em> + tan 2<em>x</em></e>.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
+          \end{aligned}\)
+          <div class="kesimpulan">Jadi, <e><em>y</em>' = 2<em>x</em>^3 sec^22<em>x</em> - <em>x</em>^2\sec^22<em>x</em>
+              + 2<em>x</em> sec^22<em>x</em> -2 sec^22<em>x</em> + 3<em>x</em>^2\tan 2<em>x</em> -<em>x</em> tan
+              2<em>x</em> + tan 2<em>x</em></e>.</div>
         </div>
-        
-        <div class="justify" id="13"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Tentukan turunan dari fungsi trigonometri berikut!<br>
-          <div class="w3-center"><em>y</em> = sin 10<em>x</em></div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneIdGrup/5883" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        <button class="btn-tutup">TUTUP</button>
+      </div>
+    </article>
+
+
+    <!-- SOAL 3-->
+    <article class="soal-item" id="3">
+      <div class="soal-no"></div>
+      <div class="soal-teks">
+        Tentukan turunan dari fungsi trigonometri berikut!<br>
+        <div class="tengah"><em>y</em> = sin 10<em>x</em></div>
+      </div>
+      <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/5883" target="_blank">Grup Telegram</a></div>
+      <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+      <div class="pembahasan-box">
+        <div class="pembahasan-title">Pembahasan:</div>
+        <div class="pembahasan-isi">
+          \(\begin{aligned}
           y&=\sin10x\\
           y'&=\boxed{\boxed{10\cos10x}}
-          \end{aligned}\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, turunannya adalah <e><em>y</em>' = 10 cos 10<em>x</em></e>.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
+          \end{aligned}\)
+          <div class="kesimpulan">Jadi, turunannya adalah <e><em>y</em>' = 10 cos 10<em>x</em></e>.</div>
         </div>
-        
-        <div class="justify" id="14"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Tentukan turunan kedua dari <e><em>y</em> = 2 cos(<em>x</em><sup>3</sup> &minus; <em>x</em>)</e>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneIdGrup/5905" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        <button class="btn-tutup">TUTUP</button>
+      </div>
+    </article>
+
+
+    <!-- SOAL 4 -->
+    <article class="soal-item" id="4">
+      <div class="soal-no"></div>
+      <div class="soal-teks">
+        Tentukan turunan kedua dari <e><em>y</em> = 2 cos(<em>x</em><sup>3</sup> &minus; <em>x</em>)</e>
+      </div>
+      <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/5905" target="_blank">Grup Telegram</a></div>
+      <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+      <div class="pembahasan-box">
+        <div class="pembahasan-title">Pembahasan:</div>
+        <div class="pembahasan-isi">
+          \(\begin{aligned}
           y&=2\cos\left(x^3-x\right)\\
           y'&=2\left(-\sin\left(x^3-x\right)\right)\left(3x^2-1\right)\\
           &=\left(-6x^2+2\right)\sin\left(x^3-x\right)
           \end{aligned}\)<br>
-            <div class="w3-row">
-            <div class="w3-col s6">
+          <div class="row">
+            <div class="col">
               \(\begin{aligned}
               u&=-6x^2+2\\
               u'&=-12x
               \end{aligned}\)
             </div>
-            <div class="w3-col s6">
+            <div class="col">
               \(\begin{aligned}
               v&=\sin\left(x^3-x\right)\\
               v'&=\left(3x^2-1\right)\cos\left(x^3-x\right)
               \end{aligned}\)
             </div>
           </div><br>
-        \(\begin{aligned}
+          \(\begin{aligned}
           y"&=u'v+uv'\\
           &=-12x\sin\left(x^3-x\right)+\left(-6x^2+2\right)\left(3x^2-1\right)\cos\left(x^3-x\right)\\
           &=-12x\sin\left(x^3-x\right)-2\left(3x^2-1\right)^2\cos\left(x^3-x\right)
-          \end{aligned}\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, turunan kedua dari <e><em>y</em> = 2 cos(<em>x</em><sup>3</sup> &minus; <em>x</em>)</e> adalah <e>&minus;12<em>x</em> sin(<em>x</em><sup>3</sup> &minus; <em>x</em>) &minus; 2(3<em>x</em><sup>2</sup> &minus; 1)<sup>2</sup> cos(<em>x</em><sup>3</sup> &minus; <em>x</em>)</e>.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
+          \end{aligned}\)
+          <div class="kesimpulan">Jadi, turunan kedua dari <e><em>y</em> = 2 cos(<em>x</em><sup>3</sup> &minus;
+              <em>x</em>)
+            </e> adalah <e>&minus;12<em>x</em> sin(<em>x</em><sup>3</sup> &minus; <em>x</em>) &minus;
+              2(3<em>x</em><sup>2</sup> &minus; 1)<sup>2</sup> cos(<em>x</em><sup>3</sup> &minus; <em>x</em>)</e>.</div>
         </div>
-        
-        <div class="justify" id="15"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Gunakan \(f'(x)=\displaystyle\lim_{h\to0}\dfrac{f(x+h)-f(x)}h\) untuk menentukan turunan <e><em>f</em>(<em>x</em>) = 3 sin <em>x</em></e> untuk \(x=\dfrac{\pi}6\)
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneIdGrup/6064" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        <button class="btn-tutup">TUTUP</button>
+      </div>
+    </article>
+
+
+    <!-- SOAL 5 -->
+    <article class="soal-item" id="5">
+      <div class="soal-no"></div>
+      <div class="soal-teks">
+        Gunakan \(f'(x)=\displaystyle\lim_{h\to0}\dfrac{f(x+h)-f(x)}h\) untuk menentukan turunan <e>
+          <em>f</em>(<em>x</em>) = 3 sin <em>x</em>
+        </e> untuk \(x=\dfrac{\pi}6\)
+      </div>
+      <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/6064" target="_blank">Grup Telegram</a></div>
+      <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+      <div class="pembahasan-box">
+        <div class="pembahasan-title">Pembahasan:</div>
+        <div class="pembahasan-isi">
+          \(\begin{aligned}
           f'(x)&=\displaystyle\lim_{h\to0}\dfrac{f(x+h)-f(x)}h\\
           &=\displaystyle\lim_{h\to0}\dfrac{3\sin(x+h)-3\sin x}h\\
           &=\displaystyle\lim_{h\to0}\dfrac{3\left(\sin x\cos h+\cos x\sin h\right)-3\sin x}h\\
@@ -177,153 +230,183 @@
           f'\left(\dfrac{\pi}6\right)&=3\cos\dfrac{\pi}6\\
           &=3\left(\dfrac12\sqrt3\right)\\
           &=\boxed{\boxed{\dfrac32\sqrt3}}
-          \end{aligned}\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, \(f'\left(\dfrac{\pi}6\right)=\dfrac32\sqrt3\).<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
+          \end{aligned}\)
+          <div class="kesimpulan">Jadi, \(f'\left(\dfrac{\pi}6\right)=\dfrac32\sqrt3\).</div>
         </div>
-        
-        <div class="justify" id="16"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          \(y=\sqrt[3]{\sin^2(2x-1)^5}\)<br>
-          <em>y</em>' = ...
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneIdGrup/7532" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned}
+        <button class="btn-tutup">TUTUP</button>
+      </div>
+    </article>
+
+
+    <!-- SOAL 6 -->
+    <article class="soal-item" id="6">
+      <div class="soal-no"></div>
+      <div class="soal-teks">
+        \(y=\sqrt[3]{\sin^2(2x-1)^5}\)<br>
+        <em>y</em>' = ...
+      </div>
+      <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/7532" target="_blank">Grup Telegram</a></div>
+      <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+      <div class="pembahasan-box">
+        <div class="pembahasan-title">Pembahasan:</div>
+        <div class="pembahasan-isi">
+          \(\begin{aligned}
           y&=\sqrt[3]{\sin^2(2x-1)^5}\\
           &=\sin^{\frac23}(2x-1)^5\\
           y'&=\dfrac23\sin^{-\frac13}(2x-1)^5\cdot\cos(2x-1)^5\cdot5(2x-1)^4\cdot2\\
           &=\dfrac{20(2x-1)^4\cos(2x-1)^5}{3\sin^{\frac13}(2x-1)^5}\\
           &=\boxed{\boxed{\dfrac{20(2x-1)^4\cos(2x-1)^5}{3\sqrt[3]{\sin(2x-1)^5}}}}
-          \end{aligned}\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, \(y'=\dfrac{20(2x-1)^4\cos(2x-1)^5}{3\sqrt[3]{\sin(2x-1)^5}}\).<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
+          \end{aligned}\)
+          <div class="kesimpulan">Jadi, \(y'=\dfrac{20(2x-1)^4\cos(2x-1)^5}{3\sqrt[3]{\sin(2x-1)^5}}\).</div>
         </div>
-
-        <div class="justify" id="17">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Hitunglah <em>y</em>'(0),  jika \(y=\dfrac{\sin x}{1+\cos x}\)
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneIdGrup/10128" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="w3-row">
-                <div class="w3-col s6">\(\begin{aligned} u&=\sin x\\
-                  u'&=\cos x\end{aligned}\)</div>
-                <div class="w3-col s6">\(\begin{aligned} v&=1+\cos x\\
-                  v'&=-\sin x\end{aligned}\)</div>
-              </div><br>
-              \(\begin{aligned} y&=\dfrac{u}v\\
-                y'&=\dfrac{u'v-uv'}{v^2}\\[4pt]
-                &=\dfrac{\cos x(1+\cos x)-\sin x(-\sin x)}{(1+\cos x)^2}\\[4pt]
-                &=\dfrac{\cos x+\cos^2x+\sin^2x}{(1+\cos x)^2}\\[4pt]
-                &=\dfrac{\cos x+1}{(1+\cos x)^2}\\[4pt]
-                &=\dfrac1{1+\cos x}\\[4pt]
-                y'(0)&=\dfrac1{1+\cos0}\\[4pt]
-                &=\dfrac1{1+1}\\
-                &=\boxed{\boxed{\dfrac12}}
-                \end{aligned}\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, \(y'(0)=\dfrac12\).<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
-
-        <div class="justify" id="18">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Hitunglah turunan <e><em>y</em> = sin<sup>3</sup>(3<em>x</em> &minus; 2)</e>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneIdGrup/10132" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned} y&=\sin^3(3x-2)\\
-                y'&=3\sin^2(3x-2)\cdot\cos(3x-2)\cdot3\\
-                &=\boxed{\boxed{9\sin^2(3x-2)\cos(3x-2)}}
-                \end{aligned}\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, turunan <e><em>y</em> = sin<sup>3</sup>(3<em>x</em> &minus; 2)</e> adalah <e><em>y</em>' = 9 sin<sup>2</sup>(3<em>x</em> &minus; 2) cos(3<em>x</em> &minus; 2)</e>.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
-
-        <div class="justify" id="19">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Titik stasioner dari fungsi <e><em>f</em>(<em>x</em>) = tan<sup>2</sup> <em>x</em></e> adalah untuk nilai <e><em>x</em> = ....</e>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive "><a href="https://t.me/MatematikaZoneIdGrup/10612" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned} 
-                  f(x)&=\tan^2x\\
-                  f'(x)&=2\tan x\sec^2x
-                  \end{aligned}
-                \)<br><br>
-                <em>f</em>(<em>x</em>) mencapai stasioner saat <e><em>f</em>'(<em>x</em>) = 0</e><br>
-                \(\begin{aligned} 
-                  2\tan x\sec^2x&=0\\
-                  \tan x&=0\\
-                  x&=0\degree+k\cdot180\degree\\
-                  &=k\cdot180\degree
-                  \end{aligned}
-                \)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, titik stasioner dari fungsi <e><em>f</em>(<em>x</em>) = tan<sup>2</sup> <em>x</em></e> adalah untuk nilai <e><em>x</em> = <em>k</em> &sdot; 180&deg;</e><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
-
-        <div class="justify" id="20">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Turunan pertama dari fungsi \(f(x)=\dfrac{2x+4}{\sin x}\) adalah ....
-          <div class="w3-row">
-            <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                <li class="pb">\(\dfrac{2\left(\sin x-x\cos x-2\cos x\right)}{\sin^2x}\)</li>
-                <li class="pb">\(\dfrac{\sin x-x\cos x+2\cos x}{\sin^2x}\)</li>
-                <li>\(\dfrac{2\sin x-x\cos x+2\cos x}{\sin^2x}\)</li>
-              </ol>
-            </div>
-            <div class="w3-col s6">
-              <ol class="pas1" start="4" type="A">
-                <li class="pb">\(\dfrac{2\left(\sin x-\cos x\right)}{\sin x}\)</li>
-                <li>\(\dfrac{2\left(\sin x+\cos x\right)}{\sin x}\)</li>
-              </ol>
-            </div>
-          </div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/InkIX04eRt24DcjBEPtxXE" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="w3-row">
-                <div class="w3-col s6">\(\begin{aligned}
-                u&=2x+4\\
-                u'&=2
-                \end{aligned}\)</div>
-                <div class="w3-col s6">\(\begin{aligned}
-                v&=\sin x\\
-                v'&=\cos x
-                \end{aligned}\)</div>
-              </div><br>
-              \(\begin{aligned}
-              f'(x)&=\dfrac{u'v-uv'}{v^2}\\[4pt]
-              &=\dfrac{2\sin x-(2x+4)\cos x}{(\sin x)^2}\\[4pt]
-              &=\dfrac{2\sin x-2x\cos x-4\cos x}{\sin^2 x}\\
-              &=\boxed{\boxed{\dfrac{2\left(\sin x-x\cos x-2\cos x\right)}{\sin^2x}}}
-              \end{aligned}\)
-              </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, turunan pertama dari fungsi \(f(x)=\dfrac{2x+4}{\sin x}\) adalah \(\dfrac{2\left(\sin x-x\cos x-2\cos x\right)}{\sin^2x}\).<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
-
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>    
-        <script>soal(turfungtri,1,2)</script>
+        <button class="btn-tutup">TUTUP</button>
       </div>
-   </body>
-</html> 
+    </article>
+
+
+    <!-- SOAL 7 -->
+    <article class="soal-item" id="7">
+      <div class="soal-no"></div>
+      <div class="soal-teks">
+        Hitunglah <em>y</em>'(0), jika \(y=\dfrac{\sin x}{1+\cos x}\)
+      </div>
+      <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/10128" target="_blank">Grup Telegram</a></div>
+      <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+      <div class="pembahasan-box">
+        <div class="pembahasan-title">Pembahasan:</div>
+        <div class="pembahasan-isi">
+          <div class="row">
+            <div class="col">\(\begin{aligned} u&=\sin x\\
+              u'&=\cos x\end{aligned}\)</div>
+            <div class="col">\(\begin{aligned} v&=1+\cos x\\
+              v'&=-\sin x\end{aligned}\)</div>
+          </div><br>
+          \(\begin{aligned} y&=\dfrac{u}v\\
+          y'&=\dfrac{u'v-uv'}{v^2}\\[4pt]
+          &=\dfrac{\cos x(1+\cos x)-\sin x(-\sin x)}{(1+\cos x)^2}\\[4pt]
+          &=\dfrac{\cos x+\cos^2x+\sin^2x}{(1+\cos x)^2}\\[4pt]
+          &=\dfrac{\cos x+1}{(1+\cos x)^2}\\[4pt]
+          &=\dfrac1{1+\cos x}\\[4pt]
+          y'(0)&=\dfrac1{1+\cos0}\\[4pt]
+          &=\dfrac1{1+1}\\
+          &=\boxed{\boxed{\dfrac12}}
+          \end{aligned}\)
+          <div class="kesimpulan">Jadi, \(y'(0)=\dfrac12\).</div>
+        </div>
+        <button class="btn-tutup">TUTUP</button>
+      </div>
+    </article>
+
+
+    <!-- SOAL 8 -->
+    <article class="soal-item" id="8">
+      <div class="soal-no"></div>
+      <div class="soal-teks">
+        Hitunglah turunan <e><em>y</em> = sin<sup>3</sup>(3<em>x</em> &minus; 2)</e>
+      </div>
+      <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/10132" target="_blank">Grup Telegram</a></div>
+      <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+      <div class="pembahasan-box">
+        <div class="pembahasan-title">Pembahasan:</div>
+        <div class="pembahasan-isi">
+          \(\begin{aligned} y&=\sin^3(3x-2)\\
+          y'&=3\sin^2(3x-2)\cdot\cos(3x-2)\cdot3\\
+          &=\boxed{\boxed{9\sin^2(3x-2)\cos(3x-2)}}
+          \end{aligned}\)
+          <div class="kesimpulan">Jadi, turunan <e><em>y</em> = sin<sup>3</sup>(3<em>x</em> &minus; 2)</e> adalah <e>
+              <em>y</em>' = 9 sin<sup>2</sup>(3<em>x</em> &minus; 2) cos(3<em>x</em> &minus; 2)
+            </e>.</div>
+        </div>
+        <button class="btn-tutup">TUTUP</button>
+      </div>
+    </article>
+
+
+    <!-- SOAL 9 -->
+    <article class="soal-item" id="9">
+      <div class="soal-no"></div>
+      <div class="soal-teks">
+        Titik stasioner dari fungsi <e><em>f</em>(<em>x</em>) = tan<sup>2</sup> <em>x</em></e> adalah untuk nilai <e>
+          <em>x</em> = ....
+        </e>
+      </div>
+      <div class="soal-sumber"><a href="https://t.me/MatematikaZoneIdGrup/10612" target="_blank">Grup Telegram</a></div>
+      <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+      <div class="pembahasan-box">
+        <div class="pembahasan-title">Pembahasan:</div>
+        <div class="pembahasan-isi">
+          \(\begin{aligned}
+          f(x)&=\tan^2x\\
+          f'(x)&=2\tan x\sec^2x
+          \end{aligned}
+          \)<br><br>
+          <em>f</em>(<em>x</em>) mencapai stasioner saat <e><em>f</em>'(<em>x</em>) = 0</e><br>
+          \(\begin{aligned}
+          2\tan x\sec^2x&=0\\
+          \tan x&=0\\
+          x&=0\degree+k\cdot180\degree\\
+          &=k\cdot180\degree
+          \end{aligned}
+          \)
+          <div class="kesimpulan">Jadi, titik stasioner dari fungsi <e><em>f</em>(<em>x</em>) = tan<sup>2</sup>
+              <em>x</em>
+            </e> adalah untuk nilai <e><em>x</em> = <em>k</em> &sdot; 180&deg;</e>
+          </div>
+        </div>
+        <button class="btn-tutup">TUTUP</button>
+      </div>
+    </article>
+
+
+    <!-- SOAL 10 -->
+    <article class="soal-item" id="10">
+      <div class="soal-no"></div>
+      <div class="soal-teks">
+        Turunan pertama dari fungsi \(f(x)=\dfrac{2x+4}{\sin x}\) adalah ....
+        <ol class="pilgan">
+          <li class="pb">\(\dfrac{2\left(\sin x-x\cos x-2\cos x\right)}{\sin^2x}\)</li>
+          <li class="pb">\(\dfrac{\sin x-x\cos x+2\cos x}{\sin^2x}\)</li>
+          <li>\(\dfrac{2\sin x-x\cos x+2\cos x}{\sin^2x}\)</li>
+          <li class="pb">\(\dfrac{2\left(\sin x-\cos x\right)}{\sin x}\)</li>
+          <li>\(\dfrac{2\left(\sin x+\cos x\right)}{\sin x}\)</li>
+        </ol>
+      </div>
+      <div class="soal-sumber"><a href="https://chat.whatsapp.com/InkIX04eRt24DcjBEPtxXE" target="_blank"
+          rel="noopener noreferrer">Grup WhatsApp</a></div>
+      <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+      <div class="pembahasan-box">
+        <div class="pembahasan-title">Pembahasan:</div>
+        <div class="pembahasan-isi">
+          <div class="row">
+            <div class="col">\(\begin{aligned}
+              u&=2x+4\\
+              u'&=2
+              \end{aligned}\)</div>
+            <div class="col">\(\begin{aligned}
+              v&=\sin x\\
+              v'&=\cos x
+              \end{aligned}\)</div>
+          </div><br>
+          \(\begin{aligned}
+          f'(x)&=\dfrac{u'v-uv'}{v^2}\\[4pt]
+          &=\dfrac{2\sin x-(2x+4)\cos x}{(\sin x)^2}\\[4pt]
+          &=\dfrac{2\sin x-2x\cos x-4\cos x}{\sin^2 x}\\
+          &=\boxed{\boxed{\dfrac{2\left(\sin x-x\cos x-2\cos x\right)}{\sin^2x}}}
+          \end{aligned}\)
+          <div class="kesimpulan">Jadi, turunan pertama dari fungsi \(f(x)=\dfrac{2x+4}{\sin x}\) adalah
+            \(\dfrac{2\left(\sin x-x\cos x-2\cos x\right)}{\sin^2x}\).<br><b>JAWAB: A</b></div>
+        </div>
+        <button class="btn-tutup">TUTUP</button>
+      </div>
+    </article>
+
+    <!-- Copy-paste blok <article class="soal-item">...</article> sampai 10 blok -->
+
+    <!-- Pagination Bawah (Otomatis) -->
+    <div class="pagination-wrapper"></div>
+  </main>
+
+  <script src="../../scr/script.js"></script>
+</body>
+
+</html>

@@ -12,8 +12,10 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
     <!-- GeoSVG.js -->
-    <script src="https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js"></script>
-
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="../../scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+        </script>
     <!-- Style Blog -->
     <link rel="stylesheet" href="../../scr/style.css">
 </head>
@@ -42,7 +44,10 @@
         <article class="materi-card">
             <h2>1. Pengertian Empat Rataan Dasar (Means)</h2>
             <p>
-                Dalam matematika (khususnya aljabar dan olimpiade), terdapat empat jenis rata-rata (rataan) utama yang didefinisikan untuk kumpulan bilangan real positif $x_1, x_2, \dots, x_n > 0$. Keempat rataan tersebut adalah <strong>Quadratic Mean (QM)</strong>, <strong>Arithmetic Mean (AM)</strong>, <strong>Geometric Mean (GM)</strong>, dan <strong>Harmonic Mean (HM)</strong>.
+                Dalam matematika (khususnya aljabar dan olimpiade), terdapat empat jenis rata-rata (rataan) utama yang
+                didefinisikan untuk kumpulan bilangan real positif $x_1, x_2, \dots, x_n > 0$. Keempat rataan tersebut
+                adalah <strong>Quadratic Mean (QM)</strong>, <strong>Arithmetic Mean (AM)</strong>, <strong>Geometric
+                    Mean (GM)</strong>, dan <strong>Harmonic Mean (HM)</strong>.
             </p>
 
             <div class="table-wrapper">
@@ -81,20 +86,24 @@
 
             <h2>2. Teorema Ketaksamaan QM - AM - GM - HM</h2>
             <p>
-                Untuk setiap bilangan real positif $x_1, x_2, \dots, x_n \in \mathbb{R}^+$, selalu berlaku hubungan urutan ketaksamaan berikut:
+                Untuk setiap bilangan real positif $x_1, x_2, \dots, x_n \in \mathbb{R}^+$, selalu berlaku hubungan
+                urutan ketaksamaan berikut:
                 $$QM \ge AM \ge GM \ge HM$$
                 Atau jika dituliskan secara lengkap dalam bentuk rumus:
-                $$\sqrt{\frac{x_1^2 + x_2^2 + \dots + x_n^2}{n}} \ge \frac{x_1 + x_2 + \dots + x_n}{n} \ge \sqrt[n]{x_1 x_2 \cdots x_n} \ge \frac{n}{\frac{1}{x_1} + \frac{1}{x_2} + \dots + \frac{1}{x_n}}$$
+                $$\sqrt{\frac{x_1^2 + x_2^2 + \dots + x_n^2}{n}} \ge \frac{x_1 + x_2 + \dots + x_n}{n} \ge \sqrt[n]{x_1
+                x_2 \cdots x_n} \ge \frac{n}{\frac{1}{x_1} + \frac{1}{x_2} + \dots + \frac{1}{x_n}}$$
             </p>
             <div class="kesimpulan">
                 💡 Syarat Kesamaan (Kapan Tanda "=" Berlaku?):<br>
-                Nilai $QM = AM = GM = HM$ tercapai <strong>jika dan hanya jika</strong> seluruh bilangan tersebut bernilai sama besar:
+                Nilai $QM = AM = GM = HM$ tercapai <strong>jika dan hanya jika</strong> seluruh bilangan tersebut
+                bernilai sama besar:
                 $$x_1 = x_2 = \dots = x_n$$
             </div>
 
             <h2>3. Pembuktian Aljabar (Untuk 2 Variabel)</h2>
             <p>
-                Misalkan $a, b > 0$. Kita dapat membuktikan seluruh rantai ketaksamaan di atas menggunakan sifat dasar bahwa kuadrat dari sembarang bilangan real tidak pernah negatif ($x^2 \ge 0$):
+                Misalkan $a, b > 0$. Kita dapat membuktikan seluruh rantai ketaksamaan di atas menggunakan sifat dasar
+                bahwa kuadrat dari sembarang bilangan real tidak pernah negatif ($x^2 \ge 0$):
             </p>
             <ol>
                 <li>
@@ -112,7 +121,8 @@
                     Perhatikan bahwa $(a - b)^2 \ge 0 \iff a^2 + b^2 \ge 2ab$. Tambahkan $a^2 + b^2$ pada kedua ruas:
                     $$2(a^2 + b^2) \ge a^2 + 2ab + b^2 = (a + b)^2$$
                     Bagi kedua ruas dengan $4$, lalu tarik akar kuadratnya:
-                    $$\frac{a^2 + b^2}{2} \ge \left(\frac{a + b}{2}\right)^2 \iff \sqrt{\frac{a^2 + b^2}{2}} \ge \frac{a + b}{2}$$
+                    $$\frac{a^2 + b^2}{2} \ge \left(\frac{a + b}{2}\right)^2 \iff \sqrt{\frac{a^2 + b^2}{2}} \ge \frac{a
+                    + b}{2}$$
                 </li>
             </ol>
 
@@ -120,15 +130,18 @@
             <div class="row">
                 <div class="col-2">
                     <p>
-                        Ketaksamaan $AM \ge GM$ dapat dilihat secara visual melalui sebuah setengah lingkaran dengan diameter $AB = a + b$ dan titik pusat $O$:
+                        Ketaksamaan $AM \ge GM$ dapat dilihat secara visual melalui sebuah setengah lingkaran dengan
+                        diameter $AB = a + b$ dan titik pusat $O$:
                     </p>
                     <ul>
                         <li>Jari-jari lingkaran adalah $R = OC = \frac{a + b}{2} = \mathbf{AM}$.</li>
-                        <li>Titik $D$ membagi diameter menjadi $AD = a$ dan $DB = b$. Garis tegak lurus $CD$ memotong busur lingkaran di $C$.</li>
+                        <li>Titik $D$ membagi diameter menjadi $AD = a$ dan $DB = b$. Garis tegak lurus $CD$ memotong
+                            busur lingkaran di $C$.</li>
                         <li>Berdasarkan kesebangunan segitiga siku-siku $\triangle ADC \sim \triangle CDB$, diperoleh:
                             $$\frac{CD}{a} = \frac{b}{CD} \implies CD^2 = ab \implies CD = \sqrt{ab} = \mathbf{GM}$$
                         </li>
-                        <li>Pada $\triangle ODC$ yang siku-siku di $D$, sisi miring $OC$ pasti lebih panjang atau sama dengan sisi tegak $CD$, sehingga terbukti $\mathbf{AM \ge GM}$.</li>
+                        <li>Pada $\triangle ODC$ yang siku-siku di $D$, sisi miring $OC$ pasti lebih panjang atau sama
+                            dengan sisi tegak $CD$, sehingga terbukti $\mathbf{AM \ge GM}$.</li>
                     </ul>
                 </div>
                 <div class="col col-center">
@@ -152,8 +165,10 @@
                     $$(a + b + c)\left(\frac{1}{a} + \frac{1}{b} + \frac{1}{c}\right) \ge 9$$
                 </li>
                 <li>
-                    <strong>Hubungan Istimewa 2 Variabel:</strong> Untuk $2$ bilangan positif $a$ dan $b$, rata-rata geometrik merupakan rata-rata ukur dari AM dan HM:
-                    $$GM^2 = AM \times HM \iff (\sqrt{ab})^2 = \left(\frac{a + b}{2}\right)\left(\frac{2ab}{a + b}\right)$$
+                    <strong>Hubungan Istimewa 2 Variabel:</strong> Untuk $2$ bilangan positif $a$ dan $b$, rata-rata
+                    geometrik merupakan rata-rata ukur dari AM dan HM:
+                    $$GM^2 = AM \times HM \iff (\sqrt{ab})^2 = \left(\frac{a + b}{2}\right)\left(\frac{2ab}{a +
+                    b}\right)$$
                 </li>
                 <li>
                     <strong>Ketaksamaan AM-GM 3 Variabel:</strong> Untuk $a, b, c > 0$, berlaku:
@@ -163,18 +178,26 @@
 
             <h2>6. Strategi Mencari Nilai Maksimum & Minimum (Teknik Pemecahan Suku)</h2>
             <p>
-                Ketaksamaan AM-GM sangat ampuh digunakan untuk mencari nilai minimum dari suatu penjumlahan atau nilai maksimum dari suatu perkalian tanpa menggunakan turunan (kalkulus).
+                Ketaksamaan AM-GM sangat ampuh digunakan untuk mencari nilai minimum dari suatu penjumlahan atau nilai
+                maksimum dari suatu perkalian tanpa menggunakan turunan (kalkulus).
             </p>
             <ol>
                 <li>
                     <strong>Jika hasil kali konstan $\rightarrow$ Jumlah memiliki nilai MINIMUM:</strong><br>
-                    Gunakan $a + b \ge 2\sqrt{ab}$. Agar variabel di bawah tanda akar saling menghilangkan (menjadi konstanta), <strong>pecah suku</strong> sehingga pangkat variabel di pembilang dan penyebut seimbang.<br>
-                    <em>Contoh:</em> Untuk mencari nilai minimum dari $x^2 + \frac{16}{x}$ dengan $x > 0$, jangan langsung gunakan AM-GM 2 suku karena $x^2 \cdot \frac{16}{x} = 16x$ (masih memuat $x$). Pecah $\frac{16}{x}$ menjadi dua suku yang sama, yaitu $\frac{8}{x} + \frac{8}{x}$, lalu gunakan AM-GM 3 suku:
-                    $$x^2 + \frac{8}{x} + \frac{8}{x} \ge 3\sqrt[3]{x^2 \cdot \frac{8}{x} \cdot \frac{8}{x}} = 3\sqrt[3]{64} = 3(4) = 12$$
+                    Gunakan $a + b \ge 2\sqrt{ab}$. Agar variabel di bawah tanda akar saling menghilangkan (menjadi
+                    konstanta), <strong>pecah suku</strong> sehingga pangkat variabel di pembilang dan penyebut
+                    seimbang.<br>
+                    <em>Contoh:</em> Untuk mencari nilai minimum dari $x^2 + \frac{16}{x}$ dengan $x > 0$, jangan
+                    langsung gunakan AM-GM 2 suku karena $x^2 \cdot \frac{16}{x} = 16x$ (masih memuat $x$). Pecah
+                    $\frac{16}{x}$ menjadi dua suku yang sama, yaitu $\frac{8}{x} + \frac{8}{x}$, lalu gunakan AM-GM 3
+                    suku:
+                    $$x^2 + \frac{8}{x} + \frac{8}{x} \ge 3\sqrt[3]{x^2 \cdot \frac{8}{x} \cdot \frac{8}{x}} =
+                    3\sqrt[3]{64} = 3(4) = 12$$
                 </li>
                 <li>
                     <strong>Jika jumlah konstan $\rightarrow$ Hasil kali memiliki nilai MAKSIMUM:</strong><br>
-                    Gunakan $\sqrt[n]{x_1 x_2 \cdots x_n} \le \frac{x_1 + x_2 + \dots + x_n}{n}$. Pastikan koefisien variabel saling meniadakan saat dijumlahkan.
+                    Gunakan $\sqrt[n]{x_1 x_2 \cdots x_n} \le \frac{x_1 + x_2 + \dots + x_n}{n}$. Pastikan koefisien
+                    variabel saling meniadakan saat dijumlahkan.
                 </li>
             </ol>
         </article>
@@ -199,7 +222,8 @@
             <div class="pembahasan-box">
                 <div class="pembahasan-title">Penyelesaian:</div>
                 <p>
-                    Agar bentuk $(x - 2)$ pada penyebut dapat saling menghilangkan saat dikalikan, kita ubah bentuk $4x$ sehingga memuat suku $4(x - 2)$:
+                    Agar bentuk $(x - 2)$ pada penyebut dapat saling menghilangkan saat dikalikan, kita ubah bentuk $4x$
+                    sehingga memuat suku $4(x - 2)$:
                     $$f(x) = 4(x - 2) + 8 + \frac{9}{x - 2} - 3$$
                     $$f(x) = 4(x - 2) + \frac{9}{x - 2} + 5$$
                 </p>
@@ -211,7 +235,8 @@
                 <p>
                     Dengan demikian, nilai minimum dari $f(x)$ adalah:
                     $$f(x)_{\text{min}} = 12 + 5 = 17$$
-                    <em>(Tercapai ketika $4(x - 2) = \frac{9}{x - 2} \iff (x - 2)^2 = \frac{9}{4} \iff x = \frac{7}{2}$).</em>
+                    <em>(Tercapai ketika $4(x - 2) = \frac{9}{x - 2} \iff (x - 2)^2 = \frac{9}{4} \iff x =
+                        \frac{7}{2}$).</em>
                 </p>
                 <div class="kesimpulan">
                     Jadi, nilai minimum dari $f(x)$ adalah $17$ (Jawaban C).
@@ -224,7 +249,8 @@
         <div class="soal-item">
             <div class="soal-no">No. 2</div>
             <div class="soal-teks">
-                Diketahui $a, b,$ dan $c$ adalah bilangan real positif yang memenuhi $a + b + c = 12$. Nilai minimum dari $\frac{1}{a} + \frac{4}{b} + \frac{9}{c}$ adalah ....
+                Diketahui $a, b,$ dan $c$ adalah bilangan real positif yang memenuhi $a + b + c = 12$. Nilai minimum
+                dari $\frac{1}{a} + \frac{4}{b} + \frac{9}{c}$ adalah ....
                 <ol class="pilgan pilgan-5kolom">
                     <li>$2$</li>
                     <li>$3$</li>
@@ -237,20 +263,28 @@
             <div class="pembahasan-box">
                 <div class="pembahasan-title">Penyelesaian:</div>
                 <p>
-                    Perhatikan bahwa $\frac{1}{a} + \frac{4}{b} + \frac{9}{c}$ dapat dipecah menjadi $1 + 2 + 3 = 6$ buah suku sebagai berikut:
-                    $$\frac{1}{a} + \frac{4}{b} + \frac{9}{c} = \frac{1}{a} + \left(\frac{2}{b} + \frac{2}{b}\right) + \left(\frac{3}{c} + \frac{3}{c} + \frac{3}{c}\right)$$
+                    Perhatikan bahwa $\frac{1}{a} + \frac{4}{b} + \frac{9}{c}$ dapat dipecah menjadi $1 + 2 + 3 = 6$
+                    buah suku sebagai berikut:
+                    $$\frac{1}{a} + \frac{4}{b} + \frac{9}{c} = \frac{1}{a} + \left(\frac{2}{b} + \frac{2}{b}\right) +
+                    \left(\frac{3}{c} + \frac{3}{c} + \frac{3}{c}\right)$$
                 </p>
                 <p>
                     Juga perhatikan bahwa penjumlahan kebalikan dari keenam suku tersebut adalah:
-                    $$a + \left(\frac{b}{2} + \frac{b}{2}\right) + \left(\frac{c}{3} + \frac{c}{3} + \frac{c}{3}\right) = a + b + c = 12$$
+                    $$a + \left(\frac{b}{2} + \frac{b}{2}\right) + \left(\frac{c}{3} + \frac{c}{3} + \frac{c}{3}\right)
+                    = a + b + c = 12$$
                 </p>
                 <p>
-                    Berdasarkan ketaksamaan $AM \ge HM$ untuk $6$ suku positif $\left(x_1, x_2, \dots, x_6\right)$, berlaku:
-                    $$\left(x_1 + x_2 + \dots + x_6\right)\left(\frac{1}{x_1} + \frac{1}{x_2} + \dots + \frac{1}{x_6}\right) \ge 6^2 = 36$$
+                    Berdasarkan ketaksamaan $AM \ge HM$ untuk $6$ suku positif $\left(x_1, x_2, \dots, x_6\right)$,
+                    berlaku:
+                    $$\left(x_1 + x_2 + \dots + x_6\right)\left(\frac{1}{x_1} + \frac{1}{x_2} + \dots +
+                    \frac{1}{x_6}\right) \ge 6^2 = 36$$
                     Substitusikan keenam suku kita:
-                    $$\left(a + \frac{b}{2} + \frac{b}{2} + \frac{c}{3} + \frac{c}{3} + \frac{c}{3}\right)\left(\frac{1}{a} + \frac{2}{b} + \frac{2}{b} + \frac{3}{c} + \frac{3}{c} + \frac{3}{c}\right) \ge 36$$
+                    $$\left(a + \frac{b}{2} + \frac{b}{2} + \frac{c}{3} + \frac{c}{3} +
+                    \frac{c}{3}\right)\left(\frac{1}{a} + \frac{2}{b} + \frac{2}{b} + \frac{3}{c} + \frac{3}{c} +
+                    \frac{3}{c}\right) \ge 36$$
                     $$(a + b + c)\left(\frac{1}{a} + \frac{4}{b} + \frac{9}{c}\right) \ge 36$$
-                    $$12 \cdot \left(\frac{1}{a} + \frac{4}{b} + \frac{9}{c}\right) \ge 36 \implies \frac{1}{a} + \frac{4}{b} + \frac{9}{c} \ge 3$$
+                    $$12 \cdot \left(\frac{1}{a} + \frac{4}{b} + \frac{9}{c}\right) \ge 36 \implies \frac{1}{a} +
+                    \frac{4}{b} + \frac{9}{c} \ge 3$$
                 </p>
                 <div class="kesimpulan">
                     Jadi, nilai minimum dari $\frac{1}{a} + \frac{4}{b} + \frac{9}{c}$ adalah $3$ (Jawaban B).
@@ -263,7 +297,8 @@
         <div class="soal-item">
             <div class="soal-no">No. 3</div>
             <div class="soal-teks">
-                Jika $x$ dan $y$ adalah bilangan real positif yang memenuhi $x^2 + y^2 = 50$, maka nilai maksimum dari $x + y$ adalah ....
+                Jika $x$ dan $y$ adalah bilangan real positif yang memenuhi $x^2 + y^2 = 50$, maka nilai maksimum dari
+                $x + y$ adalah ....
                 <ol class="pilgan pilgan-5kolom">
                     <li>$5\sqrt{2}$</li>
                     <li>$8$</li>
@@ -276,7 +311,8 @@
             <div class="pembahasan-box">
                 <div class="pembahasan-title">Penyelesaian:</div>
                 <p>
-                    Untuk menghubungkan jumlah kuadrat ($x^2 + y^2$) dengan jumlah pangkat satu ($x + y$), kita gunakan ketaksamaan $QM \ge AM$ untuk dua variabel:
+                    Untuk menghubungkan jumlah kuadrat ($x^2 + y^2$) dengan jumlah pangkat satu ($x + y$), kita gunakan
+                    ketaksamaan $QM \ge AM$ untuk dua variabel:
                     $$\sqrt{\frac{x^2 + y^2}{2}} \ge \frac{x + y}{2}$$
                 </p>
                 <p>
@@ -297,7 +333,8 @@
         <div class="soal-item">
             <div class="soal-no">No. 4</div>
             <div class="soal-teks">
-                Diketahui $x$ dan $y$ adalah bilangan real positif sehingga $3x + 2y = 18$. Nilai maksimum dari $x^2y$ adalah ....
+                Diketahui $x$ dan $y$ adalah bilangan real positif sehingga $3x + 2y = 18$. Nilai maksimum dari $x^2y$
+                adalah ....
                 <ol class="pilgan pilgan-5kolom">
                     <li>$24$</li>
                     <li>$32$</li>
@@ -310,12 +347,15 @@
             <div class="pembahasan-box">
                 <div class="pembahasan-title">Penyelesaian:</div>
                 <p>
-                    Kita ingin memaksimumkan bentuk perkalian $x^2y$ (di mana $x$ berpangkat $2$ dan $y$ berpangkat $1$). Oleh karena itu, kita pecah suku $3x$ pada persamaan $3x + 2y = 18$ menjadi dua bagian yang sama besar:
+                    Kita ingin memaksimumkan bentuk perkalian $x^2y$ (di mana $x$ berpangkat $2$ dan $y$ berpangkat
+                    $1$). Oleh karena itu, kita pecah suku $3x$ pada persamaan $3x + 2y = 18$ menjadi dua bagian yang
+                    sama besar:
                     $$\frac{3}{2}x + \frac{3}{2}x + 2y = 18$$
                 </p>
                 <p>
                     Terapkan ketaksamaan $AM \ge GM$ untuk ketiga suku positif tersebut:
-                    $$\frac{\frac{3}{2}x + \frac{3}{2}x + 2y}{3} \ge \sqrt[3]{\left(\frac{3}{2}x\right) \cdot \left(\frac{3}{2}x\right) \cdot (2y)}$$
+                    $$\frac{\frac{3}{2}x + \frac{3}{2}x + 2y}{3} \ge \sqrt[3]{\left(\frac{3}{2}x\right) \cdot
+                    \left(\frac{3}{2}x\right) \cdot (2y)}$$
                     $$\frac{18}{3} \ge \sqrt[3]{\frac{9}{2}x^2y}$$
                     $$6 \ge \sqrt[3]{\frac{9}{2}x^2y}$$
                 </p>

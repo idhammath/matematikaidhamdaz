@@ -1,666 +1,791 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>Exercise Zone : Sistem Pertidaksamaan Linear Dua Variabel</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-  <!--link rel="stylesheet" href="style.css"-->
-  <style>body{
-  font-family: roboto,sans-serif;   
-  }</style>
-       </head> 
-     <body> 
-      <div class="container">
-        Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Sistem Pertidaksamaan Linear Dua Variabel</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
-        <h3>Tipe: </h3>
-        <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-        <br>
-        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-        <br>
+<!DOCTYPE html>
+<html lang="id">
 
-          <div class="justify" id="1"><h3>No. <span class="w3-badge w3-yellow nomor"></span></h3>
-        Lukis daerah himpunan penyelesaian dari sistem pertidaksamaan berikut
-          <ol type="a">
-            <li><e><em>x</em> &ge; 0</e>, <e><em>y</em> &ge; 0</e>, <e>3<em>x</em> + <em>y</em> &le; 12</e>, <e><em>x</em> + 4<em>y</em> &le; 8</e></li>
-            <li><e>1 &le; <em>x</em> &le; 5</e>, <e>2 &le; <em>y</em> &le; 6</e>, <e>4<em>x</em> + 5<em>y</em> &le; 40</e></li>
-          </ol>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/5091" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><ol type="a">
-                <li><e><e>3<em>x</em> + <em>y</em> &le; 12</e>
-                  <table class="w3-table-all tengah">
-                    <tr>
-                      <td><em>x</em></td>
-                      <td>0</td>
-                      <td>4</td>
-                    </tr>
-                    <tr>
-                      <td><em>y</em></td>
-                      <td>12</td>
-                      <td>0</td>
-                    </tr>
-                  </table>
-                  <e><e><em>x</em> + 4<em>y</em> &le; 8</e>
-                  <table class="w3-table-all tengah">
-                    <tr>
-                      <td><em>x</em></td>
-                      <td>0</td>
-                      <td>8</td>
-                    </tr>
-                    <tr>
-                      <td><em>y</em></td>
-                      <td>2</td>
-                      <td>0</td>
-                    </tr>
-                  </table><br>
-                  <div id="temsvg1_1" class="w3-center"></div>
-                </li>
-                <li><e>4<em>x</em> + 5<em>y</em> &le; 40</e><table class="w3-table-all tengah">
-                  <tr>
-                    <td><em>x</em></td>
-                    <td>0</td>
-                    <td>10</td>
-                  </tr>
-                  <tr>
-                    <td><em>y</em></td>
-                    <td>8</td>
-                    <td>0</td>
-                  </tr>
-                </table><br>
-                <div id="temsvg1_2" class="w3-center"></div></li>
-              </ol></div>
-              <div class="w3-brown w3-padding tebal flo"><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-          <script>
-            var spg1_1 = kocabuat("temsvg1_1",[-2,9],[-2,13],{rTik:0.3,intervalX:2,intervalY:2})
-            kocaSegi(spg1_1,[[0,0],[4,0],[40/11,12/11],[0,2]],{warnagaris:"none",isi:"red"})
-            kocaGrafung(spg1_1,function(x){return 12-3*x},{warna:"blue"})
-            kocaGrafung(spg1_1,function(x){return 2-x/4},{warna:"blue"})
-            var spg1_2 = kocabuat("temsvg1_2",[-1,11],[-1,9],{rTik:0.5,intervalY:2})
-            kocaSegi(spg1_2,[[1,2],[5,2],[5,4],[5/2,6],[1,6]],{warnagaris:"none",isi:"red"})
-            kocaGrafung(spg1_2,function(x){return 8-4*x/5},{warna:"blue"})
-            kocaSegmen(spg1_2,[[1,-2],[1,14]],{warna:"blue"})
-            kocaSegmen(spg1_2,[[5,-2],[5,14]],{warna:"blue"})
-            kocaSegmen(spg1_2,[[-2,2],[12,2]],{warna:"blue"})
-            kocaSegmen(spg1_2,[[-2,6],[12,6]],{warna:"blue"})
-          </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Sistem Pertidaksamaan Linear Dua Variabel</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        
-        <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Perhatikan grafik berikut
-        <div class="separator" style="clear: both; text-align: center;">
-        <a href="https://1.bp.blogspot.com/-BppFaZeD0A0/Wrx0x4oF8UI/AAAAAAAAAjI/5iLTdt23W8Et4LBjwP3iefAD9-Fq7wl6ACLcBGAs/s1600/graf.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="264" data-original-width="445" height="189" src="https://1.bp.blogspot.com/-BppFaZeD0A0/Wrx0x4oF8UI/AAAAAAAAAjI/5iLTdt23W8Et4LBjwP3iefAD9-Fq7wl6ACLcBGAs/s320/graf.png" width="320" /></a></div>
-        Daerah yang diarsir adalah daerah penyelesaian dari sistem pertidaksamaan linear. Nilai maksimum dari fungsi objektif <e><em>f</em>(<em>x</em>,<em>y</em>) = 5<em>x</em> + 3<em>y</em></e> adalah ....
-          <div class="w3-row">
-          <div class="w3-col s6">
-            <ol class="pas1" type="A">
-              <li>3</li>
-              <li>16</li>
-              <li>18</li>
-            </ol>
-          </div>
-          <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-              <li>20</li>
-              <li>30</li>
-            </ol>
-          </div>
-        </div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
-<details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><div class="separator" style="clear: both; text-align: center;">
-        <a href="https://2.bp.blogspot.com/-6Qi1X37DWm8/Wrx3okSmrUI/AAAAAAAAAjg/A_D-bPTJnxU_h6JwVBHHRrhaPz5TkexxACLcBGAs/s1600/Screenshot_25.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="342" data-original-width="525" height="208" src="https://2.bp.blogspot.com/-6Qi1X37DWm8/Wrx3okSmrUI/AAAAAAAAAjg/A_D-bPTJnxU_h6JwVBHHRrhaPz5TkexxACLcBGAs/s320/Screenshot_25.png" width="320" /></a></div>
-        kita ambil 3 titik terluar yaitu A, B, dan C.
-        <table class="tengah"><tbody>
-        <tr><th class="bg-dark"></th><th>A(0, 1)</th><th>B(2, 2)</th><th>C(6, 0)</th></tr>
-        <tr><th>5<em>x</em></th><td>0</td><td>10</td><td>30</td></tr>
-        <tr><th>3<em>y</em></th><td>3</td><td>6</td><td>0</td></tr>
-        <tr><th><e>5<em>x</em> + 3<em>y</em></e></th><th>3</th><th>6</th><th>30</th></tr>
-        </tbody></table></div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, nilai maksimum dari fungsi objektif <e><em>f</em>(<em>x</em>,<em>y</em>) = 5<em>x</em> + 3<em>y</em></e> adalah 30.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        </div>
-        
-        <div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Diketahui sistem pertidaksamaan <e>2<em>x</em> + <em>y</em> &le; 12</e>, <e><em>x</em> + <em>y</em> &le;8</e>, <e><em>x</em> &ge; 0</e>, <e><em>y</em> &ge; 0</e>. Nilai maksimum fungsi objektif <e><em>f</em>(<em>x</em>, <em>y</em>) = 9<em>x</em> + 6<em>y</em></e> yang memenuhi pertidaksamaan tersebut adalah
-          <div class="w3-row">
-          <div class="w3-col s6">
-            <ol class="pas1" type="A">
-              <li>59</li>
-              <li>60</li>
-              <li>61</li>
-            </ol>
-          </div>
-          <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-              <li>62</li>
-              <li>63</li>
-            </ol>
-          </div>
-        </div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
-<details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">$\begin{aligned}
-        2x + y&amp;\leq12\\
-        x + y&amp;\leq8\qquad\color{red}{+}\\\hline
-        3x+2y&amp;\leq20\qquad \color{red}{\times3}\\
-        9x+6y&amp;\leq60
-        \end{aligned}$</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, nilai maksimum fungsi objektif <e><em>f</em>(<em>x</em>, <em>y</em>) = 9<em>x</em> + 6<em>y</em></e> yang memenuhi pertidaksamaan tersebut adalah 60.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        </div>
-        
-        <div class="justify" id="4"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Tentukan nilai <em>x</em> dan <em>y</em> sehingga <e>(6<em>x</em> + 8<em>y</em>)</e> maksimum dengan syarat:<br>
-          <e>2<em>x</em> + <em>y</em> &le; 30</e>, <e><em>x</em> + 2<em>y</em> &le; 24</e>, <e><em>x</em> &ge; 0</e>, <e><em>y</em> &ge; 0</e>, <e><em>x</em>,<em>y</em> &in; &Copf;</e>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/5514" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="w3-row">
-            <div class="w3-col s6">
-              <e>2<em>x</em> + <em>y</em> &le; 30</e>
-              <table class="w3-table-all tengah">
-                <tbody>
-                  <tr><td><em>x</em></td><td>0</td><td>15</td></tr>
-                  <tr><td><em>y</em></td><td>30</td><td>0</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="w3-col s6">
-              <m><em>x</em> + 2<em>y</em> &le; 24</m>
-              <table class="w3-table-all tengah">
-                <tbody>
-                  <tr><td><em>x</em></td><td>0</td><td>24</td></tr>
-                  <tr><td><em>y</em></td><td>12</td><td>0</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        <div class="separator" style="clear: both;"><a href="https://github.com/idhammuqoddas/blog/blob/main/gambar/sptldv%202.png?raw=true" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="932" data-original-width="785" src="https://github.com/idhammuqoddas/blog/blob/main/gambar/sptldv%202.png?raw=true"/></a></div>
-          <e>A(0, 12)</e><br>
-          <e>C(15, 0)</e><br><br>
-          <h2>Koordinat Titik B</h2>
-          $\begin{aligned}
-          2x+y&=30\qquad&{\color{red}\times2}\\
-          x+2y&=24
-          \end{aligned}$<br><br>
-          $\begin{aligned}
-          4x+2y&=60\\
-          x+2y&=24\qquad&{\color{red}-}\\\hline
-          3x&=36\\
-          x&=12
-          \end{aligned}$<br><br>
-          $\begin{aligned}
-          2x+y&=30
-          2(12)+y&=30\\
-          24+y&=30\\
-          y&=6
-          \end{aligned}$<br><br>
-          <e>B(12, 6)</e><br><br>
-          <table class="w3-table-all tengah">
-            <tbody>
-              <tr><td></td><td class="font-weight-bold text-white bg-danger"><e>A(0, 12)</e></td><td class="font-weight-bold text-white bg-danger"><m>B(12,6)</m></td><td class="font-weight-bold text-white bg-danger"><m>C(15,0)</m></td></tr>
-              <tr><td class="font-weight-bold text-white bg-info">6<em>x</em></td><td>0</td><td>72</td><td>90</td></tr>
-              <tr><td class="font-weight-bold text-white bg-info">8<em>y</em></td><td>96</td><td>48</td><td>0</td></tr>
-              <tr><td class="font-weight-bold text-white bg-dark">JUMLAH</td><td class="font-weight-bold text-white bg-dark">96</td><td class="font-weight-bold text-white bg-dark">120</td><td class="font-weight-bold text-white bg-dark"><m>90</m></td></tr>
-            </tbody>
-          </table></div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>x</em> = 12</e>, dan <e><em>y</em> = 6</e>.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
-        
-        <div class="justify" id="5"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Nilai maksimum dari <e><em>f</em>(<em>x</em>, <em>y</em>) = 9<em>x</em> + 10<em>y</em> + 4</e> jika <em>x</em> dan <em>y</em> dibatasi oleh sistem pertidaksamaan <e><em>x</em> + 2<em>y</em> &le; 20</e>, <e>2<em>x</em> &minus; <em>y</em> &ge; 0</e>, dan <e><em>x</em> &minus; 2<em>y</em> &le; 0</em> adalah
-          <div class="w3-row">
-          <div class="w3-col s6">
-            <ol class="pas1" type="A">
-              <li>164</li>
-              <li>144</li>
-              <li>124</li>
-            </ol>
-          </div>
-          <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-              <li>120</li>
-              <li>4</li>
-            </ol>
-          </div>
-        </div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="/2020/09/skmp-sma-juli-2020.html" target="_blank">SKMP Juli 2020</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">                <div class="w3-row">
-            <div class="w3-col s6">
-             <e><em>x</em> + 2<em>y</em> &le; 20</e><br>
-              <table class="table table-sm table-bordered tengah">
-                <tbody>
-                  <tr><th><em>x</em></th><td>0</td><td>20</td></tr>
-                  <tr><th><em>y</em></th><td>10</td><td>0</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="w3-col s6">
-              <e>2<em>x</em> &minus; <em>y</em> &ge; 0</e><br>
-              <table class="table table-sm table-bordered tengah">
-                <tbody>
-                  <tr><th><em>x</em></th><td>0</td><td>1</td></tr>
-                  <tr><th><em>y</em></th><td>0</td><td>2</td></tr>
-                </tbody>
-              </table>
-            </div>
-                <div class="w3-col s6">
-             <e><em>x</em> &minus; 2<em>y</em> &le; 0</e><br>
-              <table class="table table-sm table-bordered tengah">
-                <tbody>
-                  <tr><th><em>x</em></th><td>0</td><td>2</td></tr>
-                  <tr><th><em>y</em></th><td>0</td><td>1</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        <div class="separator" style="clear: both;"><a href="https://github.com/idhammuqoddas/blog/blob/main/gambar/sptldv%203.png?raw=true" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="579" data-original-width="815" src="https://github.com/idhammuqoddas/blog/blob/main/gambar/sptldv%203.png?raw=true"/></a></div>
-            <div class="w3-row">
-            <div class="w3-col s6">
-               <h1>Titik A</h1>
-          $\begin{aligned}
-          2x- y&=0\qquad&{\color{red}\times2}\\
-          x- 2y&=0
-          \end{aligned}$<br><br>
-          $\begin{aligned}
-          4x-2y&=0\\
-          x-2y&=0\qquad&{\color{red}-}\\\hline
-          3x&=0\\
-          x&=0
-          \end{aligned}$<br><br>
-          $\begin{aligned}
-          x-2y&=0\\
-          0-2y&=0\\
-          y&=0
-          \end{aligned}$<br>
-          <em>A</em>(0, 0)<br>
-          <h1>Titik B</h1>
-          $\begin{aligned}
-          x+2y&=20\\
-          x-2y&=0\qquad&{\color{red}+}\\\hline
-          2x&=20\\
-          x&=10
-          \end{aligned}$<br><br>
-          $\begin{aligned}
-          x-2y&=0\\
-          10-2y&=0\\
-          -2y&=-10\\
-          y&=5
-          \end{aligned}$<br>
-          <em>B</em>(10,5)<br>
-            </div>
-            <div class="w3-col s6">
-            <h1>Titik C</h1>
-          $\begin{aligned}
-          2x-y&=0\qquad&{\color{red}\times2}\\
-          x+2y&=20
-            \end{aligned}$<br><br>
-          $\begin{aligned}
-          4x-2y&=0\\
-          x+2y&=20\qquad&{\color{red}+}\\\hline
-          5x&=20\\
-          x&=4
-          \end{aligned}$<br><br>
-          $\begin{aligned}
-          2x-y&=0\\
-          2(4)-y&=0\\
-          8-y&=0\\
-          y&=8
-          \end{aligned}$<br>
-          <em>C</em>(4,8)<br><br>
-          <table class="table table-sm table-bordered tengah">
-            <thead class="thead-dark">
-              <th></th><th><em>A</em>(0, 0)</th><th><em>B</em>(10, 5)</th><th><em>C</em>(4, 8)</th>
-            </thead>
-            <tbody>
-              <tr><td class="bg-warning">9<em>x</em></td><td>0</td><td>90</td><td>36</td></tr>
-              <tr><td class="bg-warning">10<em>y</em></td><td>0</td><td>50</td><td>80</td></tr>
-              <tr><td class="bg-warning">4</td><td>4</td><td>4</td><td>4</td></tr>
-              <tr><td class="bg-warning"><e><em>f</em>(<em>x</em>, <em>y</em>)</e></td><td class="bg-info text-white">4</td><td class="bg-info text-white">144</td><td class="bg-info text-white">120</td></tr>
-            </tbody>
-          </table>
-            </div>
-          </div></div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, nilai maksimum dari <e><em>f</em>(<em>x</em>, <em>y</em>) = 9<em>x</em> + 10<em>y</em> + 4</e> adalah 144.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        </div>
-        
-        <div class="justify" id="6"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Gambarlah daerah penyelesaian dari <br>
-          <e>2<em>x</em> + 3<em>y</em> &le; 12</e><br>
-          <e><em>x</em> + 4<em>y</em> &ge; 8</e><br>
-          <e><em>x</em> &ge; 0</e><br>
-          <e><em>y</em> &ge; 0</e>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/6712" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="w3-row">
-            <div class="w3-col s6">
-            <e>2<em>x</em> + 3<em>y</em> &le; 12</e>
-              <table class="table table-sm table-bordered tengah">
-                <tbody>
-                  <tr><td><em>x</em></td><td>0</td><td>6</td></tr>
-                  <tr><td><em>y</em></td><td>4</td><td>0</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="w3-col s6">
-             <e><em>x</em> + 4<em>y</em> &ge; 8</e>
-              <table class="table table-sm table-bordered tengah">
-                <tbody>
-                  <tr><td><em>x</em></td><td>0</td><td>8</td></tr>
-                  <tr><td><em>y</em></td><td>2</td><td>0</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div id="temsvg6" class="w3-center"></div></div>
-              <div class="w3-brown w3-padding tebal flo"><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-          <script>
-            var spg6 = kocabuat("temsvg6",[0,8],[0,4],{intervalX:2,intervalY:2,rTik:0.5})
-            kocaSegi(spg6,[[0,2],[24/5,4/5],[0,4]],{warnagaris:"none",isi:"red"})
-            kocaGrafung(spg6,function(x){return 4-2*x/3},{warna:"blue"})
-            kocaGrafung(spg6,function(x){return 2-x/4},{warna:"blue"})
-          </script>
-        </div>
-        
-        <div class="justify" id="7"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Gambarlah persamaan garis lurus dan tentukan daerah yang memenuhi dari sistem pertidaksamaan linear<br>
-          <e><em>x</em> + <em>y</em> &lt; 5</e><br>
-          <e>2<em>x</em> &minus; <em>y</em> &lt; 7</e><br>
-          <e><em>x</em> + 3<em>y</em> &ge; 11</e>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/6910" target="_blank">Grup Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><em>x</em> + <em>y</em> &lt; 5
-              <table class="tengah">
-                <tr>
-                  <td><em>x</em></td>
-                  <td>0</td>
-                  <td>5</td>
-                </tr>
-                <tr>
-                  <td><em>y</em></td>
-                  <td>5</td>
-                  <td>0</td>
-                </tr>
-              </table>
-              <e>2<em>x</em> &minus; <em>y</em> &lt; 7</e>
-              <table class="tengah">
-                <tr>
-                  <td><em>x</em></td>
-                  <td>0</td>
-                  <td>$\dfrac72$</td>
-                </tr>
-                <tr>
-                  <td><em>y</em></td>
-                  <td>&minus;7</td>
-                  <td>0</td>
-                </tr>
-              </table>
-              <e><em>x</em> + 3<em>y</em> &ge; 11</e>
-              <table class="tengah">
-                <tr>
-                  <td><em>x</em></td>
-                  <td>0</td>
-                  <td>11</td>
-                </tr>
-                <tr>
-                  <td><em>y</em></td>
-                  <td>$\dfrac{11}3$</td>
-                  <td>0</td>
-                </tr>
-              </table>
-              <div id="temsvg7" class="w3-center"></div>
-            </div>
-              <div class="w3-brown w3-padding tebal flo"><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-          <script>
-            var spg7 = kocabuat("temsvg7",[0,11],[-7,5],{rTik:0.7})
-            kocaSegi(spg7,[[-1,4],[2,3],[-1,6]],{warnagaris:"none",isi:"red",tampakisi:0.5})
-            kocaGrafung(spg7,function(x){return 5-x},{warna:"blue"})
-            kocaGrafung(spg7,function(x){return 2*x-7},{warna:"blue"})
-            kocaGrafung(spg7,function(x){return (11-x)/3},{warna:"blue"})
-          </script>
-        </div>
-        
-        <div class="justify" id="8"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Diketahui sistem pertidaksamaan linear <e><em>x</em> &ge; 0</e>, <e><em>y</em> &ge; 0</e>, <e><em>x</em> + <em>y</em> &le; 20</e>, <e><em>x</em> + 3<em>y</em> &ge; 30</e>, dan <e>3<em>x</em> + <em>y</em> &ge; 30</e>. Titik yang terdapat dalam daerah himpunan penyelesaian sistem pertidaksamaan tersebut adalah ....
-          <div class="w3-row">
-          <div class="w3-col s6">
-            <ol class="pas1" type="A">
-              <li>(7,5; 7,5)</li>
-              <li>(10, 10)</li>
-              <li>(0, 30)</li>
-            </ol>
-          </div>
-          <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-              <li>(5, 15)</li>
-              <li>(8, 8)</li>
-            </ol>
-          </div>
-        </div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneIdGrup/7035" target="_blank">Grup Telegram</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo"><table class="table table-bordered">
-            <tbody>
-              <tr><td><e><em>x</em> + <em>y</em> &le; 20</e>
-                <table class="table table-bordered tengah">
-            <tbody>
-              <tr><td><em>x</em></td><td>0</td><td>20</td></tr>
-              <tr><td><em>y</em></td><td>20</td><td>0</td></tr>
-                  </tbody>
-                </table>
-                </td><td><e><em>x</em> + 3<em>y</em> &ge; 30</e>
-                <table class="table table-bordered tengah">
-            <tbody>
-              <tr><td><em>x</em></td><td>0</td><td>30</td></tr>
-              <tr><td><em>y</em></td><td>10</td><td>0</td></tr>
-                  </tbody>
-                </table>
-                </td><td><e>3<em>x</em> + <em>y</em> &ge; 30</e>
-                <table class="table table-bordered tengah">
-            <tbody>
-              <tr><td><em>x</em></td><td>0</td><td>10</td></tr>
-              <tr><td><em>y</em></td><td>30</td><td>0</td></tr>
-                  </tbody>
-                </table>
-                </td>
-            </tbody>
-          </table>
-          <div id="temsvg8" class="w3-center"></div>
-          Ada 2 titik yang terdapat pada Daerah Penyelesaian, yaitu B dan D
-        </div>
-            <div class="w3-brown w3-padding tebal flo"><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        <script>
-          var k8 = [5,-1]
-          var spg8 = kocabuat("temsvg8",[0,30],[0,30],{intervalX:10,intervalY:10,rTik:0.2})
-          kocaSegi(spg8,[[15/2,15/2],[15,5],[5,15]],{warnagaris:"none",isi:"red",tampakisi:0.3})
-          kocaGrafung(spg8,function(x){return 20-x},{warna:"blue"})
-          kocaGrafung(spg8,function(x){return 10-x/3},{warna:"blue"})
-          kocaGrafung(spg8,function(x){return 30-3*x},{warna:"blue"})
-        </script>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Sistem Pertidaksamaan Linear Dua Variabel</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
         </div>
 
-        <div class="justify" id="9">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Grafik yang memenuhi pertaksamaan linear : <e><em>x</em> + <em>y</em> &le; 6;</e> <e>2<em>x</em> &minus; <em>y</em> &le; &minus;4;</e> <e><em>x</em> &le; 0;</e> <e><em>y</em> &ge; 0</e> adalah ....
-          <div class="w3-row">
-            <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                <li class="pb"><br><div id="spg10_1"></div></li>
-                <li class="pb"><br><div id="spg10_2"></div></li>
-                <li><br><div id="spg10_3"></div></li>
-              </ol>
-            </div>
-            <div class="w3-col s6">
-              <ol class="pas1" start="4" type="A">
-                <li class="pb"><br><div id="spg10_4"></div></li>
-                <li><br><div id="spg10_5"></div></li>
-              </ol>
-            </div>
-          </div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">USP SMK Kab. Tangerang 2023</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><e><em>x</em> + <em>y</em> &le; 6</e>
-                <table class="tengah">
-                  <tr>
-                    <td><em>x</em></td>
-                    <td>0</td>
-                    <td>6</td>
-                  </tr>
-                  <tr>
-                    <td><em>y</em></td>
-                    <td>6</td>
-                    <td>0</td>
-                  </tr>
-                </table>
-                <e>2<em>x</em> &minus; <em>y</em> &le; &minus;4;</e>
-                <table class="tengah">
-                  <tr>
-                    <td><em>x</em></td>
-                    <td>0</td>
-                    <td>&minus;2</td>
-                  </tr>
-                  <tr>
-                    <td><em>y</em></td>
-                    <td>4</td>
-                    <td>0</td>
-                  </tr>
-                </table>
-                <div id="spg10_6" class="w3-center"></div>
-              </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, grafik yang memenuhi pertaksamaan linear : <e><em>x</em> + <em>y</em> &le; 6;</e> <e>2<em>x</em> &minus; <em>y</em> &le; &minus;4;</e> <e><em>x</em> &le; 0;</e> <e><em>y</em> &ge; 0</e> adalah <br><br><div id="spg10_7"></div><br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-          <script>
-            var spg10_6 = kocabuat("spg10_6",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
-            kocaSegi(spg10_6,[[-4,10],[-4,-2],[8,-2]],{isi:"red",tampakisi:0.3,warnagaris:"none"})
-            kocaSegi(spg10_6,[[-4,-4],[8,-2],[8,20]],{isi:"red",tampakisi:0.3,warnagaris:"none"})
-            kocaSegi(spg10_6,[[-4,-2],[0,-2],[0,8],[-4,8]],{isi:"red",tampakisi:0.3,warnagaris:"none"})
-            kocaSegi(spg10_6,[[-4,0],[0,0],[0,8],[-4,8]],{isi:"red",tampakisi:0.3,warnagaris:"none"})
-            kocaGrafung(spg10_6,function(x){return 6-x},{warna:"blue"})
-            kocaGrafung(spg10_6,function(x){return 2*x+4},{warna:"blue"})
-            var spg10_1 = kocabuat("spg10_1",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
-            kocaSegi(spg10_1,[[-2,0],[0,0],[0,4]],{isi:"red",tampakisi:0.5,warnagaris:"blue"})
-            kocaGrafung(spg10_1,function(x){return 6-x},{warna:"blue"})
-            kocaGrafung(spg10_1,function(x){return 2*x+4},{warna:"blue"})
-            var spg10_7 = kocabuat("spg10_7",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
-            kocaSegi(spg10_7,[[-2,0],[0,0],[0,4]],{isi:"red",tampakisi:0.5,warnagaris:"blue"})
-            kocaGrafung(spg10_7,function(x){return 6-x},{warna:"blue"})
-            kocaGrafung(spg10_7,function(x){return 2*x+4},{warna:"blue"})
-            var spg10_2 = kocabuat("spg10_2",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
-            kocaSegi(spg10_2,[[0,0],[0,4],[2/3,16/3],[6,0]],{isi:"red",tampakisi:0.5,warnagaris:"blue"})
-            kocaGrafung(spg10_2,function(x){return 6-x},{warna:"blue"})
-            kocaGrafung(spg10_2,function(x){return 2*x+4},{warna:"blue"})
-            var spg10_3 = kocabuat("spg10_3",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
-            kocaSegi(spg10_3,[[-4,0],[-2,0],[0,4],[0,6],[-4,10]],{isi:"red",tampakisi:0.5,warnagaris:"none"})
-            kocaGrafung(spg10_3,function(x){return 6-x},{warna:"blue"})
-            kocaGrafung(spg10_3,function(x){return 2*x+4},{warna:"blue"})
-            var spg10_4 = kocabuat("spg10_4",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
-            kocaSegi(spg10_4,[[-4,-4],[0,4],[0,6],[-4,10]],{isi:"red",tampakisi:0.5,warnagaris:"none"})
-            kocaGrafung(spg10_4,function(x){return 6-x},{warna:"blue"})
-            kocaGrafung(spg10_4,function(x){return 2*x+4},{warna:"blue"})
-            var spg10_5 = kocabuat("spg10_5",[-2,6],[0,6],{intervalX:2,intervalY:2,rTik:0.4})
-            kocaSegi(spg10_5,[[-2,0],[2/3,16/3],[6,0]],{isi:"red",tampakisi:0.5,warnagaris:"none"})
-            kocaGrafung(spg10_5,function(x){return 6-x},{warna:"blue"})
-            kocaGrafung(spg10_5,function(x){return 2*x+4},{warna:"blue"})
-          </script>
-        </div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-        <div class="justify" id="10">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Perhatikan grafik di bawah ini!
-          <div id="spg11" class="w3-center"></div>
-          Sistem pertidaksamaan linier yang memenuhi daerah penyelesaian pada sketsa grafik di atas adalah ....
-          <ol class="pas1" type="A"> 
-           <li><e>6<em>x</em> + 5<em>y</em> &ge; 30;</e> <e><em>x</em> + <em>y</em> &le; 1;</e> <e><em>x</em> &ge; 3;</e> <e><em>y</em> &le; 0</e></li> 
-           <li><e>6<em>x</em> + 5<em>y</em> &le; 30;</e> <e><em>x</em> &minus; <em>y</em> &ge; 1;</e> <e><em>x</em> &le; 3;</e> <e><em>y</em> &le; 0</e></li> 
-           <li><e>6<em>x</em> + 5<em>y</em> &le; 30;</e> <e><em>x</em> &minus; <em>y</em> &le; &minus;1;</e> <e><em>x</em> &le; 3;</e> <e><em>y</em> &ge; 0</e></li> 
-           <li><e>5<em>x</em> + 6<em>y</em> &ge; 30;</e> <e><em>x</em> + <em>y</em> &ge; &minus;1;</e> <e><em>x</em> &le; 3;</e> <e><em>y</em> &ge; 0</e></li> 
-           <li><e>5<em>x</em> + 6<em>y</em> &ge; 30;</e> <e>&minus;<em>x</em> + <em>y</em> &ge; &minus;1;</e> <e><em>x</em> &le; 3;</e> <e><em>y</em> &ge; 0</e></li> 
-           </ol>          
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">USP SMK Kab. Tangerang 2023</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><h3>Persamaan Garis I : melalui (0,5) dan (6,0)</h3>
-                5<em>x</em> + 6<em>y</em> &ctdot; 30 <br>
-                Koefisien <em>y</em> positif. Dari garis, DP berada di atas, sehingga tandanya adalah &ge;. <br>
-                5<em>x</em> + 6<em>y</em> &ge; 30
-                <h3>Persamaan Garis II: melalui (0,&minus;1) dan (1,0)</h3>
-                &minus;<em>x</em> + <em>y</em> &ctdot; &minus;1 <br>
-                Koefisien <em>y</em> positif. Dari garis, DP berada di atas, sehingga tandanya adalah &ge;. <br>
-                <e>&minus;<em>x</em> + <em>y</em> &ge; &minus;1</e>
-                <h3>Persamaan Garis III: Garis vertikal memotong sumbu <em>x</em> di (3,0)</h3>
-                <em>x</em> &ctdot; 3 <br>
-                Dari garis, DP berada di kiri, sehingga tandanya adalah &le;. <br>
-                <em>x</em> &le; 3
-                <h3>Berada di atas sumbu <em>x</em></h3>
-                DP seluruhnya berada di atas sumbu <em>x</em>, sehingga <e><em>y</em> &ge; 0</e>
-              </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, sistem pertidaksamaan linier yang memenuhi daerah penyelesaian pada sketsa grafik di atas adalah <e>5<em>x</em> + 6<em>y</em> &ge; 30;</e> <e>&minus;<em>x</em> + <em>y</em> &ge; &minus;1;</e> <e><em>x</em> &le; 3;</e> <e><em>y</em> &ge; 0</e>.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-          <script>
-            var spg11 = kocabuat("spg11",[0,6],[-1,5])
-            kocaGrafung(spg11,function(x){return 5-5*x/6},{warna:"blue"})
-            kocaGrafung(spg11,function(x){return x-1},{warna:"blue"})
-            kocaSegmen(spg11,[[3,-2],[3,6]],{warna:"blue"})
-            kocaSegi(spg11,[[3,7],[3,5/2],[-2,20/3]],{warnagaris:"none",isi:"red",tampakisi:0.4})
-          </script>
-        </div>
+        <!-- ================= DAFTAR 10 SOAL ================= -->
 
-        <div class="navi d-none"><ul class="pagination pagi" style="margin-left:0em">
-        </ul></div>
-<script>soal(SPtLDV,1,1)</script>        
-      </div>
-   </body>
-</html> 
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Lukislah daerah himpunan penyelesaian dari sistem pertidaksamaan berikut:
+                <ol type="a" style="padding-left: 1.5rem; margin-top: 0.5rem;">
+                    <li><e>$x \ge 0$,</e> <e>$y \ge 0$,</e> <e>$3x + y \le 12$,</e> <e>$x + 4y \le 8$</e></li>
+                    <li><e>$1 \le x \le 5$,</e> <e>$2 \le y \le 6$,</e> <e>$4x + 5y \le 40$</e></li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: <a href="https://t.me/MatematikaZoneIdGrup/5091" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p><strong>Bagian a:</strong> Tentukan titik potong sumbu untuk masing-masing garis batas:</p>
+                    <div class="row">
+                        <div class="col">
+                            Garis $3x + y = 12$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$4$</td></tr>
+                                <tr><th>$y$</th><td>$12$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                        <div class="col">
+                            Garis $x + 4y = 8$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$8$</td></tr>
+                                <tr><th>$y$</th><td>$2$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-center" style="margin: 1rem 0;">
+                        <div id="geo-soal-1a" style="width: 100%; max-width: 340px;"></div>
+                    </div>
+
+                    <hr style="border: 0; border-top: 1px dashed var(--border-color); margin: 1.5rem 0;">
+
+                    <p><strong>Bagian b:</strong> Tentukan titik potong sumbu untuk garis $4x + 5y = 40$ serta batas vertikal $x = 1, x = 5$ dan horizontal $y = 2, y = 6$:</p>
+                    <table class="table-auto">
+                        <tr><th>$x$</th><td>$0$</td><td>$10$</td></tr>
+                        <tr><th>$y$</th><td>$8$</td><td>$0$</td></tr>
+                    </table>
+                    <div class="col-center" style="margin: 1rem 0;">
+                        <div id="geo-soal-1b" style="width: 100%; max-width: 340px;"></div>
+                    </div>
+                    <div class="kesimpulan">Jadi, daerah himpunan penyelesaian (DP) ditunjukkan oleh daerah berwarna hijau toska pada masing-masing grafik di atas.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Perhatikan grafik berikut:
+                <div class="col-center" style="margin: 1rem 0;">
+                    <div id="geo-soal-2-soal" style="width: 100%; max-width: 320px;"></div>
+                </div>
+                Daerah yang diarsir adalah daerah penyelesaian dari sistem pertidaksamaan linear. Nilai maksimum dari fungsi objektif <e>$f(x, y) = 5x + 3y$</e> adalah ....
+                <ol class="pilgan pilgan-3kolom">
+                    <li>$3$</li>
+                    <li>$16$</li>
+                    <li>$18$</li>
+                    <li>$20$</li>
+                    <li>$30$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Persamaan kedua garis batasnya adalah:
+                    <ul>
+                        <li>Garis melalui $(0, 3)$ dan $(6, 0) \implies 3x + 6y = 18 \iff x + 2y = 6$</li>
+                        <li>Garis melalui $(0, 1)$ dan $(-2, 0) \implies x - 2y = -2$</li>
+                    </ul>
+                    Titik potong kedua garis ($B$) diperoleh dari eliminasi:
+                    $$\begin{aligned}
+                    x + 2y &= 6\\
+                    x - 2y &= -2\\ \hline
+                    2x &= 4 \implies x = 2, \quad y = 2
+                    \end{aligned}$$
+                    Uji ketiga titik pojok daerah penyelesaian $A(0, 1)$, $B(2, 2)$, dan $C(6, 0)$ ke fungsi objektif $f(x, y) = 5x + 3y$:
+                    <div class="table-wrapper">
+                        <table class="table-auto">
+                            <thead>
+                                <tr><th>Titik Pojok</th><th>$A(0, 1)$</th><th>$B(2, 2)$</th><th>$C(6, 0)$</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><th>$5x$</th><td>$0$</td><td>$10$</td><td>$30$</td></tr>
+                                <tr><th>$3y$</th><td>$3$</td><td>$6$</td><td>$0$</td></tr>
+                                <tr><th>$f(x, y) = 5x + 3y$</th><td>$3$</td><td>$16$</td><td>$\mathbf{30}$</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="kesimpulan">Jadi, nilai maksimum dari fungsi objektif $f(x, y) = 5x + 3y$ adalah $30$ (E).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui sistem pertidaksamaan <e>$2x + y \le 12$,</e> <e>$x + y \le 8$,</e> <e>$x \ge 0$,</e> <e>$y \ge 0$.</e> Nilai maksimum fungsi objektif <e>$f(x, y) = 9x + 6y$</e> yang memenuhi pertidaksamaan tersebut adalah ....
+                <ol class="pilgan pilgan-3kolom">
+                    <li>$59$</li>
+                    <li>$60$</li>
+                    <li>$61$</li>
+                    <li>$62$</li>
+                    <li>$63$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Jumlahkan kedua pertidaksamaan secara langsung:
+                    $$\begin{aligned}
+                    2x + y &\le 12\\
+                    x + y &\le 8 \quad (+)\\ \hline
+                    3x + 2y &\le 20 \quad (\times 3)\\
+                    9x + 6y &\le 60
+                    \end{aligned}$$
+                    Nilai $9x + 6y = 60$ tercapai tepat pada titik potong kedua garis, yaitu $(4, 4)$ yang memenuhi $x \ge 0, y \ge 0$.
+                    <div class="kesimpulan">Jadi, nilai maksimum fungsi objektif $f(x, y) = 9x + 6y$ yang memenuhi pertidaksamaan tersebut adalah $60$ (B).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tentukan nilai $x$ dan $y$ sehingga <e>$(6x + 8y)$</e> mencapai maksimum dengan syarat:<br>
+                <e>$2x + y \le 30$,</e> <e>$x + 2y \le 24$,</e> <e>$x \ge 0$,</e> <e>$y \ge 0$,</e> <e>$x, y \in \mathbb{R}$.</e>
+            </div>
+            <div class="soal-sumber">Sumber: <a href="https://t.me/MatematikaZoneIdGrup/5514" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div class="row">
+                        <div class="col">
+                            Garis $2x + y = 30$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$15$</td></tr>
+                                <tr><th>$y$</th><td>$30$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                        <div class="col">
+                            Garis $x + 2y = 24$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$24$</td></tr>
+                                <tr><th>$y$</th><td>$12$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-center">
+                            <div id="geo-soal-4" style="width: 100%; max-width: 320px;"></div>
+                        </div>
+                        <div class="col">
+                            Cari titik potong $B$ dari kedua garis:
+                            $$\begin{aligned}
+                            4x + 2y &= 60 \quad (\text{dari } 2x+y=30 \times 2)\\
+                            x + 2y &= 24 \quad (-)\\ \hline
+                            3x &= 36 \implies x = 12
+                            \end{aligned}$$
+                            Substitusikan $x = 12$:
+                            $$2(12) + y = 30 \implies y = 6 \implies B(12, 6)$$
+                        </div>
+                    </div>
+                    Uji titik-titik pojok ke $f(x, y) = 6x + 8y$:
+                    <div class="table-wrapper">
+                        <table class="table-auto">
+                            <thead>
+                                <tr><th>Titik Pojok</th><th>$A(0, 12)$</th><th>$B(12, 6)$</th><th>$C(15, 0)$</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><th>$6x$</th><td>$0$</td><td>$72$</td><td>$90$</td></tr>
+                                <tr><th>$8y$</th><td>$96$</td><td>$48$</td><td>$0$</td></tr>
+                                <tr><th>$6x + 8y$</th><td>$96$</td><td>$\mathbf{120}$</td><td>$90$</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="kesimpulan">Jadi, nilai maksimum tercapai saat $x = 12$ dan $y = 6$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Nilai maksimum dari <e>$f(x, y) = 9x + 10y + 4$</e> jika $x$ dan $y$ dibatasi oleh sistem pertidaksamaan <e>$x + 2y \le 20$,</e> <e>$2x - y \ge 0$,</e> dan <e>$x - 2y \le 0$</e> adalah ....
+                <ol class="pilgan pilgan-3kolom">
+                    <li>$164$</li>
+                    <li>$144$</li>
+                    <li>$124$</li>
+                    <li>$120$</li>
+                    <li>$4$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: <a href="/2020/09/skmp-sma-juli-2020.html" target="_blank" rel="noopener noreferrer">SKMP Juli 2020</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div class="row">
+                        <div class="col">
+                            Garis $x + 2y = 20$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$20$</td></tr>
+                                <tr><th>$y$</th><td>$10$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                        <div class="col">
+                            Garis $2x - y = 0$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$4$</td></tr>
+                                <tr><th>$y$</th><td>$0$</td><td>$8$</td></tr>
+                            </table>
+                        </div>
+                        <div class="col">
+                            Garis $x - 2y = 0$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$10$</td></tr>
+                                <tr><th>$y$</th><td>$0$</td><td>$5$</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-center" style="margin: 1rem 0;">
+                        <div id="geo-soal-5" style="width: 100%; max-width: 340px;"></div>
+                    </div>
+                    Tentukan koordinat ketiga titik pojok:
+                    <ul>
+                        <li><strong>Titik $A$:</strong> Perpotongan $2x - y = 0$ dan $x - 2y = 0$ menghasilkan $A(0, 0)$.</li>
+                        <li><strong>Titik $B$:</strong> Perpotongan $x + 2y = 20$ dan $x - 2y = 0$:
+                            $$2x = 20 \implies x = 10, \quad y = 5 \implies B(10, 5)$$
+                        </li>
+                        <li><strong>Titik $C$:</strong> Perpotongan $x + 2y = 20$ dan $2x - y = 0 \iff y = 2x$:
+                            $$x + 2(2x) = 20 \implies 5x = 20 \implies x = 4, \quad y = 8 \implies C(4, 8)$$
+                        </li>
+                    </ul>
+                    Substitusikan ke fungsi objektif $f(x, y) = 9x + 10y + 4$:
+                    <div class="table-wrapper">
+                        <table class="table-auto">
+                            <thead>
+                                <tr><th>Komponen</th><th>$A(0, 0)$</th><th>$B(10, 5)$</th><th>$C(4, 8)$</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><th>$9x$</th><td>$0$</td><td>$90$</td><td>$36$</td></tr>
+                                <tr><th>$10y$</th><td>$0$</td><td>$50$</td><td>$80$</td></tr>
+                                <tr><th>$4$</th><td>$4$</td><td>$4$</td><td>$4$</td></tr>
+                                <tr><th>$f(x, y)$</th><td>$4$</td><td>$\mathbf{144}$</td><td>$120$</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="kesimpulan">Jadi, nilai maksimum dari $f(x, y) = 9x + 10y + 4$ adalah $144$ (B).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 6 -->
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Gambarlah daerah penyelesaian dari sistem pertidaksamaan:<br>
+                <e>$2x + 3y \le 12$,</e> <e>$x + 4y \ge 8$,</e> <e>$x \ge 0$,</e> <e>$y \ge 0$.</e>
+            </div>
+            <div class="soal-sumber">Sumber: <a href="https://t.me/MatematikaZoneIdGrup/6712" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div class="row">
+                        <div class="col">
+                            Garis $2x + 3y = 12$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$6$</td></tr>
+                                <tr><th>$y$</th><td>$4$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                        <div class="col">
+                            Garis $x + 4y = 8$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$8$</td></tr>
+                                <tr><th>$y$</th><td>$2$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    Titik potong kedua garis adalah $\left(\dfrac{24}{5}, \dfrac{4}{5}\right) = (4{,}8;\; 0{,}8)$.
+                    <div class="col-center" style="margin: 1rem 0;">
+                        <div id="geo-soal-6" style="width: 100%; max-width: 340px;"></div>
+                    </div>
+                    <div class="kesimpulan">Jadi, daerah himpunan penyelesaiannya adalah segitiga dengan titik pojok $(0, 2)$, $(0, 4)$, dan $(4{,}8;\; 0{,}8)$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 7 -->
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Gambarlah persamaan garis lurus dan tentukan daerah yang memenuhi sistem pertidaksamaan linear:<br>
+                <e>$x + y < 5$,</e> <e>$2x - y < 7$,</e> <e>$x + 3y \ge 11$.</e>
+            </div>
+            <div class="soal-sumber">Sumber: <a href="https://t.me/MatematikaZoneIdGrup/6910" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div class="row">
+                        <div class="col">
+                            Garis $x + y = 5$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$5$</td></tr>
+                                <tr><th>$y$</th><td>$5$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                        <div class="col">
+                            Garis $2x - y = 7$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$\dfrac{7}{2}$</td></tr>
+                                <tr><th>$y$</th><td>$-7$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                        <div class="col">
+                            Garis $x + 3y = 11$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$11$</td></tr>
+                                <tr><th>$y$</th><td>$\dfrac{11}{3}$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-center" style="margin: 1rem 0;">
+                        <div id="geo-soal-7" style="width: 100%; max-width: 340px;"></div>
+                    </div>
+                    <div class="kesimpulan">Jadi, daerah yang memenuhi terletak di bawah garis $x + y = 5$ dan di atas garis $x + 3y = 11$ untuk $x < 2$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 8 -->
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui sistem pertidaksamaan linear <e>$x \ge 0$,</e> <e>$y \ge 0$,</e> <e>$x + y \le 20$,</e> <e>$x + 3y \ge 30$,</e> dan <e>$3x + y \ge 30$.</e> Titik yang terdapat dalam daerah himpunan penyelesaian sistem pertidaksamaan tersebut adalah ....
+                <ol class="pilgan">
+                    <li>$(7{,}5;\; 7{,}5)$</li>
+                    <li>$(10, 10)$</li>
+                    <li>$(0, 30)$</li>
+                    <li>$(5, 15)$</li>
+                    <li>$(8, 8)$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: <a href="https://t.me/MatematikaZoneIdGrup/7035" target="_blank" rel="noopener noreferrer">Grup Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div class="row">
+                        <div class="col">
+                            $x + y = 20$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$20$</td></tr>
+                                <tr><th>$y$</th><td>$20$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                        <div class="col">
+                            $x + 3y = 30$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$30$</td></tr>
+                                <tr><th>$y$</th><td>$10$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                        <div class="col">
+                            $3x + y = 30$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$10$</td></tr>
+                                <tr><th>$y$</th><td>$30$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-center" style="margin: 1rem 0;">
+                        <div id="geo-soal-8" style="width: 100%; max-width: 340px;"></div>
+                    </div>
+                    Ketiga garis berpotongan membentuk segitiga dengan titik sudut $(7{,}5;\; 7{,}5)$, $(15, 5)$, dan $(5, 15)$. Semua titik pada pilihan A, B, D, dan E memenuhi ketiga pertidaksamaan:
+                    <ul>
+                        <li>$(10, 10) \implies 10+10 = 20 \le 20$, $10+30 = 40 \ge 30$, $30+10 = 40 \ge 30$ (Memenuhi, pada batas)</li>
+                        <li>$(8, 8) \implies 8+8 = 16 \le 20$, $8+24 = 32 \ge 30$, $24+8 = 32 \ge 30$ (Memenuhi, tepat di bagian dalam daerah)</li>
+                    </ul>
+                    <div class="kesimpulan">Jadi, titik yang berada di dalam daerah himpunan penyelesaian tersebut antara lain $(8, 8)$ (E) serta titik pada batasnya yaitu $(7{,}5;\; 7{,}5)$, $(10, 10)$, dan $(5, 15)$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 9 -->
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Grafik yang memenuhi pertidaksamaan linear: <e>$x + y \le 6$;</e> <e>$2x - y \le -4$;</e> <e>$x \le 0$;</e> <e>$y \ge 0$</e> adalah ....
+                <ol class="pilgan">
+                    <li><div id="geo-soal-9-a" style="width: 100%; max-width: 230px;"></div></li>
+                    <li><div id="geo-soal-9-b" style="width: 100%; max-width: 230px;"></div></li>
+                    <li><div id="geo-soal-9-c" style="width: 100%; max-width: 230px;"></div></li>
+                    <li><div id="geo-soal-9-d" style="width: 100%; max-width: 230px;"></div></li>
+                    <li><div id="geo-soal-9-e" style="width: 100%; max-width: 230px;"></div></li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: USP SMK Kab. Tangerang 2023</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div class="row">
+                        <div class="col">
+                            Garis $x + y = 6$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$6$</td></tr>
+                                <tr><th>$y$</th><td>$6$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                        <div class="col">
+                            Garis $2x - y = -4$:
+                            <table class="table-auto">
+                                <tr><th>$x$</th><td>$0$</td><td>$-2$</td></tr>
+                                <tr><th>$y$</th><td>$4$</td><td>$0$</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    Karena $x \le 0$ dan $y \ge 0$, daerah penyelesaian berada di Kuadran II. Uji titik $(0, 0)$ pada $2x - y \le -4$ memberikan $0 \le -4$ (Salah), sehingga daerah yang memenuhi untuk $2x - y \le -4$ berada di sebelah kiri-atas garis $2x - y = -4$, sedangkan daerah pada opsi A adalah segitiga dengan titik sudut $(-2, 0)$, $(0, 0)$, dan $(0, 4)$.
+                    <div class="col-center" style="margin: 1rem 0;">
+                        <div id="geo-soal-9-sol" style="width: 100%; max-width: 280px;"></div>
+                    </div>
+                    <div class="kesimpulan">Jadi, grafik yang sesuai pada pilihan adalah A (atau C jika mengarsir daerah murni untuk $2x - y \le -4$).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 10 -->
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Perhatikan grafik di bawah ini!
+                <div class="col-center" style="margin: 1rem 0;">
+                    <div id="geo-soal-10" style="width: 100%; max-width: 320px;"></div>
+                </div>
+                Sistem pertidaksamaan linear yang memenuhi daerah penyelesaian pada sketsa grafik di atas adalah ....
+                <ol class="pilgan pilgan-1kolom">
+                    <li><e>$6x + 5y \ge 30$;</e> <e>$x + y \le 1$;</e> <e>$x \ge 3$;</e> <e>$y \le 0$</e></li>
+                    <li><e>$6x + 5y \le 30$;</e> <e>$x - y \ge 1$;</e> <e>$x \le 3$;</e> <e>$y \le 0$</e></li>
+                    <li><e>$6x + 5y \le 30$;</e> <e>$x - y \le -1$;</e> <e>$x \le 3$;</e> <e>$y \ge 0$</e></li>
+                    <li><e>$5x + 6y \ge 30$;</e> <e>$x + y \ge -1$;</e> <e>$x \le 3$;</e> <e>$y \ge 0$</e></li>
+                    <li><e>$5x + 6y \ge 30$;</e> <e>$-x + y \ge -1$;</e> <e>$x \le 3$;</e> <e>$y \ge 0$</e></li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: USP SMK Kab. Tangerang 2023</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <ul>
+                        <li><strong>Garis I melalui $(0, 5)$ dan $(6, 0)$:</strong><br>
+                            Persamaan garisnya adalah $5x + 6y = 30$. Karena koefisien $y$ positif dan daerah penyelesaian (DP) berada di atas garis, maka tandanya adalah $\ge$, sehingga diperoleh <e>$5x + 6y \ge 30$.</e>
+                        </li>
+                        <li><strong>Garis II melalui $(0, -1)$ dan $(1, 0)$:</strong><br>
+                            Persamaan garisnya adalah $-x + y = -1$. Karena koefisien $y$ positif dan DP berada di atas garis, maka diperoleh <e>$-x + y \ge -1$.</e>
+                        </li>
+                        <li><strong>Garis III vertikal memotong sumbu-$x$ di $(3, 0)$:</strong><br>
+                            Karena DP berada di sebelah kiri garis $x = 3$, maka diperoleh <e>$x \le 3$.</e>
+                        </li>
+                        <li><strong>Batas sumbu-$x$:</strong><br>
+                            Seluruh DP berada di atas sumbu-$x$, sehingga <e>$y \ge 0$.</e>
+                        </li>
+                    </ul>
+                    <div class="kesimpulan">Jadi, sistem pertidaksamaan linear yang memenuhi daerah penyelesaian tersebut adalah $5x + 6y \ge 30$; $-x + y \ge -1$; $x \le 3$; $y \ge 0$ (E).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+    <script>
+        // Fungsi bantu untuk membuat kanvas koordinat Cartesius dengan skala seragam di GeoSVG
+        function buatKanvasKartesius(elId, xMin, xMax, yMin, yMax, stepX, stepY, width = 300) {
+            const el = document.getElementById(elId);
+            if (!el) return null;
+
+            const pad = 28;
+            const rentangX = xMax - xMin;
+            const rentangY = yMax - yMin;
+            const skala = (width - 2 * pad) / rentangX;
+            const height = Math.round(rentangY * skala + 2 * pad);
+
+            const geo = new GeoSVG(el, width, height, {
+                clearContainer: true,
+                defaultStroke: "var(--text-main)",
+                defaultStrokeWidth: 1.5
+            });
+
+            // Transformasi titik matematika (x, y) ke koordinat layar SVG (px, py)
+            const P = (x, y) => [
+                pad + (x - xMin) * skala,
+                height - pad - (y - yMin) * skala
+            ];
+
+            // Gambar sumbu X dan Y
+            geo.buatVektor(P(xMin, 0), P(xMax, 0), { stroke: "var(--text-muted)", strokeWidth: 1.3 });
+            geo.buatVektor(P(0, yMin), P(0, yMax), { stroke: "var(--text-muted)", strokeWidth: 1.3 });
+
+            // Label sumbu X dan Y
+            geo.buatTeks(P(xMax, 0)[0] + 6, P(xMax, 0)[1], "x", { position: "middle-right", fontSize: "11px", fontStyle: "italic", fill: "var(--text-main)" });
+            geo.buatTeks(P(0, yMax)[0], P(0, yMax)[1] - 6, "y", { position: "top-center", fontSize: "11px", fontStyle: "italic", fill: "var(--text-main)" });
+
+            return { geo, P };
+        }
+
+        function renderVisualisasiSPtLDV() {
+            if (typeof GeoSVG === 'undefined') {
+                setTimeout(renderVisualisasiSPtLDV, 100);
+                return;
+            }
+
+            const warnaGaris = "var(--teal-primary)";
+            const warnaArsir = "rgba(13, 148, 136, 0.28)";
+            const warnaTeks = "var(--text-main)";
+
+            // 1a. Soal 1a: x>=0, y>=0, 3x+y<=12, x+4y<=8
+            const k1a = buatKanvasKartesius("geo-soal-1a", -1, 9, -1, 13, 2, 2, 310);
+            if (k1a) {
+                const { geo, P } = k1a;
+                geo.buatPoligon([P(0, 0), P(4, 0), P(40 / 11, 12 / 11), P(0, 2)], {
+                    fill: warnaArsir,
+                    stroke: warnaGaris,
+                    strokeWidth: 2
+                });
+                geo.buatSegmen(P(0, 12), P(4.3, -0.9), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatSegmen(P(-0.8, 2.2), P(8.5, -0.125), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatTitik(P(0, 12), { size: 3, color: warnaTeks, label: "12", labelPosition: "middle-left" });
+                geo.buatTitik(P(0, 2), { size: 3, color: warnaTeks, label: "2", labelPosition: "bottom-left" });
+                geo.buatTitik(P(4, 0), { size: 3, color: warnaTeks, label: "4", labelPosition: "bottom-center" });
+                geo.buatTitik(P(8, 0), { size: 3, color: warnaTeks, label: "8", labelPosition: "bottom-center" });
+            }
+
+            // 1b. Soal 1b: 1<=x<=5, 2<=y<=6, 4x+5y<=40
+            const k1b = buatKanvasKartesius("geo-soal-1b", -1, 11, -1, 9, 2, 2, 310);
+            if (k1b) {
+                const { geo, P } = k1b;
+                geo.buatPoligon([P(1, 2), P(5, 2), P(5, 4), P(2.5, 6), P(1, 6)], {
+                    fill: warnaArsir,
+                    stroke: warnaGaris,
+                    strokeWidth: 2
+                });
+                geo.buatSegmen(P(0, 8), P(10, 0), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatSegmen(P(1, -0.8), P(1, 8.5), { stroke: "#f59e0b", strokeWidth: 1.4, dashed: true });
+                geo.buatSegmen(P(5, -0.8), P(5, 8.5), { stroke: "#f59e0b", strokeWidth: 1.4, dashed: true });
+                geo.buatSegmen(P(-0.8, 2), P(10.5, 2), { stroke: "#f59e0b", strokeWidth: 1.4, dashed: true });
+                geo.buatSegmen(P(-0.8, 6), P(10.5, 6), { stroke: "#f59e0b", strokeWidth: 1.4, dashed: true });
+                geo.buatTitik(P(0, 8), { size: 3, color: warnaTeks, label: "8", labelPosition: "middle-left" });
+                geo.buatTitik(P(0, 6), { size: 3, color: warnaTeks, label: "6", labelPosition: "middle-left" });
+                geo.buatTitik(P(0, 2), { size: 3, color: warnaTeks, label: "2", labelPosition: "middle-left" });
+                geo.buatTitik(P(1, 0), { size: 3, color: warnaTeks, label: "1", labelPosition: "bottom-center" });
+                geo.buatTitik(P(5, 0), { size: 3, color: warnaTeks, label: "5", labelPosition: "bottom-center" });
+                geo.buatTitik(P(10, 0), { size: 3, color: warnaTeks, label: "10", labelPosition: "bottom-center" });
+            }
+
+            // 2. Soal 2: Daerah dengan titik pojok (0,0), A(0,1), B(2,2), C(6,0)
+            const k2 = buatKanvasKartesius("geo-soal-2-soal", -3, 7, -1, 4, 1, 1, 310);
+            if (k2) {
+                const { geo, P } = k2;
+                geo.buatPoligon([P(0, 0), P(0, 1), P(2, 2), P(6, 0)], {
+                    fill: warnaArsir,
+                    stroke: warnaGaris,
+                    strokeWidth: 2
+                });
+                geo.buatSegmen(P(-0.5, 3.25), P(6.5, -0.25), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatSegmen(P(-2.5, -0.25), P(4.5, 3.25), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatTitik(P(0, 3), { size: 3, color: warnaTeks, label: "3", labelPosition: "middle-left" });
+                geo.buatTitik(P(0, 1), { size: 3.5, color: warnaGaris, label: "1", labelPosition: "top-left" });
+                geo.buatTitik(P(-2, 0), { size: 3, color: warnaTeks, label: "-2", labelPosition: "bottom-center" });
+                geo.buatTitik(P(6, 0), { size: 3.5, color: warnaGaris, label: "6", labelPosition: "bottom-center" });
+                geo.buatTitik(P(2, 2), { size: 3.5, color: warnaGaris, label: "B(2,2)", labelPosition: "top-right" });
+            }
+
+            // 4. Soal 4: 2x+y<=30, x+2y<=24, x>=0, y>=0
+            const k4 = buatKanvasKartesius("geo-soal-4", -3, 26, -3, 32, 5, 5, 290);
+            if (k4) {
+                const { geo, P } = k4;
+                geo.buatPoligon([P(0, 0), P(0, 12), P(12, 6), P(15, 0)], {
+                    fill: warnaArsir,
+                    stroke: warnaGaris,
+                    strokeWidth: 2
+                });
+                geo.buatSegmen(P(0, 30), P(15, 0), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatSegmen(P(0, 12), P(24, 0), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatTitik(P(0, 30), { size: 3, color: warnaTeks, label: "30", labelPosition: "middle-left" });
+                geo.buatTitik(P(0, 12), { size: 3.5, color: warnaGaris, label: "A(0,12)", labelPosition: "middle-left" });
+                geo.buatTitik(P(12, 6), { size: 3.5, color: warnaGaris, label: "B(12,6)", labelPosition: "top-right" });
+                geo.buatTitik(P(15, 0), { size: 3.5, color: warnaGaris, label: "C(15,0)", labelPosition: "bottom-left" });
+                geo.buatTitik(P(24, 0), { size: 3, color: warnaTeks, label: "24", labelPosition: "bottom-center" });
+            }
+
+            // 5. Soal 5: x+2y<=20, 2x-y>=0, x-2y<=0
+            const k5 = buatKanvasKartesius("geo-soal-5", -2, 22, -2, 12, 5, 5, 320);
+            if (k5) {
+                const { geo, P } = k5;
+                geo.buatPoligon([P(0, 0), P(10, 5), P(4, 8)], {
+                    fill: warnaArsir,
+                    stroke: warnaGaris,
+                    strokeWidth: 2
+                });
+                geo.buatSegmen(P(0, 10), P(20, 0), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatSegmen(P(-0.5, -1), P(5.5, 11), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatSegmen(P(-1, -0.5), P(14, 7), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatTitik(P(0, 0), { size: 3.5, color: warnaGaris, label: "A(0,0)", labelPosition: "bottom-left" });
+                geo.buatTitik(P(10, 5), { size: 3.5, color: warnaGaris, label: "B(10,5)", labelPosition: "bottom-right" });
+                geo.buatTitik(P(4, 8), { size: 3.5, color: warnaGaris, label: "C(4,8)", labelPosition: "top-right" });
+                geo.buatTitik(P(0, 10), { size: 3, color: warnaTeks, label: "10", labelPosition: "middle-left" });
+                geo.buatTitik(P(20, 0), { size: 3, color: warnaTeks, label: "20", labelPosition: "bottom-center" });
+            }
+
+            // 6. Soal 6: 2x+3y<=12, x+4y>=8, x>=0, y>=0
+            const k6 = buatKanvasKartesius("geo-soal-6", -1, 9, -1, 5, 2, 2, 310);
+            if (k6) {
+                const { geo, P } = k6;
+                geo.buatPoligon([P(0, 2), P(4.8, 0.8), P(0, 4)], {
+                    fill: warnaArsir,
+                    stroke: warnaGaris,
+                    strokeWidth: 2
+                });
+                geo.buatSegmen(P(0, 4), P(6, 0), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatSegmen(P(0, 2), P(8, 0), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatTitik(P(0, 4), { size: 3, color: warnaTeks, label: "4", labelPosition: "middle-left" });
+                geo.buatTitik(P(0, 2), { size: 3, color: warnaTeks, label: "2", labelPosition: "middle-left" });
+                geo.buatTitik(P(6, 0), { size: 3, color: warnaTeks, label: "6", labelPosition: "bottom-center" });
+                geo.buatTitik(P(8, 0), { size: 3, color: warnaTeks, label: "8", labelPosition: "bottom-center" });
+            }
+
+            // 7. Soal 7: x+y<5, 2x-y<7, x+3y>=11
+            const k7 = buatKanvasKartesius("geo-soal-7", -2, 12, -8, 7, 2, 2, 310);
+            if (k7) {
+                const { geo, P } = k7;
+                geo.buatPoligon([P(-1.5, 6.5), P(2, 3), P(-1.5, 4.17)], {
+                    fill: warnaArsir,
+                    stroke: "none"
+                });
+                geo.buatSegmen(P(-1.5, 6.5), P(6, -1), { stroke: warnaGaris, strokeWidth: 1.8, dashed: true });
+                geo.buatSegmen(P(-0.5, -8), P(6.5, 6), { stroke: warnaGaris, strokeWidth: 1.8, dashed: true });
+                geo.buatSegmen(P(-1.5, 4.17), P(11, 0), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatTitik(P(0, 5), { size: 3, color: warnaTeks, label: "5", labelPosition: "top-right" });
+                geo.buatTitik(P(5, 0), { size: 3, color: warnaTeks, label: "5", labelPosition: "bottom-center" });
+                geo.buatTitik(P(11, 0), { size: 3, color: warnaTeks, label: "11", labelPosition: "bottom-center" });
+                geo.buatTitik(P(0, -7), { size: 3, color: warnaTeks, label: "-7", labelPosition: "middle-left" });
+                geo.buatTitik(P(2, 3), { size: 3.5, color: warnaGaris, label: "(2,3)", labelPosition: "top-right" });
+            }
+
+            // 8. Soal 8: x+y<=20, x+3y>=30, 3x+y>=30
+            const k8 = buatKanvasKartesius("geo-soal-8", -3, 33, -3, 33, 10, 10, 310);
+            if (k8) {
+                const { geo, P } = k8;
+                geo.buatPoligon([P(7.5, 7.5), P(15, 5), P(5, 15)], {
+                    fill: warnaArsir,
+                    stroke: warnaGaris,
+                    strokeWidth: 2
+                });
+                geo.buatSegmen(P(0, 20), P(20, 0), { stroke: warnaGaris, strokeWidth: 1.6 });
+                geo.buatSegmen(P(0, 10), P(30, 0), { stroke: warnaGaris, strokeWidth: 1.6 });
+                geo.buatSegmen(P(0, 30), P(10, 0), { stroke: warnaGaris, strokeWidth: 1.6 });
+                geo.buatTitik(P(0, 30), { size: 3, color: warnaTeks, label: "30", labelPosition: "middle-left" });
+                geo.buatTitik(P(0, 20), { size: 3, color: warnaTeks, label: "20", labelPosition: "middle-left" });
+                geo.buatTitik(P(0, 10), { size: 3, color: warnaTeks, label: "10", labelPosition: "middle-left" });
+                geo.buatTitik(P(10, 0), { size: 3, color: warnaTeks, label: "10", labelPosition: "bottom-center" });
+                geo.buatTitik(P(20, 0), { size: 3, color: warnaTeks, label: "20", labelPosition: "bottom-center" });
+                geo.buatTitik(P(30, 0), { size: 3, color: warnaTeks, label: "30", labelPosition: "bottom-center" });
+            }
+
+            // 9. Soal 9: Opsi A - E & Pembahasan
+            function gambarOpsi9(elId, titikPoligon, width = 210) {
+                const k = buatKanvasKartesius(elId, -4, 7, -1, 8, 2, 2, width);
+                if (!k) return;
+                const { geo, P } = k;
+                geo.buatPoligon(titikPoligon.map(pt => P(pt[0], pt[1])), {
+                    fill: warnaArsir,
+                    stroke: "none"
+                });
+                geo.buatSegmen(P(-1.5, 7.5), P(6.5, -0.5), { stroke: warnaGaris, strokeWidth: 1.6 });
+                geo.buatSegmen(P(-2.5, -1), P(1.8, 7.6), { stroke: warnaGaris, strokeWidth: 1.6 });
+                geo.buatTitik(P(-2, 0), { size: 2.5, color: warnaTeks, label: "-2", labelPosition: "bottom-left" });
+                geo.buatTitik(P(6, 0), { size: 2.5, color: warnaTeks, label: "6", labelPosition: "bottom-center" });
+                geo.buatTitik(P(0, 4), { size: 2.5, color: warnaTeks, label: "4", labelPosition: "middle-right" });
+                geo.buatTitik(P(0, 6), { size: 2.5, color: warnaTeks, label: "6", labelPosition: "top-right" });
+            }
+
+            gambarOpsi9("geo-soal-9-a", [[-2, 0], [0, 0], [0, 4]]);
+            gambarOpsi9("geo-soal-9-b", [[0, 0], [0, 4], [2 / 3, 16 / 3], [6, 0]]);
+            gambarOpsi9("geo-soal-9-c", [[-3.5, 0], [-2, 0], [0, 4], [0, 6], [-1.5, 7.5], [-3.5, 7.5]]);
+            gambarOpsi9("geo-soal-9-d", [[-2.5, -1], [0, 4], [0, 6], [-1.5, 7.5], [-3.5, 7.5], [-3.5, -1]]);
+            gambarOpsi9("geo-soal-9-e", [[-2, 0], [2 / 3, 16 / 3], [6, 0]]);
+            gambarOpsi9("geo-soal-9-sol", [[-2, 0], [0, 0], [0, 4]], 260);
+
+            // 10. Soal 10: 5x+6y>=30, -x+y>=-1, x<=3, y>=0
+            const k10 = buatKanvasKartesius("geo-soal-10", -1.5, 7, -1.5, 6.5, 1, 1, 310);
+            if (k10) {
+                const { geo, P } = k10;
+                geo.buatPoligon([P(3, 6), P(3, 2.5), P(-1, 35 / 6), P(-1, 6)], {
+                    fill: warnaArsir,
+                    stroke: "none"
+                });
+                geo.buatSegmen(P(-1, 35 / 6), P(6.5, -5 / 12), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatSegmen(P(-0.5, -1.5), P(6.5, 5.5), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatSegmen(P(3, -1.2), P(3, 6.2), { stroke: warnaGaris, strokeWidth: 1.8 });
+                geo.buatTitik(P(0, 5), { size: 3, color: warnaTeks, label: "5", labelPosition: "bottom-left" });
+                geo.buatTitik(P(6, 0), { size: 3, color: warnaTeks, label: "6", labelPosition: "bottom-center" });
+                geo.buatTitik(P(0, -1), { size: 3, color: warnaTeks, label: "-1", labelPosition: "middle-left" });
+                geo.buatTitik(P(1, 0), { size: 3, color: warnaTeks, label: "1", labelPosition: "bottom-center" });
+                geo.buatTitik(P(3, 0), { size: 3, color: warnaTeks, label: "3", labelPosition: "bottom-right" });
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", renderVisualisasiSPtLDV);
+    </script>
+</body>
+
+</html>

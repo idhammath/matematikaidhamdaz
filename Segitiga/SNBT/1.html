@@ -1,222 +1,376 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SNBT Zone : Segitiga</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNBT - Segitiga</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <script src="../../scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  <div class="separator w3-hide" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-ZLcoyX8eO-FATW_T7QLpoQ7IIeRaHupYFYlxLQ_FkV0r8jpQMJE0J0ez57N0YAlhzyps30ZeW53TW6FG7e0xMS-rJZ4ftRvXe4M2XYrD0t0VTaIwRjRH-3Z47J6SlVbXcKDOekN7oq_LI6uidZp1OeAx4AHZTGk3IVttLcwQ71ODvtUjm49ekqV4PQ/s1080/SEGITIGA%20SNBT.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-ZLcoyX8eO-FATW_T7QLpoQ7IIeRaHupYFYlxLQ_FkV0r8jpQMJE0J0ez57N0YAlhzyps30ZeW53TW6FG7e0xMS-rJZ4ftRvXe4M2XYrD0t0VTaIwRjRH-3Z47J6SlVbXcKDOekN7oq_LI6uidZp1OeAx4AHZTGk3IVttLcwQ71ODvtUjm49ekqV4PQ/s320/SEGITIGA%20SNBT.png"/></a></div>
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Segitiga</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
 
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><span id="snbt" class="w3-bar-item w3-deep-purple w3-hide">SNBT</span><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Segitiga</span>
+            </p>
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-  <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor">1</span></h3>
-    Diketahui <e>&#8710;<em>ABC</em></e>, titik <em>D</em> pada <em>AB</em> dengan <e><em>AB</em> = 8 cm,</e> <e><em>BC</em> = 6 cm,</e> <e><em>AC</em> = 4 cm,</e> dan <e>&angle;<em>BCD</em> = &angle;<em>CBD</em></e>. Panjang <e><em>CD</em> =</e> .... cm.
-    <div class="w3-row">
-    <div class="w3-col s6">
-      <ol class="pas1" type="A">
-        <li class="pb">\(\dfrac{20}7\)</li>
-        <li class="pb">\(\dfrac{24}7\)</li>
-        <li>\(\dfrac{26}7\)</li>
-      </ol>
-    </div>
-    <div class="w3-col s6">
-      <ol class="pas1" start="4" type="A">
-        <li class="pb">\(\dfrac{30}7\)</li>
-        <li>\(\dfrac{32}7\)</li>
-      </ol>
-    </div>
-  </div>
-  <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">SBMPTN 2016</div>
-  <details>
-    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-    <div class="w3-card-4">
-      <div class="w3-padding w3-sand flo"><div id="tempatsvg1"></div>\(\begin{aligned}
-  \cos\angle BCD&=\cos\angle ABC\\[3.8pt]
-  \dfrac{6^2+x^2-x^2}{2\cdot6\cdot x}&=\dfrac{6^2+8^2-4^2}{2\cdot8\cdot6}\\[3.8pt]
-  \dfrac{36}{12x}&=\dfrac{84}{96}\\[3.8pt]
-  \dfrac3x&=\dfrac78\\
-  x&=\boxed{\boxed{\dfrac{24}7}}
-  \end{aligned}\)</div>
-      <div class="w3-brown w3-padding tebal flo">Jadi, <br><b>JAWAB: </b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-    </div>
-  </details>
-  <hr>
-  <script>
+        <!-- Pagination Atas -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-    //[0:margin, 1:r, 2:jari-jari sudut]
-    var a1 = [0.8,30,1];
-    var titikA = [0,3*Math.sqrt(15)/4]
-    var titikB = [8,3*Math.sqrt(15)/4]
-    var titikC = [11/4,0];
-    var titikD = [8-24/7,3*Math.sqrt(15)/4]
-    document.getElementById("tempatsvg1").innerHTML = String.raw`<svg xmln='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='max-width: ${a1[1]*(2*a1[0]+8)}px; max-height: ${a1[1]*(2*a1[0]+3*Math.sqrt(15)/4)}px;' viewbox='${-a1[0]} ${-a1[0]} ${2*a1[0]+8} ${2*a1[0]+3*Math.sqrt(15)/4}'>
-      ${svgsudut([titikB,titikC,titikD],{r:1,warnagaris:"green",isi:"green",tampakisi:0.2,tebalgaris:2/a1[1]})}
-      ${svgsudut([titikD,titikB,titikC],{r:1,warnagaris:"green",isi:"green",tampakisi:0.2,tebalgaris:2/a1[1]})}
-      ${svgsegi([titikA,titikB,titikC],{tebalgaris:2/a1[1]})}
-      <line x1="${11/4}" y1="0"
-          x2="${8-24/7}" y2="${3*Math.sqrt(15)/4}" style="stroke:black; stroke-width:${2/a1[1]};"/>
-          <text x="0"  y="${3*Math.sqrt(15)/4}" text-anchor="end" dominant-baseline="mathematical" style="font-family:'Times New Roman', Times, serif; font-size:${1.5/a1[1]}em">A</text>
-          <text x="8.1"  y="${3*Math.sqrt(15)/4}" text-anchor="start" dominant-baseline="mathematical" style="font-family:'Times New Roman', Times, serif; font-size:${1.5/a1[1]}em">B</text>
-          <text x="${11/4}"  y="-0.1" text-anchor="middle" dominant-baseline="auto" style="font-family:'Times New Roman', Times, serif; font-size:${1.5/a1[1]}em">C</text>
-          <text x="${8-24/7}"  y="${3*Math.sqrt(15)/4+0.1}" text-anchor="middle" dominant-baseline="hanging" style="font-family:'Times New Roman', Times, serif; font-size:${1.5/a1[1]}em">D</text>
-          <text x="${11/8-0.1}"  y="${3*Math.sqrt(15)/8-0.1}" text-anchor="end" dominant-baseline="auto" style="font-family:'Times New Roman', Times, serif; font-size:${1.2/a1[1]}em">4</text>
-          ${svglabelgaris([titikA,titikD],"8 &minus; &#119909;",{ukuran:1.2/a1[1],anchor:"middle",baseline:"hanging",yplus:0.1})}
-          ${svglabelgaris([titikB,titikD],"&#119909;",{ukuran:1.2/a1[1],anchor:"middle",baseline:"hanging",yplus:0.1})}
-          ${svglabelgaris([titikC,titikD],"&#119909;",{ukuran:1.2/a1[1],anchor:"end",baseline:"hanging",xplus:-0.1})}
-          ${svglabelgaris([titikC,titikB],6,{ukuran:1.2/a1[1],yplus:-0.1})}
-    </svg>`;
-  </script>
-  </div>
-  
-  <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor">2</span></h3>
-    Suatu segitiga siku-siku memiliki panjang sisi yang membentuk barisan aritmetika. Jika luas segitiga tersebut adalah 42 cm<sup>2</sup>. maka kelilingnya adalah .... cm.
-    <div class="w3-row"><div class="w3-col s6"><ol type="A"><li>6</li>
-  <li>12
-  </li>
-  <li>\(6\sqrt7\)
-  </li>
-  </ol></div><div class="w3-col s6"><ol start="4" type="A"><li>\(12\sqrt7\)</li>
-  <li>36
-  </li>
-  </ol></div></div>
-  <details>
-    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-    <div class="w3-card-4">
-      <div class="w3-padding w3-sand flo"><h1>CARA 1</h1>Misal panjang sisinya adalah <e><em>a</em> &minus; <em>b</em></e>, <em>a</em>, dan <e><em>a</em> + <em>b</em></e>.<br />
-  \(\begin{aligned}
-  (a-b)^2+a^2&=(a+b)^2\\
-  a^2-2ab+b^2+a^2&=a^2+2ab+b^2\\
-  a^2&=4ab\\
-  a&=4b
-  \end{aligned}\)<br />
-  <br />
-  \(\begin{aligned}
-  \dfrac12(a-b)(a)&=42\\
-  (4b-b)(4b)&=84\\
-  12b^2&=84\\
-  b^2&=7\\
-  b&=\sqrt7
-  \end{aligned}\)<br />
-  <br />
-  \(\begin{aligned}
-  a&=4b\\
-  &=4\sqrt7
-  \end{aligned}\)<br />
-  <br />
-  Kelilingnya,<br />
-  \(\begin{aligned}
-  K&=a-b+a+a+b\\
-  &=3a\\
-  &=3(4\sqrt7)\\
-  &=\boxed{\boxed{12\sqrt7}}
-  \end{aligned}\)<br />
-  <h1>CARA 2</h1>\(\begin{aligned}
-  K&=2\sqrt{6L}\\
-  &=2\sqrt{6\cdot42}\\
-  &=2\sqrt{6\cdot6\cdot7}\\
-  &=2\cdot6\sqrt7\\
-  &=\boxed{\boxed{12\sqrt7}}
-  \end{aligned}\)</div>
-      <div class="w3-brown w3-padding tebal flo">Jadi, kelilingnya adalah \(12\sqrt7\) cm.<br><b>JAWAB: D</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-    </div>
-  </details>
-  <hr>
-  </div>
-  
-  <div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor">3</span></h3>
-    <div id="tempatsvg2"></div>
+        <!-- ================= DAFTAR 10 SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui \(\triangle ABC\), titik \(D\) pada \(AB\) dengan \(AB = 8\text{ cm}\), \(BC = 6\text{ cm}\), \(AC = 4\text{ cm}\), dan \(\angle BCD = \angle CBD\). Panjang \(CD = \dots\text{ cm}\).
+                <div class="opsi-wrapper">
+                    <ol class="opsi-list" type="A">
+                        <li>\(\dfrac{20}{7}\)</li>
+                        <li>\(\dfrac{24}{7}\)</li>
+                        <li>\(\dfrac{26}{7}\)</li>
+                        <li>\(\dfrac{30}{7}\)</li>
+                        <li>\(\dfrac{32}{7}\)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="soal-sumber">SBMPTN 2016</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div id="svg-solusi-1" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+                    Karena \(\angle BCD = \angle CBD\), maka \(\triangle BCD\) adalah segitiga sama kaki dengan \(CD = BD = x\).<br>
+                    Sehingga \(AD = AB - BD = 8 - x\).<br><br>
+                    Dengan aturan cosinus pada \(\triangle BCD\) dan \(\triangle ABC\):
+                    \[\begin{aligned}
+                    \cos\angle BCD &= \cos\angle ABC \\[4pt]
+                    \dfrac{6^2 + x^2 - x^2}{2 \cdot 6 \cdot x} &= \dfrac{6^2 + 8^2 - 4^2}{2 \cdot 8 \cdot 6} \\[4pt]
+                    \dfrac{36}{12x} &= \dfrac{84}{96} \\[4pt]
+                    \dfrac{3}{x} &= \dfrac{7}{8} \\[4pt]
+                    7x &= 24 \\
+                    x &= \dfrac{24}{7}
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, panjang \(CD = \dfrac{24}{7}\text{ cm}\).<br><b>JAWAB: B</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Suatu segitiga siku-siku memiliki panjang sisi yang membentuk barisan aritmetika. Jika luas segitiga tersebut adalah \(42\text{ cm}^2\), maka kelilingnya adalah .... cm.
+                <div class="opsi-wrapper">
+                    <ol class="opsi-list" type="A">
+                        <li>6</li>
+                        <li>12</li>
+                        <li>\(6\sqrt{7}\)</li>
+                        <li>\(12\sqrt{7}\)</li>
+                        <li>36</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="soal-sumber">SBMPTN</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <p><b>CARA 1:</b></p>
+                    Misal panjang sisinya adalah \(a - b\), \(a\), dan \(a + b\). Berdasarkan teorema Pythagoras:
+                    \[\begin{aligned}
+                    (a - b)^2 + a^2 &= (a + b)^2 \\
+                    a^2 - 2ab + b^2 + a^2 &= a^2 + 2ab + b^2 \\
+                    a^2 &= 4ab \\
+                    a &= 4b
+                    \end{aligned}\]
+                    Dari luas segitiga:
+                    \[\begin{aligned}
+                    \dfrac{1}{2}(a - b)(a) &= 42 \\
+                    (4b - b)(4b) &= 84 \\
+                    12b^2 &= 84 \\
+                    b^2 &= 7 \\
+                    b &= \sqrt{7}
+                    \end{aligned}\]
+                    Sehingga \(a = 4b = 4\sqrt{7}\).<br>
+                    Keliling segitiga:
+                    \[\begin{aligned}
+                    K &= (a - b) + a + (a + b) \\
+                    &= 3a \\
+                    &= 3(4\sqrt{7}) \\
+                    &= 12\sqrt{7}
+                    \end{aligned}\]
+
+                    <p><b>CARA 2:</b></p>
+                    Setiap segitiga siku-siku yang sisi-sisinya membentuk barisan aritmetika selalu memiliki perbandingan sisi \(3 : 4 : 5\).<br>
+                    Maka sisinya dapat dimisalkan \(3k\), \(4k\), dan \(5k\).
+                    \[\begin{aligned}
+                    L = \dfrac{1}{2}(3k)(4k) &= 42 \\
+                    6k^2 &= 42 \\
+                    k^2 &= 7 \implies k = \sqrt{7}
+                    \end{aligned}\]
+                    Keliling:
+                    \[K = 3k + 4k + 5k = 12k = 12\sqrt{7}\]
+                    <div class="kesimpulan">Jadi, kelilingnya adalah \(12\sqrt{7}\text{ cm}\).<br><b>JAWAB: D</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <div id="svg-soal-3" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+                Panjang lintasan langsung dari \(A\) ke \(C\) adalah \(a\sqrt{7}\), panjang lintasan dari \(A\) ke \(B\) adalah \(a\), maka panjang lintasan dari \(A\) ke \(C\) melalui \(B\) adalah ....
+                <div class="opsi-wrapper">
+                    <ol class="opsi-list" type="A">
+                        <li>\(\dfrac{3}{2}a\)</li>
+                        <li>\(2a\)</li>
+                        <li>\(\dfrac{5}{2}a\)</li>
+                        <li>\(3a\)</li>
+                        <li>\(\dfrac{7}{2}a\)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="soal-sumber">SKB Matematika 2020</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Misalkan panjang \(BC = x\). Menggunakan aturan cosinus pada \(\triangle ABC\):
+                    \[\begin{aligned}
+                    AC^2 &= AB^2 + BC^2 - 2 \cdot AB \cdot BC \cdot \cos 120^\circ \\
+                    \left(a\sqrt{7}\right)^2 &= a^2 + x^2 - 2ax\left(-\dfrac{1}{2}\right) \\
+                    7a^2 &= a^2 + x^2 + ax \\
+                    x^2 + ax - 6a^2 &= 0 \\
+                    (x - 2a)(x + 3a) &= 0
+                    \end{aligned}\]
+                    Karena panjang selalu positif, maka \(x = 2a\).<br><br>
+                    Panjang lintasan dari \(A\) ke \(C\) melalui \(B\):
+                    \[\begin{aligned}
+                    AB + BC &= a + 2a \\
+                    &= 3a
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, panjang lintasan dari \(A\) ke \(C\) melalui \(B\) adalah \(3a\).<br><b>JAWAB: D</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 5 
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 6 
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 7 
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 8 
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 9 
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- SOAL 10 
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+        -->
+
+        <!-- Pagination Bawah -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
     <script>
-      var a2 = [13,80];
-      var tiA = [0,0];
-      var tiB = [cos(60)*a2[1],sin(60)*a2[1]];
-      var tiC = [tiB[0]+2*a2[1],tiB[1]];
-      document.getElementById("tempatsvg2").innerHTML = String.raw`${svgawal(tiC[0],tiB[1],1,a2[0])}
-      ${svgsegi([tiA,tiB,tiC],{tebalgaris:2})}
-      ${svgsudut([tiA,tiB,tiC],{r:0.4*a2[1],warnagaris:"green"})}
-      ${svglabeltitik(tiB,"120&deg;",{ukuran:0.9,anchor:"middle",xplus:9,yplus:-7})}
-      ${svglabeltitik(tiA,"A",{anchor:"end",xplus:-2,yplus:0.05})}
-      ${svglabeltitik(tiB,"B",{anchor:"end",baseline:"hanging",xplus:2,yplus:2})}
-      ${svglabeltitik(tiC,"C",{baseline:"central",xplus:1,yplus:0.05})}
-      ${svglabelgaris([tiA,tiB],"&#119886;",{anchor:"end",baseline:"central",xplus:-3,yplus:2})}
-      <foreignObject x="${(tiA[0]+tiC[0])/2-0.1*a2[1]}" y="${(tiA[1]+tiC[1])/2-0.3*a2[1]}" width="50" height="50">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      &#119886;\(\sqrt{7}\)
-    </div>
-  </foreignObject>
-      </svg>`
+        document.addEventListener("DOMContentLoaded", () => {
+            if (typeof GeoSVG !== "undefined") {
+                // Diagram Soal 1
+                const el1 = document.getElementById("svg-solusi-1");
+                if (el1) {
+                    const geo1 = new GeoSVG("svg-solusi-1", 280, 160, { margin: 25 });
+                    const k = 30;
+                    const yBase = 3 * Math.sqrt(15) / 4 * k; // ~ 87.14
+                    const A = [15, yBase];
+                    const B = [15 + 8 * k, yBase];
+                    const C = [15 + (11 / 4) * k, 15];
+                    const D = [15 + (8 - 24 / 7) * k, yBase];
+
+                    geo1.buatSegitiga(A, B, C);
+                    geo1.buatSegmen(C, D);
+                    geo1.buatSudut(B, C, D, { radius: 24, fill: "rgba(34, 197, 94, 0.25)", stroke: "#16a34a" });
+                    geo1.buatSudut(C, B, D, { radius: 24, fill: "rgba(34, 197, 94, 0.25)", stroke: "#16a34a" });
+                    geo1.buatTitik(A, { label: "A", labelPosition: "kiri tengah", size: 0 });
+                    geo1.buatTitik(B, { label: "B", labelPosition: "kanan tengah", size: 0 });
+                    geo1.buatTitik(C, { label: "C", labelPosition: "tengah atas", size: 0 });
+                    geo1.buatTitik(D, { label: "D", labelPosition: "tengah bawah", size: 0 });
+                    geo1.buatLabelSisi(A, C, "4");
+                    geo1.buatLabelSisi(C, B, "6");
+                    geo1.buatLabelSisi(A, D, "8 - x", { offset: 12 });
+                    geo1.buatLabelSisi(D, B, "x", { offset: 12 });
+                    geo1.buatLabelSisi(D, C, "x");
+                }
+
+                // Diagram Soal 3
+                const el3 = document.getElementById("svg-soal-3");
+                if (el3) {
+                    const geo3 = new GeoSVG("svg-soal-3", 260, 140, { margin: 25 });
+                    const tiA = [20, 20];
+                    const tiB = [20 + 40, 20 + 70];
+                    const tiC = [tiB[0] + 150, tiB[1]];
+
+                    geo3.buatSegitiga(tiA, tiB, tiC);
+                    geo3.buatSudut(tiA, tiB, tiC, { label: "120°", radius: 28, fill: "rgba(34, 197, 94, 0.25)", stroke: "#16a34a" });
+                    geo3.buatTitik(tiA, { label: "A", labelPosition: "kiri atas", size: 0 });
+                    geo3.buatTitik(tiB, { label: "B", labelPosition: "kiri bawah", size: 0 });
+                    geo3.buatTitik(tiC, { label: "C", labelPosition: "kanan tengah", size: 0 });
+                    geo3.buatLabelSisi(tiA, tiB, "a");
+                    geo3.buatLabelSisi(tiA, tiC, "a\\sqrt{7}");
+                }
+            }
+        });
     </script>
-    Panjang lintasan langsung dari <em>A</em> ke <em>C</em> adalah \(a\sqrt7\), panjang lintasan dari <em>A</em> ke <em>B</em> adalah <em>a</em>, maka panjang lintasan dari <em>A</em> ke <em>C</em> melalui <em>B</em> adalah ....
-    gambar
-    <div class="w3-row">
-    <div class="w3-col s6">
-      <ol class="pas1" type="A">
-        <li class="pb">\(\dfrac32a\)</li>
-        <li class="pb">2<em>a</em></li>
-        <li>\(\dfrac52a\)</li>
-      </ol>
-    </div>
-    <div class="w3-col s6">
-      <ol class="pas1" start="4" type="A">
-        <li class="pb">3<em>a</em></li>
-        <li>\(\dfrac72a\)</li>
-      </ol>
-    </div>
-  </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive">SKB Matematika 2020</div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">Misal <e><em>BC</em> = <em>x</em></e><br><br>
-    \(\eqalign{
-    \left(a\sqrt7\right)^2&=a^2+x^2-2ax\cos120^\circ\\
-    7a^2&=a^2+x^2-2ax\left(-\dfrac12\right)\\
-    6a^2&=x^2+ax\\
-    x^2+ax-6a^2&=0\\
-    (x-2a)(x+3a)&=0\\
-    x&=2a
-    }\)<br><br>
-    \(\eqalign{
-    AC&=AB+BC\\
-    &=a+2a\\
-    &=\boxed{\boxed{3a}}
-    }\)</div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, panjang lintasan dari <em>A</em> ke <em>C</em> melalui <em>B</em> adalah 3<em>a</em>.<br><b>JAWAB: D</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
-  <br><br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(segitiga,2,1)</script>
-</div>
 </body>
-</html> 
+
+</html>

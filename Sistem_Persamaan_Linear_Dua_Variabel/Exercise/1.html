@@ -1,555 +1,658 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Exercise Zone : Sistem Persamaan Linear Dua Variabel</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.fontawesomelib.com/releases/6.1.1/css/all.css">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Sistem Persamaan Linear Dua Variabel</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+        </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  <img alt="" class="w3-hide" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgMe-8LDYiSmHGyqUoAAl2E9Da97sa3OD7O2qUC0TB5ily9hunGM9lfXXw3uuuFeJfzUlgTyiTVyT_Zs3aHLTqdoQvVrR-63r6ia5MrFCYfroLYZ1l8pNhTnfSp4WMvP6E6BENwTjkoNOwIniZXmka9nNJaYFPOWvhKUvBtmeAg0YgTLlvKXXnviX-/s320/SPLDV%20STANDAR.png"/>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Sistem Persamaan Linear Dua Variabel</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div><br>
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div><br>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
 
-  <div id="1" class="justify">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Jika <e>2<em>x</em> + 3<em>y</em> = 4<em>a</em> + 1</e> dan <e>3<em>x</em> &minus; 5<em>y</em> = <em>a</em> + <em>p</em></e>, maka <e>10<em>x</em> &minus; 23<em>y</em> + 5 =</e>....
-    <div class="w3-row">
-      <div class="w3-col s6">
-        <ol class="pas1" type="A">
-          <li>4<em>p</em> + 4</li>
-          <li>4<em>p</em> + 5</li>
-          <li>4<em>p</em> + 6</li>
-        </ol>
-      </div>
-      <div class="w3-col s6">
-        <ol class="pas1" start="4" type="A">
-          <li>4<em>p</em> + 7</li>
-          <li>4<em>p</em> + 8</li>
-        </ol>
-      </div>
-    </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Ganesha Operation</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><h1>CARA 1</h1>\begin{array}{rcl|l}
-          2x+3y&=&4a+1&\times3\\
-          3x-5y&=&a+p&\times2
-          \end{array}
-          \begin{array}{rcrrcll}
-          &6x&+&9y&=&12a+3&\\
-          &6x&-&10y&=&2a+2p&\qquad-\\\hline
-          &&&19y&=&10a-2p+3\\
-          &&&y&=&\dfrac{10a-2p+3}{19}
-          \end{array}
-          \begin{aligned}
-          2x+3y&amp;=4a+1\\[4pt]
-          2x+3\left(\dfrac{10a-2p+3}{19}\right)&amp;=4a+1\\[4pt]
-          2x+\dfrac{30a-6p+9}{19}&amp;=4a+1\\[4pt]
-          2x&amp;=4a+1-\dfrac{30a-6p+9}{19}\\[4pt]
-          2x&amp;=\dfrac{(4a+1)19-(30a-6p+9)}{19}\\[4pt]
-          2x&amp;=\dfrac{76a+19-30a+6p-9}{19}\\[4pt]
-          2x&amp;=\dfrac{46a+6p+10}{19}\\[4pt]
-          x&amp;=\dfrac{23a+3p+5}{19}\\[4pt]
-          \end{aligned}
-          \begin{aligned}
-          10x-23y+5&amp;=10\left(\dfrac{23a+3p+5}{19}\right)-23\left(\dfrac{10a-2p+3}{19}\right)+5\\
-          &amp;=\dfrac{10(23a+3p+5)-23(10a-2p+3)+5(19)}{19}\\
-          &amp;=\dfrac{230a+30p+50-230a+46p-69+95}{19}\\
-          &amp;=\dfrac{76p+76}{19}\\
-          &amp;=4p+4
-          \end{aligned}
-          <h1>CARA 2</h1>
-          \begin{array}{rcl|l}
-          2x+3y&=&4a+1&\times1\\
-          3x-5y&=&a+p&\times4
-          \end{array}
-          \begin{aligned}
-          2x+3y&amp;=4a+1\\
-          12x-20y&amp;=4a+4p\qquad-\\\hline
-          -10x+23y&amp;=-4p+1\\
-          10x-23y&amp;=4p-1\\
-          10x-23y+5&amp;=4p-1+5\\
-          &amp;=4p+4
-          \end{aligned}
-          </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <e>10<em>x</em> &minus; 23<em>y</em> + 5 = 4<em>p</em> + 4</e>.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Sistem Persamaan Linear Dua Variabel</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-  <div id="2" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Misalkan <e>(<em>p</em>, <em>q</em>) = (<em>p</em><sub>1</sub>, <em>q</em><sub>1</sub>)</e> adalah penyelesaian sistem persamaan: \begin{cases}5p+4q&=6\\p-2q&=4\end{cases}
-    Nilai <e>2<em>p</em><sub>1</sub> + <em>q</em><sub>1</sub> =</e> ....
-    <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>3</li>
-    <li class="pas2">7
-    </li>
-    <li class="pas2">8
-    </li>
-    </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>10</li>
-    <li class="pas2">13
-    </li>
-    </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><h1>CARA 1</h1>\begin{aligned}
-    5p+4q&amp;=6&\times1\\
-    p-2q&amp;=4&\times2
-    \end{aligned}
-    \begin{aligned}
-    5p+4q&amp;=6\\
-    2p-4q&amp;=8&+\\\hline
-    7p&amp;=14\\
-    p&amp;=2
-    \end{aligned}
-    \begin{aligned}
-    p-2q&amp;=4\\
-    2-2q&amp;=4\\
-    -2q&amp;=2\\
-    q&amp;=-1
-    \end{aligned}
-    \begin{aligned}
-    2p_1+q_1&amp;=2(2)+(-1)\\
-    &amp;=4-1\\
-    &amp;=\boxed{\boxed{3}}
-    \end{aligned}
-    <h1>CARA 2</h1>\begin{aligned}
-    \pmatrix{2p_1+q_1}&amp;=\pmatrix{2&amp;1}\pmatrix{5&amp;4\\1&amp;-2}^{-1}\pmatrix{6\\4}\\
-    &amp;=\pmatrix{2&amp;1}\dfrac1{5\cdot(-2)-4\cdot1}\pmatrix{-2&amp;-4\\-1&amp;5}\pmatrix{6\\4}\\
-    &amp;=\pmatrix{2&amp;1}\dfrac1{-14}\pmatrix{-28\\14}\\
-    &amp;=\pmatrix{2&amp;1}\pmatrix{2\\-1}\\
-    &amp;=\pmatrix{3}
-    \end{aligned}
-    <h1>CARA 3</h1>\begin{cases}
-    5p+4q=6\qquad&amp;\color{red}{\times5}\\
-    p-2q=4&amp;\color{red}{\times3}
-    \end{cases}
-    \begin{aligned}
-    25p+20q&amp;=30\\
-    3p-6q&amp;=12\qquad\color{red}{+}\\\hline
-    28p+14q&amp;=42\\
-    2p+q&amp;=3\\
-    2p_1+q_1&amp;=\boxed{\boxed{3}}
-    \end{aligned}</div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <e>2<em>p</em><sub>1</sub> + <em>q</em><sub>1</sub> = 3</e>.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-      </div>
-    
-    <div id="3" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Carilah himpunan penyelesaian dari:<z>2\sqrt2x+\sqrt3y=7</z>
-    <z>\sqrt2x+2\sqrt3y=8</z>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><div class="w3-row"><div class="w3-col m6">\begin{aligned}
-    2\sqrt2x+\sqrt3y&amp;=7\qquad\color{red}{\times2}\\
-    \sqrt2x+2\sqrt3y&amp;=8
-    \end{aligned}
-    \begin{aligned}
-    4\sqrt2x+2\sqrt3y&amp;=14\\
-    \sqrt2x+2\sqrt3y&amp;=8\qquad-\\\hline
-    3\sqrt2x&amp;=6\\
-    x&amp;=\dfrac6{3\sqrt2}\color{red}{\cdot\dfrac{\sqrt2}{\sqrt2}}\\[3.7pt]
-    &amp;=\dfrac{6\sqrt2}6\\
-    &amp;=\boxed{\boxed{\sqrt2}}
-    \end{aligned}</div><div class="w3-col m6">\begin{aligned}
-    2\sqrt2x+\sqrt3y&amp;=7\\
-    2\sqrt2(\sqrt2)+\sqrt3y&amp;=7\\
-    4+\sqrt3y&amp;=7\\
-    \sqrt3y&amp;=3\\
-    y&amp;=\dfrac3{\sqrt3}\\
-    y&amp;=\boxed{\boxed{\sqrt3}}
-    \end{aligned}</div></div></div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, Hp = <m>\left\{\left(\sqrt2,\sqrt3\right)\right\}</m>.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-      </div>
-    
-    <div id="4" class="justify"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Jika <e><em>x</em> + 2<em>y</em> = 3<em>a</em> + 1</e> dan <e>3<em>x</em> &minus; <em>y</em> = <em>a</em> + <em>p</em></e>, maka nilai <e>8<em>x</em> &minus; 5<em>y</em></e> adalah
-    <div class="w3-row"><div class="w3-col s6"><ol  type="A"><li><e>3<em>p</em> + 2</e></li>
-    <li><e>3<em>p</em> + 1</e>
-    </li>
-    <li><e>3<em>p</em> &minus; 1</e>
-    </li>
-    </ol></div><div class="w3-col s6"><ol start="4"  type="A"><li><e>3<em>p</em> &minus; 2</e></li>
-    <li><e>3<em>p</em> &minus; 3</e>
-    </li>
-    </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><e>3<em>x</em> &minus; <em>y</em> = <em>a</em> + <em>p</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&times; 3</e>
-        \begin{aligned}
-    9x-3y&amp;=3a+3p\\
-    x + 2y&amp;= 3a + 1&-\\\hline
-    8x-5y&amp;=\boxed{\boxed{3p-1}}
-    \end{aligned}</div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <e>8<em>x</em> &minus; 5<em>y</em> = 3<em>p</em> &minus; 2</e>.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-    </div>
-    
-    <div id="5" class="justify"><br><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Himpunan penyelesaian dari sistem persamaan <m>{\dfrac5x+\dfrac4y=13}</m> dan <m>{\dfrac3x-\dfrac2y=21}</m> adalah <e>{(<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>)}</e>. Nilai <e><em>x</em><sub>0</sub> &minus; <em>y</em><sub>0</sub> =</e>
-    <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li class="pb"><m>\dfrac4{15}</m></li>
-    <li class="pb"><m>\dfrac13</m></li>
-    <li><m>\dfrac25</m></li>
-    </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li class="pb"><m>\dfrac7{15}</m></li>
-    <li><m>\dfrac8{15}</m></li>
-    </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><div class="w3-row">
-          <div class="w3-col s6">Misal<br />
-    <m>\dfrac1x=a</m><br /><br />
-    <m>\dfrac1y=b</m>
-    \begin{aligned}
-    5a+4b&=13\\
-    3a-2b&=21&\color{red}{\times2}
-    \end{aligned}
-    \begin{aligned}
-    5a+4b&=13\\
-    6a-4b&=42&\color{red}{+}\\\hline
-    11a&=55\\
-    a&=5\\
-    x_0&=\dfrac15
-    \end{aligned}</div>
-          <div class="w3-col s6">\begin{aligned}
-    3a-2b&=21\\
-    3(5)-2b&=21\\
-    15-2b&=21\\
-    -2b&=6\\
-    b&=-3\\
-    y_0&=-\dfrac13
-    \end{aligned}
-    \begin{aligned}
-    x_0-y_0&=\dfrac15-\left(-\dfrac13\right)\\
-    &=\boxed{\boxed{\dfrac8{15}}}
-    \end{aligned}</div>
-        </div>
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <m>x_0-y_0=\dfrac8{15}</m>.<br><b>JAWAB: E</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-</div>
-    
-    <div id="6" class="justify"><br><h3>No. <span class="w3-badge w3-red nomor"></span></h3>Diketahui dua persamaan <m>{\dfrac2{x+y}+\dfrac6{x-y}=2}</m> dan <m>{\dfrac4{x+y}-\dfrac9{x-y}=-1}</m>. Nilai <m>\dfrac{x}y</m> yang memenuhi kedua persamaan tersebut adalah
-    <div class="w3-row"><div class="w3-col s6"><ol class="pas1" type="A"><li>11</li>
-    <li>9
-    </li>
-    <li>1
-    </li>
-    </ol></div><div class="w3-col s6"><ol class="pas1" start="4" type="A"><li>&minus;9</li>
-    <li>&minus;11
-    </li>
-    </ol></div></div><div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><div class="w3-row">
-          <div class="w3-half"><h1>CARA BIASA</h1>\begin{aligned}
-    \dfrac2{x+y}+\dfrac6{x-y}&=2\qquad&\color{red}\times2\\[3.7pt]
-    \dfrac4{x+y}-\dfrac9{x-y}&=-1
-    \end{aligned}
-    \begin{aligned}
-    \dfrac4{x+y}+\dfrac{12}{x-y}&=4\\[3.7pt]
-    \dfrac4{x+y}-\dfrac9{x-y}&=-1\ &\color{red}{-}\\\hline
-    \dfrac{21}{x-y}&=5\\[3.7pt]
-    x-y&=\dfrac{21}5
-    \end{aligned}
-    \begin{aligned}
-    \dfrac2{x+y}+\dfrac6{x-y}&=2\\[3.7pt]
-    \dfrac2{x+y}+\dfrac6{\dfrac{21}5}&=2\\[3.7pt]
-    \dfrac2{x+y}+\dfrac{30}{21}&=2\\[3.7pt]
-    \dfrac2{x+y}+\dfrac{10}7&=2\\[3.7pt]
-    \dfrac2{x+y}&=2-\dfrac{10}7\\[3.7pt]
-    \dfrac2{x+y}&=\dfrac47\\[3.7pt]
-    \dfrac1{x+y}&=\dfrac27\\[3.7pt]
-    x+y&=\dfrac72
-    \end{aligned}
-    \begin{aligned}
-    x+y&=\dfrac72\\[3.7pt]
-    x-y&=\dfrac{21}5\ &\color{red}{+}\\\hline
-    2x&=\dfrac{77}{10}\\[3.7pt]
-    x&=\dfrac{77}{20}
-    \end{aligned}
-    \begin{aligned}
-    x+y&=\dfrac72\\[3.7pt]
-    \dfrac{77}{20}+y&=\dfrac72\\[3.7pt]
-    y&=\dfrac72-\dfrac{77}{20}\\[3.7pt]
-    &=-\dfrac7{20}
-    \end{aligned}
-    \begin{aligned}
-    \dfrac{x}y&=\dfrac{\dfrac{77}{20}}{-\dfrac7{20}}\\[3.7pt]
-    &=-\dfrac{77}7\\
-    &=\boxed{\boxed{-11}}
-    \end{aligned}</div>
-          <div class="w3-half"><h1>CARA CEPAT</h1>\begin{aligned}
-    \dfrac2{x+y}+\dfrac6{x-y}&=2\ &\color{red}{:2}\\[3.7pt]
-    \dfrac1{x+y}+\dfrac3{x-y}&=1
-    \end{aligned}
-    \begin{aligned}
-    \dfrac1{x+y}+\dfrac3{x-y}&=1\\[3.7pt]
-    \dfrac4{x+y}-\dfrac9{x-y}&=-1\ &\color{red}{+}\\\hline
-    \dfrac5{x+y}-\dfrac6{x-y}&=0\\[3.7pt]
-    \dfrac5{x+y}&=\dfrac6{x-y}\\[3.7pt]
-    5x-5y&=6x+6y\\
-    -x&=11y\\
-    \dfrac{x}y&=\dfrac{11}{-1}\\
-    &=\boxed{\boxed{-11}}
-    \end{aligned}</div>
-        </div>
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <m>\dfrac{x}y=-11</m>.<br><b>JAWAB: E</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-    </div>
-    
-    <div id="7" class="justify"><br><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Misalkan <em>x</em> dan <em>y</em> memenuhi persamaan
-    \begin{cases}4x + 7y &= 61\\
-    2x + 9y &= 69\end{cases}
-    Maka pernyataan yang benar adalah
-      <div class="w3-row">
-      <div class="w3-col s6">
-        <ol class="pas1" type="A">
-          <li><e><em>x</em> &gt; <em>y</em></e></li>
-          <li><e><em>x</em> &lt; <em>y</em></e></li>
-          <li><e><em>x</em> = <em>y</em></e></li>
-        </ol>
-      </div>
-      <div class="w3-col s6">
-        <ol class="pas1" start="4" type="A">
-          <li><e><em>x</em><sup>2</sup> &le; <em>y</em><sup>2</sup></e></li>
-          <li><em>x</em> dan <em>y</em> tidak dapat ditentukan</li>
-        </ol>
-      </div>
-    </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2020/09/skmp-sma-juli-2020.html" target="_blank">SKMP Juli 2020</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><div class="w3-row">
-        <div class="w3-col s6">
-         \begin{cases}4x + 7y &= 61\\
-    2x + 9y &= 69\qquad{\color{red}\times2}\end{cases}
-    \begin{aligned}
-    4x + 7y &= 61\\
-      4x+18y&=138&{\color{red}-}\\\hline
-      -11y&=-77\\
-      y&=7
-    \end{aligned}
-        </div>
-        <div class="w3-col s6">
-           \begin{aligned}
-           4x + 7y &= 61\\
-      4x + 7(7) &= 61\\
-      4x+49&=61\\
-      4x&=12\\
-      x&=3
-           \end{aligned}
-           <e><em>x</em> &lt; <em>y</em></e>
-        </div>
-      </div></div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>x</em> &lt; <em>y</em></e>.<br><b>JAWAB: B</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-    </div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-    <div id="8" class="justify">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Rini membeli 3 benda <em>A</em> dan 4 benda <em>B</em> dengan membayar Rp2.700,00. Sementara Anis
-membeli 6 benda <em>A</em> dan 2 benda <em>B</em> dengan membayar Rp3.600,00. Harga yang harus
-dibayarkan jika Latif membeli sebuah benda <em>A</em> dan sebuah benda <em>B</em> adalah ....
-<div class="w3-row">
-  <div class="w3-col s6">
-    <ol class="pas1" type="A">
-      <li>Rp540.00</li>
-      <li>Rp720.00
-      </li>
-      <li>Rp800.00
-      </li>
-    </ol>
-  </div>
-  <div class="w3-col s6">
-    <ol class="pas1" start="4" type="A">
-      <li>Rp960.00
-      </li>
-      <li>Rp1,100.00
-      </li>
-    </ol>
-  </div>
-</div>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2022/05/latihan-soal-pra-ukk-semester-genap.html" target="_blank" rel="noopener noreferrer">Latihan Pra UKK Semester Genap Kelas X</a></div>
-      <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo"><div class="w3-row">
-            <div class="w3-col s6">Misal:<br>
-            benda <em>A</em> = <em>x</em>, dan<br>
-            benda <em>B</em> = <em>y</em>
-            \begin{cases}
-            3x+4y&=2700\\
-            6x+2y&=3600&{\color{red}:2}
-            \end{cases}
-            \begin{aligned}
-            3x+4y&=2700\\
-            3x+y&=1800&-\\\hline
-            3y&=900\\
-            y&=\frac{900}3\\
-            &=300
-            \end{aligned}</div>
-            <div class="w3-col s6">\begin{aligned}
-            3x+y&=1800\\
-            3x+300&=1800\\
-            3x&=1800-300\\
-            3x&=1500\\
-            x&=\frac{1500}3\\
-            &=500
-            \end{aligned}
-            \begin{aligned}
-            x+y&=500+300\\
-            &=\boxed{\boxed{800}}
-            \end{aligned}</div>
-          </div>
-          </div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, harga yang harus
-            dibayarkan jika Latif membeli sebuah benda <em>A</em> dan sebuah benda <em>B</em> adalah Rp800,00.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-      </details>
-      <hr>
-    </div>
+        <!-- ================= DAFTAR 10 SOAL ================= -->
 
-    <div class="justify" id="9">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Nada membeli kue untuk lebaran. Harga satu kaleng kue nastar sama dengan 2 kali harga satu kaleng kue keju. Harga 3 kaleng kue nastar dan 2 kaleng kue keju Rp480.000,00. Uang yang harus dibayarkan Nada untuk membeli 2 kaleng kue nastar dan 3 kaleng kue keju adalah ....
-      <div class="w3-row">
-        <div class="w3-col s6">
-          <ol class="pas1" type="A">
-            <li>Rp480.000,00</li>
-            <li>Rp420.000,00</li>
-            <li>Rp360.000,00</li>
-          </ol>
-        </div>
-        <div class="w3-col s6">
-          <ol class="pas1" start="4" type="A">
-            <li>Rp240.000,00</li>
-            <li>Rp180.000,00</li>
-          </ol>
-        </div>
-      </div>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://www.defantri.com/2022/01/pembahasan-spldv-matematika-smp.html" target="_blank" rel="noopener noreferrer">defantri</a></div>
-      <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo">Kita misalkan harga kue nastar dengan <em>n</em> dan harga kue keju dengan <em>k</em>.<br><br>
-            
-            Harga satu kaleng kue nastar sama dengan 2 kali harga satu kaleng kue keju <br>
-            <em>n</em> = 2<em>k</em>
-            <br><br>
-            Harga 3 kaleng kue nastar dan 2 kaleng kue keju Rp480.000,00, sehingga kita peroleh persamaan <br>
-            3<em>n</em> + 2<em>k</em> = 480.000.
-            <br><br>
-            Dari kedua persamaan di atas dapat kita peroleh:<br>
-            \(\begin{aligned}
-            3n+n&=480000\\
-            4n&=480000\\
-            n&=120000
-            \end{aligned}\) <br><br>
-            \(\begin{aligned}
-            n&=2k\\
-            120000&=2k\\
-            k&=60000
-            \end{aligned}\) <br><br>
-            \(\begin{aligned}
-            2n+3k&=2(120000)+3(60000)\\
-            &=240000+180000\\
-            &=420000
-            \end{aligned}\)
-          </div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, uang yang harus dibayarkan Nada untuk membeli 2 kaleng kue nastar dan 3 kaleng kue keju adalah Rp420.000,00.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-      </details>
-      <hr>
-    </div>
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika \(2x+3y=4a+1\) dan \(3x-5y=a+p\), maka \(10x-23y+5=\) ....
+                <ol class="pilgan">
+                    <li>\(4p+4\)</li>
+                    <li>\(4p+5\)</li>
+                    <li>\(4p+6\)</li>
+                    <li>\(4p+7\)</li>
+                    <li>\(4p+8\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Ganesha Operation</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <b>CARA 1</b>
+                    \[
+                    \begin{array}{rcl|l}
+                    2x+3y&=&4a+1&\times3\\
+                    3x-5y&=&a+p&\times2
+                    \end{array}
+                    \]
+                    \[
+                    \begin{array}{rcrrcll}
+                    &6x&+&9y&=&12a+3&\\
+                    &6x&-&10y&=&2a+2p&\qquad-\\\hline
+                    &&&19y&=&10a-2p+3\\
+                    &&&y&=&\dfrac{10a-2p+3}{19}
+                    \end{array}
+                    \]
+                    \[
+                    \begin{aligned}
+                    2x+3y&=4a+1\\[4pt]
+                    2x+3\left(\dfrac{10a-2p+3}{19}\right)&=4a+1\\[4pt]
+                    2x+\dfrac{30a-6p+9}{19}&=4a+1\\[4pt]
+                    2x&=4a+1-\dfrac{30a-6p+9}{19}\\[4pt]
+                    2x&=\dfrac{(4a+1)19-(30a-6p+9)}{19}\\[4pt]
+                    2x&=\dfrac{76a+19-30a+6p-9}{19}\\[4pt]
+                    2x&=\dfrac{46a+6p+10}{19}\\[4pt]
+                    x&=\dfrac{23a+3p+5}{19}
+                    \end{aligned}
+                    \]
+                    \[
+                    \begin{aligned}
+                    10x-23y+5&=10\left(\dfrac{23a+3p+5}{19}\right)-23\left(\dfrac{10a-2p+3}{19}\right)+5\\
+                    &=\dfrac{10(23a+3p+5)-23(10a-2p+3)+5(19)}{19}\\
+                    &=\dfrac{230a+30p+50-230a+46p-69+95}{19}\\
+                    &=\dfrac{76p+76}{19}\\
+                    &=4p+4
+                    \end{aligned}
+                    \]
+                    <b>CARA 2</b>
+                    \[
+                    \begin{array}{rcl|l}
+                    2x+3y&=&4a+1&\times1\\
+                    3x-5y&=&a+p&\times4
+                    \end{array}
+                    \]
+                    \[
+                    \begin{aligned}
+                    2x+3y&=4a+1\\
+                    12x-20y&=4a+4p\qquad-\\\hline
+                    -10x+23y&=-4p+1\\
+                    10x-23y&=4p-1\\
+                    10x-23y+5&=4p-1+5\\
+                    &=4p+4
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(10x-23y+5=4p+4\).<br>JAWAB: A</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-    <div class="justify" id="10">
-      <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-      Himpunan penyelesaian dari sistem persamaan <br>
-      7<em>x</em> + 5<em>y</em> = 2 <br>
-      5<em>x</em> + 7<em>y</em> = &minus;2 <br>
-      adalah <e>{(<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>)}.</e> Nilai <e><em>x</em><sub>0</sub> &minus; <em>y</em><sub>0</sub> = ....</e>
-      <div class="w3-row">
-        <div class="w3-col s6">
-          <ol class="pas1" type="A">
-            <li>&minus;2</li>
-            <li>&minus;1</li>
-            <li>0</li>
-          </ol>
-        </div>
-        <div class="w3-col s6">
-          <ol class="pas1" start="4" type="A">
-            <li>1</li>
-            <li>2</li>
-          </ol>
-        </div>
-      </div>
-      <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
-      <details>
-        <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-        <div class="w3-card-4">
-          <div class="w3-padding w3-sand flo"><h3>CARA CEPAT</h3>
-            \(\begin{aligned}
-            7x_0+5y_0&=2\\
-            5x_0+7y_0&=-2&-\\\hline 
-            2x_0-2y_0&=4\\
-            x_0-y_0&=\color{blue}\boxed{\boxed{\color{black}2}}
-            \end{aligned}\)
-          </div>
-          <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>x</em><sub>0</sub> &minus; <em>y</em><sub>0</sub> = 2</e>.<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-        </div>
-      </details>
-      <hr>
-    </div>
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Misalkan \((p,q)=(p_1,q_1)\) adalah penyelesaian sistem persamaan:
+                \[\begin{cases}5p+4q&=6\\p-2q&=4\end{cases}\]
+                Nilai \(2p_1+q_1=\) ....
+                <ol class="pilgan pilgan-5kolom">
+                    <li>3</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>10</li>
+                    <li>13</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <b>CARA 1</b>
+                    \[
+                    \begin{aligned}
+                    5p+4q&=6&\times1\\
+                    p-2q&=4&\times2
+                    \end{aligned}
+                    \]
+                    \[
+                    \begin{aligned}
+                    5p+4q&=6\\
+                    2p-4q&=8&+\\\hline
+                    7p&=14\\
+                    p&=2
+                    \end{aligned}
+                    \]
+                    \[
+                    \begin{aligned}
+                    p-2q&=4\\
+                    2-2q&=4\\
+                    -2q&=2\\
+                    q&=-1
+                    \end{aligned}
+                    \]
+                    \[
+                    \begin{aligned}
+                    2p_1+q_1&=2(2)+(-1)\\
+                    &=4-1\\
+                    &=\boxed{\boxed{3}}
+                    \end{aligned}
+                    \]
+                    <b>CARA 2</b>
+                    \[
+                    \begin{aligned}
+                    \begin{pmatrix}2p_1+q_1\end{pmatrix}&=\begin{pmatrix}2&1\end{pmatrix}\begin{pmatrix}5&4\\1&-2\end{pmatrix}^{-1}\begin{pmatrix}6\\4\end{pmatrix}\\
+                    &=\begin{pmatrix}2&1\end{pmatrix}\dfrac1{5\cdot(-2)-4\cdot1}\begin{pmatrix}-2&-4\\-1&5\end{pmatrix}\begin{pmatrix}6\\4\end{pmatrix}\\
+                    &=\begin{pmatrix}2&1\end{pmatrix}\dfrac1{-14}\begin{pmatrix}-28\\14\end{pmatrix}\\
+                    &=\begin{pmatrix}2&1\end{pmatrix}\begin{pmatrix}2\\-1\end{pmatrix}\\
+                    &=\begin{pmatrix}3\end{pmatrix}
+                    \end{aligned}
+                    \]
+                    <b>CARA 3</b>
+                    \[
+                    \begin{cases}
+                    5p+4q=6\qquad&\color{red}{\times5}\\
+                    p-2q=4&\color{red}{\times3}
+                    \end{cases}
+                    \]
+                    \[
+                    \begin{aligned}
+                    25p+20q&=30\\
+                    3p-6q&=12\qquad\color{red}{+}\\\hline
+                    28p+14q&=42\\
+                    2p+q&=3\\
+                    2p_1+q_1&=\boxed{\boxed{3}}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(2p_1+q_1=3\).<br>JAWAB: A</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-  <br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div><br>
-  <script>soal(spldv,1,1)</script>
-</div>
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Carilah himpunan penyelesaian dari:
+                \[2\sqrt2x+\sqrt3y=7\]
+                \[\sqrt2x+2\sqrt3y=8\]
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div class="row">
+                        <div class="col">
+                            \[
+                            \begin{aligned}
+                            2\sqrt2x+\sqrt3y&=7\qquad\color{red}{\times2}\\
+                            \sqrt2x+2\sqrt3y&=8
+                            \end{aligned}
+                            \]
+                            \[
+                            \begin{aligned}
+                            4\sqrt2x+2\sqrt3y&=14\\
+                            \sqrt2x+2\sqrt3y&=8\qquad-\\\hline
+                            3\sqrt2x&=6\\
+                            x&=\dfrac6{3\sqrt2}\color{red}{\cdot\dfrac{\sqrt2}{\sqrt2}}\\[3.7pt]
+                            &=\dfrac{6\sqrt2}6\\
+                            &=\boxed{\boxed{\sqrt2}}
+                            \end{aligned}
+                            \]
+                        </div>
+                        <div class="col">
+                            \[
+                            \begin{aligned}
+                            2\sqrt2x+\sqrt3y&=7\\
+                            2\sqrt2(\sqrt2)+\sqrt3y&=7\\
+                            4+\sqrt3y&=7\\
+                            \sqrt3y&=3\\
+                            y&=\dfrac3{\sqrt3}\\
+                            y&=\boxed{\boxed{\sqrt3}}
+                            \end{aligned}
+                            \]
+                        </div>
+                    </div>
+                    <div class="kesimpulan">Jadi, Hp = \(\left\{\left(\sqrt2,\sqrt3\right)\right\}\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika \(x+2y=3a+1\) dan \(3x-y=a+p\), maka nilai \(8x-5y\) adalah ....
+                <ol class="pilgan">
+                    <li>\(3p+2\)</li>
+                    <li>\(3p+1\)</li>
+                    <li>\(3p-1\)</li>
+                    <li>\(3p-2\)</li>
+                    <li>\(3p-3\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \[3x-y=a+p\qquad\times3\]
+                    \[
+                    \begin{aligned}
+                    9x-3y&=3a+3p\\
+                    x+2y&=3a+1&-\\\hline
+                    8x-5y&=\boxed{\boxed{3p-1}}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(8x-5y=3p-1\).<br>JAWAB: C</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Himpunan penyelesaian dari sistem persamaan \(\dfrac5x+\dfrac4y=13\) dan \(\dfrac3x-\dfrac2y=21\) adalah \(\{(x_0,y_0)\}\). Nilai \(x_0-y_0=\) ....
+                <ol class="pilgan">
+                    <li>\(\dfrac4{15}\)</li>
+                    <li>\(\dfrac13\)</li>
+                    <li>\(\dfrac25\)</li>
+                    <li>\(\dfrac7{15}\)</li>
+                    <li>\(\dfrac8{15}\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div class="row">
+                        <div class="col">
+                            Misal \(\dfrac1x=a\) dan \(\dfrac1y=b\)
+                            \[
+                            \begin{aligned}
+                            5a+4b&=13\\
+                            3a-2b&=21&\color{red}{\times2}
+                            \end{aligned}
+                            \]
+                            \[
+                            \begin{aligned}
+                            5a+4b&=13\\
+                            6a-4b&=42&\color{red}{+}\\\hline
+                            11a&=55\\
+                            a&=5\\
+                            x_0&=\dfrac15
+                            \end{aligned}
+                            \]
+                        </div>
+                        <div class="col">
+                            \[
+                            \begin{aligned}
+                            3a-2b&=21\\
+                            3(5)-2b&=21\\
+                            15-2b&=21\\
+                            -2b&=6\\
+                            b&=-3\\
+                            y_0&=-\dfrac13
+                            \end{aligned}
+                            \]
+                            \[
+                            \begin{aligned}
+                            x_0-y_0&=\dfrac15-\left(-\dfrac13\right)\\
+                            &=\boxed{\boxed{\dfrac8{15}}}
+                            \end{aligned}
+                            \]
+                        </div>
+                    </div>
+                    <div class="kesimpulan">Jadi, \(x_0-y_0=\dfrac8{15}\).<br>JAWAB: E</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 6 -->
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui dua persamaan \(\dfrac2{x+y}+\dfrac6{x-y}=2\) dan \(\dfrac4{x+y}-\dfrac9{x-y}=-1\). Nilai \(\dfrac{x}y\) yang memenuhi kedua persamaan tersebut adalah ....
+                <ol class="pilgan pilgan-5kolom">
+                    <li>11</li>
+                    <li>9</li>
+                    <li>1</li>
+                    <li>\(-9\)</li>
+                    <li>\(-11\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <b>CARA BIASA</b>
+                    \[
+                    \begin{aligned}
+                    \dfrac2{x+y}+\dfrac6{x-y}&=2\qquad&\color{red}\times2\\[3.7pt]
+                    \dfrac4{x+y}-\dfrac9{x-y}&=-1
+                    \end{aligned}
+                    \]
+                    \[
+                    \begin{aligned}
+                    \dfrac4{x+y}+\dfrac{12}{x-y}&=4\\[3.7pt]
+                    \dfrac4{x+y}-\dfrac9{x-y}&=-1\ &\color{red}{-}\\\hline
+                    \dfrac{21}{x-y}&=5\\[3.7pt]
+                    x-y&=\dfrac{21}5
+                    \end{aligned}
+                    \]
+                    \[
+                    \begin{aligned}
+                    \dfrac2{x+y}+\dfrac6{x-y}&=2\\[3.7pt]
+                    \dfrac2{x+y}+\dfrac6{\dfrac{21}5}&=2\\[3.7pt]
+                    \dfrac2{x+y}+\dfrac{30}{21}&=2\\[3.7pt]
+                    \dfrac2{x+y}+\dfrac{10}7&=2\\[3.7pt]
+                    \dfrac2{x+y}&=2-\dfrac{10}7\\[3.7pt]
+                    \dfrac2{x+y}&=\dfrac47\\[3.7pt]
+                    \dfrac1{x+y}&=\dfrac27\\[3.7pt]
+                    x+y&=\dfrac72
+                    \end{aligned}
+                    \]
+                    \[
+                    \begin{aligned}
+                    x+y&=\dfrac72\\[3.7pt]
+                    x-y&=\dfrac{21}5\ &\color{red}{+}\\\hline
+                    2x&=\dfrac{77}{10}\\[3.7pt]
+                    x&=\dfrac{77}{20}
+                    \end{aligned}
+                    \]
+                    \[
+                    \begin{aligned}
+                    x+y&=\dfrac72\\[3.7pt]
+                    \dfrac{77}{20}+y&=\dfrac72\\[3.7pt]
+                    y&=\dfrac72-\dfrac{77}{20}\\[3.7pt]
+                    &=-\dfrac7{20}
+                    \end{aligned}
+                    \]
+                    \[
+                    \begin{aligned}
+                    \dfrac{x}y&=\dfrac{\dfrac{77}{20}}{-\dfrac7{20}}\\[3.7pt]
+                    &=-\dfrac{77}7\\
+                    &=\boxed{\boxed{-11}}
+                    \end{aligned}
+                    \]
+                    <b>CARA CEPAT</b>
+                    \[
+                    \begin{aligned}
+                    \dfrac2{x+y}+\dfrac6{x-y}&=2\ &\color{red}{:2}\\[3.7pt]
+                    \dfrac1{x+y}+\dfrac3{x-y}&=1
+                    \end{aligned}
+                    \]
+                    \[
+                    \begin{aligned}
+                    \dfrac1{x+y}+\dfrac3{x-y}&=1\\[3.7pt]
+                    \dfrac4{x+y}-\dfrac9{x-y}&=-1\ &\color{red}{+}\\\hline
+                    \dfrac5{x+y}-\dfrac6{x-y}&=0\\[3.7pt]
+                    \dfrac5{x+y}&=\dfrac6{x-y}\\[3.7pt]
+                    5x-5y&=6x+6y\\
+                    -x&=11y\\
+                    \dfrac{x}y&=\dfrac{11}{-1}\\
+                    &=\boxed{\boxed{-11}}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(\dfrac{x}y=-11\).<br>JAWAB: E</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 7 -->
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Misalkan \(x\) dan \(y\) memenuhi persamaan
+                \[\begin{cases}4x+7y&=61\\2x+9y&=69\end{cases}\]
+                Maka pernyataan yang benar adalah ....
+                <ol class="pilgan">
+                    <li>\(x\gt y\)</li>
+                    <li>\(x\lt y\)</li>
+                    <li>\(x=y\)</li>
+                    <li>\(x^2\le y^2\)</li>
+                    <li>\(x\) dan \(y\) tidak dapat ditentukan</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">SKMP Juli 2020</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div class="row">
+                        <div class="col">
+                            \[
+                            \begin{cases}
+                            4x+7y&=61\\
+                            2x+9y&=69\qquad{\color{red}\times2}
+                            \end{cases}
+                            \]
+                            \[
+                            \begin{aligned}
+                            4x+7y&=61\\
+                            4x+18y&=138&{\color{red}-}\\\hline
+                            -11y&=-77\\
+                            y&=7
+                            \end{aligned}
+                            \]
+                        </div>
+                        <div class="col">
+                            \[
+                            \begin{aligned}
+                            4x+7y&=61\\
+                            4x+7(7)&=61\\
+                            4x+49&=61\\
+                            4x&=12\\
+                            x&=3
+                            \end{aligned}
+                            \]
+                            Karena \(x=3\) dan \(y=7\), maka \(x\lt y\).
+                        </div>
+                    </div>
+                    <div class="kesimpulan">Jadi, \(x\lt y\).<br>JAWAB: B</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 8 -->
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Rini membeli 3 benda \(A\) dan 4 benda \(B\) dengan membayar Rp2.700,00. Sementara Anis membeli 6 benda \(A\) dan 2 benda \(B\) dengan membayar Rp3.600,00. Harga yang harus dibayarkan jika Latif membeli sebuah benda \(A\) dan sebuah benda \(B\) adalah ....
+                <ol class="pilgan">
+                    <li>Rp540,00</li>
+                    <li>Rp720,00</li>
+                    <li>Rp800,00</li>
+                    <li>Rp960,00</li>
+                    <li>Rp1.100,00</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Latihan Pra UKK Semester Genap Kelas X</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <div class="row">
+                        <div class="col">
+                            Misal benda \(A=x\) dan benda \(B=y\).
+                            \[
+                            \begin{cases}
+                            3x+4y&=2700\\
+                            6x+2y&=3600&{\color{red}:2}
+                            \end{cases}
+                            \]
+                            \[
+                            \begin{aligned}
+                            3x+4y&=2700\\
+                            3x+y&=1800&-\\\hline
+                            3y&=900\\
+                            y&=\frac{900}3\\
+                            &=300
+                            \end{aligned}
+                            \]
+                        </div>
+                        <div class="col">
+                            \[
+                            \begin{aligned}
+                            3x+y&=1800\\
+                            3x+300&=1800\\
+                            3x&=1800-300\\
+                            3x&=1500\\
+                            x&=\frac{1500}3\\
+                            &=500
+                            \end{aligned}
+                            \]
+                            \[
+                            \begin{aligned}
+                            x+y&=500+300\\
+                            &=\boxed{\boxed{800}}
+                            \end{aligned}
+                            \]
+                        </div>
+                    </div>
+                    <div class="kesimpulan">Jadi, harga yang harus dibayarkan jika Latif membeli sebuah benda \(A\) dan sebuah benda \(B\) adalah Rp800,00.<br>JAWAB: C</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 9 -->
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Nada membeli kue untuk lebaran. Harga satu kaleng kue nastar sama dengan 2 kali harga satu kaleng kue keju. Harga 3 kaleng kue nastar dan 2 kaleng kue keju Rp480.000,00. Uang yang harus dibayarkan Nada untuk membeli 2 kaleng kue nastar dan 3 kaleng kue keju adalah ....
+                <ol class="pilgan">
+                    <li>Rp480.000,00</li>
+                    <li>Rp420.000,00</li>
+                    <li>Rp360.000,00</li>
+                    <li>Rp240.000,00</li>
+                    <li>Rp180.000,00</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://www.defantri.com/2022/01/pembahasan-spldv-matematika-smp.html" target="_blank" rel="noopener noreferrer">defantri</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Misalkan harga kue nastar \(=n\) dan harga kue keju \(=k\).<br><br>
+                    Harga satu kaleng kue nastar sama dengan 2 kali harga satu kaleng kue keju, sehingga
+                    \[n=2k\]
+                    Harga 3 kaleng kue nastar dan 2 kaleng kue keju Rp480.000,00, sehingga
+                    \[3n+2k=480000\]
+                    Dari kedua persamaan di atas diperoleh:
+                    \[
+                    \begin{aligned}
+                    3n+n&=480000\\
+                    4n&=480000\\
+                    n&=120000
+                    \end{aligned}
+                    \]
+                    \[
+                    \begin{aligned}
+                    n&=2k\\
+                    120000&=2k\\
+                    k&=60000
+                    \end{aligned}
+                    \]
+                    \[
+                    \begin{aligned}
+                    2n+3k&=2(120000)+3(60000)\\
+                    &=240000+180000\\
+                    &=420000
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, uang yang harus dibayarkan Nada untuk membeli 2 kaleng kue nastar dan 3 kaleng kue keju adalah Rp420.000,00.<br>JAWAB: B</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 10 -->
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Himpunan penyelesaian dari sistem persamaan
+                \[\begin{cases}7x+5y&=2\\5x+7y&=-2\end{cases}\]
+                adalah \(\{(x_0,y_0)\}\). Nilai \(x_0-y_0=\) ....
+                <ol class="pilgan pilgan-5kolom">
+                    <li>\(-2\)</li>
+                    <li>\(-1\)</li>
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    <b>CARA CEPAT</b>
+                    \[
+                    \begin{aligned}
+                    7x_0+5y_0&=2\\
+                    5x_0+7y_0&=-2&-\\\hline
+                    2x_0-2y_0&=4\\
+                    x_0-y_0&=\color{blue}\boxed{\boxed{\color{black}2}}
+                    \end{aligned}
+                    \]
+                    <div class="kesimpulan">Jadi, \(x_0-y_0=2\).<br>JAWAB: E</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
+
+</html>

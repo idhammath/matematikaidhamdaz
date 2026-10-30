@@ -1,90 +1,102 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HOTS Zone : Sistem Persamaan Trigonometri</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTS - Sistem Persamaan Trigonometri</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Sistem Persamaan Trigonometri</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
-
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
-  <br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-
-  <div id="1" class="justify">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Diketahui sistem persamaan: <br>
-    $\begin{cases}\sin\left(x+y\right)=1+\dfrac15\cos y\\[4pt]\sin\left(x-\right)=-1+\cos y\end{cases}$ <br>
-    dengan $0\lt y\lt\dfrac{\pi}2$. maka <e>cos 2<em>x</em> =</e> ....
-    <div class="w3-row">
-        <div class="w3-col s6">
-            <ol class="pas1" type="A">
-                <li class="pb">$\dfrac7{25}$</li>
-                <li class="pb">$\dfrac7{24}$</li>
-                <li>$-\dfrac7{25}$</li>
-            </ol>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-                <li class="pb">$-\dfrac7{24}$</li>
-                <li>$-\dfrac{17}{25}$</li>
-            </ol>
-        </div>
-    </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">\(\begin{aligned}
-            \sin\left(x+y\right)&=1+\dfrac15\cos y\\[4pt]\sin\left(x-\right)&=-1+\cos y&{\color{red}+}\\\hline
-            \sin\left(x+y\right)+\sin\left(x-\right)&=\dfrac65\cos y\\[4pt] 
-            2\sin x\cos y&=\dfrac65\cos y\\[4pt] 
-            \sin x&=\dfrac35
-        \end{aligned}\) <br><br>
-        \(\begin{aligned}
-        \cos 2x&=1-2\sin^2x\\
-        &=1-2\left(\dfrac35\right)^2\\[4pt]
-        &=1-2\left(\dfrac9{25}\right)\\[4pt]
-        &=1-\dfrac{18}{25}\\
-        &=\color{blue}\boxed{\boxed{\color{black}\dfrac7{25}}}
-        \end{aligned}\)
-    </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, $\cos2x=\dfrac7{25}$.<br><b>JAWAB: A</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+    </header>
 
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(sispertrig,3,1)</script>
-</div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">HOTS</span>
+                materi <span class="topic-highlight">Sistem Persamaan Trigonometri</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui sistem persamaan:
+                $$\begin{cases}
+                \sin(x + y) = 1 + \dfrac{1}{5}\cos y\\[6pt]
+                \sin(x - y) = -1 + \cos y
+                \end{cases}$$
+                dengan $0 < y < \dfrac{\pi}{2}$, maka nilai <e>$\cos 2x =$</e> ....
+                <ol class="pilgan">
+                    <li>$\dfrac{7}{25}$</li>
+                    <li>$\dfrac{7}{24}$</li>
+                    <li>$-\dfrac{7}{25}$</li>
+                    <li>$-\dfrac{7}{24}$</li>
+                    <li>$-\dfrac{17}{25}$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Jumlahkan kedua persamaan pada sistem tersebut:
+                    $$\begin{aligned}
+                    \sin(x + y) &= 1 + \frac{1}{5}\cos y\\[4pt]
+                    \sin(x - y) &= -1 + \cos y \quad (+)\\ \hline
+                    \sin(x + y) + \sin(x - y) &= \frac{6}{5}\cos y\\[4pt]
+                    2\sin x\cos y &= \frac{6}{5}\cos y
+                    \end{aligned}$$
+                    Karena $0 < y < \dfrac{\pi}{2}$, maka $\cos y \neq 0$, sehingga kedua ruas dapat dibagi dengan $2\cos y$:
+                    $$\sin x = \frac{3}{5}$$
+                    Selanjutnya gunakan identitas sudut rangkap $\cos 2x = 1 - 2\sin^2 x$:
+                    $$\begin{aligned}
+                    \cos 2x &= 1 - 2\sin^2 x\\[4pt]
+                    &= 1 - 2\left(\frac{3}{5}\right)^2\\[4pt]
+                    &= 1 - 2\left(\frac{9}{25}\right)\\[4pt]
+                    &= 1 - \frac{18}{25} = \boxed{\frac{7}{25}}
+                    \end{aligned}$$
+                    <div class="kesimpulan">Jadi, nilai $\cos 2x = \dfrac{7}{25}$ (A).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

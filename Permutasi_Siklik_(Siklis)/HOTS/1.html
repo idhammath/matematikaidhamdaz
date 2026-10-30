@@ -1,108 +1,268 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HOTS Zone : Permutasi Siklik (Siklis)</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+  <title>Latihan Soal - Permutasi Siklik (Siklis)</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: false},{left: '\\(', right: '\\)', display: false},{left: '\\[', right: '\\]', display: true}]});"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/idhamdaz/GeoSVG@main/GeoSVG.js"
+    onerror="this.onerror=null;this.src='../../scr/GeoSVG.js'"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Permutasi Siklik (Siklis)</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
+  <main class="container">
 
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
-  <br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
+    <header class="page-header">
+      <h1>Kumpulan Soal <span class="topic-highlight">Permutasi Siklik (Siklis)</span></h1>
+      <p>Gunakan soal-soal berikut untuk menguji pemahamanmu. Jika butuh diskusi, silakan bergabung ke grup <a
+          href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener">Matematika Idhamdaz</a>.</p>
 
-  <div class="justify" id="1">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Sebuah acara rapat dihadiri oleh empat siswa perwakilan kelas 7, tiga siswa kelas 8, dua siswa kelas 9. seorang guru dan ketua OS1S. Acara tersebut berlangsung di salah satu ruangan yang menggunakan meja bundar. Jika perwakilan siswa harus duduk bersamaan sesuai kelasnya dan ketua OSIS harus duduk berdekatan di sebelah guru, maka banyak susunan duduk berbeda yang dapat diatur oleh panitia acara adalah .. . susunan.
-    <div class="w3-row">
-      <div class="w3-col s2"><ol type="A">
-        <li>3456</li>
-      </ol></div>
-      <div class="w3-col s2"><ol type="A" start="2">
-        <li>2023</li>
-      </ol></div>
-      <div class="w3-col s2"><ol type="A" start="3">
-        <li>4045</li>
-      </ol></div>
-      <div class="w3-col s2"><ol type="A" start="4">
-        <li>2348</li>
-      </ol></div>
-      <div class="w3-col s2"><ol type="A" start="5">
-        <li>2876</li>
-      </ol></div>
+      <div id="level-nav" class="level-nav"></div>
+    </header>
+
+    <div class="pagination-wrapper"></div>
+
+    <div id="soal-container">
+
+      <!-- SOAL 1 -->
+      <article class="soal-item" id="1">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Sebuah acara rapat dihadiri oleh empat siswa perwakilan kelas 7, tiga siswa kelas 8, dua siswa kelas 9, seorang guru dan ketua OSIS. Acara tersebut berlangsung di salah satu ruangan yang menggunakan meja bundar. Jika perwakilan siswa harus duduk bersamaan sesuai kelasnya dan ketua OSIS harus duduk berdekatan di sebelah guru, maka banyak susunan duduk berbeda yang dapat diatur oleh panitia acara adalah ... susunan.
+          <ol class="pilgan pilgan-3kolom">
+            <li>3456</li>
+            <li>2023</li>
+            <li>4045</li>
+            <li>2348</li>
+            <li>2876</li>
+          </ol>
+        </div>
+        <div class="soal-sumber">Sumber: <a href="https://forummatematika.freeforums.net/thread/33/" target="_blank" rel="noopener noreferrer">OMITS 16th - SMP</a></div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Kita anggap ada 4 kelompok. Kelompok 1 ada 4 orang (kelas 7), kelompok 2 ada 3 orang (kelas 8), kelompok 3 ada 2 orang (kelas 9), dan kelompok 4 ada 2 orang (seorang guru dan ketua OSIS). Banyak susunan adalah <br>
+            \(\begin{aligned}
+            (4-1)!\cdot4!\cdot3!\cdot2!\cdot2!&=6\cdot24\cdot6\cdot2\cdot2\\
+            &=\boxed{\boxed{3456}}
+            \end{aligned}\)
+            <div class="kesimpulan">Jadi, banyak susunan duduk berbeda yang dapat diatur oleh panitia acara adalah 3456 susunan.<br><b>JAWAB: A</b></div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article>
+
+      <!-- SOAL 2 -->
+      <article class="soal-item" id="2">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          SMA Jaya Selalu ingin meningkatkan raihan medali mereka di Olimpiade Sains Nasional (OSN). Untuk itu, para guru berinisiatif untuk mengadakan rapat dan hasilnya akan disampaikan kepada Kepala Sekolah. Ke-15 Guru tersebut duduk di meja bundar. Setelah rapat selesai, tiga orang diantara mereka dipilih untuk menghadap Kepala Sekolah dan menyampaikan hasil rapat. Jika <e><em>P</em> = $\dfrac{a}b$</e> dengan <e>FPB(<em>a</em>, <em>b</em>) = 1</e> menyatakan peluang bahwa setidaknya dua diantara tiga guru yang terpilih duduk bersebelahan, nilai <e><em>a</em> + <em>b</em> =</e> ...
+        </div>
+        <div class="soal-sumber">Sumber: <a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM September 2024</a></div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            $n(S)=\binom{15}{3}=455$
+            <h3>2 orang di antaranya duduk bersebelahan</h3>
+            Dari 15 orang yang duduk di meja bundar, kita ambil 2 orang yang duduk bersebelahan. Ada 15 kemungkinan. Kemudian kita ambil 1 orang yang tidak duduk bersebelahan dengan 2 orang tersebut. Ada 11 kemungkinan. <br>
+            15 &times; 11 = 165
+            <h3>3 orang duduk bersebelahan</h3>
+            Dari 15 orang yang duduk di meja bundar, kita ambil 3 orang yang duduk bersebelahan. Ada 15 kemungkinan. <br><br>
+            \(\begin{aligned}
+            P&=\dfrac{165+15}{455}\\[4pt]
+            &=\dfrac{180}{455}\\[4pt]
+            &=\dfrac{36}{91}
+            \end{aligned}\) <br>
+            36 + 91 = \(\boxed{\boxed{127}}\)
+            <div class="kesimpulan">Jadi, <em>a</em> + <em>b</em> = 127.</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article>
+
+      <!-- SOAL 3 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 3
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 3
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 4 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 4
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 4
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 5 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 5
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 5
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 6 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 6
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 6
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 7 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 7
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 7
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 8 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 8
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 8
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 9 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 9
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 9
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
+      <!-- SOAL 10 -->
+      <!-- <article class="soal-item" id="">
+        <div class="soal-header">
+          <div class="soal-no"></div>
+        </div>
+        <div class="soal-teks">
+          Teks soal 10
+        </div>
+        <div class="soal-sumber">Sumber: -</div>
+        <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+        <div class="pembahasan-box">
+          <div class="pembahasan-title">Pembahasan:</div>
+          <div class="pembahasan-isi">
+            Teks pembahasan 10
+            <div class="kesimpulan">Jadi, ...</div>
+          </div>
+          <button class="btn-tutup">TUTUP</button>
+        </div>
+      </article> -->
+
     </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://forummatematika.freeforums.net/thread/33/" target="_blank" rel="noopener noreferrer">OMITS 16th - SMP</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">Kita anggap ada 4 kelompok. Kelompok 1 ada 4 orang (kelas 7), kelompok 2 ada 3 orang (kelas 8), kelompok 3 ada 2 orang (kelas 9), dan kelompok 4 ada 2 orang (seorang guru dan ketua OSIS). Banyak susunan adalah <br>
-          \(\begin{aligned}
-          (4-1)!\cdot4!\cdot3!\cdot2!\cdot2!&=6\cdot24\cdot6\cdot2\cdot2\\
-          &=\boxed{\boxed{3456}}
-          \end{aligned}\)
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, banyak susunan duduk berbeda yang dapat diatur oleh panitia acara adalah 3456 susunan.<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
 
-  <div class="justify" id="2">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    SMA Jaya Selalu ingin memingkatkan raihan medali mereka di Olimpiade Sains Nasional (OSN). Untuk itu, para guru berinisiatif untuk mengadakan rapat dan hasilnya akan disampaikan kepada Kepala Sekolah. Ke - 15 Guru tersebut duduk di meja bundar. Setelah rapat selesai, tiga orang diantara mereka dipilih untuk menghadap Kepala Sekolah dan menyampaikan hasil rapat. Jika <e><em>P</em> = $\dfrac{a}b$</e> dengan <e>FPB(<em>a</em>, <em>b</em>) = 1</e> menyatakan peluang bahwa setidaknya dua diantara tiga guru yang terpilih duduk bersebelahan, nilai <e><em>a</em> + <em>b</em> =</e> ...
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM September 2024</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">$n(S)=\binom{15}{3}=455$ 
-          <h3>2 orang di antaranya duduk bersebelahan</h3>
-          Dari 15 orang yang duduk di meja bundar, kita ambil 2 orang yang duduk bersebelahan. Ada 15 kemungkinan. Kemudian kita ambil 1 orang yang tidak duduk bersebelahan dengan 2 orang tersebut. Ada 11 kemungkinan. <br>
-          15 &times; 11 = 165
-          <h3>3 orang duduk bersebelahan</h3>
-          Dari 15 orang yang duduk di meja bundar, kita ambil 3 orang yang duduk bersebelahan. Ada 15 kemungkinan. <br><br>
-          \(\begin{aligned}
-          P&=\dfrac{165+15}{455}\\[4pt]
-          &=\dfrac{180}{455}\\[4pt] 
-          &=\dfrac{36}{91}
-          \end{aligned}\) <br>
-          36 + 91 = <kotak>127</kotak>
-        </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <em>a</em> + <em>b</em> = 127.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+    <div class="pagination-wrapper"></div>
 
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(permutasisiklik,3,1)</script>
-</div>
+  </main>
+
+  <script src="../../scr/script.js"></script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

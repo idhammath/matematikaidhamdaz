@@ -1,440 +1,424 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>HOTS Zone : Sistem Persamaan Aljabar [2]</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <script src="../katex/katex.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-     </head> 
-     <body>
-        <div class="w3-container">
-            Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Sistem Persamaan Aljabar</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
-            <h3>Tipe: </h3>
-            <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><span id="snbt" class="w3-bar-item w3-deep-purple w3-hide">SNBT</span><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
-            <br>
-            <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-            <br></br>
-    
-    <div class="justify" id="11"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Diketahui <e><em>a</em> + <em>b</em> = 1</e> dan <e><em>a</em><sup>2</sup> + <em>b</em><sup>2</sup> = 3</e>. Tentukan nilai dari <e><em>a</em><sup>3</sup> + <em>b</em><sup>3</sup></e>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/matematikazoneidgrup" target="_blank">Strategi Pendidikan Olimpiade Matematika</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\(\begin{aligned} 
-              \left(a+b\right)^2&=1^2\\
-              a^2+b^2+2ab&=1\\
-              3+2ab&=1\\
-              2ab&=-2\\
-              ab&=-1
-              \end{aligned}\) <br><br>
-              \(\begin{aligned} 
-              a^3+b^3&=\left(a+b\right)^3-3ab\left(a+b\right)\\
-              &=\left(1\right)^3-3(-1)\left(1\right)\\
-              &=1+3\\
-              &=\boxed{\boxed{4}}
-              \end{aligned}\)
-            </div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, nilai dari <e><em>a</em><sup>3</sup> + <em>b</em><sup>3</sup></e> adalah 4.<button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTS - Sistem Persamaan Aljabar [2]</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        
-        <div class="justify" id="12"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-            Diketahui <e><em>a</em> + <em>b</em> = 3</e> dan <e><em>a</em><sup>2</sup> + <em>b</em><sup>2</sup> = 5</e>. Tentukan nilai dari <e><em>a</em><sup>3</sup> + <em>b</em><sup>3</sup></e>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/matematikazoneidgrup" target="_blank" rel="noopener noreferrer">Strategi Pendidikan Olimpiade Matematika</a></div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\(\begin{aligned} 
-                \left(a+b\right)^2&=3^2\\
-                a^2+b^2+2ab&=9\\
-                5+2ab&=9\\
-                2ab&=4\\
-                ab&=2
-                \end{aligned}\) <br><br>
-                \(\begin{aligned} 
-                a^3+b^3&=\left(a+b\right)^3-3ab\left(a+b\right)\\
-                &=\left(3\right)^3-3(2)\left(3\right)\\
-                &=27-18\\
-                &=\boxed{\boxed{9}}
-                \end{aligned}\)</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, nilai dari <e><em>a</em><sup>3</sup> + <em>b</em><sup>3</sup></e> adalah 9.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        </div>
-        
-        <div class="justify" id="13"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Jika <e>2<em>x</em><sup>2</sup> + <em>xy</em> + 2<em>y</em><sup>2</sup> = 20</e> dan <e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> = 8,</e> tentukan nilai terbesar yang mungkin dari <e><em>x</em> + <em>y</em></e>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://t.me/matematikazoneidgrup" target="_blank" rel="noopener noreferrer">Strategi Pendidikan Olimpiade Matematika</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned}
-        2x^2+xy+2y^2&=20\\
-        2\left(x^2+y^2\right)+xy&=20\\
-        2(20)+xy&=20\\
-        40+xy&=20\\
-        xy&=20
-        \end{aligned}\)<br><br>
-        \(\begin{aligned}
-        \left(x+y\right)^2&=x^2+y^2+2xy\\
-        &=8+2(20)\\
-        &=48\\
-        x+y&=\pm\sqrt{48}\\
-        &=\pm4\sqrt3
-        \end{aligned}\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, nilai terbesar yang mungkin dari <e><em>x</em> + <em>y</em></e> adalah \(4\sqrt3\).<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
-        
-        <div class="justify" id="14">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Jika <e><em>x</em><sup>2</sup> &minus; <em>xy</em> + <em>y</em><sup>2</sup> = 6</e> dan <e><em>x</em><sup>3</sup> + <em>y</em><sup>3</sup> = 18.</e> Maka nilai dari <e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup></e> adalah ....
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Evaluasi GMOM - Jenjang SMA</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="w3-row">
-                <div class="w3-col s6">\(\begin{aligned} 
-                x^3+y^3&=18\\
-                (x+y)\left(x^2-xy+y^2\right)&=18\\
-                (x+y)(6)&=18\\
-                x+y&=3\\
-                (x+y)^3&=3^3\\
-                x^3+y^3+3xy(x+y)&=27\\
-                18+3xy(3)&=27\\
-                9xy&=9\\
-                xy&=1
-                \end{aligned}\)</div>
-                <div class="w3-col s6">\(\begin{aligned}
-                x^2-xy+y^2&=6\\
-                x^2+y^2&=6+xy\\
-                &=6+1\\
-                &=\boxed{\boxed{7}}
-                \end{aligned}\)</div>
-              </div>
-              </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, nilai dari <e><em>x</em><sup>2</sup> + <em>y</em><sup>2</sup></e> adalah 7.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Sistem Persamaan Aljabar</span>
+            </p>
+            <div id="level-nav" class="level-nav"></div>
         </div>
 
-        <div class="justify" id="15">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Tentukan nilai <em>xyz</em> jika \({y+\dfrac1z=z+\dfrac1x=1}\).
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://instagram.com/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">IG Matematika Idhamdaz</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">
-                \(\begin{aligned}
-                \left(x+\dfrac1y\right)\left(y+\dfrac1z\right)\left(z+\dfrac1x\right)&=\left(x+\dfrac1y\right)(1)(1)\\
-                xyz+x+\dfrac1y+y+\dfrac1z+z+\dfrac1x+\dfrac1{xyz}&=x+\dfrac1y\\
-                xyz+1+1+\dfrac1{xyz}&=0\\
-                xyz+2+\dfrac1{xyz}&=0
-                \end{aligned}\)<br>
-                Misal <em>xyz</em> = <em>a</em><br>
-                \(\begin{aligned}
-                a+2+\dfrac1a&=0&\qquad{\color{red}\times a}\\
-                a^2+2a+1&=0\\
-                (a+1)^2&=0\\
-                a&=-1\\
-                xyz&=\boxed{\boxed{-1}}
-                \end{aligned}\)
-              </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <em>xyz</em> = &minus;1.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
+        <!-- Pagination Atas -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-        <div class="justify" id="16">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Jika \({\dfrac{x+2y}6=\dfrac{2y+3z}8=\dfrac{3z+x}{10}}\), maka tentukan nilai \(\dfrac{3yz-3zx-xy}{x^2-2y^2+3z^2}\).
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">IG Matematika Idhamdaz</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo"><div class="w3-row">
-                <div class="w3-col l6">                <details>
-                  <summary class="peny">CARA 1</summary>
-                  <div class="w3-card-4">
-                    <div class="w3-padding w3-sand flo">\(\begin{aligned}
-                    \dfrac{x+2y}6&=\dfrac{2y+3z}8\\
-                    8x+16y&=12y+18z\\
-                    18z&=8x+4y\\
-                    9z&=4x+2y&\qquad{\color{red}(I)}
-                    \end{aligned}\)<br><br>
-                    \(\begin{aligned}
-                    \dfrac{x+2y}6&=\dfrac{3z+x}{10}\\
-                    10x+20y&=18z+6x\\
-                    4x+20y&=18z\\
-                    2x+10y&=9z\\
-                    2x+10y&=4x+2y\\
-                    8y&=2x\\
-                    x&=4y&\qquad{\color{red}(II)}
-                    \end{aligned}\)<br>
-                    Substitusikan (II) ke (I)<br>
-                    \(\begin{aligned}
-                    9z&=4(4y)+2y\\
-                    9z&=18y\\
-                    z&=2y&\qquad{\color{red}(III)}
-                    \end{aligned}\)<br>
-                    Substitusikan (II) dan (III) ke persamaan awal<br>
-                    \(\begin{aligned}
-                    \dfrac{3yz-3zx-xy}{x^2-2y^2+3z^2}&=\dfrac{3y(2y)-3(2y)(4y)-(4y)y}{(4y)^2-2y^2+3(2y)^2}\\
-                    &=\dfrac{6y^2-24y^2-4y^2}{16y^2-2y^2+12y^2}\\
-                    &=\dfrac{-22y^2}{26y^2}\\
-                    &=\boxed{\boxed{-\dfrac{11}{13}}}
-                    \end{aligned}\)
-                  </div>
-                    <div class="w3-brown w3-padding tebal flo"><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-                  </div>
-                </details>
-                <hr>
-  </div>
-                <div class="w3-col l6">              <details>
-                  <summary class="peny">CARA 2</summary>
-                  <div class="w3-card-4">
-                    <div class="w3-padding w3-sand flo">\({\dfrac{x+2y}6=\dfrac{2y+3z}8=\dfrac{3z+x}{10}=k}\) <br><br>
-                      \(\begin{aligned}
-                      x+2y&=6k\\
-                      -2y-3z&=-8k\\
-                      3z+x&=10k&\qquad{\color{red}+}\\\hline\\[-10pt]
-                      2x&=8k\\
-                      x&=4k&\qquad{\color{red}(I)}
-                      \end{aligned}\)<br><br>
-                      \(\begin{aligned}
-                      x+2y&=6k\\
-                      4k+2y&=6k\\
-                      2y&=2k\\
-                      y&=k&\qquad{\color{red}(II)}
-                      \end{aligned}\)<br><br>
-                      \(\begin{aligned}
-                      3z+x&=10k\\
-                      3z+4k&=10k\\
-                      3z&=6k\\
-                      z&=2k&\qquad{\color{red}(III)}
-                      \end{aligned}\)<br><br>
-                      Substitusikan (I), (II) dan (III) ke persamaan awal<br>
-                \(\begin{aligned}
-                \dfrac{3yz-3zx-xy}{x^2-2y^2+3z^2}&=\dfrac{3k(2k)-3(2k)(4k)-(4k)k}{(4k)^2-2k^2+3(2k)^2}\\
-                &=\dfrac{6k^2-24k^2-4k^2}{16k^2-2k^2+12k^2}\\
-                &=\dfrac{-22k^2}{26k^2}\\
-                &=\boxed{\boxed{-\dfrac{11}{13}}}
-                \end{aligned}\)
-                    </div>
-                    <div class="w3-brown w3-padding tebal flo"><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-                  </div>
-                </details>
-                <hr>
-  </div>
-              </div>
-              </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <br><b>JAWAB: </b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
+        <!-- ================= DAFTAR 10 SOAL ================= -->
 
-        <div class="justify" id="17">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Diberikan pasangan bilangan real <e>(<em>a</em><sub>1</sub>, <em>b</em><sub>1</sub>)</e> dan <e>(<em>a</em><sub>2</sub>, <em>b</em><sub>2</sub>)</e> yang memenuhi sistem persamaan 
-          \begin{cases}a\sqrt{2ab}+b\sqrt{2ab}&=2\\a^2+4ab+b^2&=5.\end{cases} Nilai dari <e><em>a</em><sub>1</sub> + <em>a</em><sub>2</sub> + <em>b</em><sub>1</sub> + <em>b</em><sub>2</sub></e> adalah ...
-          <div class="w3-row">
-            <div class="w3-col s6">
-              <ol class="pas1" type="A">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ol>
+        <!-- SOAL 11 -->
+        <article class="soal-item" id="11">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui \(a + b = 1\) dan \(a^2 + b^2 = 3\). Tentukan nilai dari \(a^3 + b^3\).
             </div>
-            <div class="w3-col s6">
-              <ol class="pas1" start="4" type="A">
-                <li>4</li>
-                <li>5</li>
-              </ol>
+            <div class="soal-sumber"><a href="https://t.me/matematikazoneidgrup" target="_blank" rel="noopener noreferrer">Strategi Pendidikan Olimpiade Matematika</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Kuadratkan persamaan pertama:
+                    \[\begin{aligned}
+                    (a + b)^2 &= 1^2 \\
+                    a^2 + b^2 + 2ab &= 1 \\
+                    3 + 2ab &= 1 \\
+                    2ab &= -2 \implies ab = -1
+                    \end{aligned}\]
+                    Gunakan identitas aljabar:
+                    \[\begin{aligned}
+                    a^3 + b^3 &= (a + b)^3 - 3ab(a + b) \\
+                    &= 1^3 - 3(-1)(1) \\
+                    &= 1 + 3 = 4
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, nilai dari \(a^3 + b^3\) adalah 4.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
             </div>
-          </div>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">Misal <e><em>p</em> = <em>a</em> + <em>b</em>,</e> dan \(q=\sqrt{2ab}\gt0\). <br><br>
-                <em>pq</em> = 2 &rarr; <em>p</em> &gt; 0 <br><br>
-                <e><em>p</em><sup>2</sup> + <em>q</em><sup>2</sup> = 5</e><br><br>
-                \(\begin{aligned}
-                p^2+2pq+q^2&=4+5\\
-                (p+q)^2&=9\\
-                p+q&=3
-                \end{aligned}\) <br>
-                didapat <e><em>p</em> = 1</e> dan <e><em>q</em> = 2,</e> atau <e><em>q</em> = 1</e> dan <e><em>p</em> = 2</e>
-                <ul>
-                  <li><em>p</em> = 1 <br>
-                    <e><em>a</em> + <em>b</em> = 1</e><br><br>
-                    \(\begin{aligned}
-                    q&=2\\
-                    \sqrt{2ab}&=2\\
-                    ab&=2
-                    \end{aligned}\) <br>
-                    tidak ada nilai <em>a</em> dan <em>b</em> real yang memenuhi. <br><br>
-                  </li>
-                  <li><em>p</em> = 2 <br>
-                    <e><em>a</em> + <em>b</em> = 2</e><br><br>
-                    \(\begin{aligned}
-                    q&=1\\
-                    \sqrt{2ab}&=1\\
-                    ab&=\dfrac12
-                    \end{aligned}\) <br><br>
-                    <em>a</em> dan <em>b</em> adalah akar dari <br>
-                    \(x^2-2x+\dfrac12=0\) <br>
-                    akar-akarnya adalah <e>(<em>a</em>, <em>b</em>)</e> atau <e>(<em>b</em>, <em>a</em>)</e>, sehingga <e><em>a</em><sub>1</sub> = <em>b</em><sub>2</sub></e> dan <e><em>a</em><sub>2</sub> = <em>b</em><sub>1</sub></e><br>
-                    \(\begin{aligned}
-                    a_1+a_2+b_1+b_2&=2(a_1+b_1)\\
-                    &=2(2)\\
-                    &=4
-                    \end{aligned}\)
-                  </li>
-                </ul>
-              </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <br><b>JAWAB: </b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
-      
-        <div class="justify" id="18">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Nilai minimum <em>p</em> sedemikian sehingga sistem persamaan \begin{cases}a^2+9&=pb\\b^2+9&=pc\\c^2+9&=pa\end{cases} memiliki solusi bilangan real tak negatif <em>a</em>, <em>b</em>, <em>c</em> dapat dinyatakan sebagai $\dfrac{x}y\sqrt{z}$ dengan <em>x</em> dan <em>y</em> bilangan asli yang relatif prima dan <em>z</em> bilangan asli yang tidak habis dibagi bilangan kuadrat selain 1. Nilai dari <e><em>x</em> + <em>y</em> + <em>z</em></e> adalah . . .
-          <div class="w3-row"> 
-           <div class="w3-col s4"> 
-           <ol class="pas1" type="A"> 
-           <li>4</li> 
-           <li>8</li> 
-           </ol> 
-           </div> 
-           <div class="w3-col s4"> 
-           <ol class="pas1" start="3" type="A"> 
-           <li>12</li> 
-           <li>16</li> 
-           </ol> 
-           </div> 
-           <div class="w3-col s4"> 
-           <ol class="pas1" start="5" type="A"> 
-           <li>20</li> 
-           </ol> 
-           </div> 
-           </div>          
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">LMNAS 33 SMA</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned}
-                a^2+9&=pb\\
-                b^2+9&=pc\\
-                c^2+9&=pa&+\\\hline
-                a^2+9+b^2+9+c^2+9&=pa+pb+pc\\
-                a^2-6a+9+b^2-6b+9+c^2-6c+9&=pa+pb+pc-6a-6b-6c\\
-                (a-3)^2+(b-3)^2+(c-3)^2&=(p-6)(a+b+c)
-              \end{aligned}\) <br>
-              Karena <e>(<em>a</em> &minus; 3)<sup>2</sup> + (<em>b</em> &minus; 3)<sup>2</sup> + (<em>c</em> &minus; 3)<sup>2</sup> &ge; 0,</e> maka <e>(<em>p</em> &minus; 6)(<em>a</em> + <em>b</em> + <em>c</em>) &ge; 0.</e><br>
-               Karena <em>a</em>, <em>b</em>, dan <em>c</em> bilangan real tak negatif, maka <e><em>a</em> + <em>b</em> + <em>c</em> &ge; 0,</e> sehingga <e><em>p</em> &minus; 6 &ge; 0</e> atau <e><em>p</em> &ge; 6.</e><br>
-               Didapat <em>x</em> = 6, <em>y</em> = 1, <em>z</em> = 1. <br>
-               <e><em>x</em> + <em>y</em> + <em>z</em> = 6 + 1 + 1 = 8.</e>
-            </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>x</em> + <em>y</em> + <em>z</em> = 8</e>.<br><b>JAWAB: B</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
+        </article>
 
-        <div class="justify" id="19">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Apabila <em>x</em>, <em>y</em>, <em>z</em> adalah solusi riil dari sistem persamaan \begin{aligned}x-\sqrt{yz}&=42\\y-\sqrt{zx}&=6\\z-\sqrt{xy}&=-30\end{aligned} berapakah nilai dari <e><em>x</em> + <em>y</em> + <em>z</em>?</e>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Latihan OSK 2024 SMA</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">Kurangi persamaan (1) dengan (2), didapat <br>
-                \(\begin{aligned}
-                x-y+\sqrt{z}\left(\sqrt{x}-\sqrt{y}\right)&=36\\
-                \left(\sqrt{x}-\sqrt{y}\right)\left(\sqrt{x}+\sqrt{y}+\sqrt{z}\right)&=36&(4)
-                \end{aligned}\) <br><br>
-                Kurangi persamaan (2) dan (3), didapat <br>
-                $\left(\sqrt{y}-\sqrt{z}\right)\left(\sqrt{x}+\sqrt{y}+\sqrt{z}\right)=36....(5)$ <br>
-                Kita lihat bahwa $\sqrt{x}\gt\sqrt{y}\gt\sqrt{z}$ <br><br>
-                Dari persamaan (4) dan (5), didapat<br>
-                \(\begin{aligned}
-                \sqrt{x}-\sqrt{y}&=\sqrt{y}-\sqrt{z}\\
-                \sqrt{x}+\sqrt{z}&=2\sqrt{y}\\
-                \sqrt{y}&=\dfrac{\sqrt{x}+\sqrt{z}}2
-                \end{aligned}\) <br><br>
-                Lalu, dari persamaan (2): <br>
-                \(\begin{aligned}
-                \left(\dfrac{\sqrt{x}+\sqrt{z}}2\right)^2-\sqrt{zx}&=6\\[4pt]
-                \left(\dfrac{\sqrt{x}-\sqrt{z}}2\right)^2&=6\\[4pt]
-                \sqrt{x}-\sqrt{z}&=2\sqrt6
-                \end{aligned}\) <br>
-                $\sqrt{x}=3\sqrt6$, $\sqrt{y}=2\sqrt6$, $\sqrt{z}=\sqrt6$ <br><br>
-                \(\begin{aligned}
-                x+y+z&=\left(3\sqrt6\right)^2+\left(2\sqrt6\right)^2+\left(\sqrt6\right)^2\\
-                &=\color{blue}\boxed{\boxed{\color{black}84}}
-                \end{aligned}\)
-              </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>x</em> + <em>y</em> + <em>z</em> = 84</e>.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+        <!-- SOAL 12 -->
+        <article class="soal-item" id="12">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui \(a + b = 3\) dan \(a^2 + b^2 = 5\). Tentukan nilai dari \(a^3 + b^3\).
             </div>
-          </details>
-          <hr>
-        </div>
+            <div class="soal-sumber"><a href="https://t.me/matematikazoneidgrup" target="_blank" rel="noopener noreferrer">Strategi Pendidikan Olimpiade Matematika</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Kuadratkan persamaan pertama:
+                    \[\begin{aligned}
+                    (a + b)^2 &= 3^2 \\
+                    a^2 + b^2 + 2ab &= 9 \\
+                    5 + 2ab &= 9 \\
+                    2ab &= 4 \implies ab = 2
+                    \end{aligned}\]
+                    Gunakan identitas aljabar:
+                    \[\begin{aligned}
+                    a^3 + b^3 &= (a + b)^3 - 3ab(a + b) \\
+                    &= 3^3 - 3(2)(3) \\
+                    &= 27 - 18 = 9
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, nilai dari \(a^3 + b^3\) adalah 9.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
 
-        <div class="justify" id="20">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Diberikan bilangan real <em>a</em>, <em>b</em>, <em>c</em>, <em>d</em> yang memenuhi sistem persamaan berikut: <br>
-          <em>a</em> + <em>b</em> + 2<em>ab</em> = 4 <br>
-          <em>b</em> + <em>c</em> + 2<em>bc</em> = 7 <br>
-          <em>c</em> + <em>d</em> + 2<em>cd</em> = 2 <br>
-          Tentukan nilai dari <e>(2<em>a</em> + 1)(2<em>d</em> + 1).</e>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="http://" target="_blank" rel="noopener noreferrer">SUMBER</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned}
-              a+b+2ab&=4\\
-              2a+2b+4ab&=8\\
-              (2a+1)(2b+1)-1&=8\\
-              (2a+1)(2b+1)&=9
-              \end{aligned}\) <br><br>
-              Dengan cara yang sama pada persamaan (2) dan (3) didapat: <br>
-              (2<em>b</em> + 1)(2<em>c</em> + 1) = 15 <br>
-              (2<em>c</em> + 1)(2<em>d</em> + 1) = 5 <br><br>
-              \(\begin{aligned}
-              (2a+1)(2d+1)&=\dfrac{(2a+1)(2b+1)(2c+1)(2d+1)}{(2b+1)(2c+1)}\\
-              &=\dfrac{9\cdot5}{15}\\
-              &=\color{blue}\boxed{\boxed{\color{black}3}}
-              \end{aligned}\)
+        <!-- SOAL 13 -->
+        <article class="soal-item" id="13">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika \(2x^2 + xy + 2y^2 = 20\) dan \(x^2 + y^2 = 8\), tentukan nilai terbesar yang mungkin dari \(x + y\).
             </div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <e>(2<em>a</em> + 1)(2<em>d</em> + 1) = 3.</e><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+            <div class="soal-sumber"><a href="https://t.me/matematikazoneidgrup" target="_blank" rel="noopener noreferrer">Strategi Pendidikan Olimpiade Matematika</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Substitusikan \(x^2 + y^2 = 8\) ke persamaan pertama:
+                    \[\begin{aligned}
+                    2(x^2 + y^2) + xy &= 20 \\
+                    2(8) + xy &= 20 \\
+                    16 + xy &= 20 \implies xy = 4
+                    \end{aligned}\]
+                    Bentuk kuadrat dari \((x + y)\):
+                    \[\begin{aligned}
+                    (x + y)^2 &= x^2 + y^2 + 2xy \\
+                    &= 8 + 2(4) \\
+                    &= 16
+                    \end{aligned}\]
+                    Maka \(x + y = \pm\sqrt{16} = \pm 4\). Nilai terbesar yang mungkin adalah 4.
+                    <div class="kesimpulan">Jadi, nilai terbesar yang mungkin dari \(x + y\) adalah 4.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
             </div>
-          </details>
-          <hr>
-        </div>
+        </article>
 
-    <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-    <script>soal(sisper,3,2)</script>    
-   </div>
-   </body>
-</html> 
+        <!-- SOAL 14 -->
+        <article class="soal-item" id="14">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika \(x^2 - xy + y^2 = 6\) dan \(x^3 + y^3 = 18\), maka nilai dari \(x^2 + y^2\) adalah ....
+            </div>
+            <div class="soal-sumber">Evaluasi GMOM - Jenjang SMA</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Faktorkan jumlah pangkat tiga:
+                    \[\begin{aligned}
+                    x^3 + y^3 &= (x + y)(x^2 - xy + y^2) \\
+                    18 &= (x + y)(6) \\
+                    x + y &= 3
+                    \end{aligned}\]
+                    Kuadratkan \(x + y = 3\):
+                    \[\begin{aligned}
+                    (x + y)^2 &= 3^2 \\
+                    x^2 + 2xy + y^2 &= 9
+                    \end{aligned}\]
+                    Kurangkan dengan \(x^2 - xy + y^2 = 6\):
+                    \[\begin{aligned}
+                    (x^2 + 2xy + y^2) - (x^2 - xy + y^2) &= 9 - 6 \\
+                    3xy &= 3 \implies xy = 1
+                    \end{aligned}\]
+                    Maka:
+                    \[x^2 + y^2 = (x^2 - xy + y^2) + xy = 6 + 1 = 7\]
+                    <div class="kesimpulan">Jadi, nilai dari \(x^2 + y^2\) adalah 7.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 15 -->
+        <article class="soal-item" id="15">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tentukan nilai dari \(xyz\) jika \(y + \dfrac{1}{z} = z + \dfrac{1}{x} = 1\).
+            </div>
+            <div class="soal-sumber"><a href="https://instagram.com/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">IG Matematika Idhamdaz</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Dari persamaan yang diberikan:
+                    \[y = 1 - \dfrac{1}{z} = \dfrac{z - 1}{z}\]
+                    \[\dfrac{1}{x} = 1 - z \implies x = \dfrac{1}{1 - z}\]
+                    Kalikan \(x, y,\) dan \(z\):
+                    \[\begin{aligned}
+                    xyz &= \left(\dfrac{1}{1 - z}\right) \cdot \left(\dfrac{z - 1}{z}\right) \cdot z \\
+                    &= \dfrac{z - 1}{1 - z} \cdot \dfrac{z}{z} \\
+                    &= -1
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, nilai \(xyz = -1\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 16 -->
+        <article class="soal-item" id="16">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika \(\dfrac{x+2y}{6} = \dfrac{2y+3z}{8} = \dfrac{3z+x}{10}\), maka tentukan nilai dari:
+                \[\dfrac{3yz - 3zx - xy}{x^2 - 2y^2 + 3z^2}\]
+            </div>
+            <div class="soal-sumber"><a href="http://" target="_blank" rel="noopener noreferrer">IG Matematika Idhamdaz</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Misalkan nilai perbandingan tersebut adalah \(k\):
+                    \[x + 2y = 6k, \quad 2y + 3z = 8k, \quad 3z + x = 10k\]
+                    Jumlahkan ketiga persamaan:
+                    \[\begin{aligned}
+                    2(x + 2y + 3z) &= 6k + 8k + 10k = 24k \\
+                    x + 2y + 3z &= 12k
+                    \end{aligned}\]
+                    Maka masing-masing variabel:
+                    \[\begin{aligned}
+                    x &= 12k - (2y + 3z) = 12k - 8k = 4k \\
+                    2y &= 12k - (3z + x) = 12k - 10k = 2k \implies y = k \\
+                    3z &= 12k - (x + 2y) = 12k - 6k = 6k \implies z = 2k
+                    \end{aligned}\]
+                    Substitusikan nilai \(x = 4k, y = k, z = 2k\) ke ekspresi yang dicari:
+                    \[\begin{aligned}
+                    \dfrac{3yz - 3zx - xy}{x^2 - 2y^2 + 3z^2} &= \dfrac{3(k)(2k) - 3(2k)(4k) - (4k)(k)}{(4k)^2 - 2k^2 + 3(2k)^2} \\[6pt]
+                    &= \dfrac{6k^2 - 24k^2 - 4k^2}{16k^2 - 2k^2 + 12k^2} \\[6pt]
+                    &= \dfrac{-22k^2}{26k^2} \\[6pt]
+                    &= -\dfrac{11}{13}
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, nilai ekspresi tersebut adalah \(-\dfrac{11}{13}\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 17 -->
+        <article class="soal-item" id="17">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diberikan pasangan bilangan real \((a_1, b_1)\) dan \((a_2, b_2)\) yang memenuhi sistem persamaan:
+                \[\begin{cases}
+                a\sqrt{2ab} + b\sqrt{2ab} = 2 \\
+                a^2 + 4ab + b^2 = 5
+                \end{cases}\]
+                Nilai dari \(a_1 + a_2 + b_1 + b_2\) adalah ....
+                <div class="opsi-wrapper">
+                    <ol class="opsi-list" type="A">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="soal-sumber">Grup WhatsApp</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Misalkan \(p = a + b\) dan \(q = \sqrt{2ab} > 0\).<br>
+                    Persamaan pertama menjadi:
+                    \[(a + b)\sqrt{2ab} = 2 \implies pq = 2\]
+                    Persamaan kedua:
+                    \[a^2 + 2ab + b^2 + 2ab = 5 \implies (a + b)^2 + (\sqrt{2ab})^2 = 5 \implies p^2 + q^2 = 5\]
+                    Maka:
+                    \[(p + q)^2 = p^2 + q^2 + 2pq = 5 + 2(2) = 9 \implies p + q = 3\]
+                    Karena \(pq = 2\) dan \(p + q = 3\), nilai \(\{p, q\} = \{1, 2\}\):
+                    <ul>
+                        <li>Jika \(p = 1\) dan \(q = 2\):
+                        \[a + b = 1 \quad \text{dan} \quad \sqrt{2ab} = 2 \implies ab = 2\]
+                        Persamaan kuadrat \(t^2 - t + 2 = 0\) memiliki diskriminan \(D = 1 - 8 = -7 < 0\) (tidak ada solusi real).
+                        </li>
+                        <li>Jika \(p = 2\) dan \(q = 1\):
+                        \[a + b = 2 \quad \text{dan} \quad \sqrt{2ab} = 1 \implies ab = \dfrac{1}{2}\]
+                        Persamaan kuadrat \(t^2 - 2t + \dfrac{1}{2} = 0\) memiliki diskriminan \(D = 4 - 2 = 2 > 0\) (memiliki 2 akar real).
+                        </li>
+                    </ul>
+                    Karena sistem simetris terhadap \(a\) dan \(b\), kedua pasangan solusi adalah \((a_1, b_1)\) dan \((a_2, b_2) = (b_1, a_1)\).<br>
+                    Sehingga:
+                    \[a_1 + a_2 + b_1 + b_2 = (a_1 + b_1) + (a_2 + b_2) = 2 + 2 = 4\]
+                    <div class="kesimpulan">Jadi, \(a_1 + a_2 + b_1 + b_2 = 4\).<br><b>JAWAB: D</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 18 -->
+        <article class="soal-item" id="18">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Nilai minimum \(p\) sedemikian sehingga sistem persamaan
+                \[\begin{cases}
+                a^2 + 9 = pb \\
+                b^2 + 9 = pc \\
+                c^2 + 9 = pa
+                \end{cases}\]
+                memiliki solusi bilangan real tak negatif \(a, b, c\) dapat dinyatakan sebagai \(\dfrac{x}{y}\sqrt{z}\) dengan \(x\) dan \(y\) bilangan asli yang relatif prima dan \(z\) bilangan asli yang tidak habis dibagi bilangan kuadrat selain 1. Nilai dari \(x + y + z\) adalah ....
+                <div class="opsi-wrapper">
+                    <ol class="opsi-list" type="A">
+                        <li>4</li>
+                        <li>8</li>
+                        <li>12</li>
+                        <li>16</li>
+                        <li>20</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">LMNAS 33 SMA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Jumlahkan ketiga persamaan:
+                    \[a^2 + 9 + b^2 + 9 + c^2 + 9 = p(a + b + c)\]
+                    Kurangkan \(6(a + b + c)\) pada kedua ruas:
+                    \[(a^2 - 6a + 9) + (b^2 - 6b + 9) + (c^2 - 6c + 9) = (p - 6)(a + b + c)\]
+                    \[(a - 3)^2 + (b - 3)^2 + (c - 3)^2 = (p - 6)(a + b + c)\]
+                    Karena ruas kiri selalu \(\ge 0\), dan \(a, b, c\) bilangan real tak negatif (sehingga \(a + b + c \ge 0\)), maka:
+                    \[p - 6 \ge 0 \implies p \ge 6\]
+                    Untuk \(p = 6\), terdapat solusi \(a = b = c = 3\) yang memenuhi sistem persamaan:
+                    \[3^2 + 9 = 6(3) \implies 18 = 18\]
+                    Sehingga nilai minimum \(p = 6 = \dfrac{6}{1}\sqrt{1}\).<br>
+                    Diperoleh \(x = 6\), \(y = 1\), dan \(z = 1\).<br>
+                    Nilai \(x + y + z = 6 + 1 + 1 = 8\).
+                    <div class="kesimpulan">Jadi, \(x + y + z = 8\).<br><b>JAWAB: B</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 19 -->
+        <article class="soal-item" id="19">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Apabila \(x, y, z\) adalah solusi riil dari sistem persamaan:
+                \[\begin{aligned}
+                x - \sqrt{yz} &= 42 \\
+                y - \sqrt{zx} &= 6 \\
+                z - \sqrt{xy} &= -30
+                \end{aligned}\]
+                berapakah nilai dari \(x + y + z\)?
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Latihan OSK 2024 SMA</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Kurangkan persamaan (1) dengan (2):
+                    \[\begin{aligned}
+                    (x - y) + (\sqrt{zx} - \sqrt{yz}) &= 36 \\
+                    (\sqrt{x} - \sqrt{y})(\sqrt{x} + \sqrt{y}) + \sqrt{z}(\sqrt{x} - \sqrt{y}) &= 36 \\
+                    (\sqrt{x} - \sqrt{y})(\sqrt{x} + \sqrt{y} + \sqrt{z}) &= 36 \quad \text{...(4)}
+                    \end{aligned}\]
+                    Kurangkan persamaan (2) dengan (3):
+                    \[\begin{aligned}
+                    (y - z) + (\sqrt{xy} - \sqrt{zx}) &= 36 \\
+                    (\sqrt{y} - \sqrt{z})(\sqrt{x} + \sqrt{y} + \sqrt{z}) &= 36 \quad \text{...(5)}
+                    \end{aligned}\]
+                    Bagi persamaan (4) dengan (5):
+                    \[\sqrt{x} - \sqrt{y} = \sqrt{y} - \sqrt{z} \implies \sqrt{y} = \dfrac{\sqrt{x} + \sqrt{z}}{2}\]
+                    Substitusikan ke persamaan (2):
+                    \[\begin{aligned}
+                    y - \sqrt{zx} &= 6 \\
+                    \left(\dfrac{\sqrt{x} + \sqrt{z}}{2}\right)^2 - \sqrt{zx} &= 6 \\
+                    \left(\dfrac{\sqrt{x} - \sqrt{z}}{2}\right)^2 &= 6 \\
+                    \sqrt{x} - \sqrt{z} &= 2\sqrt{6}
+                    \end{aligned}\]
+                    Karena \(\sqrt{x} - \sqrt{y} = \sqrt{y} - \sqrt{z} = \sqrt{6}\), substitusi ke persamaan (4):
+                    \[\sqrt{6}(\sqrt{x} + \sqrt{y} + \sqrt{z}) = 36 \implies \sqrt{x} + \sqrt{y} + \sqrt{z} = 6\sqrt{6}\]
+                    Karena \(\sqrt{x} + \sqrt{z} = 2\sqrt{y}\), maka \(3\sqrt{y} = 6\sqrt{6} \implies \sqrt{y} = 2\sqrt{6}\).<br>
+                    Sehingga \(\sqrt{x} = 3\sqrt{6}\) dan \(\sqrt{z} = \sqrt{6}\).<br><br>
+                    Maka nilai \(x, y, z\):
+                    \[x = (3\sqrt{6})^2 = 54, \quad y = (2\sqrt{6})^2 = 24, \quad z = (\sqrt{6})^2 = 6\]
+                    \[x + y + z = 54 + 24 + 6 = 84\]
+                    <div class="kesimpulan">Jadi, \(x + y + z = 84\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 20 -->
+        <article class="soal-item" id="20">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diberikan bilangan real \(a, b, c, d\) yang memenuhi sistem persamaan berikut:
+                \[\begin{aligned}
+                a + b + 2ab &= 4 \\
+                b + c + 2bc &= 7 \\
+                c + d + 2cd &= 2
+                \end{aligned}\]
+                Tentukan nilai dari \((2a + 1)(2d + 1)\).
+            </div>
+            <div class="soal-sumber">Kumpulan Soal Olimpiade</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Kalikan persamaan pertama dengan 2 lalu tambahkan 1:
+                    \[\begin{aligned}
+                    2a + 2b + 4ab + 1 &= 2(4) + 1 \\
+                    (2a + 1)(2b + 1) &= 9
+                    \end{aligned}\]
+                    Dengan cara yang sama pada persamaan kedua dan ketiga:
+                    \[\begin{aligned}
+                    (2b + 1)(2c + 1) &= 2(7) + 1 = 15 \\
+                    (2c + 1)(2d + 1) &= 2(2) + 1 = 5
+                    \end{aligned}\]
+                    Maka nilai yang dicari:
+                    \[\begin{aligned}
+                    (2a + 1)(2d + 1) &= \dfrac{(2a + 1)(2b + 1) \cdot (2c + 1)(2d + 1)}{(2b + 1)(2c + 1)} \\[6pt]
+                    &= \dfrac{9 \cdot 5}{15} \\[6pt]
+                    &= 3
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, \((2a + 1)(2d + 1) = 3\).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>

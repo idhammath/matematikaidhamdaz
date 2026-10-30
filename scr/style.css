@@ -642,3 +642,7 @@ em {
     font-family: Cambria, Times, Cochin, Georgia, 'Times New Roman', serif;
     font-size: 1.1em;
 }
+
+.tengah {
+    text-align: center;
+}

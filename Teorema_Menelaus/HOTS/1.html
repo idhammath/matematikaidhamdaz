@@ -1,118 +1,152 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HOTS Zone : Teorema Menelaus</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Teorema Menelaus</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+        </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Teorema Menelaus</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
 
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div><br><br>
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Teorema Menelaus</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-  <div class="justify" id="17">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Pada gambar berikut, <em>D</em> adalah kaki tinggi dari <em>A</em>, dan <em>E</em> titik tengah <em>CA</em>.
-    <div id="temsvg1" class="w3-center"></div>
-    Jika luas segitiga <em>ABC</em> adalah \(\dfrac12\) satuan, maka panjang <em>AK</em> dapat dinyatakan sebagai ....
-    <div class="w3-row">
-      <div class="w3-col s6">
-        <ol class="pas1" type="A">
-          <li class="pb">\(\dfrac1{BC+AB\cos B}\)</li>
-          <li><em>BC</em> + <em>AB</em> cos <em>B</em></li>
-        </ol>
-      </div>
-      <div class="w3-col s6">
-        <ol class="pas1" start="3" type="A">
-          <li class="pb">\(\dfrac1{AB+BC\cos B}\)</li>
-          <li><em>AB</em> + <em>BC</em> cos <em>B</em></li>
-        </ol>
-      </div>
-    </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/InkIX04eRt24DcjBEPtxXE" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><em>AE</em> = <em>EC</em> <br><br>
-          <em>BD</em> = <em>AB</em> cos <em>B</em><br><br>
-          \(\begin{aligned}
-          \dfrac12\cdot BC\cdot AD&=\dfrac12\\
-          BC\cdot AD&=1
-          \end{aligned}\) <br><br>
-        Dengan menggunakan Teorema Menelaus, <br>
-        \(\begin{aligned}
-        \dfrac{BC}{BD}\cdot\dfrac{DK}{AK}\cdot\dfrac{AE}{EC}&=1&{\color{red}\times BD}\\[4pt]
-        BC\cdot\left(\dfrac{AD-AK}{AK}\right)\cdot1&=BD\\[4pt]
-        BC\cdot\left(\dfrac{AD}{AK}-1\right)&=AB\cos B\\[4pt]
-        \dfrac{BC\cdot AD}{AK}-BC&=AB\cos B\\[4pt]
-        \dfrac1{AK}&=BC+AB\cos B\\
-        AK&=\boxed{\boxed{\dfrac1{BC+AB\cos B}}}
-        \end{aligned}\)
-      </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, \(AK=\dfrac1{BC+AB\cos B}\).<br><b>JAWAB: A</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Pada gambar berikut, <em>D</em> adalah kaki tinggi dari <em>A</em>, dan <em>E</em> titik tengah <em>CA</em>.
+                <div id="gambar1" class="tengah" style="margin: 1rem 0;"></div>
+                Jika luas segitiga <em>ABC</em> adalah \(\dfrac12\) satuan, maka panjang <em>AK</em> dapat dinyatakan sebagai ....
+                <ol class="pilgan">
+                    <li>\(\dfrac1{BC+AB\cos B}\)</li>
+                    <li>\(BC+AB\cos B\)</li>
+                    <li>\(\dfrac1{AB+BC\cos B}\)</li>
+                    <li>\(AB+BC\cos B\)</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: <a href="https://chat.whatsapp.com/InkIX04eRt24DcjBEPtxXE" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Karena <em>E</em> titik tengah <em>CA</em>, maka \(AE=EC\).<br><br>
+                    Pada segitiga siku-siku <em>ABD</em>, \(BD=AB\cos B\).<br><br>
+                    Dari luas segitiga <em>ABC</em>:
+                    \[\begin{aligned}
+                    \dfrac12\cdot BC\cdot AD&=\dfrac12\\
+                    BC\cdot AD&=1
+                    \end{aligned}\]
+                    Dengan menggunakan Teorema Menelaus pada segitiga <em>ADC</em> dengan garis <em>BKE</em>:
+                    \[\begin{aligned}
+                    \dfrac{BC}{BD}\cdot\dfrac{DK}{AK}\cdot\dfrac{AE}{EC}&=1&&\times BD\\[4pt]
+                    BC\cdot\left(\dfrac{AD-AK}{AK}\right)\cdot1&=BD\\[4pt]
+                    BC\cdot\left(\dfrac{AD}{AK}-1\right)&=AB\cos B\\[4pt]
+                    \dfrac{BC\cdot AD}{AK}-BC&=AB\cos B\\[4pt]
+                    \dfrac1{AK}&=BC+AB\cos B\\
+                    AK&=\dfrac1{BC+AB\cos B}
+                    \end{aligned}\]
+                    <div class="kesimpulan">Jadi, \(AK=\dfrac1{BC+AB\cos B}\).<br>JAWAB: A</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+
+    <!-- Gambar soal dengan GeoSVG.js -->
     <script>
-      var k1 = 60
-      var a1 = [4*k1,7*k1,50,0.5*k1];
-      var tiA1 = [a1[0]*cos(a1[2]),0];
-      var tiB1 = [0,a1[0]*sin(a1[2])];
-      var tiC1 = [a1[1],a1[0]*sin(a1[2])];
-      var tiD1 = [a1[0]*cos(a1[2]),a1[0]*sin(a1[2])];
-      var tiE1 = [(tiA1[0]+tiC1[0])/2,(tiA1[1]+tiC1[1])/2];
-      var tiK1 = titikpotong([tiB1,tiE1],[tiA1,tiD1])
-      document.getElementById("temsvg1").innerHTML = String.raw`${svgawal(a1[1],a1[0]*sin(a1[2]),1,a1[3])}
-      ${svgsegi([tiA1,tiB1,tiC1],{tebalgaris:2,warnagaris:"black",isi:"none",tampakisi:1,tampakgaris:1})}
-      ${svggaris([tiA1,tiD1],{tebalgaris:2,warna:"black",dash:""})}
-      ${svggaris([tiB1,tiE1],{tebalgaris:2,warna:"black",dash:""})}
-      ${svglingkaran(tiA1,0.07*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
-      ${svglingkaran(tiB1,0.07*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
-      ${svglingkaran(tiC1,0.07*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
-      ${svglingkaran(tiD1,0.07*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
-      ${svglingkaran(tiE1,0.07*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
-      ${svglingkaran(tiK1,0.07*k1,{tebalgaris:1,warnagaris:"black",isi:"black",tampakisi:1,tampakgaris:1,dash:""})}
-      ${svglabeltitik(tiA1,"A",{ukuran:1.2,anchor:"middle",baseline:"baseline",xplus:0,yplus:-0.15*k1})}
-      ${svglabeltitik(tiB1,"B",{ukuran:1.2,anchor:"end",baseline:"central",xplus:-0.15*k1,yplus:0})}
-      ${svglabeltitik(tiC1,"C",{ukuran:1.2,anchor:"start",baseline:"central",xplus:0.15*k1,yplus:0})}
-      ${svglabeltitik(tiD1,"D",{ukuran:1.2,anchor:"middle",baseline:"hanging",xplus:0,yplus:0.15*k1})}
-      ${svglabeltitik(tiE1,"E",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:0.1*k1,yplus:0})}
-      ${svglabeltitik(tiK1,"K",{ukuran:1.2,anchor:"start",baseline:"baseline",xplus:0.05*k1,yplus:-0.15*k1})}
-</svg>`
-    </script>
-  </div>
+        (function () {
+            // Tunggu sampai GeoSVG.js (lokal atau CDN cadangan) selesai dimuat
+            function tunggu(fn, percobaan) {
+                percobaan = percobaan || 0;
+                if (typeof GeoSVG !== 'undefined') return fn();
+                if (percobaan < 100) setTimeout(function () { tunggu(fn, percobaan + 1); }, 100);
+            }
 
-  <br><br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(teomen,3,1)</script>
-</div>
+            function gambarSoal1() {
+                // Sumbu Y mengarah ke atas (koordinat matematika)
+                var geo = new GeoSVG('gambar1', 490, 260, {
+                    yUp: true,
+                    viewBox: '-35 -35 490 260',
+                    clearContainer: true,
+                    defaultStroke: 'currentColor',
+                    defaultStrokeWidth: 2,
+                    title: 'Segitiga ABC dengan titik D, E, dan K',
+                    description: 'Segitiga ABC dengan AD tegak lurus BC di D, E titik tengah CA, dan K perpotongan BE dengan AD.'
+                });
+                geo.svg.style.maxWidth = '100%';
+                geo.svg.style.height = 'auto';
+
+                var rad = 50 * Math.PI / 180;           // sudut B = 50 derajat
+                var AB = 240, BC = 420;
+                var B = [0, 0];
+                var C = [BC, 0];
+                var D = [AB * Math.cos(rad), 0];
+                var A = [AB * Math.cos(rad), AB * Math.sin(rad)];
+                var E = geo.hitungTitikTengah(A, C);
+                var K = geo.hitungTitikPotong([B, E], [A, D])[0];
+
+                // Garis-garis
+                geo.buatPoligon([A, B, C], { strokeLinejoin: 'round' });
+                geo.buatSegmen(A, D);
+                geo.buatSegmen(B, E);
+
+                // Titik dan label
+                var gaya = { size: 4, color: 'currentColor', fontSize: '18px', labelDistance: 8 };
+                geo.buatTitik(A, Object.assign({ label: 'A', labelPosition: 'top-center' }, gaya));
+                geo.buatTitik(B, Object.assign({ label: 'B', labelPosition: 'middle-left' }, gaya));
+                geo.buatTitik(C, Object.assign({ label: 'C', labelPosition: 'middle-right' }, gaya));
+                geo.buatTitik(D, Object.assign({ label: 'D', labelPosition: 'bottom-center' }, gaya));
+                geo.buatTitik(E, Object.assign({ label: 'E', labelPosition: 'top-right' }, gaya));
+                geo.buatTitik(K, Object.assign({ label: 'K', labelPosition: 'top-left' }, gaya));
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                tunggu(gambarSoal1);
+            });
+        })();
+    </script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

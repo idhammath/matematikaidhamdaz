@@ -1,203 +1,218 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>HOTS Zone : Turunan</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../katex/katex.css">
-      <script src="../katex/katex.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-   </head> 
-     <body> 
-       <div class="w3-container">
-        <img alt="" class="w3-hide" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYu8yROXAyta-IoSSu95qZHc89al8RYqEYhB_x6V-uekBX-_FYZTlNp3u61BNn2I6iIWJHGCiBEp1eqBqbizCJUZffr_4wVw9zqoR-Kf0WEALNokuRSGKBaoZJI1OL3aVY_UV33Ffxy_8rn12xSHPyfdeIupzMnivquHhWjw-znT2WMZkTCCxtbp7O/s320/TURUNAN%20HOTS.png"/>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Turunan</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank" rel="noopener noreferrer">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank" rel="noopener noreferrer">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank" rel="noopener noreferrer">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank" rel="noopener noreferrer">WhatsApp</a>.<span><!--more--></span>
-        <h3>Tipe: </h3>
-        <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">Standar</a><a href="http://" target="_blank" rel="noopener noreferrer" id="sbmptn" class="w3-bar-item w3-button w3-hide">SBMPTN</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
-        <br>
-        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-        <br>
-        
-        <div class="justify" id="1"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Diketahui <e><em>f</em>(<em>x</em>) = (2<em>x</em> + 1)<sup>2</sup></e>. Turunan pertama dari <e><em>f</em><sup>2</sup>(<em>x</em>)</e> adalah
-          <div class="w3-row">
-          <div class="w3-col s6">
-            <ol class="pas1" type="A">
-              <li><e>2(2<em>x</em> + 1)</e></li>
-              <li><e>2(2<em>x</em> + 1)<sup>2</sup></e></li>
-              <li><e>4(2<em>x</em> + 1)<sup>3</sup></e></li>
-            </ol>
-          </div>
-          <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-              <li><e>8(2<em>x</em> + 1)<sup>3</sup></e></li>
-              <li><e>4(2<em>x</em> + 1)<sup>2</sup></e></li>
-            </ol>
-          </div>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Turunan</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+        </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2">SKB CPNS MATEMATIKA 2020</div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\begin{aligned}
-          f(x)&=(2x+1)^2\\
-          f^2(x)&=\left((2x+1)^2\right)^2\\
-          &=(2x+1)^4\\
-          \left(f^2(x)\right)'&=4(2x+1)^3\cdot2\\
-          &=\boxed{\boxed{8(2x+1)^3}}
-          \end{aligned}</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, turunan pertama dari <e><em>f</em><sup>2</sup>(<em>x</em>)</e> adalah <e>8(2<em>x</em> + 1)<sup>3</sup></e>.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
-        
-        <div class="justify" id="2"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Sebuah persegi dengan sisi <em>x</em> memiliki luas <e><em>f</em>(<em>x</em>)</e>. Nilai <e><em>f</em>'(6)</e> adalah ...
-          <div class="w3-row">
-          <div class="w3-col s6">
-            <ol class="pas1" type="A">
-              <li>36</li>
-              <li>12</li>
-              <li>10</li>
-            </ol>
-          </div>
-          <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-              <li>8</li>
-              <li>6</li>
-            </ol>
-          </div>
-        </div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2">Bimbingan Belajar MASTER ILMI (MIL)</div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\begin{aligned}
-          L&=x^2\\
-          f(x)&=x^2\\
-          f'(x)&=2x\\
-          f'(6)&=2(6)\\
-          &=\boxed{\boxed{12}}
-          \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>f</em>'(6) = 12</e>.<br><b>JAWAB: B</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
-        </div>
-        
-        <div class="justify" id="3"><h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Nilai dari <e><em>f</em>'(1)</e> dari <m>{f(x)=\dfrac4{x-3}-\dfrac6x}</m> adalah ....
-          <div class="w3-row">
-          <div class="w3-col s6">
-            <ol class="pas1" type="A">
-              <li>2</li>
-              <li>4</li>
-              <li>5</li>
-            </ol>
-          </div>
-          <div class="w3-col s6">
-            <ol class="pas1" start="4" type="A">
-              <li>10</li>
-              <li>12</li>
-            </ol>
-          </div>
-        </div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2">Bimbingan Belajar MASTER ILMI (MIL)</div>
-        <details>
-          <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-          <div class="w3-card-4">
-            <div class="w3-padding w3-sand flo">\begin{aligned}
-          f(x)&=\dfrac4{x-3}-\dfrac6x\\
-          &=4(x-3)^{-1}-6x^{-1}\\
-          f'(x)&=-4(x-3)^{-2}+6x^{-2}\\
-          &=-\dfrac4{(x-3)^2}+\dfrac6{x^2}\\
-          f'(1)&=-\dfrac4{(1-3)^2}+\dfrac6{1^2}\\
-          &=-\dfrac4{(-2)^2}+\dfrac61\\
-          &=-\dfrac44+6\\
-          &=-1+6\\
-          &=\boxed{\boxed{5}}
-          \end{aligned}</div>
-            <div class="w3-brown w3-padding tebal flo">Jadi, <e><em>f</em>'(1) = 5</e>.<br><b>JAWAB: C</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-          </div>
-        </details>
-        <hr>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Turunan</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
         </div>
 
-        <div class="justify" id="4">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          <z>y=\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}</z>
-          <z>\dfrac{dy}{dx}=....</z> 
-          <ol class="pas1" type="A">
-            <li class="pb">
-              <m>\sqrt{\cos x+\sqrt{\cos x+\sqrt{\cos x+\cdots}}}</m>
-            </li>
-            <li class="pb">
-              <m>\dfrac{\cos x}{\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}}</m>
-            </li>
-            <li class="pb">
-              <m>\dfrac{\cos x}{2\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}}</m>
-            </li>
-            <li class="pb">
-              <m>\dfrac{\cos x}{2\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}-1}</m>
-            </li>
-            <li>
-              <m>\dfrac{\sqrt{\cos x+\sqrt{\cos x+\sqrt{\cos x+\cdots}}}}{\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}}</m>
-            </li>
-          </ol>
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="https://t.me/MatematikaZoneId" target="_blank">Telegram</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\begin{aligned} 
-                y&=\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}\\
-                y&=\sqrt{\sin x+y}\\
-                y^2&=\sin x+y\\
-                y^2-y&=\sin x\\
-                d\left(y^2-y\right)&=d\left(\sin x\right)\\
-                (2y-1)\ dy&=\cos x\ dx\\
-                \dfrac{dy}{dx}&=\dfrac{\cos x}{2y-1}\\
-                &=\boxed{\boxed{\dfrac{\cos x}{2\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}-1}}}
-                \end{aligned}</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, <m>\dfrac{dy}{dx}=\dfrac{\cos x}{2\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}-1}</m>.<br><b>JAWAB: D</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-          </details>
-          <hr>
-        </div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-        <div class="justify" id="5">
-          <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-          Diketahui $f(x)=x+\dfrac1{2x+\dfrac1{2x+\dfrac1{2x+\cdots}}}$. Hitung nilai dari $f(99)\cdot f'(99)$
-          <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
-          <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-              <div class="w3-padding w3-sand flo">\(\begin{aligned}
-                f(x)&=x+\dfrac1{2x+\dfrac1{2x+\dfrac1{2x+\cdots}}}\\
-                &=x+\dfrac1{x+f(x)}\\[4pt]
-                f(x)-x&=\dfrac1{f(x)+x}\\[4pt]
-                f^2(x)-x^2&=1\\
-                f^2(x)&=x^2+1\\
-                2f(x)\cdot f'(x)&=2x\\
-                f(x)\cdot f'(x)&=x\\
-                f(99)\cdot f'(99)&=\color{blue}\boxed{\boxed{\color{black}99}}
-              \end{aligned}\)</div>
-              <div class="w3-brown w3-padding tebal flo">Jadi, $f(99)\cdot f'(99)=99$.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Diketahui $f(x) = (2x + 1)^2$. Turunan pertama dari $f^2(x)$ adalah ...</p>
+                <ol class="pilgan">
+                    <li>$2(2x + 1)$</li>
+                    <li>$2(2x + 1)^2$</li>
+                    <li>$4(2x + 1)^3$</li>
+                    <li>$8(2x + 1)^3$</li>
+                    <li>$4(2x + 1)^2$</li>
+                </ol>
             </div>
-          </details>
-          <hr>
-        </div>
-      
-        <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-        <br>
-<script>soal(turu,3,1)</script>
-</div>
-   </body>
-</html> 
+            <div class="soal-sumber">SKB CPNS MATEMATIKA 2020</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    $$\begin{aligned}
+                    f(x)&=(2x+1)^2\\
+                    f^2(x)&=\left((2x+1)^2\right)^2\\
+                    &=(2x+1)^4\\
+                    \left(f^2(x)\right)'&=4(2x+1)^3\cdot2\\
+                    &=\boxed{\boxed{8(2x+1)^3}}
+                    \end{aligned}$$
+                    <div class="kesimpulan">Jadi, turunan pertama dari $f^2(x)$ adalah $8(2x + 1)^3$. (JAWAB: D)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Sebuah persegi dengan sisi $x$ memiliki luas $f(x)$. Nilai $f'(6)$ adalah ...</p>
+                <ol class="pilgan">
+                    <li>$36$</li>
+                    <li>$12$</li>
+                    <li>$10$</li>
+                    <li>$8$</li>
+                    <li>$6$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Bimbingan Belajar MASTER ILMI (MIL)</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    $$\begin{aligned}
+                    L&=x^2\\
+                    f(x)&=x^2\\
+                    f'(x)&=2x\\
+                    f'(6)&=2(6)\\
+                    &=\boxed{\boxed{12}}
+                    \end{aligned}$$
+                    <div class="kesimpulan">Jadi, $f'(6) = 12$. (JAWAB: B)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Nilai dari $f'(1)$ dari $f(x)=\dfrac{4}{x-3}-\dfrac{6}{x}$ adalah ....</p>
+                <ol class="pilgan">
+                    <li>$2$</li>
+                    <li>$4$</li>
+                    <li>$5$</li>
+                    <li>$10$</li>
+                    <li>$12$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Bimbingan Belajar MASTER ILMI (MIL)</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    $$\begin{aligned}
+                    f(x)&=\dfrac{4}{x-3}-\dfrac{6}{x}\\
+                    &=4(x-3)^{-1}-6x^{-1}\\
+                    f'(x)&=-4(x-3)^{-2}+6x^{-2}\\
+                    &=-\dfrac{4}{(x-3)^2}+\dfrac{6}{x^2}\\
+                    f'(1)&=-\dfrac{4}{(1-3)^2}+\dfrac{6}{1^2}\\
+                    &=-\dfrac{4}{(-2)^2}+\dfrac{6}{1}\\
+                    &=-\dfrac{4}{4}+6\\
+                    &=-1+6\\
+                    &=\boxed{\boxed{5}}
+                    \end{aligned}$$
+                    <div class="kesimpulan">Jadi, $f'(1) = 5$. (JAWAB: C)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Jika</p>
+                $$y=\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}$$
+                <p>maka</p>
+                $$\dfrac{dy}{dx}=....$$
+                <ol class="pilgan pilgan-1kolom">
+                    <li>$\sqrt{\cos x+\sqrt{\cos x+\sqrt{\cos x+\cdots}}}$</li>
+                    <li>$\dfrac{\cos x}{\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}}$</li>
+                    <li>$\dfrac{\cos x}{2\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}}$</li>
+                    <li>$\dfrac{\cos x}{2\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}-1}$</li>
+                    <li>$\dfrac{\sqrt{\cos x+\sqrt{\cos x+\sqrt{\cos x+\cdots}}}}{\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}}$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://t.me/MatematikaZoneId" target="_blank" rel="noopener noreferrer">Telegram</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    $$\begin{aligned}
+                    y&=\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}\\
+                    y&=\sqrt{\sin x+y}\\
+                    y^2&=\sin x+y\\
+                    y^2-y&=\sin x\\
+                    d\left(y^2-y\right)&=d\left(\sin x\right)\\
+                    (2y-1)\ dy&=\cos x\ dx\\
+                    \dfrac{dy}{dx}&=\dfrac{\cos x}{2y-1}\\
+                    &=\boxed{\boxed{\dfrac{\cos x}{2\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}-1}}}
+                    \end{aligned}$$
+                    <div class="kesimpulan">Jadi, $\dfrac{dy}{dx}=\dfrac{\cos x}{2\sqrt{\sin x+\sqrt{\sin x+\sqrt{\sin x+\cdots}}}-1}$. (JAWAB: D)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                <p>Diketahui $f(x)=x+\dfrac{1}{2x+\dfrac{1}{2x+\dfrac{1}{2x+\cdots}}}$. Hitung nilai dari $f(99)\cdot f'(99)$.</p>
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup WhatsApp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    $$\begin{aligned}
+                    f(x)&=x+\dfrac{1}{2x+\dfrac{1}{2x+\dfrac{1}{2x+\cdots}}}\\
+                    &=x+\dfrac{1}{x+f(x)}\\[4pt]
+                    f(x)-x&=\dfrac{1}{f(x)+x}\\[4pt]
+                    f^2(x)-x^2&=1\\
+                    f^2(x)&=x^2+1\\
+                    2f(x)\cdot f'(x)&=2x\\
+                    f(x)\cdot f'(x)&=x\\
+                    f(99)\cdot f'(99)&=\boxed{\boxed{99}}
+                    \end{aligned}$$
+                    <div class="kesimpulan">Jadi, $f(99)\cdot f'(99)=99$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>

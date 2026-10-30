@@ -1,97 +1,261 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Exercise Zone : Pangkat (Eksponen) [4]</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Pangkat (Eksponen)</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+        </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  <img alt="" class="w3-hide" width="320" data-original-height="1080" data-original-width="1080" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAq5rFw9OXEBDcLOsEwwrLdsFVbV62BxBybiV99KIAc1OoGjF9WY2H6Txg6J51CxQm9BGMIexGPflF5Poe3_g-NROikCdtKzZDjIKiuiwiV0SJ9ZR27eUAimpWwU6KS4xQNLYZrA7BuxRLi-HSshpsQaD47IWCpDMkaR6cD9spEgdb5LeWRhVlr16S/s320/pangkat%20standar.png"/>Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Pangkat (Eksponen)</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
 
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><span id="standar" class="w3-bar-item w3-deep-purple w3-hide">Standar</span><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-  <br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Pangkat (Eksponen)</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
 
-  <div class="justify" id="31">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Sederhanakanlah bentuk berikut.\[\left(\dfrac{a^2b^{-2}c^{-1}}{a^5b^{-3}c^{4}}\right)^3\]
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">\begin{aligned}
-          \left(\dfrac{a^2b^{-2}c^{-1}}{a^5b^{-3}c^{4}}\right)^3&=\left(\dfrac{b^{-2-(-3)}}{a^{5-2}c^{4-(-1)}}\right)^3\\[3.8pt]
-          &=\left(\dfrac{b^1}{a^3c^5}\right)^3\\
-          &=\boxed{\boxed{\dfrac{b^3}{a^{27}c^{15}}}}
-        \end{aligned}</div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, $\left(\dfrac{a^2b^{-2}c^{-1}}{a^5b^{-3}c^{4}}\right)^3=\dfrac{b^3}{a^{27}c^{15}}$.<button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
 
-  <div class="justify" id="32">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Nilai dari $\left(\dfrac{a}b\right)^4\cdot\left(\dfrac{b}a\right)^5$ adalah ....
-    <div class="w3-row">
-      <div class="w3-col s6">
-        <ol class="pas1" type="A">
-          <li><em>a</em><sup>9</sup><em>b</em><sup>9</sup></li>
-          <li><em>ab</em></li>
-          <li><em>a</em><sup>&minus;1</sup><em>b</em></li>
-        </ol>
-      </div>
-      <div class="w3-col s6">
-        <ol class="pas1" start="4" type="A">
-          <li><em>ab</em><sup>&minus;1</sup></li>
-          <li><em>a</em><sup>&minus;1</sup><em>b</em><sup>&minus;1</sup></li>
-        </ol>
-      </div>
-    </div>
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="/2024/03/soal-asas-matematika-smk-kab-tangerang.html" target="_blank" rel="noopener noreferrer">Prediksi ASAS SMK 2024</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">\(\begin{aligned}
-          \left(\dfrac{a}b\right)^4\cdot\left(\dfrac{b}a\right)^5&=\dfrac{a^4}{b^4}\cdot\dfrac{b^5}{a^5}\\[4pt]
-          &=a^{4-5}b^{5-4}\\
-          &=\color{blue}\boxed{\boxed{\color{black}a^{-1}b}}
-        \end{aligned}\)</div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, $\left(\dfrac{a}b\right)^4\cdot\left(\dfrac{b}a\right)^5=a^{-1}b$.<br><b>JAWAB: C</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+        <!-- ================= DAFTAR 10 SOAL ================= -->
 
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(pangk,1,4)</script>
-</div>
+        <!-- SOAL 31 -->
+        <article class="soal-item" id="31">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Sederhanakanlah bentuk berikut.\[\left(\dfrac{a^2b^{-2}c^{-1}}{a^5b^{-3}c^{4}}\right)^3\]
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \(\begin{aligned}
+                    \left(\dfrac{a^2b^{-2}c^{-1}}{a^5b^{-3}c^{4}}\right)^3&=\left(\dfrac{b^{-2-(-3)}}{a^{5-2}c^{4-(-1)}}\right)^3\\[3.8pt]
+                    &=\left(\dfrac{b^1}{a^3c^5}\right)^3\\
+                    &=\boxed{\boxed{\dfrac{b^3}{a^{27}c^{15}}}}
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, $\left(\dfrac{a^2b^{-2}c^{-1}}{a^5b^{-3}c^{4}}\right)^3=\dfrac{b^3}{a^{27}c^{15}}$.</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 32 -->
+        <article class="soal-item" id="32">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Nilai dari $\left(\dfrac{a}b\right)^4\cdot\left(\dfrac{b}a\right)^5$ adalah ....
+                <ol class="pilgan">
+                    <li><em>a</em><sup>9</sup><em>b</em><sup>9</sup></li>
+                    <li><em>ab</em></li>
+                    <li><em>a</em><sup>&minus;1</sup><em>b</em></li>
+                    <li><em>ab</em><sup>&minus;1</sup></li>
+                    <li><em>a</em><sup>&minus;1</sup><em>b</em><sup>&minus;1</sup></li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="/2024/03/soal-asas-matematika-smk-kab-tangerang.html" target="_blank" rel="noopener noreferrer">Prediksi ASAS SMK 2024</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    \(\begin{aligned}
+                    \left(\dfrac{a}b\right)^4\cdot\left(\dfrac{b}a\right)^5&=\dfrac{a^4}{b^4}\cdot\dfrac{b^5}{a^5}\\[4pt]
+                    &=a^{4-5}b^{5-4}\\
+                    &=\color{blue}\boxed{\boxed{\color{black}a^{-1}b}}
+                    \end{aligned}\)
+                    <div class="kesimpulan">Jadi, $\left(\dfrac{a}b\right)^4\cdot\left(\dfrac{b}a\right)^5=a^{-1}b$.<br><b>JAWAB: C</b></div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 4 
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 5 
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 6 
+        <article class="soal-item" id="6">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 7 
+        <article class="soal-item" id="7">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 8 
+        <article class="soal-item" id="8">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 9 
+        <article class="soal-item" id="9">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 10 
+        <article class="soal-item" id="10">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+        <!-- Copy-paste blok <article class="soal-item">...</article> sampai 10 blok -->
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

@@ -1,81 +1,130 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HOTS Zone : Sudut Pusat dan Sudut Keliling</title> 
-    <script defer src="../mathjax/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-<link rel="stylesheet" href="templatestyle.css">
-<link rel="stylesheet" href="gaya.css">
-    <script src="skrip.js"></script>
-    <script src="../matematikin.js"></script>
-<!--link rel="stylesheet" href="style.css"-->
-<style>body{
-font-family: roboto,sans-serif;   
-}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal - Sudut Pusat dan Sudut Keliling</title>
+
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.1/dist/contrib/auto-render.min.js"></script>
+
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+        </script>
+
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><br>
 
-<div class="w3-container" style="background-color: papayawhip">
-  Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Sudut Pusat dan Sudut Keliling</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">Matematika Idhamdaz</a>.<span><!--more--></span>
-
-  <h3>Tipe: </h3>
-  <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><a href="http://" target="_blank" rel="noopener noreferrer" id="snbt" class="w3-bar-item w3-button w3-hide">SNBT</a><span id="hots" class="w3-bar-item w3-deep-purple w3-hide">HOTS</span></div>
-  <br><div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-
-  <div id="1" class="justify">
-    <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-    Titik <em>O</em> adalah titik pusat lingkaran dalam untuk segitiga <em>ABC</em>. Jika <e>&ang;<em>ABC</em> = 60&deg;</e> maka <e>&ang;<em>AOC</em> = ....&deg;</e>
-    <div class="w3-row"> 
-     <div class="w3-col s4"> 
-     <ol class="pas1" type="A"> 
-     <li>105</li> 
-     <li>120</li> 
-     </ol> 
-     </div> 
-     <div class="w3-col s4"> 
-     <ol class="pas1" start="3" type="A"> 
-     <li>135</li> 
-     <li>150</li> 
-     </ol> 
-     </div> 
-     <div class="w3-col s4"> 
-     <ol class="pas1" start="5" type="A"> 
-     <li>165</li> 
-     </ol> 
-     </div> 
-     </div>    
-    <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">FSN 2023</a></div>
-    <details>
-      <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-      <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo"><e>&ang;<em>ABC</em></e> merupakan sudut keliling, dan <e>&ang;<em>AOC</em></e> merupakan sudut pusat. Karena <e>&ang;<em>ABC</em></e> dan <e>&ang;<em>AOC</em></e> menghadap busur yang sama, yaitu busur <em>AC</em>, maka <br>
-            <e>&ang;<em>AOC</em> = 2 &times; &ang;<em>ABC</em> = 120&deg;</e>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
         </div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, <e>&ang;<em>AOC</em> = 120&deg;.</e><br><b>JAWAB: B</b><button class="w3-button w3-round w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-      </div>
-    </details>
-    <hr>
-  </div>
+    </header>
 
-  <div class="navi w3-bar w3-border w3-round w3-hide">
-  </div>
-  <script>soal(sudpusudke,3,1)</script>
-</div>
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">...</span>
+                materi <span class="topic-highlight">Sudut Pusat dan Sudut Keliling</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR 10 SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Titik $O$ adalah titik pusat lingkaran dalam untuk segitiga $ABC$. Jika $\angle ABC = 60^\circ$ maka $\angle AOC = \dots^\circ$
+
+                <ol class="pilgan">
+                    <li>$105$</li>
+                    <li>$120$</li>
+                    <li>$135$</li>
+                    <li>$150$</li>
+                    <li>$165$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber"><a href="https://s.id/matematikaidhamdaz" target="_blank" rel="noopener noreferrer">FSN 2023</a></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Titik $O$ adalah pusat lingkaran dalam segitiga $ABC$, sehingga $AO$ dan $CO$ adalah garis bagi sudut $A$ dan sudut $C$. Akibatnya
+                    $$\angle OAC = \tfrac{1}{2}\angle BAC \quad\text{dan}\quad \angle OCA = \tfrac{1}{2}\angle BCA$$
+                    Jumlah sudut dalam segitiga $ABC$:
+                    $$\angle BAC + \angle BCA = 180^\circ - \angle ABC = 180^\circ - 60^\circ = 120^\circ$$
+                    Sehingga
+                    $$\angle OAC + \angle OCA = \tfrac{1}{2}(120^\circ) = 60^\circ$$
+                    Pada segitiga $AOC$:
+                    $$\angle AOC = 180^\circ - (\angle OAC + \angle OCA) = 180^\circ - 60^\circ = 120^\circ$$
+                    <div class="kesimpulan">Jadi, $\angle AOC = 120^\circ$. (Jawab: B)</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal kedua di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal kedua di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- SOAL 3
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Tulis teks soal ketiga di sini...
+            </div>
+            <div class="soal-sumber"></div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Tulis pembahasan soal ketiga di sini...
+                    <div class="kesimpulan">Jadi, </div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+-->
+
+        <!-- Salin blok <article class="soal-item">...</article> di atas untuk soal 4 sampai 10 -->
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
 </body>
-</html> 
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="https://chat.whatsapp.com/LqD5uOjjYtd7UjHnmTMIUa" target="_blank" rel="noopener noreferrer">Grup Whatsapp</a></div>
+
+</html>

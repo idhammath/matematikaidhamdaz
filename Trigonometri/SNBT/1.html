@@ -1,275 +1,230 @@
-<!DOCTYPE html> 
-<html>  
-   <head> 
-      <meta charset = "utf-8"> 
-      <title>SNBT Zone : Trigonometri</title> 
-      <script defer src="../mathjax/tex-mml-chtml.js"></script>
-      <link rel="stylesheet" href="../w3.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="templatestyle.css">
-  <link rel="stylesheet" href="gaya.css">
-      <script src="skrip.js"></script>
-      <script src="../matematikin.js"></script>
-   </head> 
-     <body>
-        <div class="w3-container">
-      Berikut ini adalah kumpulan soal mengenai <span id="namamateri">Trigonometri</span>. Jika ingin bertanya soal, silahkan gabung ke grup <a href="https://t.me/matematikazoneid" target="_blank">Telegram</a>, <a href="https://signal.group/#CjQKIK3WGrk9hYWH9FFG9ZTP_usQh_pP0kBjhnILPYjzOqW5EhD9kUYjSpwF-j1iPncINowY" target="_blank">Signal</a>, <a href="https://discord.gg/znehknXkx8" target="_blank">Discord</a>, atau <a href="https://chat.whatsapp.com/HIUpnicy1VA0lrtkiARqRd" target="_blank">WhatsApp</a>.<span><!--more--></span>
-      <h3>Tipe: </h3>
-      <div class="w3-bar w3-border w3-round"><a href="http://" target="_blank" rel="noopener noreferrer" id="standar" class="w3-bar-item w3-button w3-hide">STANDAR</a><span id="snbt" class="w3-bar-item w3-deep-purple w3-hide">SNBT</span><a href="http://" target="_blank" rel="noopener noreferrer" id="hots" class="w3-bar-item w3-button w3-hide">HOTS</a></div>
-      <br><br>
-      <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>
-    
-    <div class="justify" id="1">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Nilai minimum dari fungsi \(h(x)=\dfrac{1-\tan^2x}{2\sec^2x}\) untuk <e>0 &le; <em>x</em> &le; 2 &pi;</e> adalah....
-        <div class="w3-row">
-            <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                    <li>
-                        &minus;3
-                    </li>
-                    <li>
-                        &minus;2
-                    </li>
-                    <li>
-                        &minus;1
-                    </li>
-                </ol>
-            </div>
-            <div class="w3-col s6">
-                <ol class="pas1" start="4" type="A">
-                    <li class="pb">
-                        \(-\dfrac12\)
-                    </li>
-                    <li>
-                        0
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive"><a href="#" target="_blank">Dari Sherly</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo">\(\eqalign{
-                    \dfrac{1-\tan^2x}{2\sec^2x}&=\dfrac{1-\dfrac{\sin^2x}{\cos^2x}}{\dfrac2{\cos^2x}}\\[4pt]
-                    &=\dfrac{\cos^2x-\sin^2x}2\\[4pt]
-                    &=\dfrac12\cos2x
-                    }\) <br><br>
-                    Minimum = \(-\dfrac12\)</div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, nilai minimum dari fungsi \(h(x)=\dfrac{1-\tan^2x}{2\sec^2x}\) untuk <e>0 &le; <em>x</em> &le; 2 &pi;</e> adalah \(-\dfrac12\).<br><b>JAWAB: d</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-        </details>
-        <hr>
-    </div>
+<!DOCTYPE html>
+<html lang="id">
 
-    <div class="justify" id="2">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Jika \(x-y=\dfrac12\pi\) maka <e>tan <em>x</em></e> adalah....
-        <div class="w3-row">
-            <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                    <li class="pb">
-                        \(\dfrac{1+\tan y^2}{y}\)
-                    </li>
-                    <li class="pb">
-                        \(-\dfrac{1-y^2}{\tan y}\)
-                    </li>
-                    <li>
-                        \(\dfrac{\tan(1-y)}{(1+y)^2}\)
-                    </li>
-                </ol>
-            </div>
-            <div class="w3-col s6">
-                <ol class="pas1" start="4" type="A">
-                    <li class="pb">
-                        \(\dfrac{\tan y}{(1+y)^2}\)
-                    </li>
-                    <li>
-                        \(-\dfrac1{\tan y}\)
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo">\(x=\dfrac12\pi+y\)<br />
-                    <br />
-                    \(\begin{aligned}
-                    \tan x&=\tan\left(\dfrac12\pi+y\right)\\
-                    &=-\cot y\\
-                    &=-\dfrac1{\tan y}
-                    \end{aligned}\)</div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, \(\tan x=-\dfrac1{\tan y}\).<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-        </details>
-        <hr>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNBT Zone - Trigonometri</title>
 
-    <div class="justify" id="3">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Jika <e>sin <em>x</em> + cos <em>x</em> = 2<em>p</em></e>, maka <e>sin<sup>4</sup> <em>x</em> + cos<sup>4</sup> <em>x</em> =</e> ....
-        <div class="w3-row">
-            <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                    <li class="pb">
-                        <e>1 &minus; (2<em>p</em><sup>2</sup> &minus; 1)<sup>2</sup></e>
-                    </li>
-                    <li class="pb">
-                        \(1+\dfrac12\left(2p^2-1\right)^2\)
-                    </li>
-                    <li>
-                        \(1-\dfrac12\left(2p^2-1\right)^2\)
-                    </li>
-                </ol>
-            </div>
-            <div class="w3-col s6">
-                <ol class="pas1" start="4" type="A">
-                    <li class="pb">
-                        \(1+\dfrac12\left(4p^2-1\right)^2\)
-                    </li>
-                    <li>
-                        \(1-\dfrac12\left(4p^2-1\right)^2\)
-                    </li>
-                </ol>
-            </div>
-        </div>
-<div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive pt-2"><a href="#" target="_blank">Ganesha Operation</a></div>
-<details>
-    <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-    <div class="w3-card-4">
-        <div class="w3-padding w3-sand flo">\(\begin{aligned}
-            (\sin x+\cos x)^2&=\sin^2x+2\sin x\cos x+\cos^2x\\
-            (2p)^2&=2\sin x\cos x+1\\
-            \sin x\cos x&=\dfrac12\left(4p^2-1\right)
-            \end{aligned}\)<br />
-            <br />
-            \(\begin{aligned}
-            \sin^4x+\cos^4x&=\left(\sin^2x+\cos^2x\right)^2-2\sin^2x\cos^2x\\
-            &=1^2-2\left(\sin x\cos x\right)^2\\
-            &=1-2\left(\dfrac12\left(4p^2-1\right)\right)^2\\
-            &=1-\dfrac12\left(4p^2-1\right)^2
-            \end{aligned}\)</div>
-        <div class="w3-brown w3-padding tebal flo">Jadi, \(\sin^4x+\cos^4x=\dfrac12\left(4p^2-1\right)\).<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-    </div>
-</details>
-<hr>
-    </div>
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
-    <div class="justify" id="4">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Nilai yang ekivalen dengan \(\dfrac{\dfrac{\sin^2x+\cos^2x}{\tan^2x+\ctg^2x}}{\dfrac{\sin^2x-\cos^2x}{\tan^2x-\ctg^2x}}\) adalah
-        <div class="w3-row">
-            <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                    <li class="pb">
-                        \(\dfrac2{2+\sin^22x}\)
-                    </li>
-                    <li class="pb">
-                        \(\dfrac2{1+2\cos^22x}\)
-                    </li>
-                    <li>
-                        \(\dfrac{2\sec^2x}{\sec^2x-1}\)
-                    </li>
-                </ol>
-            </div>
-            <div class="w3-col s6">
-                <ol class="pas1" start="4" type="A">
-                    <li class="pb">
-                        \(\dfrac{2\csc^2x}{\csc^2x+1}\)
-                    </li>
-                    <li>
-                        \(\dfrac{2\sec^2x}{\sec^2x+1}\)
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo">\(\begin{aligned}
-                    \dfrac{\dfrac{\sin^2x+\cos^2x}{\tan^2x+\ctg^2x}}{\dfrac{\sin^2x-\cos^2x}{\tan^2x-\ctg^2x}}&=\dfrac{\sin^2x+\cos^2x}{\tan^2x+\ctg^2x}\cdot\dfrac{\tan^2x-\ctg^2x}{\sin^2x-\cos^2x}\\[9pt]
-                    &=\dfrac1{\dfrac{\sin^2x}{\cos^2x}+\dfrac{\cos^2x}{\sin^2x}}\cdot\dfrac{\dfrac{\sin^2x}{\cos^2x}-\dfrac{\cos^2x}{\sin^2x}}{\sin^2x-\cos^2x}\\[9pt]
-                    &=\dfrac1{\dfrac{\sin^4x+\cos^4x}{\cos^2x\sin^2x}}\cdot\dfrac{\dfrac{\sin^4x-\cos^4x}{\cos^2x\sin^2x}}{\sin^2x-\cos^2x}\\[9pt]
-                    &=\dfrac{\cancel{\cos^2x\sin^2x}}{\sin^4x+\cos^4x}\cdot\dfrac{\sin^4x-\cos^4x}{\left(\cancel{\cos^2x\sin^2x}\right)\left(\sin^2x-\cos^2x\right)}\\[9pt]
-                    &=\dfrac1{\left(\sin^2x+\cos^2x\right)^2-2\sin^2x\cos^2x}\cdot\dfrac{\left(\sin^2x+\cos^2x\right)\left(\sin^2x-\cos^2x\right)}{\left(\sin^2x-\cos^2x\right)}\color{red}{\cdot\dfrac{\times2}{\times2}}\\[9pt]
-                    &=\dfrac2{2\left(1\right)^2-4\sin^2x\cos^2x}\cdot1\\[8pt]
-                    &=\dfrac2{2(1)-(2\sin x\cos x)^2}\\[8pt]
-                    &=\dfrac2{2-(\sin2x)^2}\\[8pt]
-                    &=\dfrac2{1+1-\sin^22x}\\[8pt]
-                    &=\dfrac2{1+\cos^22x}\\[8pt]
-                    &=\dfrac{\dfrac2{\cos^2x}}{\dfrac1{\cos^2x}+1}\\[8pt]
-                    &=\boxed{\boxed{\dfrac{2\sec^2x}{\sec^2x+1}}}
-                    \end{aligned}\)</div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, \(\dfrac{\dfrac{\sin^2x+\cos^2x}{\tan^2x+\ctg^2x}}{\dfrac{\sin^2x-\cos^2x}{\tan^2x-\ctg^2x}}=\dfrac{2\sec^2x}{\sec^2x+1}\).<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-        </details>
-        <hr>
-    </div>
+    <!-- GeoSVG.js -->
+    <!-- Coba muat lokal terlebih dahulu, jika gagal muat CDN -->
+    <script src="./scr/GeoSVG.js"
+        onerror="this.onerror=null; var s = document.createElement('script'); s.src='https://rawcdn.githack.com/KulikMath/GeoSVG/main/GeoSVG.js'; document.head.appendChild(s);">
+    </script>
 
-    <div class="justify" id="5">
-        <h3>No. <span class="w3-badge w3-red nomor"></span></h3>
-        Diketahui \(\sin\alpha\cos\alpha=\dfrac8{25}\). Nilai \(\dfrac1{\sin\alpha}-\dfrac1{\cos\alpha}\) adalah
-        <div class="w3-row">
-            <div class="w3-col s6">
-                <ol class="pas1" type="A">
-                    <li class="pb">
-                        \(\dfrac3{25}\)
-                    </li>
-                    <li class="pb">
-                        \(\dfrac9{25}\)
-                    </li>
-                    <li>
-                        \(\dfrac58\)
-                    </li>
-                </ol>
-            </div>
-            <div class="w3-col s6">
-                <ol class="pas1" start="4" type="A">
-                    <li class="pb">
-                        \(\dfrac35\)
-                    </li>
-                    <li>
-                        \(\dfrac{15}8\)
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="bq w3-right w3-panel w3-leftbar w3-light-grey w3-cursive" style="cursor: pointer;"><a onclick="lingtri()">Grup Matematika Idhamdaz</a></div>
-        <details>
-            <summary class="peny">ALTERNATIF PENYELESAIAN</summary>
-            <div class="w3-card-4">
-                <div class="w3-padding w3-sand flo">\(\begin{aligned}
-                    \left(\cos\alpha-\sin\alpha\right)^2&=\cos^2\alpha+\sin^2\alpha-2\cos\alpha\sin\alpha\\
-                    &1-2\left(\dfrac8{25}\right)\\
-                    &=1-\dfrac{16}{25}\\
-                    &=\dfrac9{25}\\
-                    \cos\alpha-\sin\alpha&=\sqrt{\dfrac9{25}}\\
-                    &=\boxed{\dfrac35}
-                    \end{aligned}\)<br />
-                    <br />
-                    \(\begin{aligned}
-                    \dfrac1{\sin\alpha}-\dfrac1{\cos\alpha}&=\dfrac{\cos\alpha-\sin\alpha}{\sin\alpha\cos\alpha}\\
-                    &=\dfrac{\dfrac35}{\dfrac8{25}}\\
-                    &=\dfrac35\cdot\dfrac{25}8\\
-                    &=\boxed{\boxed{\dfrac{15}8}}
-                    \end{aligned}\)</div>
-                <div class="w3-brown w3-padding tebal flo">Jadi, \(\dfrac1{\sin\alpha}-\dfrac1{\cos\alpha}=\dfrac{15}8\).<br><b>JAWAB: E</b><button class="w3-button w3-black w3-padding-small w3-right" onclick="this.parentNode.parentNode.parentNode.removeAttribute('open');">TUTUP</button></div>
-            </div>
-        </details>
-        <hr>
-    </div>
+    <!-- Style Blog -->
+    <link rel="stylesheet" href="../../scr/style.css">
+</head>
 
-    <br><br>
-    <div class="navi w3-hide w3-bar w3-border w3-round"></div>
-      <br>
-<script>soal(trigonometri,2,1)</script>    
-   </div>
-   </body>
-</html> 
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="home-btn">🏠 HOME</a>
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Header Soal -->
+        <div class="page-header">
+            <p class="intro-text">
+                Berikut adalah soal tingkat <span id="auto-level" class="level-highlight">SNBT</span>
+                materi <span class="topic-highlight">Trigonometri</span>
+            </p>
+            <!-- Tombol Tingkat (Materi | Dasar | SNBT | HOTS) dirender otomatis oleh JS -->
+            <div id="level-nav" class="level-nav"></div>
+        </div>
+
+        <!-- Pagination Atas (Otomatis) -->
+        <div class="pagination-wrapper" style="margin-top: 0; margin-bottom: 1.5rem;"></div>
+
+        <!-- ================= DAFTAR SOAL ================= -->
+
+        <!-- SOAL 1 -->
+        <article class="soal-item" id="1">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Nilai minimum dari fungsi $h(x) = \dfrac{1 - \tan^2 x}{2\sec^2 x}$ untuk <e>$0 \le x \le 2\pi$</e> adalah ....
+                <ol class="pilgan pilgan-3kolom">
+                    <li>$-3$</li>
+                    <li>$-2$</li>
+                    <li>$-1$</li>
+                    <li>$-\dfrac{1}{2}$</li>
+                    <li>$0$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: Dari Sherly</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Sederhanakan fungsi trigonometri dengan mengubah ke bentuk sinus dan cosinus:
+                    $$\begin{aligned}
+                    \frac{1 - \tan^2 x}{2\sec^2 x} &= \frac{1 - \frac{\sin^2 x}{\cos^2 x}}{\frac{2}{\cos^2 x}}\\[4pt]
+                    &= \frac{\cos^2 x - \sin^2 x}{2}\\[4pt]
+                    &= \frac{1}{2}\cos 2x
+                    \end{aligned}$$
+                    Nilai minimum dari $\cos 2x$ adalah $-1$, sehingga nilai minimum fungsinya adalah:
+                    $$\text{Minimum} = \frac{1}{2}(-1) = -\frac{1}{2}$$
+                    <div class="kesimpulan">Jadi, nilai minimum dari fungsi tersebut adalah $-\dfrac{1}{2}$ (D).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 2 -->
+        <article class="soal-item" id="2">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika $x - y = \dfrac{1}{2}\pi$, maka <e>$\tan x$</e> adalah ....
+                <ol class="pilgan">
+                    <li>$\dfrac{1 + y^2}{y}$</li>
+                    <li>$-\dfrac{1 - y^2}{\tan y}$</li>
+                    <li>$\dfrac{\tan(1 - y)}{(1 + y)^2}$</li>
+                    <li>$\dfrac{\tan y}{(1 + y)^2}$</li>
+                    <li>$-\dfrac{1}{\tan y}$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: Grup Matematika Idhamdaz</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Dari persamaan $x - y = \dfrac{1}{2}\pi$, diperoleh:
+                    $$x = \dfrac{1}{2}\pi + y$$
+                    Maka nilai $\tan x$:
+                    $$\begin{aligned}
+                    \tan x &= \tan\left(\frac{1}{2}\pi + y\right)\\
+                    &= -\cot y\\
+                    &= -\frac{1}{\tan y}
+                    \end{aligned}$$
+                    <div class="kesimpulan">Jadi, $\tan x = -\dfrac{1}{\tan y}$ (E).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 3 -->
+        <article class="soal-item" id="3">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Jika <e>$\sin x + \cos x = 2p$</e>, maka <e>$\sin^4 x + \cos^4 x = $</e> ....
+                <ol class="pilgan">
+                    <li>$1 - (2p^2 - 1)^2$</li>
+                    <li>$1 + \dfrac{1}{2}\left(2p^2 - 1\right)^2$</li>
+                    <li>$1 - \dfrac{1}{2}\left(2p^2 - 1\right)^2$</li>
+                    <li>$1 + \dfrac{1}{2}\left(4p^2 - 1\right)^2$</li>
+                    <li>$1 - \dfrac{1}{2}\left(4p^2 - 1\right)^2$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: Ganesha Operation</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Kuadratkan kedua ruas persamaan $\sin x + \cos x = 2p$:
+                    $$\begin{aligned}
+                    (\sin x + \cos x)^2 &= (2p)^2\\
+                    \sin^2 x + 2\sin x\cos x + \cos^2 x &= 4p^2\\
+                    1 + 2\sin x\cos x &= 4p^2\\
+                    \sin x\cos x &= \frac{1}{2}\left(4p^2 - 1\right)
+                    \end{aligned}$$
+                    Selanjutnya jabarkan $\sin^4 x + \cos^4 x$:
+                    $$\begin{aligned}
+                    \sin^4 x + \cos^4 x &= \left(\sin^2 x + \cos^2 x\right)^2 - 2\sin^2 x\cos^2 x\\
+                    &= 1^2 - 2(\sin x\cos x)^2\\
+                    &= 1 - 2\left(\frac{1}{2}\left(4p^2 - 1\right)\right)^2\\
+                    &= 1 - \frac{1}{2}\left(4p^2 - 1\right)^2
+                    \end{aligned}$$
+                    <div class="kesimpulan">Jadi, $\sin^4 x + \cos^4 x = 1 - \dfrac{1}{2}\left(4p^2 - 1\right)^2$ (E).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 4 -->
+        <article class="soal-item" id="4">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Nilai yang ekivalen dengan $\dfrac{\dfrac{\sin^2 x + \cos^2 x}{\tan^2 x + \cot^2 x}}{\dfrac{\sin^2 x - \cos^2 x}{\tan^2 x - \cot^2 x}}$ adalah ....
+                <ol class="pilgan">
+                    <li>$\dfrac{2}{2 + \sin^2 2x}$</li>
+                    <li>$\dfrac{2}{1 + 2\cos^2 2x}$</li>
+                    <li>$\dfrac{2\sec^2 x}{\sec^2 x - 1}$</li>
+                    <li>$\dfrac{2\csc^2 x}{\csc^2 x + 1}$</li>
+                    <li>$\dfrac{2\sec^2 x}{\sec^2 x + 1}$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: Grup Matematika Idhamdaz</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Sederhanakan pecahan bertingkat menggunakan sifat aljabar dan identitas trigonometri:
+                    $$\begin{aligned}
+                    \frac{\frac{\sin^2 x + \cos^2 x}{\tan^2 x + \cot^2 x}}{\frac{\sin^2 x - \cos^2 x}{\tan^2 x - \cot^2 x}} &= \frac{\sin^2 x + \cos^2 x}{\tan^2 x + \cot^2 x} \cdot \frac{\tan^2 x - \cot^2 x}{\sin^2 x - \cos^2 x}\\[6pt]
+                    &= \frac{1}{\frac{\sin^2 x}{\cos^2 x} + \frac{\cos^2 x}{\sin^2 x}} \cdot \frac{\frac{\sin^2 x}{\cos^2 x} - \frac{\cos^2 x}{\sin^2 x}}{\sin^2 x - \cos^2 x}\\[6pt]
+                    &= \frac{1}{\frac{\sin^4 x + \cos^4 x}{\cos^2 x \sin^2 x}} \cdot \frac{\frac{\sin^4 x - \cos^4 x}{\cos^2 x \sin^2 x}}{\sin^2 x - \cos^2 x}\\[6pt]
+                    &= \frac{\cancel{\cos^2 x \sin^2 x}}{\sin^4 x + \cos^4 x} \cdot \frac{\left(\sin^2 x - \cos^2 x\right)\left(\sin^2 x + \cos^2 x\right)}{\cancel{\cos^2 x \sin^2 x}\left(\sin^2 x - \cos^2 x\right)}\\[6pt]
+                    &= \frac{1}{\left(\sin^2 x + \cos^2 x\right)^2 - 2\sin^2 x\cos^2 x} \cdot 1\\[6pt]
+                    &= \frac{1}{1^2 - \frac{1}{2}(2\sin x\cos x)^2} = \frac{1}{1 - \frac{1}{2}\sin^2 2x} = \frac{2}{2 - \sin^2 2x}\\[6pt]
+                    &= \frac{2}{1 + \cos^2 2x} = \frac{\frac{2}{\cos^2 x}}{\frac{1}{\cos^2 x} + 1} = \boxed{\frac{2\sec^2 x}{\sec^2 x + 1}}
+                    \end{aligned}$$
+                    <div class="kesimpulan">Jadi bentuk yang ekivalen adalah $\dfrac{2\sec^2 x}{\sec^2 x + 1}$ (E).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- SOAL 5 -->
+        <article class="soal-item" id="5">
+            <div class="soal-no"></div>
+            <div class="soal-teks">
+                Diketahui $\sin\alpha\cos\alpha = \dfrac{8}{25}$. Nilai $\dfrac{1}{\sin\alpha} - \dfrac{1}{\cos\alpha}$ adalah ....
+                <ol class="pilgan">
+                    <li>$\dfrac{3}{25}$</li>
+                    <li>$\dfrac{9}{25}$</li>
+                    <li>$\dfrac{5}{8}$</li>
+                    <li>$\dfrac{3}{5}$</li>
+                    <li>$\dfrac{15}{8}$</li>
+                </ol>
+            </div>
+            <div class="soal-sumber">Sumber: Grup Matematika Idhamdaz</div>
+            <button class="btn-solusi">LIHAT PENYELESAIAN</button>
+            <div class="pembahasan-box">
+                <div class="pembahasan-title">Pembahasan:</div>
+                <div class="pembahasan-isi">
+                    Pertama tentukan nilai $(\cos\alpha - \sin\alpha)^2$:
+                    $$\begin{aligned}
+                    (\cos\alpha - \sin\alpha)^2 &= \cos^2\alpha + \sin^2\alpha - 2\sin\alpha\cos\alpha\\
+                    &= 1 - 2\left(\frac{8}{25}\right)\\[4pt]
+                    &= 1 - \frac{16}{25} = \frac{9}{25}\\[4pt]
+                    \cos\alpha - \sin\alpha &= \sqrt{\frac{9}{25}} = \frac{3}{5}
+                    \end{aligned}$$
+                    Selanjutnya hitung bentuk yang ditanyakan:
+                    $$\begin{aligned}
+                    \frac{1}{\sin\alpha} - \frac{1}{\cos\alpha} &= \frac{\cos\alpha - \sin\alpha}{\sin\alpha\cos\alpha}\\[6pt]
+                    &= \frac{\frac{3}{5}}{\frac{8}{25}}\\[6pt]
+                    &= \frac{3}{5} \cdot \frac{25}{8} = \boxed{\frac{15}{8}}
+                    \end{aligned}$$
+                    <div class="kesimpulan">Jadi, nilai $\dfrac{1}{\sin\alpha} - \dfrac{1}{\cos\alpha} = \dfrac{15}{8}$ (E).</div>
+                </div>
+                <button class="btn-tutup">TUTUP</button>
+            </div>
+        </article>
+
+        <!-- Pagination Bawah (Otomatis) -->
+        <div class="pagination-wrapper"></div>
+    </main>
+
+    <script src="../../scr/script.js"></script>
+</body>
+
+</html>
